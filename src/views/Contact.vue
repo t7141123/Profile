@@ -26,10 +26,23 @@
             <div class="contact-info">
               <h2 class="contact-info-title">聯繫資訊</h2>
               <p class="contact-info-description">
-                我很樂意聽取您的想法與需求。無論是新專案的討論，還是現有網站的優化，都歡迎與我聯繫。
+                我很樂意聽取您的想法與需求。我的溝通風格溫和、理性，會耐心地與您討論每一個細節。
+                歡迎直接加我的 Line，讓我們像朋友一樣輕鬆聊聊您的專案。
               </p>
               
               <div class="contact-info-list">
+                <div class="contact-info-item">
+                  <div class="contact-icon">
+                    <i class="bi bi-line"></i>
+                  </div>
+                  <div>
+                    <span class="contact-label">Line 官方帳號 (推薦)</span>
+                    <a href="https://line.me/ti/p/2w7bwfksdF" target="_blank" class="contact-value">
+                      點擊加入好友連結
+                    </a>
+                  </div>
+                </div>
+                
                 <div class="contact-info-item">
                   <div class="contact-icon">
                     <i class="bi bi-envelope-fill"></i>
@@ -39,16 +52,6 @@
                     <a href="mailto:contact@davidliu.dev" class="contact-value">
                       contact@davidliu.dev
                     </a>
-                  </div>
-                </div>
-                
-                <div class="contact-info-item">
-                  <div class="contact-icon">
-                    <i class="bi bi-geo-alt-fill"></i>
-                  </div>
-                  <div>
-                    <span class="contact-label">位置</span>
-                    <span class="contact-value">台灣</span>
                   </div>
                 </div>
                 
@@ -64,11 +67,11 @@
                 
                 <div class="contact-info-item">
                   <div class="contact-icon">
-                    <i class="bi bi-chat-dots-fill"></i>
+                    <i class="bi bi-chat-heart-fill"></i>
                   </div>
                   <div>
-                    <span class="contact-label">回覆時間</span>
-                    <span class="contact-value">通常於 24 小時內回覆</span>
+                    <span class="contact-label">溝通承諾</span>
+                    <span class="contact-value">耐心傾聽，24h 內溫暖回覆</span>
                   </div>
                 </div>
               </div>

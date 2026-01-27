@@ -13,27 +13,28 @@
           <div class="col-lg-6">
             <div class="hero-content">
               <div class="hero-badge">
-                <i class="bi bi-rocket-takeoff"></i>
-                <span>專業軟體工程師</span>
+                <i class="bi bi-stars"></i>
+                <span>溫暖．專業．值得信賴</span>
               </div>
               
               <h1 class="hero-title">
-                您好，我是<br>
+                嗨，我是<br>
                 <span class="highlight">David Liu</span>
               </h1>
               
               <p class="hero-subtitle">
-                專注於網站開發與系統整合的接案工程師，致力於為客戶打造
-                高品質、高效能的數位解決方案。讓我們一起將您的創意變成現實。
+                一位溫和細心的軟體工程師，擅長用技術溫暖您的數位體驗。<br>
+                擁有強大的技術實力與良好的溝通能力，致力於為您打造
+                兼具美感與效能的網站作品。
               </p>
               
               <div class="hero-buttons">
                 <router-link to="/portfolio" class="btn btn-primary-custom">
                   <i class="bi bi-collection me-2"></i>查看作品
                 </router-link>
-                <router-link to="/contact" class="btn btn-outline-custom">
-                  <i class="bi bi-chat-dots me-2"></i>聯繫我
-                </router-link>
+                <a href="https://line.me/ti/p/2w7bwfksdF" target="_blank" class="btn btn-outline-custom">
+                  <i class="bi bi-line me-2"></i>加 Line 聊聊
+                </a>
               </div>
             </div>
           </div>
@@ -45,17 +46,19 @@
                   <span class="dot red"></span>
                   <span class="dot yellow"></span>
                   <span class="dot green"></span>
-                  <span class="filename">davidliu.js</span>
+                  <span class="filename">david_profile.js</span>
                 </div>
                 <pre class="code-content"><code><span class="keyword">const</span> <span class="variable">developer</span> = {
   <span class="property">name</span>: <span class="string">"David Liu"</span>,
-  <span class="property">role</span>: <span class="string">"Full-Stack Developer"</span>,
-  <span class="property">skills</span>: [
-    <span class="string">"Vue.js"</span>, <span class="string">"React"</span>,
-    <span class="string">"Node.js"</span>, <span class="string">"PHP"</span>,
-    <span class="string">"Python"</span>, <span class="string">"MySQL"</span>
+  <span class="property">traits</span>: [
+    <span class="string">"溫暖細心"</span>, <span class="string">"善於溝通"</span>,
+    <span class="string">"技術優異"</span>, <span class="string">"可靠負責"</span>
   ],
-  <span class="property">passion</span>: <span class="string">"創造優質體驗"</span>
+  <span class="property">skills</span>: [
+    <span class="string">"Vue.js"</span>, <span class="string">"Node.js"</span>,
+    <span class="string">"Full Stack"</span>
+  ],
+  <span class="property">mission</span>: <span class="string">"用程式傳遞溫暖"</span>
 };
 
 <span class="keyword">export default</span> developer;</code></pre>
@@ -146,9 +149,9 @@
             無論是全新的網站開發，還是現有系統的優化升級，<br>
             我都能為您提供專業的解決方案。
           </p>
-          <router-link to="/contact" class="btn btn-primary-custom btn-lg">
-            <i class="bi bi-send me-2"></i>立即聯繫
-          </router-link>
+          <a href="https://line.me/ti/p/2w7bwfksdF" target="_blank" class="btn btn-primary-custom btn-lg">
+            <i class="bi bi-line me-2"></i>加 Line 討論專案
+          </a>
         </div>
       </div>
     </section>

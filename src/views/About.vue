@@ -40,52 +40,53 @@
                 嗨！我是 <span class="highlight">David Liu</span>
               </h2>
               <p class="about-text">
-                我是一名專業的接案軟體工程師，擁有豐富的網站開發與系統整合經驗。
-                在過去的職業生涯中，我有幸與多家企業合作，為他們打造客製化的數位解決方案。
+                朋友常說我是一個「科技暖男」。在程式碼的理性邏輯之外，我更重視人與人之間的溫度。
+                我深信，一個好的軟體不僅要技術精湛，更要能體貼使用者的需求。
               </p>
               <p class="about-text">
-                我相信優秀的軟體不僅要功能完善，更要能為使用者帶來極佳的體驗。
-                因此，我在每個專案中都投入 100% 的熱情與專業，確保交付的成果能超越客戶的期待。
+                作為一名接案工程師，我擁有<strong>深厚的技術底蘊</strong>，能解決複雜的系統問題；
+                同時我也具備<strong>極佳的溝通能力</strong>，能夠用淺顯易懂的語言，與您討論專案的每一個細節。
+                我不只是執行者，更是您值得信賴的合作夥伴。
               </p>
               <p class="about-text">
-                無論是企業形象網站、電子商務平台，還是複雜的後台管理系統，
-                我都能提供從規劃到上線的完整服務。讓我們一起將您的想法轉化為現實！
+                我的個性溫和、耐心，樂於傾聽您的想法。無論是專案初期的腦力激盪，
+                還是開發過程中的來回討論，我都會以最真誠的態度，與您一起打磨出最完美的作品。
               </p>
               
               <div class="about-info">
                 <div class="info-item">
                   <i class="bi bi-person-fill"></i>
                   <div>
-                    <span class="label">姓名</span>
-                    <span class="value">David Liu</span>
+                    <span class="label">特質</span>
+                    <span class="value">溫和細心 / 技術本位</span>
                   </div>
                 </div>
                 <div class="info-item">
-                  <i class="bi bi-geo-alt-fill"></i>
+                  <i class="bi bi-chat-heart-fill"></i>
                   <div>
-                    <span class="label">位置</span>
-                    <span class="value">台灣</span>
+                    <span class="label">溝通風格</span>
+                    <span class="value">耐心傾聽 / 邏輯清晰</span>
                   </div>
                 </div>
                 <div class="info-item">
                   <i class="bi bi-briefcase-fill"></i>
                   <div>
-                    <span class="label">專業</span>
-                    <span class="value">全端開發</span>
+                    <span class="label">專業領域</span>
+                    <span class="value">全端開發 / 系統架構</span>
                   </div>
                 </div>
                 <div class="info-item">
                   <i class="bi bi-patch-check-fill"></i>
                   <div>
                     <span class="label">狀態</span>
-                    <span class="value available">可接案</span>
+                    <span class="value available">歡迎諮詢</span>
                   </div>
                 </div>
               </div>
               
-              <router-link to="/contact" class="btn btn-primary-custom mt-4">
-                <i class="bi bi-chat-dots me-2"></i>與我聯繫
-              </router-link>
+              <a href="https://line.me/ti/p/2w7bwfksdF" target="_blank" class="btn btn-primary-custom mt-4">
+                <i class="bi bi-line me-2"></i>加 Line 與我聊聊
+              </a>
             </div>
           </div>
         </div>

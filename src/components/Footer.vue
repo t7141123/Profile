@@ -12,11 +12,11 @@
             讓我們一起將您的想法轉化為現實。
           </p>
           <div class="social-links">
+            <a href="https://line.me/ti/p/2w7bwfksdF" target="_blank" class="social-link" aria-label="Line">
+              <i class="bi bi-line"></i>
+            </a>
             <a href="https://github.com" target="_blank" class="social-link" aria-label="GitHub">
               <i class="bi bi-github"></i>
-            </a>
-            <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
             </a>
             <a href="mailto:contact@davidliu.dev" class="social-link" aria-label="Email">
               <i class="bi bi-envelope-fill"></i>
@@ -51,8 +51,10 @@
           <h5 class="footer-title">聯繫資訊</h5>
           <ul class="footer-links">
             <li>
-              <i class="bi bi-geo-alt me-2"></i>
-              台灣
+              <a href="https://line.me/ti/p/2w7bwfksdF" target="_blank" class="d-flex align-items-center text-decoration-none" style="color: var(--text-secondary);">
+                <i class="bi bi-line me-2"></i>
+                加 Line 聊聊
+              </a>
             </li>
             <li>
               <i class="bi bi-envelope me-2"></i>
