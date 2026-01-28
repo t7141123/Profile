@@ -7,7 +7,7 @@
         <div class="shape shape-2"></div>
         <div class="shape shape-3"></div>
       </div>
-      
+
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
@@ -16,18 +16,18 @@
                 <i class="bi bi-stars"></i>
                 <span>溫暖．專業．值得信賴</span>
               </div>
-              
+
               <h1 class="hero-title">
                 嗨，我是<br>
                 <span class="highlight">David Liu</span>
               </h1>
-              
+
               <p class="hero-subtitle">
                 一位溫和細心的軟體工程師，擅長用技術溫暖您的數位體驗。<br>
                 擁有強大的技術實力與良好的溝通能力，致力於為您打造
                 兼具美感與效能的網站作品。
               </p>
-              
+
               <div class="hero-buttons">
                 <router-link to="/portfolio" class="btn btn-primary-custom">
                   <i class="bi bi-collection me-2"></i>查看作品
@@ -38,7 +38,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="col-lg-6">
             <div class="hero-image text-center">
               <div class="code-preview">
@@ -68,7 +68,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- 服務預覽區塊 -->
     <section class="section">
       <div class="container">
@@ -81,7 +81,7 @@
             從網站開發到系統整合，提供全方位的技術服務
           </p>
         </div>
-        
+
         <div class="row g-4">
           <div class="col-md-6 col-lg-3" v-for="service in services" :key="service.id">
             <div class="glass-card service-card h-100">
@@ -95,7 +95,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- 精選作品區塊 -->
     <section class="section" style="background: rgba(30, 41, 59, 0.3);">
       <div class="container">
@@ -108,7 +108,7 @@
             這些是我近期為客戶完成的網站專案
           </p>
         </div>
-        
+
         <div class="row g-4">
           <div class="col-md-6 col-lg-4" v-for="project in featuredProjects" :key="project.id">
             <div class="portfolio-card h-100">
@@ -131,7 +131,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="text-center mt-5">
           <router-link to="/portfolio" class="btn btn-outline-custom">
             查看全部作品 <i class="bi bi-arrow-right ms-2"></i>
@@ -139,7 +139,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- CTA 區塊 -->
     <section class="section cta-section">
       <div class="container">
@@ -290,7 +290,7 @@ const featuredProjects = ref([
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     radial-gradient(circle at 10% 50%, rgba(99, 102, 241, 0.2) 0%, transparent 50%),
     radial-gradient(circle at 90% 50%, rgba(139, 92, 246, 0.2) 0%, transparent 50%);
   pointer-events: none;

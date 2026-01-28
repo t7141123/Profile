@@ -16,7 +16,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- 作品集區塊 -->
     <section class="section">
       <div class="container">
@@ -35,13 +35,13 @@
                 <span class="portfolio-category">{{ project.category }}</span>
                 <h3 class="portfolio-title">{{ project.title }}</h3>
                 <p class="portfolio-description">{{ project.description }}</p>
-                
+
                 <div class="portfolio-tech">
                   <span class="tech-tag" v-for="tech in project.technologies" :key="tech">
                     {{ tech }}
                   </span>
                 </div>
-                
+
                 <div class="portfolio-footer">
                   <a :href="project.url" target="_blank" class="portfolio-link">
                     瀏覽網站 <i class="bi bi-arrow-right"></i>
@@ -53,7 +53,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- CTA 區塊 -->
     <section class="section cta-section">
       <div class="container">
@@ -119,7 +119,7 @@ const projects = ref([
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     radial-gradient(circle at 30% 70%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 70% 30%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
   pointer-events: none;

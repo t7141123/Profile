@@ -2,7 +2,7 @@
   <div id="app">
     <!-- 導航列 -->
     <Navbar />
-    
+
     <!-- 主要內容 -->
     <main>
       <router-view v-slot="{ Component }">
@@ -11,7 +11,7 @@
         </transition>
       </router-view>
     </main>
-    
+
     <!-- 頁尾 -->
     <Footer />
   </div>

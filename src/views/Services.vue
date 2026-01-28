@@ -16,7 +16,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- 主要服務區塊 -->
     <section class="section">
       <div class="container">
@@ -44,7 +44,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- 技術棧區塊 -->
     <section class="section" style="background: rgba(30, 41, 59, 0.3);">
       <div class="container">
@@ -57,7 +57,7 @@
             採用業界主流且穩定的技術棧，確保專案品質
           </p>
         </div>
-        
+
         <div class="tech-logos">
           <div class="tech-logo-item" v-for="tech in technologies" :key="tech.name">
             <div class="tech-logo">
@@ -68,7 +68,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- 價格方案區塊 -->
     <section class="section">
       <div class="container">
@@ -81,7 +81,7 @@
             彈性的合作方式，滿足不同規模的專案需求
           </p>
         </div>
-        
+
         <div class="row g-4 justify-content-center">
           <div class="col-md-6 col-lg-4" v-for="plan in pricingPlans" :key="plan.id">
             <div class="glass-card pricing-card h-100" :class="{ featured: plan.featured }">
@@ -99,8 +99,8 @@
                   {{ feature }}
                 </li>
               </ul>
-              <router-link 
-                to="/contact" 
+              <router-link
+                to="/contact"
                 class="btn w-100"
                 :class="plan.featured ? 'btn-primary-custom' : 'btn-outline-custom'"
               >
@@ -111,7 +111,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- FAQ 區塊 -->
     <section class="section" style="background: rgba(30, 41, 59, 0.3);">
       <div class="container">
@@ -121,24 +121,24 @@
             常見 <span class="highlight">問題</span>
           </h2>
         </div>
-        
+
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="accordion" id="faqAccordion">
               <div class="accordion-item" v-for="(faq, index) in faqs" :key="faq.id">
                 <h2 class="accordion-header">
-                  <button 
-                    class="accordion-button" 
+                  <button
+                    class="accordion-button"
                     :class="{ collapsed: index !== 0 }"
-                    type="button" 
-                    data-bs-toggle="collapse" 
+                    type="button"
+                    data-bs-toggle="collapse"
                     :data-bs-target="'#faq' + faq.id"
                   >
                     {{ faq.question }}
                   </button>
                 </h2>
-                <div 
-                  :id="'faq' + faq.id" 
+                <div
+                  :id="'faq' + faq.id"
                   class="accordion-collapse collapse"
                   :class="{ show: index === 0 }"
                   data-bs-parent="#faqAccordion"
@@ -322,7 +322,7 @@ const faqs = ref([
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     radial-gradient(circle at 30% 70%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 70% 30%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
   pointer-events: none;

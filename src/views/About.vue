@@ -16,15 +16,15 @@
         </div>
       </div>
     </section>
-    
+
     <!-- 關於區塊 -->
     <section class="section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-5 mb-4 mb-lg-0">
             <div class="about-image">
-              <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop" 
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop"
                 alt="David Liu"
               >
               <div class="experience-badge">
@@ -33,7 +33,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="col-lg-7">
             <div class="about-content">
               <h2 class="about-title">
@@ -52,7 +52,7 @@
                 我的個性溫和、耐心，樂於傾聽您的想法。無論是專案初期的腦力激盪，
                 還是開發過程中的來回討論，我都會以最真誠的態度，與您一起打磨出最完美的作品。
               </p>
-              
+
               <div class="about-info">
                 <div class="info-item">
                   <i class="bi bi-person-fill"></i>
@@ -83,7 +83,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <a href="https://line.me/ti/p/2w7bwfksdF" target="_blank" class="btn btn-primary-custom mt-4">
                 <i class="bi bi-line me-2"></i>加 Line 與我聊聊
               </a>
@@ -92,7 +92,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- 統計數據 -->
     <section class="section stats-section">
       <div class="container">
@@ -106,7 +106,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- 技能區塊 -->
     <section class="section">
       <div class="container">
@@ -119,7 +119,7 @@
             我所掌握的技術棧能夠應對各種開發需求
           </p>
         </div>
-        
+
         <div class="row g-4">
           <div class="col-md-6 col-lg-4" v-for="category in skillCategories" :key="category.name">
             <div class="glass-card skill-category h-100">
@@ -137,7 +137,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- 工作流程 -->
     <section class="section" style="background: rgba(30, 41, 59, 0.3);">
       <div class="container">
@@ -150,7 +150,7 @@
             透明、高效的專案執行流程
           </p>
         </div>
-        
+
         <div class="row">
           <div class="col-md-6 col-lg-3" v-for="(step, index) in workProcess" :key="step.id">
             <div class="process-card">
@@ -259,7 +259,7 @@ const workProcess = ref([
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     radial-gradient(circle at 30% 70%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 70% 30%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
   pointer-events: none;
@@ -447,13 +447,13 @@ const workProcess = ref([
   .about-info {
     grid-template-columns: 1fr;
   }
-  
+
   .experience-badge {
     right: 10px;
     bottom: -10px;
     padding: 15px 20px;
   }
-  
+
   .experience-badge .years {
     font-size: 2rem;
   }
