@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <!-- Hero 區塊 -->
+    <!-- Hero Section -->
     <section class="hero-section">
       <div class="floating-shapes">
         <div class="shape shape-1"></div>
@@ -12,10 +12,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="hero-content">
-              <div class="hero-badge">
-                <i class="bi bi-stars"></i>
-                <span>{{ $t('home.badge') }}</span>
-              </div>
+
 
               <h1 class="hero-title">
                 {{ $t('home.title') }}<br>
@@ -68,13 +65,13 @@
       </div>
     </section>
 
-    <!-- 服務預覽區塊 -->
+    <!-- Services Preview Section -->
     <section class="section">
       <div class="container">
         <div class="section-header">
           <span class="section-badge">{{ $t('home.servicesBadge') }}</span>
           <h2 class="section-title">
-            {{ $t('home.servicesTitle') }} <span class="highlight">{{ $t('home.servicesTitleHighlight') }}</span>
+            {{ $t('home.servicesTitle') }}<span class="highlight">{{ $t('home.servicesTitleHighlight') }}</span>
           </h2>
           <p class="section-description">
             {{ $t('home.servicesDescription') }}
@@ -95,13 +92,13 @@
       </div>
     </section>
 
-    <!-- 精選作品區塊 -->
+    <!-- Featured Projects Section -->
     <section class="section" style="background: rgba(30, 41, 59, 0.3);">
       <div class="container">
         <div class="section-header">
           <span class="section-badge">{{ $t('home.featuredBadge') }}</span>
           <h2 class="section-title">
-            {{ $t('home.featuredTitle') }} <span class="highlight">{{ $t('home.featuredTitleHighlight') }}</span>
+            {{ $t('home.featuredTitle') }}<span class="highlight">{{ $t('home.featuredTitleHighlight') }}</span>
           </h2>
           <p class="section-description">
             {{ $t('home.featuredDescription') }}
@@ -139,7 +136,7 @@
       </div>
     </section>
 
-    <!-- CTA 區塊 -->
+    <!-- CTA Section -->
     <section class="section cta-section">
       <div class="container">
         <div class="cta-content text-center">

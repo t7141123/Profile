@@ -7,19 +7,19 @@
     "contact": "Contact"
   },
   "home": {
-    "badge": "Warm．Professional．Trustworthy",
+    "badge": "Professional．Meticulous．Trustworthy",
     "title": "Hi, I'm",
-    "subtitle": "A gentle and meticulous software engineer, skilled at warming your digital experience with technology.",
-    "subtitle2": "With strong technical capabilities and excellent communication skills, I'm dedicated to creating websites that combine aesthetics with performance.",
+    "subtitle": "A meticulous software engineer focused on details, dedicated to creating smooth and user-centric digital experiences.",
+    "subtitle2": "Combining strong technical capabilities with clear communication skills, I build websites that seamlessly blend aesthetics with performance.",
     "viewWorks": "View Works",
     "addLine": "Chat on Line",
     "servicesBadge": "What I Offer",
     "servicesTitle": "Professional",
-    "servicesTitleHighlight": "Solutions",
+    "servicesTitleHighlight": " Solutions",
     "servicesDescription": "From web development to system integration, providing comprehensive technical services",
     "featuredBadge": "Featured Projects",
     "featuredTitle": "Recent",
-    "featuredTitleHighlight": "Works",
+    "featuredTitleHighlight": " Works",
     "featuredDescription": "These are website projects I've recently completed for clients",
     "viewSite": "View Site",
     "visitSite": "Visit Website",
@@ -49,31 +49,31 @@
       "ecommerce": "E-commerce"
     },
     "codePreview": {
-      "warmCareful": "Warm & Careful",
-      "goodCommunication": "Good Communicator",
+      "warmCareful": "Meticulous & Thorough",
+      "goodCommunication": "Clear Communication",
       "techExcellent": "Tech Expert",
       "reliable": "Reliable",
-      "mission": "Delivering warmth through code"
+      "mission": "Creating Value with Tech"
     }
   },
   "about": {
     "badge": "About Me",
     "title": "About",
-    "titleHighlight": "Me",
+    "titleHighlight": " Me",
     "pageDescription": "A software engineer who loves creating, dedicated to solving problems with technology",
     "yearsExp": "Years Exp.",
     "greeting": "Hi! I'm",
-    "intro1": "Friends often call me a \"tech warm guy\". Beyond the rational logic of code, I value the warmth between people. I firmly believe that good software should not only be technically excellent but also considerate of user needs.",
-    "intro2": "As a freelance engineer, I have",
+    "intro1": "Beyond the rational logic of code, I prioritize how technology serves people. I believe that excellent software requires not only a robust technical architecture but also a deep understanding of user needs.",
+    "intro2": "As a freelance engineer, I possess",
     "intro2Strong": "deep technical expertise",
-    "intro2Part2": ", capable of solving complex system problems; I also have",
+    "intro2Part2": " to solve complex system problems. I also bring",
     "intro2Strong2": "excellent communication skills",
-    "intro2Part3": ", able to discuss every detail of your project in plain language. I'm not just an executor, but a trustworthy partner.",
-    "intro3": "My personality is gentle and patient, and I enjoy listening to your ideas. Whether it's brainstorming in the early stages of a project or back-and-forth discussions during development, I will work with you with the most sincere attitude to polish out the most perfect work.",
-    "traits": "Traits",
-    "traitsValue": "Gentle & Caring / Tech-focused",
+    "intro2Part3": ", enabling me to discuss project details in clear, accessible language. I am not just an executor, but a trustworthy partner.",
+    "intro3": "I value every interaction with my partners. Whether it's initial project brainstorming or detailed discussions during development, I collaborate with the utmost rigor to polish and deliver high-quality work.",
+    "traits": "Core Traits",
+    "traitsValue": "Detail-Oriented / Tech-Focused",
     "communication": "Communication Style",
-    "communicationValue": "Patient Listener / Clear Logic",
+    "communicationValue": "Deep Listening / Clear Logic",
     "expertise": "Expertise",
     "expertiseValue": "Full Stack / System Architecture",
     "status": "Status",
@@ -87,7 +87,7 @@
     },
     "skillsBadge": "Skills",
     "skillsTitle": "Professional",
-    "skillsTitleHighlight": "Skills",
+    "skillsTitleHighlight": " Skills",
     "skillsDescription": "My tech stack can handle various development needs",
     "skillCategories": {
       "frontend": "Frontend",
@@ -103,7 +103,7 @@
     },
     "processBadge": "Process",
     "processTitle": "Work",
-    "processTitleHighlight": "Process",
+    "processTitleHighlight": " Process",
     "processDescription": "Transparent and efficient project execution process",
     "process": {
       "communication": "Requirements",
@@ -162,11 +162,11 @@
     },
     "techBadge": "Technology",
     "techTitle": "Technologies",
-    "techTitleHighlight": "Used",
+    "techTitleHighlight": " Used",
     "techDescription": "Using mainstream and stable technology stacks to ensure project quality",
     "pricingBadge": "Pricing",
     "pricingTitle": "Pricing",
-    "pricingTitleHighlight": "Plans",
+    "pricingTitleHighlight": " Plans",
     "pricingDescription": "Flexible cooperation methods to meet different project scale requirements",
     "pricing": {
       "basic": "Basic Plan",
@@ -184,7 +184,7 @@
     },
     "faqBadge": "FAQ",
     "faqTitle": "Frequently Asked",
-    "faqTitleHighlight": "Questions",
+    "faqTitleHighlight": " Questions",
     "faqs": {
       "q1": "How long does project development take?",
       "a1": "Development time depends on project complexity. A typical corporate website takes about 4-6 weeks, while more complex e-commerce or custom systems may take 2-4 months. I will provide a detailed schedule before the project starts.",
@@ -199,17 +199,17 @@
   "contact": {
     "badge": "Contact",
     "title": "Contact",
-    "titleHighlight": "Me",
+    "titleHighlight": " Me",
     "pageDescription": "Have any questions or project requirements? Feel free to contact me, let's create something great together",
     "infoTitle": "Contact Information",
-    "infoDescription": "I'm happy to hear your thoughts and needs. My communication style is gentle and rational, and I will patiently discuss every detail with you. Feel free to add me on Line, let's chat about your project like friends.",
+    "infoDescription": "I value every aspect of the project and your ideas. through clear and rational communication, I help you clarify requirements and find the best solution. Feel free to add me on Line to discuss your project.",
     "lineLabel": "Line Official Account (Recommended)",
     "lineValue": "Click to add friend",
     "emailLabel": "Email",
     "workingHoursLabel": "Working Hours",
     "workingHoursValue": "Mon-Fri 9:00 - 18:00",
     "promiseLabel": "Communication Promise",
-    "promiseValue": "Patiently listening, warm reply within 24h",
+    "promiseValue": "Deep listening, professional reply within 24h",
     "followMe": "Follow Me",
     "formTitle": "Send Message",
     "nameLabel": "Name",
@@ -243,7 +243,7 @@
   },
   "footer": {
     "brand": "David Liu",
-    "description": "A warm and meticulous software engineer, warming your digital experience with technology.",
+    "description": "A meticulous software engineer focused on details, dedicated to creating premium digital experiences.",
     "quickLinks": "Quick Links",
     "services": "Services",
     "servicesList": {
@@ -257,5 +257,10 @@
   },
   "common": {
     "required": "*"
+  },
+  "meta": {
+    "title": "David Liu Studio | Professional Software Engineer - Web Development & System Integration",
+    "description": "David Liu Studio provides professional web development, frontend, backend, and system integration services. Dedicated to creating high-quality digital solutions for clients.",
+    "keywords": "Software Engineer, Web Development, Vue.js, React, Frontend Development, Backend Development, System Integration, Freelance Engineer, David Liu"
   }
 }

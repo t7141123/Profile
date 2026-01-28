@@ -1,13 +1,13 @@
 <template>
   <div class="portfolio-page">
-    <!-- 頁面標題區塊 -->
+    <!-- Page Header Section -->
     <section class="page-header">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 text-center">
             <span class="section-badge">{{ $t('portfolio.badge') }}</span>
             <h1 class="page-title">
-              {{ $t('portfolio.title') }} <span class="highlight">{{ $t('portfolio.titleHighlight') }}</span>
+              {{ $t('portfolio.title') }}<span class="highlight">{{ $t('portfolio.titleHighlight') }}</span>
             </h1>
             <p class="page-description">
               {{ $t('portfolio.pageDescription') }}
@@ -17,7 +17,7 @@
       </div>
     </section>
 
-    <!-- 作品集區塊 -->
+    <!-- Portfolio Section -->
     <section class="section">
       <div class="container">
         <div class="row g-4">
@@ -54,7 +54,7 @@
       </div>
     </section>
 
-    <!-- CTA 區塊 -->
+    <!-- CTA Section -->
     <section class="section cta-section">
       <div class="container">
         <div class="cta-content text-center">

@@ -1,13 +1,13 @@
 <template>
   <div class="about-page">
-    <!-- 頁面標題區塊 -->
+    <!-- Page Header Section -->
     <section class="page-header">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 text-center">
             <span class="section-badge">{{ $t('about.badge') }}</span>
             <h1 class="page-title">
-              {{ $t('about.title') }} <span class="highlight">{{ $t('about.titleHighlight') }}</span>
+              {{ $t('about.title') }}<span class="highlight">{{ $t('about.titleHighlight') }}</span>
             </h1>
             <p class="page-description">
               {{ $t('about.pageDescription') }}
@@ -17,24 +17,24 @@
       </div>
     </section>
 
-    <!-- 關於區塊 -->
+    <!-- About Section -->
     <section class="section">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-5 mb-4 mb-lg-0">
+          <div class="col-lg-4 mb-4 mb-lg-0">
             <div class="about-image">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop"
+                src="@/assets/images/profile-new.jpg"
                 alt="David Liu"
               >
               <div class="experience-badge">
-                <span class="years">5+</span>
+                <span class="years">7+</span>
                 <span class="text">{{ $t('about.yearsExp') }}</span>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-7">
+          <div class="col-lg-8">
             <div class="about-content">
               <h2 class="about-title">
                 {{ $t('about.greeting') }} <span class="highlight">David Liu</span>
@@ -89,7 +89,7 @@
       </div>
     </section>
 
-    <!-- 統計數據 -->
+    <!-- Statistics Section -->
     <section class="section stats-section">
       <div class="container">
         <div class="row">
@@ -103,13 +103,13 @@
       </div>
     </section>
 
-    <!-- 技能區塊 -->
+    <!-- Skills Section -->
     <section class="section">
       <div class="container">
         <div class="section-header">
           <span class="section-badge">{{ $t('about.skillsBadge') }}</span>
           <h2 class="section-title">
-            {{ $t('about.skillsTitle') }} <span class="highlight">{{ $t('about.skillsTitleHighlight') }}</span>
+            {{ $t('about.skillsTitle') }}<span class="highlight">{{ $t('about.skillsTitleHighlight') }}</span>
           </h2>
           <p class="section-description">
             {{ $t('about.skillsDescription') }}
@@ -134,13 +134,13 @@
       </div>
     </section>
 
-    <!-- 工作流程 -->
+    <!-- Work Process Section -->
     <section class="section" style="background: rgba(30, 41, 59, 0.3);">
       <div class="container">
         <div class="section-header">
           <span class="section-badge">{{ $t('about.processBadge') }}</span>
           <h2 class="section-title">
-            {{ $t('about.processTitle') }} <span class="highlight">{{ $t('about.processTitleHighlight') }}</span>
+            {{ $t('about.processTitle') }}<span class="highlight">{{ $t('about.processTitleHighlight') }}</span>
           </h2>
           <p class="section-description">
             {{ $t('about.processDescription') }}
@@ -295,6 +295,8 @@ const workProcess = computed(() => [
   border-radius: 16px;
   text-align: center;
   box-shadow: var(--shadow-lg);
+  transform: scale(0.9);
+  transform-origin: bottom right;
 }
 
 .experience-badge .years {

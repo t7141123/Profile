@@ -18,7 +18,6 @@
           href="#"
           @click.prevent="changeLanguage(lang.code)"
         >
-          <span class="lang-flag">{{ lang.flag }}</span>
           {{ lang.name }}
         </a>
       </li>
@@ -33,9 +32,9 @@ import { useI18n } from 'vue-i18n'
 const { locale } = useI18n()
 
 const languages = [
-  { code: 'zh-TW', name: '繁體中文', flag: '🇹🇼' },
-  { code: 'zh-CN', name: '简体中文', flag: '🇨🇳' },
-  { code: 'en', name: 'English', flag: '🇺🇸' }
+  { code: 'zh-TW', name: '繁體中文' },
+  { code: 'zh-CN', name: '简体中文' },
+  { code: 'en', name: 'English' }
 ]
 
 const currentLangName = computed(() => {
@@ -107,9 +106,7 @@ const changeLanguage = (langCode) => {
   color: var(--primary-light);
 }
 
-.lang-flag {
-  font-size: 1.125rem;
-}
+
 
 .lang-text {
   display: none;

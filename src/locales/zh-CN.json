@@ -7,10 +7,10 @@
     "contact": "联系我"
   },
   "home": {
-    "badge": "温暖．专业．值得信赖",
+    "badge": "专业．细緻．值得信赖",
     "title": "嗨，我是",
-    "subtitle": "一位温和细心的软件工程师，擅长用技术温暖您的数字体验。",
-    "subtitle2": "拥有强大的技术实力与良好的沟通能力，致力于为您打造兼具美感与效能的网站作品。",
+    "subtitle": "专注于细节的软件工程师，致力于打造流畅且人性化的数字体验。",
+    "subtitle2": "结合深厚的技术实力与清晰的沟通能力，为您构建兼具美感与效能的网站作品。",
     "viewWorks": "查看作品",
     "addLine": "加 Line 聊聊",
     "servicesBadge": "我能提供的服务",
@@ -49,11 +49,11 @@
       "ecommerce": "电商网站"
     },
     "codePreview": {
-      "warmCareful": "温暖细心",
+      "warmCareful": "细心周全",
       "goodCommunication": "善于沟通",
       "techExcellent": "技术优异",
       "reliable": "可靠负责",
-      "mission": "用程式传递温暖"
+      "mission": "以技术创造价值"
     }
   },
   "about": {
@@ -63,17 +63,17 @@
     "pageDescription": "一位热爱创造的软件工程师，致力于用技术解决问题",
     "yearsExp": "年经验",
     "greeting": "嗨！我是",
-    "intro1": "朋友常说我是一个「科技暖男」。在程式码的理性逻辑之外，我更重视人与人之间的温度。我深信，一个好的软件不仅要技术精湛，更要能体贴用户的需求。",
+    "intro1": "在程式码的理性逻辑背后，我更重视技术如何为人服务。我相信，优秀的软件不仅需要精湛的技术架构，更需要深刻理解使用者的真实需求。",
     "intro2": "作为一名接案工程师，我拥有",
     "intro2Strong": "深厚的技术底蕴",
     "intro2Part2": "，能解决复杂的系统问题；同时我也具备",
     "intro2Strong2": "极佳的沟通能力",
-    "intro2Part3": "，能够用浅显易懂的语言，与您讨论项目的每一个细节。我不只是执行者，更是您值得信赖的合作伙伴。",
-    "intro3": "我的个性温和、耐心，乐于倾听您的想法。无论是项目初期的脑力激�的，还是开发过程中的来回讨论，我都会以最真诚的态度，与您一起打磨出最完美的作品。",
-    "traits": "特质",
-    "traitsValue": "温和细心 / 技术本位",
+    "intro2Part3": "，能够用浅显易懂的语言，与您讨论项目的每一个细节。我不只是执行者，更是您值得信賴的合作伙伴。",
+    "intro3": "我重视与合作伙伴的每一次沟通。无论是项目初期的需求探讨，还是开发过程中的细节确认，我都将以最严谨的态度与您协作，共同打磨出高品质的作品。",
+    "traits": "核心特质",
+    "traitsValue": "注重细节 / 技术本位",
     "communication": "沟通风格",
-    "communicationValue": "耐心倾听 / 逻辑清晰",
+    "communicationValue": "深度倾听 / 逻辑清晰",
     "expertise": "专业领域",
     "expertiseValue": "全端开发 / 系统架构",
     "status": "状态",
@@ -202,14 +202,14 @@
     "titleHighlight": "我",
     "pageDescription": "有任何问题或项目需求？欢迎与我联系，让我们一起创造精彩",
     "infoTitle": "联系资讯",
-    "infoDescription": "我很乐意听取您的想法与需求。我的沟通风格温和、理性，会耐心地与您讨论每一个细节。欢迎直接加我的 Line，让我们像朋友一样轻松聊聊您的项目。",
+    "infoDescription": "我重视项目的每一个环节与您的想法。透过清晰、理性的沟通，协助您厘清需求并找出最佳解决方案。欢迎直接加入我的 Line，让我们开始讨论您的项目。",
     "lineLabel": "Line 官方帐号 (推荐)",
     "lineValue": "点击加入好友链接",
     "emailLabel": "Email",
     "workingHoursLabel": "工作时间",
     "workingHoursValue": "周一至周五 9:00 - 18:00",
     "promiseLabel": "沟通承诺",
-    "promiseValue": "耐心倾听，24h 内温暖回复",
+    "promiseValue": "深度倾听，24h 内专业回复",
     "followMe": "追踪我",
     "formTitle": "发送讯息",
     "nameLabel": "姓名",
@@ -243,7 +243,7 @@
   },
   "footer": {
     "brand": "David Liu",
-    "description": "温暖细心的软件工程师，用技术温暖您的数字体验。",
+    "description": "专注细节的软件工程师，为您打造优质的数字体验。",
     "quickLinks": "快速链接",
     "services": "服务项目",
     "servicesList": {
@@ -257,5 +257,10 @@
   },
   "common": {
     "required": "*"
+  },
+  "meta": {
+    "title": "David Liu Studio | 专业软件工程师 - 网站开发与系统整合",
+    "description": "David Liu Studio 提供专业的网站开发、前端开发、后端开发与系统整合服务。致力于为客户打造高品质的数字解决方案。",
+    "keywords": "软件工程师, 网站开发, Vue.js, React, 前端开发, 后端开发, 系统整合, 接案工程师, David Liu"
   }
 }

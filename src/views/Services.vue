@@ -1,13 +1,13 @@
 <template>
   <div class="services-page">
-    <!-- 頁面標題區塊 -->
+    <!-- Page Header Section -->
     <section class="page-header">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 text-center">
             <span class="section-badge">{{ $t('services.badge') }}</span>
             <h1 class="page-title">
-              {{ $t('services.title') }} <span class="highlight">{{ $t('services.titleHighlight') }}</span>
+              {{ $t('services.title') }}<span class="highlight">{{ $t('services.titleHighlight') }}</span>
             </h1>
             <p class="page-description">
               {{ $t('services.pageDescription') }}
@@ -17,7 +17,7 @@
       </div>
     </section>
 
-    <!-- 主要服務區塊 -->
+    <!-- Main Services Section -->
     <section class="section">
       <div class="container">
         <div class="row g-4">
@@ -45,13 +45,13 @@
       </div>
     </section>
 
-    <!-- 技術棧區塊 -->
+    <!-- Technology Stack Section -->
     <section class="section" style="background: rgba(30, 41, 59, 0.3);">
       <div class="container">
         <div class="section-header">
           <span class="section-badge">{{ $t('services.techBadge') }}</span>
           <h2 class="section-title">
-            {{ $t('services.techTitle') }} <span class="highlight">{{ $t('services.techTitleHighlight') }}</span>
+            {{ $t('services.techTitle') }}<span class="highlight">{{ $t('services.techTitleHighlight') }}</span>
           </h2>
           <p class="section-description">
             {{ $t('services.techDescription') }}
@@ -69,13 +69,13 @@
       </div>
     </section>
 
-    <!-- 價格方案區塊 -->
+    <!-- Pricing Plans Section -->
     <section class="section">
       <div class="container">
         <div class="section-header">
           <span class="section-badge">{{ $t('services.pricingBadge') }}</span>
           <h2 class="section-title">
-            {{ $t('services.pricingTitle') }} <span class="highlight">{{ $t('services.pricingTitleHighlight') }}</span>
+            {{ $t('services.pricingTitle') }}<span class="highlight">{{ $t('services.pricingTitleHighlight') }}</span>
           </h2>
           <p class="section-description">
             {{ $t('services.pricingDescription') }}
@@ -112,13 +112,13 @@
       </div>
     </section>
 
-    <!-- FAQ 區塊 -->
+    <!-- FAQ Section -->
     <section class="section" style="background: rgba(30, 41, 59, 0.3);">
       <div class="container">
         <div class="section-header">
           <span class="section-badge">{{ $t('services.faqBadge') }}</span>
           <h2 class="section-title">
-            {{ $t('services.faqTitle') }} <span class="highlight">{{ $t('services.faqTitleHighlight') }}</span>
+            {{ $t('services.faqTitle') }}<span class="highlight">{{ $t('services.faqTitleHighlight') }}</span>
           </h2>
         </div>
 

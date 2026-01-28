@@ -57,7 +57,6 @@
 
 - **Line**: [點擊加入好友](https://line.me/ti/p/2w7bwfksdF)
 - **Email**: t71411@gmail.com
-- **Location**: Taiwan
 
 ---
 
