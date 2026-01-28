@@ -5,12 +5,12 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 text-center">
-            <span class="section-badge">About Me</span>
+            <span class="section-badge">{{ $t('about.badge') }}</span>
             <h1 class="page-title">
-              關於 <span class="highlight">我</span>
+              {{ $t('about.title') }} <span class="highlight">{{ $t('about.titleHighlight') }}</span>
             </h1>
             <p class="page-description">
-              一位熱愛創造的軟體工程師，致力於用技術解決問題
+              {{ $t('about.pageDescription') }}
             </p>
           </div>
         </div>
@@ -29,7 +29,7 @@
               >
               <div class="experience-badge">
                 <span class="years">5+</span>
-                <span class="text">年經驗</span>
+                <span class="text">{{ $t('about.yearsExp') }}</span>
               </div>
             </div>
           </div>
@@ -37,55 +37,51 @@
           <div class="col-lg-7">
             <div class="about-content">
               <h2 class="about-title">
-                嗨！我是 <span class="highlight">David Liu</span>
+                {{ $t('about.greeting') }} <span class="highlight">David Liu</span>
               </h2>
               <p class="about-text">
-                朋友常說我是一個「科技暖男」。在程式碼的理性邏輯之外，我更重視人與人之間的溫度。
-                我深信，一個好的軟體不僅要技術精湛，更要能體貼使用者的需求。
+                {{ $t('about.intro1') }}
               </p>
               <p class="about-text">
-                作為一名接案工程師，我擁有<strong>深厚的技術底蘊</strong>，能解決複雜的系統問題；
-                同時我也具備<strong>極佳的溝通能力</strong>，能夠用淺顯易懂的語言，與您討論專案的每一個細節。
-                我不只是執行者，更是您值得信賴的合作夥伴。
+                {{ $t('about.intro2') }}<strong>{{ $t('about.intro2Strong') }}</strong>{{ $t('about.intro2Part2') }}<strong>{{ $t('about.intro2Strong2') }}</strong>{{ $t('about.intro2Part3') }}
               </p>
               <p class="about-text">
-                我的個性溫和、耐心，樂於傾聽您的想法。無論是專案初期的腦力激盪，
-                還是開發過程中的來回討論，我都會以最真誠的態度，與您一起打磨出最完美的作品。
+                {{ $t('about.intro3') }}
               </p>
 
               <div class="about-info">
                 <div class="info-item">
                   <i class="bi bi-person-fill"></i>
                   <div>
-                    <span class="label">特質</span>
-                    <span class="value">溫和細心 / 技術本位</span>
+                    <span class="label">{{ $t('about.traits') }}</span>
+                    <span class="value">{{ $t('about.traitsValue') }}</span>
                   </div>
                 </div>
                 <div class="info-item">
                   <i class="bi bi-chat-heart-fill"></i>
                   <div>
-                    <span class="label">溝通風格</span>
-                    <span class="value">耐心傾聽 / 邏輯清晰</span>
+                    <span class="label">{{ $t('about.communication') }}</span>
+                    <span class="value">{{ $t('about.communicationValue') }}</span>
                   </div>
                 </div>
                 <div class="info-item">
                   <i class="bi bi-briefcase-fill"></i>
                   <div>
-                    <span class="label">專業領域</span>
-                    <span class="value">全端開發 / 系統架構</span>
+                    <span class="label">{{ $t('about.expertise') }}</span>
+                    <span class="value">{{ $t('about.expertiseValue') }}</span>
                   </div>
                 </div>
                 <div class="info-item">
                   <i class="bi bi-patch-check-fill"></i>
                   <div>
-                    <span class="label">狀態</span>
-                    <span class="value available">歡迎諮詢</span>
+                    <span class="label">{{ $t('about.status') }}</span>
+                    <span class="value available">{{ $t('about.statusValue') }}</span>
                   </div>
                 </div>
               </div>
 
               <a href="https://line.me/ti/p/2w7bwfksdF" target="_blank" class="btn btn-primary-custom mt-4">
-                <i class="bi bi-line me-2"></i>加 Line 與我聊聊
+                <i class="bi bi-line me-2"></i>{{ $t('about.addLine') }}
               </a>
             </div>
           </div>
@@ -111,12 +107,12 @@
     <section class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">Skills</span>
+          <span class="section-badge">{{ $t('about.skillsBadge') }}</span>
           <h2 class="section-title">
-            專業 <span class="highlight">技能</span>
+            {{ $t('about.skillsTitle') }} <span class="highlight">{{ $t('about.skillsTitleHighlight') }}</span>
           </h2>
           <p class="section-description">
-            我所掌握的技術棧能夠應對各種開發需求
+            {{ $t('about.skillsDescription') }}
           </p>
         </div>
 
@@ -142,12 +138,12 @@
     <section class="section" style="background: rgba(30, 41, 59, 0.3);">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">Process</span>
+          <span class="section-badge">{{ $t('about.processBadge') }}</span>
           <h2 class="section-title">
-            工作 <span class="highlight">流程</span>
+            {{ $t('about.processTitle') }} <span class="highlight">{{ $t('about.processTitleHighlight') }}</span>
           </h2>
           <p class="section-description">
-            透明、高效的專案執行流程
+            {{ $t('about.processDescription') }}
           </p>
         </div>
 
@@ -169,81 +165,85 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
-const stats = ref([
-  { id: 1, number: '10+', label: '完成專案' },
-  { id: 2, number: '5+', label: '年經驗' },
-  { id: 3, number: '100%', label: '客戶滿意' },
-  { id: 4, number: '24/7', label: '技術支援' }
+const { t } = useI18n()
+
+const stats = computed(() => [
+  { id: 1, number: '10+', label: t('about.stats.projects') },
+  { id: 2, number: '5+', label: t('about.stats.years') },
+  { id: 3, number: '100%', label: t('about.stats.satisfaction') },
+  { id: 4, number: '24/7', label: t('about.stats.support') }
 ])
 
-const skillCategories = ref([
+const skillCategories = computed(() => [
   {
-    name: '前端開發',
+    name: t('about.skillCategories.frontend'),
     icon: 'bi bi-palette',
     gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
     skills: ['Vue.js', 'React', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'Bootstrap', 'Tailwind CSS']
   },
   {
-    name: '後端開發',
+    name: t('about.skillCategories.backend'),
     icon: 'bi bi-server',
     gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
     skills: ['Node.js', 'PHP', 'Python', 'Express.js', 'Laravel', 'REST API', 'GraphQL']
   },
   {
-    name: '資料庫',
+    name: t('about.skillCategories.database'),
     icon: 'bi bi-database',
     gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
     skills: ['MySQL', 'PostgreSQL', 'MongoDB', 'Redis', 'Firebase', 'Supabase']
   },
   {
-    name: '開發工具',
+    name: t('about.skillCategories.tools'),
     icon: 'bi bi-tools',
     gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
     skills: ['Git', 'Docker', 'VS Code', 'Figma', 'Postman', 'Linux']
   },
   {
-    name: '雲端服務',
+    name: t('about.skillCategories.cloud'),
     icon: 'bi bi-cloud',
     gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
     skills: ['AWS', 'GCP', 'Vercel', 'Netlify', 'DigitalOcean']
   },
   {
-    name: '其他技能',
+    name: t('about.skillCategories.other'),
     icon: 'bi bi-lightning',
     gradient: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
-    skills: ['SEO 優化', 'UI/UX 設計', '專案管理', '技術文件撰寫']
+    skills: [t('about.skillCategories.seo'), t('about.skillCategories.uiux'), t('about.skillCategories.pm'), t('about.skillCategories.docs')]
   }
 ])
 
-const workProcess = ref([
+const workProcess = computed(() => [
   {
     id: 1,
     icon: 'bi bi-chat-square-text',
-    title: '需求溝通',
-    description: '深入了解您的需求、目標與期望，確保專案方向正確。'
+    title: t('about.process.communication'),
+    description: t('about.process.communicationDesc')
   },
   {
     id: 2,
     icon: 'bi bi-pencil-square',
-    title: '規劃設計',
-    description: '制定詳細的專案計劃，設計符合需求的解決方案。'
+    title: t('about.process.planning'),
+    description: t('about.process.planningDesc')
   },
   {
     id: 3,
     icon: 'bi bi-code-slash',
-    title: '開發實作',
-    description: '使用最佳技術棧進行開發，定期回報專案進度。'
+    title: t('about.process.development'),
+    description: t('about.process.developmentDesc')
   },
   {
     id: 4,
     icon: 'bi bi-rocket-takeoff',
-    title: '測試上線',
-    description: '嚴格測試確保品質，協助部署上線並提供後續支援。'
+    title: t('about.process.launch'),
+    description: t('about.process.launchDesc')
   }
 ])
 </script>
+
 
 <style scoped>
 .page-header {

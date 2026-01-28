@@ -5,12 +5,12 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 text-center">
-            <span class="section-badge">Portfolio</span>
+            <span class="section-badge">{{ $t('portfolio.badge') }}</span>
             <h1 class="page-title">
-              作品 <span class="highlight">集</span>
+              {{ $t('portfolio.title') }} <span class="highlight">{{ $t('portfolio.titleHighlight') }}</span>
             </h1>
             <p class="page-description">
-              這些是我為客戶完成的網站專案，每一個都代表著我對品質的承諾
+              {{ $t('portfolio.pageDescription') }}
             </p>
           </div>
         </div>
@@ -27,7 +27,7 @@
                 <img :src="project.image" :alt="project.title">
                 <div class="portfolio-overlay">
                   <a :href="project.url" target="_blank" class="btn btn-primary-custom btn-sm">
-                    <i class="bi bi-box-arrow-up-right me-1"></i>查看網站
+                    <i class="bi bi-box-arrow-up-right me-1"></i>{{ $t('portfolio.viewSite') }}
                   </a>
                 </div>
               </div>
@@ -44,7 +44,7 @@
 
                 <div class="portfolio-footer">
                   <a :href="project.url" target="_blank" class="portfolio-link">
-                    瀏覽網站 <i class="bi bi-arrow-right"></i>
+                    {{ $t('portfolio.visitSite') }} <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
               </div>
@@ -58,12 +58,12 @@
     <section class="section cta-section">
       <div class="container">
         <div class="cta-content text-center">
-          <h2 class="cta-title">想要打造屬於您的網站？</h2>
+          <h2 class="cta-title">{{ $t('portfolio.ctaTitle') }}</h2>
           <p class="cta-description">
-            讓我們一起討論您的專案需求，創造下一個成功案例。
+            {{ $t('portfolio.ctaDescription') }}
           </p>
           <router-link to="/contact" class="btn btn-primary-custom btn-lg">
-            <i class="bi bi-send me-2"></i>開始合作
+            <i class="bi bi-send me-2"></i>{{ $t('portfolio.ctaButton') }}
           </router-link>
         </div>
       </div>
@@ -72,38 +72,42 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
-const projects = ref([
+const { t } = useI18n()
+
+const projects = computed(() => [
   {
     id: 1,
-    title: '艾樂資訊股份有限公司',
-    category: '企業網站',
-    description: '為資訊科技公司打造的專業形象網站，展現企業專業形象與服務項目。網站採用現代化設計，具備良好的使用者體驗與響應式設計。',
+    title: t('portfolio.projects.actionLead'),
+    category: t('portfolio.projects.corporate'),
+    description: t('portfolio.projects.actionLeadDesc'),
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
     url: 'https://www.action-lead.com',
     technologies: ['Vue.js', 'Bootstrap', 'PHP', 'MySQL']
   },
   {
     id: 2,
-    title: '麟雲數據科技有限公司',
-    category: '企業網站',
-    description: '專注於數據技術的科技公司官網，呈現創新技術與解決方案。整合多語系支援與動態內容管理系統。',
+    title: t('portfolio.projects.linkwing'),
+    category: t('portfolio.projects.corporate'),
+    description: t('portfolio.projects.linkwingDesc'),
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
     url: 'https://www.linkwing.com/',
     technologies: ['Vue.js', 'Vite', 'Bootstrap', 'Node.js']
   },
   {
     id: 3,
-    title: '台灣軟陶有限公司',
-    category: '電商網站',
-    description: '軟陶藝術品牌的電子商務網站，結合產品展示與購物功能。提供完整的購物車系統與金流整合。',
+    title: t('portfolio.projects.clay'),
+    category: t('portfolio.projects.ecommerce'),
+    description: t('portfolio.projects.clayDesc'),
     image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
     url: 'https://clay.com.tw/',
     technologies: ['Vue.js', 'Bootstrap', 'PHP', 'MySQL']
   }
 ])
 </script>
+
 
 <style scoped>
 .page-header {

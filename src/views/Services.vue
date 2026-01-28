@@ -5,12 +5,12 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 text-center">
-            <span class="section-badge">Services</span>
+            <span class="section-badge">{{ $t('services.badge') }}</span>
             <h1 class="page-title">
-              服務 <span class="highlight">項目</span>
+              {{ $t('services.title') }} <span class="highlight">{{ $t('services.titleHighlight') }}</span>
             </h1>
             <p class="page-description">
-              提供全方位的軟體開發服務，從構思到上線一站式完成
+              {{ $t('services.pageDescription') }}
             </p>
           </div>
         </div>
@@ -49,12 +49,12 @@
     <section class="section" style="background: rgba(30, 41, 59, 0.3);">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">Technology</span>
+          <span class="section-badge">{{ $t('services.techBadge') }}</span>
           <h2 class="section-title">
-            使用的 <span class="highlight">技術</span>
+            {{ $t('services.techTitle') }} <span class="highlight">{{ $t('services.techTitleHighlight') }}</span>
           </h2>
           <p class="section-description">
-            採用業界主流且穩定的技術棧，確保專案品質
+            {{ $t('services.techDescription') }}
           </p>
         </div>
 
@@ -73,25 +73,25 @@
     <section class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">Pricing</span>
+          <span class="section-badge">{{ $t('services.pricingBadge') }}</span>
           <h2 class="section-title">
-            合作 <span class="highlight">方案</span>
+            {{ $t('services.pricingTitle') }} <span class="highlight">{{ $t('services.pricingTitleHighlight') }}</span>
           </h2>
           <p class="section-description">
-            彈性的合作方式，滿足不同規模的專案需求
+            {{ $t('services.pricingDescription') }}
           </p>
         </div>
 
         <div class="row g-4 justify-content-center">
           <div class="col-md-6 col-lg-4" v-for="plan in pricingPlans" :key="plan.id">
             <div class="glass-card pricing-card h-100" :class="{ featured: plan.featured }">
-              <div class="pricing-badge" v-if="plan.featured">熱門方案</div>
+              <div class="pricing-badge" v-if="plan.featured">{{ $t('services.pricing.popular') }}</div>
               <h3 class="pricing-title">{{ plan.title }}</h3>
               <p class="pricing-description">{{ plan.description }}</p>
               <div class="pricing-price">
                 <span class="currency">NT$</span>
                 <span class="amount">{{ plan.price }}</span>
-                <span class="period">起</span>
+                <span class="period">{{ $t('services.pricing.from') }}</span>
               </div>
               <ul class="pricing-features">
                 <li v-for="feature in plan.features" :key="feature">
@@ -104,7 +104,7 @@
                 class="btn w-100"
                 :class="plan.featured ? 'btn-primary-custom' : 'btn-outline-custom'"
               >
-                聯繫諮詢
+                {{ $t('services.pricing.contact') }}
               </router-link>
             </div>
           </div>
@@ -116,9 +116,9 @@
     <section class="section" style="background: rgba(30, 41, 59, 0.3);">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">FAQ</span>
+          <span class="section-badge">{{ $t('services.faqBadge') }}</span>
           <h2 class="section-title">
-            常見 <span class="highlight">問題</span>
+            {{ $t('services.faqTitle') }} <span class="highlight">{{ $t('services.faqTitleHighlight') }}</span>
           </h2>
         </div>
 
@@ -157,72 +157,51 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
-const mainServices = ref([
+const { t, tm } = useI18n()
+
+const mainServices = computed(() => [
   {
     id: 1,
     icon: 'bi bi-globe',
-    title: '網站開發',
-    subtitle: 'Web Development',
-    description: '從企業形象網站到複雜的電商平台，提供客製化的網站開發服務。注重使用者體驗、響應式設計和SEO優化。',
+    title: t('services.mainServices.webDev'),
+    subtitle: t('services.mainServices.webDevSubtitle'),
+    description: t('services.mainServices.webDevDesc'),
     gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-    features: [
-      '企業形象網站設計與開發',
-      '響應式網頁設計 (RWD)',
-      '電子商務網站建置',
-      'CMS 內容管理系統整合',
-      'SEO 搜尋引擎優化'
-    ]
+    features: tm('services.mainServices.webDevFeatures')
   },
   {
     id: 2,
     icon: 'bi bi-code-square',
-    title: '前端開發',
-    subtitle: 'Frontend Development',
-    description: '使用 Vue.js、React 等現代框架打造流暢的使用者介面，注重效能優化與使用者體驗。',
+    title: t('services.mainServices.frontendDev'),
+    subtitle: t('services.mainServices.frontendDevSubtitle'),
+    description: t('services.mainServices.frontendDevDesc'),
     gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-    features: [
-      'Vue.js / React 應用開發',
-      'SPA 單頁應用程式',
-      '互動式動畫效果',
-      '效能優化與最佳實踐',
-      '跨瀏覽器相容性'
-    ]
+    features: tm('services.mainServices.frontendDevFeatures')
   },
   {
     id: 3,
     icon: 'bi bi-server',
-    title: '後端開發',
-    subtitle: 'Backend Development',
-    description: '建構穩定、安全、可擴展的後端系統，提供完整的 API 開發與資料庫設計服務。',
+    title: t('services.mainServices.backendDev'),
+    subtitle: t('services.mainServices.backendDevSubtitle'),
+    description: t('services.mainServices.backendDevDesc'),
     gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-    features: [
-      'RESTful API 設計與開發',
-      '資料庫設計與優化',
-      '第三方服務整合',
-      '系統效能調校',
-      '資訊安全防護'
-    ]
+    features: tm('services.mainServices.backendDevFeatures')
   },
   {
     id: 4,
     icon: 'bi bi-gear-wide-connected',
-    title: '系統整合',
-    subtitle: 'System Integration',
-    description: '協助企業整合各種系統與服務，打造高效率的工作流程與數據管理方案。',
+    title: t('services.mainServices.integration'),
+    subtitle: t('services.mainServices.integrationSubtitle'),
+    description: t('services.mainServices.integrationDesc'),
     gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
-    features: [
-      '金流系統整合',
-      '物流系統串接',
-      'ERP/CRM 系統整合',
-      '社群平台 API 整合',
-      '自動化流程設計'
-    ]
+    features: tm('services.mainServices.integrationFeatures')
   }
 ])
 
-const technologies = ref([
+const technologies = [
   { name: 'Vue.js', icon: 'bi bi-filetype-vue' },
   { name: 'React', icon: 'bi bi-filetype-jsx' },
   { name: 'JavaScript', icon: 'bi bi-filetype-js' },
@@ -235,78 +214,59 @@ const technologies = ref([
   { name: 'Git', icon: 'bi bi-git' },
   { name: 'Docker', icon: 'bi bi-box' },
   { name: 'AWS', icon: 'bi bi-cloud' }
-])
+]
 
-const pricingPlans = ref([
+const pricingPlans = computed(() => [
   {
     id: 1,
-    title: '基礎方案',
-    description: '適合小型企業或個人品牌',
+    title: t('services.pricing.basic'),
+    description: t('services.pricing.basicDesc'),
     price: '30,000',
     featured: false,
-    features: [
-      '響應式網頁設計',
-      '最多 5 個頁面',
-      '基本 SEO 優化',
-      '聯繫表單功能',
-      '3 個月免費維護'
-    ]
+    features: tm('services.pricing.basicFeatures')
   },
   {
     id: 2,
-    title: '專業方案',
-    description: '適合中型企業與成長中品牌',
+    title: t('services.pricing.pro'),
+    description: t('services.pricing.proDesc'),
     price: '80,000',
     featured: true,
-    features: [
-      '客製化設計',
-      '無限制頁面數量',
-      '進階 SEO 優化',
-      'CMS 內容管理系統',
-      '6 個月免費維護',
-      '效能優化'
-    ]
+    features: tm('services.pricing.proFeatures')
   },
   {
     id: 3,
-    title: '企業方案',
-    description: '適合大型企業與複雜需求',
+    title: t('services.pricing.enterprise'),
+    description: t('services.pricing.enterpriseDesc'),
     price: '150,000',
     featured: false,
-    features: [
-      '完整客製化開發',
-      '電商功能整合',
-      '會員系統',
-      'API 整合',
-      '12 個月免費維護',
-      '24/7 技術支援'
-    ]
+    features: tm('services.pricing.enterpriseFeatures')
   }
 ])
 
-const faqs = ref([
+const faqs = computed(() => [
   {
     id: 1,
-    question: '專案開發需要多長時間？',
-    answer: '開發時間取決於專案的複雜程度。一般的企業形象網站約需 4-6 週，較複雜的電商平台或客製化系統可能需要 2-4 個月。我會在專案開始前提供詳細的時程規劃。'
+    question: t('services.faqs.q1'),
+    answer: t('services.faqs.a1')
   },
   {
     id: 2,
-    question: '付款方式如何安排？',
-    answer: '通常採用分期付款方式：簽約時支付 30% 訂金，開發中期支付 40%，專案完成驗收後支付尾款 30%。具體付款方式可依專案需求彈性調整。'
+    question: t('services.faqs.q2'),
+    answer: t('services.faqs.a2')
   },
   {
     id: 3,
-    question: '網站完成後提供維護服務嗎？',
-    answer: '是的，所有專案都包含免費維護期。維護期結束後，您可以選擇續約維護服務，確保網站持續穩定運作並獲得技術支援。'
+    question: t('services.faqs.q3'),
+    answer: t('services.faqs.a3')
   },
   {
     id: 4,
-    question: '可以先看設計稿再決定嗎？',
-    answer: '在正式開發前，我會提供網站架構規劃與設計稿供您確認。確保設計方向符合您的期望後才會進入開發階段，讓您放心合作。'
+    question: t('services.faqs.q4'),
+    answer: t('services.faqs.a4')
   }
 ])
 </script>
+
 
 <style scoped>
 .page-header {

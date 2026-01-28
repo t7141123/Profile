@@ -14,26 +14,25 @@
             <div class="hero-content">
               <div class="hero-badge">
                 <i class="bi bi-stars"></i>
-                <span>溫暖．專業．值得信賴</span>
+                <span>{{ $t('home.badge') }}</span>
               </div>
 
               <h1 class="hero-title">
-                嗨，我是<br>
+                {{ $t('home.title') }}<br>
                 <span class="highlight">David Liu</span>
               </h1>
 
               <p class="hero-subtitle">
-                一位溫和細心的軟體工程師，擅長用技術溫暖您的數位體驗。<br>
-                擁有強大的技術實力與良好的溝通能力，致力於為您打造
-                兼具美感與效能的網站作品。
+                {{ $t('home.subtitle') }}<br>
+                {{ $t('home.subtitle2') }}
               </p>
 
               <div class="hero-buttons">
                 <router-link to="/portfolio" class="btn btn-primary-custom">
-                  <i class="bi bi-collection me-2"></i>查看作品
+                  <i class="bi bi-collection me-2"></i>{{ $t('home.viewWorks') }}
                 </router-link>
                 <a href="https://line.me/ti/p/2w7bwfksdF" target="_blank" class="btn btn-outline-custom">
-                  <i class="bi bi-line me-2"></i>加 Line 聊聊
+                  <i class="bi bi-line me-2"></i>{{ $t('home.addLine') }}
                 </a>
               </div>
             </div>
@@ -51,14 +50,14 @@
                 <pre class="code-content"><code><span class="keyword">const</span> <span class="variable">developer</span> = {
   <span class="property">name</span>: <span class="string">"David Liu"</span>,
   <span class="property">traits</span>: [
-    <span class="string">"溫暖細心"</span>, <span class="string">"善於溝通"</span>,
-    <span class="string">"技術優異"</span>, <span class="string">"可靠負責"</span>
+    <span class="string">"{{ $t('home.codePreview.warmCareful') }}"</span>, <span class="string">"{{ $t('home.codePreview.goodCommunication') }}"</span>,
+    <span class="string">"{{ $t('home.codePreview.techExcellent') }}"</span>, <span class="string">"{{ $t('home.codePreview.reliable') }}"</span>
   ],
   <span class="property">skills</span>: [
     <span class="string">"Vue.js"</span>, <span class="string">"Node.js"</span>,
     <span class="string">"Full Stack"</span>
   ],
-  <span class="property">mission</span>: <span class="string">"用程式傳遞溫暖"</span>
+  <span class="property">mission</span>: <span class="string">"{{ $t('home.codePreview.mission') }}"</span>
 };
 
 <span class="keyword">export default</span> developer;</code></pre>
@@ -73,12 +72,12 @@
     <section class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">我能提供的服務</span>
+          <span class="section-badge">{{ $t('home.servicesBadge') }}</span>
           <h2 class="section-title">
-            專業 <span class="highlight">解決方案</span>
+            {{ $t('home.servicesTitle') }} <span class="highlight">{{ $t('home.servicesTitleHighlight') }}</span>
           </h2>
           <p class="section-description">
-            從網站開發到系統整合，提供全方位的技術服務
+            {{ $t('home.servicesDescription') }}
           </p>
         </div>
 
@@ -100,12 +99,12 @@
     <section class="section" style="background: rgba(30, 41, 59, 0.3);">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">精選專案</span>
+          <span class="section-badge">{{ $t('home.featuredBadge') }}</span>
           <h2 class="section-title">
-            近期 <span class="highlight">作品</span>
+            {{ $t('home.featuredTitle') }} <span class="highlight">{{ $t('home.featuredTitleHighlight') }}</span>
           </h2>
           <p class="section-description">
-            這些是我近期為客戶完成的網站專案
+            {{ $t('home.featuredDescription') }}
           </p>
         </div>
 
@@ -116,7 +115,7 @@
                 <img :src="project.image" :alt="project.title">
                 <div class="portfolio-overlay">
                   <a :href="project.url" target="_blank" class="btn btn-primary-custom btn-sm">
-                    <i class="bi bi-box-arrow-up-right me-1"></i>查看網站
+                    <i class="bi bi-box-arrow-up-right me-1"></i>{{ $t('home.viewSite') }}
                   </a>
                 </div>
               </div>
@@ -125,7 +124,7 @@
                 <h3 class="portfolio-title">{{ project.title }}</h3>
                 <p class="portfolio-description">{{ project.description }}</p>
                 <a :href="project.url" target="_blank" class="portfolio-link">
-                  瀏覽網站 <i class="bi bi-arrow-right"></i>
+                  {{ $t('home.visitSite') }} <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>
@@ -134,7 +133,7 @@
 
         <div class="text-center mt-5">
           <router-link to="/portfolio" class="btn btn-outline-custom">
-            查看全部作品 <i class="bi bi-arrow-right ms-2"></i>
+            {{ $t('home.viewAll') }} <i class="bi bi-arrow-right ms-2"></i>
           </router-link>
         </div>
       </div>
@@ -144,13 +143,13 @@
     <section class="section cta-section">
       <div class="container">
         <div class="cta-content text-center">
-          <h2 class="cta-title">準備開始您的專案了嗎？</h2>
+          <h2 class="cta-title">{{ $t('home.ctaTitle') }}</h2>
           <p class="cta-description">
-            無論是全新的網站開發，還是現有系統的優化升級，<br>
-            我都能為您提供專業的解決方案。
+            {{ $t('home.ctaDescription') }}<br>
+            {{ $t('home.ctaDescription2') }}
           </p>
           <a href="https://line.me/ti/p/2w7bwfksdF" target="_blank" class="btn btn-primary-custom btn-lg">
-            <i class="bi bi-line me-2"></i>加 Line 討論專案
+            <i class="bi bi-line me-2"></i>{{ $t('home.ctaButton') }}
           </a>
         </div>
       </div>
@@ -159,66 +158,70 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
-const services = ref([
+const { t } = useI18n()
+
+const services = computed(() => [
   {
     id: 1,
     icon: 'bi bi-globe',
-    title: '網站開發',
-    description: '從企業形象網站到複雜的電商平台，打造符合您需求的網站解決方案。',
+    title: t('home.services.webDev'),
+    description: t('home.services.webDevDesc'),
     gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
   },
   {
     id: 2,
     icon: 'bi bi-code-square',
-    title: '前端開發',
-    description: '使用 Vue.js、React 等現代框架，打造流暢的使用者介面體驗。',
+    title: t('home.services.frontendDev'),
+    description: t('home.services.frontendDevDesc'),
     gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
   },
   {
     id: 3,
     icon: 'bi bi-server',
-    title: '後端開發',
-    description: '穩定可靠的後端架構，支援您的應用程式順暢運作。',
+    title: t('home.services.backendDev'),
+    description: t('home.services.backendDevDesc'),
     gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
   },
   {
     id: 4,
     icon: 'bi bi-gear-wide-connected',
-    title: '系統整合',
-    description: '整合第三方服務與 API，讓您的系統發揮最大效益。',
+    title: t('home.services.integration'),
+    description: t('home.services.integrationDesc'),
     gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)'
   }
 ])
 
-const featuredProjects = ref([
+const featuredProjects = computed(() => [
   {
     id: 1,
-    title: '艾樂資訊股份有限公司',
-    category: '企業網站',
-    description: '為資訊科技公司打造的專業形象網站，展現企業專業形象與服務項目。',
+    title: t('home.projects.actionLead'),
+    category: t('home.projects.corporate'),
+    description: t('home.projects.actionLeadDesc'),
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
     url: 'https://www.action-lead.com'
   },
   {
     id: 2,
-    title: '麟雲數據科技有限公司',
-    category: '企業網站',
-    description: '專注於數據技術的科技公司官網，呈現創新技術與解決方案。',
+    title: t('home.projects.linkwing'),
+    category: t('home.projects.corporate'),
+    description: t('home.projects.linkwingDesc'),
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
     url: 'https://www.linkwing.com/'
   },
   {
     id: 3,
-    title: '台灣軟陶有限公司',
-    category: '電商網站',
-    description: '軟陶藝術品牌的電子商務網站，結合產品展示與購物功能。',
+    title: t('home.projects.clay'),
+    category: t('home.projects.ecommerce'),
+    description: t('home.projects.clayDesc'),
     image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
     url: 'https://clay.com.tw/'
   }
 ])
 </script>
+
 
 <style scoped>
 /* Code Preview 樣式 */

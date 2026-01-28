@@ -18,14 +18,14 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto me-3">
           <li class="nav-item">
             <router-link
               class="nav-link"
               :class="{ active: $route.path === '/' }"
               to="/"
             >
-              首頁
+              {{ $t('nav.home') }}
             </router-link>
           </li>
           <li class="nav-item">
@@ -34,7 +34,7 @@
               :class="{ active: $route.path === '/about' }"
               to="/about"
             >
-              關於我
+              {{ $t('nav.about') }}
             </router-link>
           </li>
           <li class="nav-item">
@@ -43,7 +43,7 @@
               :class="{ active: $route.path === '/portfolio' }"
               to="/portfolio"
             >
-              作品集
+              {{ $t('nav.portfolio') }}
             </router-link>
           </li>
           <li class="nav-item">
@@ -52,7 +52,7 @@
               :class="{ active: $route.path === '/services' }"
               to="/services"
             >
-              服務項目
+              {{ $t('nav.services') }}
             </router-link>
           </li>
           <li class="nav-item">
@@ -61,10 +61,11 @@
               :class="{ active: $route.path === '/contact' }"
               to="/contact"
             >
-              聯繫我
+              {{ $t('nav.contact') }}
             </router-link>
           </li>
         </ul>
+        <LanguageSwitcher />
       </div>
     </div>
   </nav>
@@ -72,6 +73,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import LanguageSwitcher from './LanguageSwitcher.vue'
 
 const isScrolled = ref(false)
 
@@ -87,3 +89,4 @@ onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
 })
 </script>
+

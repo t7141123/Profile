@@ -5,12 +5,12 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 text-center">
-            <span class="section-badge">Contact</span>
+            <span class="section-badge">{{ $t('contact.badge') }}</span>
             <h1 class="page-title">
-              聯繫 <span class="highlight">我</span>
+              {{ $t('contact.title') }} <span class="highlight">{{ $t('contact.titleHighlight') }}</span>
             </h1>
             <p class="page-description">
-              有任何問題或專案需求？歡迎與我聯繫，讓我們一起創造精彩
+              {{ $t('contact.pageDescription') }}
             </p>
           </div>
         </div>
@@ -24,10 +24,9 @@
           <!-- 聯繫資訊 -->
           <div class="col-lg-5">
             <div class="contact-info">
-              <h2 class="contact-info-title">聯繫資訊</h2>
+              <h2 class="contact-info-title">{{ $t('contact.infoTitle') }}</h2>
               <p class="contact-info-description">
-                我很樂意聽取您的想法與需求。我的溝通風格溫和、理性，會耐心地與您討論每一個細節。
-                歡迎直接加我的 Line，讓我們像朋友一樣輕鬆聊聊您的專案。
+                {{ $t('contact.infoDescription') }}
               </p>
 
               <div class="contact-info-list">
@@ -36,9 +35,9 @@
                     <i class="bi bi-line"></i>
                   </div>
                   <div>
-                    <span class="contact-label">Line 官方帳號 (推薦)</span>
+                    <span class="contact-label">{{ $t('contact.lineLabel') }}</span>
                     <a href="https://line.me/ti/p/2w7bwfksdF" target="_blank" class="contact-value">
-                      點擊加入好友連結
+                      {{ $t('contact.lineValue') }}
                     </a>
                   </div>
                 </div>
@@ -48,9 +47,9 @@
                     <i class="bi bi-envelope-fill"></i>
                   </div>
                   <div>
-                    <span class="contact-label">Email</span>
-                    <a href="mailto:contact@davidliu.dev" class="contact-value">
-                      contact@davidliu.dev
+                    <span class="contact-label">{{ $t('contact.emailLabel') }}</span>
+                    <a href="mailto:t71411@gmail.com" class="contact-value">
+                      t71411@gmail.com
                     </a>
                   </div>
                 </div>
@@ -60,8 +59,8 @@
                     <i class="bi bi-clock-fill"></i>
                   </div>
                   <div>
-                    <span class="contact-label">工作時間</span>
-                    <span class="contact-value">週一至週五 9:00 - 18:00</span>
+                    <span class="contact-label">{{ $t('contact.workingHoursLabel') }}</span>
+                    <span class="contact-value">{{ $t('contact.workingHoursValue') }}</span>
                   </div>
                 </div>
 
@@ -70,15 +69,15 @@
                     <i class="bi bi-chat-heart-fill"></i>
                   </div>
                   <div>
-                    <span class="contact-label">溝通承諾</span>
-                    <span class="contact-value">耐心傾聽，24h 內溫暖回覆</span>
+                    <span class="contact-label">{{ $t('contact.promiseLabel') }}</span>
+                    <span class="contact-value">{{ $t('contact.promiseValue') }}</span>
                   </div>
                 </div>
               </div>
 
               <!-- 社群連結 -->
               <div class="social-section">
-                <h4 class="social-title">追蹤我</h4>
+                <h4 class="social-title">{{ $t('contact.followMe') }}</h4>
                 <div class="social-links">
                   <a href="https://github.com" target="_blank" class="social-link" aria-label="GitHub">
                     <i class="bi bi-github"></i>
@@ -97,76 +96,76 @@
           <!-- 聯繫表單 -->
           <div class="col-lg-7">
             <div class="glass-card contact-form-card">
-              <h2 class="form-title">發送訊息</h2>
+              <h2 class="form-title">{{ $t('contact.formTitle') }}</h2>
               <form @submit.prevent="submitForm">
                 <div class="row g-3">
                   <div class="col-md-6">
-                    <label for="name" class="form-label">姓名 *</label>
+                    <label for="name" class="form-label">{{ $t('contact.nameLabel') }} {{ $t('common.required') }}</label>
                     <input
                       type="text"
                       class="form-control"
                       id="name"
                       v-model="form.name"
-                      placeholder="您的姓名"
+                      :placeholder="$t('contact.namePlaceholder')"
                       required
                     >
                   </div>
 
                   <div class="col-md-6">
-                    <label for="email" class="form-label">Email *</label>
+                    <label for="email" class="form-label">{{ $t('contact.emailLabel') }} {{ $t('common.required') }}</label>
                     <input
                       type="email"
                       class="form-control"
                       id="email"
                       v-model="form.email"
-                      placeholder="your@email.com"
+                      :placeholder="$t('contact.emailPlaceholder')"
                       required
                     >
                   </div>
 
                   <div class="col-md-6">
-                    <label for="phone" class="form-label">電話</label>
+                    <label for="phone" class="form-label">{{ $t('contact.phoneLabel') }}</label>
                     <input
                       type="tel"
                       class="form-control"
                       id="phone"
                       v-model="form.phone"
-                      placeholder="您的聯繫電話"
+                      :placeholder="$t('contact.phonePlaceholder')"
                     >
                   </div>
 
                   <div class="col-md-6">
-                    <label for="service" class="form-label">服務類型</label>
+                    <label for="service" class="form-label">{{ $t('contact.serviceLabel') }}</label>
                     <select class="form-control form-select" id="service" v-model="form.service">
-                      <option value="">請選擇服務類型</option>
-                      <option value="website">網站開發</option>
-                      <option value="frontend">前端開發</option>
-                      <option value="backend">後端開發</option>
-                      <option value="integration">系統整合</option>
-                      <option value="maintenance">網站維護</option>
-                      <option value="other">其他</option>
+                      <option value="">{{ $t('contact.serviceDefault') }}</option>
+                      <option value="website">{{ $t('contact.serviceOptions.website') }}</option>
+                      <option value="frontend">{{ $t('contact.serviceOptions.frontend') }}</option>
+                      <option value="backend">{{ $t('contact.serviceOptions.backend') }}</option>
+                      <option value="integration">{{ $t('contact.serviceOptions.integration') }}</option>
+                      <option value="maintenance">{{ $t('contact.serviceOptions.maintenance') }}</option>
+                      <option value="other">{{ $t('contact.serviceOptions.other') }}</option>
                     </select>
                   </div>
 
                   <div class="col-12">
-                    <label for="budget" class="form-label">預算範圍</label>
+                    <label for="budget" class="form-label">{{ $t('contact.budgetLabel') }}</label>
                     <select class="form-control form-select" id="budget" v-model="form.budget">
-                      <option value="">請選擇預算範圍</option>
-                      <option value="30000">NT$ 30,000 以下</option>
-                      <option value="30000-80000">NT$ 30,000 - 80,000</option>
-                      <option value="80000-150000">NT$ 80,000 - 150,000</option>
-                      <option value="150000+">NT$ 150,000 以上</option>
+                      <option value="">{{ $t('contact.budgetDefault') }}</option>
+                      <option value="30000">{{ $t('contact.budgetOptions.under30k') }}</option>
+                      <option value="30000-80000">{{ $t('contact.budgetOptions.30k80k') }}</option>
+                      <option value="80000-150000">{{ $t('contact.budgetOptions.80k150k') }}</option>
+                      <option value="150000+">{{ $t('contact.budgetOptions.over150k') }}</option>
                     </select>
                   </div>
 
                   <div class="col-12">
-                    <label for="message" class="form-label">訊息內容 *</label>
+                    <label for="message" class="form-label">{{ $t('contact.messageLabel') }} {{ $t('common.required') }}</label>
                     <textarea
                       class="form-control"
                       id="message"
                       rows="5"
                       v-model="form.message"
-                      placeholder="請描述您的專案需求..."
+                      :placeholder="$t('contact.messagePlaceholder')"
                       required
                     ></textarea>
                   </div>
@@ -174,11 +173,11 @@
                   <div class="col-12">
                     <button type="submit" class="btn btn-primary-custom btn-lg w-100" :disabled="isSubmitting">
                       <span v-if="!isSubmitting">
-                        <i class="bi bi-send me-2"></i>發送訊息
+                        <i class="bi bi-send me-2"></i>{{ $t('contact.submitButton') }}
                       </span>
                       <span v-else>
                         <span class="spinner-border spinner-border-sm me-2" role="status"></span>
-                        發送中...
+                        {{ $t('contact.submitting') }}
                       </span>
                     </button>
                   </div>
@@ -188,7 +187,7 @@
               <!-- 成功訊息 -->
               <div v-if="showSuccess" class="alert alert-success mt-4">
                 <i class="bi bi-check-circle-fill me-2"></i>
-                感謝您的來信！我會盡快回覆您。
+                {{ $t('contact.successMessage') }}
               </div>
             </div>
           </div>
@@ -236,6 +235,7 @@ const submitForm = async () => {
   }, 5000)
 }
 </script>
+
 
 <style scoped>
 .page-header {

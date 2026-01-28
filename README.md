@@ -56,7 +56,7 @@
 讓我們像朋友一樣，在此刻開始一段美好的合作旅程。
 
 - **Line**: [點擊加入好友](https://line.me/ti/p/2w7bwfksdF)
-- **Email**: contact@davidliu.dev
+- **Email**: t71411@gmail.com
 - **Location**: Taiwan
 
 ---
