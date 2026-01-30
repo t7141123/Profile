@@ -202,10 +202,11 @@ const mainServices = computed(() => [
 ])
 
 const technologies = [
-  { name: 'Vue.js', icon: 'bi bi-filetype-vue' },
+  { name: 'Vue.js', icon: 'bi bi-layers' },
+  { name: 'C++', icon: 'bi bi-cpu' },
+  { name: 'C', icon: 'bi bi-c-circle' },
   { name: 'React', icon: 'bi bi-filetype-jsx' },
   { name: 'JavaScript', icon: 'bi bi-filetype-js' },
-  { name: 'TypeScript', icon: 'bi bi-filetype-tsx' },
   { name: 'Node.js', icon: 'bi bi-node-plus' },
   { name: 'PHP', icon: 'bi bi-filetype-php' },
   { name: 'Python', icon: 'bi bi-filetype-py' },
@@ -213,7 +214,7 @@ const technologies = [
   { name: 'MongoDB', icon: 'bi bi-server' },
   { name: 'Git', icon: 'bi bi-git' },
   { name: 'Docker', icon: 'bi bi-box' },
-  { name: 'AWS', icon: 'bi bi-cloud' }
+  { name: 'Zeabur', icon: 'bi bi-cloud' }
 ]
 
 const pricingPlans = computed(() => [
@@ -364,6 +365,8 @@ const faqs = computed(() => [
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .tech-logo-item {
@@ -371,6 +374,7 @@ const faqs = computed(() => [
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
+  width: 100px; 
 }
 
 .tech-logo {

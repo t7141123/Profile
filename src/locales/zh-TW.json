@@ -18,9 +18,8 @@
     "servicesTitleHighlight": "解決方案",
     "servicesDescription": "從網站開發到系統整合，提供全方位的技術服務",
     "featuredBadge": "精選專案",
-    "featuredTitle": "近期",
-    "featuredTitleHighlight": "作品",
-    "featuredDescription": "這些是我近期為客戶完成的網站專案",
+    "featuredTitle": "作品",
+    "featuredTitleHighlight": "集",
     "viewSite": "查看網站",
     "visitSite": "瀏覽網站",
     "viewAll": "查看全部作品",
@@ -53,6 +52,11 @@
       "goodCommunication": "善於溝通",
       "techExcellent": "技術優異",
       "reliable": "可靠負責",
+      "exp1": "網站設計",
+      "exp2": "前端",
+      "exp3": "後端",
+      "exp4": "軟體設計",
+      "exp5": "系統整合",
       "mission": "以技術創造價值"
     }
   },
@@ -76,8 +80,8 @@
     "communicationValue": "深度傾聽 / 邏輯清晰",
     "expertise": "專業領域",
     "expertiseValue": "全端開發 / 系統架構",
-    "status": "狀態",
-    "statusValue": "歡迎諮詢",
+    "support": "技術支援",
+    "supportValue": "快速回應",
     "addLine": "加 Line 與我聊聊",
     "stats": {
       "projects": "完成專案",
@@ -88,7 +92,6 @@
     "skillsBadge": "Skills",
     "skillsTitle": "專業",
     "skillsTitleHighlight": "技能",
-    "skillsDescription": "我所掌握的技術棧能夠應對各種開發需求",
     "skillCategories": {
       "frontend": "前端開發",
       "backend": "後端開發",
@@ -120,7 +123,7 @@
     "badge": "Portfolio",
     "title": "作品",
     "titleHighlight": "集",
-    "pageDescription": "這些是我為客戶完成的網站專案，每一個都代表著我對品質的承諾",
+    "pageDescription": "重視每一個客戶，每個專案代表我對品質的堅持。",
     "viewSite": "查看網站",
     "visitSite": "瀏覽網站",
     "projects": {
@@ -145,8 +148,8 @@
     "mainServices": {
       "webDev": "網站開發",
       "webDevSubtitle": "Web Development",
-      "webDevDesc": "從企業形象網站到複雜的電商平台，提供客製化的網站開發服務。注重使用者體驗、響應式設計和SEO優化。",
-      "webDevFeatures": ["企業形象網站設計與開發", "響應式網頁設計 (RWD)", "電子商務網站建置", "CMS 內容管理系統整合", "SEO 搜尋引擎優化"],
+      "webDevDesc": "從企業形象網站到複雜的電商平台，提供客製化的網站開發服務。注重使用者體驗和響應式設計。",
+      "webDevFeatures": ["企業形象網站設計與開發", "響應式網頁設計 (RWD)", "電子商務網站建置", "CMS 內容管理系統整合"],
       "frontendDev": "前端開發",
       "frontendDevSubtitle": "Frontend Development",
       "frontendDevDesc": "使用 Vue.js、React 等現代框架打造流暢的使用者介面，注重效能優化與使用者體驗。",
@@ -154,7 +157,7 @@
       "backendDev": "後端開發",
       "backendDevSubtitle": "Backend Development",
       "backendDevDesc": "建構穩定、安全、可擴展的後端系統，提供完整的 API 開發與資料庫設計服務。",
-      "backendDevFeatures": ["RESTful API 設計與開發", "資料庫設計與優化", "第三方服務整合", "系統效能調校", "資訊安全防護"],
+      "backendDevFeatures": ["RESTful API 設計與開發", "資料庫設計與優化", "第三方服務整合", "系統效能調校"],
       "integration": "系統整合",
       "integrationSubtitle": "System Integration",
       "integrationDesc": "協助企業整合各種系統與服務，打造高效率的工作流程與數據管理方案。",
@@ -177,7 +180,7 @@
       "proFeatures": ["客製化設計", "無限制頁面數量", "進階 SEO 優化", "CMS 內容管理系統", "6 個月免費維護", "效能優化"],
       "enterprise": "企業方案",
       "enterpriseDesc": "適合大型企業與複雜需求",
-      "enterpriseFeatures": ["完整客製化開發", "電商功能整合", "會員系統", "API 整合", "12 個月免費維護", "24/7 技術支援"],
+      "enterpriseFeatures": ["完整客製化開發", "電商功能整合", "會員系統", "API 整合", "12 個月免費維護"],
       "from": "起",
       "popular": "熱門方案",
       "contact": "聯繫諮詢"
@@ -205,6 +208,8 @@
     "infoDescription": "我重視專案的每一個環節與您的想法。透過清晰、理性的溝通，協助您釐清需求並找出最佳解決方案。歡迎直接加入我的 Line，讓我們開始討論您的專案。",
     "lineLabel": "Line 官方帳號 (推薦)",
     "lineValue": "點擊加入好友連結",
+    "telegramLabel": "Telegram",
+    "telegramValue": "@davidliu71411",
     "emailLabel": "Email",
     "workingHoursLabel": "工作時間",
     "workingHoursValue": "週一至週五 9:00 - 18:00",
@@ -253,7 +258,7 @@
       "integration": "系統整合"
     },
     "contact": "聯繫方式",
-    "copyright": "© {year} David Liu. 保留一切權利。"
+    "copyright": "© {year} David Liu. All rights reserved."
   },
   "common": {
     "required": "*"

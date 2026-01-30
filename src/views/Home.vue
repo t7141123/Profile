@@ -50,9 +50,10 @@
     <span class="string">"{{ $t('home.codePreview.warmCareful') }}"</span>, <span class="string">"{{ $t('home.codePreview.goodCommunication') }}"</span>,
     <span class="string">"{{ $t('home.codePreview.techExcellent') }}"</span>, <span class="string">"{{ $t('home.codePreview.reliable') }}"</span>
   ],
-  <span class="property">skills</span>: [
-    <span class="string">"Vue.js"</span>, <span class="string">"Node.js"</span>,
-    <span class="string">"Full Stack"</span>
+  <span class="property">experience</span>: [
+    <span class="string">"{{ $t('home.codePreview.exp1') }}"</span>, <span class="string">"{{ $t('home.codePreview.exp2') }}"</span>,
+    <span class="string">"{{ $t('home.codePreview.exp3') }}"</span>, <span class="string">"{{ $t('home.codePreview.exp4') }}"</span>,
+    <span class="string">"{{ $t('home.codePreview.exp5') }}"</span>
   ],
   <span class="property">mission</span>: <span class="string">"{{ $t('home.codePreview.mission') }}"</span>
 };
@@ -100,9 +101,6 @@
           <h2 class="section-title">
             {{ $t('home.featuredTitle') }}<span class="highlight">{{ $t('home.featuredTitleHighlight') }}</span>
           </h2>
-          <p class="section-description">
-            {{ $t('home.featuredDescription') }}
-          </p>
         </div>
 
         <div class="row g-4">
@@ -197,7 +195,7 @@ const featuredProjects = computed(() => [
     title: t('home.projects.actionLead'),
     category: t('home.projects.corporate'),
     description: t('home.projects.actionLeadDesc'),
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+    image: new URL('@/assets/images/action-lead.png', import.meta.url).href,
     url: 'https://www.action-lead.com'
   },
   {
@@ -205,7 +203,7 @@ const featuredProjects = computed(() => [
     title: t('home.projects.linkwing'),
     category: t('home.projects.corporate'),
     description: t('home.projects.linkwingDesc'),
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+    image: new URL('@/assets/images/linkwing.png', import.meta.url).href,
     url: 'https://www.linkwing.com/'
   },
   {
@@ -213,8 +211,8 @@ const featuredProjects = computed(() => [
     title: t('home.projects.clay'),
     category: t('home.projects.ecommerce'),
     description: t('home.projects.clayDesc'),
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
-    url: 'https://clay.com.tw/'
+    image: new URL('@/assets/images/clay.png', import.meta.url).href,
+    url: 'https://tw-clay.zeabur.app/'
   }
 ])
 </script>

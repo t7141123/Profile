@@ -83,7 +83,7 @@ const projects = computed(() => [
     title: t('portfolio.projects.actionLead'),
     category: t('portfolio.projects.corporate'),
     description: t('portfolio.projects.actionLeadDesc'),
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
+    image: new URL('@/assets/images/action-lead.png', import.meta.url).href,
     url: 'https://www.action-lead.com',
     technologies: ['Vue.js', 'Bootstrap', 'PHP', 'MySQL']
   },
@@ -92,17 +92,17 @@ const projects = computed(() => [
     title: t('portfolio.projects.linkwing'),
     category: t('portfolio.projects.corporate'),
     description: t('portfolio.projects.linkwingDesc'),
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+    image: new URL('@/assets/images/linkwing.png', import.meta.url).href,
     url: 'https://www.linkwing.com/',
-    technologies: ['Vue.js', 'Vite', 'Bootstrap', 'Node.js']
+    technologies: ['Vue.js', 'Vite', 'Bootstrap', 'Node.js', 'PHP']
   },
   {
     id: 3,
     title: t('portfolio.projects.clay'),
     category: t('portfolio.projects.ecommerce'),
     description: t('portfolio.projects.clayDesc'),
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
-    url: 'https://clay.com.tw/',
+    image: new URL('@/assets/images/clay.png', import.meta.url).href,
+    url: 'https://tw-clay.zeabur.app/',
     technologies: ['Vue.js', 'Bootstrap', 'PHP', 'MySQL']
   }
 ])

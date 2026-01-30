@@ -18,9 +18,8 @@
     "servicesTitleHighlight": "解决方案",
     "servicesDescription": "从网站开发到系统整合，提供全方位的技术服务",
     "featuredBadge": "精选项目",
-    "featuredTitle": "近期",
-    "featuredTitleHighlight": "作品",
-    "featuredDescription": "这些是我近期为客户完成的网站项目",
+    "featuredTitle": "作品",
+    "featuredTitleHighlight": "集",
     "viewSite": "查看网站",
     "visitSite": "浏览网站",
     "viewAll": "查看全部作品",
@@ -53,6 +52,11 @@
       "goodCommunication": "善于沟通",
       "techExcellent": "技术优异",
       "reliable": "可靠负责",
+      "exp1": "网站设计",
+      "exp2": "前端",
+      "exp3": "后端",
+      "exp4": "软件设计",
+      "exp5": "系统整合",
       "mission": "以技术创造价值"
     }
   },
@@ -88,7 +92,6 @@
     "skillsBadge": "Skills",
     "skillsTitle": "专业",
     "skillsTitleHighlight": "技能",
-    "skillsDescription": "我所掌握的技术栈能够应对各种开发需求",
     "skillCategories": {
       "frontend": "前端开发",
       "backend": "后端开发",
@@ -120,7 +123,7 @@
     "badge": "Portfolio",
     "title": "作品",
     "titleHighlight": "集",
-    "pageDescription": "这些是我为客户完成的网站项目，每一个都代表着我对品质的承诺",
+    "pageDescription": "重视每一个客户，每个项目代表我对品质的坚持。",
     "viewSite": "查看网站",
     "visitSite": "浏览网站",
     "projects": {
@@ -145,8 +148,8 @@
     "mainServices": {
       "webDev": "网站开发",
       "webDevSubtitle": "Web Development",
-      "webDevDesc": "从企业形象网站到复杂的电商平台，提供客制化的网站开发服务。注重用户体验、响应式设计和SEO优化。",
-      "webDevFeatures": ["企业形象网站设计与开发", "响应式网页设计 (RWD)", "电子商务网站建置", "CMS 内容管理系统整合", "SEO 搜索引擎优化"],
+      "webDevDesc": "从企业形象网站到复杂的电商平台，提供客制化的网站开发服务。注重用户体验和响应式设计。",
+      "webDevFeatures": ["企业形象网站设计与开发", "响应式网页设计 (RWD)", "电子商务网站建置", "CMS 内容管理系统整合"],
       "frontendDev": "前端开发",
       "frontendDevSubtitle": "Frontend Development",
       "frontendDevDesc": "使用 Vue.js、React 等现代框架打造流畅的用户界面，注重效能优化与用户体验。",
@@ -154,7 +157,7 @@
       "backendDev": "后端开发",
       "backendDevSubtitle": "Backend Development",
       "backendDevDesc": "建构稳定、安全、可扩展的后端系统，提供完整的 API 开发与数据库设计服务。",
-      "backendDevFeatures": ["RESTful API 设计与开发", "数据库设计与优化", "第三方服务整合", "系统效能调校", "资讯安全防护"],
+      "backendDevFeatures": ["RESTful API 设计与开发", "数据库设计与优化", "第三方服务整合", "系统效能调校"],
       "integration": "系统整合",
       "integrationSubtitle": "System Integration",
       "integrationDesc": "协助企业整合各种系统与服务，打造高效率的工作流程与数据管理方案。",
@@ -177,7 +180,7 @@
       "proFeatures": ["客制化设计", "无限制页面数量", "进阶 SEO 优化", "CMS 内容管理系统", "6 个月免费维护", "效能优化"],
       "enterprise": "企业方案",
       "enterpriseDesc": "适合大型企业与复杂需求",
-      "enterpriseFeatures": ["完整客制化开发", "电商功能整合", "会员系统", "API 整合", "12 个月免费维护", "24/7 技术支援"],
+      "enterpriseFeatures": ["完整客制化开发", "电商功能整合", "会员系统", "API 整合", "12 个月免费维护"],
       "from": "起",
       "popular": "热门方案",
       "contact": "联系咨询"
@@ -205,6 +208,8 @@
     "infoDescription": "我重视项目的每一个环节与您的想法。透过清晰、理性的沟通，协助您厘清需求并找出最佳解决方案。欢迎直接加入我的 Line，让我们开始讨论您的项目。",
     "lineLabel": "Line 官方帐号 (推荐)",
     "lineValue": "点击加入好友链接",
+    "telegramLabel": "Telegram",
+    "telegramValue": "@davidliu71411",
     "emailLabel": "Email",
     "workingHoursLabel": "工作时间",
     "workingHoursValue": "周一至周五 9:00 - 18:00",
@@ -253,7 +258,7 @@
       "integration": "系统整合"
     },
     "contact": "联系方式",
-    "copyright": "© {year} David Liu. 保留一切权利。"
+    "copyright": "© {year} David Liu. All rights reserved."
   },
   "common": {
     "required": "*"
