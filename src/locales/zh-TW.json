@@ -273,5 +273,9 @@
     "title": "David Liu Studio | 專業軟體工程師 - 網站開發與系統整合",
     "description": "David Liu Studio 提供專業的網站開發、前端開發、後端開發與系統整合服務。致力於為客戶打造高品質的數位解決方案。",
     "keywords": "軟體工程師, 網站開發, Vue.js, React, 前端開發, 後端開發, 系統整合, 接案工程師, David Liu"
+  },
+  "notFound": {
+    "title": "頁面未找到",
+    "message": "您正在尋找的頁面可能已被移除、更名或暫時無法使用。"
   }
 }
