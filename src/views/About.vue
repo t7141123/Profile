@@ -196,7 +196,7 @@ const { t } = useI18n();
 
 const stats = computed(() => [
   { id: 1, number: "10+", label: t("about.stats.projects") },
-  { id: 2, number: "5+", label: t("about.stats.years") },
+  { id: 2, number: "7+", label: t("about.stats.years") },
   { id: 3, number: "100%", label: t("about.stats.satisfaction") },
 ]);
 
@@ -209,7 +209,6 @@ const skillCategories = computed(() => [
       "Vue.js",
       "React",
       "JavaScript",
-      "TypeScript",
       "HTML5",
       "CSS3",
       "Bootstrap",
@@ -220,15 +219,7 @@ const skillCategories = computed(() => [
     name: t("about.skillCategories.backend"),
     icon: "bi bi-server",
     gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-    skills: [
-      "Node.js",
-      "PHP",
-      "Python",
-      "Express.js",
-      "Laravel",
-      "REST API",
-      "GraphQL",
-    ],
+    skills: ["Node.js", "PHP", "Python", "Express.js", "REST API"],
   },
   {
     name: t("about.skillCategories.database"),
@@ -246,7 +237,7 @@ const skillCategories = computed(() => [
     name: t("about.skillCategories.cloud"),
     icon: "bi bi-cloud",
     gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
-    skills: ["AWS", "GCP", "Vercel", "Netlify", "DigitalOcean"],
+    skills: ["Zeabur", "GCP", "Vercel", "Netlify", "DigitalOcean"],
   },
   {
     name: t("about.skillCategories.other"),

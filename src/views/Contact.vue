@@ -61,14 +61,22 @@
 
                 <!-- Telegram Card -->
                 <div class="col-md-6">
-                  <div class="glass-card contact-card h-100 d-flex align-items-center p-4">
+                  <div
+                    class="glass-card contact-card h-100 d-flex align-items-center p-4"
+                  >
                     <div class="contact-icon-wrapper me-4">
                       <i class="bi bi-telegram fs-2 text-info"></i>
                     </div>
                     <div class="text-start">
-                      <div class="contact-label mb-1 text-light">{{ $t('contact.telegramLabel') }}</div>
-                      <a href="https://t.me/davidliu71411" target="_blank" class="contact-value fs-5 fw-bold text-white text-decoration-none hover-highlight">
-                        {{ $t('contact.telegramValue') }}
+                      <div class="contact-label mb-1 text-light">
+                        {{ $t("contact.telegramLabel") }}
+                      </div>
+                      <a
+                        href="https://t.me/davidliu71411"
+                        target="_blank"
+                        class="contact-value fs-5 fw-bold text-white text-decoration-none hover-highlight"
+                      >
+                        {{ $t("contact.telegramValue") }}
                       </a>
                     </div>
                   </div>
@@ -97,23 +105,6 @@
                 </div>
 
                 <!-- Working Hours Card -->
-                <div class="col-md-6">
-                  <div
-                    class="glass-card contact-card h-100 d-flex align-items-center p-4"
-                  >
-                    <div class="contact-icon-wrapper me-4">
-                      <i class="bi bi-clock-fill fs-2 text-info"></i>
-                    </div>
-                    <div class="text-start">
-                      <div class="contact-label mb-1 text-light">
-                        {{ $t("contact.workingHoursLabel") }}
-                      </div>
-                      <div class="contact-value fs-5 fw-bold text-white">
-                        {{ $t("contact.workingHoursValue") }}
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
                 <!-- Promise Card -->
                 <div class="col-md-6">

@@ -12,24 +12,27 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="hero-content">
-
-
               <h1 class="hero-title">
-                {{ $t('home.title') }}<br>
+                {{ $t("home.title") }}<br />
                 <span class="highlight">David Liu</span>
               </h1>
 
               <p class="hero-subtitle">
-                {{ $t('home.subtitle') }}<br>
-                {{ $t('home.subtitle2') }}
+                {{ $t("home.subtitle") }}<br />
+                {{ $t("home.subtitle2") }}
               </p>
 
               <div class="hero-buttons">
                 <router-link to="/portfolio" class="btn btn-primary-custom">
-                  <i class="bi bi-collection me-2"></i>{{ $t('home.viewWorks') }}
+                  <i class="bi bi-collection me-2"></i
+                  >{{ $t("home.viewWorks") }}
                 </router-link>
-                <a href="https://line.me/ti/p/2w7bwfksdF" target="_blank" class="btn btn-outline-custom">
-                  <i class="bi bi-line me-2"></i>{{ $t('home.addLine') }}
+                <a
+                  href="https://line.me/ti/p/2w7bwfksdF"
+                  target="_blank"
+                  class="btn btn-outline-custom"
+                >
+                  <i class="bi bi-line me-2"></i>{{ $t("home.addLine") }}
                 </a>
               </div>
             </div>
@@ -44,7 +47,9 @@
                   <span class="dot green"></span>
                   <span class="filename">david_profile.js</span>
                 </div>
-                <pre class="code-content"><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+                <pre
+                  class="code-content"
+                ><code><span class="keyword">const</span> <span class="variable">developer</span> = {
   <span class="property">name</span>: <span class="string">"David Liu"</span>,
   <span class="property">traits</span>: [
     <span class="string">"{{ $t('home.codePreview.warmCareful') }}"</span>, <span class="string">"{{ $t('home.codePreview.goodCommunication') }}"</span>,
@@ -70,19 +75,29 @@
     <section class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">{{ $t('home.servicesBadge') }}</span>
+          <span class="section-badge">{{ $t("home.servicesBadge") }}</span>
           <h2 class="section-title">
-            {{ $t('home.servicesTitle') }}<span class="highlight">{{ $t('home.servicesTitleHighlight') }}</span>
+            {{ $t("home.servicesTitle")
+            }}<span class="highlight">{{
+              $t("home.servicesTitleHighlight")
+            }}</span>
           </h2>
           <p class="section-description">
-            {{ $t('home.servicesDescription') }}
+            {{ $t("home.servicesDescription") }}
           </p>
         </div>
 
         <div class="row g-4">
-          <div class="col-md-6 col-lg-3" v-for="service in services" :key="service.id">
+          <div
+            class="col-md-6 col-lg-3"
+            v-for="service in services"
+            :key="service.id"
+          >
             <div class="glass-card service-card h-100">
-              <div class="service-icon" :style="{ background: service.gradient }">
+              <div
+                class="service-icon"
+                :style="{ background: service.gradient }"
+              >
                 <i :class="service.icon"></i>
               </div>
               <h3 class="service-title">{{ service.title }}</h3>
@@ -94,23 +109,35 @@
     </section>
 
     <!-- Featured Projects Section -->
-    <section class="section" style="background: rgba(30, 41, 59, 0.3);">
+    <section class="section" style="background: rgba(30, 41, 59, 0.3)">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">{{ $t('home.featuredBadge') }}</span>
+          <span class="section-badge">{{ $t("home.featuredBadge") }}</span>
           <h2 class="section-title">
-            {{ $t('home.featuredTitle') }}<span class="highlight">{{ $t('home.featuredTitleHighlight') }}</span>
+            {{ $t("home.featuredTitle")
+            }}<span class="highlight">{{
+              $t("home.featuredTitleHighlight")
+            }}</span>
           </h2>
         </div>
 
         <div class="row g-4">
-          <div class="col-md-6 col-lg-4" v-for="project in featuredProjects" :key="project.id">
+          <div
+            class="col-md-6 col-lg-4"
+            v-for="project in featuredProjects"
+            :key="project.id"
+          >
             <div class="portfolio-card h-100">
               <div class="portfolio-image">
-                <img :src="project.image" :alt="project.title">
+                <img :src="project.image" :alt="project.title" />
                 <div class="portfolio-overlay">
-                  <a :href="project.url" target="_blank" class="btn btn-primary-custom btn-sm">
-                    <i class="bi bi-box-arrow-up-right me-1"></i>{{ $t('home.viewSite') }}
+                  <a
+                    :href="project.url"
+                    target="_blank"
+                    class="btn btn-primary-custom btn-sm"
+                  >
+                    <i class="bi bi-box-arrow-up-right me-1"></i
+                    >{{ $t("home.viewSite") }}
                   </a>
                 </div>
               </div>
@@ -119,7 +146,7 @@
                 <h3 class="portfolio-title">{{ project.title }}</h3>
                 <p class="portfolio-description">{{ project.description }}</p>
                 <a :href="project.url" target="_blank" class="portfolio-link">
-                  {{ $t('home.visitSite') }} <i class="bi bi-arrow-right"></i>
+                  {{ $t("home.visitSite") }} <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>
@@ -128,7 +155,7 @@
 
         <div class="text-center mt-5">
           <router-link to="/portfolio" class="btn btn-outline-custom">
-            {{ $t('home.viewAll') }} <i class="bi bi-arrow-right ms-2"></i>
+            {{ $t("home.viewAll") }} <i class="bi bi-arrow-right ms-2"></i>
           </router-link>
         </div>
       </div>
@@ -138,13 +165,17 @@
     <section class="section cta-section">
       <div class="container">
         <div class="cta-content text-center">
-          <h2 class="cta-title">{{ $t('home.ctaTitle') }}</h2>
+          <h2 class="cta-title">{{ $t("home.ctaTitle") }}</h2>
           <p class="cta-description">
-            {{ $t('home.ctaDescription') }}<br>
-            {{ $t('home.ctaDescription2') }}
+            {{ $t("home.ctaDescription") }}<br />
+            {{ $t("home.ctaDescription2") }}
           </p>
-          <a href="https://line.me/ti/p/2w7bwfksdF" target="_blank" class="btn btn-primary-custom btn-lg">
-            <i class="bi bi-line me-2"></i>{{ $t('home.ctaButton') }}
+          <a
+            href="https://line.me/ti/p/2w7bwfksdF"
+            target="_blank"
+            class="btn btn-primary-custom btn-lg"
+          >
+            <i class="bi bi-line me-2"></i>{{ $t("home.ctaButton") }}
           </a>
         </div>
       </div>
@@ -153,70 +184,77 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import { useI18n } from 'vue-i18n'
+import { computed } from "vue";
+import { useI18n } from "vue-i18n";
 
-const { t } = useI18n()
+const { t } = useI18n();
 
 const services = computed(() => [
   {
     id: 1,
-    icon: 'bi bi-globe',
-    title: t('home.services.webDev'),
-    description: t('home.services.webDevDesc'),
-    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+    icon: "bi bi-globe",
+    title: t("home.services.webDev"),
+    description: t("home.services.webDevDesc"),
+    gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
   },
   {
     id: 2,
-    icon: 'bi bi-code-square',
-    title: t('home.services.frontendDev'),
-    description: t('home.services.frontendDevDesc'),
-    gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
+    icon: "bi bi-code-square",
+    title: t("home.services.frontendDev"),
+    description: t("home.services.frontendDevDesc"),
+    gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
   },
   {
     id: 3,
-    icon: 'bi bi-server',
-    title: t('home.services.backendDev'),
-    description: t('home.services.backendDevDesc'),
-    gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
+    icon: "bi bi-server",
+    title: t("home.services.backendDev"),
+    description: t("home.services.backendDevDesc"),
+    gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
   },
   {
     id: 4,
-    icon: 'bi bi-gear-wide-connected',
-    title: t('home.services.integration'),
-    description: t('home.services.integrationDesc'),
-    gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)'
-  }
-])
+    icon: "bi bi-gear-wide-connected",
+    title: t("home.services.integration"),
+    description: t("home.services.integrationDesc"),
+    gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+  },
+]);
 
 const featuredProjects = computed(() => [
   {
     id: 1,
-    title: t('home.projects.actionLead'),
-    category: t('home.projects.corporate'),
-    description: t('home.projects.actionLeadDesc'),
-    image: new URL('@/assets/images/action-lead.png', import.meta.url).href,
-    url: 'https://www.action-lead.com'
+    title: t("home.projects.actionLead"),
+    category: t("home.projects.corporate"),
+    description: t("home.projects.actionLeadDesc"),
+    image: new URL("@/assets/images/action-lead.png", import.meta.url).href,
+    url: "https://www.action-lead.com",
   },
   {
     id: 2,
-    title: t('home.projects.linkwing'),
-    category: t('home.projects.corporate'),
-    description: t('home.projects.linkwingDesc'),
-    image: new URL('@/assets/images/linkwing.png', import.meta.url).href,
-    url: 'https://www.linkwing.com/'
+    title: t("home.projects.linkwing"),
+    category: t("home.projects.corporate"),
+    description: t("home.projects.linkwingDesc"),
+    image: new URL("@/assets/images/linkwing.png", import.meta.url).href,
+    url: "https://www.linkwing.com/",
   },
   {
     id: 3,
-    title: t('home.projects.clay'),
-    category: t('home.projects.ecommerce'),
-    description: t('home.projects.clayDesc'),
-    image: new URL('@/assets/images/clay.png', import.meta.url).href,
-    url: 'https://tw-clay.zeabur.app/'
-  }
-])
+    title: t("home.projects.clay"),
+    category: t("home.projects.ecommerce"),
+    description: t("home.projects.clayDesc"),
+    image: new URL("@/assets/images/clay.png", import.meta.url).href,
+    url: "https://tw-clay.zeabur.app/",
+  },
+  {
+    id: 4,
+    title: t("home.projects.nhm"),
+    category: t("home.projects.npo"),
+    description: t("home.projects.nhmDesc"),
+    image: new URL("@/assets/images/nothing-hidden.png", import.meta.url).href,
+    url: "https://www.nothinghidden.com.tw/",
+  },
+]);
 </script>
-
 
 <style scoped>
 /* Code Preview 樣式 */
@@ -246,9 +284,15 @@ const featuredProjects = computed(() => [
   border-radius: 50%;
 }
 
-.dot.red { background: #ff5f57; }
-.dot.yellow { background: #febc2e; }
-.dot.green { background: #28c840; }
+.dot.red {
+  background: #ff5f57;
+}
+.dot.yellow {
+  background: #febc2e;
+}
+.dot.green {
+  background: #28c840;
+}
 
 .filename {
   margin-left: auto;
@@ -259,7 +303,7 @@ const featuredProjects = computed(() => [
 .code-content {
   padding: 24px;
   margin: 0;
-  font-family: 'Fira Code', 'Monaco', monospace;
+  font-family: "Fira Code", "Monaco", monospace;
   font-size: 0.875rem;
   line-height: 1.8;
   overflow-x: auto;
@@ -269,10 +313,18 @@ const featuredProjects = computed(() => [
   color: var(--text-secondary);
 }
 
-.keyword { color: #c678dd; }
-.variable { color: #e06c75; }
-.property { color: #e5c07b; }
-.string { color: #98c379; }
+.keyword {
+  color: #c678dd;
+}
+.variable {
+  color: #e06c75;
+}
+.property {
+  color: #e5c07b;
+}
+.string {
+  color: #98c379;
+}
 
 /* CTA 區塊 */
 .cta-section {
@@ -282,15 +334,23 @@ const featuredProjects = computed(() => [
 }
 
 .cta-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background:
-    radial-gradient(circle at 10% 50%, rgba(99, 102, 241, 0.2) 0%, transparent 50%),
-    radial-gradient(circle at 90% 50%, rgba(139, 92, 246, 0.2) 0%, transparent 50%);
+    radial-gradient(
+      circle at 10% 50%,
+      rgba(99, 102, 241, 0.2) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 90% 50%,
+      rgba(139, 92, 246, 0.2) 0%,
+      transparent 50%
+    );
   pointer-events: none;
 }
 

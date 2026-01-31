@@ -5,12 +5,15 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 text-center">
-            <span class="section-badge">{{ $t('portfolio.badge') }}</span>
+            <span class="section-badge">{{ $t("portfolio.badge") }}</span>
             <h1 class="page-title">
-              {{ $t('portfolio.title') }}<span class="highlight">{{ $t('portfolio.titleHighlight') }}</span>
+              {{ $t("portfolio.title")
+              }}<span class="highlight">{{
+                $t("portfolio.titleHighlight")
+              }}</span>
             </h1>
             <p class="page-description">
-              {{ $t('portfolio.pageDescription') }}
+              {{ $t("portfolio.pageDescription") }}
             </p>
           </div>
         </div>
@@ -21,13 +24,22 @@
     <section class="section">
       <div class="container">
         <div class="row g-4">
-          <div class="col-md-6 col-lg-4" v-for="project in projects" :key="project.id">
+          <div
+            class="col-md-6 col-lg-4"
+            v-for="project in projects"
+            :key="project.id"
+          >
             <div class="portfolio-card h-100">
               <div class="portfolio-image">
-                <img :src="project.image" :alt="project.title">
+                <img :src="project.image" :alt="project.title" />
                 <div class="portfolio-overlay">
-                  <a :href="project.url" target="_blank" class="btn btn-primary-custom btn-sm">
-                    <i class="bi bi-box-arrow-up-right me-1"></i>{{ $t('portfolio.viewSite') }}
+                  <a
+                    :href="project.url"
+                    target="_blank"
+                    class="btn btn-primary-custom btn-sm"
+                  >
+                    <i class="bi bi-box-arrow-up-right me-1"></i
+                    >{{ $t("portfolio.viewSite") }}
                   </a>
                 </div>
               </div>
@@ -37,14 +49,19 @@
                 <p class="portfolio-description">{{ project.description }}</p>
 
                 <div class="portfolio-tech">
-                  <span class="tech-tag" v-for="tech in project.technologies" :key="tech">
+                  <span
+                    class="tech-tag"
+                    v-for="tech in project.technologies"
+                    :key="tech"
+                  >
                     {{ tech }}
                   </span>
                 </div>
 
                 <div class="portfolio-footer">
                   <a :href="project.url" target="_blank" class="portfolio-link">
-                    {{ $t('portfolio.visitSite') }} <i class="bi bi-arrow-right"></i>
+                    {{ $t("portfolio.visitSite") }}
+                    <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
               </div>
@@ -58,12 +75,12 @@
     <section class="section cta-section">
       <div class="container">
         <div class="cta-content text-center">
-          <h2 class="cta-title">{{ $t('portfolio.ctaTitle') }}</h2>
+          <h2 class="cta-title">{{ $t("portfolio.ctaTitle") }}</h2>
           <p class="cta-description">
-            {{ $t('portfolio.ctaDescription') }}
+            {{ $t("portfolio.ctaDescription") }}
           </p>
           <router-link to="/contact" class="btn btn-primary-custom btn-lg">
-            <i class="bi bi-send me-2"></i>{{ $t('portfolio.ctaButton') }}
+            <i class="bi bi-send me-2"></i>{{ $t("portfolio.ctaButton") }}
           </router-link>
         </div>
       </div>
@@ -72,42 +89,50 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import { useI18n } from 'vue-i18n'
+import { computed } from "vue";
+import { useI18n } from "vue-i18n";
 
-const { t } = useI18n()
+const { t } = useI18n();
 
 const projects = computed(() => [
   {
     id: 1,
-    title: t('portfolio.projects.actionLead'),
-    category: t('portfolio.projects.corporate'),
-    description: t('portfolio.projects.actionLeadDesc'),
-    image: new URL('@/assets/images/action-lead.png', import.meta.url).href,
-    url: 'https://www.action-lead.com',
-    technologies: ['Vue.js', 'Bootstrap', 'PHP', 'MySQL']
+    title: t("portfolio.projects.actionLead"),
+    category: t("portfolio.projects.corporate"),
+    description: t("portfolio.projects.actionLeadDesc"),
+    image: new URL("@/assets/images/action-lead.png", import.meta.url).href,
+    url: "https://www.action-lead.com",
+    technologies: ["Vue.js", "Bootstrap", "PHP", "MySQL"],
   },
   {
     id: 2,
-    title: t('portfolio.projects.linkwing'),
-    category: t('portfolio.projects.corporate'),
-    description: t('portfolio.projects.linkwingDesc'),
-    image: new URL('@/assets/images/linkwing.png', import.meta.url).href,
-    url: 'https://www.linkwing.com/',
-    technologies: ['Vue.js', 'Vite', 'Bootstrap', 'Node.js', 'PHP']
+    title: t("portfolio.projects.linkwing"),
+    category: t("portfolio.projects.corporate"),
+    description: t("portfolio.projects.linkwingDesc"),
+    image: new URL("@/assets/images/linkwing.png", import.meta.url).href,
+    url: "https://www.linkwing.com/",
+    technologies: ["Vue.js", "Vite", "Bootstrap", "Node.js", "PHP"],
   },
   {
     id: 3,
-    title: t('portfolio.projects.clay'),
-    category: t('portfolio.projects.ecommerce'),
-    description: t('portfolio.projects.clayDesc'),
-    image: new URL('@/assets/images/clay.png', import.meta.url).href,
-    url: 'https://tw-clay.zeabur.app/',
-    technologies: ['Vue.js', 'Bootstrap', 'PHP', 'MySQL']
-  }
-])
+    title: t("portfolio.projects.clay"),
+    category: t("portfolio.projects.ecommerce"),
+    description: t("portfolio.projects.clayDesc"),
+    image: new URL("@/assets/images/clay.png", import.meta.url).href,
+    url: "https://tw-clay.zeabur.app/",
+    technologies: ["Vue.js", "Bootstrap", "PHP", "MySQL"],
+  },
+  {
+    id: 4,
+    title: t("portfolio.projects.nhm"),
+    category: t("portfolio.projects.npo"),
+    description: t("portfolio.projects.nhmDesc"),
+    image: new URL("@/assets/images/nothing-hidden.png", import.meta.url).href,
+    url: "https://www.nothinghidden.com.tw/",
+    technologies: ["WordPress", "PHP", "MySQL", "RWD"],
+  },
+]);
 </script>
-
 
 <style scoped>
 .page-header {
@@ -117,15 +142,23 @@ const projects = computed(() => [
 }
 
 .page-header::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background:
-    radial-gradient(circle at 30% 70%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 70% 30%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+    radial-gradient(
+      circle at 30% 70%,
+      rgba(99, 102, 241, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 70% 30%,
+      rgba(139, 92, 246, 0.1) 0%,
+      transparent 50%
+    );
   pointer-events: none;
 }
 
