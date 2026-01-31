@@ -273,5 +273,9 @@
     "title": "David Liu Studio | Professional Software Engineer - Web Development & System Integration",
     "description": "David Liu Studio provides professional web development, frontend, backend, and system integration services. Dedicated to creating high-quality digital solutions for clients.",
     "keywords": "Software Engineer, Web Development, Vue.js, React, Frontend Development, Backend Development, System Integration, Freelance Engineer, David Liu"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."
   }
 }
