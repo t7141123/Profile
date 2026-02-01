@@ -51,7 +51,7 @@
                       <a
                         href="https://line.me/ti/p/2w7bwfksdF"
                         target="_blank"
-                        class="contact-value fs-5 fw-bold text-white text-decoration-none hover-highlight"
+                        class="contact-value fs-6 fw-bold text-white text-decoration-none hover-highlight"
                       >
                         {{ $t("contact.lineValue") }}
                       </a>
@@ -74,7 +74,7 @@
                       <a
                         href="https://t.me/davidliu71411"
                         target="_blank"
-                        class="contact-value fs-5 fw-bold text-white text-decoration-none hover-highlight"
+                        class="contact-value fs-6 fw-bold text-white text-decoration-none hover-highlight"
                       >
                         {{ $t("contact.telegramValue") }}
                       </a>
@@ -96,7 +96,7 @@
                       </div>
                       <a
                         href="mailto:david.liu@action-lead.com"
-                        class="contact-value fs-5 fw-bold text-white text-decoration-none hover-highlight"
+                        class="contact-value fs-6 fw-bold text-white text-decoration-none hover-highlight"
                       >
                         david.liu@action-lead.com
                       </a>
@@ -118,7 +118,7 @@
                       <div class="contact-label mb-1 text-light">
                         {{ $t("contact.promiseLabel") }}
                       </div>
-                      <div class="contact-value fs-5 fw-bold text-white">
+                      <div class="contact-value fs-6 fw-bold text-white">
                         {{ $t("contact.promiseValue") }}
                       </div>
                     </div>

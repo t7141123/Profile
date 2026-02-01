@@ -200,7 +200,7 @@
       "q2": "How are payments arranged?",
       "a2": "We typically use installment payments: 30% deposit upon signing, 40% at mid-development, and 30% upon project completion. Payment terms can be flexibly adjusted based on project needs.",
       "q3": "Do you provide maintenance after completion?",
-      "a3": "Yes, all projects include a free maintenance period. After the maintenance period ends, you can choose to renew maintenance services to ensure your website remains stable and receives technical support.",
+      "a3": "Yes, all projects include a free maintenance period, which includes free fixes for any software bugs found during this time. After the maintenance period ends, you can choose to renew maintenance services to ensure your website remains stable and receives technical support.",
       "q4": "Can I see the design before deciding?",
       "a4": "Before formal development, I will provide website architecture planning and design drafts for your confirmation. Development only begins after the design direction meets your expectations, giving you peace of mind."
     }
@@ -215,7 +215,7 @@
     "lineLabel": "Line Official Account (Recommended)",
     "lineValue": "Click to add friend",
     "telegramLabel": "Telegram",
-    "telegramValue": "@davidliu71411",
+    "telegramValue": "{'@'}davidliu71411",
     "emailLabel": "Email",
     "workingHoursLabel": "Working Hours",
     "workingHoursValue": "Mon-Fri 9:00 - 18:00",
