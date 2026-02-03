@@ -5,16 +5,12 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 text-center">
-            <span class="section-badge">{{ $t("portfolio.badge") }}</span>
-            <h1 class="page-title">
-              {{ $t("portfolio.title")
-              }}<span class="highlight">{{
-                $t("portfolio.titleHighlight")
-              }}</span>
-            </h1>
-            <p class="page-description">
-              {{ $t("portfolio.pageDescription") }}
-            </p>
+            <SectionHeader
+              :badge="$t('portfolio.badge')"
+              :title="$t('portfolio.title')"
+              :highlight="$t('portfolio.titleHighlight')"
+              :description="$t('portfolio.pageDescription')"
+            />
           </div>
         </div>
       </div>
@@ -90,48 +86,12 @@
 
 <script setup>
 import { computed } from "vue";
-import { useI18n } from "vue-i18n";
+import SectionHeader from "@/components/common/SectionHeader.vue";
+import { useProjects } from "@/composables/useProjects";
 
-const { t } = useI18n();
+const { getAllProjects } = useProjects();
 
-const projects = computed(() => [
-  {
-    id: 1,
-    title: t("portfolio.projects.actionLead"),
-    category: t("portfolio.projects.corporate"),
-    description: t("portfolio.projects.actionLeadDesc"),
-    image: new URL("@/assets/images/action-lead.png", import.meta.url).href,
-    url: "https://www.action-lead.com",
-    technologies: ["Vue.js", "Bootstrap", "PHP", "MySQL"],
-  },
-  {
-    id: 2,
-    title: t("portfolio.projects.linkwing"),
-    category: t("portfolio.projects.corporate"),
-    description: t("portfolio.projects.linkwingDesc"),
-    image: new URL("@/assets/images/linkwing.png", import.meta.url).href,
-    url: "https://www.linkwing.com/",
-    technologies: ["Vue.js", "Vite", "Bootstrap", "Node.js", "PHP"],
-  },
-  {
-    id: 3,
-    title: t("portfolio.projects.clay"),
-    category: t("portfolio.projects.ecommerce"),
-    description: t("portfolio.projects.clayDesc"),
-    image: new URL("@/assets/images/clay.png", import.meta.url).href,
-    url: "https://www.clay.com.tw/",
-    technologies: ["Vue.js", "Bootstrap", "PHP", "MySQL"],
-  },
-  {
-    id: 4,
-    title: t("portfolio.projects.nhm"),
-    category: t("portfolio.projects.npo"),
-    description: t("portfolio.projects.nhmDesc"),
-    image: new URL("@/assets/images/nothing-hidden.png", import.meta.url).href,
-    url: "https://www.nothinghidden.com.tw/",
-    technologies: ["WordPress", "PHP", "MySQL", "RWD"],
-  },
-]);
+const projects = computed(() => getAllProjects());
 </script>
 
 <style scoped>
