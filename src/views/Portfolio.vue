@@ -119,7 +119,7 @@ const projects = computed(() => [
     category: t("portfolio.projects.ecommerce"),
     description: t("portfolio.projects.clayDesc"),
     image: new URL("@/assets/images/clay.png", import.meta.url).href,
-    url: "https://tw-clay.zeabur.app/",
+    url: "https://www.clay.com.tw/",
     technologies: ["Vue.js", "Bootstrap", "PHP", "MySQL"],
   },
   {
