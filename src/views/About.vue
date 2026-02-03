@@ -91,22 +91,6 @@
       </div>
     </section>
 
-    <!-- Statistics Section (Marquee) -->
-    <section class="section stats-section">
-      <div class="marquee-container">
-        <div class="marquee-content">
-          <div
-            class="stat-item"
-            v-for="stat in [...stats, ...stats, ...stats, ...stats]"
-            :key="stat.id + Math.random()"
-          >
-            <span class="stat-number">{{ stat.number }}</span>
-            <span class="stat-label">{{ stat.label }}</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Skills Section -->
     <section class="section">
       <div class="container">
@@ -194,11 +178,7 @@ import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
 
-const stats = computed(() => [
-  { id: 1, number: "10+", label: t("about.stats.projects") },
-  { id: 2, number: "7+", label: t("about.stats.years") },
-  { id: 3, number: "100%", label: t("about.stats.satisfaction") },
-]);
+
 
 const skillCategories = computed(() => [
   {
@@ -415,60 +395,7 @@ const workProcess = computed(() => [
   color: var(--success-color);
 }
 
-/* Stats Section */
-.stats-section {
-  background: rgba(99, 102, 241, 0.05);
-  border-top: 1px solid rgba(99, 102, 241, 0.1);
-  border-bottom: 1px solid rgba(99, 102, 241, 0.1);
-  padding: 3rem 0;
-  overflow: hidden;
-}
 
-.marquee-container {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-}
-
-.marquee-content {
-  display: inline-flex;
-  animation: marquee 20s linear infinite;
-}
-
-.stat-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 0 4rem;
-}
-
-.stat-number {
-  font-size: 3rem;
-  font-weight: 900;
-  color: var(--success-color);
-  line-height: 1;
-}
-
-.stat-label {
-  font-size: 1rem;
-  color: var(--text-secondary);
-  font-weight: 500;
-  white-space: nowrap;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.marquee-container:hover .marquee-content {
-  animation-play-state: paused;
-}
 
 /* Skill Category */
 .skill-category {
