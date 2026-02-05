@@ -74,18 +74,12 @@
     <!-- Services Preview Section -->
     <section class="section">
       <div class="container">
-        <div class="section-header">
-          <span class="section-badge">{{ $t("home.servicesBadge") }}</span>
-          <h2 class="section-title">
-            {{ $t("home.servicesTitle")
-            }}<span class="highlight">{{
-              $t("home.servicesTitleHighlight")
-            }}</span>
-          </h2>
-          <p class="section-description">
-            {{ $t("home.servicesDescription") }}
-          </p>
-        </div>
+        <SectionHeader
+          :badge="$t('home.servicesBadge')"
+          :title="$t('home.servicesTitle')"
+          :highlight="$t('home.servicesTitleHighlight')"
+          :description="$t('home.servicesDescription')"
+        />
 
         <div class="row g-4">
           <div
@@ -111,15 +105,11 @@
     <!-- Featured Projects Section -->
     <section class="section" style="background: rgba(30, 41, 59, 0.3)">
       <div class="container">
-        <div class="section-header">
-          <span class="section-badge">{{ $t("home.featuredBadge") }}</span>
-          <h2 class="section-title">
-            {{ $t("home.featuredTitle")
-            }}<span class="highlight">{{
-              $t("home.featuredTitleHighlight")
-            }}</span>
-          </h2>
-        </div>
+        <SectionHeader
+          :badge="$t('home.featuredBadge')"
+          :title="$t('home.featuredTitle')"
+          :highlight="$t('home.featuredTitleHighlight')"
+        />
 
         <div class="row g-4">
           <div
@@ -186,8 +176,11 @@
 <script setup>
 import { computed } from "vue";
 import { useI18n } from "vue-i18n";
+import SectionHeader from "@/components/common/SectionHeader.vue";
+import { useProjects } from "@/composables/useProjects";
 
 const { t } = useI18n();
+const { getFeaturedProjects } = useProjects();
 
 const services = computed(() => [
   {
@@ -220,44 +213,11 @@ const services = computed(() => [
   },
 ]);
 
-const featuredProjects = computed(() => [
-  {
-    id: 1,
-    title: t("home.projects.actionLead"),
-    category: t("home.projects.corporate"),
-    description: t("home.projects.actionLeadDesc"),
-    image: new URL("@/assets/images/action-lead.png", import.meta.url).href,
-    url: "https://www.action-lead.com",
-  },
-  {
-    id: 2,
-    title: t("home.projects.linkwing"),
-    category: t("home.projects.corporate"),
-    description: t("home.projects.linkwingDesc"),
-    image: new URL("@/assets/images/linkwing.png", import.meta.url).href,
-    url: "https://www.linkwing.com/",
-  },
-  {
-    id: 3,
-    title: t("home.projects.clay"),
-    category: t("home.projects.ecommerce"),
-    description: t("home.projects.clayDesc"),
-    image: new URL("@/assets/images/clay.png", import.meta.url).href,
-    url: "https://tw-clay.zeabur.app/",
-  },
-  {
-    id: 4,
-    title: t("home.projects.nhm"),
-    category: t("home.projects.npo"),
-    description: t("home.projects.nhmDesc"),
-    image: new URL("@/assets/images/nothing-hidden.png", import.meta.url).href,
-    url: "https://www.nothinghidden.com.tw/",
-  },
-]);
+const featuredProjects = computed(() => getFeaturedProjects());
 </script>
 
 <style scoped>
-/* Code Preview 樣式 */
+/* Code Preview Styles */
 .code-preview {
   background: rgba(30, 41, 59, 0.9);
   border-radius: 16px;
@@ -326,7 +286,7 @@ const featuredProjects = computed(() => [
   color: #98c379;
 }
 
-/* CTA 區塊 */
+/* CTA Section */
 .cta-section {
   background: var(--gradient-hero);
   position: relative;
