@@ -131,6 +131,15 @@ const projects = computed(() => [
     url: "https://www.nothinghidden.com.tw/",
     technologies: ["WordPress", "PHP", "MySQL", "RWD"],
   },
+  {
+    id: 5,
+    title: t("portfolio.projects.uvaco"),
+    category: t("portfolio.projects.education"),
+    description: t("portfolio.projects.uvacoDesc"),
+    image: new URL("@/assets/images/uvaco.png", import.meta.url).href,
+    url: "https://uvaco-system.zeabur.app/",
+    technologies: ["Vue.js", "Supabase", "Zeabur", "RWD"],
+  },
 ]);
 </script>
 
