@@ -26,13 +26,14 @@ export function useProjects() {
       key: "clay",
       image: new URL("@/assets/images/clay.png", import.meta.url).href,
       url: "https://www.clay.com.tw/",
-      technologies: ["Vue.js", "Bootstrap", "PHP", "MySQL"],
+      technologies: ["Vue.js", "Supabase", "Bootstrap", "PHP", "MySQL"],
       categoryKey: "ecommerce",
     },
     {
       id: 4,
       key: "nhm",
-      image: new URL("@/assets/images/nothing-hidden.png", import.meta.url).href,
+      image: new URL("@/assets/images/nothing-hidden.png", import.meta.url)
+        .href,
       url: "https://www.nothinghidden.com.tw/",
       technologies: ["WordPress", "PHP", "MySQL", "RWD"],
       categoryKey: "npo",
