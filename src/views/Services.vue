@@ -267,7 +267,7 @@ const pricingPlans = computed(() => [
     id: 1,
     title: t("services.pricing.basic"),
     description: t("services.pricing.basicDesc"),
-    price: "30,000",
+    price: 30000,
     featured: false,
     features: tm("services.pricing.basicFeatures"),
   },
@@ -275,7 +275,7 @@ const pricingPlans = computed(() => [
     id: 2,
     title: t("services.pricing.pro"),
     description: t("services.pricing.proDesc"),
-    price: "80,000",
+    price: 80000,
     featured: true,
     features: tm("services.pricing.proFeatures"),
   },
@@ -283,7 +283,7 @@ const pricingPlans = computed(() => [
     id: 3,
     title: t("services.pricing.enterprise"),
     description: t("services.pricing.enterpriseDesc"),
-    price: "150,000",
+    price: 150000,
     featured: false,
     features: tm("services.pricing.enterpriseFeatures"),
   },
@@ -304,6 +304,16 @@ const faqs = computed(() => [
     id: 3,
     question: t("services.faqs.q3"),
     answer: t("services.faqs.a3"),
+  },
+  {
+    id: 4,
+    question: t("services.faqs.q4"),
+    answer: t("services.faqs.a4"),
+  },
+  {
+    id: 5,
+    question: t("services.faqs.q5"),
+    answer: t("services.faqs.a5"),
   },
 ]);
 </script>

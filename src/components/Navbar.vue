@@ -31,10 +31,10 @@
           <li class="nav-item">
             <router-link
               class="nav-link"
-              :class="{ active: $route.path === '/about' }"
-              to="/about"
+              :class="{ active: $route.path === '/services' }"
+              to="/services"
             >
-              {{ $t('nav.about') }}
+              {{ $t('nav.services') }}
             </router-link>
           </li>
           <li class="nav-item">
@@ -49,10 +49,10 @@
           <li class="nav-item">
             <router-link
               class="nav-link"
-              :class="{ active: $route.path === '/services' }"
-              to="/services"
+              :class="{ active: $route.path === '/about' }"
+              to="/about"
             >
-              {{ $t('nav.services') }}
+              {{ $t('nav.about') }}
             </router-link>
           </li>
           <li class="nav-item">

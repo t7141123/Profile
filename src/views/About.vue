@@ -159,6 +159,38 @@
         </div>
       </div>
     </section>
+
+    <!-- Testimonials Section -->
+    <section class="section">
+      <div class="container">
+        <SectionHeader
+          :badge="$t('about.testimonialsBadge')"
+          :title="$t('about.testimonialsTitle')"
+          :highlight="$t('about.testimonialsTitleHighlight')"
+        />
+
+        <div class="row g-4 justify-content-center">
+          <div
+            class="col-md-6 col-lg-4"
+            v-for="testimonial in testimonials"
+            :key="testimonial.id"
+          >
+            <div class="glass-card testimonial-card h-100">
+              <div class="testimonial-quote">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p class="testimonial-text">{{ testimonial.text }}</p>
+              <div class="testimonial-footer">
+                <div class="testimonial-info">
+                  <h4 class="testimonial-author">{{ testimonial.author }}</h4>
+                  <span class="testimonial-role">{{ testimonial.role }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -247,6 +279,27 @@ const workProcess = computed(() => [
     icon: "bi bi-rocket-takeoff",
     title: t("about.process.launch"),
     description: t("about.process.launchDesc"),
+  },
+]);
+
+const testimonials = computed(() => [
+  {
+    id: 1,
+    text: t("about.testimonials.t1Text"),
+    author: t("about.testimonials.t1Author"),
+    role: t("about.testimonials.t1Role"),
+  },
+  {
+    id: 2,
+    text: t("about.testimonials.t2Text"),
+    author: t("about.testimonials.t2Author"),
+    role: t("about.testimonials.t2Role"),
+  },
+  {
+    id: 3,
+    text: t("about.testimonials.t3Text"),
+    author: t("about.testimonials.t3Author"),
+    role: t("about.testimonials.t3Role"),
   },
 ]);
 </script>
@@ -446,5 +499,47 @@ const workProcess = computed(() => [
   .experience-badge .years {
     font-size: 2rem;
   }
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  padding: 2.5rem 2rem;
+  position: relative;
+  transition: var(--transition-base);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-quote {
+  font-size: 2.5rem;
+  color: var(--primary-light);
+  opacity: 0.2;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.testimonial-footer {
+  margin-top: auto;
+}
+
+.testimonial-author {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.testimonial-role {
+  font-size: 0.8rem;
+  color: var(--text-muted);
 }
 </style>

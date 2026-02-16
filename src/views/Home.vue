@@ -24,8 +24,7 @@
 
               <div class="hero-buttons">
                 <router-link to="/portfolio" class="btn btn-primary-custom">
-                  <i class="bi bi-collection me-2"></i
-                  >{{ $t("home.viewWorks") }}
+                  <i class="bi bi-collection me-2"></i>{{ $t("home.viewWorks") }}
                 </router-link>
                 <a
                   href="https://line.me/ti/p/2w7bwfksdF"
@@ -34,6 +33,21 @@
                 >
                   <i class="bi bi-line me-2"></i>{{ $t("home.addLine") }}
                 </a>
+              </div>
+
+              <div class="hero-stats">
+                <div class="hero-stat">
+                  <span class="stat-number">20+</span>
+                  <span class="stat-label">{{ $t("home.heroStats.projects") }}</span>
+                </div>
+                <div class="hero-stat">
+                  <span class="stat-number">7+</span>
+                  <span class="stat-label">{{ $t("home.heroStats.years") }}</span>
+                </div>
+                <div class="hero-stat">
+                  <span class="stat-number">100%</span>
+                  <span class="stat-label">{{ $t("home.heroStats.satisfaction") }}</span>
+                </div>
               </div>
             </div>
           </div>
@@ -49,21 +63,12 @@
                 </div>
                 <pre
                   class="code-content"
-                ><code><span class="keyword">const</span> <span class="variable">developer</span> = {
-  <span class="property">name</span>: <span class="string">"David Liu"</span>,
-  <span class="property">traits</span>: [
-    <span class="string">"{{ $t('home.codePreview.warmCareful') }}"</span>, <span class="string">"{{ $t('home.codePreview.goodCommunication') }}"</span>,
-    <span class="string">"{{ $t('home.codePreview.techExcellent') }}"</span>, <span class="string">"{{ $t('home.codePreview.reliable') }}"</span>
-  ],
-  <span class="property">experience</span>: [
-    <span class="string">"{{ $t('home.codePreview.exp1') }}"</span>, <span class="string">"{{ $t('home.codePreview.exp2') }}"</span>,
-    <span class="string">"{{ $t('home.codePreview.exp3') }}"</span>, <span class="string">"{{ $t('home.codePreview.exp4') }}"</span>,
-    <span class="string">"{{ $t('home.codePreview.exp5') }}"</span>
-  ],
-  <span class="property">mission</span>: <span class="string">"{{ $t('home.codePreview.mission') }}"</span>
-};
-
-<span class="keyword">export default</span> developer;</code></pre>
+                ><code><span class="keyword">const</span> <span class="variable">yourProject</span> = {
+  <span class="property">{{ $t('home.businessPreview.target') }}</span>: <span class="string">"{{ $t('home.businessPreview.targetValue') }}"</span>,
+  <span class="property">{{ $t('home.businessPreview.budget') }}</span>: <span class="string">"{{ $t('home.businessPreview.budgetValue') }}"</span>,
+  <span class="property">{{ $t('home.businessPreview.timeline') }}</span>: <span class="string">"{{ $t('home.businessPreview.timelineValue') }}"</span>,
+  <span class="property">{{ $t('home.businessPreview.result') }}</span>: <span class="string">"{{ $t('home.businessPreview.resultValue') }}"</span>
+};</code></pre>
               </div>
             </div>
           </div>
@@ -284,6 +289,41 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
 }
 .string {
   color: #98c379;
+}
+
+/* Hero Stats */
+.hero-stats {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--primary-light);
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+  .hero-stats {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
 }
 
 /* CTA Section */

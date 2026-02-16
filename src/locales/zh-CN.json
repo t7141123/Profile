@@ -1,16 +1,16 @@
 {
   "nav": {
     "home": "首页",
-    "about": "关于我",
-    "portfolio": "作品集",
     "services": "服务项目",
+    "portfolio": "作品集",
+    "about": "关于我",
     "contact": "联系我"
   },
   "home": {
-    "badge": "专业．细緻．值得信赖",
+    "badge": "专业．细致．值得信赖",
     "title": "嗨，我是",
-    "subtitle": "专注于细节的软件工程师，致力于打造流畅且人性化的数字体验。",
-    "subtitle2": "结合深厚的技术实力与清晰的沟通能力，为您构建兼具美感与效能的网站作品。",
+    "subtitle": "帮助企业与品牌打造能带来实际成效的网站与系统。",
+    "subtitle2": "从一个点子到上线运营，7 年以上经验，陪您走完每一步。",
     "viewWorks": "查看作品",
     "addLine": "加 Line 聊聊",
     "servicesBadge": "我能提供的服务",
@@ -23,29 +23,34 @@
     "viewSite": "查看网站",
     "visitSite": "浏览网站",
     "viewAll": "查看全部作品",
-    "ctaTitle": "准备开始您的项目了吗？",
-    "ctaDescription": "无论是全新的网站开发，还是现有系统的优化升级，",
-    "ctaDescription2": "我都能为您提供专业的解决方案。",
-    "ctaButton": "加 Line 讨论项目",
+    "ctaTitle": "不確定需要什麼？沒關係，先聊聊",
+    "ctaDescription": "很多成功的项目，都是从一则消息开始的。",
+    "ctaDescription2": "告诉我您的想法，我会免费帮您评估可行性和大致预算。",
+    "ctaButton": "免费咨询 30 分钟",
+    "heroStats": {
+      "projects": "项目交付",
+      "years": "年开发经验",
+      "satisfaction": "客户满意度"
+    },
     "services": {
       "webDev": "网站开发",
-      "webDevDesc": "从企业形象网站到复杂的电商平台，打造符合您需求的网站解决方案。",
+      "webDevDesc": "让您的品牌在在线拥有专业门面，从初次接触到成交，每一步都转化为商机。",
       "frontendDev": "前端开发",
-      "frontendDevDesc": "使用 Vue.js、React 等现代框架，打造流畅的用户界面体验。",
+      "frontendDevDesc": "用户不等待——快速、流畅、直观的操作体验，让您的客户爱不释手。",
       "backendDev": "后端开发",
-      "backendDevDesc": "稳定可靠的后端架构，支援您的应用程式顺畅运作。",
+      "backendDevDesc": "您只管业务成长，背后的系统稳定、安全、自动化，交给我搞定。",
       "integration": "系统整合",
-      "integrationDesc": "整合第三方服务与 API，让您的系统发挥最大效益。"
+      "integrationDesc": "金流、物流、CRM 一次打通，不再手动搬资料，省下的时间就是钱。"
     },
     "projects": {
       "actionLead": "艾乐资讯股份有限公司",
-      "actionLeadDesc": "为资讯科技公司打造的专业形象网站，展现企业专业形象与服务项目。",
+      "actionLeadDesc": "为资讯科技公司打造的专业形象网站。上线后协助企业建立在线品牌形象，有效提升客户信任度与咨询转换率。",
       "linkwing": "麟云数据科技有限公司",
-      "linkwingDesc": "专注于数据技术的科技公司官网，呈现创新技术与解决方案。",
+      "linkwingDesc": "专注于数据技术的科技公司官网。多语系支持让公司成功拓展海外客户询问量。",
       "clay": "台湾软陶有限公司",
-      "clayDesc": "软陶艺术品牌的电子商务网站，结合产品展示与购物功能。",
+      "clayDesc": "软陶艺术品牌的电子商务网站。客制化销售流程上线后，在线订单量稳定成长。",
       "nhm": "台湾毫无隐藏事工",
-      "nhmDesc": "专为非营利组织打造的网站，整合课程资讯与奉献系统。",
+      "nhmDesc": "专为非营利组织打造的网站。在线奉献功能上线后，组织收入渠道更加多元便利。",
       "corporate": "企业网站",
       "ecommerce": "电商网站",
       "uvaco": "蓬勃发展组织活动系统",
@@ -64,6 +69,16 @@
       "exp4": "软件设计",
       "exp5": "系统整合",
       "mission": "以技术创造价值"
+    },
+    "businessPreview": {
+      "target": "目标",
+      "targetValue": "提升品牌在线曝光",
+      "budget": "预算",
+      "budgetValue": "我们一起讨论",
+      "timeline": "时程",
+      "timelineValue": "最快 4 周上线",
+      "result": "结果",
+      "resultValue": "一个让客户主动找上门的网站"
     }
   },
   "about": {
@@ -73,13 +88,13 @@
     "pageDescription": "一位热爱创造的软件工程师，致力于用技术解决问题",
     "yearsExp": "年经验",
     "greeting": "嗨！我是",
-    "intro1": "在程式码的理性逻辑背后，我更重视技术如何为人服务。我相信，优秀的软件不仅需要精湛的技术架构，更需要深刻理解使用者的真实需求。",
-    "intro2": "作为一名接案工程师，我拥有",
-    "intro2Strong": "深厚的技术底蕴",
-    "intro2Part2": "，能解决复杂的系统问题；同时我也具备",
-    "intro2Strong2": "极佳的沟通能力",
-    "intro2Part3": "，能够用浅显易懂的语言，与您讨论项目的每一个细节。我不只是执行者，更是您值得信賴的合作伙伴。",
-    "intro3": "我重视与合作伙伴的每一次沟通。无论是项目初期的需求探讨，还是开发过程中的细节确认，我都将以最严谨的态度与您协作，共同打磨出高品质的作品。",
+    "intro1": "我相信好的网站不只是「好看」——它要能真正帮客户解决问题、带来营收。这就是为什么我的客户不只把我当工程师，而是当合作伙伴。",
+    "intro2": "7 年来，我独立完成过",
+    "intro2Strong": "企业官网、电商系统、内部管理平台",
+    "intro2Part2": "等各类项目。技术上我能全端处理不需要转包；沟通上我",
+    "intro2Strong2": "说人话、不打官腔",
+    "intro2Part3": "，让您随时掌握进度。",
+    "intro3": "如果您正在找一位能听懂需求、快速响应、做出品质的工程师——欢迎先加 Line 聊聊，还没想清楚也没关系。",
     "traits": "核心特质",
     "traitsValue": "注重细节 / 技术本位",
     "communication": "沟通风格",
@@ -93,7 +108,7 @@
       "projects": "完成项目",
       "years": "年经验",
       "satisfaction": "客户满意",
-      "support": "技术支援"
+      "support": "技术支持"
     },
     "skillsBadge": "Skills",
     "skillsTitle": "专业",
@@ -114,15 +129,29 @@
     "processTitle": "工作",
     "processTitleHighlight": "流程",
     "processDescription": "透明、高效的项目执行流程",
+    "testimonialsBadge": "Testimonials",
+    "testimonialsTitle": "客户",
+    "testimonialsTitleHighlight": "回饋",
+    "testimonials": {
+      "t1Text": "David 的沟通非常清楚，整个开发过程都很透明，让我完全不需要担心进度问题。",
+      "t1Author": "林先生",
+      "t1Role": "艾乐资讯 · 总经理",
+      "t2Text": "网站上线后客户反应很好，David 的技术确实到位，有问题也都很快处理。",
+      "t2Author": "张小姐",
+      "t2Role": "台湾软陶 · 负责人",
+      "t3Text": "从需求讨论到完成上线，整个体验非常专业顺畅，会推荐给需要网站的朋友。",
+      "t3Author": "陈先生",
+      "t3Role": "麟云数据 · 项目经理"
+    },
     "process": {
       "communication": "需求沟通",
-      "communicationDesc": "深入了解您的需求、目标与期望，确保项目方向正确。",
+      "communicationDesc": "深入了解您的需求、目标与期望，確保项目方向正确。",
       "planning": "规划设计",
       "planningDesc": "制定详细的项目计划，设计符合需求的解决方案。",
       "development": "开发实作",
       "developmentDesc": "使用最佳技术栈进行开发，定期回报项目进度。",
       "launch": "测试上线",
-      "launchDesc": "严格测试确保品质，协助部署上线并提供后续支援。"
+      "launchDesc": "严格测试确保品质，协助部署上线并提供后续支持。"
     }
   },
   "portfolio": {
@@ -134,23 +163,23 @@
     "visitSite": "浏览网站",
     "projects": {
       "actionLead": "艾乐资讯股份有限公司",
-      "actionLeadDesc": "为资讯科技公司打造的专业形象网站，展现企业专业形象与服务项目。网站采用现代化设计，具备良好的用户体验与响应式设计。",
+      "actionLeadDesc": "为资讯科技公司打造的专业形象网站。上线后协助企业建立在线品牌形象，有效提升客户信任度与咨询转换率。",
       "linkwing": "麟云数据科技有限公司",
-      "linkwingDesc": "专注于数据技术的科技公司官网，呈现创新技术与解决方案。整合多语系支援与动态内容管理系统。",
+      "linkwingDesc": "专注于数据技术的科技公司官网。多语系支持让公司成功拓展海外客户询问量。",
       "clay": "台湾软陶有限公司",
-      "clayDesc": "软陶土艺术品牌的电子商务网站，结合产品展示与购物功能，并根据商家的需求，制作特殊客制化的销售流程。",
+      "clayDesc": "软陶土艺术品牌的电子商务网站。客制化销售流程上线后，在线订单量稳定成长。",
       "nhm": "台湾毫无隐藏事工",
-      "nhmDesc": "专为非营利组织打造的官方网站，提供课程报名、活动资讯发布及线上奉献功能。网站采用响应式设计。",
+      "nhmDesc": "专为非营利组织打造的官方网站。在线奉献功能上线后，组织收入渠道更加多元便利。",
       "corporate": "企业网站",
       "ecommerce": "电商网站",
       "uvaco": "蓬勃发展组织活动系统",
       "uvacoDesc": "专为团队运作打造的内部教育与活动管理系统，整合活动报名、分类浏览与会员管理功能。协助团队有效管理各类培训与聚会活动。",
       "education": "组织教育系统",
-      "npo": "非营利组织"
+      "npo": "非盈利组织"
     },
     "ctaTitle": "想要打造属于您的网站？",
     "ctaDescription": "让我们一起讨论您的项目需求，创造下一个成功案例。",
-    "ctaButton": "开始合作"
+    "ctaButton": "加 Line 免费咨询"
   },
   "services": {
     "badge": "Services",
@@ -160,20 +189,20 @@
     "mainServices": {
       "webDev": "网站开发",
       "webDevSubtitle": "Web Development",
-      "webDevDesc": "从企业形象网站到复杂的电商平台，提供客制化的网站开发服务。注重用户体验和响应式设计。",
+      "webDevDesc": "不只做一个网站，而是帮您打造一个 24 小時不打烊的业务员。从品牌曝光到顾客转化，每个细节都为您的营收服务。",
       "webDevFeatures": ["企业形象网站设计与开发", "响应式网页设计 (RWD)", "电子商务网站建置", "CMS 内容管理系统整合"],
       "frontendDev": "前端开发",
       "frontendDevSubtitle": "Frontend Development",
-      "frontendDevDesc": "使用 Vue.js、React 等现代框架打造流畅的用户界面，注重效能优化与用户体验。",
-      "frontendDevFeatures": ["Vue.js / React 应用开发", "SPA 单页应用程式", "互动式动画效果", "效能优化与最佳实践", "跨浏览器兼容性"],
+      "frontendDevDesc": "用户不等待——快速、流畅、直观的操作体验，让您的客户爱不释手。",
+      "frontendDevFeatures": ["Vue.js / React 应用开发", "SPA 单页应用程式", "互动式动画效果", "性能优化与最佳实践", "跨浏览器兼容性"],
       "backendDev": "后端开发",
       "backendDevSubtitle": "Backend Development",
-      "backendDevDesc": "建构稳定、安全、可扩展的后端系统，提供完整的 API 开发与数据库设计服务。",
-      "backendDevFeatures": ["RESTful API 设计与开发", "数据库设计与优化", "第三方服务整合", "系统效能调校"],
+      "backendDevDesc": "您只管业务成长，背後的系统稳定、安全、自动化，交给我搞定。",
+      "backendDevFeatures": ["RESTful API 设计与开发", "数据库设计与优化", "第三方服务整合", "系统性能调校"],
       "integration": "系统整合",
       "integrationSubtitle": "System Integration",
-      "integrationDesc": "协助企业整合各种系统与服务，打造高效率的工作流程与数据管理方案。",
-      "integrationFeatures": ["金流系统整合", "物流系统串接", "ERP/CRM 系统整合", "社群平台 API 整合", "自动化流程设计"]
+      "integrationDesc": "金流、物流、CRM 一次打通，不再手动搬资料，省下的时间就是钱。",
+      "integrationFeatures": ["金流系统整合", "物流系统串接", "ERP/CRM 系统整合", "社交平台 API 整合", "自动化流程设计"]
     },
     "techBadge": "Technology",
     "techTitle": "使用的",
@@ -189,7 +218,7 @@
       "basicFeatures": ["响应式网页设计", "最多 5 个页面", "基本 SEO 优化", "联系表单功能", "3 个月免费维护"],
       "pro": "专业方案",
       "proDesc": "适合中型企业与成长中品牌",
-      "proFeatures": ["客制化设计", "无限制页面数量", "进阶 SEO 优化", "CMS 内容管理系统", "6 个月免费维护", "效能优化"],
+      "proFeatures": ["客制化设计", "无限制页面数量", "进阶 SEO 优化", "CMS 内容管理系统", "6 个月免费维护", "性能优化"],
       "enterprise": "企业方案",
       "enterpriseDesc": "适合大型企业与复杂需求",
       "enterpriseFeatures": ["完整客制化开发", "电商功能整合", "会员系统", "API 整合", "12 个月免费维护"],
@@ -206,19 +235,21 @@
       "q2": "付款方式如何安排？",
       "a2": "通常采用分期付款方式：签约时支付 30% 订金，开发中期支付 40%，项目完成验收后支付尾款 30%。具体付款方式可依项目需求弹性调整。",
       "q3": "网站完成后提供维护服务吗？",
-      "a3": "是的，所有项目都包含免费维护期，期间内提供针对程式错误（Bugs）的免费修复。维护期结束后，您可以选择续约维护服务，确保网站持续稳定运作并获得技术支援。",
-      "q4": "可以先看设计稿再决定吗？",
-      "a4": "在正式开发前，我会提供网站架构规划与设计稿供您确认。确保设计方向符合您的期望后才会进入开发阶段，让您放心合作。"
+      "a3": "是的，所有项目都包含免费维护期，期间内提供针对程序错误（Bugs）的免费修复。维护期结束后，您可以选择续约维护服务，确保网站持续稳定运作并获得技术支持。",
+      "q4": "你跟其他接案工程师有什么不同？",
+      "a4": "三个差异：第一，我具备从前端到后端完整技术栈，所以您不需要找多个人各做一块；第二，我重视沟通，项目过程中您随时可以联系我，不会出现找不到人的状况；第三，我提供完整的售后维护期，上线后遇到问题也不用担心。",
+      "q5": "如果做到一半不满意怎么办？",
+      "a5": "在正式开发前，我会提供设计稿供您确认方向。开发过程中也会有阶段性的 Demo 和验收。如果中途对方向有调整，我们可以随时讨论。我的目标是让您 100% 满意才算完成。"
     }
   },
   "contact": {
     "badge": "Contact",
     "title": "联系",
     "titleHighlight": "我",
-    "pageDescription": "有任何问题或项目需求，欢迎与我联系！",
-    "infoTitle": "联系资讯",
-    "infoDescription": "我重视项目的每一个环节与您的想法。透过清晰、理性的沟通，协助您厘清需求并找出最佳解决方案。欢迎直接加入我的 Line，让我们开始讨论您的项目。",
-    "lineLabel": "Line 官方帐号 (推荐)",
+    "pageDescription": "一则消息的距离，让您的想法开始变现",
+    "infoTitle": "与我对话",
+    "infoDescription": "很多客户一开始也不确定自己需要什么。没关系，聊聊就清楚了。我会先免费帮您釐清需求、评估可行性，再决定下一步怎么走。通常 24 小时内就会回复您。",
+    "lineLabel": "Line 官方账号 (推荐)",
     "lineValue": "点击加入好友链接",
     "telegramLabel": "Telegram",
     "telegramValue": "{'@'}davidliu71411",
@@ -240,6 +271,7 @@
       "integration": "系统整合"
     },
     "contact": "联系方式",
+    "cta": "有想法了吗？随时 Line 我 💬",
     "copyright": "© {year} David Liu. All rights reserved."
   },
   "common": {

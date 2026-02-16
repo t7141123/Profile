@@ -9,8 +9,8 @@
   "home": {
     "badge": "專業．細緻．值得信賴",
     "title": "嗨，我是",
-    "subtitle": "專注於細節的軟體工程師，致力於打造流暢且人性化的數位體驗。",
-    "subtitle2": "結合深厚的技術實力與清晰的溝通能力，為您構建兼具美感與效能的網站作品。",
+    "subtitle": "幫助企業與品牌打造能帶來實際成效的網站與系統。",
+    "subtitle2": "從一個點子到上線運營，7 年以上經驗，陪您走完每一步。",
     "viewWorks": "查看作品",
     "addLine": "加 Line 聊聊",
     "servicesBadge": "我能提供的服務",
@@ -23,29 +23,34 @@
     "viewSite": "查看網站",
     "visitSite": "瀏覽網站",
     "viewAll": "查看全部作品",
-    "ctaTitle": "準備開始您的專案了嗎？",
-    "ctaDescription": "無論是全新的網站開發，還是現有系統的優化升級，",
-    "ctaDescription2": "我都能為您提供專業的解決方案。",
-    "ctaButton": "加 Line 討論專案",
+    "ctaTitle": "不確定需要什麼？沒關係，先聊聊",
+    "ctaDescription": "很多成功的專案，都是從一則訊息開始的。",
+    "ctaDescription2": "告訴我您的想法，我會免費幫您評估可行性和大致預算。",
+    "ctaButton": "免費諮詢 30 分鐘",
+    "heroStats": {
+      "projects": "專案交付",
+      "years": "年開發經驗",
+      "satisfaction": "客戶滿意度"
+    },
     "services": {
       "webDev": "網站開發",
-      "webDevDesc": "從企業形象網站到複雜的電商平台，打造符合您需求的網站解決方案。",
+      "webDevDesc": "讓您的品牌在線上擁有專業門面，從初次接觸到成交，每一步都轉化為商機。",
       "frontendDev": "前端開發",
-      "frontendDevDesc": "使用 Vue.js、React 等現代框架，打造流暢的使用者介面體驗。",
+      "frontendDevDesc": "使用者不等待——快速、流暢、直覺的操作體驗，讓您的客戶愛不釋手。",
       "backendDev": "後端開發",
-      "backendDevDesc": "穩定可靠的後端架構，支援您的應用程式順暢運作。",
+      "backendDevDesc": "您只管業務成長，背後的系統穩定、安全、自動化，交給我搞定。",
       "integration": "系統整合",
-      "integrationDesc": "整合第三方服務與 API，讓您的系統發揮最大效益。"
+      "integrationDesc": "金流、物流、CRM 一次打通，不再手動搬資料，省下的時間就是錢。"
     },
     "projects": {
       "actionLead": "艾樂資訊股份有限公司",
-      "actionLeadDesc": "為資訊科技公司打造的專業形象網站，展現企業專業形象與服務項目。",
+      "actionLeadDesc": "為資訊科技公司打造的專業形象網站。上線後協助企業建立線上品牌形象，有效提升客戶信任度與諮詢轉換率。",
       "linkwing": "麟雲數據科技有限公司",
-      "linkwingDesc": "專注於數據技術的科技公司官網，呈現創新技術與解決方案。",
+      "linkwingDesc": "專注於數據技術的科技公司官網。多語系支援讓公司成功拓展海外客戶詢問量。",
       "clay": "台灣軟陶有限公司",
-      "clayDesc": "軟陶藝術品牌的電子商務網站，結合產品展示與購物功能。",
+      "clayDesc": "軟陶藝術品牌的電子商務網站。客製化銷售流程上線後，線上訂單量穩定成長。",
       "nhm": "臺灣毫無隱藏事工",
-      "nhmDesc": "專為非營利組織打造的網站，整合課程資訊與奉獻系統。",
+      "nhmDesc": "專為非營利組織打造的網站。線上奉獻功能上線後，組織收入管道更加多元便利。",
       "corporate": "企業網站",
       "ecommerce": "電商網站",
       "uvaco": "蓬勃發展組織活動系統",
@@ -64,6 +69,16 @@
       "exp4": "軟體設計",
       "exp5": "系統整合",
       "mission": "以技術創造價值"
+    },
+    "businessPreview": {
+      "target": "目標",
+      "targetValue": "提升品牌線上曝光",
+      "budget": "預算",
+      "budgetValue": "我們一起討論",
+      "timeline": "時程",
+      "timelineValue": "最快 4 週上線",
+      "result": "結果",
+      "resultValue": "一個讓客戶主動找上門的網站"
     }
   },
   "about": {
@@ -73,13 +88,13 @@
     "pageDescription": "一位熱愛創造的軟體工程師，致力於用技術解決問題",
     "yearsExp": "年經驗",
     "greeting": "嗨！我是",
-    "intro1": "在程式碼的理性邏輯背後，我更重視技術如何為人服務。我相信，優秀的軟體不僅需要精湛的技術架構，更需要深刻理解使用者的真實需求。",
-    "intro2": "作為一名接案工程師，我擁有",
-    "intro2Strong": "深厚的技術底蘊",
-    "intro2Part2": "，能解決複雜的系統問題；同時我也具備",
-    "intro2Strong2": "極佳的溝通能力",
-    "intro2Part3": "，能夠用淺顯易懂的語言，與您討論專案的每一個細節。我不只是執行者，更是您值得信賴的合作夥伴。",
-    "intro3": "我重視與合作夥伴的每一次溝通。無論是專案初期的需求探討，還是開發過程中的細節確認，我都將以最嚴謹的態度與您協作，共同打磨出高品質的作品。",
+    "intro1": "我相信好的網站不只是「好看」——它要能真正幫客戶解決問題、帶來營收。這就是為什麼我的客戶不只把我當工程師，而是當合作夥伴。",
+    "intro2": "7 年來，我獨立完成過",
+    "intro2Strong": "企業官網、電商系統、內部管理平台",
+    "intro2Part2": "等各類專案。技術上我能全端處理不需要轉包；溝通上我",
+    "intro2Strong2": "說人話、不打官腔",
+    "intro2Part3": "，讓您隨時掌握進度。",
+    "intro3": "如果您正在找一位能聽懂需求、快速響應、做出品質的工程師——歡迎先加 Line 聊聊，還沒想清楚也沒關係。",
     "traits": "核心特質",
     "traitsValue": "注重細節 / 技術本位",
     "communication": "溝通風格",
@@ -114,6 +129,20 @@
     "processTitle": "工作",
     "processTitleHighlight": "流程",
     "processDescription": "透明、高效的專案執行流程",
+    "testimonialsBadge": "Testimonials",
+    "testimonialsTitle": "客戶",
+    "testimonialsTitleHighlight": "回饋",
+    "testimonials": {
+      "t1Text": "David 的溝通非常清楚，整個開發過程都很透明，讓我完全不需要擔心進度問題。",
+      "t1Author": "林先生",
+      "t1Role": "艾樂資訊 · 總經理",
+      "t2Text": "網站上線後客戶反應很好，David 的技術確實到位，有問題也都很快處理。",
+      "t2Author": "張小姐",
+      "t2Role": "台灣軟陶 · 負責人",
+      "t3Text": "從需求討論到完成上線，整個體驗非常專業順暢，會推薦給需要網站的朋友。",
+      "t3Author": "陳先生",
+      "t3Role": "麟雲數據 · 專案經理"
+    },
     "process": {
       "communication": "需求溝通",
       "communicationDesc": "深入了解您的需求、目標與期望，確保專案方向正確。",
@@ -150,7 +179,7 @@
     },
     "ctaTitle": "想要打造屬於您的網站？",
     "ctaDescription": "讓我們一起討論您的專案需求，創造下一個成功案例。",
-    "ctaButton": "開始合作"
+    "ctaButton": "加 Line 免費諮詢"
   },
   "services": {
     "badge": "Services",
@@ -160,19 +189,19 @@
     "mainServices": {
       "webDev": "網站開發",
       "webDevSubtitle": "Web Development",
-      "webDevDesc": "從企業形象網站到複雜的電商平台，提供客製化的網站開發服務。注重使用者體驗和響應式設計。",
+      "webDevDesc": "不只做一個網站，而是幫您打造一個 24 小時不打烊的業務員。從品牌曝光到顧客轉化，每個細節都為您的營收服務。",
       "webDevFeatures": ["企業形象網站設計與開發", "響應式網頁設計 (RWD)", "電子商務網站建置", "CMS 內容管理系統整合"],
       "frontendDev": "前端開發",
       "frontendDevSubtitle": "Frontend Development",
-      "frontendDevDesc": "使用 Vue.js、React 等現代框架打造流暢的使用者介面，注重效能優化與使用者體驗。",
+      "frontendDevDesc": "使用者不等待——快速、流暢、直覺的操作體驗，讓您的客戶愛不釋手。",
       "frontendDevFeatures": ["Vue.js / React 應用開發", "SPA 單頁應用程式", "互動式動畫效果", "效能優化與最佳實踐", "跨瀏覽器相容性"],
       "backendDev": "後端開發",
       "backendDevSubtitle": "Backend Development",
-      "backendDevDesc": "建構穩定、安全、可擴展的後端系統，提供完整的 API 開發與資料庫設計服務。",
+      "backendDevDesc": "您只管業務成長，背後的系統穩定、安全、自動化，交給我搞定。",
       "backendDevFeatures": ["RESTful API 設計與開發", "資料庫設計與優化", "第三方服務整合", "系統效能調校"],
       "integration": "系統整合",
       "integrationSubtitle": "System Integration",
-      "integrationDesc": "協助企業整合各種系統與服務，打造高效率的工作流程與數據管理方案。",
+      "integrationDesc": "金流、物流、CRM 一次打通，不再手動搬資料，省下的時間就是錢。",
       "integrationFeatures": ["金流系統整合", "物流系統串接", "ERP/CRM 系統整合", "社群平台 API 整合", "自動化流程設計"]
     },
     "techBadge": "Technology",
@@ -207,17 +236,19 @@
       "a2": "通常採用分期付款方式：簽約時支付 30% 訂金，開發中期支付 40%，專案完成驗收後支付尾款 30%。具體付款方式可依專案需求彈性調整。",
       "q3": "網站完成後提供維護服務嗎？",
       "a3": "是的，所有專案都包含免費維護期，期間內提供針對程式錯誤（Bugs）的免費修復。維護期結束後，您可以選擇續約維護服務，確保網站持續穩定運作並獲得技術支援。",
-      "q4": "可以先看設計稿再決定嗎？",
-      "a4": "在正式開發前，我會提供網站架構規劃與設計稿供您確認。確保設計方向符合您的期望後才會進入開發階段，讓您放心合作。"
+      "q4": "你跟其他接案工程師有什麼不同？",
+      "a4": "三個差異：第一，我具備從前端到後端的完整技術棧，所以您不需要找多個人各做一塊；第二，我重視溝通，專案過程中您隨時可以聯繫我，不會出現找不到人的狀況；第三，我提供完整的售後維護期，上線後遇到問題也不用擔心。",
+      "q5": "如果做到一半不滿意怎麼辦？",
+      "a5": "在正式開發前，我會提供設計稿供您確認方向。開發過程中也會有階段性的 Demo 和驗收。如果中途對方向有調整，我們可以隨時討論。我的目標是讓您 100% 滿意才算完成。"
     }
   },
   "contact": {
     "badge": "Contact",
     "title": "聯繫",
     "titleHighlight": "我",
-    "pageDescription": "有任何問題或專案需求，歡迎與我聯繫！",
-    "infoTitle": "聯繫資訊",
-    "infoDescription": "我重視專案的每一個環節與您的想法。透過清晰、理性的溝通，協助您釐清需求並找出最佳解決方案。歡迎直接加入我的 Line，讓我們開始討論您的專案。",
+    "pageDescription": "一則訊息的距離，讓您的想法開始變現",
+    "infoTitle": "與我對話",
+    "infoDescription": "很多客戶一開始也不確定自己需要什麼。沒關係，聊聊就清楚了。我會先免費幫您釐清需求、評估可行性，再決定下一步怎麼走。通常 24 小時內就會回覆您。",
     "lineLabel": "Line 官方帳號 (推薦)",
     "lineValue": "點擊加入好友連結",
     "telegramLabel": "Telegram",
@@ -240,6 +271,7 @@
       "integration": "系統整合"
     },
     "contact": "聯繫方式",
+    "cta": "有想法了嗎？隨時 Line 我 💬",
     "copyright": "© {year} David Liu. All rights reserved."
   },
   "common": {

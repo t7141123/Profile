@@ -78,6 +78,11 @@
 
       <!-- Copyright Info -->
       <div class="footer-bottom">
+        <div class="footer-cta mb-3">
+          <a href="https://line.me/ti/p/2w7bwfksdF" target="_blank" class="cta-link">
+            {{ $t("footer.cta") }}
+          </a>
+        </div>
         <p class="mb-0">
           {{ $t("footer.copyright", { year: currentYear }) }}
         </p>
@@ -89,3 +94,90 @@
 <script setup>
 const currentYear = new Date().getFullYear();
 </script>
+
+<style scoped>
+.footer {
+  background: var(--bg-secondary);
+  padding: 4rem 0 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-brand {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.footer-description {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.footer-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  color: var(--text-secondary);
+  transition: var(--transition-base);
+}
+
+.social-link:hover {
+  background: var(--primary-light);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.footer-cta .cta-link {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-light);
+  text-decoration: none;
+  transition: var(--transition-base);
+  display: inline-block;
+}
+
+.footer-cta .cta-link:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+@media (max-width: 991.98px) {
+  .footer {
+    padding: 3rem 0 2rem;
+  }
+}
+</style>
