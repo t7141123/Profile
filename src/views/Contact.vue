@@ -105,6 +105,23 @@
                 </div>
 
                 <!-- Working Hours Card -->
+                <div class="col-md-6">
+                  <div
+                    class="glass-card contact-card h-100 d-flex align-items-center p-4"
+                  >
+                    <div class="contact-icon-wrapper me-4">
+                      <i class="bi bi-clock-fill fs-2 text-warning"></i>
+                    </div>
+                    <div class="text-start">
+                      <div class="contact-label mb-1 text-light">
+                        {{ $t("contact.workingHoursLabel") }}
+                      </div>
+                      <div class="contact-value fs-6 fw-bold text-white">
+                        {{ $t("contact.workingHoursValue") }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                 <!-- Promise Card -->
                 <div class="col-md-6">
@@ -112,7 +129,7 @@
                     class="glass-card contact-card h-100 d-flex align-items-center p-4"
                   >
                     <div class="contact-icon-wrapper me-4">
-                      <i class="bi bi-chat-heart-fill fs-2 text-danger"></i>
+                      <i class="bi bi-shield-check fs-2 text-success"></i>
                     </div>
                     <div class="text-start">
                       <div class="contact-label mb-1 text-light">

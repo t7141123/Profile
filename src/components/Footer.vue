@@ -59,7 +59,7 @@
               <li>
                 <a href="https://t.me/davidliu71411" target="_blank" class="d-flex align-items-center text-decoration-none" style="color: var(--text-secondary);">
                   <div style="width: 24px;"><i class="bi bi-telegram"></i></div>
-                  @davidliu71411
+                  {{ $t("contact.telegramValue") }}
                 </a>
               </li>
               <li>
@@ -68,7 +68,7 @@
                   style="color: var(--text-secondary)"
                 >
                   <div style="width: 24px"><i class="bi bi-envelope"></i></div>
-                  david.liu@action-lead.com
+                  {{ $t("contact.emailValue") }}
                 </div>
               </li>
             </ul>

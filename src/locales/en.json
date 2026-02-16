@@ -9,8 +9,9 @@
   "home": {
     "badge": "Professional．Meticulous．Trustworthy",
     "title": "Hi, I'm",
-    "subtitle": "Helping businesses build websites & systems that drive real results.",
-    "subtitle2": "From concept to deployment — 7+ years of experience, every step of the way.",
+    "subtitle": "Is your website actually making you money?",
+    "subtitle2": "7+ years of experience turning ideas into websites that bring in real customers.",
+    "learnMore": "Learn More",
     "viewWorks": "View Works",
     "addLine": "Chat on Line",
     "servicesBadge": "What I Offer",
@@ -85,7 +86,7 @@
     "badge": "About Me",
     "title": "About",
     "titleHighlight": " Me",
-    "pageDescription": "A software engineer who loves creating, dedicated to solving problems with technology",
+    "pageDescription": "Wondering who you'd be working with? Let me introduce myself.",
     "yearsExp": "Years Exp.",
     "greeting": "Hi! I'm",
     "intro1": "I believe a good website isn't just about 'looking good'—it should solve problems and drive revenue. That's why my clients see me as a partner, not just an engineer.",
@@ -173,13 +174,13 @@
       "corporate": "Corporate Website",
       "ecommerce": "E-commerce",
       "uvaco": "UVACO System",
-      "uvacoDesc": "An internal education and event management system tailored for team operations, featuring event registration, categorized browsing, and member management to effectively manage trainings and gatherings.",
+      "uvacoDesc": "An internal education and event management system tailored for team operations, featuring event registration and member management. Since implementation, event management time has been significantly reduced, and member participation has increased notably.",
       "education": "Organizational Education System",
       "npo": "NPO"
     },
     "ctaTitle": "Want to create your own website?",
     "ctaDescription": "Let's discuss your project requirements and create the next success story.",
-    "ctaButton": "Free Line Consultation"
+    "ctaButton": "Free Consultation on Line"
   },
   "services": {
     "badge": "Services",
@@ -222,9 +223,8 @@
       "enterprise": "Enterprise Plan",
       "enterpriseDesc": "Suitable for large enterprises and complex needs",
       "enterpriseFeatures": ["Full custom development", "E-commerce integration", "Membership system", "API integration", "12 months free maintenance"],
-      "from": "from",
       "popular": "Popular",
-      "contact": "Contact Us"
+      "contact": "Contact for Quote"
     },
     "faqBadge": "FAQ",
     "faqTitle": "Frequently Asked",
@@ -240,7 +240,10 @@
       "a4": "Three things: First, a full-stack technical capability so you don't need multiple people; second, proactive communication so you're never left in the dark; third, a complete post-launch maintenance period for peace of mind.",
       "q5": "What if I'm not satisfied during the process?",
       "a5": "Before formal development, I provide design drafts for your approval. We also have phased demos and reviews. If adjustments are needed mid-way, we can always discuss and adapt. My goal is your 100% satisfaction."
-    }
+    },
+    "ctaTitle": "Still have questions? Just ask",
+    "ctaDescription": "Every project is unique. Tell me about yours and I'll tailor the perfect plan.",
+    "ctaButton": "Free 30-Min Consultation"
   },
   "contact": {
     "badge": "Contact",
@@ -254,6 +257,7 @@
     "telegramLabel": "Telegram",
     "telegramValue": "{'@'}davidliu71411",
     "emailLabel": "Email",
+    "emailValue": "david.liu@action-lead.com",
     "workingHoursLabel": "Working Hours",
     "workingHoursValue": "Mon-Fri 9:00 - 18:00",
     "promiseLabel": "Communication Promise",
@@ -261,7 +265,7 @@
   },
   "footer": {
     "brand": "David Liu",
-    "description": "A meticulous software engineer focused on details, dedicated to creating premium digital experiences.",
+    "description": "Not sure where to start? Message me on Line and I'll help you figure it out.",
     "quickLinks": "Quick Links",
     "services": "Services",
     "servicesList": {
@@ -278,9 +282,9 @@
     "required": "*"
   },
   "meta": {
-    "title": "David Liu Studio | Professional Software Engineer - Web Development & System Integration",
-    "description": "David Liu Studio provides professional web development, frontend, backend, and system integration services. Dedicated to creating high-quality digital solutions for clients.",
-    "keywords": "Software Engineer, Web Development, Vue.js, React, Frontend Development, Backend Development, System Integration, Freelance Engineer, David Liu"
+    "title": "David Liu Studio | Websites That Actually Make You Money",
+    "description": "Is your website making you money? David Liu Studio offers end-to-end web development and system integration. 7+ years experience. Free 30-min consultation.",
+    "keywords": "web development, system integration, freelance developer, e-commerce, corporate website, David Liu, Taiwan, free consultation"
   },
   "notFound": {
     "title": "Page Not Found",

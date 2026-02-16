@@ -9,8 +9,9 @@
   "home": {
     "badge": "专业．细致．值得信赖",
     "title": "嗨，我是",
-    "subtitle": "帮助企业与品牌打造能带来实际成效的网站与系统。",
-    "subtitle2": "从一个点子到上线运营，7 年以上经验，陪您走完每一步。",
+    "subtitle": "您的网站，真的在帮您赚钱吗？",
+    "subtitle2": "7 年以上经验，从想法到上线，帮您打造真正带来客户的网站。",
+    "learnMore": "了解更多",
     "viewWorks": "查看作品",
     "addLine": "加 Line 聊聊",
     "servicesBadge": "我能提供的服务",
@@ -85,7 +86,7 @@
     "badge": "About Me",
     "title": "关于",
     "titleHighlight": "我",
-    "pageDescription": "一位热爱创造的软件工程师，致力于用技术解决问题",
+    "pageDescription": "想知道你的项目会交给什么样的人？让我告诉你。",
     "yearsExp": "年经验",
     "greeting": "嗨！我是",
     "intro1": "我相信好的网站不只是「好看」——它要能真正帮客户解决问题、带来营收。这就是为什么我的客户不只把我当工程师，而是当合作伙伴。",
@@ -173,7 +174,7 @@
       "corporate": "企业网站",
       "ecommerce": "电商网站",
       "uvaco": "蓬勃发展组织活动系统",
-      "uvacoDesc": "专为团队运作打造的内部教育与活动管理系统，整合活动报名、分类浏览与会员管理功能。协助团队有效管理各类培训与聚会活动。",
+      "uvacoDesc": "专为团队运作打造的内部教育与活动管理系统，包含活动报名、分类浏览与会员管理。系统导入后，活动管理时间大幅缩减，会员参与率显著提升。",
       "education": "组织教育系统",
       "npo": "非盈利组织"
     },
@@ -222,9 +223,8 @@
       "enterprise": "企业方案",
       "enterpriseDesc": "适合大型企业与复杂需求",
       "enterpriseFeatures": ["完整客制化开发", "电商功能整合", "会员系统", "API 整合", "12 个月免费维护"],
-      "from": "起",
       "popular": "热门方案",
-      "contact": "联系咨询"
+      "contact": "联系取得报价"
     },
     "faqBadge": "FAQ",
     "faqTitle": "常见",
@@ -240,7 +240,10 @@
       "a4": "三个差异：第一，我具备从前端到后端完整技术栈，所以您不需要找多个人各做一块；第二，我重视沟通，项目过程中您随时可以联系我，不会出现找不到人的状况；第三，我提供完整的售后维护期，上线后遇到问题也不用担心。",
       "q5": "如果做到一半不满意怎么办？",
       "a5": "在正式开发前，我会提供设计稿供您确认方向。开发过程中也会有阶段性的 Demo 和验收。如果中途对方向有调整，我们可以随时讨论。我的目标是让您 100% 满意才算完成。"
-    }
+    },
+    "ctaTitle": "看完还有疑问？直接问最快",
+    "ctaDescription": "每个项目都是独特的。告诉我您的情况，我帮您量身规划最合适的方案。",
+    "ctaButton": "免费咨询 30 分钟"
   },
   "contact": {
     "badge": "Contact",
@@ -254,6 +257,7 @@
     "telegramLabel": "Telegram",
     "telegramValue": "{'@'}davidliu71411",
     "emailLabel": "Email",
+    "emailValue": "david.liu@action-lead.com",
     "workingHoursLabel": "工作时间",
     "workingHoursValue": "周一至周五 9:00 - 18:00",
     "promiseLabel": "沟通承诺",
@@ -261,7 +265,7 @@
   },
   "footer": {
     "brand": "David Liu",
-    "description": "专注细节的软件工程师，为您打造优质的数字体验。",
+    "description": "不确定从哪里开始？加 Line 聊聊，我来帮你想。",
     "quickLinks": "快速链接",
     "services": "服务项目",
     "servicesList": {
@@ -278,9 +282,9 @@
     "required": "*"
   },
   "meta": {
-    "title": "David Liu Studio | 专业软件工程师 - 网站开发与系统整合",
-    "description": "David Liu Studio 提供专业的网站开发、前端开发、后端开发与系统整合服务。致力于为客户打造高品质的数字解决方案。",
-    "keywords": "软件工程师, 网站开发, Vue.js, React, 前端开发, 后端开发, 系统整合, 接案工程师, David Liu"
+    "title": "David Liu Studio | 帮企业打造会赚钱的网站",
+    "description": "您的网站在帮您赚钱吗？David Liu Studio 提供一站式网站开发与系统整合，从想法到上线，7 年经验陪您每一步。免费 30 分钟咨询。",
+    "keywords": "网站开发, 系统整合, 接案工程师, 电商网站, 企业网站, David Liu, 免费咨询"
   },
   "notFound": {
     "title": "页面未找到",

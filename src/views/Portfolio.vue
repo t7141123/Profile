@@ -75,9 +75,13 @@
           <p class="cta-description">
             {{ $t("portfolio.ctaDescription") }}
           </p>
-          <router-link to="/contact" class="btn btn-primary-custom btn-lg">
-            <i class="bi bi-send me-2"></i>{{ $t("portfolio.ctaButton") }}
-          </router-link>
+          <a
+            href="https://line.me/ti/p/2w7bwfksdF"
+            target="_blank"
+            class="btn btn-primary-custom btn-lg"
+          >
+            <i class="bi bi-line me-2"></i>{{ $t("portfolio.ctaButton") }}
+          </a>
         </div>
       </div>
     </section>

@@ -123,27 +123,22 @@
               <h3 class="pricing-title">{{ plan.title }}</h3>
               <p class="pricing-description">{{ plan.description }}</p>
 
-              <div class="pricing-price">
-                <span class="currency">NT$</span>
-                <span class="amount">{{ plan.price.toLocaleString() }}</span>
-                <span class="period">{{ $t("services.pricing.from") }}</span>
-              </div>
-
               <ul class="pricing-features">
                 <li v-for="feature in plan.features" :key="feature">
                   <i class="bi bi-check2"></i>
                   {{ feature }}
                 </li>
               </ul>
-              <router-link
-                to="/contact"
+              <a
+                href="https://line.me/ti/p/2w7bwfksdF"
+                target="_blank"
                 class="btn w-100"
                 :class="
                   plan.featured ? 'btn-primary-custom' : 'btn-outline-custom'
                 "
               >
-                {{ $t("services.pricing.contact") }}
-              </router-link>
+                <i class="bi bi-line me-2"></i>{{ $t("services.pricing.contact") }}
+              </a>
             </div>
           </div>
         </div>
@@ -195,6 +190,23 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-content text-center">
+          <h2 class="cta-title">{{ $t("services.ctaTitle") }}</h2>
+          <p class="cta-description">{{ $t("services.ctaDescription") }}</p>
+          <a
+            href="https://line.me/ti/p/2w7bwfksdF"
+            target="_blank"
+            class="btn btn-primary-custom btn-lg"
+          >
+            <i class="bi bi-line me-2"></i>{{ $t("services.ctaButton") }}
+          </a>
         </div>
       </div>
     </section>
@@ -267,7 +279,6 @@ const pricingPlans = computed(() => [
     id: 1,
     title: t("services.pricing.basic"),
     description: t("services.pricing.basicDesc"),
-    price: 30000,
     featured: false,
     features: tm("services.pricing.basicFeatures"),
   },
@@ -275,7 +286,6 @@ const pricingPlans = computed(() => [
     id: 2,
     title: t("services.pricing.pro"),
     description: t("services.pricing.proDesc"),
-    price: 80000,
     featured: true,
     features: tm("services.pricing.proFeatures"),
   },
@@ -283,7 +293,6 @@ const pricingPlans = computed(() => [
     id: 3,
     title: t("services.pricing.enterprise"),
     description: t("services.pricing.enterpriseDesc"),
-    price: 150000,
     featured: false,
     features: tm("services.pricing.enterpriseFeatures"),
   },
@@ -468,31 +477,7 @@ const faqs = computed(() => [
 .pricing-description {
   color: var(--text-muted);
   font-size: 0.875rem;
-  margin-bottom: 1.5rem;
-}
-
-.pricing-price {
-  margin-bottom: 1.5rem;
-}
-
-.pricing-price .currency {
-  font-size: 1rem;
-  color: var(--text-secondary);
-  vertical-align: top;
-}
-
-.pricing-price .amount {
-  font-size: 3rem;
-  font-weight: 900;
-  background: var(--primary-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.pricing-price .period {
-  font-size: 1rem;
-  color: var(--text-muted);
+  margin-bottom: 2rem;
 }
 
 .pricing-features {
@@ -544,5 +529,29 @@ const faqs = computed(() => [
   color: var(--text-secondary);
   padding: 0 1.25rem 1.25rem;
   line-height: 1.8;
+}
+
+/* CTA Section */
+.cta-section {
+  background: rgba(5, 150, 105, 0.05);
+  padding: 5rem 0;
+  border-radius: 24px;
+  margin: 4rem auto;
+  max-width: 900px;
+}
+
+.cta-title {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.cta-description {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>

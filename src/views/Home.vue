@@ -92,7 +92,10 @@
             v-for="service in services"
             :key="service.id"
           >
-            <div class="glass-card service-card h-100">
+            <router-link
+              to="/services"
+              class="glass-card service-card h-100 text-decoration-none"
+            >
               <div
                 class="service-icon"
                 :style="{ background: service.gradient }"
@@ -101,7 +104,10 @@
               </div>
               <h3 class="service-title">{{ service.title }}</h3>
               <p class="service-description">{{ service.description }}</p>
-            </div>
+              <span class="service-link">
+                {{ $t("home.learnMore") }} <i class="bi bi-arrow-right"></i>
+              </span>
+            </router-link>
           </div>
         </div>
       </div>
@@ -375,5 +381,33 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
   .code-preview {
     margin-top: 2rem;
   }
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: inherit;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-link {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-weight: 600;
+  color: var(--primary-light);
+  font-size: 0.875rem;
+}
+
+.service-link i {
+  transition: transform 0.3s;
+}
+
+.service-card:hover .service-link i {
+  transform: translateX(4px);
 }
 </style>
