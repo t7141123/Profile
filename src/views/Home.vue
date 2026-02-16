@@ -35,20 +35,6 @@
                 </a>
               </div>
 
-              <div class="hero-stats">
-                <div class="hero-stat">
-                  <span class="stat-number">20+</span>
-                  <span class="stat-label">{{ $t("home.heroStats.projects") }}</span>
-                </div>
-                <div class="hero-stat">
-                  <span class="stat-number">7+</span>
-                  <span class="stat-label">{{ $t("home.heroStats.years") }}</span>
-                </div>
-                <div class="hero-stat">
-                  <span class="stat-number">100%</span>
-                  <span class="stat-label">{{ $t("home.heroStats.satisfaction") }}</span>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -295,41 +281,6 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
 }
 .string {
   color: #98c379;
-}
-
-/* Hero Stats */
-.hero-stats {
-  display: flex;
-  gap: 2.5rem;
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.hero-stat {
-  display: flex;
-  flex-direction: column;
-}
-
-.stat-number {
-  font-size: 1.75rem;
-  font-weight: 800;
-  color: var(--primary-light);
-  line-height: 1.2;
-}
-
-.stat-label {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  margin-top: 0.25rem;
-  white-space: nowrap;
-}
-
-@media (max-width: 576px) {
-  .hero-stats {
-    gap: 1.5rem;
-    flex-wrap: wrap;
-  }
 }
 
 /* CTA Section */
