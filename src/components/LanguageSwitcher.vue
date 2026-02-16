@@ -50,8 +50,8 @@ const changeLanguage = (langCode) => {
 
 <style scoped>
 .btn-language {
-  background: rgba(99, 102, 241, 0.1);
-  border: 1px solid rgba(99, 102, 241, 0.3);
+  background: rgba(5, 150, 105, 0.1);
+  border: 1px solid rgba(5, 150, 105, 0.3);
   color: var(--text-primary);
   padding: 0.5rem 1rem;
   border-radius: 8px;
@@ -65,7 +65,7 @@ const changeLanguage = (langCode) => {
 
 .btn-language:hover,
 .btn-language:focus {
-  background: rgba(99, 102, 241, 0.2);
+  background: rgba(5, 150, 105, 0.2);
   border-color: var(--primary-color);
   color: var(--primary-light);
 }
@@ -97,12 +97,12 @@ const changeLanguage = (langCode) => {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  background: rgba(99, 102, 241, 0.1);
+  background: rgba(5, 150, 105, 0.1);
   color: var(--primary-light);
 }
 
 .dropdown-item.active {
-  background: rgba(99, 102, 241, 0.2);
+  background: rgba(5, 150, 105, 0.2);
   color: var(--primary-light);
 }
 

@@ -134,44 +134,6 @@
 </template>
 
 <style scoped>
-.page-header {
-  padding: 160px 0 60px;
-  background: var(--dark-bg);
-  position: relative;
-}
-
-.page-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:
-    radial-gradient(
-      circle at 30% 70%,
-      rgba(99, 102, 241, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 70% 30%,
-      rgba(139, 92, 246, 0.1) 0%,
-      transparent 50%
-    );
-  pointer-events: none;
-}
-
-.page-title {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 800;
-  margin-bottom: 1rem;
-}
-
-.page-description {
-  color: var(--text-secondary);
-  font-size: 1.125rem;
-}
-
 /* Contact Info */
 .contact-info-title {
   font-size: 1.75rem;
@@ -202,7 +164,7 @@
   transform: translateY(-5px);
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
   background: rgba(30, 41, 59, 0.6);
-  border-color: rgba(99, 102, 241, 0.3);
+  border-color: rgba(5, 150, 105, 0.3);
 }
 
 .contact-icon-wrapper {

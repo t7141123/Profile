@@ -82,7 +82,8 @@
             :key="tech.name"
           >
             <div class="tech-logo">
-              <i :class="tech.icon"></i>
+              <img v-if="tech.img" :src="tech.img" :alt="tech.name" class="tech-logo-img" />
+              <i v-else :class="tech.icon"></i>
             </div>
             <span class="tech-name">{{ tech.name }}</span>
           </div>
@@ -121,6 +122,12 @@
               </div>
               <h3 class="pricing-title">{{ plan.title }}</h3>
               <p class="pricing-description">{{ plan.description }}</p>
+
+              <div class="pricing-price">
+                <span class="currency">NT$</span>
+                <span class="amount">{{ plan.price.toLocaleString() }}</span>
+                <span class="period">{{ $t("services.pricing.from") }}</span>
+              </div>
 
               <ul class="pricing-features">
                 <li v-for="feature in plan.features" :key="feature">
@@ -240,18 +247,18 @@ const mainServices = computed(() => [
 ]);
 
 const technologies = [
-  { name: "Vue.js", icon: "bi bi-layers" },
-  { name: "C++", icon: "bi bi-cpu" },
-  { name: "C", icon: "bi bi-c-circle" },
-  { name: "React", icon: "bi bi-filetype-jsx" },
-  { name: "JavaScript", icon: "bi bi-filetype-js" },
-  { name: "Node.js", icon: "bi bi-node-plus" },
-  { name: "PHP", icon: "bi bi-filetype-php" },
-  { name: "Python", icon: "bi bi-filetype-py" },
-  { name: "MySQL", icon: "bi bi-database" },
-  { name: "MongoDB", icon: "bi bi-server" },
-  { name: "Git", icon: "bi bi-git" },
-  { name: "Docker", icon: "bi bi-box" },
+  { name: "Vue.js", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" },
+  { name: "C++", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" },
+  { name: "C", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" },
+  { name: "React", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
+  { name: "JavaScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
+  { name: "Node.js", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
+  { name: "PHP", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" },
+  { name: "Python", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+  { name: "MySQL", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
+  { name: "MongoDB", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+  { name: "Git", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
+  { name: "Docker", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
   { name: "Zeabur", icon: "bi bi-cloud" },
 ];
 
@@ -302,44 +309,6 @@ const faqs = computed(() => [
 </script>
 
 <style scoped>
-.page-header {
-  padding: 160px 0 60px;
-  background: var(--dark-bg);
-  position: relative;
-}
-
-.page-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:
-    radial-gradient(
-      circle at 30% 70%,
-      rgba(99, 102, 241, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 70% 30%,
-      rgba(139, 92, 246, 0.1) 0%,
-      transparent 50%
-    );
-  pointer-events: none;
-}
-
-.page-title {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 800;
-  margin-bottom: 1rem;
-}
-
-.page-description {
-  color: var(--text-secondary);
-  font-size: 1.125rem;
-}
-
 /* Service Detail Card */
 .service-detail-card {
   padding: 2rem;
@@ -423,12 +392,18 @@ const faqs = computed(() => [
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(99, 102, 241, 0.1);
-  border: 1px solid rgba(99, 102, 241, 0.2);
+  background: rgba(5, 150, 105, 0.1);
+  border: 1px solid rgba(5, 150, 105, 0.2);
   border-radius: 16px;
   font-size: 2rem;
   color: var(--primary-light);
   transition: var(--transition-base);
+}
+
+.tech-logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }
 
 .tech-logo-item:hover .tech-logo {
@@ -456,7 +431,7 @@ const faqs = computed(() => [
   border-color: var(--primary-color);
   background: linear-gradient(
     180deg,
-    rgba(99, 102, 241, 0.1) 0%,
+    rgba(5, 150, 105, 0.1) 0%,
     rgba(30, 41, 59, 0.5) 100%
   );
 }
@@ -547,7 +522,7 @@ const faqs = computed(() => [
 }
 
 .accordion-button:not(.collapsed) {
-  background: rgba(99, 102, 241, 0.1);
+  background: rgba(5, 150, 105, 0.1);
   color: var(--primary-light);
 }
 

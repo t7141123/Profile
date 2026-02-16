@@ -24,7 +24,7 @@
         <div class="row align-items-center">
           <div class="col-lg-4 mb-4 mb-lg-0">
             <div class="about-image">
-              <img src="@/assets/images/profile-new.jpg" alt="David Liu" />
+              <img src="@/assets/images/profile-new.jpg" alt="David Liu" loading="lazy" />
               <div class="experience-badge">
                 <span class="years">7+</span>
                 <span class="text">{{ $t("about.yearsExp") }}</span>
@@ -94,15 +94,11 @@
     <!-- Skills Section -->
     <section class="section">
       <div class="container">
-        <div class="section-header">
-          <span class="section-badge">{{ $t("about.skillsBadge") }}</span>
-          <h2 class="section-title">
-            {{ $t("about.skillsTitle")
-            }}<span class="highlight">{{
-              $t("about.skillsTitleHighlight")
-            }}</span>
-          </h2>
-        </div>
+        <SectionHeader
+          :badge="$t('about.skillsBadge')"
+          :title="$t('about.skillsTitle')"
+          :highlight="$t('about.skillsTitleHighlight')"
+        />
 
         <div class="row g-4">
           <div
@@ -136,18 +132,12 @@
     <!-- Work Process Section -->
     <section class="section" style="background: rgba(30, 41, 59, 0.3)">
       <div class="container">
-        <div class="section-header">
-          <span class="section-badge">{{ $t("about.processBadge") }}</span>
-          <h2 class="section-title">
-            {{ $t("about.processTitle")
-            }}<span class="highlight">{{
-              $t("about.processTitleHighlight")
-            }}</span>
-          </h2>
-          <p class="section-description">
-            {{ $t("about.processDescription") }}
-          </p>
-        </div>
+        <SectionHeader
+          :badge="$t('about.processBadge')"
+          :title="$t('about.processTitle')"
+          :highlight="$t('about.processTitleHighlight')"
+          :description="$t('about.processDescription')"
+        />
 
         <div class="row">
           <div
@@ -175,6 +165,7 @@
 <script setup>
 import { computed } from "vue";
 import { useI18n } from "vue-i18n";
+import SectionHeader from "@/components/common/SectionHeader.vue";
 
 const { t } = useI18n();
 
@@ -261,44 +252,7 @@ const workProcess = computed(() => [
 </script>
 
 <style scoped>
-.page-header {
-  padding: 160px 0 60px;
-  background: var(--dark-bg);
-  position: relative;
-}
-
-.page-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:
-    radial-gradient(
-      circle at 30% 70%,
-      rgba(99, 102, 241, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 70% 30%,
-      rgba(139, 92, 246, 0.1) 0%,
-      transparent 50%
-    );
-  pointer-events: none;
-}
-
-.page-title {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 800;
-  margin-bottom: 1rem;
-}
-
-.page-description {
-  color: var(--text-secondary);
-  font-size: 1.125rem;
-}
-
+/* About page specific styles start here */
 .about-image {
   position: relative;
 }
@@ -372,7 +326,7 @@ const workProcess = computed(() => [
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(99, 102, 241, 0.1);
+  background: rgba(5, 150, 105, 0.1);
   border-radius: 12px;
   color: var(--primary-light);
   font-size: 1.25rem;
@@ -438,7 +392,7 @@ const workProcess = computed(() => [
 .process-number {
   font-size: 4rem;
   font-weight: 900;
-  color: rgba(99, 102, 241, 0.1);
+  color: rgba(5, 150, 105, 0.1);
   line-height: 1;
   margin-bottom: -20px;
 }

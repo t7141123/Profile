@@ -72,14 +72,33 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, watch, nextTick } from 'vue'
+import { useRoute } from 'vue-router'
 import LanguageSwitcher from './LanguageSwitcher.vue'
 
 const isScrolled = ref(false)
+const route = useRoute()
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50
 }
+
+// 監聽路由變化，自動收合行動端選單
+watch(() => route.path, () => {
+  nextTick(() => {
+    const navbarCollapse = document.getElementById('navbarNav')
+    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+      // 使用 Bootstrap 的 Collapse API
+      const bsCollapse = window.bootstrap?.Collapse?.getInstance(navbarCollapse)
+      if (bsCollapse) {
+        bsCollapse.hide()
+      } else {
+        // 如果 Bootstrap 未載入，手動移除 show class
+        navbarCollapse.classList.remove('show')
+      }
+    }
+  })
+})
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)

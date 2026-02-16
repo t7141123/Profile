@@ -182,17 +182,17 @@ a:hover {
   background:
     radial-gradient(
       circle at 20% 80%,
-      rgba(99, 102, 241, 0.15) 0%,
+      rgba(5, 150, 105, 0.15) 0%,
       transparent 50%
     ),
     radial-gradient(
       circle at 80% 20%,
-      rgba(139, 92, 246, 0.15) 0%,
+      rgba(16, 185, 129, 0.15) 0%,
       transparent 50%
     ),
     radial-gradient(
       circle at 40% 40%,
-      rgba(14, 165, 233, 0.1) 0%,
+      rgba(13, 148, 136, 0.1) 0%,
       transparent 40%
     );
   pointer-events: none;
@@ -208,8 +208,8 @@ a:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: rgba(99, 102, 241, 0.1);
-  border: 1px solid rgba(99, 102, 241, 0.3);
+  background: rgba(5, 150, 105, 0.1);
+  border: 1px solid rgba(5, 150, 105, 0.3);
   border-radius: 50px;
   font-size: 0.875rem;
   color: var(--primary-light);
@@ -257,7 +257,7 @@ a:hover {
 
 .hero-image img {
   max-width: 100%;
-  filter: drop-shadow(0 20px 40px rgba(99, 102, 241, 0.3));
+  filter: drop-shadow(0 20px 40px rgba(5, 150, 105, 0.3));
 }
 
 /* Floating Particle Effects */
@@ -280,7 +280,7 @@ a:hover {
   height: 300px;
   background: radial-gradient(
     circle,
-    rgba(99, 102, 241, 0.1) 0%,
+    rgba(5, 150, 105, 0.1) 0%,
     transparent 70%
   );
   top: 10%;
@@ -293,7 +293,7 @@ a:hover {
   height: 200px;
   background: radial-gradient(
     circle,
-    rgba(139, 92, 246, 0.1) 0%,
+    rgba(16, 185, 129, 0.1) 0%,
     transparent 70%
   );
   bottom: 20%;
@@ -327,12 +327,12 @@ a:hover {
   position: relative;
   overflow: hidden;
   transition: var(--transition-base);
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 4px 15px rgba(5, 150, 105, 0.4);
 }
 
 .btn-primary-custom:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5);
+  box-shadow: 0 8px 25px rgba(5, 150, 105, 0.5);
   color: white;
 }
 
@@ -370,7 +370,7 @@ a:hover {
   background: var(--primary-color);
   color: white;
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 8px 25px rgba(5, 150, 105, 0.3);
 }
 
 /* ===================================
@@ -381,6 +381,46 @@ a:hover {
   position: relative;
 }
 
+/* Page Header (Shared across pages) */
+.page-header {
+  padding: 160px 0 60px;
+  background: var(--dark-bg);
+  position: relative;
+}
+
+.page-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(
+      circle at 30% 70%,
+      rgba(5, 150, 105, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 70% 30%,
+      rgba(16, 185, 129, 0.1) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
+
+.page-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.page-description {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+}
+
+
 .section-header {
   text-align: center;
   margin-bottom: 4rem;
@@ -389,8 +429,8 @@ a:hover {
 .section-badge {
   display: inline-block;
   padding: 0.5rem 1.5rem;
-  background: rgba(99, 102, 241, 0.1);
-  border: 1px solid rgba(99, 102, 241, 0.2);
+  background: rgba(5, 150, 105, 0.1);
+  border: 1px solid rgba(5, 150, 105, 0.2);
   border-radius: 50px;
   font-size: 0.875rem;
   font-weight: 600;
@@ -435,7 +475,7 @@ a:hover {
 
 .glass-card:hover {
   transform: translateY(-10px);
-  border-color: rgba(99, 102, 241, 0.3);
+  border-color: rgba(5, 150, 105, 0.3);
   box-shadow: var(--shadow-glow);
 }
 
@@ -454,7 +494,7 @@ a:hover {
 .portfolio-card:hover {
   transform: translateY(-10px);
   box-shadow: var(--shadow-glow);
-  border-color: rgba(99, 102, 241, 0.3);
+  border-color: rgba(5, 150, 105, 0.3);
 }
 
 .portfolio-image {
@@ -503,7 +543,7 @@ a:hover {
 .portfolio-category {
   display: inline-block;
   padding: 0.25rem 0.75rem;
-  background: rgba(99, 102, 241, 0.1);
+  background: rgba(5, 150, 105, 0.1);
   border-radius: 50px;
   font-size: 0.75rem;
   font-weight: 600;
@@ -583,8 +623,8 @@ a:hover {
 .skill-tag {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: rgba(99, 102, 241, 0.1);
-  border: 1px solid rgba(99, 102, 241, 0.2);
+  background: rgba(5, 150, 105, 0.1);
+  border: 1px solid rgba(5, 150, 105, 0.2);
   border-radius: 50px;
   font-size: 0.875rem;
   font-weight: 500;
@@ -664,7 +704,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(99, 102, 241, 0.1);
+  background: rgba(5, 150, 105, 0.1);
   border-radius: 12px;
   color: var(--primary-light);
   font-size: 1.25rem;
@@ -694,7 +734,7 @@ a:hover {
 .form-control:focus {
   background: rgba(30, 41, 59, 0.8);
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+  box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
   color: var(--text-primary);
 }
 
@@ -743,7 +783,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(99, 102, 241, 0.1);
+  background: rgba(5, 150, 105, 0.1);
   border-radius: 12px;
   color: var(--text-secondary);
   font-size: 1.25rem;

@@ -50,7 +50,8 @@
       "ecommerce": "E-commerce",
       "uvaco": "UVACO System",
       "uvacoDesc": "An event management system tailored for organization operations, featuring event registration, categorized browsing, and member management to effectively manage trainings and gatherings.",
-      "npo": "NPO"
+      "npo": "NPO",
+      "education": "Organizational Education System"
     },
     "codePreview": {
       "warmCareful": "Meticulous & Thorough",
@@ -225,37 +226,7 @@
     "workingHoursLabel": "Working Hours",
     "workingHoursValue": "Mon-Fri 9:00 - 18:00",
     "promiseLabel": "Communication Promise",
-    "promiseValue": "Deep listening, professional reply within 24h",
-    "followMe": "Follow Me",
-    "formTitle": "Send Message",
-    "nameLabel": "Name",
-    "namePlaceholder": "Your name",
-    "emailPlaceholder": "your@email.com",
-    "phoneLabel": "Phone",
-    "phonePlaceholder": "Your phone number",
-    "serviceLabel": "Service Type",
-    "serviceDefault": "Select service type",
-    "serviceOptions": {
-      "website": "Web Development",
-      "frontend": "Frontend Development",
-      "backend": "Backend Development",
-      "integration": "System Integration",
-      "maintenance": "Website Maintenance",
-      "other": "Other"
-    },
-    "budgetLabel": "Budget Range",
-    "budgetDefault": "Select budget range",
-    "budgetOptions": {
-      "under30k": "Under NT$ 30,000",
-      "30k80k": "NT$ 30,000 - 80,000",
-      "80k150k": "NT$ 80,000 - 150,000",
-      "over150k": "Over NT$ 150,000"
-    },
-    "messageLabel": "Message",
-    "messagePlaceholder": "Please describe your project requirements...",
-    "submitButton": "Send Message",
-    "submitting": "Sending...",
-    "successMessage": "Thank you for your message! I will reply soon."
+    "promiseValue": "Deep listening, professional reply within 24h"
   },
   "footer": {
     "brand": "David Liu",

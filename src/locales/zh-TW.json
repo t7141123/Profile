@@ -50,7 +50,8 @@
       "ecommerce": "電商網站",
       "uvaco": "蓬勃發展組織活動系統",
       "uvacoDesc": "專為組織運作打造的活動管理系統，整合活動報名、分類瀏覽與會員管理功能。協助組織有效管理各類培訓與聚會活動。",
-      "npo": "非營利組織"
+      "npo": "非營利組織",
+      "education": "組織教育系統"
     },
     "codePreview": {
       "warmCareful": "細心周全",
@@ -225,37 +226,7 @@
     "workingHoursLabel": "工作時間",
     "workingHoursValue": "週一至週五 9:00 - 18:00",
     "promiseLabel": "溝通承諾",
-    "promiseValue": "深度傾聽，24h 內專業回覆",
-    "followMe": "追蹤我",
-    "formTitle": "發送訊息",
-    "nameLabel": "姓名",
-    "namePlaceholder": "您的姓名",
-    "emailPlaceholder": "your@email.com",
-    "phoneLabel": "電話",
-    "phonePlaceholder": "您的聯繫電話",
-    "serviceLabel": "服務類型",
-    "serviceDefault": "請選擇服務類型",
-    "serviceOptions": {
-      "website": "網站開發",
-      "frontend": "前端開發",
-      "backend": "後端開發",
-      "integration": "系統整合",
-      "maintenance": "網站維護",
-      "other": "其他"
-    },
-    "budgetLabel": "預算範圍",
-    "budgetDefault": "請選擇預算範圍",
-    "budgetOptions": {
-      "under30k": "NT$ 30,000 以下",
-      "30k80k": "NT$ 30,000 - 80,000",
-      "80k150k": "NT$ 80,000 - 150,000",
-      "over150k": "NT$ 150,000 以上"
-    },
-    "messageLabel": "訊息內容",
-    "messagePlaceholder": "請描述您的專案需求...",
-    "submitButton": "發送訊息",
-    "submitting": "發送中...",
-    "successMessage": "感謝您的來信！我會盡快回覆您。"
+    "promiseValue": "深度傾聽，24h 內專業回覆"
   },
   "footer": {
     "brand": "David Liu",

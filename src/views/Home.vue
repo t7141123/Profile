@@ -119,7 +119,7 @@
           >
             <div class="portfolio-card h-100">
               <div class="portfolio-image">
-                <img :src="project.image" :alt="project.title" />
+                <img :src="project.image" :alt="project.title" loading="lazy" />
                 <div class="portfolio-overlay">
                   <a
                     :href="project.url"
@@ -213,7 +213,7 @@ const services = computed(() => [
   },
 ]);
 
-const featuredProjects = computed(() => getFeaturedProjects());
+const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
 </script>
 
 <style scoped>
@@ -303,12 +303,12 @@ const featuredProjects = computed(() => getFeaturedProjects());
   background:
     radial-gradient(
       circle at 10% 50%,
-      rgba(99, 102, 241, 0.2) 0%,
+      rgba(5, 150, 105, 0.2) 0%,
       transparent 50%
     ),
     radial-gradient(
       circle at 90% 50%,
-      rgba(139, 92, 246, 0.2) 0%,
+      rgba(16, 185, 129, 0.2) 0%,
       transparent 50%
     );
   pointer-events: none;
