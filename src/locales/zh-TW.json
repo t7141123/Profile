@@ -2,7 +2,7 @@
   "nav": {
     "home": "首頁",
     "about": "關於我",
-    "portfolio": "作品集",
+    "portfolio": "成功案例",
     "services": "服務項目",
     "contact": "聯繫我"
   },
@@ -19,8 +19,8 @@
     "servicesTitleHighlight": "解決方案",
     "servicesDescription": "提供從架構規劃、系統開發到長期維運的一站式技術服務",
     "featuredBadge": "數位轉型成功案例",
-    "featuredTitle": "作品",
-    "featuredTitleHighlight": "集",
+    "featuredTitle": "成功",
+    "featuredTitleHighlight": "案例",
     "viewSite": "查看網站",
     "visitSite": "瀏覽網站",
     "viewAll": "查看全部作品",
@@ -136,13 +136,13 @@
     "testimonials": {
       "t1Text": "David 的溝通非常清楚，整個開發過程都很透明，讓我完全不需要擔心進度問題。",
       "t1Author": "林先生",
-      "t1Role": "艾樂資訊 · 總經理",
+      "t1Role": "電商平台 · 總經理",
       "t2Text": "網站上線後客戶反應很好，David 的技術確實到位，有問題也都很快處理。",
       "t2Author": "張小姐",
-      "t2Role": "台灣軟陶 · 負責人",
+      "t2Role": "品牌官網 · 負責人",
       "t3Text": "從需求討論到完成上線，整個體驗非常專業順暢，會推薦給需要網站的朋友。",
       "t3Author": "陳先生",
-      "t3Role": "麟雲數據 · 專案經理"
+      "t3Role": "系統整合 · 專案經理"
     },
     "process": {
       "communication": "商業需求分析",
@@ -285,7 +285,7 @@
   },
   "footer": {
     "brand": "David Liu",
-    "description": "不確定從哪裡開始？加 Line 聊聊，我來幫你想。",
+    "description": "不確定怎麼開始您的數位轉型？與我聯繫，我來幫你想！",
     "quickLinks": "快速連結",
     "services": "服務項目",
     "servicesList": {

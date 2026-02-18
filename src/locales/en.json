@@ -2,7 +2,7 @@
   "nav": {
     "home": "Home",
     "services": "Services",
-    "portfolio": "Portfolio",
+    "portfolio": "Success Cases",
     "about": "About",
     "contact": "Contact"
   },
@@ -19,8 +19,8 @@
     "servicesTitleHighlight": "Digital Solutions",
     "servicesDescription": "One-stop technical services from architecture planning and system development to long-term maintenance",
     "featuredBadge": "Digital Transformation Success Stories",
-    "featuredTitle": "Port",
-    "featuredTitleHighlight": "folio",
+    "featuredTitle": "Success",
+    "featuredTitleHighlight": "Cases",
     "viewSite": "View Site",
     "visitSite": "Visit Website",
     "viewAll": "View All Works",
@@ -136,13 +136,13 @@
     "testimonials": {
       "t1Text": "David's communication is very clear, the entire development process is transparent, and I didn't have to worry about progress at all.",
       "t1Author": "Mr. Lin",
-      "t1Role": "Action Lead · GM",
+      "t1Role": "E-commerce Platform · GM",
       "t2Text": "The response after launch has been great. David's technical skills are solid and he handles issues very quickly.",
       "t2Author": "Ms. Chang",
-      "t2Role": "Taiwan Polymer Clay · Founder",
+      "t2Role": "Brand Website · Founder",
       "t3Text": "From requirements to launch, the experience was professional and smooth. Would highly recommend to anyone needing a website.",
       "t3Author": "Mr. Chen",
-      "t3Role": "LinkWing · Project Manager"
+      "t3Role": "System Integration · Project Manager"
     },
     "process": {
       "communication": "Business Requirement Analysis",
@@ -285,7 +285,7 @@
   },
   "footer": {
     "brand": "David Liu",
-    "description": "Not sure where to start? Message me on Line and I'll help you figure it out.",
+    "description": "Not sure how to start your digital transformation? Contact me, and I'll help you figure it out!",
     "quickLinks": "Quick Links",
     "services": "Services",
     "servicesList": {

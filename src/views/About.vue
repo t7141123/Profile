@@ -141,7 +141,7 @@
 
         <div class="row">
           <div
-            class="col-md-6 col-lg-3"
+            class="col-12 col-lg-3"
             v-for="(step, index) in workProcess"
             :key="step.id"
           >
@@ -474,6 +474,51 @@ const testimonials = computed(() => [
 .process-description {
   color: var(--text-secondary);
   font-size: 0.9375rem;
+}
+
+/* Process Arrows */
+.process-card::after {
+  font-family: "bootstrap-icons";
+  position: absolute;
+  color: var(--primary-light);
+  font-size: 1.5rem;
+  opacity: 0.5;
+  transition: var(--transition-base);
+}
+
+/* Desktop: Arrow Points Right */
+@media (min-width: 992px) {
+  .process-card::after {
+    content: "\F138"; /* bi-arrow-right */
+    top: 50%;
+    right: -20%; /* Position in the gap */
+    transform: translateY(-50%);
+  }
+
+  /* Hide arrow on the last item */
+  .col-lg-3:last-child .process-card::after {
+    display: none;
+  }
+}
+
+/* Mobile/Tablet: Arrow Points Down */
+@media (max-width: 991.98px) {
+  .process-card::after {
+    content: "\F128"; /* bi-arrow-down */
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Add spacing for the arrow on mobile */
+  .col-12:not(:last-child) .process-card {
+    margin-bottom: 3rem;
+  }
+
+  /* Hide arrow on the last item */
+  .col-lg-3:last-child .process-card::after {
+    display: none;
+  }
 }
 
 @media (max-width: 767.98px) {

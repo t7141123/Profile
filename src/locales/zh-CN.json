@@ -2,7 +2,7 @@
   "nav": {
     "home": "首页",
     "services": "服务项目",
-    "portfolio": "作品集",
+    "portfolio": "成功案例",
     "about": "关于我",
     "contact": "联系我"
   },
@@ -19,8 +19,8 @@
     "servicesTitleHighlight": "解决方案",
     "servicesDescription": "提供从架构规划、系统开发到长期维运的一站式技术服务",
     "featuredBadge": "数位转型成功案例",
-    "featuredTitle": "作品",
-    "featuredTitleHighlight": "集",
+    "featuredTitle": "成功",
+    "featuredTitleHighlight": "案例",
     "viewSite": "查看网站",
     "visitSite": "浏览网站",
     "viewAll": "查看全部作品",
@@ -136,13 +136,13 @@
     "testimonials": {
       "t1Text": "David 的沟通非常清楚，整个开发过程都很透明，让我完全不需要担心进度问题。",
       "t1Author": "林先生",
-      "t1Role": "艾乐资讯 · 总经理",
+      "t1Role": "电商平台 · 总经理",
       "t2Text": "网站上线后客户反应很好，David 的技术确实到位，有问题也都很快处理。",
       "t2Author": "张小姐",
-      "t2Role": "台湾软陶 · 负责人",
+      "t2Role": "品牌官网 · 负责人",
       "t3Text": "从需求讨论到完成上线，整个体验非常专业顺畅，会推荐给需要网站的朋友。",
       "t3Author": "陈先生",
-      "t3Role": "麟云数据 · 项目经理"
+      "t3Role": "系统整合 · 项目经理"
     },
     "process": {
       "communication": "商业需求分析",
@@ -285,7 +285,7 @@
   },
   "footer": {
     "brand": "David Liu",
-    "description": "不确定从哪里开始？加 Line 聊聊，我来帮你想。",
+    "description": "不确定怎么开始您的数位转型？与我联系，我来帮您想！",
     "quickLinks": "快速链接",
     "services": "服务项目",
     "servicesList": {
