@@ -166,14 +166,13 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-/* Standard Navbar Styles */
+/* =========================================
+   Standard Navbar Styles (Revised)
+   ========================================= */
 .navbar {
-  padding: 1.25rem 0;
+  padding: 1rem 0;
   transition: all 0.4s ease;
-  background: rgba(15, 23, 42, 0.8);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: transparent;
   position: fixed;
   top: 0;
   left: 0;
@@ -183,7 +182,10 @@ onUnmounted(() => {
 
 .navbar.scrolled {
   padding: 0.75rem 0;
-  background: rgba(15, 23, 42, 0.95);
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -195,38 +197,69 @@ onUnmounted(() => {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   position: relative;
-  z-index: 1002; /* Above overlay */
+  z-index: 1002;
 }
 
-/* Desktop Nav Link Styles */
-.nav-link {
-  color: var(--text-secondary);
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  position: relative;
-  padding: 0.5rem 0;
-}
+/* =========================================
+   Desktop Nav Link Styles (New Design - Option A)
+   ========================================= */
+@media (min-width: 992px) {
+  .navbar-nav {
+    gap: 1.5rem !important;
+  }
 
-.nav-link:hover,
-.nav-link.router-link-active {
-  color: var(--primary-light);
-}
+  .nav-link {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 1.05rem; /* Increased font size */
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--primary-gradient);
-  transition: width 0.3s ease;
-}
+  /* Hover State: Brighten Text */
+  .nav-link:hover {
+    color: var(--text-primary);
+    transform: translateY(-1px);
+  }
 
-.nav-link:hover::after,
-.nav-link.router-link-active::after {
-  width: 100%;
+  /* Active State: Gradient Text */
+  .nav-link.router-link-active {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+  }
+
+  /* Active Indicator: Gradient Bottom Line */
+  .nav-link.router-link-active::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 3px;
+    background: var(--primary-gradient);
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(52, 211, 153, 0.3);
+    animation: expandLine 0.3s ease forwards;
+  }
+
+  @keyframes expandLine {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 20px;
+      opacity: 1;
+    }
+  }
 }
 
 /* =========================================

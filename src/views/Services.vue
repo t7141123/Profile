@@ -75,17 +75,50 @@
           </p>
         </div>
 
-        <div class="tech-logos">
-          <div
-            class="tech-logo-item"
-            v-for="tech in technologies"
-            :key="tech.name"
-          >
-            <div class="tech-logo">
-              <img v-if="tech.img" :src="tech.img" :alt="tech.name" class="tech-logo-img" />
-              <i v-else :class="tech.icon"></i>
+        <div class="tech-marquee-container">
+          <!-- Row 1: Scroll Left -->
+          <div class="tech-marquee-row">
+            <div class="marquee-track scroll-left">
+              <div
+                class="tech-logo-item"
+                v-for="(tech, index) in duplicatedTechRow1"
+                :key="`row1-${index}`"
+              >
+                <div class="tech-logo">
+                  <img
+                    v-if="tech.img"
+                    :src="tech.img"
+                    :alt="tech.name"
+                    class="tech-logo-img"
+                  />
+                  <i v-else :class="tech.icon"></i>
+                </div>
+                <span class="tech-name">{{ tech.name }}</span>
+              </div>
             </div>
-            <span class="tech-name">{{ tech.name }}</span>
+            <!-- Duplicate content for seamless loop is handled by the array itself -->
+          </div>
+
+          <!-- Row 2: Scroll Right -->
+          <div class="tech-marquee-row">
+            <div class="marquee-track scroll-right">
+              <div
+                class="tech-logo-item"
+                v-for="(tech, index) in duplicatedTechRow2"
+                :key="`row2-${index}`"
+              >
+                <div class="tech-logo">
+                  <img
+                    v-if="tech.img"
+                    :src="tech.img"
+                    :alt="tech.name"
+                    class="tech-logo-img"
+                  />
+                  <i v-else :class="tech.icon"></i>
+                </div>
+                <span class="tech-name">{{ tech.name }}</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -184,7 +217,24 @@
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body">
-                    {{ faq.answer }}
+                    <div v-if="faq.cards" class="faq-list">
+                      <div
+                        class="faq-item"
+                        v-for="(card, cardIndex) in faq.cards"
+                        :key="cardIndex"
+                      >
+                        <div class="faq-item-num">
+                          0{{ cardIndex + 1 }}
+                        </div>
+                        <div class="faq-item-content">
+                          <h4 class="faq-item-title">{{ card.title }}</h4>
+                          <p class="faq-item-desc">{{ card.desc }}</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div v-else>
+                      {{ faq.answer }}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -260,19 +310,38 @@ const mainServices = computed(() => [
 
 const technologies = [
   { name: "Vue.js", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" },
-  { name: "C++", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" },
-  { name: "C", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" },
   { name: "React", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
   { name: "JavaScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
   { name: "Node.js", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
-  { name: "PHP", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" },
+  { name: "TypeScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" },
+  { name: "Next.js", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" },
+  { name: "Nuxt.js", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nuxtjs/nuxtjs-original.svg" },
+  { name: "Tailwind", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
+  { name: "Bootstrap", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" },
+  { name: "C++", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" },
   { name: "Python", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
+  { name: "PHP", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" },
   { name: "MySQL", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
+  { name: "PostgreSQL", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
   { name: "MongoDB", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
+  { name: "Redis", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" },
   { name: "Git", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
   { name: "Docker", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
-  { name: "Zeabur", icon: "bi bi-cloud" },
+  { name: "AWS", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" },
+  { name: "Line API", icon: "bi bi-chat-dots-fill" },
 ];
+
+// Split technologies into two rows
+const splitIndex = Math.ceil(technologies.length / 2);
+const techRow1 = technologies.slice(0, splitIndex);
+const techRow2 = technologies.slice(splitIndex);
+
+// Duplicate arrays to create seamless loop effect (need enough items to fill screen width + buffer)
+// Repeating 4 times ensures enough content for wide screens
+const duplicateArray = (arr) => [...arr, ...arr, ...arr, ...arr];
+
+const duplicatedTechRow1 = computed(() => duplicateArray(techRow1));
+const duplicatedTechRow2 = computed(() => duplicateArray(techRow2));
 
 const pricingPlans = computed(() => [
   {
@@ -318,6 +387,7 @@ const faqs = computed(() => [
     id: 4,
     question: t("services.faqs.q4"),
     answer: t("services.faqs.a4"),
+    cards: tm("services.faqs.a4_cards"), // Add cards data
   },
   {
     id: 5,
@@ -328,6 +398,52 @@ const faqs = computed(() => [
 </script>
 
 <style scoped>
+/* FAQ List (Designed Text) */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding-left: 0.5rem; /* Slight indentation */
+}
+
+.faq-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  position: relative;
+}
+
+.faq-item-num {
+  font-family: "JetBrains Mono", monospace, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  opacity: 0.9;
+  line-height: 1;
+  margin-top: 0.1rem; /* optical alignment */
+  min-width: 2rem;
+}
+
+.faq-item-content {
+  flex: 1;
+}
+
+.faq-item-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.faq-item-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
 /* Service Detail Card */
 .service-detail-card {
   padding: 2rem;
@@ -387,14 +503,76 @@ const faqs = computed(() => [
   color: var(--success-color);
 }
 
-/* Tech Logos */
-.tech-logos {
+/* Tech Logos Marquee */
+.tech-marquee-container {
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  /* Increase padding to prevent hover clipping */
+  padding: 2rem 0;
+}
+
+.tech-marquee-row {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
+  margin-bottom: 2rem;
+  overflow: visible; /* Allow hover transform */
+}
+
+.tech-marquee-row:last-child {
+  margin-bottom: 0;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 3rem; /* Spacing between items */
+  width: max-content;
+}
+
+.marquee-track.scroll-left {
+  animation: scrollLeft 80s linear infinite;
+}
+
+/* Start from -50% so it scrolls right to 0 */
+.marquee-track.scroll-right {
+  animation: scrollRight 80s linear infinite;
+  transform: translateX(-50%);
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Hover Pauses Animation */
+.tech-marquee-container:hover .marquee-track {
+  animation-play-state: paused;
 }
 
 .tech-logo-item {
@@ -403,6 +581,8 @@ const faqs = computed(() => [
   align-items: center;
   gap: 0.75rem;
   width: 100px;
+  flex-shrink: 0; /* Prevent shrinking */
+  cursor: default;
 }
 
 .tech-logo {
@@ -430,6 +610,7 @@ const faqs = computed(() => [
   border-color: transparent;
   color: white;
   transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(5, 150, 105, 0.3);
 }
 
 .tech-name {
@@ -527,8 +708,9 @@ const faqs = computed(() => [
 
 .accordion-body {
   color: var(--text-secondary);
-  padding: 0 1.25rem 1.25rem;
+  padding: 1rem 1.25rem 1.25rem;
   line-height: 1.8;
+  white-space: pre-line;
 }
 
 /* CTA Section */

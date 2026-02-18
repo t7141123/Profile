@@ -231,15 +231,32 @@
     "faqTitleHighlight": " Questions",
     "faqs": {
       "q1": "How long does project development take?",
-      "a1": "Development time depends on project complexity. A typical corporate website takes about 4-6 weeks, while more complex e-commerce or custom systems may take 2-4 months. I will provide a detailed schedule before the project starts.",
-      "q2": "How are payments arranged?",
+      "a1": "Development time depends on project complexity. Generally, a corporate website takes about 4-6 weeks, while more complex e-commerce platforms or custom systems may take 2-4 months. A project schedule will be provided before the project begins.",
+      "q2": "How does the payment process work?",
       "a2": "We typically use installment payments: 30% deposit upon signing, 40% at mid-development, and 30% upon project completion. Payment terms can be flexibly adjusted based on project needs.",
       "q3": "Do you provide maintenance after completion?",
       "a3": "Yes, all projects include a free maintenance period, which includes free fixes for any software bugs found during this time. After the maintenance period ends, you can choose to renew maintenance services to ensure your website remains stable and receives technical support.",
       "q4": "What makes you different from other freelancers?",
       "a4": "Three things: First, a full-stack technical capability so you don't need multiple people; second, proactive communication so you're never left in the dark; third, a complete post-launch maintenance period for peace of mind.",
+      "a4_cards": [
+        {
+          "title": "Full-Stack Capability",
+          "desc": "I handle everything from frontend to backend. You don't need to hire separate developers. One person, full context, higher efficiency.",
+          "icon": "bi-layers-fill"
+        },
+        {
+          "title": "Proactive Communication",
+          "desc": "I value transparency. Always reachable, regular updates. You will always know the project status and never feel left in the dark.",
+          "icon": "bi-chat-dots-fill"
+        },
+        {
+          "title": "Post-Launch Support",
+          "desc": "Launch is just the beginning. I provide a complete maintenance period to ensure stability. Any issues are checked and fixed immediately.",
+          "icon": "bi-shield-check"
+        }
+      ],
       "q5": "What if I'm not satisfied during the process?",
-      "a5": "Before formal development, I provide design drafts for your approval. We also have phased demos and reviews. If adjustments are needed mid-way, we can always discuss and adapt. My goal is your 100% satisfaction."
+      "a5": "Before formal development, I will provide design drafts for you to confirm the direction. There will also be phased demos and acceptance reviews during the development process. We can discuss the details further."
     },
     "ctaTitle": "Still have questions? Just ask",
     "ctaDescription": "Every project is unique. Tell me about yours and I'll tailor the perfect plan.",
