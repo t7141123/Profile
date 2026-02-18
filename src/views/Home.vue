@@ -183,29 +183,29 @@ const services = computed(() => [
   {
     id: 1,
     icon: "bi bi-globe",
-    title: t("home.services.webDev"),
-    description: t("home.services.webDevDesc"),
+    title: t("home.services.corporate"),
+    description: t("home.services.corporateDesc"),
     gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
   },
   {
     id: 2,
-    icon: "bi bi-code-square",
-    title: t("home.services.frontendDev"),
-    description: t("home.services.frontendDevDesc"),
+    icon: "bi bi-speedometer2",
+    title: t("home.services.operations"),
+    description: t("home.services.operationsDesc"),
     gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
   },
   {
     id: 3,
-    icon: "bi bi-server",
-    title: t("home.services.backendDev"),
-    description: t("home.services.backendDevDesc"),
+    icon: "bi bi-calendar-event",
+    title: t("home.services.events"),
+    description: t("home.services.eventsDesc"),
     gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
   },
   {
     id: 4,
-    icon: "bi bi-gear-wide-connected",
-    title: t("home.services.integration"),
-    description: t("home.services.integrationDesc"),
+    icon: "bi bi-code-square",
+    title: t("home.services.custom"),
+    description: t("home.services.customDesc"),
     gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
   },
 ]);
@@ -338,6 +338,14 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
 
 .service-card:hover {
   transform: translateY(-5px);
+}
+
+.service-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
+  white-space: nowrap;
 }
 
 .service-link {

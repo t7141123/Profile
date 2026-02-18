@@ -67,21 +67,38 @@
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="section cta-section">
+    <!-- NDA Notice & CTA Section -->
+    <section class="section nda-section">
       <div class="container">
-        <div class="cta-content text-center">
-          <h2 class="cta-title">{{ $t("portfolio.ctaTitle") }}</h2>
-          <p class="cta-description">
-            {{ $t("portfolio.ctaDescription") }}
-          </p>
-          <a
-            href="https://line.me/ti/p/2w7bwfksdF"
-            target="_blank"
-            class="btn btn-primary-custom btn-lg"
-          >
-            <i class="bi bi-line me-2"></i>{{ $t("portfolio.ctaButton") }}
-          </a>
+        <div class="nda-card">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <h3 class="nda-title">
+                <i class="bi bi-shield-lock-fill me-2"></i>
+                {{ $t("portfolio.ndaTitle") }}
+              </h3>
+              <p
+                class="nda-description"
+                v-html="$t('portfolio.ndaDescription')"
+              ></p>
+              <p class="nda-note">{{ $t("portfolio.ndaNote") }}</p>
+            </div>
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="nda-cta-wrapper text-center text-lg-end">
+                <h4 class="nda-cta-title">{{ $t("portfolio.ctaTitle") }}</h4>
+                <p class="nda-cta-desc">
+                  {{ $t("portfolio.ctaDescription") }}
+                </p>
+                <a
+                  href="https://line.me/ti/p/2w7bwfksdF"
+                  target="_blank"
+                  class="btn btn-primary-custom btn-lg"
+                >
+                  <i class="bi bi-line me-2"></i>{{ $t("portfolio.ctaButton") }}
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -143,5 +160,59 @@ const projects = computed(() => getAllProjects());
   color: var(--text-secondary);
   font-size: 1.125rem;
   margin-bottom: 2rem;
+}
+
+/* NDA Notice Section */
+.nda-section {
+  padding-bottom: 5rem; /* Add spacing at the bottom */
+}
+
+.nda-card {
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 3rem;
+  backdrop-filter: blur(10px);
+}
+
+.nda-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+}
+
+.nda-title i {
+  color: var(--primary-light);
+}
+
+.nda-description {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.nda-note {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/* NDA CTA Styles */
+.nda-cta-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.nda-cta-desc {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
 }
 </style>

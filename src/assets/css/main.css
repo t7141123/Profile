@@ -49,7 +49,7 @@
   --transition-slow: 0.5s ease;
   
   /* Spacing */
-  --section-padding: 100px 0;
+  --section-padding: 60px 0;
   
   /* Fonts */
   --font-sans: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
