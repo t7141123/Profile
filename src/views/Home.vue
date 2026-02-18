@@ -24,7 +24,8 @@
 
               <div class="hero-buttons">
                 <router-link to="/portfolio" class="btn btn-primary-custom">
-                  <i class="bi bi-collection me-2"></i>{{ $t("home.viewWorks") }}
+                  <i class="bi bi-collection me-2"></i
+                  >{{ $t("home.viewWorks") }}
                 </router-link>
                 <a
                   href="https://line.me/ti/p/2w7bwfksdF"
@@ -34,7 +35,6 @@
                   <i class="bi bi-line me-2"></i>{{ $t("home.addLine") }}
                 </a>
               </div>
-
             </div>
           </div>
 
@@ -328,12 +328,6 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
   margin-bottom: 2rem;
 }
 
-@media (max-width: 991.98px) {
-  .code-preview {
-    margin-top: 2rem;
-  }
-}
-
 .service-card {
   display: flex;
   flex-direction: column;
@@ -360,5 +354,11 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
 
 .service-card:hover .service-link i {
   transform: translateX(4px);
+}
+
+@media (max-width: 991.98px) {
+  .code-preview {
+    margin-top: 2rem;
+  }
 }
 </style>

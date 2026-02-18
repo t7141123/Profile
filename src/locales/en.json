@@ -257,7 +257,7 @@
     "telegramLabel": "Telegram",
     "telegramValue": "{'@'}davidliu71411",
     "emailLabel": "Email",
-    "emailValue": "david.liu@action-lead.com",
+    "emailValue": "david.liu{'@'}action-lead.com",
     "workingHoursLabel": "Working Hours",
     "workingHoursValue": "Mon-Fri 9:00 - 18:00",
     "promiseLabel": "Communication Promise",
