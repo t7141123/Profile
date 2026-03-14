@@ -10,7 +10,7 @@ NProgress.configure({
   trickleSpeed: 200
 })
 
-// Custom CSS for NProgress to match the warm design
+// Custom CSS for NProgress to match the professional blue design
 const nprogressStyles = document.createElement('style')
 nprogressStyles.textContent = `
   #nprogress {
@@ -18,7 +18,7 @@ nprogressStyles.textContent = `
   }
   
   #nprogress .bar {
-    background: linear-gradient(90deg, #F97316, #EC4899);
+    background: linear-gradient(90deg, #2563EB, #7C3AED);
     position: fixed;
     z-index: 10000;
     top: 0;
@@ -33,7 +33,7 @@ nprogressStyles.textContent = `
     right: 0px;
     width: 100px;
     height: 100%;
-    box-shadow: 0 0 10px #F97316, 0 0 5px #EC4899;
+    box-shadow: 0 0 10px #2563EB, 0 0 5px #7C3AED;
     opacity: 1.0;
     transform: rotate(3deg) translate(0px, -4px);
   }

@@ -45,8 +45,8 @@ const currentLangName = computed(() => {
 
 <style scoped>
 .btn-language {
-  background: rgba(249, 115, 22, 0.1);
-  border: 1px solid rgba(249, 115, 22, 0.2);
+  background: rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(37, 99, 235, 0.2);
   color: var(--text-primary);
   padding: 0.5rem 1rem;
   border-radius: var(--radius-lg);
@@ -60,7 +60,7 @@ const currentLangName = computed(() => {
 
 .btn-language:hover,
 .btn-language:focus {
-  background: rgba(249, 115, 22, 0.15);
+  background: rgba(37, 99, 235, 0.15);
   border-color: var(--primary-color);
   color: var(--primary-color);
 }
@@ -71,7 +71,7 @@ const currentLangName = computed(() => {
 
 .dropdown-menu {
   background: rgba(255, 255, 255, 0.98);
-  border: 1px solid rgba(249, 115, 22, 0.1);
+  border: 1px solid rgba(37, 99, 235, 0.1);
   border-radius: var(--radius-lg);
   padding: 0.5rem;
   min-width: 160px;
@@ -92,12 +92,12 @@ const currentLangName = computed(() => {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  background: rgba(249, 115, 22, 0.1);
+  background: rgba(37, 99, 235, 0.1);
   color: var(--primary-color);
 }
 
 .dropdown-item.active {
-  background: rgba(249, 115, 22, 0.15);
+  background: rgba(37, 99, 235, 0.15);
   color: var(--primary-color);
 }
 
