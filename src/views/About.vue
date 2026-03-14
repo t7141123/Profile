@@ -24,7 +24,7 @@
         <div class="row align-items-center">
           <div class="col-lg-4 mb-4 mb-lg-0">
             <div class="about-image">
-              <img src="@/assets/images/profile-new.jpg" alt="David Liu" loading="lazy" decoding="async" width="400" height="500" />
+              <img src="@/assets/images/profile-new.jpg" alt="David Liu" loading="lazy" decoding="async" width="400" height="500" style="width: auto; max-width: 100%; height: auto;" />
               <div class="experience-badge">
                 <span class="years">7+</span>
                 <span class="text">{{ $t("about.yearsExp") }}</span>
@@ -312,7 +312,11 @@ const testimonials = computed(() => [
 
 .about-image img {
   border-radius: 40px;
-  width: 85%;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
   display: block;
   margin: 0 auto;
   box-shadow: var(--shadow-xl);
