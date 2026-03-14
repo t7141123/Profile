@@ -84,11 +84,18 @@ const router = createRouter({
   history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
+    // If there's a saved position (browser back/forward), use it
     if (savedPosition) {
-      return savedPosition;
-    } else {
-      return { top: 0 };
+      return savedPosition
     }
+    
+    // If it's a locale change (same page, different locale), scroll smoothly to top
+    if (to.params.locale && from.params.locale && to.name === from.name) {
+      return { top: 0, behavior: 'smooth' }
+    }
+    
+    // For all other navigation, scroll to top
+    return { top: 0 }
   },
 });
 

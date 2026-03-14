@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import i18n from './i18n'
+import { setupRouterProgress } from './router/progress'
 
 // Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -16,5 +17,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 const app = createApp(App)
 app.use(router)
 app.use(i18n)
+
+// Setup page loading progress bar
+setupRouterProgress(router)
+
 app.mount('#app')
 

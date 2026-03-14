@@ -14,9 +14,9 @@
       <li v-for="lang in languages" :key="lang.code">
         <a
           class="dropdown-item"
-          :class="{ active: locale === lang.code }"
+          :class="{ active: currentLocale === lang.code }"
           href="#"
-          @click.prevent="changeLanguage(lang.code)"
+          @click.prevent="changeLocale(lang.code)"
         >
           {{ lang.name }}
         </a>
@@ -27,12 +27,9 @@
 
 <script setup>
 import { computed } from 'vue'
-import { useI18n } from 'vue-i18n'
-import { useRoute, useRouter } from 'vue-router'
+import { useLocale } from '@/composables/useLocale'
 
-const { locale } = useI18n()
-const route = useRoute()
-const router = useRouter()
+const { currentLocale, changeLocale } = useLocale()
 
 const languages = [
   { code: 'zh-TW', name: '繁體中文' },
@@ -41,17 +38,9 @@ const languages = [
 ]
 
 const currentLangName = computed(() => {
-  const lang = languages.find(l => l.code === locale.value)
+  const lang = languages.find(l => l.code === currentLocale.value)
   return lang ? lang.name : '繁體中文'
 })
-
-const changeLanguage = (langCode) => {
-  // Navigate to the same path but with new locale
-  const currentPath = route.path
-  // Replace the current locale in the path with the new one
-  const newPath = currentPath.replace(/^\/[^\/]+/, `/${langCode}`)
-  router.push(newPath)
-}
 </script>
 
 <style scoped>

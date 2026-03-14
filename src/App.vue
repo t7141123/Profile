@@ -1,10 +1,13 @@
 <template>
   <div id="app">
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Navigation Bar -->
     <Navbar />
 
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
       <router-view v-slot="{ Component }">
         <transition name="page" mode="out-in">
           <component :is="Component" />
@@ -41,8 +44,11 @@ watch(() => route.params.locale, () => {
   updateLocaleFromRoute()
 })
 
-// Update SEO Meta Tags when language changes
-watch(locale, () => {
+// Update SEO Meta Tags and html lang when language changes
+watch(locale, (newLocale) => {
+  // Update html lang attribute for accessibility and SEO
+  document.documentElement.lang = newLocale
+
   // Update Title
   document.title = t('meta.title')
 
@@ -62,6 +68,13 @@ watch(locale, () => {
       element.setAttribute('content', meta.content)
     }
   })
+
+  // Update canonical URL (remove locale prefix for canonical)
+  const canonical = document.querySelector('link[rel="canonical"]')
+  if (canonical) {
+    const pathWithoutLocale = route.path.replace(/^\/[^\/]+/, '')
+    canonical.href = `${import.meta.env.VITE_APP_URL || 'https://davidliu.studio'}${pathWithoutLocale || '/'}`
+  }
 }, { immediate: true })
 
 // Initialize locale from route on mount
@@ -72,4 +85,25 @@ onMounted(() => {
 
 <style>
 /* Global styles are defined in main.css */
+
+/* Skip Link for Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--primary-color);
+  color: white;
+  padding: 8px 16px;
+  z-index: 9999;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0 0 4px 0;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid var(--primary-light);
+  outline-offset: 2px;
+}
 </style>

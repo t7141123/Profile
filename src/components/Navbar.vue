@@ -81,7 +81,7 @@
                   v-for="lang in languages"
                   :key="lang.code"
                   class="lang-btn"
-                  :class="{ active: locale === lang.code }"
+                  :class="{ active: currentLocale === lang.code }"
                   @click="changeLanguage(lang.code)"
                 >
                   {{ lang.name }}
@@ -96,24 +96,13 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted, watch, computed } from "vue";
-import { useRoute, useRouter } from "vue-router";
-import { useI18n } from "vue-i18n";
+import { ref, onMounted, onUnmounted, watch } from "vue";
+import { useLocale } from "@/composables/useLocale";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
 
 const isScrolled = ref(false);
 const isMenuOpen = ref(false);
-const route = useRoute();
-const router = useRouter();
-const { locale } = useI18n();
-
-// Helper function to generate localized paths
-const localePath = (path) => {
-  const currentLocale = locale.value;
-  // Remove leading slash if present
-  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-  return `/${currentLocale}/${cleanPath}`;
-};
+const { changeLocale, localePath, currentLocale } = useLocale();
 
 const menuItems = [
   { path: "/", label: "nav.home" },
@@ -152,11 +141,7 @@ const updateBodyScroll = () => {
 };
 
 const changeLanguage = (langCode) => {
-  // Navigate to the same path but with new locale
-  const currentPath = route.path;
-  // Replace the current locale in the path with the new one
-  const newPath = currentPath.replace(/^\/[^\/]+/, `/${langCode}`);
-  router.push(newPath);
+  changeLocale(langCode);
   closeMenu();
 };
 

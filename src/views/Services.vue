@@ -308,22 +308,26 @@ const mainServices = computed(() => [
   },
 ]);
 
+// Technology logos - using local imports for better performance
+// Images are copied to dist/images/tech/ during build
+const techLogoPath = '/images/tech/'
+
 const technologies = [
-  { name: "Vue.js", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" },
-  { name: "React", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
-  { name: "JavaScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
-  { name: "Node.js", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
-  { name: "TypeScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" },
-  { name: "Tailwind", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" },
-  { name: "Bootstrap", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" },
-  { name: "C++", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" },
-  { name: "Python", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
-  { name: "PHP", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" },
-  { name: "MySQL", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
-  { name: "PostgreSQL", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" },
-  { name: "MongoDB", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" },
-  { name: "Git", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
-  { name: "Docker", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
+  { name: "Vue.js", img: `${techLogoPath}vuejs.svg` },
+  { name: "React", img: `${techLogoPath}react.svg` },
+  { name: "JavaScript", img: `${techLogoPath}javascript.svg` },
+  { name: "Node.js", img: `${techLogoPath}nodejs.svg` },
+  { name: "TypeScript", img: `${techLogoPath}typescript.svg` },
+  { name: "Tailwind", img: `${techLogoPath}tailwindcss.svg` },
+  { name: "Bootstrap", img: `${techLogoPath}bootstrap.svg` },
+  { name: "C++", img: `${techLogoPath}cplusplus.svg` },
+  { name: "Python", img: `${techLogoPath}python.svg` },
+  { name: "PHP", img: `${techLogoPath}php.svg` },
+  { name: "MySQL", img: `${techLogoPath}mysql.svg` },
+  { name: "PostgreSQL", img: `${techLogoPath}postgresql.svg` },
+  { name: "MongoDB", img: `${techLogoPath}mongodb.svg` },
+  { name: "Git", img: `${techLogoPath}git.svg` },
+  { name: "Docker", img: `${techLogoPath}docker.svg` },
   { name: "Line API", icon: "bi bi-chat-dots-fill" },
 ];
 
