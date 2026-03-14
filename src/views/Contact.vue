@@ -4,9 +4,14 @@
     <section class="page-header">
       <div class="gradient-orb-1"></div>
       <div class="gradient-orb-2"></div>
+      <div class="gradient-orb-3"></div>
       <div class="geometric-pattern"></div>
+      <div class="dotted-pattern"></div>
       <div class="floating-shape-1"></div>
       <div class="floating-shape-2"></div>
+      <div class="floating-shape-3"></div>
+      <div class="sparkle-1"></div>
+      <div class="sparkle-2"></div>
       
       <div class="container">
         <div class="row align-items-center">

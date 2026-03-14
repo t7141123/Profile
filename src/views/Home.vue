@@ -5,11 +5,19 @@
       <!-- Decorative Background Elements -->
       <div class="gradient-orb-1"></div>
       <div class="gradient-orb-2"></div>
+      <div class="gradient-orb-3"></div>
       <div class="geometric-pattern"></div>
+      <div class="dotted-pattern"></div>
+      <div class="gradient-mesh"></div>
       <div class="floating-shape-1"></div>
       <div class="floating-shape-2"></div>
       <div class="floating-shape-3"></div>
       <div class="floating-shape-4"></div>
+      <div class="floating-shape-5"></div>
+      <div class="floating-shape-6"></div>
+      <div class="sparkle-1"></div>
+      <div class="sparkle-2"></div>
+      <div class="sparkle-3"></div>
       <div class="wave-decoration"></div>
 
       <div class="container">
