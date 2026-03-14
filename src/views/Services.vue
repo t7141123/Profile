@@ -741,11 +741,12 @@ const faqs = computed(() => [
 /* CTA Section */
 .cta-section {
   background: var(--gradient-hero);
-  padding: 5rem 0;
+  padding: 5rem 2rem;
   border-radius: var(--radius-xl);
-  margin: 4rem auto;
+  margin: 6rem auto 4rem;
   max-width: 1200px;
   border: 1px solid rgba(37, 99, 235, 0.1);
+  box-shadow: var(--shadow-xl);
 }
 
 .cta-title {

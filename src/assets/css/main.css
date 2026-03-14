@@ -444,6 +444,12 @@ a:hover {
   display: none;
 }
 
+/* Extra spacing before special sections */
+.section.cta-section,
+.section.nda-section {
+  margin-top: 4rem;
+}
+
 /* Page Header (Shared across pages) */
 .page-header {
   padding: 160px 0 60px;

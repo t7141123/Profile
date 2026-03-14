@@ -100,7 +100,7 @@
     </section>
 
     <!-- Featured Projects Section -->
-    <section class="section">
+    <section class="section featured-projects-section">
       <div class="container">
         <SectionHeader
           :badge="$t('home.featuredBadge')"
@@ -284,15 +284,22 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
   color: #10B981; /* Green */
 }
 
-/* CTA Section */
+/* Featured Projects Section */
+.featured-projects-section {
+  padding-bottom: 4rem;
+}
+
+/* CTA Section - More visual separation */
 .cta-section {
   background: var(--gradient-hero);
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-xl);
-  margin: 4rem auto;
+  margin: 6rem auto 4rem;
   max-width: 1200px;
   border: 1px solid rgba(37, 99, 235, 0.1);
+  box-shadow: var(--shadow-xl);
+  padding: 5rem 2rem;
 }
 
 .cta-section::before {

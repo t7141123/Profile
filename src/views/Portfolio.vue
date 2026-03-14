@@ -165,6 +165,7 @@ const projects = computed(() => getAllProjects());
 /* NDA Notice Section */
 .nda-section {
   padding-bottom: 5rem;
+  margin-top: 4rem;
 }
 
 .nda-section.no-divider::after {
@@ -177,6 +178,7 @@ const projects = computed(() => getAllProjects());
   border-radius: var(--radius-xl);
   padding: 3rem;
   box-shadow: var(--shadow-soft);
+  margin: 2rem 0;
 }
 
 .nda-title {
