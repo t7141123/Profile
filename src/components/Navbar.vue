@@ -185,8 +185,8 @@ onUnmounted(() => {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: var(--shadow-md);
+  border-bottom: 1px solid rgba(249, 115, 22, 0.1);
+  box-shadow: var(--shadow-soft);
 }
 
 .navbar-brand {

@@ -7,18 +7,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;600;700;900&display=swap");
 
 /* ===================================
-   CSS Variables - Warmer & More Approachable
+   CSS Variables - Warm & Approachable
    =================================== */
 :root {
-  /* Primary Color - Trustworthy Blue with warmth */
-  --primary-color: #3B82F6; /* Blue 500 - friendly and professional */
-  --primary-dark: #2563EB;  /* Blue 600 */
-  --primary-light: #60A5FA; /* Blue 400 */
-  --primary-gradient: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+  /* Primary Color - Warm Coral/Orange for friendliness and energy */
+  --primary-color: #F97316; /* Orange 500 - warm and inviting */
+  --primary-dark: #EA580C;  /* Orange 600 */
+  --primary-light: #FB923C; /* Orange 400 */
+  --primary-gradient: linear-gradient(135deg, #F97316 0%, #EC4899 100%);
   
-  /* Secondary Color - Warm Coral for energy and friendliness */
-  --secondary-color: #F97316; /* Orange 500 */
-  --accent-color: #FB923C;    /* Orange 400 */
+  /* Secondary Color - Soft Pink for warmth */
+  --secondary-color: #EC4899; /* Pink 500 */
+  --accent-color: #F472B6;    /* Pink 400 */
+  
+  /* Complementary - Warm Yellow for positivity */
+  --complement-color: #F59E0B; /* Amber 500 */
   
   /* Success & Positive Colors */
   --success-color: #10B981;
@@ -26,36 +29,40 @@
   --danger-color: #EF4444;
   --warning-color: #F59E0B;
 
-  /* Light & Airy Backgrounds */
-  --bg-primary: #FAFAFA;      /* Very light gray */
+  /* Warm & Cozy Backgrounds */
+  --bg-primary: #FFFBF7;      /* Warm off-white with peach tint */
   --bg-secondary: #FFFFFF;    /* Pure white */
-  --bg-accent: #F3F4F6;       /* Light gray for sections */
+  --bg-accent: #FFF5ED;       /* Light peach for sections */
+  --bg-warm: #FEF3C7;         /* Warm amber tint for highlights */
   
-  /* Text Colors - Softer contrast */
-  --text-primary: #1F2937;    /* Gray 800 - readable but not harsh */
-  --text-secondary: #4B5563;  /* Gray 600 */
-  --text-muted: #9CA3AF;      /* Gray 400 */
-  --text-light: #F9FAFB;      /* For dark backgrounds */
+  /* Text Colors - Warm and readable */
+  --text-primary: #2D1B0E;    /* Warm brown - softer than black */
+  --text-secondary: #57534E;  /* Warm gray */
+  --text-muted: #A8A29E;      /* Light warm gray */
+  --text-light: #FFFBF7;      /* For dark backgrounds */
 
   /* Warm Gradients */
-  --gradient-primary: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
-  --gradient-warm: linear-gradient(135deg, #F97316 0%, #EC4899 100%);
-  --gradient-soft: linear-gradient(135deg, #60A5FA 0%, #A78BFA 100%);
-  --gradient-hero: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
+  --gradient-primary: linear-gradient(135deg, #F97316 0%, #EC4899 100%);
+  --gradient-sunset: linear-gradient(135deg, #F97316 0%, #FB923C 50%, #F472B6 100%);
+  --gradient-warm: linear-gradient(135deg, #F59E0B 0%, #F97316 100%);
+  --gradient-soft: linear-gradient(135deg, #FDBA74 0%, #FCA5A5 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(249, 115, 22, 0.08) 0%, rgba(236, 72, 153, 0.08) 100%);
   
-  /* Soft Shadows - More subtle and modern */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-  --shadow-glow: 0 0 40px rgba(59, 130, 246, 0.15);
-  --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.08);
+  /* Soft Shadows - Warm glow */
+  --shadow-sm: 0 1px 2px 0 rgba(249, 115, 22, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(249, 115, 22, 0.1), 0 2px 4px -2px rgba(249, 115, 22, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(249, 115, 22, 0.1), 0 4px 6px -4px rgba(249, 115, 22, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(249, 115, 22, 0.15), 0 8px 10px -6px rgba(249, 115, 22, 0.1);
+  --shadow-glow: 0 0 40px rgba(249, 115, 22, 0.2);
+  --shadow-soft: 0 8px 30px rgba(249, 115, 22, 0.08);
+  --shadow-warm: 0 10px 40px rgba(245, 158, 11, 0.15);
 
-  /* Border Radius - Friendlier curves */
+  /* Border Radius - Friendly curves */
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
   --radius-xl: 24px;
+  --radius-xxl: 32px;
   --radius-full: 9999px;
 
   /* Animations */
@@ -178,7 +185,7 @@ a:hover {
 }
 
 /* ===================================
-   Hero Section - Bright & Welcoming
+   Hero Section - Warm & Welcoming
    =================================== */
 .hero-section {
   min-height: 100vh;
@@ -200,17 +207,17 @@ a:hover {
   background:
     radial-gradient(
       circle at 20% 80%,
-      rgba(59, 130, 246, 0.08) 0%,
+      rgba(249, 115, 22, 0.12) 0%,
       transparent 50%
     ),
     radial-gradient(
       circle at 80% 20%,
-      rgba(139, 92, 246, 0.08) 0%,
+      rgba(236, 72, 153, 0.1) 0%,
       transparent 50%
     ),
     radial-gradient(
       circle at 40% 40%,
-      rgba(96, 165, 250, 0.06) 0%,
+      rgba(245, 158, 11, 0.08) 0%,
       transparent 40%
     );
   pointer-events: none;
@@ -226,8 +233,8 @@ a:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: rgba(59, 130, 246, 0.1);
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  background: rgba(249, 115, 22, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.2);
   border-radius: var(--radius-full);
   font-size: 0.875rem;
   color: var(--primary-color);
@@ -276,7 +283,7 @@ a:hover {
 
 .hero-image img {
   max-width: 100%;
-  filter: drop-shadow(0 20px 40px rgba(59, 130, 246, 0.15));
+  filter: drop-shadow(0 20px 40px rgba(249, 115, 22, 0.15));
 }
 
 /* Floating Particle Effects */
@@ -334,7 +341,7 @@ a:hover {
 }
 
 /* ===================================
-   Button Styles - Friendly & Modern
+   Button Styles - Warm & Friendly
    =================================== */
 .btn-primary-custom {
   padding: 0.875rem 2rem;
@@ -346,12 +353,12 @@ a:hover {
   position: relative;
   overflow: hidden;
   transition: var(--transition-base);
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.3);
 }
 
 .btn-primary-custom:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 8px 25px rgba(249, 115, 22, 0.4);
   color: white;
 }
 
@@ -386,10 +393,10 @@ a:hover {
 }
 
 .btn-outline-custom:hover {
-  background: var(--primary-color);
+  background: var(--gradient-primary);
   color: white;
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 8px 25px rgba(249, 115, 22, 0.3);
 }
 
 /* ===================================
@@ -417,12 +424,12 @@ a:hover {
   background:
     radial-gradient(
       circle at 30% 70%,
-      rgba(59, 130, 246, 0.08) 0%,
+      rgba(249, 115, 22, 0.1) 0%,
       transparent 50%
     ),
     radial-gradient(
       circle at 70% 30%,
-      rgba(139, 92, 246, 0.08) 0%,
+      rgba(236, 72, 153, 0.08) 0%,
       transparent 50%
     );
   pointer-events: none;
@@ -449,8 +456,8 @@ a:hover {
 .section-badge {
   display: inline-block;
   padding: 0.5rem 1.5rem;
-  background: rgba(59, 130, 246, 0.1);
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  background: rgba(249, 115, 22, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.2);
   border-radius: var(--radius-full);
   font-size: 0.875rem;
   font-weight: 600;
@@ -482,13 +489,13 @@ a:hover {
 }
 
 /* ===================================
-   Card Styles - Clean & Professional
+   Card Styles - Warm & Professional
    =================================== */
 .glass-card {
   background: var(--bg-secondary);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(249, 115, 22, 0.1);
   border-radius: var(--radius-xl);
   padding: 2rem;
   transition: var(--transition-base);
@@ -497,7 +504,7 @@ a:hover {
 
 .glass-card:hover {
   transform: translateY(-10px);
-  border-color: rgba(59, 130, 246, 0.2);
+  border-color: rgba(249, 115, 22, 0.3);
   box-shadow: var(--shadow-glow);
 }
 
@@ -509,7 +516,7 @@ a:hover {
   border-radius: var(--radius-xl);
   overflow: hidden;
   background: var(--bg-secondary);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(249, 115, 22, 0.1);
   transition: var(--transition-base);
   box-shadow: var(--shadow-soft);
 }
@@ -517,7 +524,7 @@ a:hover {
 .portfolio-card:hover {
   transform: translateY(-10px);
   box-shadow: var(--shadow-xl);
-  border-color: rgba(59, 130, 246, 0.2);
+  border-color: rgba(249, 115, 22, 0.3);
 }
 
 .portfolio-image {
@@ -567,7 +574,7 @@ a:hover {
 .portfolio-category {
   display: inline-block;
   padding: 0.25rem 0.75rem;
-  background: rgba(59, 130, 246, 0.1);
+  background: rgba(249, 115, 22, 0.1);
   border-radius: var(--radius-full);
   font-size: 0.75rem;
   font-weight: 600;
@@ -648,8 +655,8 @@ a:hover {
 .skill-tag {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: rgba(59, 130, 246, 0.1);
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  background: rgba(249, 115, 22, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.2);
   border-radius: var(--radius-full);
   font-size: 0.875rem;
   font-weight: 500;
@@ -729,7 +736,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(59, 130, 246, 0.1);
+  background: rgba(249, 115, 22, 0.1);
   border-radius: var(--radius-lg);
   color: var(--primary-color);
   font-size: 1.25rem;
@@ -749,7 +756,7 @@ a:hover {
 
 .form-control {
   background: var(--bg-secondary);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.2);
   border-radius: var(--radius-lg);
   padding: 1rem 1.25rem;
   color: var(--text-primary);
@@ -759,7 +766,7 @@ a:hover {
 .form-control:focus {
   background: var(--bg-secondary);
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
   color: var(--text-primary);
 }
 
@@ -774,12 +781,12 @@ a:hover {
 }
 
 /* ===================================
-   Footer - Clean & Professional
+   Footer - Warm & Professional
    =================================== */
 .footer {
   background: var(--bg-secondary);
   padding: 4rem 0 2rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(249, 115, 22, 0.1);
 }
 
 .footer-brand {
@@ -808,7 +815,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(59, 130, 246, 0.1);
+  background: rgba(249, 115, 22, 0.1);
   border-radius: var(--radius-lg);
   color: var(--primary-color);
   font-size: 1.25rem;
@@ -850,7 +857,7 @@ a:hover {
 .footer-bottom {
   padding-top: 2rem;
   margin-top: 3rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(249, 115, 22, 0.1);
   text-align: center;
   color: var(--text-muted);
 }

@@ -304,12 +304,12 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
   background:
     radial-gradient(
       circle at 10% 50%,
-      rgba(59, 130, 246, 0.15) 0%,
+      rgba(249, 115, 22, 0.15) 0%,
       transparent 50%
     ),
     radial-gradient(
       circle at 90% 50%,
-      rgba(139, 92, 246, 0.15) 0%,
+      rgba(236, 72, 153, 0.15) 0%,
       transparent 50%
     );
   pointer-events: none;
