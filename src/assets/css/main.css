@@ -185,7 +185,7 @@ a:hover {
 }
 
 /* ===================================
-   Hero Section - Enhanced Design
+   Hero Section - Clean & Modern
    =================================== */
 .hero-section {
   min-height: 100vh;
@@ -193,60 +193,34 @@ a:hover {
   align-items: center;
   position: relative;
   overflow: hidden;
-  background: var(--bg-primary);
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-accent) 100%);
   padding-top: 80px;
 }
 
-/* Enhanced decorative background for hero */
+/* Soft gradient orbs */
 .hero-section::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:
-    radial-gradient(
-      circle at 20% 80%,
-      rgba(37, 99, 235, 0.12) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 80% 20%,
-      rgba(59, 130, 246, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 40% 40%,
-      rgba(139, 92, 246, 0.08) 0%,
-      transparent 40%
-    );
+  top: -10%;
+  right: 10%;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(80px);
   pointer-events: none;
 }
 
-/* Subtle mesh gradient overlay */
 .hero-section::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    repeating-linear-gradient(
-      45deg,
-      rgba(37, 99, 235, 0.02) 0px,
-      rgba(37, 99, 235, 0.02) 1px,
-      transparent 1px,
-      transparent 20px
-    ),
-    repeating-linear-gradient(
-      -45deg,
-      rgba(59, 130, 246, 0.02) 0px,
-      rgba(59, 130, 246, 0.02) 1px,
-      transparent 1px,
-      transparent 20px
-    );
+  bottom: 10%;
+  left: -5%;
+  width: 40vw;
+  height: 40vw;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(60px);
   pointer-events: none;
 }
 
@@ -434,31 +408,13 @@ a:hover {
   position: relative;
 }
 
-/* Section dividers - alternate backgrounds for visual separation */
-.section:not(.no-bg):nth-child(odd) {
+/* Section dividers - subtle background alternation */
+.section:nth-child(odd) {
   background: var(--bg-primary);
 }
 
-.section:not(.no-bg):nth-child(even) {
+.section:nth-child(even) {
   background: var(--bg-accent);
-}
-
-/* Add subtle divider line between sections */
-.section:not(:last-child):not(.no-divider)::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 1200px;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(37, 99, 235, 0.15) 50%,
-    transparent 100%
-  );
 }
 
 /* Special section modifiers */
@@ -478,74 +434,37 @@ a:hover {
 }
 
 .page-header {
-  padding: 160px 0 60px;
-  background: var(--bg-primary);
+  padding: 180px 0 80px;
+  background: linear-gradient(180deg, var(--bg-accent) 0%, var(--bg-primary) 100%);
   position: relative;
   overflow: hidden;
 }
 
-/* Decorative bottom border for page headers */
+/* Decorative blob shapes for page headers */
 .page-header::before {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 1200px;
-  height: 3px;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    var(--primary-color) 20%,
-    var(--primary-color) 80%,
-    transparent 100%
-  );
-  border-radius: 2px;
-  z-index: 1;
+  top: -10%;
+  right: -5%;
+  width: 40vw;
+  height: 40vw;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(60px);
+  pointer-events: none;
 }
 
-/* Decorative background elements for page headers */
 .page-header::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:
-    radial-gradient(
-      circle at 30% 70%,
-      rgba(37, 99, 235, 0.08) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 70% 30%,
-      rgba(59, 130, 246, 0.06) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 50% 50%,
-      rgba(139, 92, 246, 0.05) 0%,
-      transparent 40%
-    ),
-    linear-gradient(
-      rgba(37, 99, 235, 0.03) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      rgba(37, 99, 235, 0.03) 1px,
-      transparent 1px
-    );
-  background-size: 
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    40px 40px,
-    40px 40px;
+  bottom: -10%;
+  left: -10%;
+  width: 30vw;
+  height: 30vw;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(40px);
   pointer-events: none;
-  z-index: 0;
 }
 
 .page-title {
