@@ -214,25 +214,25 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
 </script>
 
 <style scoped>
-/* Code Preview Styles */
+/* Code Preview Styles - Modern & Clean */
 .code-preview {
-  background: rgba(30, 41, 59, 0.9);
-  border-radius: 16px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-xl);
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-xl);
   text-align: left;
   max-width: 500px;
   margin: 0 auto;
 }
 
 .code-header {
-  background: rgba(30, 41, 59, 1);
+  background: var(--bg-accent);
   padding: 12px 16px;
   display: flex;
   align-items: center;
   gap: 8px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .dot {
@@ -242,13 +242,13 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
 }
 
 .dot.red {
-  background: #ff5f57;
+  background: #FF5F57;
 }
 .dot.yellow {
-  background: #febc2e;
+  background: #FEBC2E;
 }
 .dot.green {
-  background: #28c840;
+  background: #28C840;
 }
 
 .filename {
@@ -264,6 +264,7 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
   font-size: 0.875rem;
   line-height: 1.8;
   overflow-x: auto;
+  background: var(--bg-secondary);
 }
 
 .code-content code {
@@ -271,16 +272,16 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
 }
 
 .keyword {
-  color: #c678dd;
+  color: #8B5CF6; /* Purple */
 }
 .variable {
-  color: #e06c75;
+  color: #EF4444; /* Red */
 }
 .property {
-  color: #e5c07b;
+  color: #F59E0B; /* Amber */
 }
 .string {
-  color: #98c379;
+  color: #10B981; /* Green */
 }
 
 /* CTA Section */
@@ -288,6 +289,9 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
   background: var(--gradient-hero);
   position: relative;
   overflow: hidden;
+  border-radius: var(--radius-xl);
+  margin: 4rem auto;
+  max-width: 1200px;
 }
 
 .cta-section::before {
@@ -300,12 +304,12 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
   background:
     radial-gradient(
       circle at 10% 50%,
-      rgba(5, 150, 105, 0.2) 0%,
+      rgba(59, 130, 246, 0.15) 0%,
       transparent 50%
     ),
     radial-gradient(
       circle at 90% 50%,
-      rgba(16, 185, 129, 0.2) 0%,
+      rgba(139, 92, 246, 0.15) 0%,
       transparent 50%
     );
   pointer-events: none;
@@ -320,6 +324,7 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 800;
   margin-bottom: 1rem;
+  color: var(--text-primary);
 }
 
 .cta-description {
@@ -346,13 +351,14 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
   margin-bottom: 0.75rem;
   margin-top: 1.5rem;
   white-space: nowrap;
+  color: var(--text-primary);
 }
 
 .service-link {
   margin-top: auto;
   padding-top: 1rem;
   font-weight: 600;
-  color: var(--primary-light);
+  color: var(--primary-color);
   font-size: 0.875rem;
 }
 

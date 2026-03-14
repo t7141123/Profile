@@ -1,58 +1,74 @@
 /* ===================================
    David Liu Studio - Main Stylesheet
+   Redesign: Approachable & Professional
    =================================== */
 
-/* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@300;400;500;600;700;900&display=swap");
+/* Google Fonts - More friendly typography */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;600;700;900&display=swap");
 
 /* ===================================
-   CSS Variables
+   CSS Variables - Warmer & More Approachable
    =================================== */
 :root {
-  /* Primary Color - Warm Forest Green / Emerald */
-  --primary-color: #059669; /* Emerald 600 */
-  --primary-dark: #047857;  /* Emerald 700 */
-  --primary-light: #34d399; /* Emerald 400 */
-  --primary-gradient: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+  /* Primary Color - Trustworthy Blue with warmth */
+  --primary-color: #3B82F6; /* Blue 500 - friendly and professional */
+  --primary-dark: #2563EB;  /* Blue 600 */
+  --primary-light: #60A5FA; /* Blue 400 */
+  --primary-gradient: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
   
-  /* Secondary Color - Warm Earth Tone / Amber */
-  --secondary-color: #d97706; /* Amber 600 */
-  --accent-color: #f59e0b;    /* Amber 500 */
-  --success-color: #10b981;
-  --danger-color: #ef4444;
+  /* Secondary Color - Warm Coral for energy and friendliness */
+  --secondary-color: #F97316; /* Orange 500 */
+  --accent-color: #FB923C;    /* Orange 400 */
   
-  /* Neutral Color - Dark Gray with Warm Tone */
-  --dark-bg: #1c1917;    /* Warm Gray / Stone 900 */
-  --dark-card: #292524;  /* Warm Gray / Stone 800 */
-  --dark-border: #44403c; /* Stone 700 */
-  --text-primary: #f5f5f4; /* Stone 100 */
-  --text-secondary: #a8a29e; /* Stone 400 */
-  --text-muted: #78716c;     /* Stone 500 */
+  /* Success & Positive Colors */
+  --success-color: #10B981;
+  --success-light: #34D399;
+  --danger-color: #EF4444;
+  --warning-color: #F59E0B;
+
+  /* Light & Airy Backgrounds */
+  --bg-primary: #FAFAFA;      /* Very light gray */
+  --bg-secondary: #FFFFFF;    /* Pure white */
+  --bg-accent: #F3F4F6;       /* Light gray for sections */
   
-  /* Gradients - Adjusted to natural, soft tones */
-  --gradient-1: linear-gradient(135deg, #059669 0%, #0d9488 100%); /* Green to Teal */
-  --gradient-2: linear-gradient(135deg, #d97706 0%, #f59e0b 100%); /* Amber */
-  --gradient-3: linear-gradient(135deg, #0891b2 0%, #22d3ee 100%); /* Cyan */
-  --gradient-4: linear-gradient(135deg, #84cc16 0%, #a3e635 100%); /* Lime */
-  --gradient-hero: linear-gradient(135deg, rgba(5, 150, 105, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
+  /* Text Colors - Softer contrast */
+  --text-primary: #1F2937;    /* Gray 800 - readable but not harsh */
+  --text-secondary: #4B5563;  /* Gray 600 */
+  --text-muted: #9CA3AF;      /* Gray 400 */
+  --text-light: #F9FAFB;      /* For dark backgrounds */
+
+  /* Warm Gradients */
+  --gradient-primary: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+  --gradient-warm: linear-gradient(135deg, #F97316 0%, #EC4899 100%);
+  --gradient-soft: linear-gradient(135deg, #60A5FA 0%, #A78BFA 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
   
-  /* Shadows - Changed to warm glow */
+  /* Soft Shadows - More subtle and modern */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-  --shadow-glow: 0 0 40px rgba(16, 185, 129, 0.2);
-  
+  --shadow-glow: 0 0 40px rgba(59, 130, 246, 0.15);
+  --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+  /* Border Radius - Friendlier curves */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
   /* Animations */
   --transition-fast: 0.15s ease;
-  --transition-base: 0.3s ease;
+  --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.5s ease;
-  
+
   /* Spacing */
-  --section-padding: 60px 0;
-  
+  --section-padding: 80px 0;
+  --section-padding-lg: 100px 0;
+
   /* Fonts */
-  --font-sans: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 /* ===================================
@@ -70,7 +86,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--dark-bg);
+  background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.7;
   overflow-x: hidden;
@@ -82,36 +98,37 @@ body {
 }
 
 a {
-  color: var(--primary-light);
+  color: var(--primary-color);
   text-decoration: none;
   transition: var(--transition-base);
 }
 
 a:hover {
-  color: var(--primary-color);
+  color: var(--primary-dark);
 }
 
 /* ===================================
-   Navbar
+   Navbar - Clean & Modern
    =================================== */
 .navbar {
   padding: 1rem 0;
   transition: var(--transition-base);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  background: rgba(15, 23, 42, 0.8) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .navbar.scrolled {
-  padding: 0.5rem 0;
-  box-shadow: var(--shadow-lg);
+  padding: 0.75rem 0;
+  background: rgba(255, 255, 255, 0.98) !important;
+  box-shadow: var(--shadow-md);
 }
 
 .navbar-brand {
   font-weight: 800;
   font-size: 1.5rem;
-  background: var(--primary-gradient);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -161,7 +178,7 @@ a:hover {
 }
 
 /* ===================================
-   Hero Section
+   Hero Section - Bright & Welcoming
    =================================== */
 .hero-section {
   min-height: 100vh;
@@ -169,7 +186,8 @@ a:hover {
   align-items: center;
   position: relative;
   overflow: hidden;
-  background: var(--dark-bg);
+  background: var(--bg-primary);
+  padding-top: 80px;
 }
 
 .hero-section::before {
@@ -182,17 +200,17 @@ a:hover {
   background:
     radial-gradient(
       circle at 20% 80%,
-      rgba(5, 150, 105, 0.15) 0%,
+      rgba(59, 130, 246, 0.08) 0%,
       transparent 50%
     ),
     radial-gradient(
       circle at 80% 20%,
-      rgba(16, 185, 129, 0.15) 0%,
+      rgba(139, 92, 246, 0.08) 0%,
       transparent 50%
     ),
     radial-gradient(
       circle at 40% 40%,
-      rgba(13, 148, 136, 0.1) 0%,
+      rgba(96, 165, 250, 0.06) 0%,
       transparent 40%
     );
   pointer-events: none;
@@ -208,26 +226,27 @@ a:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: rgba(5, 150, 105, 0.1);
-  border: 1px solid rgba(5, 150, 105, 0.3);
-  border-radius: 50px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: var(--radius-full);
   font-size: 0.875rem;
-  color: var(--primary-light);
+  color: var(--primary-color);
   margin-bottom: 1.5rem;
   animation: fadeInUp 0.8s ease forwards;
 }
 
 .hero-title {
   font-size: clamp(2.5rem, 8vw, 5rem);
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1.5rem;
   animation: fadeInUp 0.8s ease 0.2s forwards;
   opacity: 0;
+  color: var(--text-primary);
 }
 
 .hero-title .highlight {
-  background: var(--primary-gradient);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -257,7 +276,7 @@ a:hover {
 
 .hero-image img {
   max-width: 100%;
-  filter: drop-shadow(0 20px 40px rgba(5, 150, 105, 0.3));
+  filter: drop-shadow(0 20px 40px rgba(59, 130, 246, 0.15));
 }
 
 /* Floating Particle Effects */
@@ -315,24 +334,24 @@ a:hover {
 }
 
 /* ===================================
-   Button Styles
+   Button Styles - Friendly & Modern
    =================================== */
 .btn-primary-custom {
   padding: 0.875rem 2rem;
-  background: var(--primary-gradient);
+  background: var(--gradient-primary);
   border: none;
-  border-radius: 50px;
+  border-radius: var(--radius-full);
   font-weight: 600;
   color: white;
   position: relative;
   overflow: hidden;
   transition: var(--transition-base);
-  box-shadow: 0 4px 15px rgba(5, 150, 105, 0.4);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .btn-primary-custom:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(5, 150, 105, 0.5);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
   color: white;
 }
 
@@ -360,9 +379,9 @@ a:hover {
   padding: 0.875rem 2rem;
   background: transparent;
   border: 2px solid var(--primary-color);
-  border-radius: 50px;
+  border-radius: var(--radius-full);
   font-weight: 600;
-  color: var(--primary-light);
+  color: var(--primary-color);
   transition: var(--transition-base);
 }
 
@@ -370,7 +389,7 @@ a:hover {
   background: var(--primary-color);
   color: white;
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(5, 150, 105, 0.3);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
 }
 
 /* ===================================
@@ -384,7 +403,7 @@ a:hover {
 /* Page Header (Shared across pages) */
 .page-header {
   padding: 160px 0 60px;
-  background: var(--dark-bg);
+  background: var(--bg-primary);
   position: relative;
 }
 
@@ -398,12 +417,12 @@ a:hover {
   background:
     radial-gradient(
       circle at 30% 70%,
-      rgba(5, 150, 105, 0.1) 0%,
+      rgba(59, 130, 246, 0.08) 0%,
       transparent 50%
     ),
     radial-gradient(
       circle at 70% 30%,
-      rgba(16, 185, 129, 0.1) 0%,
+      rgba(139, 92, 246, 0.08) 0%,
       transparent 50%
     );
   pointer-events: none;
@@ -413,6 +432,7 @@ a:hover {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 800;
   margin-bottom: 1rem;
+  color: var(--text-primary);
 }
 
 .page-description {
@@ -429,12 +449,12 @@ a:hover {
 .section-badge {
   display: inline-block;
   padding: 0.5rem 1.5rem;
-  background: rgba(5, 150, 105, 0.1);
-  border: 1px solid rgba(5, 150, 105, 0.2);
-  border-radius: 50px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: var(--radius-full);
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--primary-light);
+  color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 1rem;
@@ -444,10 +464,11 @@ a:hover {
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 800;
   margin-bottom: 1rem;
+  color: var(--text-primary);
 }
 
 .section-title .highlight {
-  background: var(--primary-gradient);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -461,21 +482,22 @@ a:hover {
 }
 
 /* ===================================
-   Card Styles
+   Card Styles - Clean & Professional
    =================================== */
 .glass-card {
-  background: rgba(30, 41, 59, 0.5);
+  background: var(--bg-secondary);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: var(--radius-xl);
   padding: 2rem;
   transition: var(--transition-base);
+  box-shadow: var(--shadow-soft);
 }
 
 .glass-card:hover {
   transform: translateY(-10px);
-  border-color: rgba(5, 150, 105, 0.3);
+  border-color: rgba(59, 130, 246, 0.2);
   box-shadow: var(--shadow-glow);
 }
 
@@ -484,23 +506,25 @@ a:hover {
    =================================== */
 .portfolio-card {
   position: relative;
-  border-radius: 20px;
+  border-radius: var(--radius-xl);
   overflow: hidden;
-  background: var(--dark-card);
-  border: 1px solid var(--dark-border);
+  background: var(--bg-secondary);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   transition: var(--transition-base);
+  box-shadow: var(--shadow-soft);
 }
 
 .portfolio-card:hover {
   transform: translateY(-10px);
-  box-shadow: var(--shadow-glow);
-  border-color: rgba(5, 150, 105, 0.3);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(59, 130, 246, 0.2);
 }
 
 .portfolio-image {
   position: relative;
   height: 250px;
   overflow: hidden;
+  background: var(--bg-accent);
 }
 
 .portfolio-image img {
@@ -523,7 +547,7 @@ a:hover {
   background: linear-gradient(
     180deg,
     transparent 0%,
-    rgba(15, 23, 42, 0.9) 100%
+    rgba(0, 0, 0, 0.7) 100%
   );
   display: flex;
   align-items: flex-end;
@@ -543,11 +567,11 @@ a:hover {
 .portfolio-category {
   display: inline-block;
   padding: 0.25rem 0.75rem;
-  background: rgba(5, 150, 105, 0.1);
-  border-radius: 50px;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: var(--radius-full);
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--primary-light);
+  color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 0.75rem;
@@ -570,13 +594,13 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--primary-light);
+  color: var(--primary-color);
   font-weight: 600;
   transition: var(--transition-base);
 }
 
 .portfolio-link:hover {
-  color: var(--primary-color);
+  color: var(--primary-dark);
   gap: 0.75rem;
 }
 
@@ -595,9 +619,9 @@ a:hover {
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.5rem;
-  border-radius: 20px;
+  border-radius: var(--radius-lg);
   font-size: 2rem;
-  background: var(--primary-gradient);
+  background: var(--gradient-primary);
   color: white;
   transition: var(--transition-base);
 }
@@ -610,6 +634,7 @@ a:hover {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  color: var(--text-primary);
 }
 
 .service-description {
@@ -623,9 +648,9 @@ a:hover {
 .skill-tag {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: rgba(5, 150, 105, 0.1);
-  border: 1px solid rgba(5, 150, 105, 0.2);
-  border-radius: 50px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: var(--radius-full);
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--text-secondary);
@@ -634,7 +659,7 @@ a:hover {
 }
 
 .skill-tag:hover {
-  background: var(--primary-gradient);
+  background: var(--gradient-primary);
   border-color: transparent;
   color: white;
   transform: translateY(-3px);
@@ -704,9 +729,9 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(5, 150, 105, 0.1);
-  border-radius: 12px;
-  color: var(--primary-light);
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: var(--radius-lg);
+  color: var(--primary-color);
   font-size: 1.25rem;
   flex-shrink: 0;
 }
@@ -723,18 +748,18 @@ a:hover {
 }
 
 .form-control {
-  background: rgba(30, 41, 59, 0.5);
-  border: 1px solid var(--dark-border);
-  border-radius: 12px;
+  background: var(--bg-secondary);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-lg);
   padding: 1rem 1.25rem;
   color: var(--text-primary);
   transition: var(--transition-base);
 }
 
 .form-control:focus {
-  background: rgba(30, 41, 59, 0.8);
+  background: var(--bg-secondary);
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
   color: var(--text-primary);
 }
 
@@ -749,18 +774,18 @@ a:hover {
 }
 
 /* ===================================
-   Footer
+   Footer - Clean & Professional
    =================================== */
 .footer {
-  background: var(--dark-card);
+  background: var(--bg-secondary);
   padding: 4rem 0 2rem;
-  border-top: 1px solid var(--dark-border);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .footer-brand {
   font-size: 1.75rem;
   font-weight: 800;
-  background: var(--primary-gradient);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -783,15 +808,15 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(5, 150, 105, 0.1);
-  border-radius: 12px;
-  color: var(--text-secondary);
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: var(--radius-lg);
+  color: var(--primary-color);
   font-size: 1.25rem;
   transition: var(--transition-base);
 }
 
 .social-link:hover {
-  background: var(--primary-gradient);
+  background: var(--gradient-primary);
   color: white;
   transform: translateY(-3px);
 }
@@ -818,14 +843,14 @@ a:hover {
 }
 
 .footer-links a:hover {
-  color: var(--primary-light);
+  color: var(--primary-color);
   padding-left: 5px;
 }
 
 .footer-bottom {
   padding-top: 2rem;
   margin-top: 3rem;
-  border-top: 1px solid var(--dark-border);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
   text-align: center;
   color: var(--text-muted);
 }

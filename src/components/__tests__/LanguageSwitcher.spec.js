@@ -6,10 +6,10 @@ import { createI18n } from 'vue-i18n'
 describe('LanguageSwitcher', () => {
   const i18n = createI18n({
     legacy: false,
-    locale: 'zh-TW',
+    locale: 'zh-tw',
     messages: {
-      'zh-TW': {},
-      'zh-CN': {},
+      'zh-tw': {},
+      'zh-cn': {},
       'en': {}
     }
   })

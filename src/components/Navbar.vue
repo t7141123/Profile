@@ -115,8 +115,8 @@ const menuItems = [
 ];
 
 const languages = [
-  { code: "zh-TW", name: "繁體" },
-  { code: "zh-CN", name: "简体" },
+  { code: "zh-tw", name: "繁體" },
+  { code: "zh-cn", name: "简体" },
   { code: "en", name: "EN" },
 ];
 
@@ -167,7 +167,7 @@ onUnmounted(() => {
 
 <style scoped>
 /* =========================================
-   Standard Navbar Styles (Revised)
+   Navbar Styles - Clean & Modern
    ========================================= */
 .navbar {
   padding: 1rem 0;
@@ -182,17 +182,17 @@ onUnmounted(() => {
 
 .navbar.scrolled {
   padding: 0.75rem 0;
-  background: rgba(15, 23, 42, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-md);
 }
 
 .navbar-brand {
   font-weight: 800;
   font-size: 1.5rem;
-  background: var(--primary-gradient);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -201,7 +201,7 @@ onUnmounted(() => {
 }
 
 /* =========================================
-   Desktop Nav Link Styles (New Design - Option A)
+   Desktop Nav Link Styles
    ========================================= */
 @media (min-width: 992px) {
   .navbar-nav {
@@ -211,7 +211,7 @@ onUnmounted(() => {
   .nav-link {
     color: var(--text-secondary);
     font-weight: 500;
-    font-size: 1.05rem; /* Increased font size */
+    font-size: 1.05rem;
     transition: all 0.3s ease;
     position: relative;
     padding: 0.5rem 0;
@@ -220,22 +220,16 @@ onUnmounted(() => {
     justify-content: center;
   }
 
-  /* Hover State: Brighten Text */
   .nav-link:hover {
-    color: var(--text-primary);
+    color: var(--primary-color);
     transform: translateY(-1px);
   }
 
-  /* Active State: Gradient Text */
   .nav-link.router-link-active {
-    background: var(--primary-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--primary-color);
     font-weight: 700;
   }
 
-  /* Active Indicator: Gradient Bottom Line */
   .nav-link.router-link-active::after {
     content: "";
     position: absolute;
@@ -244,9 +238,8 @@ onUnmounted(() => {
     transform: translateX(-50%);
     width: 20px;
     height: 3px;
-    background: var(--primary-gradient);
-    border-radius: 4px;
-    box-shadow: 0 2px 10px rgba(52, 211, 153, 0.3);
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
     animation: expandLine 0.3s ease forwards;
   }
 

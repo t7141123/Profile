@@ -32,8 +32,8 @@ import { useLocale } from '@/composables/useLocale'
 const { currentLocale, changeLocale } = useLocale()
 
 const languages = [
-  { code: 'zh-TW', name: '繁體中文' },
-  { code: 'zh-CN', name: '简体中文' },
+  { code: 'zh-tw', name: '繁體中文' },
+  { code: 'zh-cn', name: '简体中文' },
   { code: 'en', name: 'English' }
 ]
 
@@ -45,11 +45,11 @@ const currentLangName = computed(() => {
 
 <style scoped>
 .btn-language {
-  background: rgba(5, 150, 105, 0.1);
-  border: 1px solid rgba(5, 150, 105, 0.3);
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
   color: var(--text-primary);
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: var(--radius-lg);
   font-size: 0.875rem;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -60,9 +60,9 @@ const currentLangName = computed(() => {
 
 .btn-language:hover,
 .btn-language:focus {
-  background: rgba(5, 150, 105, 0.2);
+  background: rgba(59, 130, 246, 0.15);
   border-color: var(--primary-color);
-  color: var(--primary-light);
+  color: var(--primary-color);
 }
 
 .btn-language::after {
@@ -70,19 +70,19 @@ const currentLangName = computed(() => {
 }
 
 .dropdown-menu {
-  background: rgba(30, 41, 59, 0.98);
-  border: 1px solid var(--dark-border);
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: var(--radius-lg);
   padding: 0.5rem;
   min-width: 160px;
   backdrop-filter: blur(20px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-xl);
 }
 
 .dropdown-item {
   color: var(--text-secondary);
   padding: 0.625rem 1rem;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   font-size: 0.875rem;
   transition: all 0.2s ease;
   display: flex;
@@ -92,13 +92,13 @@ const currentLangName = computed(() => {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  background: rgba(5, 150, 105, 0.1);
-  color: var(--primary-light);
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--primary-color);
 }
 
 .dropdown-item.active {
-  background: rgba(5, 150, 105, 0.2);
-  color: var(--primary-light);
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--primary-color);
 }
 
 

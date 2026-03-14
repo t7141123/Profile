@@ -1,10 +1,10 @@
 import { createI18n } from 'vue-i18n'
-import zhTW from './locales/zh-TW.json'
-import zhCN from './locales/zh-CN.json'
+import zhTW from './locales/zh-tw.json'
+import zhCN from './locales/zh-cn.json'
 import en from './locales/en.json'
 
 // Default locale
-const defaultLocale = 'zh-TW'
+const defaultLocale = 'zh-tw'
 
 // Get stored locale from localStorage or default
 const savedLocale = localStorage.getItem('locale') || defaultLocale
@@ -14,8 +14,8 @@ const i18n = createI18n({
   locale: savedLocale,
   fallbackLocale: defaultLocale,
   messages: {
-    'zh-TW': zhTW,
-    'zh-CN': zhCN,
+    'zh-tw': zhTW,
+    'zh-cn': zhCN,
     'en': en
   }
 })

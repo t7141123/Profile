@@ -1,7 +1,7 @@
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 
-// Configure NProgress
+// Configure NProgress with custom styling
 NProgress.configure({
   showSpinner: false,
   minimum: 0.1,
@@ -9,6 +9,40 @@ NProgress.configure({
   speed: 500,
   trickleSpeed: 200
 })
+
+// Custom CSS for NProgress to match the new design
+const nprogressStyles = document.createElement('style')
+nprogressStyles.textContent = `
+  #nprogress {
+    pointer-events: none;
+  }
+  
+  #nprogress .bar {
+    background: linear-gradient(90deg, #3B82F6, #8B5CF6);
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+  }
+  
+  #nprogress .peg {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 100%;
+    box-shadow: 0 0 10px #3B82F6, 0 0 5px #8B5CF6;
+    opacity: 1.0;
+    transform: rotate(3deg) translate(0px, -4px);
+  }
+  
+  #nprogress .spinner {
+    display: none;
+  }
+`
+document.head.appendChild(nprogressStyles)
 
 /**
  * Setup router progress bar

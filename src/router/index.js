@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 
 // Supported locales
-const locales = ['zh-TW', 'zh-CN', 'en'];
-const defaultLocale = 'zh-TW';
+const locales = ['zh-tw', 'zh-cn', 'en'];
+const defaultLocale = 'zh-tw';
 
 // Helper function to check if a path segment is a locale
 const isLocale = (path) => locales.includes(path);

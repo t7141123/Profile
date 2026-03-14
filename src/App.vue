@@ -93,11 +93,11 @@ onMounted(() => {
   left: 0;
   background: var(--primary-color);
   color: white;
-  padding: 8px 16px;
+  padding: 12px 24px;
   z-index: 9999;
   text-decoration: none;
   font-weight: 600;
-  border-radius: 0 0 4px 0;
+  border-radius: 0 0 var(--radius-md) 0;
   transition: top 0.3s ease;
 }
 

@@ -55,16 +55,19 @@ const currentYear = new Date().getFullYear();
 
 <style scoped>
 .footer {
-  background: #0f172a;
+  background: var(--bg-secondary);
   padding: 4rem 0 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
   color: var(--text-secondary);
 }
 
 .footer-brand {
   font-size: 1.75rem;
   font-weight: 800;
-  color: var(--text-primary);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   letter-spacing: -0.5px;
 }
 
@@ -80,24 +83,23 @@ const currentYear = new Date().getFullYear();
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 50%;
-  color: var(--text-secondary);
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: var(--radius-lg);
+  color: var(--primary-color);
   font-size: 1.2rem;
   transition: var(--transition-base);
   text-decoration: none;
 }
 
-
 .social-link:hover {
-  background: var(--primary-color);
+  background: var(--gradient-primary);
   color: white;
   transform: translateY(-3px);
 }
 
 .copyright-text {
-  color: #94a3b8; /* Slate-400, brighter than text-muted */
-  font-size: 0.9rem; /* Slightly larger than small (usually 0.875em) */
+  color: var(--text-muted);
+  font-size: 0.9rem;
   opacity: 0.8;
 }
 </style>

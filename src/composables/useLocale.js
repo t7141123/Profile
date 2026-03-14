@@ -13,7 +13,7 @@ export function useLocale() {
 
   /**
    * Change locale and navigate to the same path with new locale
-   * @param {string} langCode - Target locale code (e.g., 'zh-TW', 'en')
+   * @param {string} langCode - Target locale code (e.g., 'zh-tw', 'en')
    */
   const changeLocale = (langCode) => {
     if (!isLocale(langCode)) {
