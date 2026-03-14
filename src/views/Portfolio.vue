@@ -2,6 +2,12 @@
   <div class="portfolio-page">
     <!-- Page Header Section -->
     <section class="page-header">
+      <div class="gradient-orb-1"></div>
+      <div class="gradient-orb-2"></div>
+      <div class="geometric-pattern"></div>
+      <div class="floating-shape-1"></div>
+      <div class="floating-shape-2"></div>
+      
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 text-center">

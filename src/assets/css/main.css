@@ -185,7 +185,7 @@ a:hover {
 }
 
 /* ===================================
-   Hero Section - Modern Design
+   Hero Section - Modern Gradient Design
    =================================== */
 .hero-section {
   min-height: 100vh;
@@ -193,102 +193,111 @@ a:hover {
   align-items: center;
   position: relative;
   overflow: hidden;
-  background: var(--bg-primary);
+  background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 50%, #F0F9FF 100%);
   padding-top: 80px;
 }
 
-/* Animated gradient background */
-.hero-section::before {
-  content: "";
+/* Animated gradient orbs */
+.hero-section .gradient-orb-1 {
   position: absolute;
-  top: -50%;
-  right: -20%;
-  width: 80vw;
-  height: 80vw;
-  background: radial-gradient(
-    circle,
-    rgba(37, 99, 235, 0.15) 0%,
-    rgba(59, 130, 246, 0.08) 30%,
-    transparent 70%
-  );
-  border-radius: 50%;
-  filter: blur(60px);
-  animation: float 20s ease-in-out infinite;
-  pointer-events: none;
-}
-
-/* Secondary gradient orb */
-.hero-section::after {
-  content: "";
-  position: absolute;
-  bottom: -30%;
-  left: -10%;
+  top: -20%;
+  right: -10%;
   width: 60vw;
   height: 60vw;
-  background: radial-gradient(
-    circle,
-    rgba(59, 130, 246, 0.12) 0%,
-    rgba(139, 92, 246, 0.06) 40%,
-    transparent 70%
-  );
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(37, 99, 235, 0.05) 50%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(40px);
+  animation: float 25s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.hero-section .gradient-orb-2 {
+  position: absolute;
+  bottom: -15%;
+  left: -5%;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, rgba(99, 102, 241, 0.04) 50%, transparent 70%);
   border-radius: 50%;
   filter: blur(50px);
-  animation: float 25s ease-in-out infinite reverse;
+  animation: float 30s ease-in-out infinite reverse;
   pointer-events: none;
 }
 
-/* Decorative wave pattern */
-.hero-section .wave-decoration {
+/* Geometric pattern overlay */
+.hero-section .geometric-pattern {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
-  height: 200px;
-  background: linear-gradient(
-    180deg,
-    transparent 0%,
-    rgba(37, 99, 235, 0.05) 100%
-  );
+  bottom: 0;
+  background-image: 
+    linear-gradient(30deg, rgba(37, 99, 235, 0.03) 1px, transparent 1px),
+    linear-gradient(-30deg, rgba(37, 99, 235, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.02) 1px, transparent 1px);
+  background-size: 60px 35px, 60px 35px, 60px 60px;
+  background-position: 0 0, 0 0, 0 0;
   pointer-events: none;
+  opacity: 0.6;
 }
 
-/* Floating shape 1 */
+/* Floating decorative shapes */
 .hero-section .floating-shape-1 {
   position: absolute;
-  top: 15%;
-  left: 10%;
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(59, 130, 246, 0.05));
-  border-radius: 20px;
-  transform: rotate(45deg);
-  animation: float 15s ease-in-out infinite;
-  pointer-events: none;
-}
-
-/* Floating shape 2 */
-.hero-section .floating-shape-2 {
-  position: absolute;
-  top: 25%;
-  right: 15%;
+  top: 20%;
+  left: 15%;
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.05));
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(37, 99, 235, 0.1));
   border-radius: 50%;
   animation: float 18s ease-in-out infinite;
   pointer-events: none;
 }
 
-/* Floating shape 3 */
+.hero-section .floating-shape-2 {
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(99, 102, 241, 0.08));
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation: float 22s ease-in-out infinite;
+  pointer-events: none;
+}
+
 .hero-section .floating-shape-3 {
   position: absolute;
-  top: 60%;
-  right: 25%;
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(37, 99, 235, 0.05));
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  animation: float 22s ease-in-out infinite;
+  bottom: 25%;
+  left: 25%;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(59, 130, 246, 0.1));
+  transform: rotate(45deg);
+  animation: float 20s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.hero-section .floating-shape-4 {
+  position: absolute;
+  top: 15%;
+  right: 35%;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.25), rgba(139, 92, 246, 0.1));
+  border-radius: 50%;
+  animation: float 16s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Bottom wave decoration */
+.hero-section .wave-decoration {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(180deg, transparent 0%, rgba(37, 99, 235, 0.05) 100%);
   pointer-events: none;
 }
 
@@ -503,35 +512,77 @@ a:hover {
 
 .page-header {
   padding: 180px 0 80px;
-  background: linear-gradient(180deg, var(--bg-accent) 0%, var(--bg-primary) 100%);
+  background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 50%, #F0F9FF 100%);
   position: relative;
   overflow: hidden;
 }
 
-/* Decorative blob shapes for page headers */
-.page-header::before {
-  content: "";
+/* Animated gradient orbs for page headers */
+.page-header .gradient-orb-1 {
   position: absolute;
-  top: -10%;
-  right: -5%;
-  width: 40vw;
-  height: 40vw;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
+  top: -20%;
+  right: -10%;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, rgba(37, 99, 235, 0.04) 50%, transparent 70%);
   border-radius: 50%;
-  filter: blur(60px);
+  filter: blur(40px);
+  animation: float 25s ease-in-out infinite;
   pointer-events: none;
 }
 
-.page-header::after {
-  content: "";
+.page-header .gradient-orb-2 {
   position: absolute;
-  bottom: -10%;
-  left: -10%;
-  width: 30vw;
-  height: 30vw;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.06) 0%, transparent 70%);
+  bottom: -15%;
+  left: -5%;
+  width: 45vw;
+  height: 45vw;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, rgba(99, 102, 241, 0.03) 50%, transparent 70%);
   border-radius: 50%;
-  filter: blur(40px);
+  filter: blur(45px);
+  animation: float 30s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+/* Geometric pattern overlay */
+.page-header .geometric-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(30deg, rgba(37, 99, 235, 0.03) 1px, transparent 1px),
+    linear-gradient(-30deg, rgba(37, 99, 235, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.02) 1px, transparent 1px);
+  background-size: 60px 35px, 60px 35px, 60px 60px;
+  background-position: 0 0, 0 0, 0 0;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Floating decorative shapes */
+.page-header .floating-shape-1 {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(37, 99, 235, 0.08));
+  border-radius: 50%;
+  animation: float 18s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.page-header .floating-shape-2 {
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.12), rgba(99, 102, 241, 0.06));
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation: float 22s ease-in-out infinite;
   pointer-events: none;
 }
 

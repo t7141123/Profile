@@ -2,10 +2,14 @@
   <div class="home">
     <!-- Hero Section -->
     <section class="hero-section">
-      <!-- Decorative Elements -->
+      <!-- Decorative Background Elements -->
+      <div class="gradient-orb-1"></div>
+      <div class="gradient-orb-2"></div>
+      <div class="geometric-pattern"></div>
       <div class="floating-shape-1"></div>
       <div class="floating-shape-2"></div>
       <div class="floating-shape-3"></div>
+      <div class="floating-shape-4"></div>
       <div class="wave-decoration"></div>
 
       <div class="container">
