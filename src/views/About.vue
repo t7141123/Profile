@@ -130,7 +130,7 @@
     </section>
 
     <!-- Work Process Section -->
-    <section class="section" style="background: var(--bg-accent)">
+    <section class="section">
       <div class="container">
         <SectionHeader
           :badge="$t('about.processBadge')"

@@ -100,7 +100,7 @@
     </section>
 
     <!-- Featured Projects Section -->
-    <section class="section" style="background: var(--bg-accent)">
+    <section class="section">
       <div class="container">
         <SectionHeader
           :badge="$t('home.featuredBadge')"
@@ -149,7 +149,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="section cta-section">
+    <section class="section cta-section no-divider">
       <div class="container">
         <div class="cta-content text-center">
           <h2 class="cta-title">{{ $t("home.ctaTitle") }}</h2>
@@ -292,6 +292,7 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
   border-radius: var(--radius-xl);
   margin: 4rem auto;
   max-width: 1200px;
+  border: 1px solid rgba(37, 99, 235, 0.1);
 }
 
 .cta-section::before {

@@ -68,7 +68,7 @@
     </section>
 
     <!-- NDA Notice & CTA Section -->
-    <section class="section nda-section">
+    <section class="section nda-section no-divider">
       <div class="container">
         <div class="nda-card">
           <div class="row align-items-center">
@@ -164,7 +164,11 @@ const projects = computed(() => getAllProjects());
 
 /* NDA Notice Section */
 .nda-section {
-  padding-bottom: 5rem; /* Add spacing at the bottom */
+  padding-bottom: 5rem;
+}
+
+.nda-section.no-divider::after {
+  display: none;
 }
 
 .nda-card {

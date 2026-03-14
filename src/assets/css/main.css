@@ -407,6 +407,43 @@ a:hover {
   position: relative;
 }
 
+/* Section dividers - alternate backgrounds for visual separation */
+.section:not(.no-bg):nth-child(odd) {
+  background: var(--bg-primary);
+}
+
+.section:not(.no-bg):nth-child(even) {
+  background: var(--bg-accent);
+}
+
+/* Add subtle divider line between sections */
+.section:not(:last-child):not(.no-divider)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(37, 99, 235, 0.15) 50%,
+    transparent 100%
+  );
+}
+
+/* Special section modifiers */
+.section.full-width {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.section.no-divider::after {
+  display: none;
+}
+
 /* Page Header (Shared across pages) */
 .page-header {
   padding: 160px 0 60px;

@@ -60,7 +60,7 @@
     </section>
 
     <!-- Technology Stack Section -->
-    <section class="section" style="background: var(--bg-accent)">
+    <section class="section">
       <div class="container">
         <div class="section-header">
           <span class="section-badge">{{ $t("services.techBadge") }}</span>
@@ -179,7 +179,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="section" style="background: var(--bg-accent)">
+    <section class="section">
       <div class="container">
         <div class="section-header">
           <span class="section-badge">{{ $t("services.faqBadge") }}</span>
@@ -245,7 +245,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="section cta-section">
+    <section class="section cta-section no-divider">
       <div class="container">
         <div class="cta-content text-center">
           <h2 class="cta-title">{{ $t("services.ctaTitle") }}</h2>
@@ -744,7 +744,8 @@ const faqs = computed(() => [
   padding: 5rem 0;
   border-radius: var(--radius-xl);
   margin: 4rem auto;
-  max-width: 900px;
+  max-width: 1200px;
+  border: 1px solid rgba(37, 99, 235, 0.1);
 }
 
 .cta-title {
