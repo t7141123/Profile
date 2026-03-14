@@ -88,12 +88,12 @@ const router = createRouter({
     if (savedPosition) {
       return savedPosition
     }
-    
+
     // If it's a locale change (same page, different locale), scroll smoothly to top
     if (to.params.locale && from.params.locale && to.name === from.name) {
       return { top: 0, behavior: 'smooth' }
     }
-    
+
     // For all other navigation, scroll to top
     return { top: 0 }
   },
@@ -102,12 +102,12 @@ const router = createRouter({
 // Navigation guard to sync locale with i18n
 router.beforeEach((to, from, next) => {
   const locale = to.params.locale;
-  
+
   if (locale && isLocale(locale)) {
     // Store locale in localStorage for persistence
     localStorage.setItem('locale', locale);
   }
-  
+
   next();
 });
 

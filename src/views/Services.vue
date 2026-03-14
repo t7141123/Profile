@@ -1,50 +1,39 @@
 <template>
   <div class="services-page">
     <!-- Page Header Section -->
-    <section class="page-header services-header">
-      <!-- Services Grid -->
-      <div class="services-grid"></div>
-      
-      <!-- Service Wireframes -->
-      <div class="service-wireframe wireframe-1"></div>
-      <div class="service-wireframe wireframe-2"></div>
-      <div class="service-wireframe wireframe-3"></div>
-      
-      <!-- Gear Icons -->
-      <i class="bi bi-gear-fill gear-icon gear-1"></i>
-      <i class="bi bi-gear-wide-connected gear-icon gear-2"></i>
-      
-      <!-- Flowchart Lines -->
-      <div class="flowchart-line flowchart-1"></div>
-      <div class="flowchart-line flowchart-2"></div>
-      
-      <!-- Tech Orbs -->
-      <div class="services-orb-1"></div>
-      <div class="services-orb-2"></div>
-      
-      <!-- Bottom Fade -->
-      <div class="services-fade"></div>
-      
+    <section class="page-header page-header-services">
+      <!-- Subtle Background Pattern -->
+      <div class="header-bg-pattern"></div>
+
+      <!-- Gradient Orbs -->
+      <div class="header-orb header-orb-1"></div>
+      <div class="header-orb header-orb-2"></div>
+
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 text-center">
-            <span class="section-badge">{{ $t("services.badge") }}</span>
-            <h1 class="page-title">
+            <span class="section-badge section-badge-light animate-fade-in">{{ $t("services.badge") }}</span>
+            <h1 class="page-title page-title-light animate-fade-in-up">
               {{ $t("services.title")
               }}<span class="highlight">{{
                 $t("services.titleHighlight")
               }}</span>
             </h1>
-            <p class="page-description">
+            <p class="page-description page-description-light animate-fade-in-up delay-1">
               {{ $t("services.pageDescription") }}
             </p>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator animate-bounce" @click="scrollToContent">
+              <i class="bi bi-chevron-down"></i>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Main Services Section -->
-    <section class="section">
+    <section class="section" ref="contentSection">
       <div class="container">
         <div class="row g-4">
           <div
@@ -287,10 +276,16 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
 
 const { t, tm } = useI18n();
+
+const contentSection = ref(null);
+
+const scrollToContent = () => {
+  contentSection.value?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
 
 const mainServices = computed(() => [
   {

@@ -48,7 +48,7 @@ export function useSEO() {
   const updateCanonical = () => {
     const canonical = document.querySelector('link[rel="canonical"]')
     if (canonical) {
-      const pathWithoutLocale = route.path.replace(/^\/[^\/]+/, '')
+      const pathWithoutLocale = route.path.replace(/^\/[^/]+/, '')
       const baseUrl = import.meta.env.VITE_APP_URL || 'https://davidliu.studio'
       canonical.href = `${baseUrl}${pathWithoutLocale || '/'}`
     }

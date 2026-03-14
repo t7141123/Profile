@@ -1,50 +1,37 @@
 <template>
   <div class="about-page">
     <!-- Page Header Section -->
-    <section class="page-header">
-      <!-- Tech Grid -->
-      <div class="profile-grid"></div>
-      
-      <!-- Connection Nodes -->
-      <div class="connection-node node-1"></div>
-      <div class="connection-node node-2"></div>
-      <div class="connection-node node-3"></div>
-      <div class="connection-node node-4"></div>
-      
-      <!-- Skill Bars -->
-      <div class="skill-bar skill-bar-1"></div>
-      <div class="skill-bar skill-bar-2"></div>
-      
-      <!-- Profile Icons -->
-      <div class="profile-icon profile-icon-1">👤</div>
-      <div class="profile-icon profile-icon-2">💼</div>
-      <div class="profile-icon profile-icon-3">🚀</div>
-      
-      <!-- Glowing Orbs -->
-      <div class="about-orb-1"></div>
-      <div class="about-orb-2"></div>
-      
-      <!-- Bottom Fade -->
-      <div class="about-fade"></div>
-      
+    <section class="page-header page-header-about">
+      <!-- Subtle Background Pattern -->
+      <div class="header-bg-pattern"></div>
+
+      <!-- Gradient Orbs -->
+      <div class="header-orb header-orb-1"></div>
+      <div class="header-orb header-orb-2"></div>
+
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 text-center">
-            <span class="section-badge">{{ $t("about.badge") }}</span>
-            <h1 class="page-title">
+            <span class="section-badge section-badge-light animate-fade-in">{{ $t("about.badge") }}</span>
+            <h1 class="page-title page-title-light animate-fade-in-up">
               {{ $t("about.title")
               }}<span class="highlight">{{ $t("about.titleHighlight") }}</span>
             </h1>
-            <p class="page-description">
+            <p class="page-description page-description-light animate-fade-in-up delay-1">
               {{ $t("about.pageDescription") }}
             </p>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator animate-bounce" @click="scrollToContent">
+              <i class="bi bi-chevron-down"></i>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- About Section -->
-    <section class="section">
+    <section class="section" ref="contentSection">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-4 mb-4 mb-lg-0">
@@ -220,11 +207,17 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import SectionHeader from "@/components/common/SectionHeader.vue";
 
 const { t } = useI18n();
+
+const contentSection = ref(null);
+
+const scrollToContent = () => {
+  contentSection.value?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
 
 
 

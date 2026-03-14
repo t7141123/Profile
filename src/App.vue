@@ -76,7 +76,7 @@ watch(locale, (newLocale) => {
   // Update canonical URL (remove locale prefix for canonical)
   const canonical = document.querySelector('link[rel="canonical"]')
   if (canonical) {
-    const pathWithoutLocale = route.path.replace(/^\/[^\/]+/, '')
+    const pathWithoutLocale = route.path.replace(/^\/[^/]+/, '')
     canonical.href = `${import.meta.env.VITE_APP_URL || 'https://davidliu.studio'}${pathWithoutLocale || '/'}`
   }
 }, { immediate: true })

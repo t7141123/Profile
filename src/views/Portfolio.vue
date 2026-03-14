@@ -1,43 +1,37 @@
 <template>
   <div class="portfolio-page">
     <!-- Page Header Section -->
-    <section class="page-header portfolio-header">
-      <!-- Portfolio Grid -->
-      <div class="portfolio-grid"></div>
-      
-      <!-- Project Frames -->
-      <div class="project-frame frame-1"></div>
-      <div class="project-frame frame-2"></div>
-      <div class="project-frame frame-3"></div>
-      
-      <!-- Star Ratings -->
-      <div class="star-rating star-1">★</div>
-      <div class="star-rating star-2">★</div>
-      <div class="star-rating star-3">★</div>
-      
-      <!-- Purple Orbs -->
-      <div class="portfolio-orb-1"></div>
-      <div class="portfolio-orb-2"></div>
-      
-      <!-- Bottom Fade -->
-      <div class="portfolio-fade"></div>
-      
+    <section class="page-header page-header-portfolio">
+      <!-- Subtle Background Pattern -->
+      <div class="header-bg-pattern"></div>
+
+      <!-- Gradient Orbs -->
+      <div class="header-orb header-orb-1"></div>
+      <div class="header-orb header-orb-2"></div>
+
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 text-center">
-            <SectionHeader
-              :badge="$t('portfolio.badge')"
-              :title="$t('portfolio.title')"
-              :highlight="$t('portfolio.titleHighlight')"
-              :description="$t('portfolio.pageDescription')"
-            />
+            <span class="section-badge section-badge-light animate-fade-in">{{ $t('portfolio.badge') }}</span>
+            <h1 class="page-title page-title-light animate-fade-in-up">
+              {{ $t('portfolio.title')
+              }}<span class="highlight">{{ $t('portfolio.titleHighlight') }}</span>
+            </h1>
+            <p class="page-description page-description-light animate-fade-in-up delay-1">
+              {{ $t('portfolio.pageDescription') }}
+            </p>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator animate-bounce" @click="scrollToContent">
+              <i class="bi bi-chevron-down"></i>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section class="section">
+    <section class="section" ref="contentSection">
       <div class="container">
         <div class="row g-4">
           <div
@@ -119,11 +113,16 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
-import SectionHeader from "@/components/common/SectionHeader.vue";
+import { computed, ref } from "vue";
 import { useProjects } from "@/composables/useProjects";
 
 const { getAllProjects } = useProjects();
+
+const contentSection = ref(null);
+
+const scrollToContent = () => {
+  contentSection.value?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
 
 const projects = computed(() => getAllProjects());
 </script>

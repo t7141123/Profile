@@ -20,9 +20,9 @@ export function useLocale() {
       console.warn(`Invalid locale: ${langCode}`)
       return
     }
-    
+
     const currentPath = route.path
-    const newPath = currentPath.replace(/^\/[^\/]+/, `/${langCode}`)
+    const newPath = currentPath.replace(/^\/[^/]+/, `/${langCode}`)
     router.push(newPath)
   }
 

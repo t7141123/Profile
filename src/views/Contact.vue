@@ -1,47 +1,56 @@
 <template>
   <div class="contact-page">
     <!-- Page Header Section -->
-    <section class="page-header contact-header">
-      <!-- Contact Grid -->
-      <div class="contact-grid"></div>
-      
-      <!-- Message Bubbles -->
-      <div class="message-bubble bubble-1">Hello!</div>
-      <div class="message-bubble bubble-2">Let's talk</div>
-      <div class="message-bubble bubble-3">Get in touch</div>
-      
-      <!-- Connection Dots -->
-      <div class="contact-dot dot-1"></div>
-      <div class="contact-dot dot-2"></div>
-      <div class="contact-dot dot-3"></div>
-      
-      <!-- Pink Orbs -->
-      <div class="contact-orb-1"></div>
-      <div class="contact-orb-2"></div>
-      
-      <!-- Bottom Fade -->
-      <div class="contact-fade"></div>
-      
+    <section class="page-header page-header-contact">
+      <!-- Subtle Background Pattern -->
+      <div class="header-bg-pattern"></div>
+
+      <!-- Gradient Orbs -->
+      <div class="header-orb header-orb-1"></div>
+      <div class="header-orb header-orb-2"></div>
+
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 text-center">
-            <span class="section-badge">{{ $t("contact.badge") }}</span>
-            <h1 class="page-title">
+            <span class="section-badge section-badge-light animate-fade-in">{{ $t("contact.badge") }}</span>
+            <h1 class="page-title page-title-light animate-fade-in-up">
               {{ $t("contact.title")
               }}<span class="highlight">{{
                 $t("contact.titleHighlight")
               }}</span>
             </h1>
-            <p class="page-description">
+            <p class="page-description page-description-light animate-fade-in-up delay-1">
               {{ $t("contact.pageDescription") }}
             </p>
+
+            <!-- CTA Buttons -->
+            <div class="header-cta animate-fade-in-up delay-2">
+              <a
+                href="https://line.me/ti/p/2w7bwfksdF"
+                target="_blank"
+                class="btn btn-header-primary"
+              >
+                <i class="bi bi-line me-2"></i>{{ $t("contact.lineValue") }}
+              </a>
+              <a
+                href="mailto:david.liu@action-lead.com"
+                class="btn btn-header-secondary"
+              >
+                <i class="bi bi-envelope me-2"></i>寄信給我
+              </a>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator animate-bounce" @click="scrollToContent">
+              <i class="bi bi-chevron-down"></i>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="section">
+    <section class="section" ref="contentSection">
       <div class="container">
         <div class="row g-5">
           <!-- Contact Info -->
@@ -246,3 +255,13 @@
   color: var(--primary-color);
 }
 </style>
+
+<script setup>
+import { ref } from "vue";
+
+const contentSection = ref(null);
+
+const scrollToContent = () => {
+  contentSection.value?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+</script>
