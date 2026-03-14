@@ -97,11 +97,13 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted, watch } from "vue";
+import { useRoute } from "vue-router";
 import { useLocale } from "@/composables/useLocale";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
 
 const isScrolled = ref(false);
 const isMenuOpen = ref(false);
+const route = useRoute();
 const { changeLocale, localePath, currentLocale } = useLocale();
 
 const menuItems = [
