@@ -121,10 +121,10 @@
                   <a
                     :href="project.url"
                     target="_blank"
-                    class="btn btn-primary-custom btn-sm"
+                    class="btn btn-primary-custom"
                   >
-                    <i class="bi bi-box-arrow-up-right me-1"></i
-                    >{{ $t("home.viewSite") }}
+                    <i class="bi bi-box-arrow-up-right me-2"></i>
+                    {{ $t("home.viewSite") }}
                   </a>
                 </div>
               </div>
@@ -132,9 +132,6 @@
                 <span class="portfolio-category">{{ project.category }}</span>
                 <h3 class="portfolio-title">{{ project.title }}</h3>
                 <p class="portfolio-description">{{ project.description }}</p>
-                <a :href="project.url" target="_blank" class="portfolio-link">
-                  {{ $t("home.visitSite") }} <i class="bi bi-arrow-right"></i>
-                </a>
               </div>
             </div>
           </div>

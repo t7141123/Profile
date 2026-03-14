@@ -32,10 +32,10 @@
                   <a
                     :href="project.url"
                     target="_blank"
-                    class="btn btn-primary-custom btn-sm"
+                    class="btn btn-primary-custom"
                   >
-                    <i class="bi bi-box-arrow-up-right me-1"></i
-                    >{{ $t("portfolio.viewSite") }}
+                    <i class="bi bi-box-arrow-up-right me-2"></i>
+                    {{ $t("portfolio.viewSite") }}
                   </a>
                 </div>
               </div>
@@ -52,13 +52,6 @@
                   >
                     {{ tech }}
                   </span>
-                </div>
-
-                <div class="portfolio-footer">
-                  <a :href="project.url" target="_blank" class="portfolio-link">
-                    {{ $t("portfolio.visitSite") }}
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
                 </div>
               </div>
             </div>
@@ -127,22 +120,27 @@ const projects = computed(() => getAllProjects());
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(37, 99, 235, 0.08);
 }
 
 .tech-tag {
-  padding: 0.25rem 0.5rem;
-  background: rgba(37, 99, 235, 0.1);
-  border-radius: var(--radius-md);
+  padding: 0.25rem 0.75rem;
+  background: rgba(37, 99, 235, 0.08);
+  border-radius: var(--radius-full);
   font-size: 0.75rem;
-  color: var(--primary-color);
+  color: var(--text-secondary);
   font-weight: 500;
+  transition: all var(--transition-base);
 }
 
-.portfolio-footer {
-  padding-top: 1rem;
-  border-top: 1px solid rgba(37, 99, 235, 0.1);
+.tech-tag:hover {
+  background: rgba(37, 99, 235, 0.15);
+  color: var(--primary-color);
+  transform: translateY(-2px);
 }
+
 
 /* CTA */
 .cta-section {
