@@ -2,16 +2,30 @@
   <div class="about-page">
     <!-- Page Header Section -->
     <section class="page-header">
-      <div class="gradient-orb-1"></div>
-      <div class="gradient-orb-2"></div>
-      <div class="gradient-orb-3"></div>
-      <div class="geometric-pattern"></div>
-      <div class="dotted-pattern"></div>
-      <div class="floating-shape-1"></div>
-      <div class="floating-shape-2"></div>
-      <div class="floating-shape-3"></div>
-      <div class="sparkle-1"></div>
-      <div class="sparkle-2"></div>
+      <!-- Tech Grid -->
+      <div class="profile-grid"></div>
+      
+      <!-- Connection Nodes -->
+      <div class="connection-node node-1"></div>
+      <div class="connection-node node-2"></div>
+      <div class="connection-node node-3"></div>
+      <div class="connection-node node-4"></div>
+      
+      <!-- Skill Bars -->
+      <div class="skill-bar skill-bar-1"></div>
+      <div class="skill-bar skill-bar-2"></div>
+      
+      <!-- Profile Icons -->
+      <div class="profile-icon profile-icon-1">👤</div>
+      <div class="profile-icon profile-icon-2">💼</div>
+      <div class="profile-icon profile-icon-3">🚀</div>
+      
+      <!-- Glowing Orbs -->
+      <div class="about-orb-1"></div>
+      <div class="about-orb-2"></div>
+      
+      <!-- Bottom Fade -->
+      <div class="about-fade"></div>
       
       <div class="container">
         <div class="row align-items-center">

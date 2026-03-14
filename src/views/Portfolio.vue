@@ -1,17 +1,26 @@
 <template>
   <div class="portfolio-page">
     <!-- Page Header Section -->
-    <section class="page-header">
-      <div class="gradient-orb-1"></div>
-      <div class="gradient-orb-2"></div>
-      <div class="gradient-orb-3"></div>
-      <div class="geometric-pattern"></div>
-      <div class="dotted-pattern"></div>
-      <div class="floating-shape-1"></div>
-      <div class="floating-shape-2"></div>
-      <div class="floating-shape-3"></div>
-      <div class="sparkle-1"></div>
-      <div class="sparkle-2"></div>
+    <section class="page-header portfolio-header">
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid"></div>
+      
+      <!-- Project Frames -->
+      <div class="project-frame frame-1"></div>
+      <div class="project-frame frame-2"></div>
+      <div class="project-frame frame-3"></div>
+      
+      <!-- Star Ratings -->
+      <div class="star-rating star-1">★</div>
+      <div class="star-rating star-2">★</div>
+      <div class="star-rating star-3">★</div>
+      
+      <!-- Purple Orbs -->
+      <div class="portfolio-orb-1"></div>
+      <div class="portfolio-orb-2"></div>
+      
+      <!-- Bottom Fade -->
+      <div class="portfolio-fade"></div>
       
       <div class="container">
         <div class="row align-items-center">

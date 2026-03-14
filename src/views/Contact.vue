@@ -1,17 +1,26 @@
 <template>
   <div class="contact-page">
     <!-- Page Header Section -->
-    <section class="page-header">
-      <div class="gradient-orb-1"></div>
-      <div class="gradient-orb-2"></div>
-      <div class="gradient-orb-3"></div>
-      <div class="geometric-pattern"></div>
-      <div class="dotted-pattern"></div>
-      <div class="floating-shape-1"></div>
-      <div class="floating-shape-2"></div>
-      <div class="floating-shape-3"></div>
-      <div class="sparkle-1"></div>
-      <div class="sparkle-2"></div>
+    <section class="page-header contact-header">
+      <!-- Contact Grid -->
+      <div class="contact-grid"></div>
+      
+      <!-- Message Bubbles -->
+      <div class="message-bubble bubble-1">Hello!</div>
+      <div class="message-bubble bubble-2">Let's talk</div>
+      <div class="message-bubble bubble-3">Get in touch</div>
+      
+      <!-- Connection Dots -->
+      <div class="contact-dot dot-1"></div>
+      <div class="contact-dot dot-2"></div>
+      <div class="contact-dot dot-3"></div>
+      
+      <!-- Pink Orbs -->
+      <div class="contact-orb-1"></div>
+      <div class="contact-orb-2"></div>
+      
+      <!-- Bottom Fade -->
+      <div class="contact-fade"></div>
       
       <div class="container">
         <div class="row align-items-center">

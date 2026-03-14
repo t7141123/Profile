@@ -1,17 +1,29 @@
 <template>
   <div class="services-page">
     <!-- Page Header Section -->
-    <section class="page-header">
-      <div class="gradient-orb-1"></div>
-      <div class="gradient-orb-2"></div>
-      <div class="gradient-orb-3"></div>
-      <div class="geometric-pattern"></div>
-      <div class="dotted-pattern"></div>
-      <div class="floating-shape-1"></div>
-      <div class="floating-shape-2"></div>
-      <div class="floating-shape-3"></div>
-      <div class="sparkle-1"></div>
-      <div class="sparkle-2"></div>
+    <section class="page-header services-header">
+      <!-- Services Grid -->
+      <div class="services-grid"></div>
+      
+      <!-- Service Wireframes -->
+      <div class="service-wireframe wireframe-1"></div>
+      <div class="service-wireframe wireframe-2"></div>
+      <div class="service-wireframe wireframe-3"></div>
+      
+      <!-- Gear Icons -->
+      <i class="bi bi-gear-fill gear-icon gear-1"></i>
+      <i class="bi bi-gear-wide-connected gear-icon gear-2"></i>
+      
+      <!-- Flowchart Lines -->
+      <div class="flowchart-line flowchart-1"></div>
+      <div class="flowchart-line flowchart-2"></div>
+      
+      <!-- Tech Orbs -->
+      <div class="services-orb-1"></div>
+      <div class="services-orb-2"></div>
+      
+      <!-- Bottom Fade -->
+      <div class="services-fade"></div>
       
       <div class="container">
         <div class="row align-items-center">
