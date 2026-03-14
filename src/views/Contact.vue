@@ -170,8 +170,8 @@
 }
 
 .contact-card {
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  background: rgba(30, 41, 59, 0.4);
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  background: var(--bg-secondary);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -179,16 +179,16 @@
 
 .contact-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-  background: rgba(30, 41, 59, 0.6);
-  border-color: rgba(5, 150, 105, 0.3);
+  box-shadow: var(--shadow-xl);
+  background: var(--bg-secondary);
+  border-color: rgba(37, 99, 235, 0.3);
 }
 
 .contact-icon-wrapper {
   width: 64px;
   height: 64px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
+  background: rgba(37, 99, 235, 0.1);
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -42,8 +42,8 @@ defineProps({
 .section-badge {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: rgba(5, 150, 105, 0.1);
-  color: var(--primary-light);
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--primary-color);
   border-radius: 50px;
   font-size: 0.875rem;
   font-weight: 600;

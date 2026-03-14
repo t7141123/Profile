@@ -132,22 +132,22 @@ const projects = computed(() => getAllProjects());
 
 .tech-tag {
   padding: 0.25rem 0.5rem;
-  background: rgba(5, 150, 105, 0.1);
-  border-radius: 6px;
+  background: rgba(37, 99, 235, 0.1);
+  border-radius: var(--radius-md);
   font-size: 0.75rem;
-  color: var(--primary-light);
+  color: var(--primary-color);
   font-weight: 500;
 }
 
 .portfolio-footer {
   padding-top: 1rem;
-  border-top: 1px solid var(--dark-border);
+  border-top: 1px solid rgba(37, 99, 235, 0.1);
 }
 
 /* CTA */
 .cta-section {
-  background: rgba(5, 150, 105, 0.05);
-  border-top: 1px solid rgba(5, 150, 105, 0.1);
+  background: var(--gradient-hero);
+  border-top: 1px solid rgba(37, 99, 235, 0.1);
 }
 
 .cta-title {
@@ -168,11 +168,11 @@ const projects = computed(() => getAllProjects());
 }
 
 .nda-card {
-  background: rgba(30, 41, 59, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
+  background: var(--bg-secondary);
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  border-radius: var(--radius-xl);
   padding: 3rem;
-  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-soft);
 }
 
 .nda-title {

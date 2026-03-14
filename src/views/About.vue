@@ -130,7 +130,7 @@
     </section>
 
     <!-- Work Process Section -->
-    <section class="section" style="background: rgba(30, 41, 59, 0.3)">
+    <section class="section" style="background: var(--bg-accent)">
       <div class="container">
         <SectionHeader
           :badge="$t('about.processBadge')"
@@ -379,9 +379,9 @@ const testimonials = computed(() => [
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(5, 150, 105, 0.1);
-  border-radius: 12px;
-  color: var(--primary-light);
+  background: rgba(37, 99, 235, 0.1);
+  border-radius: var(--radius-lg);
+  color: var(--primary-color);
   font-size: 1.25rem;
 }
 
@@ -457,8 +457,8 @@ const testimonials = computed(() => [
   align-items: center;
   justify-content: center;
   margin: 0 auto 1rem;
-  background: var(--primary-gradient);
-  border-radius: 16px;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-lg);
   font-size: 1.5rem;
   color: white;
   position: relative;
@@ -559,7 +559,7 @@ const testimonials = computed(() => [
 
 .testimonial-quote {
   font-size: 2.5rem;
-  color: var(--primary-light);
+  color: var(--primary-color);
   opacity: 0.2;
   line-height: 1;
   margin-bottom: 1rem;

@@ -100,7 +100,7 @@
     </section>
 
     <!-- Featured Projects Section -->
-    <section class="section" style="background: rgba(30, 41, 59, 0.3)">
+    <section class="section" style="background: var(--bg-accent)">
       <div class="container">
         <SectionHeader
           :badge="$t('home.featuredBadge')"

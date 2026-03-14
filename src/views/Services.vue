@@ -60,7 +60,7 @@
     </section>
 
     <!-- Technology Stack Section -->
-    <section class="section" style="background: rgba(30, 41, 59, 0.3)">
+    <section class="section" style="background: var(--bg-accent)">
       <div class="container">
         <div class="section-header">
           <span class="section-badge">{{ $t("services.techBadge") }}</span>
@@ -179,7 +179,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="section" style="background: rgba(30, 41, 59, 0.3)">
+    <section class="section" style="background: var(--bg-accent)">
       <div class="container">
         <div class="section-header">
           <span class="section-badge">{{ $t("services.faqBadge") }}</span>
