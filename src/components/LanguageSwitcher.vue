@@ -28,8 +28,11 @@
 <script setup>
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute, useRouter } from 'vue-router'
 
 const { locale } = useI18n()
+const route = useRoute()
+const router = useRouter()
 
 const languages = [
   { code: 'zh-TW', name: '繁體中文' },
@@ -43,8 +46,11 @@ const currentLangName = computed(() => {
 })
 
 const changeLanguage = (langCode) => {
-  locale.value = langCode
-  localStorage.setItem('locale', langCode)
+  // Navigate to the same path but with new locale
+  const currentPath = route.path
+  // Replace the current locale in the path with the new one
+  const newPath = currentPath.replace(/^\/[^\/]+/, `/${langCode}`)
+  router.push(newPath)
 }
 </script>
 

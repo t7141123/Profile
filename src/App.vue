@@ -18,14 +18,30 @@
 </template>
 
 <script setup>
-import { watch } from 'vue'
+import { watch, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
+import { isLocale } from './router'
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 
 const { t, locale } = useI18n()
+const route = useRoute()
 
-// Watch for language changes and update SEO Meta Tags
+// Function to update locale from route
+const updateLocaleFromRoute = () => {
+  const routeLocale = route.params.locale
+  if (routeLocale && isLocale(routeLocale)) {
+    locale.value = routeLocale
+  }
+}
+
+// Update locale when route changes
+watch(() => route.params.locale, () => {
+  updateLocaleFromRoute()
+})
+
+// Update SEO Meta Tags when language changes
 watch(locale, () => {
   // Update Title
   document.title = t('meta.title')
@@ -47,6 +63,11 @@ watch(locale, () => {
     }
   })
 }, { immediate: true })
+
+// Initialize locale from route on mount
+onMounted(() => {
+  updateLocaleFromRoute()
+})
 </script>
 
 <style>

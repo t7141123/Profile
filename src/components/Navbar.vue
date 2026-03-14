@@ -2,7 +2,7 @@
   <nav class="navbar" :class="{ scrolled: isScrolled }">
     <div class="container d-flex align-items-center justify-content-between">
       <!-- Brand -->
-      <router-link class="navbar-brand" to="/" @click="closeMenu">
+      <router-link class="navbar-brand" :to="localePath('/')" @click="closeMenu">
         <i class="bi bi-code-slash me-2"></i>David Liu
       </router-link>
 
@@ -10,25 +10,25 @@
       <div class="d-none d-lg-flex align-items-center gap-4">
         <ul class="navbar-nav d-flex flex-row gap-4">
           <li class="nav-item">
-            <router-link class="nav-link" to="/">{{ $t("nav.home") }}</router-link>
+            <router-link class="nav-link" :to="localePath('/')">{{ $t("nav.home") }}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/services">{{
+            <router-link class="nav-link" :to="localePath('/services')">{{
               $t("nav.services")
             }}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/portfolio">{{
+            <router-link class="nav-link" :to="localePath('/portfolio')">{{
               $t("nav.portfolio")
             }}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/about">{{
+            <router-link class="nav-link" :to="localePath('/about')">{{
               $t("nav.about")
             }}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/contact">{{
+            <router-link class="nav-link" :to="localePath('/contact')">{{
               $t("nav.contact")
             }}</router-link>
           </li>
@@ -60,7 +60,7 @@
                 :style="{ transitionDelay: `${index * 0.1}s` }"
               >
                 <router-link
-                  :to="item.path"
+                  :to="localePath(item.path)"
                   class="mobile-nav-link"
                   @click="closeMenu"
                 >
@@ -96,15 +96,24 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted, watch } from "vue";
-import { useRoute } from "vue-router";
+import { ref, onMounted, onUnmounted, watch, computed } from "vue";
+import { useRoute, useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
 
 const isScrolled = ref(false);
 const isMenuOpen = ref(false);
 const route = useRoute();
+const router = useRouter();
 const { locale } = useI18n();
+
+// Helper function to generate localized paths
+const localePath = (path) => {
+  const currentLocale = locale.value;
+  // Remove leading slash if present
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  return `/${currentLocale}/${cleanPath}`;
+};
 
 const menuItems = [
   { path: "/", label: "nav.home" },
@@ -143,8 +152,12 @@ const updateBodyScroll = () => {
 };
 
 const changeLanguage = (langCode) => {
-  locale.value = langCode;
-  localStorage.setItem("locale", langCode);
+  // Navigate to the same path but with new locale
+  const currentPath = route.path;
+  // Replace the current locale in the path with the new one
+  const newPath = currentPath.replace(/^\/[^\/]+/, `/${langCode}`);
+  router.push(newPath);
+  closeMenu();
 };
 
 // Route change closes menu
