@@ -404,7 +404,7 @@ const faqs = computed(() => [
   flex-direction: column;
   gap: 1.5rem;
   margin-top: 1.5rem;
-  padding-left: 0.5rem; /* Slight indentation */
+  padding-left: 0.5rem;
 }
 
 .faq-item {
@@ -412,6 +412,9 @@ const faqs = computed(() => [
   align-items: flex-start;
   gap: 1.25rem;
   position: relative;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  background: var(--bg-accent);
 }
 
 .faq-item-num {
@@ -421,7 +424,7 @@ const faqs = computed(() => [
   color: var(--primary-color);
   opacity: 0.9;
   line-height: 1;
-  margin-top: 0.1rem; /* optical alignment */
+  margin-top: 0.1rem;
   min-width: 2rem;
 }
 
@@ -591,11 +594,11 @@ const faqs = computed(() => [
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(5, 150, 105, 0.1);
-  border: 1px solid rgba(5, 150, 105, 0.2);
-  border-radius: 16px;
+  background: rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  border-radius: var(--radius-lg);
   font-size: 2rem;
-  color: var(--primary-light);
+  color: var(--primary-color);
   transition: var(--transition-base);
 }
 
@@ -606,11 +609,11 @@ const faqs = computed(() => [
 }
 
 .tech-logo-item:hover .tech-logo {
-  background: var(--primary-gradient);
+  background: var(--gradient-primary);
   border-color: transparent;
   color: white;
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(5, 150, 105, 0.3);
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
 }
 
 .tech-name {
@@ -624,16 +627,26 @@ const faqs = computed(() => [
   padding: 2rem;
   text-align: center;
   position: relative;
-  border: 1px solid transparent;
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+  transition: all var(--transition-base);
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
 }
 
 .pricing-card.featured {
   border-color: var(--primary-color);
   background: linear-gradient(
     180deg,
-    rgba(5, 150, 105, 0.1) 0%,
-    rgba(30, 41, 59, 0.5) 100%
+    rgba(37, 99, 235, 0.05) 0%,
+    var(--bg-secondary) 100%
   );
+  box-shadow: var(--shadow-glow);
 }
 
 .pricing-badge {
@@ -682,28 +695,39 @@ const faqs = computed(() => [
 
 /* Accordion */
 .accordion-item {
-  background: rgba(30, 41, 59, 0.5);
-  border: 1px solid var(--dark-border);
-  border-radius: 12px !important;
+  background: var(--bg-secondary);
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  border-radius: var(--radius-lg) !important;
   margin-bottom: 1rem;
   overflow: hidden;
+  box-shadow: var(--shadow-sm);
 }
 
 .accordion-button {
-  background: transparent;
+  background: var(--bg-secondary);
   color: var(--text-primary);
   font-weight: 600;
   padding: 1.25rem;
   box-shadow: none !important;
+  transition: all var(--transition-base);
+}
+
+.accordion-button:hover {
+  background: var(--bg-accent);
 }
 
 .accordion-button:not(.collapsed) {
-  background: rgba(5, 150, 105, 0.1);
-  color: var(--primary-light);
+  background: rgba(37, 99, 235, 0.05);
+  color: var(--primary-color);
 }
 
 .accordion-button::after {
-  filter: brightness(0) invert(1);
+  filter: none;
+  color: var(--text-secondary);
+}
+
+.accordion-button:not(.collapsed)::after {
+  color: var(--primary-color);
 }
 
 .accordion-body {
@@ -711,13 +735,14 @@ const faqs = computed(() => [
   padding: 1rem 1.25rem 1.25rem;
   line-height: 1.8;
   white-space: pre-line;
+  background: var(--bg-secondary);
 }
 
 /* CTA Section */
 .cta-section {
-  background: rgba(5, 150, 105, 0.05);
+  background: var(--gradient-hero);
   padding: 5rem 0;
-  border-radius: 24px;
+  border-radius: var(--radius-xl);
   margin: 4rem auto;
   max-width: 900px;
 }
@@ -726,6 +751,7 @@ const faqs = computed(() => [
   font-size: clamp(1.5rem, 4vw, 2.25rem);
   font-weight: 800;
   margin-bottom: 1.5rem;
+  color: var(--text-primary);
 }
 
 .cta-description {
