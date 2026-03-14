@@ -185,7 +185,7 @@ a:hover {
 }
 
 /* ===================================
-   Hero Section - Professional & Welcoming
+   Hero Section - Enhanced Design
    =================================== */
 .hero-section {
   min-height: 100vh;
@@ -197,6 +197,7 @@ a:hover {
   padding-top: 80px;
 }
 
+/* Enhanced decorative background for hero */
 .hero-section::before {
   content: "";
   position: absolute;
@@ -207,18 +208,44 @@ a:hover {
   background:
     radial-gradient(
       circle at 20% 80%,
-      rgba(37, 99, 235, 0.1) 0%,
+      rgba(37, 99, 235, 0.12) 0%,
       transparent 50%
     ),
     radial-gradient(
       circle at 80% 20%,
-      rgba(124, 58, 237, 0.08) 0%,
+      rgba(59, 130, 246, 0.1) 0%,
       transparent 50%
     ),
     radial-gradient(
       circle at 40% 40%,
-      rgba(245, 158, 11, 0.05) 0%,
+      rgba(139, 92, 246, 0.08) 0%,
       transparent 40%
+    );
+  pointer-events: none;
+}
+
+/* Subtle mesh gradient overlay */
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      rgba(37, 99, 235, 0.02) 0px,
+      rgba(37, 99, 235, 0.02) 1px,
+      transparent 1px,
+      transparent 20px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(59, 130, 246, 0.02) 0px,
+      rgba(59, 130, 246, 0.02) 1px,
+      transparent 1px,
+      transparent 20px
     );
   pointer-events: none;
 }
@@ -450,14 +477,36 @@ a:hover {
   margin-top: 4rem;
 }
 
-/* Page Header (Shared across pages) */
 .page-header {
   padding: 160px 0 60px;
   background: var(--bg-primary);
   position: relative;
+  overflow: hidden;
 }
 
+/* Decorative bottom border for page headers */
 .page-header::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--primary-color) 20%,
+    var(--primary-color) 80%,
+    transparent 100%
+  );
+  border-radius: 2px;
+  z-index: 1;
+}
+
+/* Decorative background elements for page headers */
+.page-header::after {
   content: "";
   position: absolute;
   top: 0;
@@ -472,10 +521,31 @@ a:hover {
     ),
     radial-gradient(
       circle at 70% 30%,
-      rgba(124, 58, 237, 0.06) 0%,
+      rgba(59, 130, 246, 0.06) 0%,
       transparent 50%
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(139, 92, 246, 0.05) 0%,
+      transparent 40%
+    ),
+    linear-gradient(
+      rgba(37, 99, 235, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(37, 99, 235, 0.03) 1px,
+      transparent 1px
     );
+  background-size: 
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    40px 40px,
+    40px 40px;
   pointer-events: none;
+  z-index: 0;
 }
 
 .page-title {
@@ -483,11 +553,15 @@ a:hover {
   font-weight: 800;
   margin-bottom: 1rem;
   color: var(--text-primary);
+  position: relative;
+  z-index: 2;
 }
 
 .page-description {
   color: var(--text-secondary);
   font-size: 1.125rem;
+  position: relative;
+  z-index: 2;
 }
 
 
