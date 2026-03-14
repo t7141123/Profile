@@ -185,7 +185,7 @@ a:hover {
 }
 
 /* ===================================
-   Hero Section - Premium Gradient Design
+   Hero Section - Tech/Software Design
    =================================== */
 .hero-section {
   min-height: 100vh;
@@ -193,8 +193,258 @@ a:hover {
   align-items: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 40%, #F0F9FF 70%, #E0F2FE 100%);
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 40%, #1E3A5F 70%, #0C4A6E 100%);
   padding-top: 80px;
+  color: #F1F5F9;
+}
+
+/* Tech grid background */
+.hero-section .tech-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 0 0;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* Animated circuit lines */
+.hero-section .circuit-line-1 {
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.6), transparent);
+  animation: circuitFlow 8s linear infinite;
+  pointer-events: none;
+}
+
+.hero-section .circuit-line-2 {
+  position: absolute;
+  top: 40%;
+  right: -10%;
+  left: auto;
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.5), transparent);
+  animation: circuitFlowReverse 10s linear infinite;
+  pointer-events: none;
+}
+
+.hero-section .circuit-line-3 {
+  position: absolute;
+  bottom: 30%;
+  left: -5%;
+  width: 70%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(14, 165, 233, 0.5), transparent);
+  animation: circuitFlow 12s linear infinite 2s;
+  pointer-events: none;
+}
+
+/* Glowing orbs */
+.hero-section .glow-orb-1 {
+  position: absolute;
+  top: -15%;
+  right: -10%;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.2) 0%, rgba(6, 182, 212, 0.08) 50%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(50px);
+  animation: techPulse 15s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.hero-section .glow-orb-2 {
+  position: absolute;
+  bottom: -20%;
+  left: -5%;
+  width: 45vw;
+  height: 45vw;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.18) 0%, rgba(99, 102, 241, 0.06) 50%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(45px);
+  animation: techPulse 18s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+.hero-section .glow-orb-3 {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 35vw;
+  height: 35vw;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, rgba(6, 182, 212, 0.04) 50%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(40px);
+  animation: techPulse 20s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Floating code particles */
+.hero-section .code-particle {
+  position: absolute;
+  font-family: 'Fira Code', 'Monaco', monospace;
+  font-size: 12px;
+  color: rgba(56, 189, 248, 0.3);
+  animation: codeFloat 20s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.hero-section .particle-1 {
+  top: 25%;
+  left: 15%;
+  animation-delay: 0s;
+}
+
+.hero-section .particle-2 {
+  top: 35%;
+  right: 20%;
+  animation-delay: -5s;
+}
+
+.hero-section .particle-3 {
+  bottom: 30%;
+  left: 25%;
+  animation-delay: -10s;
+}
+
+.hero-section .particle-4 {
+  top: 60%;
+  right: 30%;
+  animation-delay: -15s;
+}
+
+/* Hexagon pattern */
+.hero-section .hexagon-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cpath d='M25 0 L50 12.5 L50 37.5 L25 50 L0 37.5 L0 12.5 Z' fill='none' stroke='rgba(56, 189, 248, 0.05)' stroke-width='1'/%3E%3C/svg%3E");
+  background-size: 60px 70px;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Data flow lines */
+.hero-section .data-flow {
+  position: absolute;
+  width: 3px;
+  height: 100px;
+  background: linear-gradient(180deg, transparent, rgba(56, 189, 248, 0.6), transparent);
+  animation: dataFlow 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.hero-section .data-flow-1 {
+  top: 15%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.hero-section .data-flow-2 {
+  top: 25%;
+  right: 25%;
+  animation-delay: -2s;
+}
+
+.hero-section .data-flow-3 {
+  bottom: 20%;
+  left: 30%;
+  animation-delay: -4s;
+}
+
+/* Tech corner decorations */
+.hero-section .tech-corner {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(56, 189, 248, 0.3);
+  pointer-events: none;
+}
+
+.hero-section .tech-corner-tl {
+  top: 5%;
+  left: 5%;
+  border-right: none;
+  border-bottom: none;
+}
+
+.hero-section .tech-corner-tr {
+  top: 5%;
+  right: 5%;
+  border-left: none;
+  border-bottom: none;
+}
+
+.hero-section .tech-corner-bl {
+  bottom: 5%;
+  left: 5%;
+  border-right: none;
+  border-top: none;
+}
+
+.hero-section .tech-corner-br {
+  bottom: 5%;
+  right: 5%;
+  border-left: none;
+  border-top: none;
+}
+
+/* Scanning line effect */
+.hero-section .scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.4), transparent);
+  animation: scanDown 15s linear infinite;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Binary code rain */
+.hero-section .binary-rain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.15;
+}
+
+.hero-section .binary-column {
+  position: absolute;
+  top: -100%;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  color: rgba(56, 189, 248, 0.6);
+  writing-mode: vertical-rl;
+  animation: binaryRain 20s linear infinite;
+}
+
+/* Bottom gradient fade */
+.hero-section .bottom-fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(0deg, var(--bg-primary) 0%, transparent 100%);
+  pointer-events: none;
 }
 
 /* Large animated gradient orbs */
@@ -405,47 +655,38 @@ a:hover {
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 10;
+}
+
+.hero-content h1,
+.hero-content h2,
+.hero-content h3 {
+  color: #F1F5F9;
+}
+
+.hero-content p {
+  color: #CBD5E1;
 }
 
 .hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: rgba(37, 99, 235, 0.1);
-  border: 1px solid rgba(37, 99, 235, 0.2);
-  border-radius: var(--radius-full);
-  font-size: 0.875rem;
-  color: var(--primary-color);
-  margin-bottom: 1.5rem;
-  animation: fadeInUp 0.8s ease forwards;
+  background: rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: #38BDF8;
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 8vw, 5rem);
-  font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
-  animation: fadeInUp 0.8s ease 0.2s forwards;
-  opacity: 0;
-  color: var(--text-primary);
+  color: #F1F5F9;
 }
 
 .hero-title .highlight {
-  background: var(--gradient-primary);
+  background: linear-gradient(135deg, #38BDF8 0%, #818CF8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
-  color: var(--text-secondary);
-  margin-bottom: 2rem;
-  max-width: 600px;
-  animation: fadeInUp 0.8s ease 0.4s forwards;
-  opacity: 0;
+  color: #CBD5E1;
 }
 
 .hero-buttons {
@@ -1242,6 +1483,99 @@ a:hover {
   50% {
     opacity: 1;
     transform: scale(1.5);
+  }
+}
+
+@keyframes circuitFlow {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes circuitFlowReverse {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes techPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+@keyframes codeFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-30px) rotate(5deg);
+    opacity: 0.6;
+  }
+}
+
+@keyframes dataFlow {
+  0%, 100% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scanDown {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes binaryRain {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 100%;
   }
 }
 

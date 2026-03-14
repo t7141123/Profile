@@ -2,23 +2,55 @@
   <div class="home">
     <!-- Hero Section -->
     <section class="hero-section">
-      <!-- Decorative Background Elements -->
-      <div class="gradient-orb-1"></div>
-      <div class="gradient-orb-2"></div>
-      <div class="gradient-orb-3"></div>
-      <div class="geometric-pattern"></div>
-      <div class="dotted-pattern"></div>
-      <div class="gradient-mesh"></div>
-      <div class="floating-shape-1"></div>
-      <div class="floating-shape-2"></div>
-      <div class="floating-shape-3"></div>
-      <div class="floating-shape-4"></div>
-      <div class="floating-shape-5"></div>
-      <div class="floating-shape-6"></div>
-      <div class="sparkle-1"></div>
-      <div class="sparkle-2"></div>
-      <div class="sparkle-3"></div>
-      <div class="wave-decoration"></div>
+      <!-- Tech Background Elements -->
+      <div class="tech-grid"></div>
+      <div class="hexagon-pattern"></div>
+      
+      <!-- Circuit Lines -->
+      <div class="circuit-line-1"></div>
+      <div class="circuit-line-2"></div>
+      <div class="circuit-line-3"></div>
+      
+      <!-- Glowing Orbs -->
+      <div class="glow-orb-1"></div>
+      <div class="glow-orb-2"></div>
+      <div class="glow-orb-3"></div>
+      
+      <!-- Data Flow -->
+      <div class="data-flow data-flow-1"></div>
+      <div class="data-flow data-flow-2"></div>
+      <div class="data-flow data-flow-3"></div>
+      
+      <!-- Code Particles -->
+      <div class="code-particle particle-1">{ }</div>
+      <div class="code-particle particle-2">&lt;/&gt;</div>
+      <div class="code-particle particle-3">0101</div>
+      <div class="code-particle particle-4">function()</div>
+      
+      <!-- Tech Corners -->
+      <div class="tech-corner tech-corner-tl"></div>
+      <div class="tech-corner tech-corner-tr"></div>
+      <div class="tech-corner tech-corner-bl"></div>
+      <div class="tech-corner tech-corner-br"></div>
+      
+      <!-- Scan Line -->
+      <div class="scan-line"></div>
+      
+      <!-- Binary Rain -->
+      <div class="binary-rain">
+        <div class="binary-column" style="left: 10%; animation-delay: 0s;">1010100101</div>
+        <div class="binary-column" style="left: 20%; animation-delay: -5s;">0101011010</div>
+        <div class="binary-column" style="left: 30%; animation-delay: -10s;">1010101011</div>
+        <div class="binary-column" style="left: 40%; animation-delay: -15s;">0101010101</div>
+        <div class="binary-column" style="left: 50%; animation-delay: -8s;">1111000010</div>
+        <div class="binary-column" style="left: 60%; animation-delay: -12s;">0000111101</div>
+        <div class="binary-column" style="left: 70%; animation-delay: -3s;">1010101010</div>
+        <div class="binary-column" style="left: 80%; animation-delay: -7s;">0101010101</div>
+        <div class="binary-column" style="left: 90%; animation-delay: -18s;">1110001110</div>
+      </div>
+      
+      <!-- Bottom Fade -->
+      <div class="bottom-fade"></div>
 
       <div class="container">
         <div class="row align-items-center">
