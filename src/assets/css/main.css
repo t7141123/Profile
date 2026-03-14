@@ -185,7 +185,7 @@ a:hover {
 }
 
 /* ===================================
-   Hero Section - Clean & Modern
+   Hero Section - Modern Design
    =================================== */
 .hero-section {
   min-height: 100vh;
@@ -193,34 +193,102 @@ a:hover {
   align-items: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-accent) 100%);
+  background: var(--bg-primary);
   padding-top: 80px;
 }
 
-/* Soft gradient orbs */
+/* Animated gradient background */
 .hero-section::before {
   content: "";
   position: absolute;
-  top: -10%;
-  right: 10%;
-  width: 50vw;
-  height: 50vw;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
+  top: -50%;
+  right: -20%;
+  width: 80vw;
+  height: 80vw;
+  background: radial-gradient(
+    circle,
+    rgba(37, 99, 235, 0.15) 0%,
+    rgba(59, 130, 246, 0.08) 30%,
+    transparent 70%
+  );
   border-radius: 50%;
-  filter: blur(80px);
+  filter: blur(60px);
+  animation: float 20s ease-in-out infinite;
   pointer-events: none;
 }
 
+/* Secondary gradient orb */
 .hero-section::after {
   content: "";
   position: absolute;
-  bottom: 10%;
-  left: -5%;
-  width: 40vw;
-  height: 40vw;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
+  bottom: -30%;
+  left: -10%;
+  width: 60vw;
+  height: 60vw;
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.12) 0%,
+    rgba(139, 92, 246, 0.06) 40%,
+    transparent 70%
+  );
   border-radius: 50%;
-  filter: blur(60px);
+  filter: blur(50px);
+  animation: float 25s ease-in-out infinite reverse;
+  pointer-events: none;
+}
+
+/* Decorative wave pattern */
+.hero-section .wave-decoration {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(37, 99, 235, 0.05) 100%
+  );
+  pointer-events: none;
+}
+
+/* Floating shape 1 */
+.hero-section .floating-shape-1 {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(59, 130, 246, 0.05));
+  border-radius: 20px;
+  transform: rotate(45deg);
+  animation: float 15s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Floating shape 2 */
+.hero-section .floating-shape-2 {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.05));
+  border-radius: 50%;
+  animation: float 18s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Floating shape 3 */
+.hero-section .floating-shape-3 {
+  position: absolute;
+  top: 60%;
+  right: 25%;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(37, 99, 235, 0.05));
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation: float 22s ease-in-out infinite;
   pointer-events: none;
 }
 

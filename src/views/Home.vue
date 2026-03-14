@@ -2,11 +2,11 @@
   <div class="home">
     <!-- Hero Section -->
     <section class="hero-section">
-      <div class="floating-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-      </div>
+      <!-- Decorative Elements -->
+      <div class="floating-shape-1"></div>
+      <div class="floating-shape-2"></div>
+      <div class="floating-shape-3"></div>
+      <div class="wave-decoration"></div>
 
       <div class="container">
         <div class="row align-items-center">
