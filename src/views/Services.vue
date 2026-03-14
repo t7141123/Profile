@@ -276,7 +276,7 @@ const mainServices = computed(() => [
     title: t("services.mainServices.corporate"),
     subtitle: t("services.mainServices.corporateSubtitle"),
     description: t("services.mainServices.corporateDesc"),
-    gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    gradient: "linear-gradient(135deg, #2563EB 0%, #3B82F6 100%)",
     features: tm("services.mainServices.corporateFeatures"),
   },
   {
@@ -285,7 +285,7 @@ const mainServices = computed(() => [
     title: t("services.mainServices.operations"),
     subtitle: t("services.mainServices.operationsSubtitle"),
     description: t("services.mainServices.operationsDesc"),
-    gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+    gradient: "linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%)",
     features: tm("services.mainServices.operationsFeatures"),
   },
   {
@@ -294,7 +294,7 @@ const mainServices = computed(() => [
     title: t("services.mainServices.events"),
     subtitle: t("services.mainServices.eventsSubtitle"),
     description: t("services.mainServices.eventsDesc"),
-    gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+    gradient: "linear-gradient(135deg, #14B8A6 0%, #2DD4BF 100%)",
     features: tm("services.mainServices.eventsFeatures"),
   },
   {
@@ -303,7 +303,7 @@ const mainServices = computed(() => [
     title: t("services.mainServices.custom"),
     subtitle: t("services.mainServices.customSubtitle"),
     description: t("services.mainServices.customDesc"),
-    gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+    gradient: "linear-gradient(135deg, #10B981 0%, #34D399 100%)",
     features: tm("services.mainServices.customFeatures"),
   },
 ]);

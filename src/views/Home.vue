@@ -185,28 +185,28 @@ const services = computed(() => [
     icon: "bi bi-globe",
     title: t("home.services.corporate"),
     description: t("home.services.corporateDesc"),
-    gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    gradient: "linear-gradient(135deg, #2563EB 0%, #3B82F6 100%)",
   },
   {
     id: 2,
     icon: "bi bi-speedometer2",
     title: t("home.services.operations"),
     description: t("home.services.operationsDesc"),
-    gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+    gradient: "linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%)",
   },
   {
     id: 3,
     icon: "bi bi-calendar-event",
     title: t("home.services.events"),
     description: t("home.services.eventsDesc"),
-    gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+    gradient: "linear-gradient(135deg, #14B8A6 0%, #2DD4BF 100%)",
   },
   {
     id: 4,
     icon: "bi bi-code-square",
     title: t("home.services.custom"),
     description: t("home.services.customDesc"),
-    gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+    gradient: "linear-gradient(135deg, #10B981 0%, #34D399 100%)",
   },
 ]);
 
@@ -219,7 +219,7 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
   background: var(--bg-secondary);
   border-radius: var(--radius-xl);
   overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.1);
   box-shadow: var(--shadow-xl);
   text-align: left;
   max-width: 500px;
@@ -232,7 +232,7 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
   display: flex;
   align-items: center;
   gap: 8px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(37, 99, 235, 0.05);
 }
 
 .dot {

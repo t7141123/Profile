@@ -18,7 +18,7 @@ nprogressStyles.textContent = `
   }
   
   #nprogress .bar {
-    background: linear-gradient(90deg, #2563EB, #7C3AED);
+    background: linear-gradient(90deg, #2563EB, #3B82F6);
     position: fixed;
     z-index: 10000;
     top: 0;
@@ -33,7 +33,7 @@ nprogressStyles.textContent = `
     right: 0px;
     width: 100px;
     height: 100%;
-    box-shadow: 0 0 10px #2563EB, 0 0 5px #7C3AED;
+    box-shadow: 0 0 10px #2563EB, 0 0 5px #3B82F6;
     opacity: 1.0;
     transform: rotate(3deg) translate(0px, -4px);
   }

@@ -207,7 +207,7 @@ const skillCategories = computed(() => [
   {
     name: t("about.skillCategories.frontend"),
     icon: "bi bi-palette",
-    gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    gradient: "linear-gradient(135deg, #2563EB 0%, #3B82F6 100%)",
     skills: [
       "Vue.js",
       "React",
@@ -221,31 +221,31 @@ const skillCategories = computed(() => [
   {
     name: t("about.skillCategories.backend"),
     icon: "bi bi-server",
-    gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+    gradient: "linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%)",
     skills: ["Node.js", "PHP", "Python", "Express.js", "REST API"],
   },
   {
     name: t("about.skillCategories.database"),
     icon: "bi bi-database",
-    gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+    gradient: "linear-gradient(135deg, #14B8A6 0%, #2DD4BF 100%)",
     skills: ["MySQL", "PostgreSQL", "Firebase", "Supabase"],
   },
   {
     name: t("about.skillCategories.tools"),
     icon: "bi bi-tools",
-    gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+    gradient: "linear-gradient(135deg, #10B981 0%, #34D399 100%)",
     skills: ["Git", "Docker", "VS Code", "Postman"],
   },
   {
     name: t("about.skillCategories.cloud"),
     icon: "bi bi-cloud",
-    gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
+    gradient: "linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%)",
     skills: ["Zeabur", "Vercel", "Netlify"],
   },
   {
     name: t("about.skillCategories.other"),
     icon: "bi bi-lightning",
-    gradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
+    gradient: "linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%)",
     skills: [
       t("about.skillCategories.seo"),
       t("about.skillCategories.uiux"),
@@ -480,7 +480,7 @@ const testimonials = computed(() => [
 .process-card::after {
   font-family: "bootstrap-icons";
   position: absolute;
-  color: var(--primary-light);
+  color: #3B82F6;
   font-size: 1.5rem;
   opacity: 0.5;
   transition: var(--transition-base);

@@ -14,7 +14,7 @@
   --primary-color: #2563EB; /* Blue 600 - professional and reliable */
   --primary-dark: #1D4ED8;  /* Blue 700 */
   --primary-light: #3B82F6; /* Blue 500 */
-  --primary-gradient: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+  --primary-gradient: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
   
   /* Secondary Color - Warm Amber for friendliness (accent only) */
   --secondary-color: #F59E0B; /* Amber 500 - warm accent */
@@ -41,14 +41,14 @@
   --text-muted: #94A3B8;      /* Slate 400 */
   --text-light: #F8FAFC;      /* For dark backgrounds */
 
-  /* Professional Gradients with subtle warmth */
-  --gradient-primary: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+  /* Professional Blue Gradients - No Purple */
+  --gradient-primary: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
   --gradient-blue: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+  --gradient-light: linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%);
   --gradient-warm: linear-gradient(135deg, #F59E0B 0%, #F97316 100%);
-  --gradient-soft: linear-gradient(135deg, #60A5FA 0%, #A78BFA 100%);
-  --gradient-hero: linear-gradient(135deg, rgba(37, 99, 235, 0.06) 0%, rgba(124, 58, 237, 0.06) 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(59, 130, 246, 0.08) 100%);
   
-  /* Clean Shadows with subtle warmth */
+  /* Clean Shadows with blue tint */
   --shadow-sm: 0 1px 2px 0 rgba(37, 99, 235, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(37, 99, 235, 0.1), 0 2px 4px -2px rgba(37, 99, 235, 0.1);
   --shadow-lg: 0 10px 15px -3px rgba(37, 99, 235, 0.1), 0 4px 6px -4px rgba(37, 99, 235, 0.1);
