@@ -42,16 +42,16 @@
                     class="glass-card contact-card h-100 d-flex align-items-center p-4"
                   >
                     <div class="contact-icon-wrapper me-4">
-                      <i class="bi bi-line fs-2 text-success"></i>
+                      <i class="bi bi-line fs-2"></i>
                     </div>
                     <div class="text-start">
-                      <div class="contact-label mb-1 text-light">
+                      <div class="contact-label mb-1">
                         {{ $t("contact.lineLabel") }}
                       </div>
                       <a
                         href="https://line.me/ti/p/2w7bwfksdF"
                         target="_blank"
-                        class="contact-value fs-6 fw-bold text-white text-decoration-none hover-highlight"
+                        class="contact-value fs-6 fw-bold text-decoration-none hover-highlight"
                       >
                         {{ $t("contact.lineValue") }}
                       </a>
@@ -65,16 +65,16 @@
                     class="glass-card contact-card h-100 d-flex align-items-center p-4"
                   >
                     <div class="contact-icon-wrapper me-4">
-                      <i class="bi bi-telegram fs-2 text-info"></i>
+                      <i class="bi bi-telegram fs-2"></i>
                     </div>
                     <div class="text-start">
-                      <div class="contact-label mb-1 text-light">
+                      <div class="contact-label mb-1">
                         {{ $t("contact.telegramLabel") }}
                       </div>
                       <a
                         href="https://t.me/davidliu71411"
                         target="_blank"
-                        class="contact-value fs-6 fw-bold text-white text-decoration-none hover-highlight"
+                        class="contact-value fs-6 fw-bold text-decoration-none hover-highlight"
                       >
                         {{ $t("contact.telegramValue") }}
                       </a>
@@ -88,15 +88,15 @@
                     class="glass-card contact-card h-100 d-flex align-items-center p-4"
                   >
                     <div class="contact-icon-wrapper me-4">
-                      <i class="bi bi-envelope-fill fs-2 text-primary"></i>
+                      <i class="bi bi-envelope-fill fs-2"></i>
                     </div>
                     <div class="text-start">
-                      <div class="contact-label mb-1 text-light">
+                      <div class="contact-label mb-1">
                         {{ $t("contact.emailLabel") }}
                       </div>
                       <a
                         href="mailto:david.liu@action-lead.com"
-                        class="contact-value fs-6 fw-bold text-white text-decoration-none hover-highlight"
+                        class="contact-value fs-6 fw-bold text-decoration-none hover-highlight"
                       >
                         david.liu@action-lead.com
                       </a>
@@ -110,13 +110,13 @@
                     class="glass-card contact-card h-100 d-flex align-items-center p-4"
                   >
                     <div class="contact-icon-wrapper me-4">
-                      <i class="bi bi-clock-fill fs-2 text-warning"></i>
+                      <i class="bi bi-clock-fill fs-2"></i>
                     </div>
                     <div class="text-start">
-                      <div class="contact-label mb-1 text-light">
+                      <div class="contact-label mb-1">
                         {{ $t("contact.workingHoursLabel") }}
                       </div>
-                      <div class="contact-value fs-6 fw-bold text-white">
+                      <div class="contact-value fs-6 fw-bold">
                         {{ $t("contact.workingHoursValue") }}
                       </div>
                     </div>
@@ -129,13 +129,13 @@
                     class="glass-card contact-card h-100 d-flex align-items-center p-4"
                   >
                     <div class="contact-icon-wrapper me-4">
-                      <i class="bi bi-shield-check fs-2 text-success"></i>
+                      <i class="bi bi-shield-check fs-2"></i>
                     </div>
                     <div class="text-start">
-                      <div class="contact-label mb-1 text-light">
+                      <div class="contact-label mb-1">
                         {{ $t("contact.promiseLabel") }}
                       </div>
-                      <div class="contact-value fs-6 fw-bold text-white">
+                      <div class="contact-value fs-6 fw-bold">
                         {{ $t("contact.promiseValue") }}
                       </div>
                     </div>
@@ -165,8 +165,7 @@
 }
 
 .hover-highlight:hover {
-  color: var(--primary-light) !important;
-  text-decoration: underline !important;
+  color: var(--primary-color);
 }
 
 .contact-card {
@@ -192,5 +191,38 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--transition-base);
+}
+
+.contact-card:hover .contact-icon-wrapper {
+  background: var(--gradient-primary);
+}
+
+.contact-icon-wrapper i {
+  color: var(--primary-color);
+  font-size: 2rem;
+  transition: color var(--transition-base);
+}
+
+.contact-card:hover .contact-icon-wrapper i {
+  color: white;
+}
+
+.contact-label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.contact-value {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: color var(--transition-base);
+}
+
+.contact-value:hover {
+  color: var(--primary-color);
 }
 </style>
