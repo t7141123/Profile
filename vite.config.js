@@ -44,7 +44,20 @@ export default defineConfig({
     // Source map configuration
     sourcemap: false,
     // Target modern browsers
-    target: 'esnext'
+    target: 'esnext',
+    // CSS code splitting
+    cssCodeSplit: true,
+    // Assets output
+    assetsDir: 'assets',
+    assetsInlineLimit: 4096
+  },
+  server: {
+    port: 5173,
+    host: true
+  },
+  preview: {
+    port: 4173,
+    host: true
   },
   test: {
     globals: true,

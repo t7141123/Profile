@@ -24,7 +24,7 @@
         <div class="row align-items-center">
           <div class="col-lg-4 mb-4 mb-lg-0">
             <div class="about-image">
-              <img src="@/assets/images/profile-new.jpg" alt="David Liu" loading="lazy" />
+              <img src="@/assets/images/profile-new.jpg" alt="David Liu" loading="lazy" decoding="async" width="400" height="500" />
               <div class="experience-badge">
                 <span class="years">7+</span>
                 <span class="text">{{ $t("about.yearsExp") }}</span>

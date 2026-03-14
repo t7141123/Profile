@@ -17,6 +17,9 @@
 
     <!-- Footer -->
     <Footer />
+
+    <!-- Back to Top Button -->
+    <BackToTop />
   </div>
 </template>
 
@@ -27,6 +30,7 @@ import { useRoute } from 'vue-router'
 import { isLocale } from './router'
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
+import BackToTop from './components/common/BackToTop.vue'
 
 const { t, locale } = useI18n()
 const route = useRoute()

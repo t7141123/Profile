@@ -116,7 +116,7 @@
           >
             <div class="portfolio-card h-100">
               <div class="portfolio-image">
-                <img :src="project.image" :alt="project.title" loading="lazy" />
+                <img :src="project.image" :alt="project.title" loading="lazy" decoding="async" width="400" height="250" />
                 <div class="portfolio-overlay">
                   <a
                     :href="project.url"

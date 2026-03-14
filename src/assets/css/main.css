@@ -912,8 +912,48 @@ a:hover {
   }
 }
 
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Scroll Reveal Animation */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animation delays */
+.reveal-on-scroll:nth-child(1) { transition-delay: 0.1s; }
+.reveal-on-scroll:nth-child(2) { transition-delay: 0.2s; }
+.reveal-on-scroll:nth-child(3) { transition-delay: 0.3s; }
+.reveal-on-scroll:nth-child(4) { transition-delay: 0.4s; }
+.reveal-on-scroll:nth-child(5) { transition-delay: 0.5s; }
+.reveal-on-scroll:nth-child(6) { transition-delay: 0.6s; }
+
 /* ===================================
-   響應式設計
+   Responsive Design
    =================================== */
 @media (max-width: 991.98px) {
   .hero-section {
@@ -954,6 +994,68 @@ a:hover {
 
   .stat-number {
     font-size: 2.5rem;
+  }
+
+  /* Stack grid items on mobile */
+  .row > [class*="col-md-6"] {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  :root {
+    --section-padding: 40px 0;
+  }
+
+  .btn-primary-custom,
+  .btn-outline-custom {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* ===================================
+   Print Styles
+   =================================== */
+@media print {
+  .navbar,
+  .footer,
+  .btn,
+  .social-links {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .glass-card,
+  .portfolio-card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
+
+/* ===================================
+   Reduced Motion
+   =================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
