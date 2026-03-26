@@ -1,52 +1,16 @@
 import { computed } from "vue";
 import { useI18n } from "vue-i18n";
+import projectsData from "@/assets/data/projects.json";
 
 export function useProjects() {
   const { t } = useI18n();
 
-  const projects = computed(() => [
-    {
-      id: 1,
-      key: "actionLead",
-      image: new URL("@/assets/images/action-lead.png", import.meta.url).href,
-      url: "https://www.action-lead.com",
-      technologies: ["Vue.js", "Bootstrap", "PHP", "MySQL"],
-      categoryKey: "corporate", // Used for i18n key lookup
-    },
-    {
-      id: 2,
-      key: "linkwing",
-      image: new URL("@/assets/images/linkwing.png", import.meta.url).href,
-      url: "https://www.linkwing.com/",
-      technologies: ["Vue.js", "Vite", "Bootstrap", "Node.js", "PHP"],
-      categoryKey: "corporate",
-    },
-    {
-      id: 3,
-      key: "clay",
-      image: new URL("@/assets/images/clay.png", import.meta.url).href,
-      url: "https://www.clay.com.tw/",
-      technologies: ["Vue.js", "Supabase", "Bootstrap", "PHP", "MySQL"],
-      categoryKey: "ecommerce",
-    },
-    {
-      id: 4,
-      key: "nhm",
-      image: new URL("@/assets/images/nothing-hidden.png", import.meta.url)
-        .href,
-      url: "https://www.nothinghidden.com.tw/",
-      technologies: ["WordPress", "PHP", "MySQL", "RWD"],
-      categoryKey: "npo",
-    },
-    {
-      id: 5,
-      key: "uvaco",
-      image: new URL("@/assets/images/uvaco.png", import.meta.url).href,
-      url: "https://uvaco-system.zeabur.app/",
-      technologies: ["Vue.js", "Supabase", "Zeabur", "RWD"],
-      categoryKey: "education",
-    },
-  ]);
+  const projects = computed(() =>
+    projectsData.map(p => ({
+      ...p,
+      image: new URL(`../assets/images/${p.imageName}`, import.meta.url).href
+    }))
+  );
 
   /**
    * Get the featured projects list for the Home page
@@ -66,7 +30,7 @@ export function useProjects() {
   const getAllProjects = () => {
     return projects.value.map((p) => ({
       ...p,
-      title: t(`portfolio.projects.${p.key}`), // Use translation under portfolio (potentially more detailed)
+      title: t(`portfolio.projects.${p.key}`),
       category: t(`portfolio.projects.${p.categoryKey}`),
       description: t(`portfolio.projects.${p.key}Desc`),
     }));

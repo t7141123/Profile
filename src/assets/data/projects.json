@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "key": "actionLead",
+    "imageName": "action-lead.png",
+    "url": "https://www.action-lead.com",
+    "technologies": ["Vue.js", "Bootstrap", "PHP", "MySQL"],
+    "categoryKey": "corporate"
+  },
+  {
+    "id": 2,
+    "key": "linkwing",
+    "imageName": "linkwing.png",
+    "url": "https://www.linkwing.com/",
+    "technologies": ["Vue.js", "Vite", "Bootstrap", "Node.js", "PHP"],
+    "categoryKey": "corporate"
+  },
+  {
+    "id": 3,
+    "key": "clay",
+    "imageName": "clay.png",
+    "url": "https://www.clay.com.tw/",
+    "technologies": ["Vue.js", "Supabase", "Bootstrap", "PHP", "MySQL"],
+    "categoryKey": "ecommerce"
+  },
+  {
+    "id": 4,
+    "key": "nhm",
+    "imageName": "nothing-hidden.png",
+    "url": "https://www.nothinghidden.com.tw/",
+    "technologies": ["WordPress", "PHP", "MySQL", "RWD"],
+    "categoryKey": "npo"
+  },
+  {
+    "id": 5,
+    "key": "uvaco",
+    "imageName": "uvaco.png",
+    "url": "https://uvaco-system.zeabur.app/",
+    "technologies": ["Vue.js", "Supabase", "Zeabur", "RWD"],
+    "categoryKey": "education"
+  }
+]
