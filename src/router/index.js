@@ -5,6 +5,12 @@ import Home from "../views/Home.vue";
 const locales = ['zh-tw', 'zh-cn', 'en'];
 const defaultLocale = 'zh-tw';
 
+// Helper function to get preferred locale from localStorage
+const getPreferredLocale = () => {
+  const saved = localStorage.getItem('locale');
+  return (saved && locales.includes(saved)) ? saved : defaultLocale;
+};
+
 // Helper function to check if a path segment is a locale
 const isLocale = (path) => locales.includes(path);
 
@@ -57,11 +63,11 @@ const localizedRoutes = baseRoutes.map(route => ({
   }
 }));
 
-// Redirect routes - redirect root and non-localized paths to default locale
+// Redirect routes - redirect root and non-localized paths to preferred locale
 const redirectRoutes = [
   {
     path: "/",
-    redirect: `/${defaultLocale}/`
+    redirect: () => `/${getPreferredLocale()}/`
   }
 ];
 
@@ -70,7 +76,7 @@ baseRoutes.forEach(route => {
   if (route.path !== "/" && route.path !== "/:pathMatch(.*)*") {
     redirectRoutes.push({
       path: route.path,
-      redirect: (to) => `/${defaultLocale}${to.path}`
+      redirect: (to) => `/${getPreferredLocale()}${to.path}`
     });
   }
 });

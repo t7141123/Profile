@@ -73,17 +73,23 @@ const currentLangName = computed(() => {
 }
 
 .dropdown-menu {
-  background: rgba(255, 255, 255, 0.98);
-  border: 1px solid rgba(37, 99, 235, 0.1);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 0.5rem;
   min-width: 160px;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   box-shadow: var(--shadow-xl);
 }
 
+[data-theme='dark'] .dropdown-menu {
+  background: var(--bg-accent);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
 .dropdown-item {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   padding: 0.625rem 1rem;
   border-radius: var(--radius-md);
   font-size: 0.875rem;
@@ -95,8 +101,12 @@ const currentLangName = computed(() => {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  background: rgba(37, 99, 235, 0.1);
+  background: var(--bg-accent);
   color: var(--primary-color);
+}
+
+[data-theme='dark'] .dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .dropdown-item.active {
