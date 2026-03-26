@@ -577,18 +577,34 @@ a:hover {
   margin: 0 auto;
 }
 
+/* =========================================
+   Typography & Visibility Utils
+   ========================================= */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  word-break: break-word; /* Prevent overflow of long words */
+  overflow-wrap: break-word;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
 /* ===================================
    Card Styles - Clean & Professional
    =================================== */
 .glass-card {
-  background: var(--bg-secondary);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(37, 99, 235, 0.1);
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
   border-radius: var(--radius-xl);
   padding: 2rem;
   transition: var(--transition-base);
-  box-shadow: var(--shadow-soft);
 }
 
 .glass-card:hover {

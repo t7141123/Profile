@@ -124,6 +124,8 @@ defineProps({
   font-weight: 700;
   margin-bottom: 0.75rem;
   color: var(--text-primary);
+  line-height: 1.4;
+  word-break: break-word;
 }
 
 .portfolio-description {

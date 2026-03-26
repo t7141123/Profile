@@ -347,8 +347,8 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
   font-weight: 700;
   margin-bottom: 0.75rem;
   margin-top: 1.5rem;
-  white-space: nowrap;
   color: var(--text-primary);
+  line-height: 1.4;
 }
 
 .service-link {

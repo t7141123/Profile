@@ -475,7 +475,7 @@ const faqs = computed(() => [
   font-weight: 800;
   margin-bottom: 0.5rem;
   color: var(--text-primary);
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 .service-detail-subtitle {
