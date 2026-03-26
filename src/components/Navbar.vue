@@ -34,19 +34,23 @@
           </li>
         </ul>
         <LanguageSwitcher />
+        <ThemeToggle />
       </div>
 
       <!-- Mobile Menu Toggle Button -->
-      <button
-        class="menu-toggle d-lg-none"
-        :class="{ 'is-active': isMenuOpen }"
-        @click="toggleMenu"
-        aria-label="Toggle navigation"
-      >
-        <div class="hamburger-box">
-          <div class="hamburger-inner"></div>
-        </div>
-      </button>
+      <div class="d-flex d-lg-none align-items-center gap-3">
+        <ThemeToggle />
+        <button
+          class="menu-toggle"
+          :class="{ 'is-active': isMenuOpen }"
+          @click="toggleMenu"
+          aria-label="Toggle navigation"
+        >
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </button>
+      </div>
 
       <!-- Mobile Menu Component -->
       <MobileMenu
@@ -67,6 +71,7 @@ import { useRoute } from "vue-router";
 import { useLocale } from "@/composables/useLocale";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
 import MobileMenu from "./navbar/MobileMenu.vue";
+import ThemeToggle from "./common/ThemeToggle.vue";
 
 const isScrolled = ref(false);
 const isMenuOpen = ref(false);
