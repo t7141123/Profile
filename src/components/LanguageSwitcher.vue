@@ -45,24 +45,27 @@ const currentLangName = computed(() => {
 
 <style scoped>
 .btn-language {
-  background: rgba(37, 99, 235, 0.1);
-  border: 1px solid rgba(37, 99, 235, 0.2);
+  background: var(--bg-accent);
+  border: 1px solid var(--border-color);
   color: var(--text-primary);
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius-lg);
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-full);
   font-size: 0.875rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.5rem;
+  box-shadow: var(--shadow-sm);
 }
 
 .btn-language:hover,
 .btn-language:focus {
-  background: rgba(37, 99, 235, 0.15);
+  background: var(--bg-secondary);
   border-color: var(--primary-color);
   color: var(--primary-color);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
 }
 
 .btn-language::after {
