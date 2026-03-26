@@ -20,36 +20,7 @@
             v-for="project in projects"
             :key="project.id"
           >
-            <div class="portfolio-card h-100">
-              <div class="portfolio-image">
-                <img :src="project.image" :alt="project.title" loading="lazy" decoding="async" width="400" height="250" />
-                <div class="portfolio-overlay">
-                  <a
-                    :href="project.url"
-                    target="_blank"
-                    class="btn btn-primary-custom"
-                  >
-                    <i class="bi bi-box-arrow-up-right me-2"></i>
-                    {{ $t("portfolio.viewSite") }}
-                  </a>
-                </div>
-              </div>
-              <div class="portfolio-content">
-                <span class="portfolio-category">{{ project.category }}</span>
-                <h3 class="portfolio-title">{{ project.title }}</h3>
-                <p class="portfolio-description">{{ project.description }}</p>
-
-                <div class="portfolio-tech">
-                  <span
-                    class="tech-tag"
-                    v-for="tech in project.technologies"
-                    :key="tech"
-                  >
-                    {{ tech }}
-                  </span>
-                </div>
-              </div>
-            </div>
+            <PortfolioCard :project="project" :show-tech="true" />
           </div>
         </div>
       </div>
@@ -97,6 +68,7 @@
 import { computed, ref } from "vue";
 import { useProjects } from "@/composables/useProjects";
 import PageHeader from "@/components/common/PageHeader.vue";
+import PortfolioCard from "@/components/common/PortfolioCard.vue";
 
 const { getAllProjects } = useProjects();
 
@@ -111,36 +83,7 @@ const projects = computed(() => getAllProjects());
 
 <style scoped>
 /* Portfolio-specific page description styling */
-.page-description {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-/* Portfolio Tech Tags */
-.portfolio-tech {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(37, 99, 235, 0.08);
-}
-
-.tech-tag {
-  padding: 0.25rem 0.75rem;
-  background: rgba(37, 99, 235, 0.08);
-  border-radius: var(--radius-full);
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-  font-weight: 500;
-  transition: all var(--transition-base);
-}
-
-.tech-tag:hover {
-  background: rgba(37, 99, 235, 0.15);
-  color: var(--primary-color);
-  transform: translateY(-2px);
-}
+/* Portfolio Tech Tags - Handled by PortfolioCard */
 
 
 /* CTA */

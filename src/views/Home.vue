@@ -110,26 +110,7 @@
             v-for="project in featuredProjects"
             :key="project.id"
           >
-            <div class="portfolio-card h-100">
-              <div class="portfolio-image">
-                <img :src="project.image" :alt="project.title" loading="lazy" decoding="async" width="400" height="250" />
-                <div class="portfolio-overlay">
-                  <a
-                    :href="project.url"
-                    target="_blank"
-                    class="btn btn-primary-custom"
-                  >
-                    <i class="bi bi-box-arrow-up-right me-2"></i>
-                    {{ $t("home.viewSite") }}
-                  </a>
-                </div>
-              </div>
-              <div class="portfolio-content">
-                <span class="portfolio-category">{{ project.category }}</span>
-                <h3 class="portfolio-title">{{ project.title }}</h3>
-                <p class="portfolio-description">{{ project.description }}</p>
-              </div>
-            </div>
+            <PortfolioCard :project="project" />
           </div>
         </div>
 
@@ -168,6 +149,7 @@ import { computed } from "vue";
 import { useI18n } from "vue-i18n";
 import SectionHeader from "@/components/common/SectionHeader.vue";
 import TechBackground from "@/components/home/TechBackground.vue";
+import PortfolioCard from "@/components/common/PortfolioCard.vue";
 import { useProjects } from "@/composables/useProjects";
 
 const { t } = useI18n();
@@ -338,13 +320,26 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
 .service-card {
   display: flex;
   flex-direction: column;
+  padding: 2rem;
   cursor: pointer;
-  transition: transform 0.3s ease;
   color: inherit;
 }
 
-.service-card:hover {
-  transform: translateY(-5px);
+.service-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  font-size: 1.5rem;
+  color: white;
+  flex-shrink: 0;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-card:hover .service-icon {
+  transform: rotateY(180deg);
 }
 
 .service-title {

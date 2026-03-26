@@ -80,23 +80,28 @@
 
 /* Dark Mode Variables */
 [data-theme='dark'] {
-  --bg-primary: #0F172A;      /* Slate 900 */
+  --bg-primary: #0F172A;      /* Deep Slate 900 */
   --bg-secondary: #1E293B;    /* Slate 800 */
   --bg-accent: #334155;       /* Slate 700 */
   
-  --text-primary: #F1F5F9;    /* Slate 100 */
+  --text-primary: #F8FAFC;    /* Slate 50 */
   --text-secondary: #CBD5E1;  /* Slate 300 */
-  --text-muted: #94A3B8;      /* Slate 400 */
+  --text-muted: #64748B;      /* Slate 500 */
 
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.7);
+  --shadow-glow: 0 0 30px rgba(37, 99, 235, 0.15);
   
-  --gradient-hero: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.8) 100%);
+  --gradient-hero: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
   
-  /* Buttons adjust in dark mode */
-  --bg-warm: #451a03;         /* Darker warm for highlights */
+  --border-color: rgba(255, 255, 255, 0.08);
+  --glass-bg: rgba(30, 41, 59, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  
+  /* Accent adjustment */
+  --bg-warm: #451a03;
 }
 
 /* ===================================
@@ -310,6 +315,29 @@ a:hover {
   font-weight: 600;
   color: var(--primary-color);
   transition: var(--transition-base);
+}
+
+/* Glass Morphism Base */
+.glass-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color, rgba(37, 99, 235, 0.1));
+  border-radius: var(--radius-xl);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+[data-theme='dark'] .glass-card {
+  background: var(--glass-bg, rgba(30, 41, 59, 0.7));
+  border-color: var(--glass-border, rgba(255, 255, 255, 0.1));
+  box-shadow: var(--shadow-md);
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary-color);
 }
 
 .btn-outline-custom:hover {

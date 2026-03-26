@@ -177,18 +177,21 @@
 }
 
 .contact-card {
-  border: 1px solid rgba(37, 99, 235, 0.1);
-  background: var(--bg-secondary);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+.contact-card {
+  padding: 2rem !important;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+[data-theme='dark'] .contact-card {
+  background: var(--glass-bg);
 }
 
 .contact-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-xl);
-  background: var(--bg-secondary);
-  border-color: rgba(37, 99, 235, 0.3);
+  border-color: var(--primary-color);
 }
 
 .contact-icon-wrapper {

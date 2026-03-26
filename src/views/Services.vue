@@ -447,37 +447,43 @@ const faqs = computed(() => [
 
 /* Service Detail Card */
 .service-detail-card {
-  padding: 2rem;
+  padding: 2.5rem;
 }
 
 .service-detail-header {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  align-items: flex-start;
+  gap: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .service-detail-icon {
-  width: 60px;
-  height: 60px;
+  width: 64px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 16px;
-  font-size: 1.5rem;
+  border-radius: var(--radius-lg);
+  font-size: 1.75rem;
   color: white;
   flex-shrink: 0;
+  box-shadow: 0 8px 16px -4px rgba(37, 99, 235, 0.2);
 }
 
 .service-detail-title {
   font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 0.25rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  line-height: 1.2;
 }
 
 .service-detail-subtitle {
   font-size: 0.875rem;
-  color: var(--text-muted);
+  font-weight: 600;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .service-detail-description {
