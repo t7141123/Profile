@@ -19,11 +19,8 @@
         >
           <i class="bi bi-line me-2"></i>{{ $t("contact.lineValue") }}
         </a>
-        <a
-          href="mailto:david.liu@action-lead.com"
-          class="btn btn-header-secondary"
-        >
-          <i class="bi bi-envelope me-2"></i>寄信給我
+        <a :href="'mailto:' + $t('contact.emailValue')" class="btn btn-outline-custom mt-4">
+          <i class="bi bi-envelope me-2"></i>{{ $t("contact.emailLink") }}
         </a>
       </div>
     </PageHeader>

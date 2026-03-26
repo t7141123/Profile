@@ -281,7 +281,8 @@
     "workingHoursLabel": "Working Hours",
     "workingHoursValue": "Mon-Fri 9:00 - 18:00",
     "promiseLabel": "Communication Promise",
-    "promiseValue": "Deep listening, professional reply within 24h"
+    "promiseValue": "Deep listening, professional reply within 24h",
+    "emailLink": "Email Me"
   },
   "footer": {
     "brand": "David Liu",

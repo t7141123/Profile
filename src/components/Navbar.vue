@@ -167,6 +167,28 @@ onUnmounted(() => {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Ensure visibility when transparent over dark hero sections */
+.navbar:not(.scrolled) .nav-link,
+.navbar:not(.scrolled) .navbar-brand {
+  color: #FFFFFF !important;
+}
+
+[data-theme='dark'] .navbar:not(.scrolled) .nav-link {
+  color: var(--text-secondary) !important;
+}
+
+.navbar:not(.scrolled) .hamburger-inner,
+.navbar:not(.scrolled) .hamburger-inner::before,
+.navbar:not(.scrolled) .hamburger-inner::after {
+  background-color: #FFFFFF;
+}
+
+[data-theme='dark'] .navbar:not(.scrolled) .hamburger-inner,
+[data-theme='dark'] .navbar:not(.scrolled) .hamburger-inner::before,
+[data-theme='dark'] .navbar:not(.scrolled) .hamburger-inner::after {
+  background-color: var(--text-primary);
+}
+
 .navbar-brand {
   font-weight: 800;
   font-size: 1.5rem;

@@ -281,7 +281,8 @@
     "workingHoursLabel": "工作時間",
     "workingHoursValue": "週一至週五 9:00 - 18:00",
     "promiseLabel": "溝通承諾",
-    "promiseValue": "深度傾聽，24h 內專業回覆"
+    "promiseValue": "深度傾聽，24h 內專業回覆",
+    "emailLink": "寄信給我"
   },
   "footer": {
     "brand": "David Liu",

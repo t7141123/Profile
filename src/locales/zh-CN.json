@@ -281,7 +281,8 @@
     "workingHoursLabel": "工作时间",
     "workingHoursValue": "周一至周五 9:00 - 18:00",
     "promiseLabel": "沟通承诺",
-    "promiseValue": "深度倾听，24h 内专业回复"
+    "promiseValue": "深度倾听，24h 内专业回复",
+    "emailLink": "给我寄信"
   },
   "footer": {
     "brand": "David Liu",
