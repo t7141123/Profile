@@ -178,12 +178,12 @@
       "education": "Organizational Education System",
       "npo": "NPO"
     },
-    "ctaTitle": "Want to create your own website?",
-    "ctaDescription": "Let's discuss your project requirements and create the next success story.",
-    "ctaButton": "Free Consultation on Line",
+    "ctaTitle": "Build Your Project?",
+    "ctaDescription": "Let's discuss your needs and create the next success story.",
+    "ctaButton": "Free Consultation (Line)",
     "ndaTitle": "More Enterprise Projects",
-    "ndaDescription": "Beyond the public portfolio above, I have assisted multiple enterprises in developing <strong>Internal Management Systems, ERP/CRM Integrations, and SaaS Platform Cores</strong>. Due to <strong>Non-Disclosure Agreements (NDA)</strong>, these projects cannot be publicly displayed.",
-    "ndaNote": "If you are interested in my experience in specific domains, please feel free to contact me. I can share relevant experience without violating confidentiality principles."
+    "ndaDescription": "Beyond these cases, I've developed <strong>ERP/CRM, SaaS cores, and Internal Systems</strong> for various firms. Due to <strong>NDAs</strong>, they cannot be displayed publicly.",
+    "ndaNote": "Interested in specific domain experience? Feel free to ask—I can share insights within NDA limits."
   },
   "services": {
     "badge": "Services",

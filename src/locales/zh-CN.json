@@ -178,12 +178,12 @@
       "education": "组织教育系统",
       "npo": "非盈利组织"
     },
-    "ctaTitle": "想要打造属于您的网站？",
-    "ctaDescription": "让我们一起讨论您的项目需求，创造下一个成功案例。",
+    "ctaTitle": "打造您的项目？",
+    "ctaDescription": "一起讨论需求，创造下一个成功案例。",
     "ctaButton": "加 Line 免费咨询",
     "ndaTitle": "更多企业级项目",
-    "ndaDescription": "除了上述公开案例，我还协助多家企业开发 <strong>内部管理系统、ERP/CRM 整合、SaaS 平台核心</strong> 等项目。碍于 <strong>保密协议 (NDA)</strong>，无法在此公开展示。",
-    "ndaNote": "若您想了解特定领域的开发经验，欢迎直接咨询，我可以在不违反保密原则的前提下与您分享相关经验。"
+    "ndaDescription": "除了上述案例，我还协助企业开发 <strong>内部管理、ERP/CRM、SaaS 核心</strong> 等系统。碍于 <strong>保密协议 (NDA)</strong>，无法在此公开呈现。",
+    "ndaNote": "若想了解特定领域经验，欢迎咨询，我可在不违反 NDA 前提下分享。"
   },
   "services": {
     "badge": "Services",

@@ -178,12 +178,12 @@
       "education": "組織教育系統",
       "npo": "非營利組織"
     },
-    "ctaTitle": "想要打造屬於您的網站？",
-    "ctaDescription": "讓我們一起討論您的專案需求，創造下一個成功案例。",
+    "ctaTitle": "打造您的專案？",
+    "ctaDescription": "一起討論需求，創造下一個成功案例。",
     "ctaButton": "加 Line 免費諮詢",
     "ndaTitle": "更多企業級專案",
-    "ndaDescription": "除了上述公開案例，我還協助多家企業開發 <strong>內部管理系統、ERP/CRM 整合、SaaS 平台核心</strong> 等專案。礙於 <strong>保密協議 (NDA)</strong>，無法在此公開展示。",
-    "ndaNote": "若您想了解特定領域的開發經驗，歡迎直接諮詢，我可以在不違反保密原則的前提下與您分享相關經驗。"
+    "ndaDescription": "除了上述案例，我還協助企業開發 <strong>內部管理、ERP/CRM、SaaS 核心</strong> 等系統。礙於 <strong>保密協議 (NDA)</strong>，無法在此公開呈現。",
+    "ndaNote": "若想了解特定領域經驗，歡迎諮詢，我可在不違反 NDA 前提下分享。"
   },
   "services": {
     "badge": "Services",
