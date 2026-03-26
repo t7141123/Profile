@@ -161,7 +161,7 @@
                   plan.featured ? 'btn-primary-custom' : 'btn-outline-custom'
                 "
               >
-                <i class="bi bi-line me-2"></i>{{ $t("services.pricing.contact") }}
+                <i class="bi bi-line me-3"></i>{{ $t("services.pricing.contact") }}
               </a>
             </div>
           </div>
@@ -628,7 +628,7 @@ const faqs = computed(() => [
 
 /* Pricing Card */
 .pricing-card {
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   text-align: center;
   position: relative;
   border: 1px solid rgba(37, 99, 235, 0.1);
@@ -636,6 +636,7 @@ const faqs = computed(() => [
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-soft);
   transition: all var(--transition-base);
+  overflow: visible !important; /* Prevent badge clipping */
 }
 
 .pricing-card:hover {
@@ -655,15 +656,18 @@ const faqs = computed(() => [
 
 .pricing-badge {
   position: absolute;
-  top: -12px;
+  top: -14px;
   left: 50%;
   transform: translateX(-50%);
   background: var(--primary-gradient);
-  padding: 0.25rem 1rem;
+  padding: 0.35rem 1.25rem;
   border-radius: 50px;
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   color: white;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+  white-space: nowrap;
 }
 
 .pricing-title {
