@@ -1,36 +1,15 @@
 <template>
   <div class="services-page">
     <!-- Page Header Section -->
-    <section class="page-header page-header-services">
-      <!-- Subtle Background Pattern -->
-      <div class="header-bg-pattern"></div>
-
-      <!-- Gradient Orbs -->
-      <div class="header-orb header-orb-1"></div>
-      <div class="header-orb header-orb-2"></div>
-
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 text-center">
-            <span class="section-badge section-badge-light animate-fade-in">{{ $t("services.badge") }}</span>
-            <h1 class="page-title page-title-light animate-fade-in-up">
-              {{ $t("services.title")
-              }}<span class="highlight">{{
-                $t("services.titleHighlight")
-              }}</span>
-            </h1>
-            <p class="page-description page-description-light animate-fade-in-up delay-1">
-              {{ $t("services.pageDescription") }}
-            </p>
-
-            <!-- Scroll Indicator -->
-            <div class="scroll-indicator animate-bounce" @click="scrollToContent">
-              <i class="bi bi-chevron-down"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Page Header Section -->
+    <PageHeader
+      :badge="$t('services.badge')"
+      :title="$t('services.title')"
+      :highlight="$t('services.titleHighlight')"
+      :description="$t('services.pageDescription')"
+      header-class="page-header-services"
+      @scroll-click="scrollToContent"
+    />
 
     <!-- Main Services Section -->
     <section class="section" ref="contentSection">
@@ -278,6 +257,7 @@
 <script setup>
 import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
+import PageHeader from "@/components/common/PageHeader.vue";
 
 const { t, tm } = useI18n();
 

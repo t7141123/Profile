@@ -1,53 +1,32 @@
 <template>
   <div class="contact-page">
     <!-- Page Header Section -->
-    <section class="page-header page-header-contact">
-      <!-- Subtle Background Pattern -->
-      <div class="header-bg-pattern"></div>
-
-      <!-- Gradient Orbs -->
-      <div class="header-orb header-orb-1"></div>
-      <div class="header-orb header-orb-2"></div>
-
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 text-center">
-            <span class="section-badge section-badge-light animate-fade-in">{{ $t("contact.badge") }}</span>
-            <h1 class="page-title page-title-light animate-fade-in-up">
-              {{ $t("contact.title")
-              }}<span class="highlight">{{
-                $t("contact.titleHighlight")
-              }}</span>
-            </h1>
-            <p class="page-description page-description-light animate-fade-in-up delay-1">
-              {{ $t("contact.pageDescription") }}
-            </p>
-
-            <!-- CTA Buttons -->
-            <div class="header-cta animate-fade-in-up delay-2">
-              <a
-                href="https://line.me/ti/p/2w7bwfksdF"
-                target="_blank"
-                class="btn btn-header-primary"
-              >
-                <i class="bi bi-line me-2"></i>{{ $t("contact.lineValue") }}
-              </a>
-              <a
-                href="mailto:david.liu@action-lead.com"
-                class="btn btn-header-secondary"
-              >
-                <i class="bi bi-envelope me-2"></i>寄信給我
-              </a>
-            </div>
-
-            <!-- Scroll Indicator -->
-            <div class="scroll-indicator animate-bounce" @click="scrollToContent">
-              <i class="bi bi-chevron-down"></i>
-            </div>
-          </div>
-        </div>
+    <!-- Page Header Section -->
+    <PageHeader
+      :badge="$t('contact.badge')"
+      :title="$t('contact.title')"
+      :highlight="$t('contact.titleHighlight')"
+      :description="$t('contact.pageDescription')"
+      header-class="page-header-contact"
+      @scroll-click="scrollToContent"
+    >
+      <!-- CTA Buttons Slot -->
+      <div class="header-cta">
+        <a
+          href="https://line.me/ti/p/2w7bwfksdF"
+          target="_blank"
+          class="btn btn-header-primary"
+        >
+          <i class="bi bi-line me-2"></i>{{ $t("contact.lineValue") }}
+        </a>
+        <a
+          href="mailto:david.liu@action-lead.com"
+          class="btn btn-header-secondary"
+        >
+          <i class="bi bi-envelope me-2"></i>寄信給我
+        </a>
       </div>
-    </section>
+    </PageHeader>
 
     <!-- Contact Section -->
     <section class="section" ref="contentSection">
@@ -258,6 +237,7 @@
 
 <script setup>
 import { ref } from "vue";
+import PageHeader from "@/components/common/PageHeader.vue";
 
 const contentSection = ref(null);
 

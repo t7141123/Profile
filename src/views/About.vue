@@ -1,34 +1,15 @@
 <template>
   <div class="about-page">
     <!-- Page Header Section -->
-    <section class="page-header page-header-about">
-      <!-- Subtle Background Pattern -->
-      <div class="header-bg-pattern"></div>
-
-      <!-- Gradient Orbs -->
-      <div class="header-orb header-orb-1"></div>
-      <div class="header-orb header-orb-2"></div>
-
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 text-center">
-            <span class="section-badge section-badge-light animate-fade-in">{{ $t("about.badge") }}</span>
-            <h1 class="page-title page-title-light animate-fade-in-up">
-              {{ $t("about.title")
-              }}<span class="highlight">{{ $t("about.titleHighlight") }}</span>
-            </h1>
-            <p class="page-description page-description-light animate-fade-in-up delay-1">
-              {{ $t("about.pageDescription") }}
-            </p>
-
-            <!-- Scroll Indicator -->
-            <div class="scroll-indicator animate-bounce" @click="scrollToContent">
-              <i class="bi bi-chevron-down"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Page Header Section -->
+    <PageHeader
+      :badge="$t('about.badge')"
+      :title="$t('about.title')"
+      :highlight="$t('about.titleHighlight')"
+      :description="$t('about.pageDescription')"
+      header-class="page-header-about"
+      @scroll-click="scrollToContent"
+    />
 
     <!-- About Section -->
     <section class="section" ref="contentSection">
@@ -210,6 +191,7 @@
 import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import SectionHeader from "@/components/common/SectionHeader.vue";
+import PageHeader from "@/components/common/PageHeader.vue";
 
 const { t } = useI18n();
 
