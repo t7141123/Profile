@@ -174,7 +174,6 @@
 }
 
 .contact-card {
-.contact-card {
   padding: 2rem !important;
   display: flex;
   align-items: center;
