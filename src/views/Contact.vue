@@ -10,16 +10,16 @@
       @scroll-click="scrollToContent"
     >
       <!-- CTA Buttons Slot -->
-      <div class="header-cta">
+      <div class="header-cta d-flex flex-column flex-sm-row justify-content-center gap-3 mt-4">
         <a
           href="https://line.me/ti/p/2w7bwfksdF"
           target="_blank"
-          class="btn btn-header-primary"
+          class="btn btn-primary-custom"
         >
-          <i class="bi bi-line me-2"></i>{{ $t("contact.lineValue") }}
+          <i class="bi bi-line me-2"></i>{{ $t("home.addLine") }}
         </a>
-        <a :href="'mailto:' + $t('contact.emailValue')" class="btn btn-outline-custom mt-4">
-          <i class="bi bi-envelope me-2"></i>{{ $t("contact.emailLink") }}
+        <a :href="'mailto:' + $t('contact.emailValue')" class="btn btn-outline-custom">
+          <i class="bi bi-envelope-fill me-2"></i>{{ $t("contact.emailLink") }}
         </a>
       </div>
     </PageHeader>
