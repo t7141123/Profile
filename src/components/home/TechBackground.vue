@@ -22,7 +22,6 @@
     <!-- Code Particles -->
     <div class="code-particle particle-1">{ }</div>
     <div class="code-particle particle-2">&lt;/&gt;</div>
-    <div class="code-particle particle-3">0101</div>
     <div class="code-particle particle-4">function()</div>
 
     <!-- Tech Corners -->
