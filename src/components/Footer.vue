@@ -14,7 +14,7 @@
         <a
           href="https://line.me/ti/p/2w7bwfksdF"
           target="_blank"
-          class="social-link"
+          class="social-link line-hover"
           aria-label="Line"
         >
           <i class="bi bi-line"></i>
@@ -95,6 +95,10 @@ const currentYear = new Date().getFullYear();
   background: var(--gradient-primary);
   color: white;
   transform: translateY(-3px);
+}
+
+.social-link.line-hover:hover {
+  background: var(--line-color) !important;
 }
 
 .copyright-text {

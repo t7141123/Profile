@@ -74,7 +74,7 @@
               <a
                 href="https://line.me/ti/p/2w7bwfksdF"
                 target="_blank"
-                class="btn btn-primary-custom mt-4"
+                class="btn btn-line mt-4"
               >
                 <i class="bi bi-line me-2"></i>{{ $t("about.addLine") }}
               </a>
@@ -360,6 +360,7 @@ const testimonials = computed(() => [
   font-weight: 800;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1;
 }

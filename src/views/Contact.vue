@@ -14,7 +14,7 @@
         <a
           href="https://line.me/ti/p/2w7bwfksdF"
           target="_blank"
-          class="btn btn-primary-custom"
+          class="btn btn-line"
         >
           <i class="bi bi-line me-2"></i>{{ $t("home.addLine") }}
         </a>
@@ -45,8 +45,8 @@
                   <div
                     class="glass-card contact-card h-100 d-flex align-items-center p-4"
                   >
-                    <div class="contact-icon-wrapper me-4">
-                      <i class="bi bi-line fs-2"></i>
+                    <div class="contact-icon-wrapper me-4" style="background: rgba(6, 199, 85, 0.15)">
+                      <i class="bi bi-line fs-2" style="color: var(--line-color)"></i>
                     </div>
                     <div class="text-start">
                       <div class="contact-label mb-1">
@@ -55,7 +55,8 @@
                       <a
                         href="https://line.me/ti/p/2w7bwfksdF"
                         target="_blank"
-                        class="contact-value fs-6 fw-bold text-decoration-none hover-highlight"
+                        class="contact-value fs-6 fw-bold text-decoration-none"
+                        style="color: var(--line-color)"
                       >
                         {{ $t("contact.lineValue") }}
                       </a>

@@ -156,10 +156,7 @@
               <a
                 href="https://line.me/ti/p/2w7bwfksdF"
                 target="_blank"
-                class="btn w-100"
-                :class="
-                  plan.featured ? 'btn-primary-custom' : 'btn-outline-custom'
-                "
+                class="btn btn-line w-100"
               >
                 <i class="bi bi-line me-3"></i>{{ $t("services.pricing.contact") }}
               </a>
@@ -244,7 +241,7 @@
           <a
             href="https://line.me/ti/p/2w7bwfksdF"
             target="_blank"
-            class="btn btn-primary-custom btn-lg"
+            class="btn btn-line btn-lg"
           >
             <i class="bi bi-line me-2"></i>{{ $t("services.ctaButton") }}
           </a>

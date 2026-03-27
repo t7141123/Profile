@@ -26,7 +26,7 @@
                 <a
                   href="https://line.me/ti/p/2w7bwfksdF"
                   target="_blank"
-                  class="btn btn-outline-custom"
+                  class="btn btn-line"
                 >
                   <i class="bi bi-line me-2"></i>{{ $t("home.addLine") }}
                 </a>

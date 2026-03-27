@@ -76,6 +76,10 @@
 
   /* Fonts */
   --font-sans: 'Plus Jakarta Sans', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Brand Colors */
+  --line-color: #06C755;
+  --line-hover: #05ae4a;
 }
 
 /* Dark Mode Variables */
@@ -324,6 +328,33 @@ a:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
   color: var(--primary-color);
+}
+
+/* Line Brand Button */
+.btn-line {
+  background: var(--line-color) !important;
+  color: white !important;
+  border: none !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 2rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 14px 0 rgba(6, 199, 85, 0.25);
+  text-decoration: none;
+}
+
+.btn-line:hover {
+  background: var(--line-hover) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px 0 rgba(6, 199, 85, 0.35);
+  color: white !important;
+}
+
+[data-theme='dark'] .btn-line {
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.3);
 }
 
 [data-theme='dark'] .btn-outline-custom {
