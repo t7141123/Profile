@@ -18,7 +18,7 @@
         >
           <i class="bi bi-line me-2"></i>{{ $t("home.addLine") }}
         </a>
-        <a :href="'mailto:' + $t('contact.emailValue')" class="btn btn-outline-custom">
+        <a :href="'mailto:' + $t('contact.emailValue')" class="btn btn-primary-custom">
           <i class="bi bi-envelope-fill me-2"></i>{{ $t("contact.emailLink") }}
         </a>
       </div>
