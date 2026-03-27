@@ -309,12 +309,33 @@ a:hover {
 
 .btn-outline-custom {
   padding: 0.875rem 2rem;
-  background: transparent;
+  background: rgba(37, 99, 235, 0.05);
   border: 2px solid var(--primary-color);
   border-radius: var(--radius-full);
   font-weight: 600;
   color: var(--primary-color);
   transition: var(--transition-base);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.btn-outline-custom:hover {
+  background: rgba(37, 99, 235, 0.1);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  color: var(--primary-color);
+}
+
+[data-theme='dark'] .btn-outline-custom {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+}
+
+[data-theme='dark'] .btn-outline-custom:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--primary-color);
+  color: #FFFFFF;
 }
 
 /* Glass Morphism Base */
