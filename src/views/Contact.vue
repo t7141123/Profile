@@ -1,7 +1,6 @@
 <template>
   <div class="contact-page">
     <!-- Page Header Section -->
-    <!-- Page Header Section -->
     <PageHeader
       :badge="$t('contact.badge')"
       :title="$t('contact.title')"

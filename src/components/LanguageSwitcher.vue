@@ -68,54 +68,6 @@ const currentLangName = computed(() => {
   box-shadow: var(--shadow-md);
 }
 
-.btn-language::after {
-  margin-left: 0.5rem;
-}
-
-.dropdown-menu {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 0.5rem;
-  min-width: 160px;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  box-shadow: var(--shadow-xl);
-}
-
-[data-theme='dark'] .dropdown-menu {
-  background: var(--bg-accent);
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-.dropdown-item {
-  color: var(--text-primary);
-  padding: 0.625rem 1rem;
-  border-radius: var(--radius-md);
-  font-size: 0.875rem;
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.dropdown-item:hover,
-.dropdown-item:focus {
-  background: var(--bg-accent);
-  color: var(--primary-color);
-}
-
-[data-theme='dark'] .dropdown-item:hover {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.dropdown-item.active {
-  background: rgba(37, 99, 235, 0.15);
-  color: var(--primary-color);
-}
-
-
-
 .lang-text {
   display: none;
 }
