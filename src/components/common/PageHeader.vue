@@ -77,7 +77,7 @@ defineEmits(['scroll-click']);
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 140px 0 80px;
+  padding: 140px 0 120px;
   background: linear-gradient(135deg, #1E293B 0%, #334155 50%, #475569 100%);
   color: #F1F5F9;
 }
@@ -172,6 +172,11 @@ defineEmits(['scroll-click']);
   max-width: 700px;
   margin: 0 auto 2rem;
   line-height: 1.6;
+}
+
+/* Custom content slot spacing */
+.header-custom-content {
+  margin-top: 1.5rem;
 }
 
 /* Scroll Indicator */
