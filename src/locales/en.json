@@ -60,6 +60,8 @@
       "education": "Organizational Education System",
       "chordBook": "Chord Book",
       "chordBookDesc": "Interactive guitar chord lookup tool with real-time fingering diagrams and audio playback, helping guitar learners master chord shapes quickly.",
+      "tripRecords": "Trip Records",
+      "tripRecordsDesc": "Travel expense tracking and cost-splitting tool. Record expenses on the go, calculate each person's share, and make trip settlements hassle-free.",
       "tool": "Interactive Tool"
     },
     "codePreview": {
@@ -182,6 +184,8 @@
       "npo": "NPO",
       "chordBook": "Chord Book",
       "chordBookDesc": "Interactive guitar chord lookup tool with real-time fingering diagrams and audio playback, helping guitar learners master chord shapes quickly.",
+      "tripRecords": "Trip Records",
+      "tripRecordsDesc": "Travel expense tracking and cost-splitting tool. Record expenses on the go, calculate each person's share, and make trip settlements hassle-free.",
       "tool": "Interactive Tool"
     },
     "ctaTitle": "Build Your Project?",

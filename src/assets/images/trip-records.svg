@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Receipt/notebook shape -->
+  <rect x="280" y="100" width="240" height="300" rx="12" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.3"/>
+  <rect x="290" y="110" width="220" height="280" rx="8" fill="url(#accent)" opacity="0.08"/>
+  <!-- Lines on the receipt -->
+  <g stroke="#e2e8f0" stroke-width="2" opacity="0.12">
+    <line x1="310" y1="150" x2="490" y2="150"/>
+    <line x1="310" y1="175" x2="450" y2="175"/>
+    <line x1="310" y1="200" x2="480" y2="200"/>
+    <line x1="310" y1="225" x2="440" y2="225"/>
+    <line x1="310" y1="250" x2="490" y2="250"/>
+    <line x1="310" y1="275" x2="460" y2="275"/>
+    <line x1="310" y1="300" x2="470" y2="300"/>
+    <line x1="310" y1="325" x2="420" y2="325"/>
+  </g>
+  <!-- Total highlight -->
+  <rect x="310" y="340" width="180" height="30" rx="6" fill="url(#accent)" opacity="0.2"/>
+  <line x1="340" y1="340" x2="460" y2="340" stroke="#10b981" stroke-width="2" opacity="0.4"/>
+  <!-- Plane icon -->
+  <text x="400" y="80" text-anchor="middle" font-size="28" fill="url(#accent)" opacity="0.5">&#9992;</text>
+  <!-- Dollar sign -->
+  <text x="130" y="200" font-size="60" fill="url(#accent)" opacity="0.2">$</text>
+  <text x="600" y="350" font-size="50" fill="url(#accent)" opacity="0.15">$</text>
+  <!-- Calculator -->
+  <g transform="translate(560, 140)" opacity="0.15">
+    <rect x="0" y="0" width="60" height="80" rx="6" fill="#10b981"/>
+    <rect x="5" y="5" width="50" height="20" rx="3" fill="#0f172a"/>
+    <text x="10" y="20" font-size="10" fill="#10b981">1234</text>
+  </g>
+  <!-- Title -->
+  <text x="400" y="440" text-anchor="middle" font-size="32" font-weight="bold" fill="#e2e8f0" font-family="system-ui, sans-serif">Trip Records</text>
+  <text x="400" y="470" text-anchor="middle" font-size="16" fill="#94a3b8" font-family="system-ui, sans-serif">旅途帳本</text>
+</svg>

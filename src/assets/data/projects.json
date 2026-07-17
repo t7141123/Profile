@@ -46,5 +46,13 @@
     "url": "https://chord-book.pages.dev/",
     "technologies": ["Vue.js", "Vite", "Cloudflare Pages"],
     "categoryKey": "tool"
+  },
+  {
+    "id": 7,
+    "key": "tripRecords",
+    "imageName": "trip-records.svg",
+    "url": "https://trip-records.pages.dev/",
+    "technologies": ["Vue.js", "Vite", "Cloudflare Pages"],
+    "categoryKey": "tool"
   }
 ]
