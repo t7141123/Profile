@@ -12,6 +12,7 @@
             <router-link
               :to="localePath(item.path)"
               class="mobile-nav-link"
+              :aria-current="route.path === `${currentLocale}${item.path}` ? 'page' : undefined"
               @click="$emit('close')"
             >
               {{ $t(item.label) }}
@@ -44,6 +45,7 @@
 </template>
 
 <script setup>
+import { useRoute } from "vue-router";
 import { useLocale } from "@/composables/useLocale";
 
 defineProps({
@@ -55,6 +57,7 @@ defineProps({
 
 defineEmits(['close', 'change-language']);
 
+const route = useRoute();
 const { localePath } = useLocale();
 </script>
 

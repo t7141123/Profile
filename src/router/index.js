@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import i18n, { loadLocaleMessages } from "../i18n";
 import Home from "../views/Home.vue";
 
 // Supported locales
@@ -106,11 +107,14 @@ const router = createRouter({
 });
 
 // Navigation guard to sync locale with i18n
-router.beforeEach((to, from, next) => {
+router.beforeEach(async (to, from, next) => {
   const locale = to.params.locale;
 
   if (locale && isLocale(locale)) {
-    // Store locale in localStorage for persistence
+    // Ensure locale messages are loaded
+    if (!i18n.global.getLocaleMessage(locale) || Object.keys(i18n.global.getLocaleMessage(locale)).length === 0) {
+      await loadLocaleMessages(locale)
+    }
     localStorage.setItem('locale', locale);
   }
 

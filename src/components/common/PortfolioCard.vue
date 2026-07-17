@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio-card h-100">
+  <div class="portfolio-card h-100" :aria-label="project.title">
     <div class="portfolio-image">
       <img :src="project.image" :alt="project.title" loading="lazy" decoding="async" width="400" height="250" />
       <div class="portfolio-overlay">

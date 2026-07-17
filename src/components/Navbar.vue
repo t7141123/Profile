@@ -10,25 +10,25 @@
       <div class="d-none d-lg-flex align-items-center gap-4">
         <ul class="navbar-nav d-flex flex-row gap-4">
           <li class="nav-item">
-            <router-link class="nav-link" :to="localePath('/')">{{ $t("nav.home") }}</router-link>
+            <router-link class="nav-link" :to="localePath('/')" :aria-current="route.path === `/${currentLocale}/` ? 'page' : undefined">{{ $t("nav.home") }}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="localePath('/services')">{{
+            <router-link class="nav-link" :to="localePath('/services')" :aria-current="route.path === `/${currentLocale}/services` ? 'page' : undefined">{{
               $t("nav.services")
             }}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="localePath('/portfolio')">{{
+            <router-link class="nav-link" :to="localePath('/portfolio')" :aria-current="route.path === `/${currentLocale}/portfolio` ? 'page' : undefined">{{
               $t("nav.portfolio")
             }}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="localePath('/about')">{{
+            <router-link class="nav-link" :to="localePath('/about')" :aria-current="route.path === `/${currentLocale}/about` ? 'page' : undefined">{{
               $t("nav.about")
             }}</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="localePath('/contact')">{{
+            <router-link class="nav-link" :to="localePath('/contact')" :aria-current="route.path === `/${currentLocale}/contact` ? 'page' : undefined">{{
               $t("nav.contact")
             }}</router-link>
           </li>
@@ -77,6 +77,8 @@ const isScrolled = ref(false);
 const isMenuOpen = ref(false);
 const route = useRoute();
 const { changeLocale, localePath, currentLocale } = useLocale();
+
+
 
 const menuItems = [
   { path: "/", label: "nav.home" },

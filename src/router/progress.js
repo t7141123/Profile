@@ -10,39 +10,7 @@ NProgress.configure({
   trickleSpeed: 200
 })
 
-// Custom CSS for NProgress to match the professional blue design
-const nprogressStyles = document.createElement('style')
-nprogressStyles.textContent = `
-  #nprogress {
-    pointer-events: none;
-  }
-  
-  #nprogress .bar {
-    background: linear-gradient(90deg, #2563EB, #3B82F6);
-    position: fixed;
-    z-index: 10000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-  }
-  
-  #nprogress .peg {
-    display: block;
-    position: absolute;
-    right: 0px;
-    width: 100px;
-    height: 100%;
-    box-shadow: 0 0 10px #2563EB, 0 0 5px #3B82F6;
-    opacity: 1.0;
-    transform: rotate(3deg) translate(0px, -4px);
-  }
-  
-  #nprogress .spinner {
-    display: none;
-  }
-`
-document.head.appendChild(nprogressStyles)
+// NProgress styles are now in main.css
 
 /**
  * Setup router progress bar

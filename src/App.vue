@@ -35,35 +35,19 @@ import BackToTop from './components/common/BackToTop.vue'
 const { t, locale } = useI18n()
 const route = useRoute()
 
-// Function to update locale from route
-const updateLocaleFromRoute = () => {
-  const routeLocale = route.params.locale
-  if (routeLocale && isLocale(routeLocale)) {
-    locale.value = routeLocale
-  }
-}
-
-// Update locale when route changes
-watch(() => route.params.locale, () => {
-  updateLocaleFromRoute()
-})
-
-// Update SEO Meta Tags and html lang when language changes
-watch(locale, (newLocale) => {
-  // Update html lang attribute for accessibility and SEO
+const updateMetaTags = (newLocale) => {
   document.documentElement.lang = newLocale
-
-  // Update Title
   document.title = t('meta.title')
+  const desc = t('meta.description')
+  const keywords = t('meta.keywords')
 
-  // Update generic meta
   const metas = [
-    { selector: 'meta[name="description"]', content: t('meta.description') },
-    { selector: 'meta[name="keywords"]', content: t('meta.keywords') },
+    { selector: 'meta[name="description"]', content: desc },
+    { selector: 'meta[name="keywords"]', content: keywords },
     { selector: 'meta[property="og:title"]', content: t('meta.title') },
-    { selector: 'meta[property="og:description"]', content: t('meta.description') },
+    { selector: 'meta[property="og:description"]', content: desc },
     { selector: 'meta[name="twitter:title"]', content: t('meta.title') },
-    { selector: 'meta[name="twitter:description"]', content: t('meta.description') }
+    { selector: 'meta[name="twitter:description"]', content: desc }
   ]
 
   metas.forEach(meta => {
@@ -73,41 +57,25 @@ watch(locale, (newLocale) => {
     }
   })
 
-  // Update canonical URL (remove locale prefix for canonical)
   const canonical = document.querySelector('link[rel="canonical"]')
   if (canonical) {
     const pathWithoutLocale = route.path.replace(/^\/[^/]+/, '')
-    canonical.href = `${import.meta.env.VITE_APP_URL || 'https://davidliu.studio'}${pathWithoutLocale || '/'}`
+    canonical.href = `https://david-liu.pages.dev${pathWithoutLocale || '/'}`
   }
-}, { immediate: true })
+}
 
-// Initialize locale from route on mount
+watch(() => route.params.locale, (newLocale) => {
+  if (newLocale && isLocale(newLocale)) {
+    locale.value = newLocale
+  }
+})
+
+watch(locale, updateMetaTags, { immediate: true })
+
 onMounted(() => {
-  updateLocaleFromRoute()
+  const routeLocale = route.params.locale
+  if (routeLocale && isLocale(routeLocale)) {
+    locale.value = routeLocale
+  }
 })
 </script>
-
-<style>
-/* Global styles are defined in main.css */
-
-/* Skip Link for Accessibility */
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: var(--primary-color);
-  color: white;
-  padding: 12px 24px;
-  z-index: 9999;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 0 0 var(--radius-md) 0;
-  transition: top 0.3s ease;
-}
-
-.skip-link:focus {
-  top: 0;
-  outline: 2px solid var(--primary-light);
-  outline-offset: 2px;
-}
-</style>
