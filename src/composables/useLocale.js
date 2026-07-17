@@ -16,10 +16,7 @@ export function useLocale() {
    * @param {string} langCode - Target locale code (e.g., 'zh-tw', 'en')
    */
   const changeLocale = (langCode) => {
-    if (!isLocale(langCode)) {
-      console.warn(`Invalid locale: ${langCode}`)
-      return
-    }
+    if (!isLocale(langCode)) return
 
     const currentPath = route.path
     const newPath = currentPath.replace(/^\/[^/]+/, `/${langCode}`)

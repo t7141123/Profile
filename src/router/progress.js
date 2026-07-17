@@ -1,5 +1,4 @@
 import NProgress from 'nprogress'
-import 'nprogress/nprogress.css'
 
 // Configure NProgress with custom styling
 NProgress.configure({

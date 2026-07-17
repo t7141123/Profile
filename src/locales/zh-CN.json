@@ -7,7 +7,6 @@
     "contact": "联系我"
   },
   "home": {
-    "badge": "企业数位转型的最佳后盾",
     "title": "专业数位转型合作伙伴",
     "subtitle": "让您的网站，成为企业最强大的业务引擎",
     "subtitle2": "7 年全端开发经验，专注于打造高扩充性、高转换率的数位产品。",
@@ -21,18 +20,11 @@
     "featuredBadge": "数位转型成功案例",
     "featuredTitle": "成功",
     "featuredTitleHighlight": "案例",
-    "viewSite": "查看网站",
-    "visitSite": "浏览网站",
     "viewAll": "查看全部作品",
     "ctaTitle": "启动您的项目，从专业咨询开始",
     "ctaDescription": "很多成功的项目，都是从一则信息开始的。",
     "ctaDescription2": "告诉我您的想法，我会免费帮您评估可行性和大致预算。",
     "ctaButton": "预约项目评估",
-    "heroStats": {
-      "projects": "项目交付",
-      "years": "年开发经验",
-      "satisfaction": "企业好评推荐"
-    },
     "services": {
       "corporate": "企业品牌形象构建",
       "corporateDesc": "企业形象官网、入口平台。提升品牌权威，强化流量转化。",
@@ -63,18 +55,6 @@
       "tripRecords": "旅途帐本",
       "tripRecordsDesc": "旅游记账与费用分账工具，协助旅途中记录开销、计算每人分摊金额，让旅行结账不再麻烦。",
       "tool": "互动工具"
-    },
-    "codePreview": {
-      "warmCareful": "细心周全",
-      "goodCommunication": "善于沟通",
-      "techExcellent": "技术优异",
-      "reliable": "可靠负责",
-      "exp1": "网站设计",
-      "exp2": "前端",
-      "exp3": "后端",
-      "exp4": "软件设计",
-      "exp5": "系统整合",
-      "mission": "以技术创造价值"
     },
     "businessPreview": {
       "target": "目标",
@@ -107,15 +87,7 @@
     "communicationValue": "深度倾听 / 逻辑清晰",
     "expertise": "专业领域",
     "expertiseValue": "全端开发 / 系统架构",
-    "status": "状态",
-    "statusValue": "欢迎咨询",
     "addLine": "加 Line 与我聊聊",
-    "stats": {
-      "projects": "完成项目",
-      "years": "年经验",
-      "satisfaction": "客户满意",
-      "support": "技术支持"
-    },
     "skillsBadge": "Skills",
     "skillsTitle": "技术架构与核心能力",
     "skillsTitleHighlight": "技能",
@@ -166,7 +138,6 @@
     "titleHighlight": "集",
     "pageDescription": "重视每一个客户，每个项目代表我对品质的坚持。",
     "viewSite": "查看网站",
-    "visitSite": "浏览网站",
     "projects": {
       "actionLead": "艾乐资讯股份有限公司",
       "actionLeadDesc": "为资讯科技公司打造的专业形象网站。上线后协助企业建立在线品牌形象，有效提升客户信任度与咨询转换率。",
@@ -281,7 +252,7 @@
     "titleHighlight": "我",
     "pageDescription": "一则消息的距离，让您的想法开始变现",
     "infoTitle": "与我对话",
-    "infoDescription": "很多客户一开始也不确定自己需要什么。没关系，聊聊就清楚了。我会先免费帮您釐清需求、评估可行性，再决定下一步怎么走。通常 24 小时内就会回复您。",
+    "infoDescription": "很多客户一开始也不确定自己需要什么。没关系，聊聊就清楚了。我会先免费帮您厘清需求、评估可行性，再决定下一步怎么走。通常 24 小时内就会回复您。",
     "lineLabel": "Line 官方账号 (推荐)",
     "lineValue": "点击加入好友链接",
     "telegramLabel": "Telegram",
@@ -297,20 +268,7 @@
   "footer": {
     "brand": "David Liu",
     "description": "不确定怎么开始您的数位转型？与我联系，我来帮您想！",
-    "quickLinks": "快速链接",
-    "services": "服务项目",
-    "servicesList": {
-      "webDev": "网站开发",
-      "frontendDev": "前端开发",
-      "backendDev": "后端开发",
-      "integration": "系统整合"
-    },
-    "contact": "联系方式",
-    "cta": "有想法了吗？随时 Line 我 💬",
     "copyright": "© {year} David Liu. All rights reserved."
-  },
-  "common": {
-    "required": "*"
   },
   "meta": {
     "title": "David Liu Studio | 帮企业打造会赚钱的网站",

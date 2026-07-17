@@ -81,6 +81,7 @@
                     :src="tech.img"
                     :alt="tech.name"
                     class="tech-logo-img"
+                    loading="lazy"
                   />
                   <i v-else :class="tech.icon"></i>
                 </div>
@@ -104,6 +105,7 @@
                     :src="tech.img"
                     :alt="tech.name"
                     class="tech-logo-img"
+                    loading="lazy"
                   />
                   <i v-else :class="tech.icon"></i>
                 </div>

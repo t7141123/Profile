@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "lint": "eslint . --fix",
-    "deploy": "npm run build && CLOUDFLARE_ACCOUNT_ID=2a33489fabfdde7dbde620858343ae91 wrangler pages deploy dist --project-name=david-liu && echo '✅ Deploy complete'",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name=david-liu && echo '✅ Deploy complete'",
     "deploy:check": "npm run build && wrangler pages deploy dist --project-name=david-liu --dry-run",
     "preview:cloudflare": "wrangler pages dev dist"
   },

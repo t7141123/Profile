@@ -39,7 +39,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  background-color: var(--dark-bg);
+  background-color: var(--bg-primary);
   overflow: hidden;
   padding: 4rem 0;
 }

@@ -45,6 +45,7 @@
           :class="{ 'is-active': isMenuOpen }"
           @click="toggleMenu"
           aria-label="Toggle navigation"
+          :aria-expanded="isMenuOpen.toString()"
         >
           <div class="hamburger-box">
             <div class="hamburger-inner"></div>

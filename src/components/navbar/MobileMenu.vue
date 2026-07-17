@@ -12,7 +12,7 @@
             <router-link
               :to="localePath(item.path)"
               class="mobile-nav-link"
-              :aria-current="route.path === `${currentLocale}${item.path}` ? 'page' : undefined"
+              :aria-current="route.path === `/${currentLocale}${item.path}` ? 'page' : undefined"
               @click="$emit('close')"
             >
               {{ $t(item.label) }}

@@ -155,6 +155,17 @@
   </div>
 </template>
 
+<script setup>
+import { ref } from "vue";
+import PageHeader from "@/components/common/PageHeader.vue";
+
+const contentSection = ref(null);
+
+const scrollToContent = () => {
+  contentSection.value?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+</script>
+
 <style scoped>
 /* Contact Info */
 .contact-info-title {
@@ -231,16 +242,4 @@
 
 .contact-value:hover {
   color: var(--primary-color);
-}
-</style>
-
-<script setup>
-import { ref } from "vue";
-import PageHeader from "@/components/common/PageHeader.vue";
-
-const contentSection = ref(null);
-
-const scrollToContent = () => {
-  contentSection.value?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-};
-</script>
+}</style>

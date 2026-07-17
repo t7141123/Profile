@@ -60,7 +60,7 @@ const updateMetaTags = (newLocale) => {
   const canonical = document.querySelector('link[rel="canonical"]')
   if (canonical) {
     const pathWithoutLocale = route.path.replace(/^\/[^/]+/, '')
-    canonical.href = `https://david-liu.pages.dev${pathWithoutLocale || '/'}`
+    canonical.href = `${import.meta.env.VITE_APP_URL || 'https://david-liu.pages.dev'}${pathWithoutLocale || '/'}`
   }
 }
 

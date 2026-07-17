@@ -7,7 +7,6 @@
     "contact": "聯繫我"
   },
   "home": {
-    "badge": "企業數位轉型的最佳後盾",
     "title": "專業數位轉型合作夥伴",
     "subtitle": "讓您的網站，成為企業最強大的業務引擎",
     "subtitle2": "7 年全端開發經驗，專注於打造高擴充性、高轉換率的數位產品。",
@@ -21,18 +20,11 @@
     "featuredBadge": "數位轉型成功案例",
     "featuredTitle": "成功",
     "featuredTitleHighlight": "案例",
-    "viewSite": "查看網站",
-    "visitSite": "瀏覽網站",
     "viewAll": "查看全部作品",
     "ctaTitle": "啟動您的專案，從專業諮詢開始",
     "ctaDescription": "很多成功的專案，都是從一則訊息開始的。",
     "ctaDescription2": "告訴我您的想法，我會免費幫您評估可行性和大致預算。",
     "ctaButton": "預約專案評估",
-    "heroStats": {
-      "projects": "專案交付",
-      "years": "年開發經驗",
-      "satisfaction": "企業好評推薦"
-    },
     "services": {
       "corporate": "企業品牌形象構建",
       "corporateDesc": "企業形象官網、入口平台。提升品牌權威，強化流量轉化。",
@@ -63,18 +55,6 @@
       "tripRecords": "旅途帳本",
       "tripRecordsDesc": "旅遊記帳與費用分帳工具，協助旅途中記錄開銷、計算每人分攤金額，讓旅行結帳不再麻煩。",
       "tool": "互動工具"
-    },
-    "codePreview": {
-      "warmCareful": "細心周全",
-      "goodCommunication": "善於溝通",
-      "techExcellent": "技術優異",
-      "reliable": "可靠負責",
-      "exp1": "網站設計",
-      "exp2": "前端",
-      "exp3": "後端",
-      "exp4": "軟體設計",
-      "exp5": "系統整合",
-      "mission": "以技術創造價值"
     },
     "businessPreview": {
       "target": "目標",
@@ -107,15 +87,7 @@
     "communicationValue": "深度傾聽 / 邏輯清晰",
     "expertise": "專業領域",
     "expertiseValue": "全端開發 / 系統架構",
-    "support": "技術支援",
-    "supportValue": "快速回應",
     "addLine": "加 Line 與我聊聊",
-    "stats": {
-      "projects": "完成專案",
-      "years": "年經驗",
-      "satisfaction": "客戶滿意",
-      "support": "技術支援"
-    },
     "skillsBadge": "Skills",
     "skillsTitle": "技術架構與核心能力",
     "skillsTitleHighlight": "技能",
@@ -166,7 +138,6 @@
     "titleHighlight": "集",
     "pageDescription": "重視每一個客戶，每個專案代表我對品質的堅持。",
     "viewSite": "查看網站",
-    "visitSite": "瀏覽網站",
     "projects": {
       "actionLead": "艾樂資訊股份有限公司",
       "actionLeadDesc": "為資訊科技公司打造的專業形象網站，採用現代化設計與響應式佈局。上線後協助企業建立線上品牌形象，有效提升客戶信任度與諮詢轉換率。",
@@ -297,20 +268,7 @@
   "footer": {
     "brand": "David Liu",
     "description": "不確定怎麼開始您的數位轉型？與我聯繫，我來幫你想！",
-    "quickLinks": "快速連結",
-    "services": "服務項目",
-    "servicesList": {
-      "webDev": "網站開發",
-      "frontendDev": "前端開發",
-      "backendDev": "後端開發",
-      "integration": "系統整合"
-    },
-    "contact": "聯繫方式",
-    "cta": "有想法了嗎？隨時 Line 我 💬",
     "copyright": "© {year} David Liu. All rights reserved."
-  },
-  "common": {
-    "required": "*"
   },
   "meta": {
     "title": "David Liu Studio | 幫企業打造會賺錢的網站",

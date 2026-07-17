@@ -1,30 +1,27 @@
 import { createI18n } from 'vue-i18n'
+import zhTW from './locales/zh-TW.json'
+import en from './locales/en.json'
 
 const defaultLocale = 'zh-tw'
 const savedLocale = localStorage.getItem('locale') || defaultLocale
-
-const localeMap = {
-  'zh-tw': () => import('./locales/zh-TW.json'),
-  'zh-cn': () => import('./locales/zh-CN.json'),
-  'en': () => import('./locales/en.json')
-}
 
 const i18n = createI18n({
   legacy: false,
   locale: savedLocale,
   fallbackLocale: defaultLocale,
-  messages: {}
+  messages: {
+    'zh-tw': zhTW,
+    'en': en
+  }
 })
 
-function loadLocaleMessages(locale) {
-  return localeMap[locale]().then(m => {
-    i18n.global.setLocaleMessage(locale, m.default)
-  })
+async function loadLocaleMessages(locale) {
+  if (locale === 'zh-tw' || locale === 'en') return
+  const m = await import('./locales/zh-CN.json')
+  i18n.global.setLocaleMessage(locale, m.default)
 }
 
-loadLocaleMessages('zh-tw')
-
-if (savedLocale !== 'zh-tw') {
+if (savedLocale === 'zh-cn') {
   loadLocaleMessages(savedLocale)
 }
 

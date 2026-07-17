@@ -7,7 +7,6 @@
     "contact": "Contact"
   },
   "home": {
-    "badge": "Your Trusted Partner for Digital Transformation",
     "title": "Your Digital Transformation Partner",
     "subtitle": "Turn Your Website into a Powerful Business Engine",
     "subtitle2": "7+ years of full-stack experience creating scalable, high-conversion digital products.",
@@ -21,18 +20,11 @@
     "featuredBadge": "Digital Transformation Success Stories",
     "featuredTitle": "Success",
     "featuredTitleHighlight": "Cases",
-    "viewSite": "View Site",
-    "visitSite": "Visit Website",
     "viewAll": "View All Works",
     "ctaTitle": "Start Your Project with a Professional Consultation",
     "ctaDescription": "Many successful projects start with a single message.",
     "ctaDescription2": "Tell me your ideas, and I'll assess feasibility and budget for free.",
     "ctaButton": "Schedule Assessment",
-    "heroStats": {
-      "projects": "Projects Delivered",
-      "years": "Years Exp.",
-      "satisfaction": "Corporate Endorsements"
-    },
     "services": {
       "corporate": "Corporate Brand & Identity",
       "corporateDesc": "Corporate websites and portals. Enhance brand authority and maximize traffic conversion.",
@@ -63,18 +55,6 @@
       "tripRecords": "Trip Records",
       "tripRecordsDesc": "Travel expense tracking and cost-splitting tool. Record expenses on the go, calculate each person's share, and make trip settlements hassle-free.",
       "tool": "Interactive Tool"
-    },
-    "codePreview": {
-      "warmCareful": "Meticulous & Thorough",
-      "goodCommunication": "Clear Communication",
-      "techExcellent": "Tech Expert",
-      "reliable": "Reliable",
-      "exp1": "Web Design",
-      "exp2": "Frontend",
-      "exp3": "Backend",
-      "exp4": "Software Design",
-      "exp5": "System Integration",
-      "mission": "Creating Value with Tech"
     },
     "businessPreview": {
       "target": "Goal",
@@ -107,15 +87,7 @@
     "communicationValue": "Deep Listening / Clear Logic",
     "expertise": "Expertise",
     "expertiseValue": "Full Stack / System Architecture",
-    "status": "Status",
-    "statusValue": "Available for Hire",
     "addLine": "Chat with me on Line",
-    "stats": {
-      "projects": "Projects Done",
-      "years": "Years Exp.",
-      "satisfaction": "Client Satisfaction",
-      "support": "Tech Support"
-    },
     "skillsBadge": "Skills",
     "skillsTitle": "Technical Architecture & Core Capabilities",
     "skillsTitleHighlight": " Skills",
@@ -166,7 +138,6 @@
     "titleHighlight": "folio",
     "pageDescription": "I value every client; each project represents my persistence in quality.",
     "viewSite": "View Site",
-    "visitSite": "Visit Website",
     "projects": {
       "actionLead": "Action Lead Information Co., Ltd.",
       "actionLeadDesc": "Professional corporate website for an IT company. Successfully established online brand identity and increased lead conversion rates.",
@@ -297,20 +268,7 @@
   "footer": {
     "brand": "David Liu",
     "description": "Not sure how to start your digital transformation? Contact me, and I'll help you figure it out!",
-    "quickLinks": "Quick Links",
-    "services": "Services",
-    "servicesList": {
-      "webDev": "Web Development",
-      "frontendDev": "Frontend Development",
-      "backendDev": "Backend Development",
-      "integration": "System Integration"
-    },
-    "contact": "Contact",
-    "cta": "Have an idea? Line me anytime 💬",
     "copyright": "© {year} David Liu. All rights reserved."
-  },
-  "common": {
-    "required": "*"
   },
   "meta": {
     "title": "David Liu Studio | Websites That Actually Make You Money",
