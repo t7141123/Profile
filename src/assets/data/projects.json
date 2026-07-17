@@ -38,5 +38,13 @@
     "url": "https://uvaco-system.zeabur.app/",
     "technologies": ["Vue.js", "Supabase", "Zeabur", "RWD"],
     "categoryKey": "education"
+  },
+  {
+    "id": 6,
+    "key": "chordBook",
+    "imageName": "chord-book.svg",
+    "url": "https://chord-book.pages.dev/",
+    "technologies": ["Vue.js", "Vite", "Cloudflare Pages"],
+    "categoryKey": "tool"
   }
 ]

@@ -1,7 +1,7 @@
 import { ref, onMounted, watch, computed } from 'vue';
 
 export function useTheme() {
-  const theme = ref(localStorage.getItem('theme') || 'light');
+  const theme = ref(localStorage.getItem('theme') || 'dark');
 
   const updateTheme = () => {
     document.documentElement.setAttribute('data-theme', theme.value);
@@ -14,11 +14,6 @@ export function useTheme() {
   };
 
   onMounted(() => {
-    // Check for system preference if no saved theme
-    if (!localStorage.getItem('theme')) {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      theme.value = prefersDark ? 'dark' : 'light';
-    }
     updateTheme();
   });
 

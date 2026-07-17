@@ -57,7 +57,10 @@
       "uvaco": "UVACO System",
       "uvacoDesc": "An internal education and event management system tailored for team operations, featuring event registration, categorized browsing, and member management to effectively manage trainings and gatherings.",
       "npo": "NPO",
-      "education": "Organizational Education System"
+      "education": "Organizational Education System",
+      "chordBook": "Chord Book",
+      "chordBookDesc": "Interactive guitar chord lookup tool with real-time fingering diagrams and audio playback, helping guitar learners master chord shapes quickly.",
+      "tool": "Interactive Tool"
     },
     "codePreview": {
       "warmCareful": "Meticulous & Thorough",
@@ -176,7 +179,10 @@
       "uvaco": "UVACO System",
       "uvacoDesc": "An internal education and event management system tailored for team operations, featuring event registration and member management. Since implementation, event management time has been significantly reduced, and member participation has increased notably.",
       "education": "Organizational Education System",
-      "npo": "NPO"
+      "npo": "NPO",
+      "chordBook": "Chord Book",
+      "chordBookDesc": "Interactive guitar chord lookup tool with real-time fingering diagrams and audio playback, helping guitar learners master chord shapes quickly.",
+      "tool": "Interactive Tool"
     },
     "ctaTitle": "Build Your Project?",
     "ctaDescription": "Let's discuss your needs and create the next success story.",
