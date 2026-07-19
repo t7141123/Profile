@@ -54,6 +54,8 @@
       "chordBookDesc": "互動式吉他和弦查詢工具，提供即時和弦指法圖示與音色播放，幫助吉他學習者快速掌握和弦按法。",
       "tripRecords": "旅途帳本",
       "tripRecordsDesc": "旅遊記帳與費用分帳工具，協助旅途中記錄開銷、計算每人分攤金額，讓旅行結帳不再麻煩。",
+      "churchServe": "ChurchServe",
+      "churchServeDesc": "教會小組服事表工具，輕鬆建立輪值排班、分配角色，並匯出服事表供小組成員查看。",
       "tool": "互動工具"
     },
     "businessPreview": {
@@ -157,6 +159,8 @@
       "chordBookDesc": "互動式吉他和弦查詢工具，提供即時和弦指法圖示與音色播放，幫助吉他學習者快速掌握和弦按法。",
       "tripRecords": "旅途帳本",
       "tripRecordsDesc": "旅遊記帳與費用分帳工具，協助旅途中記錄開銷、計算每人分攤金額，讓旅行結帳不再麻煩。",
+      "churchServe": "ChurchServe",
+      "churchServeDesc": "教會小組服事表工具，輕鬆建立輪值排班、分配角色，並匯出服事表供小組成員查看。",
       "tool": "互動工具"
     },
     "ctaTitle": "打造您的專案？",

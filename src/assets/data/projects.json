@@ -54,5 +54,13 @@
     "url": "https://trip-records.pages.dev/",
     "technologies": ["Vue.js", "Vite", "Cloudflare Pages"],
     "categoryKey": "tool"
+  },
+  {
+    "id": 8,
+    "key": "churchServe",
+    "imageName": "church-serve.png",
+    "url": "https://church-serve.pages.dev/",
+    "technologies": ["Vue.js", "Vite", "Supabase", "Cloudflare Pages"],
+    "categoryKey": "tool"
   }
 ]

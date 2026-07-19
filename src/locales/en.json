@@ -54,6 +54,8 @@
       "chordBookDesc": "Interactive guitar chord lookup tool with real-time fingering diagrams and audio playback, helping guitar learners master chord shapes quickly.",
       "tripRecords": "Trip Records",
       "tripRecordsDesc": "Travel expense tracking and cost-splitting tool. Record expenses on the go, calculate each person's share, and make trip settlements hassle-free.",
+      "churchServe": "ChurchServe",
+      "churchServeDesc": "Small group service scheduling tool for churches. Easily create rotation schedules, assign roles, and export duty rosters for your congregation.",
       "tool": "Interactive Tool"
     },
     "businessPreview": {
@@ -157,6 +159,8 @@
       "chordBookDesc": "Interactive guitar chord lookup tool with real-time fingering diagrams and audio playback, helping guitar learners master chord shapes quickly.",
       "tripRecords": "Trip Records",
       "tripRecordsDesc": "Travel expense tracking and cost-splitting tool. Record expenses on the go, calculate each person's share, and make trip settlements hassle-free.",
+      "churchServe": "ChurchServe",
+      "churchServeDesc": "Small group service scheduling tool for churches. Easily create rotation schedules, assign roles, and export duty rosters for your congregation.",
       "tool": "Interactive Tool"
     },
     "ctaTitle": "Build Your Project?",
