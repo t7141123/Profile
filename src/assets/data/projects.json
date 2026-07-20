@@ -62,5 +62,13 @@
     "url": "https://church-serve.pages.dev/",
     "technologies": ["Vue.js", "Vite", "Supabase", "Cloudflare Pages"],
     "categoryKey": "tool"
+  },
+  {
+    "id": 9,
+    "key": "stockFilter",
+    "imageName": "stock-filter.png",
+    "url": "https://stock-filter.pages.dev/",
+    "technologies": ["Vue.js", "Vite", "Cloudflare Pages"],
+    "categoryKey": "tool"
   }
 ]

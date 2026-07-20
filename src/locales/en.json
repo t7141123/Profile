@@ -56,6 +56,8 @@
       "tripRecordsDesc": "Travel expense tracking and cost-splitting tool. Record expenses on the go, calculate each person's share, and make trip settlements hassle-free.",
       "churchServe": "ChurchServe",
       "churchServeDesc": "Small group service scheduling tool for churches. Easily create rotation schedules, assign roles, and export duty rosters for your congregation.",
+      "stockFilter": "Stock Filter",
+      "stockFilterDesc": "A stock screening tool that filters and sorts Taiwanese stocks by financial indicators like ROE, EPS, dividend yield, and price-to-book ratio to help identify investment opportunities.",
       "tool": "Interactive Tool"
     },
     "businessPreview": {
@@ -161,6 +163,8 @@
       "tripRecordsDesc": "Travel expense tracking and cost-splitting tool. Record expenses on the go, calculate each person's share, and make trip settlements hassle-free.",
       "churchServe": "ChurchServe",
       "churchServeDesc": "Small group service scheduling tool for churches. Easily create rotation schedules, assign roles, and export duty rosters for your congregation.",
+      "stockFilter": "Stock Filter",
+      "stockFilterDesc": "A stock screening tool that filters and sorts Taiwanese stocks by financial indicators like ROE, EPS, dividend yield, and price-to-book ratio to help identify investment opportunities.",
       "tool": "Interactive Tool"
     },
     "ctaTitle": "Build Your Project?",

@@ -56,6 +56,8 @@
       "tripRecordsDesc": "旅遊記帳與費用分帳工具，協助旅途中記錄開銷、計算每人分攤金額，讓旅行結帳不再麻煩。",
       "churchServe": "教會服事表",
       "churchServeDesc": "教會小組服事表工具，輕鬆建立輪值排班、分配角色，並匯出服事表供小組成員查看。",
+      "stockFilter": "股票篩選器",
+      "stockFilterDesc": "台股篩選工具，透過 ROE、EPS、殖利率、股價淨值比等財務指標過濾與排序，快速找出值得關注的投資標的。",
       "tool": "互動工具"
     },
     "businessPreview": {
@@ -161,6 +163,8 @@
       "tripRecordsDesc": "旅遊記帳與費用分帳工具，協助旅途中記錄開銷、計算每人分攤金額，讓旅行結帳不再麻煩。",
       "churchServe": "教會服事表",
       "churchServeDesc": "教會小組服事表工具，輕鬆建立輪值排班、分配角色，並匯出服事表供小組成員查看。",
+      "stockFilter": "股票篩選器",
+      "stockFilterDesc": "台股篩選工具，透過 ROE、EPS、殖利率、股價淨值比等財務指標過濾與排序，快速找出值得關注的投資標的。",
       "tool": "互動工具"
     },
     "ctaTitle": "打造您的專案？",
