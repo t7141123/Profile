@@ -70,5 +70,13 @@
     "url": "https://stock-filter.pages.dev/",
     "technologies": ["Vue.js", "Vite", "Cloudflare Pages"],
     "categoryKey": "tool"
+  },
+  {
+    "id": 10,
+    "key": "linkwingAi",
+    "imageName": "linkwing-ai.png",
+    "url": "https://linkwing.ai/",
+    "technologies": ["Vue.js", "Supabase", "Bootstrap", "AI"],
+    "categoryKey": "corporate"
   }
 ]

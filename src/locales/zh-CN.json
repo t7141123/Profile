@@ -58,6 +58,8 @@
       "churchServeDesc": "教会小组服事表工具，轻松建立轮值排班、分配角色，并汇出服事表供小组成员查看。",
       "stockFilter": "股票筛选器",
       "stockFilterDesc": "台股筛选工具，透过 ROE、EPS、殖利率、股价净值比等财务指标过滤与排序，快速找出值得关注的投资标的。",
+      "linkwingAi": "LinkWing AIDC",
+      "linkwingAiDesc": "AI 文件处理平台，自动撷取、分类与分析各种文件格式的资料，以智慧自动化优化企业工作流程。",
       "tool": "互动工具"
     },
     "businessPreview": {
@@ -165,6 +167,8 @@
       "churchServeDesc": "教会小组服事表工具，轻松建立轮值排班、分配角色，并汇出服事表供小组成员查看。",
       "stockFilter": "股票筛选器",
       "stockFilterDesc": "台股筛选工具，透过 ROE、EPS、殖利率、股价净值比等财务指标过滤与排序，快速找出值得关注的投资标的。",
+      "linkwingAi": "LinkWing AIDC",
+      "linkwingAiDesc": "AI 文件处理平台，自动撷取、分类与分析各种文件格式的资料，以智慧自动化优化企业工作流程。",
       "tool": "互动工具"
     },
     "ctaTitle": "打造您的项目？",
