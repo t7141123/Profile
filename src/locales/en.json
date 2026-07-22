@@ -60,7 +60,7 @@
       "stockFilterDesc": "A stock screening tool that filters and sorts Taiwanese stocks by financial indicators like ROE, EPS, dividend yield, and price-to-book ratio to help identify investment opportunities.",
       "linkwingAi": "LinkWing AIDC",
       "linkwingAiDesc": "AI document processing platform that automates data extraction, classification, and analysis from various document formats, streamlining enterprise workflows with intelligent automation.",
-      "tool": "Interactive Tool"
+      "tool": "Tool Website"
     },
     "businessPreview": {
       "target": "Goal",
@@ -173,7 +173,7 @@
       "stockFilterDesc": "A stock screening tool that filters and sorts Taiwanese stocks by financial indicators like ROE, EPS, dividend yield, and price-to-book ratio to help identify investment opportunities.",
       "linkwingAi": "LinkWing AIDC",
       "linkwingAiDesc": "AI document processing platform that automates data extraction, classification, and analysis from various document formats, streamlining enterprise workflows with intelligent automation.",
-      "tool": "Interactive Tool"
+      "tool": "Tool Website"
     },
     "ctaTitle": "Build Your Project?",
     "ctaDescription": "Let's discuss your needs and create the next success story.",
