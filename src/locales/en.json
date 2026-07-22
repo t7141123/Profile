@@ -145,6 +145,7 @@
     "pageDescription": "I value every client; each project represents my persistence in quality.",
     "viewSite": "View Site",
     "filters": {
+      "label": "Filter by",
       "all": "All",
       "other": "Other"
     },

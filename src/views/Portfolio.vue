@@ -15,15 +15,19 @@
     <section class="section" ref="contentSection">
       <div class="container">
         <div class="filter-bar">
-          <button
-            v-for="filter in filters"
-            :key="filter.key"
-            class="filter-btn"
-            :class="{ active: selectedCategory === filter.key }"
-            @click="selectedCategory = filter.key"
-          >
-            {{ filter.label }}
-          </button>
+          <span class="filter-label">{{ t('portfolio.filters.label') }}</span>
+          <div class="filter-buttons">
+            <button
+              v-for="filter in filters"
+              :key="filter.key"
+              class="filter-btn"
+              :class="{ active: selectedCategory === filter.key }"
+              @click="selectedCategory = filter.key"
+            >
+              <i :class="filter.icon" class="filter-icon"></i>
+              {{ filter.label }}
+            </button>
+          </div>
         </div>
 
         <div class="row g-4">
@@ -97,10 +101,10 @@ const projects = computed(() => getAllProjects());
 const selectedCategory = ref("all");
 
 const filters = computed(() => [
-  { key: "all", label: t("portfolio.filters.all") },
-  { key: "corporate", label: t(`portfolio.projects.corporate`) },
-  { key: "tool", label: t(`portfolio.projects.tool`) },
-  { key: "other", label: t("portfolio.filters.other") },
+  { key: "all", label: t("portfolio.filters.all"), icon: "bi-grid-3x3-gap" },
+  { key: "corporate", label: t("portfolio.projects.corporate"), icon: "bi-building" },
+  { key: "tool", label: t("portfolio.projects.tool"), icon: "bi-tools" },
+  { key: "other", label: t("portfolio.filters.other"), icon: "bi-collection" },
 ]);
 
 const filteredProjects = computed(() => {
@@ -139,34 +143,60 @@ const filteredProjects = computed(() => {
 
 /* Filter Bar */
 .filter-bar {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.filter-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.filter-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.6rem;
   justify-content: center;
-  margin-bottom: 2.5rem;
 }
 
 .filter-btn {
-  padding: 0.6rem 1.5rem;
-  border-radius: var(--radius-full);
-  border: 1px solid var(--color-border);
-  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: var(--radius-lg);
+  border: 1.5px solid var(--bg-accent);
+  background: var(--bg-accent);
   color: var(--text-secondary);
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all var(--transition-base);
+  transition: all 0.25s ease;
+}
+
+.filter-icon {
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .filter-btn:hover {
   border-color: var(--primary-color);
   color: var(--primary-color);
+  background: rgba(37, 99, 235, 0.06);
+  transform: translateY(-1px);
 }
 
 .filter-btn.active {
-  background: var(--primary-color);
-  border-color: var(--primary-color);
+  background: var(--gradient-primary);
+  border-color: transparent;
   color: #fff;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
 }
 
 /* NDA Notice Section */

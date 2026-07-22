@@ -145,6 +145,7 @@
     "pageDescription": "重視每一個客戶，每個專案代表我對品質的堅持。",
     "viewSite": "查看網站",
     "filters": {
+      "label": "分類篩選",
       "all": "全部",
       "other": "其他"
     },

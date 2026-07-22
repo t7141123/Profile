@@ -145,6 +145,7 @@
     "pageDescription": "重视每一个客户，每个项目代表我对品质的坚持。",
     "viewSite": "查看网站",
     "filters": {
+      "label": "分类筛选",
       "all": "全部",
       "other": "其他"
     },
