@@ -187,8 +187,13 @@ const filteredProjects = computed(() => {
 .filter-btn:hover {
   border-color: var(--primary-color);
   color: var(--primary-color);
-  background: rgba(37, 99, 235, 0.06);
+  background: rgba(37, 99, 235, 0.08);
   transform: translateY(-1px);
+}
+
+[data-theme='dark'] .filter-btn:hover {
+  color: var(--primary-light);
+  background: rgba(59, 130, 246, 0.12);
 }
 
 .filter-btn.active {
