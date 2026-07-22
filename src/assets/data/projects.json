@@ -76,7 +76,7 @@
     "key": "linkwingAi",
     "imageName": "linkwing-ai.png",
     "url": "https://linkwing.ai/",
-    "technologies": ["Vue.js", "Supabase", "Bootstrap", "AI"],
+    "technologies": ["React Native"],
     "categoryKey": "corporate"
   }
 ]
