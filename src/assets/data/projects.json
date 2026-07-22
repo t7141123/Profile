@@ -42,7 +42,7 @@
   {
     "id": 6,
     "key": "chordBook",
-    "imageName": "chord-book.svg",
+    "imageName": "chord-book.png",
     "url": "https://chord-book.pages.dev/",
     "technologies": ["Vue.js", "Vite", "Cloudflare Pages"],
     "categoryKey": "tool"
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "key": "tripRecords",
-    "imageName": "trip-records.svg",
+    "imageName": "trip-records.png",
     "url": "https://trip-records.pages.dev/",
     "technologies": ["Vue.js", "Vite", "Cloudflare Pages"],
     "categoryKey": "tool"
