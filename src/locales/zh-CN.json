@@ -144,6 +144,10 @@
     "titleHighlight": "集",
     "pageDescription": "重视每一个客户，每个项目代表我对品质的坚持。",
     "viewSite": "查看网站",
+    "filters": {
+      "all": "全部",
+      "other": "其他"
+    },
     "projects": {
       "actionLead": "艾乐资讯股份有限公司",
       "actionLeadDesc": "为资讯科技公司打造的专业形象网站。上线后协助企业建立在线品牌形象，有效提升客户信任度与咨询转换率。",

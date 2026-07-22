@@ -14,10 +14,22 @@
     <!-- Portfolio Section -->
     <section class="section" ref="contentSection">
       <div class="container">
+        <div class="filter-bar">
+          <button
+            v-for="filter in filters"
+            :key="filter.key"
+            class="filter-btn"
+            :class="{ active: selectedCategory === filter.key }"
+            @click="selectedCategory = filter.key"
+          >
+            {{ filter.label }}
+          </button>
+        </div>
+
         <div class="row g-4">
           <div
             class="col-md-6 col-lg-4"
-            v-for="project in projects"
+            v-for="project in filteredProjects"
             :key="project.id"
           >
             <PortfolioCard :project="project" :show-tech="true" />
@@ -66,10 +78,12 @@
 
 <script setup>
 import { computed, ref } from "vue";
+import { useI18n } from "vue-i18n";
 import { useProjects } from "@/composables/useProjects";
 import PageHeader from "@/components/common/PageHeader.vue";
 import PortfolioCard from "@/components/common/PortfolioCard.vue";
 
+const { t } = useI18n();
 const { getAllProjects } = useProjects();
 
 const contentSection = ref(null);
@@ -79,6 +93,25 @@ const scrollToContent = () => {
 };
 
 const projects = computed(() => getAllProjects());
+
+const selectedCategory = ref("all");
+
+const filters = computed(() => [
+  { key: "all", label: t("portfolio.filters.all") },
+  { key: "corporate", label: t(`portfolio.projects.corporate`) },
+  { key: "tool", label: t(`portfolio.projects.tool`) },
+  { key: "other", label: t("portfolio.filters.other") },
+]);
+
+const filteredProjects = computed(() => {
+  if (selectedCategory.value === "all") return projects.value;
+  if (selectedCategory.value === "other") {
+    return projects.value.filter(
+      p => p.categoryKey !== "corporate" && p.categoryKey !== "tool"
+    );
+  }
+  return projects.value.filter(p => p.categoryKey === selectedCategory.value);
+});
 </script>
 
 <style scoped>
@@ -102,6 +135,38 @@ const projects = computed(() => getAllProjects());
   color: var(--text-secondary);
   font-size: 1.125rem;
   margin-bottom: 2rem;
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.filter-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.filter-btn.active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
 }
 
 /* NDA Notice Section */

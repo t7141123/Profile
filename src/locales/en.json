@@ -144,6 +144,10 @@
     "titleHighlight": "folio",
     "pageDescription": "I value every client; each project represents my persistence in quality.",
     "viewSite": "View Site",
+    "filters": {
+      "all": "All",
+      "other": "Other"
+    },
     "projects": {
       "actionLead": "Action Lead Information Co., Ltd.",
       "actionLeadDesc": "Professional corporate website for an IT company. Successfully established online brand identity and increased lead conversion rates.",

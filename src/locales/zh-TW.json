@@ -144,6 +144,10 @@
     "titleHighlight": "集",
     "pageDescription": "重視每一個客戶，每個專案代表我對品質的堅持。",
     "viewSite": "查看網站",
+    "filters": {
+      "all": "全部",
+      "other": "其他"
+    },
     "projects": {
       "actionLead": "艾樂資訊股份有限公司",
       "actionLeadDesc": "為資訊科技公司打造的專業形象網站，採用現代化設計與響應式佈局。上線後協助企業建立線上品牌形象，有效提升客戶信任度與諮詢轉換率。",
