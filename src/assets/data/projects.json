@@ -84,7 +84,7 @@
     "key": "generalErp",
     "imageName": "general-erp.png",
     "url": "https://general-erp.pages.dev/",
-    "technologies": ["Vue.js", "Vite", "Pinia", "Supabase", "Cloudflare Pages"],
+    "technologies": ["React", "Tailwind CSS"],
     "categoryKey": "internal"
   }
 ]
