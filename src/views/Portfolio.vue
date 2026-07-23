@@ -104,15 +104,19 @@ const filters = computed(() => [
   { key: "all", label: t("portfolio.filters.all"), icon: "bi-grid-3x3-gap" },
   { key: "corporate", label: t("portfolio.projects.corporate"), icon: "bi-building" },
   { key: "tool", label: t("portfolio.projects.tool"), icon: "bi-tools" },
-  { key: "internal", label: t("portfolio.projects.internal"), icon: "bi-server" },
   { key: "other", label: t("portfolio.filters.other"), icon: "bi-collection" },
 ]);
 
 const filteredProjects = computed(() => {
   if (selectedCategory.value === "all") return projects.value;
+  if (selectedCategory.value === "corporate") {
+    return projects.value.filter(
+      p => p.categoryKey === "corporate" || p.categoryKey === "internal"
+    );
+  }
   if (selectedCategory.value === "other") {
     return projects.value.filter(
-      p => p.categoryKey !== "corporate" && p.categoryKey !== "tool"
+      p => p.categoryKey !== "corporate" && p.categoryKey !== "internal" && p.categoryKey !== "tool"
     );
   }
   return projects.value.filter(p => p.categoryKey === selectedCategory.value);
