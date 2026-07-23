@@ -60,6 +60,9 @@
       "stockFilterDesc": "台股筛选工具，透过 ROE、EPS、殖利率、股价净值比等财务指标过滤与排序，快速找出值得关注的投资标的。",
       "linkwingAi": "LinkWing AIDC",
       "linkwingAiDesc": "AI 文件处理平台，自动撷取、分类与分析各种文件格式的资料，以智慧自动化优化企业工作流程。",
+      "generalErp": "企业ERP系统",
+      "generalErpDesc": "模块化企业资源规划系统，涵盖订单管理、采购、库存、制令与财务会计等核心功能。",
+      "internal": "企业内部系统",
       "tool": "工具网站"
     },
     "businessPreview": {
@@ -174,6 +177,9 @@
       "stockFilterDesc": "台股筛选工具，透过 ROE、EPS、殖利率、股价净值比等财务指标过滤与排序，快速找出值得关注的投资标的。",
       "linkwingAi": "LinkWing AIDC",
       "linkwingAiDesc": "AI 文件处理平台，自动撷取、分类与分析各种文件格式的资料，以智慧自动化优化企业工作流程。",
+      "generalErp": "企业ERP系统",
+      "generalErpDesc": "模块化企业资源规划系统，涵盖订单管理、采购、库存、制令与财务会计等核心功能。",
+      "internal": "企业内部系统",
       "tool": "工具网站"
     },
     "ctaTitle": "打造您的项目？",

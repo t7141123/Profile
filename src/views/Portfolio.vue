@@ -104,6 +104,7 @@ const filters = computed(() => [
   { key: "all", label: t("portfolio.filters.all"), icon: "bi-grid-3x3-gap" },
   { key: "corporate", label: t("portfolio.projects.corporate"), icon: "bi-building" },
   { key: "tool", label: t("portfolio.projects.tool"), icon: "bi-tools" },
+  { key: "internal", label: t("portfolio.projects.internal"), icon: "bi-server" },
   { key: "other", label: t("portfolio.filters.other"), icon: "bi-collection" },
 ]);
 
