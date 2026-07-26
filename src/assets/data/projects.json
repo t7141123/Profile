@@ -86,5 +86,13 @@
     "url": "https://general-erp.pages.dev/",
     "technologies": ["React", "Tailwind CSS"],
     "categoryKey": "internal"
+  },
+  {
+    "id": 12,
+    "key": "freeTube",
+    "imageName": "free-tube.png",
+    "url": "https://free-tube.pages.dev/",
+    "technologies": ["Cloudflare", "Svelte 5", "SvelteKit", "TailwindCSS"],
+    "categoryKey": "tool"
   }
 ]

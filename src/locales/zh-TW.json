@@ -63,6 +63,8 @@
       "generalErp": "企業ERP系統",
       "generalErpDesc": "模組化企業資源規劃系統，涵蓋訂單管理、採購、庫存、製令與財務會計等核心功能。",
       "internal": "企業內部系統",
+      "freeTube": "FreeTube",
+      "freeTubeDesc": "輕量化 YouTube 客戶端，去除干擾元素，提供簡潔專注的影片瀏覽體驗。",
       "tool": "工具網站"
     },
     "businessPreview": {
@@ -180,6 +182,8 @@
       "generalErp": "企業ERP系統",
       "generalErpDesc": "模組化企業資源規劃系統，涵蓋訂單管理、採購、庫存、製令與財務會計等核心功能。",
       "internal": "企業內部系統",
+      "freeTube": "FreeTube",
+      "freeTubeDesc": "輕量化 YouTube 客戶端，去除干擾元素，提供簡潔專注的影片瀏覽體驗。",
       "tool": "工具網站"
     },
     "ctaTitle": "打造您的專案？",

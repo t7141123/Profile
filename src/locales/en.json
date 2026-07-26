@@ -63,6 +63,8 @@
       "generalErp": "Enterprise ERP System",
       "generalErpDesc": "Modular enterprise resource planning system covering sales orders, purchasing, inventory, manufacturing, and financial accounting management.",
       "internal": "Internal System",
+      "freeTube": "FreeTube",
+      "freeTubeDesc": "A minimalist YouTube client that strips away distractions for a clean, focused video browsing experience.",
       "tool": "Tool Website"
     },
     "businessPreview": {
@@ -180,6 +182,8 @@
       "generalErp": "Enterprise ERP System",
       "generalErpDesc": "Modular enterprise resource planning system covering sales orders, purchasing, inventory, manufacturing, and financial accounting management.",
       "internal": "Internal System",
+      "freeTube": "FreeTube",
+      "freeTubeDesc": "A minimalist YouTube client that strips away distractions for a clean, focused video browsing experience.",
       "tool": "Tool Website"
     },
     "ctaTitle": "Build Your Project?",

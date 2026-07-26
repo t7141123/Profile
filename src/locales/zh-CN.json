@@ -63,6 +63,8 @@
       "generalErp": "企业ERP系统",
       "generalErpDesc": "模块化企业资源规划系统，涵盖订单管理、采购、库存、制令与财务会计等核心功能。",
       "internal": "企业内部系统",
+      "freeTube": "FreeTube",
+      "freeTubeDesc": "轻量化 YouTube 客户端，去除干扰元素，提供简洁专注的视频浏览体验。",
       "tool": "工具网站"
     },
     "businessPreview": {
@@ -180,6 +182,8 @@
       "generalErp": "企业ERP系统",
       "generalErpDesc": "模块化企业资源规划系统，涵盖订单管理、采购、库存、制令与财务会计等核心功能。",
       "internal": "企业内部系统",
+      "freeTube": "FreeTube",
+      "freeTubeDesc": "轻量化 YouTube 客户端，去除干扰元素，提供简洁专注的视频浏览体验。",
       "tool": "工具网站"
     },
     "ctaTitle": "打造您的项目？",
