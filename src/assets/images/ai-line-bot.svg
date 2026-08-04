@@ -1,0 +1,81 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06C755"/>
+      <stop offset="100%" stop-color="#06C755"/>
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Subtle grid pattern -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="500" y1="0" x2="500" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="700" y1="0" x2="700" y2="500"/>
+  </g>
+
+  <!-- Decorative circles -->
+  <circle cx="720" cy="60" r="90" fill="#3B82F6" opacity="0.12"/>
+  <circle cx="60" cy="440" r="70" fill="#8B5CF6" opacity="0.12"/>
+  <circle cx="680" cy="430" r="40" fill="#06C755" opacity="0.10"/>
+
+  <!-- Title badge -->
+  <rect x="60" y="40" rx="12" width="220" height="44" fill="#06C755" opacity="0.15"/>
+  <rect x="60" y="40" rx="12" width="220" height="44" fill="none" stroke="#06C755" stroke-width="1.5"/>
+  <circle cx="82" cy="62" r="7" fill="#06C755"/>
+  <text x="100" y="69" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="bold" fill="#06C755">AI LINE BOT</text>
+
+  <!-- Main heading -->
+  <text x="60" y="135" font-family="Helvetica, Arial, sans-serif" font-size="44" font-weight="800" fill="#FFFFFF">Smart AI Line Bot</text>
+  <text x="60" y="185" font-family="Helvetica, Arial, sans-serif" font-size="44" font-weight="800" fill="#FFFFFF">Assistant</text>
+  <text x="62" y="222" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#CBD5E1">AI-powered assistant that lives inside your Line chat.</text>
+
+  <!-- Chat bubbles -->
+  <!-- Left user message -->
+  <rect x="60" y="260" rx="18" width="230" height="52" fill="#334155"/>
+  <text x="80" y="286" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#E2E8F0">這個月的餐費總共多少？</text>
+  <text x="80" y="306" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#94A3B8">記帳 + 查詢 + 分析</text>
+
+  <!-- Bot reply -->
+  <rect x="320" y="330" rx="18" width="330" height="60" fill="url(#aiGrad)"/>
+  <text x="345" y="356" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF">本月份餐費共 8,450 元</text>
+  <text x="345" y="378" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#E0E7FF">比上個月省了 12%，外食減少了 8 次 👍</text>
+
+  <!-- Capability chips -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600">
+    <rect x="60" y="410" rx="14" width="120" height="34" fill="#06C755"/>
+    <text x="120" y="432" text-anchor="middle" fill="#052E16">即時問答</text>
+    <rect x="192" y="410" rx="14" width="120" height="34" fill="#3B82F6"/>
+    <text x="252" y="432" text-anchor="middle" fill="#FFFFFF">智能記帳</text>
+    <rect x="324" y="410" rx="14" width="120" height="34" fill="#8B5CF6"/>
+    <text x="384" y="432" text-anchor="middle" fill="#FFFFFF">群組筆記</text>
+    <rect x="456" y="410" rx="14" width="130" height="34" fill="#F59E0B"/>
+    <text x="521" y="432" text-anchor="middle" fill="#1C1917">任務提醒</text>
+    <rect x="598" y="410" rx="14" width="120" height="34" fill="#EF4444"/>
+    <text x="658" y="432" text-anchor="middle" fill="#FFFFFF">多國語言</text>
+  </g>
+</svg>

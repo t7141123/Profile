@@ -94,5 +94,13 @@
     "url": "https://free-tube.pages.dev/",
     "technologies": ["Cloudflare", "Svelte 5", "SvelteKit", "TailwindCSS"],
     "categoryKey": "tool"
+  },
+  {
+    "id": 13,
+    "key": "aiLineBot",
+    "imageName": "ai-line-bot.svg",
+    "url": "",
+    "technologies": ["LINE", "AI", "Node.js"],
+    "categoryKey": "tool"
   }
 ]

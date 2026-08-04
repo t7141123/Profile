@@ -4,6 +4,7 @@
       <img :src="project.image" :alt="project.title" loading="lazy" decoding="async" width="400" height="250" />
       <div class="portfolio-overlay">
         <a
+          v-if="project.url"
           :href="project.url"
           target="_blank"
           class="btn btn-primary-custom"
@@ -11,6 +12,10 @@
           <i class="bi bi-box-arrow-up-right me-2"></i>
           {{ $t("portfolio.viewSite") }}
         </a>
+        <span v-else class="overlay-badge">
+          <i class="bi bi-stars me-2"></i>
+          {{ $t("portfolio.noLink") }}
+        </span>
       </div>
     </div>
     <div class="portfolio-content">
@@ -100,6 +105,20 @@ defineProps({
 
 .portfolio-card:hover .portfolio-overlay {
   opacity: 1;
+}
+
+.overlay-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.25rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-full);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .portfolio-content {

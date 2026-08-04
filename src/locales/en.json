@@ -65,6 +65,8 @@
       "internal": "Internal System",
       "freeTube": "FreeTube",
       "freeTubeDesc": "A minimalist YouTube client that strips away distractions for a clean, focused video browsing experience.",
+      "aiLineBot": "AI Line Bot Development",
+      "aiLineBotDesc": "Custom AI Line bot that answers questions like an AI chat, tracks expenses, records group notes, sets reminders, translates languages, and more — all inside Line.",
       "tool": "Tool Website"
     },
     "businessPreview": {
@@ -154,6 +156,7 @@
       "all": "All",
       "other": "Other"
     },
+    "noLink": "Custom Project",
     "projects": {
       "actionLead": "Action Lead Information Co., Ltd.",
       "actionLeadDesc": "Professional corporate website for an IT company. Successfully established online brand identity and increased lead conversion rates.",
@@ -184,6 +187,8 @@
       "internal": "Internal System",
       "freeTube": "FreeTube",
       "freeTubeDesc": "A minimalist YouTube client that strips away distractions for a clean, focused video browsing experience.",
+      "aiLineBot": "AI Line Bot Development",
+      "aiLineBotDesc": "Custom AI Line bot that answers questions like an AI chat, tracks expenses, records group notes, sets reminders, translates languages, and more — all inside Line.",
       "tool": "Tool Website"
     },
     "ctaTitle": "Build Your Project?",

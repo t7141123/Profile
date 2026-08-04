@@ -65,6 +65,8 @@
       "internal": "企業內部系統",
       "freeTube": "FreeTube",
       "freeTubeDesc": "輕量化 YouTube 客戶端，去除干擾元素，提供簡潔專注的影片瀏覽體驗。",
+      "aiLineBot": "AI Line Bot 開發",
+      "aiLineBotDesc": "客製化 AI Line 機器人，可像 AI 聊天一樣回答問題、自動記帳、記錄群組事項、設定提醒、即時翻譯與多國語言回覆，通通在 Line 內完成。",
       "tool": "工具網站"
     },
     "businessPreview": {
@@ -154,6 +156,7 @@
       "all": "全部",
       "other": "其他"
     },
+    "noLink": "客製化專案",
     "projects": {
       "actionLead": "艾樂資訊股份有限公司",
       "actionLeadDesc": "為資訊科技公司打造的專業形象網站，採用現代化設計與響應式佈局。上線後協助企業建立線上品牌形象，有效提升客戶信任度與諮詢轉換率。",
@@ -184,6 +187,8 @@
       "internal": "企業內部系統",
       "freeTube": "FreeTube",
       "freeTubeDesc": "輕量化 YouTube 客戶端，去除干擾元素，提供簡潔專注的影片瀏覽體驗。",
+      "aiLineBot": "AI Line Bot 開發",
+      "aiLineBotDesc": "客製化 AI Line 機器人，可像 AI 聊天一樣回答問題、自動記帳、記錄群組事項、設定提醒、即時翻譯與多國語言回覆，通通在 Line 內完成。",
       "tool": "工具網站"
     },
     "ctaTitle": "打造您的專案？",
