@@ -1779,11 +1779,23 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Rainbow button (Magic UI) — special CTAs */
 .btn-rainbow {
+  position: relative;
+  overflow: hidden;
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  color: #fff !important;
   background: linear-gradient(90deg, #2563EB, #3B82F6, #60A5FA, #818CF8, #2563EB) !important;
   background-size: 200% auto !important;
-  color: #fff !important;
-  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+  transition: var(--transition-base);
   animation: rainbow-slide 4s linear infinite;
+}
+.btn-rainbow:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+  color: #fff !important;
 }
 @keyframes rainbow-slide {
   to { background-position: 200% center; }
