@@ -15,10 +15,11 @@
           href="https://line.me/ti/p/2w7bwfksdF"
           target="_blank"
           class="btn btn-line"
+          v-ripple
         >
           <i class="bi bi-line me-2"></i>{{ $t("home.addLine") }}
         </a>
-        <a :href="'mailto:' + $t('contact.emailValue')" class="btn btn-primary-custom">
+        <a :href="'mailto:' + $t('contact.emailValue')" class="btn btn-primary-custom" v-ripple>
           <i class="bi bi-envelope-fill me-2"></i>{{ $t("contact.emailLink") }}
         </a>
       </div>
@@ -43,7 +44,8 @@
                 <!-- Line Card -->
                 <div class="col-md-6">
                   <div
-                    class="glass-card contact-card h-100 d-flex align-items-center p-4"
+                    class="glass-card contact-card h-100 d-flex align-items-center p-4 border-beam spotlight-card"
+                  v-spotlight
                   >
                     <div class="contact-icon-wrapper me-4" style="background: rgba(6, 199, 85, 0.15)">
                       <i class="bi bi-line fs-2" style="color: var(--line-color)"></i>
@@ -67,7 +69,8 @@
                 <!-- Telegram Card -->
                 <div class="col-md-6">
                   <div
-                    class="glass-card contact-card h-100 d-flex align-items-center p-4"
+                    class="glass-card contact-card h-100 d-flex align-items-center p-4 border-beam spotlight-card"
+                  v-spotlight
                   >
                     <div class="contact-icon-wrapper me-4">
                       <i class="bi bi-telegram fs-2"></i>
@@ -90,7 +93,8 @@
                 <!-- Email Card -->
                 <div class="col-md-6">
                   <div
-                    class="glass-card contact-card h-100 d-flex align-items-center p-4"
+                    class="glass-card contact-card h-100 d-flex align-items-center p-4 border-beam spotlight-card"
+                  v-spotlight
                   >
                     <div class="contact-icon-wrapper me-4">
                       <i class="bi bi-envelope-fill fs-2"></i>
@@ -112,7 +116,8 @@
                 <!-- Working Hours Card -->
                 <div class="col-md-6">
                   <div
-                    class="glass-card contact-card h-100 d-flex align-items-center p-4"
+                    class="glass-card contact-card h-100 d-flex align-items-center p-4 border-beam spotlight-card"
+                  v-spotlight
                   >
                     <div class="contact-icon-wrapper me-4">
                       <i class="bi bi-clock-fill fs-2"></i>
@@ -131,7 +136,8 @@
                 <!-- Promise Card -->
                 <div class="col-md-6">
                   <div
-                    class="glass-card contact-card h-100 d-flex align-items-center p-4"
+                    class="glass-card contact-card h-100 d-flex align-items-center p-4 border-beam spotlight-card"
+                  v-spotlight
                   >
                     <div class="contact-icon-wrapper me-4">
                       <i class="bi bi-shield-check fs-2"></i>

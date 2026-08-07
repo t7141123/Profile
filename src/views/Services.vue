@@ -20,7 +20,7 @@
             v-for="service in mainServices"
             :key="service.id"
           >
-            <div class="glass-card service-detail-card h-100">
+            <div class="glass-card service-detail-card h-100 border-beam spotlight-card" v-spotlight>
               <div class="service-detail-header">
                 <div
                   class="service-detail-icon"
@@ -140,8 +140,9 @@
             :key="plan.id"
           >
             <div
-              class="glass-card pricing-card h-100"
+              class="glass-card pricing-card h-100 border-beam spotlight-card"
               :class="{ featured: plan.featured }"
+              v-spotlight
             >
               <div class="pricing-badge" v-if="plan.featured">
                 {{ $t("services.pricing.popular") }}
@@ -159,6 +160,7 @@
                 href="https://line.me/ti/p/2w7bwfksdF"
                 target="_blank"
                 class="btn btn-line w-100"
+                v-ripple
               >
                 <i class="bi bi-line me-3"></i>{{ $t("services.pricing.contact") }}
               </a>
@@ -244,6 +246,7 @@
             href="https://line.me/ti/p/2w7bwfksdF"
             target="_blank"
             class="btn btn-line btn-lg"
+            v-ripple
           >
             <i class="bi bi-line me-2"></i>{{ $t("services.ctaButton") }}
           </a>

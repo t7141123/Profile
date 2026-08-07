@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio-card h-100" :aria-label="project.title">
+  <div class="portfolio-card h-100 border-beam tilt-card" :aria-label="project.title" v-tilt="{ max: 6, lift: 8 }">
     <div class="portfolio-image">
       <img :src="project.image" :alt="project.title" loading="lazy" decoding="async" width="400" height="250" />
       <div class="portfolio-overlay">
@@ -8,6 +8,7 @@
           :href="project.url"
           target="_blank"
           class="btn btn-primary-custom"
+          v-ripple
         >
           <i class="bi bi-box-arrow-up-right me-2"></i>
           {{ $t("portfolio.viewSite") }}

@@ -68,6 +68,7 @@
                   href="https://line.me/ti/p/2w7bwfksdF"
                   target="_blank"
                   class="btn btn-line btn-lg"
+                  v-ripple
                 >
                   <i class="bi bi-line me-2"></i>{{ $t("portfolio.ctaButton") }}
                 </a>

@@ -75,6 +75,7 @@
                 href="https://line.me/ti/p/2w7bwfksdF"
                 target="_blank"
                 class="btn btn-line mt-4"
+                v-ripple
               >
                 <i class="bi bi-line me-2"></i>{{ $t("about.addLine") }}
               </a>
@@ -99,7 +100,10 @@
             v-for="category in skillCategories"
             :key="category.name"
           >
-            <div class="glass-card skill-category h-100">
+            <div
+              class="glass-card skill-category h-100 border-beam spotlight-card"
+              v-spotlight
+            >
               <div
                 class="skill-category-icon"
                 :style="{ background: category.gradient }"
@@ -168,7 +172,7 @@
             v-for="testimonial in testimonials"
             :key="testimonial.id"
           >
-            <div class="glass-card testimonial-card h-100">
+            <div class="glass-card testimonial-card h-100 border-beam spotlight-card" v-spotlight>
               <div class="testimonial-quote">
                 <i class="bi bi-quote"></i>
               </div>

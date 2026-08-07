@@ -19,7 +19,7 @@
               </p>
 
               <div class="hero-buttons">
-                <router-link to="/portfolio" class="btn btn-primary-custom">
+                <router-link to="/portfolio" class="btn btn-primary-custom" v-ripple>
                   <i class="bi bi-collection me-2"></i
                   >{{ $t("home.viewWorks") }}
                 </router-link>
@@ -27,6 +27,7 @@
                   href="https://line.me/ti/p/2w7bwfksdF"
                   target="_blank"
                   class="btn btn-line"
+                  v-ripple
                 >
                   <i class="bi bi-line me-2"></i>{{ $t("home.addLine") }}
                 </a>
@@ -36,7 +37,7 @@
 
           <div class="col-lg-6">
             <div class="hero-image text-center">
-              <div class="code-preview">
+              <div class="code-preview border-beam">
                 <div class="code-header">
                   <span class="dot red"></span>
                   <span class="dot yellow"></span>
@@ -76,7 +77,8 @@
           >
             <router-link
               to="/services"
-              class="glass-card service-card h-100 text-decoration-none"
+              class="glass-card service-card h-100 text-decoration-none border-beam spotlight-card"
+              v-spotlight
             >
               <div
                 class="service-icon"
@@ -115,7 +117,7 @@
         </div>
 
         <div class="text-center mt-5">
-          <router-link to="/portfolio" class="btn btn-outline-custom">
+          <router-link to="/portfolio" class="btn btn-outline-custom" v-ripple>
             {{ $t("home.viewAll") }} <i class="bi bi-arrow-right ms-2"></i>
           </router-link>
         </div>
@@ -135,6 +137,7 @@
             href="https://line.me/ti/p/2w7bwfksdF"
             target="_blank"
             class="btn btn-primary-custom btn-lg"
+            v-ripple
           >
             <i class="bi bi-line me-2"></i>{{ $t("home.ctaButton") }}
           </a>
@@ -200,6 +203,7 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
   text-align: left;
   max-width: 500px;
   margin: 0 auto;
+  position: relative;
 }
 
 .code-header {

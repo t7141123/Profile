@@ -20,6 +20,7 @@
             <router-link
               to="/"
               class="btn-primary-custom text-decoration-none d-inline-block"
+              v-ripple
             >
               <i class="bi bi-house-door me-2"></i
               >{{ $t("nav.home") || "Back to Home" }}
