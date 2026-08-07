@@ -1635,8 +1635,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===================================
-   Premium Effects
-   (Ported from Magic UI / Unlumen UI / SmoothUI — pure CSS)
+   Premium Effects v1 — Core (Magic UI / Unlumen UI / SmoothUI)
    =================================== */
 
 @property --beam-angle {
@@ -1707,7 +1706,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Ripple (SmoothUI / Magic UI) — pair with v-ripple directive */
 .btn-primary-custom,
 .btn-line,
-.btn-outline-custom {
+.btn-outline-custom,
+.filter-btn {
   position: relative;
   overflow: hidden;
 }
@@ -1742,13 +1742,115 @@ h1, h2, h3, h4, h5, h6 {
   100% { background-position: 200% 50%; }
 }
 
-/* Shiny Sweep on badges (Magic UI Shiny Text) */
-.section-badge {
+/* ===================================
+   Premium Effects v2 — Expanded
+   Button Upgrades · Badges · Cards · Backgrounds · Text · Scrollers
+   (Magic UI · SmoothUI · Unlumen UI · RetroUI · Animos)
+   =================================== */
+
+/* ── BUTTON UPGRADES ── */
+
+/* Auto-loop shimmer on primary buttons (Magic UI) */
+.btn-primary-custom::before {
+  animation: btn-shimmer 4s ease-in-out infinite;
+}
+.btn-primary-custom:hover::before {
+  animation: btn-shimmer-fast 0.7s ease-in-out forwards;
+}
+
+@keyframes btn-shimmer {
+  0%, 35% { left: -100%; }
+  45%, 55% { left: 100%; }
+  100% { left: 100%; }
+}
+@keyframes btn-shimmer-fast {
+  from { left: -100%; }
+  to { left: 100%; }
+}
+
+/* Press effect (RetroUI) — physical key press */
+.btn-primary-custom:active,
+.btn-line:active,
+.btn-outline-custom:active,
+.filter-btn:active {
+  transform: translateY(2px) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Rainbow button (Magic UI) — special CTAs */
+.btn-rainbow {
+  background: linear-gradient(90deg, #2563EB, #3B82F6, #60A5FA, #818CF8, #2563EB) !important;
+  background-size: 200% auto !important;
+  color: #fff !important;
+  font-weight: 700;
+  animation: rainbow-slide 4s linear infinite;
+}
+@keyframes rainbow-slide {
+  to { background-position: 200% center; }
+}
+
+/* Spin refresh on hover (Unlumen UI) */
+.spin-refresh .bi-arrow-repeat {
+  display: inline-block;
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.spin-refresh:hover .bi-arrow-repeat {
+  transform: rotate(360deg);
+}
+
+/* ── GLOW BADGE + PING DOT (Unlumen UI) ── */
+
+.glow-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.25);
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.glow-badge::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  background: rgba(37, 99, 235, 0.3);
+  filter: blur(10px);
+  opacity: 0.5;
+  z-index: -1;
+}
+.glow-badge .badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #3B82F6;
+  flex-shrink: 0;
+  animation: badge-ping 1.6s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+@keyframes badge-ping {
+  0%   { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.6); }
+  75%, 100% { box-shadow: 0 0 0 6px rgba(59, 130, 246, 0); }
+}
+
+/* Dark theme glow badge */
+[data-theme='dark'] .glow-badge {
+  background: rgba(59, 130, 246, 0.12);
+  border-color: rgba(59, 130, 246, 0.35);
+}
+
+/* Keep legacy badge-sweep on non-upgraded .section-badge */
+.section-badge:not(.glow-badge) {
   position: relative;
   overflow: hidden;
 }
-
-.section-badge::after {
+.section-badge:not(.glow-badge)::after {
   content: "";
   position: absolute;
   top: -50%;
@@ -1760,19 +1862,290 @@ h1, h2, h3, h4, h5, h6 {
   animation: badge-sweep 3.5s ease-in-out infinite;
   pointer-events: none;
 }
-
 @keyframes badge-sweep {
   0%, 55% { left: -60%; }
   90%, 100% { left: 160%; }
 }
 
-/* Respect reduced-motion preferences */
+/* ── HARD SHADOW ACCENT (RetroUI) ── */
+
+.crd-hard {
+  border: 2px solid rgba(37, 99, 235, 0.25) !important;
+  box-shadow: 4px 4px 0 0 rgba(37, 99, 235, 0.12) !important;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.crd-hard:hover {
+  box-shadow: 1px 1px 0 0 rgba(37, 99, 235, 0.18) !important;
+  transform: translate(3px, 3px);
+}
+
+/* ── METEORS (Magic UI) ── */
+
+.meteor-area {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+.meteor {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 9999px;
+  background: #60A5FA;
+  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.25), 0 0 30px 2px #3B82F6;
+  animation: meteor 6s linear infinite;
+  animation-delay: var(--mtd, 0s);
+  top: var(--mty, 10%);
+  left: var(--mtx, 90%);
+}
+.meteor::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, #3B82F6, transparent);
+}
+@keyframes meteor {
+  0%   { transform: translate(0, 0) rotate(215deg); opacity: 1; }
+  60%  { opacity: 1; }
+  100% { transform: translate(-60vw, 60vh) rotate(215deg); opacity: 0; }
+}
+
+/* ── AURORA BARS (Unlumen UI approximation) ── */
+
+.aurora-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 200px;
+  padding: 12px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  opacity: 0.15;
+}
+.aurora-bars span {
+  flex: 1;
+  border-radius: 3px 3px 0 0;
+  background: linear-gradient(to top, #2563EB, #3B82F6, #60A5FA, #93C5FD, transparent);
+  animation: bar-breathe 4s ease-in-out infinite;
+  animation-delay: var(--abd, 0s);
+}
+@keyframes bar-breathe {
+  0%, 100% { height: 15%; }
+  50%      { height: 95%; }
+}
+
+/* ── FLUID BLOBS (Unlumen UI approximation) ── */
+
+.blob-bg {
+  position: relative;
+  overflow: hidden;
+}
+.blob-bg::before,
+.blob-bg::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  pointer-events: none;
+  z-index: 0;
+  animation: blob-drift 16s ease-in-out infinite alternate;
+}
+.blob-bg::before {
+  width: 320px; height: 320px;
+  background: rgba(37, 99, 235, 0.18);
+  top: -80px; left: -40px;
+}
+.blob-bg::after {
+  width: 280px; height: 280px;
+  background: rgba(59, 130, 246, 0.14);
+  bottom: -60px; right: -30px;
+  animation-delay: -8s;
+}
+@keyframes blob-drift {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(40px, -30px) scale(1.2); }
+}
+
+/* ── HOVER EXPAND GRID (Unlumen UI) ── */
+
+.hover-expand {
+  display: flex;
+  gap: 1rem;
+}
+.hover-expand > * {
+  flex: 1;
+  min-width: 0;
+  transition: flex 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+  overflow: hidden;
+}
+.hover-expand:hover > * {
+  flex: 1;
+}
+.hover-expand > *:hover {
+  flex: 2.5;
+}
+
+/* ── PROGRESSIVE BLUR FADE EDGES (Unlumen UI) ── */
+
+.prog-fade-t {
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 80px, #000 calc(100% - 80px), transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 80px, #000 calc(100% - 80px), transparent);
+}
+
+/* ── SCROLL PROGRESS BAR (Magic UI) ── */
+
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #2563EB, #3B82F6, #60A5FA);
+  z-index: 9999;
+  transition: width 0.1s linear;
+  pointer-events: none;
+  border-radius: 0 2px 0 0;
+}
+
+/* ── TEXT EFFECTS ── */
+
+/* Shimmering Text (Unlumen UI) */
+.text-shimmer {
+  background-image:
+    linear-gradient(90deg, transparent calc(50% - 16px), #3B82F6, transparent calc(50% + 16px)),
+    linear-gradient(var(--text-secondary), var(--text-secondary));
+  background-size: 250% 100%, auto;
+  background-repeat: no-repeat, padding-box;
+  background-position: 100% center, center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: txt-shimmer 2.5s linear infinite;
+}
+@keyframes txt-shimmer {
+  from { background-position: 100% center, center; }
+  to   { background-position: 0% center, center; }
+}
+
+/* Outline/Stroke Text (RetroUI) */
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(37, 99, 235, 0.3);
+  paint-order: stroke fill;
+}
+
+/* Wave Text (SmoothUI) */
+.wave-text span {
+  display: inline-block;
+  animation: wave-float 1.8s ease-in-out infinite;
+  animation-delay: var(--wd, 0s);
+}
+@keyframes wave-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+
+/* Text 3D Flip on hover (Magic UI) */
+.flip-3d {
+  perspective: 600px;
+  display: inline-block;
+}
+.flip-3d span {
+  display: inline-block;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.flip-3d:hover span {
+  transform: rotateY(360deg);
+}
+
+/* ── DECORATIVE BACKGROUNDS ── */
+
+/* Flickering Grid (Magic UI) */
+.grid-flicker {
+  background-image:
+    linear-gradient(to right, rgba(59, 130, 246, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(59, 130, 246, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: grid-flk 3s steps(1) infinite;
+}
+@keyframes grid-flk {
+  0%, 100% { opacity: 1; }
+  30%      { opacity: 0.5; }
+  60%      { opacity: 0.85; }
+}
+
+/* Dot pattern background (Magic UI) */
+.dot-pattern {
+  background-image: radial-gradient(rgba(37, 99, 235, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* ── LOADING & SKELETON ── */
+
+/* Shimmer Skeleton (Unlumen UI) */
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: rgba(148, 163, 184, 0.12);
+  border-radius: 0.375rem;
+}
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent 0%,
+    rgba(37, 99, 235, 0.08) 50%, transparent 100%);
+  animation: skel-shim 1.6s ease-in-out infinite;
+}
+@keyframes skel-shim {
+  100% { transform: translateX(100%); }
+}
+
+/* Loader Dots (RetroUI) */
+.ld-dots {
+  display: flex; gap: 0.4rem; justify-content: center;
+}
+.ld-dots span {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #2563EB;
+  animation: dot-bounce 0.6s ease-in-out infinite alternate;
+}
+.ld-dots span:nth-child(2) { animation-delay: 0.2s; }
+.ld-dots span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes dot-bounce {
+  to { transform: translateY(-10px); opacity: 0.4; }
+}
+
+/* ── REDUCED MOTION ── */
 @media (prefers-reduced-motion: reduce) {
   .border-beam::before,
   .hero-title .highlight,
   .section-title .highlight,
   .page-title .highlight,
-  .section-badge::after {
-    animation: none;
+  .section-badge:not(.glow-badge)::after,
+  .glow-badge .badge-dot,
+  .btn-primary-custom::before,
+  .btn-rainbow,
+  .meteor,
+  .aurora-bars span,
+  .blob-bg::before,
+  .blob-bg::after,
+  .text-shimmer,
+  .wave-text span,
+  .flip-3d:hover span,
+  .skeleton::after,
+  .ld-dots span {
+    animation: none !important;
+  }
+  .crd-hard:hover {
+    transform: none !important;
+    box-shadow: 4px 4px 0 0 rgba(37, 99, 235, 0.12) !important;
   }
 }

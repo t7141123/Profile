@@ -6,7 +6,7 @@
     <div class="container position-relative" style="z-index: 1">
       <div class="row justify-content-center">
         <div class="col-md-8 col-lg-6">
-          <div class="glass-card text-center p-5 animate-fade-in">
+          <div class="glass-card text-center p-5 animate-fade-in border-beam crd-hard">
             <h1 class="error-code">404</h1>
             <h2 class="error-title mb-4">
               {{ $t("notFound.title") || "Page Not Found" }}

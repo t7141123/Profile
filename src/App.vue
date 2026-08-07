@@ -3,6 +3,9 @@
     <!-- Skip Link for Accessibility -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
     <!-- Navigation Bar -->
     <Navbar />
 
@@ -24,7 +27,7 @@
 </template>
 
 <script setup>
-import { watch, onMounted } from 'vue'
+import { watch, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import { isLocale } from './router'
@@ -77,6 +80,20 @@ onMounted(() => {
   if (routeLocale && isLocale(routeLocale)) {
     locale.value = routeLocale
   }
+
+  /* Scroll Progress Bar */
+  const bar = document.getElementById('scroll-progress')
+  if (!bar) return
+  const update = () => {
+    const h = document.documentElement.scrollHeight - window.innerHeight
+    bar.style.width = h > 0 ? `${(window.scrollY / h) * 100}%` : '0%'
+  }
+  window.addEventListener('scroll', update, { passive: true })
+  update()
+
+  onUnmounted(() => {
+    window.removeEventListener('scroll', update)
+  })
 })
 </script>
 

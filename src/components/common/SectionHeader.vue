@@ -1,6 +1,6 @@
 <template>
   <div class="section-header">
-    <span v-if="badge" class="section-badge">{{ badge }}</span>
+    <span v-if="badge" class="glow-badge"><span class="badge-dot"></span>{{ badge }}</span>
     <h2 class="section-title">
       {{ title }}<span v-if="highlight" class="highlight">{{ highlight }}</span>
     </h2>
@@ -37,19 +37,6 @@ defineProps({
   text-align: center;
   max-width: 800px;
   margin: 0 auto 4rem;
-}
-
-.section-badge {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: rgba(37, 99, 235, 0.1);
-  color: var(--primary-color);
-  border-radius: 50px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 .section-title {

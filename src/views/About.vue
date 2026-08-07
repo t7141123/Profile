@@ -172,7 +172,7 @@
             v-for="testimonial in testimonials"
             :key="testimonial.id"
           >
-            <div class="glass-card testimonial-card h-100 border-beam spotlight-card" v-spotlight>
+            <div class="glass-card testimonial-card h-100 border-beam spotlight-card crd-hard" v-spotlight>
               <div class="testimonial-quote">
                 <i class="bi bi-quote"></i>
               </div>

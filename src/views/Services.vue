@@ -66,7 +66,7 @@
           </p>
         </div>
 
-        <div class="tech-marquee-container">
+        <div class="tech-marquee-container prog-fade-t">
           <!-- Row 1: Scroll Left -->
           <div class="tech-marquee-row">
             <div class="marquee-track scroll-left">
@@ -245,7 +245,7 @@
           <a
             href="https://line.me/ti/p/2w7bwfksdF"
             target="_blank"
-            class="btn btn-line btn-lg"
+            class="btn btn-rainbow btn-lg"
             v-ripple
           >
             <i class="bi bi-line me-2"></i>{{ $t("services.ctaButton") }}

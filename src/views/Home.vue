@@ -3,6 +3,13 @@
     <!-- Hero Section -->
     <section class="hero-section">
       <TechBackground />
+      <div class="meteor-area">
+        <span class="meteor" style="--mtd: 0s; --mty: 5%; --mtx: 85%;"></span>
+        <span class="meteor" style="--mtd: 2s; --mty: 18%; --mtx: 92%;"></span>
+        <span class="meteor" style="--mtd: 4s; --mty: 35%; --mtx: 78%;"></span>
+        <span class="meteor" style="--mtd: 1.5s; --mty: 55%; --mtx: 88%;"></span>
+        <span class="meteor" style="--mtd: 3.2s; --mty: 75%; --mtx: 82%;"></span>
+      </div>
 
       <div class="container">
         <div class="row align-items-center">
@@ -10,7 +17,7 @@
             <div class="hero-content">
               <h1 class="hero-title">
                 {{ $t("home.title") }}<br />
-                <span class="highlight">David Liu</span>
+                <span class="highlight" v-scramble>David Liu</span>
               </h1>
 
               <p class="hero-subtitle">
@@ -126,6 +133,12 @@
 
     <!-- CTA Section -->
     <section class="section cta-section no-divider">
+      <div class="aurora-bars" aria-hidden="true">
+        <span style="--abd: 0s;"></span><span style="--abd: 0.2s;"></span><span style="--abd: 0.4s;"></span>
+        <span style="--abd: 0.6s;"></span><span style="--abd: 0.8s;"></span><span style="--abd: 1s;"></span>
+        <span style="--abd: 1.2s;"></span><span style="--abd: 1.4s;"></span><span style="--abd: 1.6s;"></span>
+        <span style="--abd: 1.8s;"></span>
+      </div>
       <div class="container">
         <div class="cta-content text-center">
           <h2 class="cta-title">{{ $t("home.ctaTitle") }}</h2>
@@ -136,7 +149,7 @@
           <a
             href="https://line.me/ti/p/2w7bwfksdF"
             target="_blank"
-            class="btn btn-primary-custom btn-lg"
+            class="btn btn-rainbow btn-lg"
             v-ripple
           >
             <i class="bi bi-line me-2"></i>{{ $t("home.ctaButton") }}
@@ -301,6 +314,14 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
       transparent 50%
     );
   pointer-events: none;
+}
+
+.cta-section .aurora-bars {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  height: 100%;
+  opacity: 0.12;
 }
 
 .cta-content {

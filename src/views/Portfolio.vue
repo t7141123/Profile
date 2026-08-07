@@ -23,6 +23,7 @@
               class="filter-btn"
               :class="{ active: selectedCategory === filter.key }"
               @click="selectedCategory = filter.key"
+              v-ripple
             >
               <i :class="filter.icon" class="filter-icon"></i>
               {{ filter.label }}
@@ -45,7 +46,7 @@
     <!-- NDA Notice & CTA Section -->
     <section class="section nda-section no-divider">
       <div class="container">
-        <div class="nda-card">
+        <div class="nda-card crd-hard">
           <div class="row align-items-center">
             <div class="col-lg-8">
               <h3 class="nda-title">
