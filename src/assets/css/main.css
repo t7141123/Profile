@@ -2183,6 +2183,9 @@ h1, h2, h3, h4, h5, h6 {
   .hero-title .highlight,
   .section-title .highlight,
   .page-title .highlight,
+  .hero-title > .highlight > .reveal-word,
+  .section-title > .highlight > .reveal-word,
+  .page-title > .highlight > .reveal-word,
   .section-badge:not(.glow-badge)::after,
   .glow-badge .badge-dot,
   .btn-primary-custom::before,
@@ -2224,6 +2227,50 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
   filter: blur(0);
   transform: translateY(0);
+}
+
+/* When a reveal-word lives inside .highlight (gradient text),
+   the parent's -webkit-text-fill-color: transparent would hide it.
+   Re-apply the gradient to the word itself. */
+.highlight > .reveal-word {
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.section-title > .highlight > .reveal-word {
+  background: var(--gradient-primary);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.page-title > .highlight > .reveal-word {
+  background: linear-gradient(135deg, #818CF8 0%, #A78BFA 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.hero-title > .highlight > .reveal-word {
+  background: linear-gradient(135deg, #38BDF8 0%, #818CF8 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.hero-title > .highlight > .reveal-word,
+.section-title > .highlight > .reveal-word,
+.page-title > .highlight > .reveal-word {
+  animation: gradient-shift 6s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
