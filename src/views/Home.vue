@@ -44,8 +44,9 @@
 
           <div class="col-lg-6">
             <div class="hero-image text-center">
-              <OrbitingBadges />
-              <div class="code-preview border-beam">
+              <div class="hero-visual">
+                <OrbitingBadges />
+                <div class="code-preview border-beam">
                 <div class="code-header">
                   <span class="dot red"></span>
                   <span class="dot yellow"></span>
@@ -60,10 +61,11 @@
   <span class="property">{{ $t('home.businessPreview.timeline') }}</span>: <span class="string">"{{ $t('home.businessPreview.timelineValue') }}"</span>,
   <span class="property">{{ $t('home.businessPreview.result') }}</span>: <span class="string">"{{ $t('home.businessPreview.resultValue') }}"</span>
 };</code></pre>
+                </div>
+              </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
     </section>
 
@@ -211,9 +213,16 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
   border: 1px solid rgba(37, 99, 235, 0.1);
   box-shadow: var(--shadow-xl);
   text-align: left;
-  max-width: 500px;
+  max-width: 460px;
   margin: 0 auto;
   position: relative;
+  z-index: 1;
+}
+
+.hero-visual {
+  position: relative;
+  display: inline-block;
+  width: 100%;
 }
 
 .code-header {
@@ -394,22 +403,14 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
   }
 }
 
-/* Orbiting stage sits above the code preview as a decorative halo */
-.hero-image :deep(.orbiting-stage) {
-  margin-bottom: 1.25rem;
-  opacity: 0.95;
+/* Orbiting stage sits behind the code preview as a halo */
+.hero-visual :deep(.orbiting-stage) {
+  /* Stage is now absolute-positioned (centered over hero-visual) */
 }
 
 @media (max-width: 991.98px) {
-  .hero-image :deep(.orbiting-stage) {
-    max-width: 320px;
-    margin: 0 auto 1.25rem;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .hero-image :deep(.orbiting-stage) {
-    max-width: 240px;
+  .code-preview {
+    margin-top: 0;
   }
 }
 </style>
