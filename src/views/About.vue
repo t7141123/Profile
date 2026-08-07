@@ -19,7 +19,7 @@
             <div class="about-image">
               <img src="@/assets/images/profile-new.jpg" alt="David Liu" loading="lazy" decoding="async" width="400" height="500" style="width: auto; max-width: 100%; height: auto;" />
               <div class="experience-badge">
-                <span class="years">7+</span>
+                <span class="years">9+</span>
                 <span class="text">{{ $t("about.yearsExp") }}</span>
               </div>
             </div>
