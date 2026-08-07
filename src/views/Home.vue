@@ -20,7 +20,7 @@
                 <span class="highlight" v-scramble>David Liu</span>
               </h1>
 
-              <p class="hero-subtitle">
+              <p class="hero-subtitle" v-reveal>
                 {{ $t("home.subtitle") }}<br />
                 {{ $t("home.subtitle2") }}
               </p>
@@ -44,6 +44,7 @@
 
           <div class="col-lg-6">
             <div class="hero-image text-center">
+              <OrbitingBadges />
               <div class="code-preview border-beam">
                 <div class="code-header">
                   <span class="dot red"></span>
@@ -160,6 +161,7 @@ import { computed } from "vue";
 import { useI18n } from "vue-i18n";
 import SectionHeader from "@/components/common/SectionHeader.vue";
 import TechBackground from "@/components/home/TechBackground.vue";
+import OrbitingBadges from "@/components/home/OrbitingBadges.vue";
 import PortfolioCard from "@/components/common/PortfolioCard.vue";
 import { useProjects } from "@/composables/useProjects";
 
@@ -389,6 +391,25 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
 @media (max-width: 991.98px) {
   .code-preview {
     margin-top: 2rem;
+  }
+}
+
+/* Orbiting stage sits above the code preview as a decorative halo */
+.hero-image :deep(.orbiting-stage) {
+  margin-bottom: 1.25rem;
+  opacity: 0.95;
+}
+
+@media (max-width: 991.98px) {
+  .hero-image :deep(.orbiting-stage) {
+    max-width: 320px;
+    margin: 0 auto 1.25rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-image :deep(.orbiting-stage) {
+    max-width: 240px;
   }
 }
 </style>

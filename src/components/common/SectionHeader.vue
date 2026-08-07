@@ -1,10 +1,10 @@
 <template>
   <div class="section-header">
     <span v-if="badge" class="glow-badge"><span class="badge-dot"></span>{{ badge }}</span>
-    <h2 class="section-title">
+    <h2 class="section-title" v-reveal>
       {{ title }}<span v-if="highlight" class="highlight">{{ highlight }}</span>
     </h2>
-    <p v-if="description" class="section-description">
+    <p v-if="description" class="section-description" v-reveal>
       {{ description }}
     </p>
   </div>

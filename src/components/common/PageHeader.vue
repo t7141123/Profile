@@ -21,6 +21,7 @@
           <h1
             class="page-title animate-fade-in-up"
             :class="{ 'page-title-light': isLight }"
+            v-reveal
           >
             {{ title }}<span class="highlight">{{ highlight }}</span>
           </h1>
@@ -29,6 +30,7 @@
             v-if="description"
             class="page-description animate-fade-in-up delay-1"
             :class="{ 'page-description-light': isLight }"
+            v-reveal
           >
             {{ description }}
           </p>

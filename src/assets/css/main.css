@@ -2206,6 +2206,175 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===================================
+   v-reveal — Per-word blur/fade entrance (Magic UI Text Animate)
+   =================================== */
+[data-reveal-ready] .reveal-word {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(var(--reveal-blur, 6px));
+  transform: translateY(var(--reveal-y, 10px));
+  transition:
+    opacity var(--reveal-duration, 700ms) cubic-bezier(0.22, 1, 0.36, 1),
+    filter var(--reveal-duration, 700ms) cubic-bezier(0.22, 1, 0.36, 1),
+    transform var(--reveal-duration, 700ms) cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, filter, transform;
+}
+
+[data-reveal-ready].is-revealed .reveal-word {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal-ready] .reveal-word {
+    opacity: 1;
+    filter: none;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ===================================
+   Orbiting Badges (Magic UI Orbiting Circles)
+   =================================== */
+.orbiting-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 480px;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.orbiting-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36%;
+  height: 36%;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: clamp(0.9rem, 1.4vw, 1.15rem);
+  letter-spacing: 0.5px;
+  box-shadow:
+    0 0 0 1px rgba(37, 99, 235, 0.18),
+    0 12px 40px rgba(37, 99, 235, 0.35);
+  z-index: 2;
+}
+
+.orbiting-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: 1px dashed var(--border-color);
+  transform: translate(-50%, -50%);
+}
+
+.orbiting-ring-outer {
+  width: 100%;
+  height: 100%;
+  animation: orbit-spin 22s linear infinite;
+}
+
+.orbiting-ring-inner {
+  width: 68%;
+  height: 68%;
+  animation: orbit-spin-reverse 28s linear infinite;
+}
+
+.orbiting-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: clamp(56px, 9vw, 78px);
+  height: clamp(56px, 9vw, 78px);
+  margin: calc(clamp(56px, 9vw, 78px) / -2);
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: clamp(0.7rem, 1vw, 0.85rem);
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  animation: orbit-counter 22s linear infinite;
+}
+
+.orbiting-ring-inner .orbiting-badge {
+  animation: orbit-counter 28s linear infinite reverse;
+  width: clamp(48px, 7vw, 64px);
+  height: clamp(48px, 7vw, 64px);
+  margin: calc(clamp(48px, 7vw, 64px) / -2);
+}
+
+.orbiting-badge i {
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  color: var(--primary-color);
+}
+
+/* Position 3 badges evenly on each ring (120° apart) */
+.orbiting-badge.pos-0 { transform: rotate(0deg) translateX(var(--ring-r)) rotate(0deg); }
+.orbiting-badge.pos-1 { transform: rotate(120deg) translateX(var(--ring-r)) rotate(-120deg); }
+.orbiting-badge.pos-2 { transform: rotate(240deg) translateX(var(--ring-r)) rotate(-240deg); }
+
+.orbiting-ring-outer { --ring-r: 50%; }
+.orbiting-ring-inner { --ring-r: 34%; }
+
+@keyframes orbit-spin {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes orbit-spin-reverse {
+  to { transform: translate(-50%, -50%) rotate(-360deg); }
+}
+
+/* Counter-rotate badges so icons stay upright */
+@keyframes orbit-counter {
+  from { /* placeholder */ }
+}
+
+.orbiting-ring-outer .orbiting-badge { animation-name: orbit-counter-outer; }
+.orbiting-ring-inner .orbiting-badge { animation-name: orbit-counter-inner; }
+
+@keyframes orbit-counter-outer {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(-360deg); }
+}
+
+@keyframes orbit-counter-inner {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbiting-ring-outer,
+  .orbiting-ring-inner,
+  .orbiting-badge {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .orbiting-stage { max-width: 320px; }
+}
+
+@media (max-width: 575.98px) {
+  .orbiting-stage { max-width: 260px; }
+}
+
+/* ===================================
    Theme Transition (smooth dark/light switch)
    .theme-transition is temporarily added to <html> by useTheme.js
    =================================== */
