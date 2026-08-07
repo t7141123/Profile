@@ -133,12 +133,7 @@
 
     <!-- CTA Section -->
     <section class="section cta-section no-divider">
-      <div class="aurora-bars" aria-hidden="true">
-        <span style="--abd: 0s;"></span><span style="--abd: 0.2s;"></span><span style="--abd: 0.4s;"></span>
-        <span style="--abd: 0.6s;"></span><span style="--abd: 0.8s;"></span><span style="--abd: 1s;"></span>
-        <span style="--abd: 1.2s;"></span><span style="--abd: 1.4s;"></span><span style="--abd: 1.6s;"></span>
-        <span style="--abd: 1.8s;"></span>
-      </div>
+      <div class="aurora-glow" aria-hidden="true"></div>
       <div class="container">
         <div class="cta-content text-center">
           <h2 class="cta-title">{{ $t("home.ctaTitle") }}</h2>
@@ -316,12 +311,11 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
   pointer-events: none;
 }
 
-.cta-section .aurora-bars {
+.cta-section .aurora-glow {
   position: absolute;
   inset: 0;
   z-index: 0;
   height: 100%;
-  opacity: 0.12;
 }
 
 .cta-content {
