@@ -106,4 +106,10 @@ const currentYear = new Date().getFullYear();
   font-size: 0.9rem;
   opacity: 0.8;
 }
+
+@media (max-width: 767.98px) {
+  .footer {
+    padding: 3rem 1.25rem 1.5rem;
+  }
+}
 </style>

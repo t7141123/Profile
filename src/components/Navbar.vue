@@ -215,6 +215,15 @@ onUnmounted(() => {
   z-index: 1002;
 }
 
+@media (max-width: 359.98px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .navbar-brand .bi {
+    margin-right: 0.35rem !important;
+  }
+}
+
 /* =========================================
    Desktop Nav Link Styles
    ========================================= */

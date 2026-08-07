@@ -64,4 +64,14 @@ onUnmounted(() => {
 .back-to-top:active {
   transform: scale(0.95);
 }
+
+@media (max-width: 575.98px) {
+  .back-to-top {
+    bottom: 1rem;
+    right: 1rem;
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+  }
+}
 </style>

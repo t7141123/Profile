@@ -32,20 +32,23 @@
   --bg-primary: #F8FAFC;      /* Cool light gray with blue tint */
   --bg-secondary: #FFFFFF;    /* Pure white */
   --bg-accent: #F1F5F9;       /* Light slate for sections */
-  --bg-warm: #FEF3C7;         /* Warm amber for highlights (CTA, etc.) */
+  --bg-warm: #FFFBEB;         /* Soft warm amber for highlights (CTA, etc.) */
   
   /* Text Colors - Professional and readable */
   --text-primary: #1E293B;    /* Slate 800 - professional dark */
   --text-secondary: #64748B;  /* Slate 600 */
-  --text-muted: #94A3B8;      /* Slate 400 */
+  --text-muted: #8494AB;      /* Slate 400 adjusted for better contrast */
   --text-light: #F8FAFC;      /* For dark backgrounds */
 
   /* Professional Blue Gradients - No Purple */
   --gradient-primary: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
   --gradient-blue: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
   --gradient-light: linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%);
-  --gradient-warm: linear-gradient(135deg, #F59E0B 0%, #F97316 100%);
+  --gradient-warm: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
   --gradient-hero: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(59, 130, 246, 0.08) 100%);
+  
+  /* Borders - unified light-mode border color */
+  --border-color: rgba(15, 23, 42, 0.08);
   
   /* Clean Shadows with blue tint */
   --shadow-sm: 0 1px 2px 0 rgba(37, 99, 235, 0.05);
@@ -1048,13 +1051,35 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .btn-primary-custom,
-  .btn-outline-custom {
-    padding: 0.75rem 1.5rem;
-    font-size: 0.9rem;
+  .btn-outline-custom,
+  .btn-line,
+  .btn-rainbow {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.92rem;
   }
 
   .hero-title {
     font-size: 2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .cta-section {
+    padding: 3rem 1.25rem !important;
+    margin: 4rem auto 3rem;
+  }
+
+  .filter-btn {
+    padding: 0.8rem 1.4rem;
+    font-size: 0.88rem;
   }
 
   .section-header {
@@ -2159,5 +2184,53 @@ h1, h2, h3, h4, h5, h6 {
   .crd-hard:hover {
     transform: none !important;
     box-shadow: 4px 4px 0 0 rgba(37, 99, 235, 0.12) !important;
+  }
+}
+
+/* ===================================
+   Theme Transition (smooth dark/light switch)
+   .theme-transition is temporarily added to <html> by useTheme.js
+   =================================== */
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+  transition: background-color 0.35s ease,
+              color 0.35s ease,
+              border-color 0.35s ease,
+              box-shadow 0.35s ease,
+              fill 0.35s ease !important;
+  transition-delay: 0s !important;
+}
+
+/* ===================================
+   Global Mobile / Touch UX refinements
+   =================================== */
+
+/* Prevent horizontal scroll from decorative elements (orbs, meteors) */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Remove tap highlight + click delay on touch devices */
+a,
+button,
+.btn,
+input,
+select,
+textarea,
+[role='button'] {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* Respect reduced-motion for the theme cross-fade */
+@media (prefers-reduced-motion: reduce) {
+  html.theme-transition,
+  html.theme-transition *,
+  html.theme-transition *::before,
+  html.theme-transition *::after {
+    transition: none !important;
   }
 }

@@ -69,6 +69,8 @@ const { localePath } = useLocale();
   left: 0;
   width: 100%;
   height: 100vh;
+  height: 100dvh; /* handles mobile browser address bar */
+  min-height: -webkit-fill-available;
   background: rgba(15, 23, 42, 0.98);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -76,7 +78,8 @@ const { localePath } = useLocale();
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 2rem 1.5rem;
+  overflow-y: auto; /* safety on short screens */
 }
 
 .mobile-menu-container {
@@ -86,6 +89,7 @@ const { localePath } = useLocale();
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  padding: 1rem 0;
 }
 
 .mobile-nav-list {
@@ -103,7 +107,11 @@ const { localePath } = useLocale();
   color: var(--text-secondary);
   text-decoration: none;
   transition: all 0.3s ease;
-  display: inline-block;
+  min-height: 44px; /* comfortable touch target */
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mobile-nav-link:hover,
@@ -157,9 +165,10 @@ const { localePath } = useLocale();
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--text-secondary);
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.1rem;
   border-radius: 50px;
   font-size: 0.875rem;
+  min-height: 40px;
   transition: all 0.3s ease;
 }
 
@@ -178,5 +187,29 @@ const { localePath } = useLocale();
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+/* Compact layout on short / narrow screens */
+@media (max-height: 600px) {
+  .mobile-menu-container {
+    gap: 1.5rem;
+  }
+  .mobile-nav-list {
+    gap: 0.5rem;
+  }
+  .mobile-nav-link {
+    font-size: 1.5rem;
+    min-height: 38px;
+  }
+  .mobile-lang-switcher {
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 359.98px) {
+  .mobile-nav-link {
+    font-size: 1.6rem;
+  }
 }
 </style>
