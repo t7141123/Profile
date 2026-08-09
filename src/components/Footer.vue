@@ -2,15 +2,15 @@
   <footer class="footer">
     <div class="container text-center">
       <!-- Brand Section -->
-      <div class="footer-brand mb-3">
+      <div class="footer-brand mb-2">
         <i class="bi bi-code-slash me-2"></i>{{ $t("footer.brand") }}
       </div>
-      <p class="footer-description mx-auto mb-4" style="max-width: 600px;">
+      <p class="footer-description mx-auto mb-3" style="max-width: 600px;">
         {{ $t("footer.description") }}
       </p>
 
       <!-- Social Links -->
-      <div class="social-links mb-5 d-flex justify-content-center gap-3">
+      <div class="social-links mb-3 d-flex justify-content-center gap-3">
         <a
           href="https://line.me/ti/p/2w7bwfksdF"
           target="_blank"
@@ -56,13 +56,13 @@ const currentYear = new Date().getFullYear();
 <style scoped>
 .footer {
   background: var(--bg-secondary);
-  padding: 4rem 0 2rem;
+  padding: 2.5rem 0 1.5rem;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   color: var(--text-secondary);
 }
 
 .footer-brand {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 800;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
@@ -74,19 +74,19 @@ const currentYear = new Date().getFullYear();
 .footer-description {
   color: var(--text-secondary);
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .social-link {
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(59, 130, 246, 0.1);
   border-radius: var(--radius-lg);
   color: var(--primary-color);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   transition: var(--transition-base);
   text-decoration: none;
 }
@@ -109,7 +109,7 @@ const currentYear = new Date().getFullYear();
 
 @media (max-width: 767.98px) {
   .footer {
-    padding: 3rem 1.25rem 1.5rem;
+    padding: 2rem 1.25rem 1.25rem;
   }
 }
 </style>
