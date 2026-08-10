@@ -110,13 +110,6 @@ export default {
       if (el._revealInit) return;
       el._revealInit = true;
 
-      const opts = binding.value || {};
-      const stagger = opts.stagger ?? 60;
-      const blur = opts.blur ?? 6;
-      const y = opts.y ?? 10;
-      const duration = opts.duration ?? 700;
-      const once = opts.once ?? true;
-
       const reduce = window.matchMedia(
         "(prefers-reduced-motion: reduce)"
       ).matches;
@@ -125,97 +118,109 @@ export default {
         return;
       }
 
-      const original = el.innerHTML;
-      const tmp = document.createElement("div");
-      tmp.innerHTML = original;
-
-      const wrapWord = (node, parentTag, word) => {
-        const span = document.createElement(parentTag);
-        span.className = "reveal-word";
-        span.textContent = word;
-        return span;
+      const opts = binding.value || {};
+      el._revealConfig = {
+        stagger: opts.stagger ?? 60,
+        blur: opts.blur ?? 6,
+        y: opts.y ?? 10,
+        duration: opts.duration ?? 700,
+        once: opts.once ?? true,
       };
 
-      const fragment = document.createDocumentFragment();
-      let wordCount = 0;
-      tmp.childNodes.forEach((node) => {
-        if (node.nodeType === Node.TEXT_NODE) {
-          const text = node.textContent;
-          const tokens = text.split(/(\s+)/);
-          tokens.forEach((tok) => {
-            if (/^\s+$/.test(tok)) {
-              fragment.appendChild(document.createTextNode(tok));
-            } else if (tok.length) {
-              const w = document.createElement("span");
-              w.className = "reveal-word";
-              w.textContent = tok;
-              w.style.transitionDelay = `${wordCount * stagger}ms`;
-              w.style.setProperty("--reveal-blur", `${blur}px`);
-              w.style.setProperty("--reveal-y", `${y}px`);
-              w.style.transitionDuration = `${duration}ms`;
-              fragment.appendChild(w);
-              wordCount++;
-            }
-          });
-        } else if (node.nodeType === Node.ELEMENT_NODE) {
-          const tag = node.tagName.toLowerCase();
-          if (tag === "br") {
-            fragment.appendChild(document.createElement("br"));
-          } else {
-            const clone = node.cloneNode(false);
-            node.childNodes.forEach((child) => {
-              if (child.nodeType === Node.TEXT_NODE) {
-                const text = child.textContent;
-                const tokens = text.split(/(\s+)/);
-                tokens.forEach((tok) => {
-                  if (/^\s+$/.test(tok)) {
-                    clone.appendChild(document.createTextNode(tok));
-                  } else if (tok.length) {
-                    const w = document.createElement("span");
-                    w.className = "reveal-word";
-                    w.textContent = tok;
-                    w.style.transitionDelay = `${wordCount * stagger}ms`;
-                    w.style.setProperty("--reveal-blur", `${blur}px`);
-                    w.style.setProperty("--reveal-y", `${y}px`);
-                    w.style.transitionDuration = `${duration}ms`;
-                    clone.appendChild(w);
-                    wordCount++;
-                  }
-                });
-              } else {
-                clone.appendChild(child.cloneNode(true));
-              }
-            });
-            fragment.appendChild(clone);
-          }
-        }
-      });
-
-      el.innerHTML = "";
-      el.appendChild(fragment);
-      el.setAttribute("data-reveal-ready", "");
+      // Keep references to Vue-managed nodes so i18n updates still reach them.
+      el._revealNodes = Array.from(el.childNodes);
+      el._revealSignature = nodesSignature(el._revealNodes);
 
       el._revealReveal = () => el.classList.add("is-revealed");
       el._revealHide = () => el.classList.remove("is-revealed");
 
-      const io = new IntersectionObserver(
+      el._revealIO = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               el._revealReveal();
-              if (once) io.unobserve(el);
-            } else if (!once) {
+              if (el._revealConfig.once) el._revealIO.unobserve(el);
+            } else if (!el._revealConfig.once) {
               el._revealHide();
             }
           });
         },
         { threshold: 0.15, rootMargin: "0px 0px -10% 0px" }
       );
-      io.observe(el);
-      el._revealIO = io;
+
+      renderReveal(el);
+      el._revealIO.observe(el);
+    },
+    updated(el) {
+      if (!el._revealNodes) return;
+      const sig = nodesSignature(el._revealNodes);
+      if (sig !== el._revealSignature) {
+        el._revealSignature = sig;
+        el.classList.remove("is-revealed");
+        renderReveal(el);
+        el._revealIO.observe(el);
+      }
     },
     unmounted(el) {
       if (el._revealIO) el._revealIO.disconnect();
     },
   },
+};
+
+const nodesSignature = (nodes) =>
+  Array.from(nodes)
+    .map((n) =>
+      n.nodeType === Node.TEXT_NODE ? n.nodeValue : n.outerHTML
+    )
+    .join("|");
+
+const renderReveal = (el) => {
+  const { stagger, blur, y, duration } = el._revealConfig;
+  let wordCount = 0;
+
+  const wrapTokens = (text) => {
+    const parts = [];
+    text.split(/(\s+)/).forEach((tok) => {
+      if (/^\s+$/.test(tok)) {
+        parts.push(document.createTextNode(tok));
+      } else if (tok.length) {
+        const w = document.createElement("span");
+        w.className = "reveal-word";
+        w.textContent = tok;
+        w.style.transitionDelay = `${wordCount * stagger}ms`;
+        w.style.setProperty("--reveal-blur", `${blur}px`);
+        w.style.setProperty("--reveal-y", `${y}px`);
+        w.style.transitionDuration = `${duration}ms`;
+        parts.push(w);
+        wordCount++;
+      }
+    });
+    return parts;
+  };
+
+  const fragment = document.createDocumentFragment();
+  el._revealNodes.forEach((node) => {
+    if (node.nodeType === Node.TEXT_NODE) {
+      wrapTokens(node.nodeValue).forEach((n) => fragment.appendChild(n));
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+      const tag = node.tagName.toLowerCase();
+      if (tag === "br") {
+        fragment.appendChild(document.createElement("br"));
+        return;
+      }
+      const clone = node.cloneNode(false);
+      node.childNodes.forEach((child) => {
+        if (child.nodeType === Node.TEXT_NODE) {
+          wrapTokens(child.nodeValue).forEach((n) => clone.appendChild(n));
+        } else {
+          clone.appendChild(child.cloneNode(true));
+        }
+      });
+      fragment.appendChild(clone);
+    }
+  });
+
+  el.innerHTML = "";
+  el.appendChild(fragment);
+  el.setAttribute("data-reveal-ready", "");
 };
