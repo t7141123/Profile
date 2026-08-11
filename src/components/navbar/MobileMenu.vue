@@ -26,7 +26,7 @@
           :class="{ 'slide-in': isOpen }"
           :style="{ transitionDelay: '0.5s' }"
         >
-          <span class="mobile-lang-label">Language</span>
+          <span class="mobile-lang-label">{{ $t("a11y.languageLabel") }}</span>
           <div class="lang-options">
             <button
               v-for="lang in languages"

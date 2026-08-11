@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- Skip Link for Accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link">{{ $t("a11y.skipToContent") }}</a>
 
     <!-- Scroll Progress Bar -->
     <div id="scroll-progress"></div>

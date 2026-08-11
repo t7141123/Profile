@@ -3,7 +3,7 @@
     v-show="showButton"
     @click="scrollToTop"
     class="back-to-top"
-    aria-label="Back to top"
+    :aria-label="$t('a11y.backToTop')"
   >
     <i class="bi bi-arrow-up"></i>
   </button>

@@ -1,4 +1,12 @@
 {
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "toggleNavigation": "Toggle navigation",
+    "backToTop": "Back to top",
+    "switchToDark": "Switch to dark mode",
+    "switchToLight": "Switch to light mode",
+    "languageLabel": "Language"
+  },
   "nav": {
     "home": "Home",
     "services": "Services",

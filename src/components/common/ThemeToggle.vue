@@ -2,7 +2,7 @@
   <button
     class="theme-toggle"
     @click="toggleTheme"
-    :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
+    :aria-label="isDark ? $t('a11y.switchToLight') : $t('a11y.switchToDark')"
   >
     <div class="toggle-track">
       <div class="toggle-thumb" :class="{ 'is-dark': isDark }">

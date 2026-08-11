@@ -1,4 +1,12 @@
 {
+  "a11y": {
+    "skipToContent": "跳到主要內容",
+    "toggleNavigation": "切換導覽選單",
+    "backToTop": "回到頂部",
+    "switchToDark": "切換到深色模式",
+    "switchToLight": "切換到淺色模式",
+    "languageLabel": "語言"
+  },
   "nav": {
     "home": "首頁",
     "about": "關於我",

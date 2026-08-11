@@ -1,4 +1,12 @@
 {
+  "a11y": {
+    "skipToContent": "跳到主要内容",
+    "toggleNavigation": "切换导航菜单",
+    "backToTop": "回到顶部",
+    "switchToDark": "切换到深色模式",
+    "switchToLight": "切换到浅色模式",
+    "languageLabel": "语言"
+  },
   "nav": {
     "home": "首页",
     "services": "服务项目",
