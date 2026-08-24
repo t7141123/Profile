@@ -158,17 +158,21 @@ const { localePath } = useLocale();
 .lang-options {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .lang-btn {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--text-secondary);
-  padding: 0.6rem 1.1rem;
+  padding: 0.5rem 0.9rem;
   border-radius: 50px;
-  font-size: 0.875rem;
-  min-height: 40px;
+  font-size: 0.8rem;
+  min-height: 36px;
+  min-width: 52px;
   transition: all 0.3s ease;
 }
 

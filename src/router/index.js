@@ -2,14 +2,38 @@ import { createRouter, createWebHistory } from "vue-router";
 import i18n, { loadLocaleMessages } from "../i18n";
 import Home from "../views/Home.vue";
 
-// Supported locales
-const locales = ['zh-tw', 'zh-cn', 'en'];
+// Supported locales (keep in sync with src/i18n.js)
+const locales = ['zh-tw', 'zh-cn', 'en', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'vi', 'th'];
 const defaultLocale = 'zh-tw';
 
-// Helper function to get preferred locale from localStorage
+function detectBrowserLocale() {
+  const raw = (navigator.languages && navigator.languages.length
+    ? navigator.languages
+    : [navigator.language || '']).map(l => l.toLowerCase())
+  const tryMatch = (lang) => {
+    if (locales.includes(lang)) return lang
+    const base = lang.split('-')[0]
+    if (locales.includes(base)) return base
+    if (base === 'zh') {
+      if (lang.includes('tw') || lang.includes('hk') || lang.includes('mo') || lang.includes('hant')) return 'zh-tw'
+      if (lang.includes('cn') || lang.includes('sg') || lang.includes('hans')) return 'zh-cn'
+      return 'zh-tw'
+    }
+    if (base === 'pt') return 'pt'
+    return null
+  }
+  for (const lang of raw) {
+    const hit = tryMatch(lang)
+    if (hit) return hit
+  }
+  return defaultLocale
+}
+
+// Preferred locale: saved choice wins, otherwise auto-detect browser
 const getPreferredLocale = () => {
   const saved = localStorage.getItem('locale');
-  return (saved && locales.includes(saved)) ? saved : defaultLocale;
+  if (saved && locales.includes(saved)) return saved;
+  return detectBrowserLocale();
 };
 
 // Helper function to check if a path segment is a locale

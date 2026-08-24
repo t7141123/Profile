@@ -34,7 +34,15 @@ const { currentLocale, changeLocale } = useLocale()
 const languages = [
   { code: 'zh-tw', name: '繁體中文' },
   { code: 'zh-cn', name: '简体中文' },
-  { code: 'en', name: 'English' }
+  { code: 'en', name: 'English' },
+  { code: 'ja', name: '日本語' },
+  { code: 'ko', name: '한국어' },
+  { code: 'es', name: 'Español' },
+  { code: 'fr', name: 'Français' },
+  { code: 'de', name: 'Deutsch' },
+  { code: 'pt', name: 'Português' },
+  { code: 'vi', name: 'Tiếng Việt' },
+  { code: 'th', name: 'ไทย' }
 ]
 
 const currentLangName = computed(() => {
@@ -76,5 +84,22 @@ const currentLangName = computed(() => {
   .lang-text {
     display: inline;
   }
+}
+
+/* Scrollable dropdown for 11 languages */
+:deep(.dropdown-menu) {
+  max-height: 320px;
+  overflow-y: auto;
+  min-width: 160px;
+}
+
+:deep(.dropdown-item) {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+}
+
+:deep(.dropdown-item.active) {
+  background: var(--gradient-primary);
+  color: #fff;
 }
 </style>

@@ -93,6 +93,14 @@ const languages = [
   { code: "zh-tw", name: "繁體" },
   { code: "zh-cn", name: "简体" },
   { code: "en", name: "EN" },
+  { code: "ja", name: "JP" },
+  { code: "ko", name: "KR" },
+  { code: "es", name: "ES" },
+  { code: "fr", name: "FR" },
+  { code: "de", name: "DE" },
+  { code: "pt", name: "PT" },
+  { code: "vi", name: "VI" },
+  { code: "th", name: "TH" },
 ];
 
 const handleScroll = () => {
