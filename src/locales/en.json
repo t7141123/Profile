@@ -215,19 +215,39 @@
       "corporate": "Corporate Brand & Identity",
       "corporateSubtitle": "Brand & Identity",
       "corporateDesc": "Build an influential corporate portal. From visual design to user experience, enhance brand authority and maximize conversion.",
-      "corporateFeatures": ["Corporate Websites", "Multi-language Portals", "Responsive Design (RWD)", "Visual Identity Integration"],
+      "corporateFeatures": [
+        "Corporate Websites",
+        "Multi-language Portals",
+        "Responsive Design (RWD)",
+        "Visual Identity Integration"
+      ],
       "operations": "Enterprise Operations Systems",
       "operationsSubtitle": "Business Efficiency",
       "operationsDesc": "Digitize and automate complex workflows. Optimize operations and boost team efficiency with tailored backend systems.",
-      "operationsFeatures": ["Internal Admin Panels", "Inventory Management", "Data Dashboards", "Access Control & Automation"],
+      "operationsFeatures": [
+        "Internal Admin Panels",
+        "Inventory Management",
+        "Data Dashboards",
+        "Access Control & Automation"
+      ],
       "events": "Event & Member Platforms",
       "eventsSubtitle": "Engagement & Management",
       "eventsDesc": "Complete solution from online registration to onsite check-in. Integrate member data for precision marketing.",
-      "eventsFeatures": ["Event Registration", "QR Code Check-in", "Membership Systems", "Customized Event Presentation"],
+      "eventsFeatures": [
+        "Event Registration",
+        "QR Code Check-in",
+        "Membership Systems",
+        "Customized Event Presentation"
+      ],
       "custom": "Custom Full-Stack Solutions",
       "customSubtitle": "Tailored Development",
       "customDesc": "Unlimited by frameworks, fully tailored to your business logic. Any problem solvable by web technology, I can build it.",
-      "customFeatures": ["Tailored for Your Unique Business Model", "Integrate Payment, Line & External Systems", "Build Your Cloud Service Platform", "Ensure Stability for High Traffic"]
+      "customFeatures": [
+        "Tailored for Your Unique Business Model",
+        "Integrate Payment, Line & External Systems",
+        "Build Your Cloud Service Platform",
+        "Ensure Stability for High Traffic"
+      ]
     },
     "techBadge": "Technology",
     "techTitle": "Technologies",
@@ -240,13 +260,31 @@
     "pricing": {
       "basic": "Corporate Identity",
       "basicDesc": "For building brand trust & showcasing services",
-      "basicFeatures": ["Responsive Corporate Website", "Multi-language Support", "CMS Integration", "Google Business Profile", "3 Months Support"],
+      "basicFeatures": [
+        "Responsive Corporate Website",
+        "Multi-language Support",
+        "CMS Integration",
+        "Google Business Profile",
+        "3 Months Support"
+      ],
       "pro": "System Integration",
       "proDesc": "For digital transformation & operations optimization",
-      "proFeatures": ["Custom Admin Panel", "Third-party API Integration", "Data Dashboard", "Role & Process Control", "6 Months Support"],
+      "proFeatures": [
+        "Custom Admin Panel",
+        "Third-party API Integration",
+        "Data Dashboard",
+        "Role & Process Control",
+        "6 Months Support"
+      ],
       "enterprise": "Business Acceleration",
       "enterpriseDesc": "For high-traffic platforms & complex business models",
-      "enterpriseFeatures": ["SaaS Core Development", "High Concurrency Architecture", "Membership & Payment", "CI/CD Pipeline", "12 Months Priority Support"],
+      "enterpriseFeatures": [
+        "SaaS Core Development",
+        "High Concurrency Architecture",
+        "Membership & Payment",
+        "CI/CD Pipeline",
+        "12 Months Priority Support"
+      ],
       "popular": "Popular",
       "contact": "Contact for Quote"
     },
@@ -311,9 +349,9 @@
     "copyright": "© {year} David Liu. All rights reserved."
   },
   "meta": {
-    "title": "David Liu Studio | Websites That Actually Make You Money",
-    "description": "Is your website making you money? David Liu Studio offers end-to-end web development and system integration. 9+ years experience. Free 30-min consultation.",
-    "keywords": "web development, system integration, freelance developer, e-commerce, corporate website, David Liu, Taiwan, free consultation"
+    "title": "Ark Studio | Custom Software Development — Business Systems, E-commerce, Booking, Websites & Apps | 9+ Years Full-Stack",
+    "description": "Tailored software for businesses and individuals: custom management systems, booking platforms, corporate websites, e-commerce, membership and internal tools with LINE integration. 9+ years full-stack, end-to-end delivery, free 30-min consultation.",
+    "keywords": "custom software development,business system development,management system,booking system,corporate website,e-commerce,membership system,internal tools,LINE Bot,web development,system integration,app development,freelance developer,full-stack,Taiwan,Ark Studio"
   },
   "notFound": {
     "title": "Page Not Found",

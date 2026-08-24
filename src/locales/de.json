@@ -215,19 +215,39 @@
       "corporate": "Corporate Website & Markenauftritt",
       "corporateSubtitle": "Marke & Identität",
       "corporateDesc": "Bauen Sie ein einflussstarkes Unternehmensportal auf. Von visuellem Design bis Nutzererlebnis – stärken Sie Ihre Markenautorität und maximieren Sie die Konversion.",
-      "corporateFeatures": ["Corporate Websites", "Mehrsprachige Portale", "Responsive Design (RWD)", "Integration der visuellen Identität"],
+      "corporateFeatures": [
+        "Corporate Websites",
+        "Mehrsprachige Portale",
+        "Responsive Design (RWD)",
+        "Integration der visuellen Identität"
+      ],
       "operations": "Betriebliche Unternehmenssysteme",
       "operationsSubtitle": "Geschäftseffizienz",
       "operationsDesc": "Digitalisieren und automatisieren Sie komplexe Arbeitsabläufe. Optimieren Sie Ihre Prozesse und steigern Sie die Teameffizienz mit maßgeschneiderten Backend-Systemen.",
-      "operationsFeatures": ["Interne Admin-Panels", "Lagerverwaltung", "Daten-Dashboards", "Zugriffskontrolle & Automatisierung"],
+      "operationsFeatures": [
+        "Interne Admin-Panels",
+        "Lagerverwaltung",
+        "Daten-Dashboards",
+        "Zugriffskontrolle & Automatisierung"
+      ],
       "events": "Event- & Mitgliederplattformen",
       "eventsSubtitle": "Engagement & Verwaltung",
       "eventsDesc": "Komplettlösung von der Online-Anmeldung bis zum Check-in vor Ort. Vernetzen Sie Mitgliederdaten für präzises Marketing.",
-      "eventsFeatures": ["Event-Anmeldung", "QR-Code Check-in", "Mitgliedersysteme", "Individuelle Event-Präsentation"],
+      "eventsFeatures": [
+        "Event-Anmeldung",
+        "QR-Code Check-in",
+        "Mitgliedersysteme",
+        "Individuelle Event-Präsentation"
+      ],
       "custom": "Individuelle Full-Stack-Lösungen",
       "customSubtitle": "Maßgeschneiderte Entwicklung",
       "customDesc": "Ohne Framework-Grenzen, vollständig auf Ihre Geschäftslogik zugeschnitten. Jedes Problem, das mit Webtechnologie lösbar ist, kann ich umsetzen.",
-      "customFeatures": ["Maßgeschneidert für Ihr einzigartiges Geschäftsmodell", "Integration von Zahlung, Line & externen Systemen", "Aufbau Ihrer Cloud-Service-Plattform", "Stabilität auch bei hohem Traffic gewährleistet"]
+      "customFeatures": [
+        "Maßgeschneidert für Ihr einzigartiges Geschäftsmodell",
+        "Integration von Zahlung, Line & externen Systemen",
+        "Aufbau Ihrer Cloud-Service-Plattform",
+        "Stabilität auch bei hohem Traffic gewährleistet"
+      ]
     },
     "techBadge": "Technologie",
     "techTitle": "Eingesetzte",
@@ -240,13 +260,31 @@
     "pricing": {
       "basic": "Markenauftritt",
       "basicDesc": "Für den Aufbau von Markenvertrauen & die Präsentation Ihrer Leistungen",
-      "basicFeatures": ["Responsive Corporate Website", "Mehrsprachigkeit", "CMS-Integration", "Google Unternehmensprofil", "3 Monate Support"],
+      "basicFeatures": [
+        "Responsive Corporate Website",
+        "Mehrsprachigkeit",
+        "CMS-Integration",
+        "Google Unternehmensprofil",
+        "3 Monate Support"
+      ],
       "pro": "Systemintegration",
       "proDesc": "Für die digitale Transformation & Optimierung Ihrer Prozesse",
-      "proFeatures": ["Individuelles Admin-Panel", "Integration externer APIs", "Daten-Dashboard", "Rollen- & Prozesssteuerung", "6 Monate Support"],
+      "proFeatures": [
+        "Individuelles Admin-Panel",
+        "Integration externer APIs",
+        "Daten-Dashboard",
+        "Rollen- & Prozesssteuerung",
+        "6 Monate Support"
+      ],
       "enterprise": "Business-Beschleunigung",
       "enterpriseDesc": "Für Plattformen mit hohem Traffic & komplexen Geschäftsmodellen",
-      "enterpriseFeatures": ["SaaS-Kernentwicklung", "Hochverfügbare Architektur", "Mitgliederverwaltung & Zahlung", "CI/CD-Pipeline", "12 Monate Premium-Support"],
+      "enterpriseFeatures": [
+        "SaaS-Kernentwicklung",
+        "Hochverfügbare Architektur",
+        "Mitgliederverwaltung & Zahlung",
+        "CI/CD-Pipeline",
+        "12 Monate Premium-Support"
+      ],
       "popular": "Beliebt",
       "contact": "Preis auf Anfrage"
     },
@@ -311,9 +349,9 @@
     "copyright": "© {year} David Liu. Alle Rechte vorbehalten."
   },
   "meta": {
-    "title": "David Liu Studio | Websites, die Ihnen wirklich Kunden bringen",
-    "description": "Verdient Ihre Website Geld für Sie? David Liu Studio bietet ganzheitliche Webentwicklung und Systemintegration. Über 9 Jahre Erfahrung. Kostenlose 30-minütige Beratung.",
-    "keywords": "Webentwicklung, Systemintegration, Freelance-Entwickler, E-Commerce, Corporate Website, David Liu, Taiwan, kostenlose Beratung"
+    "title": "Ark Studio | Maßgeschneiderte Software — Systeme, E-Commerce, Buchung, Websites & Apps | 9+ Jahre Full-Stack",
+    "description": "Maßgeschneiderte Software für Unternehmen und Privatpersonen: Verwaltungssysteme, Buchungsplattformen, Unternehmenswebsites, E-Commerce, Mitglieder- und interne Tools mit LINE-Integration. Über 9 Jahre Full-Stack, End-to-End, kostenlose 30-Min-Beratung.",
+    "keywords": "maßgeschneiderte Softwareentwicklung,Business-Systementwicklung,Verwaltungssystem,Buchungssystem,Unternehmenswebsite,E-Commerce,Mitgliedssystem,interne Tools,LINE Bot,Webentwicklung,Systemintegration,App-Entwicklung,Freelance-Entwickler,Full-Stack,Ark Studio"
   },
   "notFound": {
     "title": "Seite nicht gefunden",

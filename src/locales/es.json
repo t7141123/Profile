@@ -215,19 +215,39 @@
       "corporate": "Imagen y marca corporativa",
       "corporateSubtitle": "Marca e identidad",
       "corporateDesc": "Construya un portal corporativo influyente. Desde el diseño visual hasta la experiencia de usuario, potencie la autoridad de su marca y maximice la conversión.",
-      "corporateFeatures": ["Sitios web corporativos", "Portales multiidioma", "Diseño responsive (RWD)", "Integración de identidad visual"],
+      "corporateFeatures": [
+        "Sitios web corporativos",
+        "Portales multiidioma",
+        "Diseño responsive (RWD)",
+        "Integración de identidad visual"
+      ],
       "operations": "Sistemas operativos empresariales",
       "operationsSubtitle": "Eficiencia operativa",
       "operationsDesc": "Digitalice y automatice flujos de trabajo complejos. Optimice las operaciones y aumente la eficiencia de su equipo con sistemas backend a medida.",
-      "operationsFeatures": ["Paneles de administración internos", "Gestión de inventario", "Paneles de datos (Dashboards)", "Control de acceso y automatización"],
+      "operationsFeatures": [
+        "Paneles de administración internos",
+        "Gestión de inventario",
+        "Paneles de datos (Dashboards)",
+        "Control de acceso y automatización"
+      ],
       "events": "Plataformas de eventos y membresía",
       "eventsSubtitle": "Interacción y gestión",
       "eventsDesc": "Solución integral desde el registro en línea hasta el check-in presencial. Integre datos de miembros para un marketing preciso.",
-      "eventsFeatures": ["Registro de eventos", "Check-in con código QR", "Sistemas de membresía", "Presentación de eventos personalizada"],
+      "eventsFeatures": [
+        "Registro de eventos",
+        "Check-in con código QR",
+        "Sistemas de membresía",
+        "Presentación de eventos personalizada"
+      ],
       "custom": "Soluciones full-stack a medida",
       "customSubtitle": "Desarrollo a medida",
       "customDesc": "Sin limitaciones de frameworks, totalmente adaptado a la lógica de su negocio. Cualquier desafío que pueda resolverse con tecnología web, puedo construirlo.",
-      "customFeatures": ["Adaptado a su modelo de negocio único", "Integración con pagos, Line y sistemas externos", "Construya su plataforma de servicios en la nube", "Garantía de estabilidad para alto tráfico"]
+      "customFeatures": [
+        "Adaptado a su modelo de negocio único",
+        "Integración con pagos, Line y sistemas externos",
+        "Construya su plataforma de servicios en la nube",
+        "Garantía de estabilidad para alto tráfico"
+      ]
     },
     "techBadge": "Tecnología",
     "techTitle": "Tecnologías",
@@ -240,13 +260,31 @@
     "pricing": {
       "basic": "Identidad corporativa",
       "basicDesc": "Para generar confianza de marca y mostrar sus servicios",
-      "basicFeatures": ["Sitio web corporativo responsive", "Soporte multiidioma", "Integración con CMS", "Perfil de Empresa en Google", "3 meses de soporte"],
+      "basicFeatures": [
+        "Sitio web corporativo responsive",
+        "Soporte multiidioma",
+        "Integración con CMS",
+        "Perfil de Empresa en Google",
+        "3 meses de soporte"
+      ],
       "pro": "Integración de sistemas",
       "proDesc": "Para transformación digital y optimización operativa",
-      "proFeatures": ["Panel de administración personalizado", "Integración con API de terceros", "Dashboard de datos", "Control de roles y procesos", "6 meses de soporte"],
+      "proFeatures": [
+        "Panel de administración personalizado",
+        "Integración con API de terceros",
+        "Dashboard de datos",
+        "Control de roles y procesos",
+        "6 meses de soporte"
+      ],
       "enterprise": "Aceleración de negocio",
       "enterpriseDesc": "Para plataformas de alto tráfico y modelos de negocio complejos",
-      "enterpriseFeatures": ["Desarrollo de núcleo SaaS", "Arquitectura de alta concurrencia", "Membresía y pagos", "Pipeline CI/CD", "12 meses de soporte prioritario"],
+      "enterpriseFeatures": [
+        "Desarrollo de núcleo SaaS",
+        "Arquitectura de alta concurrencia",
+        "Membresía y pagos",
+        "Pipeline CI/CD",
+        "12 meses de soporte prioritario"
+      ],
       "popular": "Popular",
       "contact": "Solicitar cotización"
     },
@@ -311,9 +349,9 @@
     "copyright": "© {year} David Liu. Todos los derechos reservados."
   },
   "meta": {
-    "title": "David Liu Studio | Sitios web que realmente generan ingresos",
-    "description": "¿Su sitio web le genera ingresos? David Liu Studio ofrece desarrollo web integral e integración de sistemas. Más de 9 años de experiencia. Asesoría gratuita de 30 min.",
-    "keywords": "desarrollo web, integración de sistemas, desarrollador freelance, e-commerce, sitio web corporativo, David Liu, Taiwán, asesoría gratuita"
+    "title": "Ark Studio | Desarrollo a Medida — Sistemas, E-commerce, Reservas, Web y Apps | 9+ Años Full-Stack",
+    "description": "Software a medida para empresas y particulares: sistemas de gestión, plataformas de reservas, webs corporativas, e-commerce, membresías y herramientas internas con integración LINE. Más de 9 años full-stack, entrega integral, consulta gratuita 30 min.",
+    "keywords": "desarrollo de software a medida,desarrollo de sistemas empresariales,sistema de gestión,sistema de reservas,web corporativa,e-commerce,sistema de membresías,herramientas internas,LINE Bot,desarrollo web,integración de sistemas,desarrollo de apps,desarrollador freelance,full-stack,Ark Studio"
   },
   "notFound": {
     "title": "Página no encontrada",

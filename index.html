@@ -2,30 +2,44 @@
 <html lang="zh-tw">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google Fonts: Preconnect + Preload -->
+    <!-- Favicon — 品牌藍，搜尋結果吸睛 -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/og-image.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#2563EB" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#2563EB" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0F172A" />
+
+    <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;600;700;900&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;600;700;900&display=swap" media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;600;700;900&display=swap" /></noscript>
 
-    <!-- SEO Meta Tags -->
-    <title>
-      David Liu Studio | 幫企業打造會賺錢的網站 — 網站開發與系統整合
-    </title>
-    <meta
-      name="description"
-      content="您的網站在幫您賺錢嗎？David Liu Studio 提供一站式網站開發與系統整合，從想法到上線，7 年經驗陪您每一步。免費 30 分鐘諮詢。"
-    />
-    <meta
-      name="keywords"
-      content="網站開發, 系統整合, 接案工程師, 電商網站, 企業網站, David Liu, 台灣, 免費諮詢"
-    />
-    <meta name="author" content="David Liu" />
-    <link rel="canonical" href="https://ark-studio.app/" />
+    <!-- SEO — 靜態 fallback（會被 useSeo 動態覆寫為各語系/各頁面專屬） -->
+    <title>Ark Studio｜客製化軟體開發 — 企業系統、電商、預約、官網、APP｜9年全端一站式</title>
+    <meta name="description" content="為企業與個人量身打造各類軟體應用：客製化管理系統、預約平台、企業官網、電商與會員系統、內部工具與 LINE 整合。9年全端經驗，從企劃到上線一站式交付，免費30分鐘諮詢。" />
+    <meta name="keywords" content="客製化軟體開發,客製化系統,企業系統開發,管理系統,預約系統,企業官網,電商網站,會員系統,內部系統,LINE Bot,網站開發,系統整合,APP開發,軟體接案,全端開發,台灣軟體公司,Ark Studio" />
+    <meta name="author" content="Ark Studio — David Liu" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://ark-studio.app/zh-tw/" />
+    <!-- hreflang — 靜態 fallback for / -->
+    <link rel="alternate" hreflang="zh-tw" href="https://ark-studio.app/zh-tw/" />
+    <link rel="alternate" hreflang="zh-cn" href="https://ark-studio.app/zh-cn/" />
+    <link rel="alternate" hreflang="en" href="https://ark-studio.app/en/" />
+    <link rel="alternate" hreflang="ja" href="https://ark-studio.app/ja/" />
+    <link rel="alternate" hreflang="ko" href="https://ark-studio.app/ko/" />
+    <link rel="alternate" hreflang="es" href="https://ark-studio.app/es/" />
+    <link rel="alternate" hreflang="fr" href="https://ark-studio.app/fr/" />
+    <link rel="alternate" hreflang="de" href="https://ark-studio.app/de/" />
+    <link rel="alternate" hreflang="pt" href="https://ark-studio.app/pt/" />
+    <link rel="alternate" hreflang="vi" href="https://ark-studio.app/vi/" />
+    <link rel="alternate" hreflang="th" href="https://ark-studio.app/th/" />
+    <link rel="alternate" hreflang="x-default" href="https://ark-studio.app/zh-tw/" />
 
     <!-- david-liu.pages.dev → ark-studio.app redirect (preserves path, 301 via _redirects + JS fallback) -->
     <script>
@@ -33,59 +47,86 @@
         var h = location.hostname;
         if (location.search.includes('no-redirect')) return;
         if (h === 'localhost' || h === '127.0.0.1' || h === '' || h === 'ark-studio.app' || h.endsWith('.ark-studio.app')) return;
-        // any old host (david-liu.pages.dev, *.pages.dev, old custom domains) → ark-studio.app
         location.replace('https://ark-studio.app' + location.pathname + location.search + location.hash);
       })();
     </script>
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ark-studio.app/" />
-    <meta
-      property="og:title"
-      content="David Liu Studio | 幫企業打造會賺錢的網站"
-    />
-    <meta
-      property="og:description"
-      content="您的網站在幫您賺錢嗎？7 年經驗，一站式開發，免費 30 分鐘諮詢。"
-    />
+    <meta property="og:site_name" content="Ark Studio" />
+    <meta property="og:url" content="https://ark-studio.app/zh-tw/" />
+    <meta property="og:title" content="Ark Studio｜客製化軟體開發 — 企業系統、電商、預約、官網、APP｜9年全端" />
+    <meta property="og:description" content="為企業與個人打造會賺錢的軟體 — 客製化系統、預約平台、官網、電商、會員與內部工具。9年全端，一站式從企劃到上線。" />
     <meta property="og:image" content="https://ark-studio.app/og-image.png" />
-    <meta property="og:site_name" content="David Liu Studio" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Ark Studio — 客製化軟體開發，企業系統與品牌官網" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="ja_JP" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="David Liu Studio | 幫企業打造會賺錢的網站"
-    />
-    <meta
-      name="twitter:description"
-      content="您的網站在幫您賺錢嗎？7 年經驗，一站式開發，免費 30 分鐘諮詢。"
-    />
+    <meta name="twitter:site" content="@arkstudio" />
+    <meta name="twitter:title" content="Ark Studio｜客製化軟體開發 — 企業系統、電商、預約、官網、APP" />
+    <meta name="twitter:description" content="客製化管理系統、預約、官網、電商、LINE 整合 — 為企業與個人量身打造。9年全端，免費諮詢。" />
     <meta name="twitter:image" content="https://ark-studio.app/og-image.png" />
+    <meta name="twitter:image:alt" content="Ark Studio 客製化軟體開發" />
 
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#059669" />
-
-    <!-- JSON-LD Structured Data -->
+    <!-- JSON-LD — Organization + WebSite -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
-        "name": "David Liu Studio",
+        "@id": "https://ark-studio.app/#organization",
+        "name": "Ark Studio",
+        "alternateName": "David Liu Studio",
         "url": "https://ark-studio.app/",
-        "description": "專業的網站開發、前端開發、後端開發與系統整合服務，幫企業打造真正帶來成效的網站。",
-        "founder": {
-          "@type": "Person",
-          "name": "David Liu"
-        },
-        "areaServed": "TW",
+        "logo": "https://ark-studio.app/favicon.svg",
+        "image": "https://ark-studio.app/og-image.png",
+        "description": "為企業與個人提供客製化軟體開發：企業官網、電商、預約系統、管理後台、會員平台、內部工具與 LINE 整合。9年全端經驗，一站式交付。",
+        "founder": { "@type": "Person", "name": "David Liu" },
+        "areaServed": [{ "@type": "Country", "name": "Taiwan" }, { "@type": "Country", "name": "Worldwide" }],
+        "availableLanguage": ["zh-TW", "zh-CN", "en", "ja", "ko", "es", "fr", "de", "pt", "vi", "th"],
         "serviceType": [
-          "Web Development",
-          "Frontend Development",
-          "Backend Development",
-          "System Integration"
-        ]
+          "客製化軟體開發",
+          "企業系統開發",
+          "電商網站開發",
+          "預約系統開發",
+          "企業官網設計",
+          "會員與管理後台",
+          "LINE Bot 整合",
+          "系統整合",
+          "Web / App 開發"
+        ],
+        "sameAs": [
+          "https://github.com/t7141123",
+          "https://line.me/ti/p/2w7bwfksdF",
+          "https://t.me/davidliu71411"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "availableLanguage": ["zh-TW", "zh-CN", "en", "ja", "ko"],
+          "url": "https://ark-studio.app/zh-tw/contact"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://ark-studio.app/#website",
+        "name": "Ark Studio",
+        "url": "https://ark-studio.app/",
+        "inLanguage": "zh-TW",
+        "publisher": { "@id": "https://ark-studio.app/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://ark-studio.app/zh-tw/portfolio?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       }
     </script>
   </head>

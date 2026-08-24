@@ -215,19 +215,39 @@
       "corporate": "企業品牌形象構建",
       "corporateSubtitle": "Corporate Brand & Identity",
       "corporateDesc": "打造具備商業影響力的企業門戶。從視覺設計到使用者體驗，提升品牌權威並強化流量轉化。",
-      "corporateFeatures": ["企業形象官網", "多語系入口平台 (Portal)", "RWD 響應式設計", "品牌視覺識別整合"],
+      "corporateFeatures": [
+        "企業形象官網",
+        "多語系入口平台 (Portal)",
+        "RWD 響應式設計",
+        "品牌視覺識別整合"
+      ],
       "operations": "企業營運管理系統",
       "operationsSubtitle": "Enterprise Operations",
       "operationsDesc": "將繁瑣作業數位化、自動化。透過量身打造的後台系統，優化營運流程，提升團隊效率。",
-      "operationsFeatures": ["內部管理系統 (Admin)", "進銷存管理", "數據儀表板 (Dashboard)", "權限控管與流程自動化"],
+      "operationsFeatures": [
+        "內部管理系統 (Admin)",
+        "進銷存管理",
+        "數據儀表板 (Dashboard)",
+        "權限控管與流程自動化"
+      ],
       "events": "活動與會員整合平台",
       "eventsSubtitle": "Event & Member Platform",
       "eventsDesc": "從線上報名到線下簽到的完整解決方案。整合會員資料與活動數據，實現精準行銷與管理。",
-      "eventsFeatures": ["活動報名系統", "QR Code 現場簽到", "會員管理系統", "客製化活動呈現"],
+      "eventsFeatures": [
+        "活動報名系統",
+        "QR Code 現場簽到",
+        "會員管理系統",
+        "客製化活動呈現"
+      ],
       "custom": "客製化全端開發",
       "customSubtitle": "Full-Stack Solutions",
       "customDesc": "不受限於既有框架，完全依據您的商業邏輯量身打造。任何 Web 能解決的問題，都能為您實現。",
-      "customFeatures": ["專為您的商業模式量身打造", "整合金流、LINE 與外部系統", "建置您的雲端服務平台", "確保多人使用穩定順暢"]
+      "customFeatures": [
+        "專為您的商業模式量身打造",
+        "整合金流、LINE 與外部系統",
+        "建置您的雲端服務平台",
+        "確保多人使用穩定順暢"
+      ]
     },
     "techBadge": "Technology",
     "techTitle": "使用的",
@@ -240,13 +260,31 @@
     "pricing": {
       "basic": "企業形象方案",
       "basicDesc": "適合建立品牌信任感與展示服務",
-      "basicFeatures": ["響應式形象官網", "多語系切換功能", "CMS 內容管理系統", "Google 商家整合", "3 個月技術支援"],
+      "basicFeatures": [
+        "響應式形象官網",
+        "多語系切換功能",
+        "CMS 內容管理系統",
+        "Google 商家整合",
+        "3 個月技術支援"
+      ],
       "pro": "系統整合方案",
       "proDesc": "適合數位化轉型與優化營運流程",
-      "proFeatures": ["客製化後台開發", "第三方 API 串接", "數據儀表板 (Dashboard)", "權限與流程控管", "6 個月技術支援"],
+      "proFeatures": [
+        "客製化後台開發",
+        "第三方 API 串接",
+        "數據儀表板 (Dashboard)",
+        "權限與流程控管",
+        "6 個月技術支援"
+      ],
       "enterprise": "商業加速方案",
       "enterpriseDesc": "適合高流量平台與複雜商業模式",
-      "enterpriseFeatures": ["SaaS 平台核心開發", "高併發架構設計", "會員與金流整合", "自動化部署 (CI/CD)", "12 個月優先支援"],
+      "enterpriseFeatures": [
+        "SaaS 平台核心開發",
+        "高併發架構設計",
+        "會員與金流整合",
+        "自動化部署 (CI/CD)",
+        "12 個月優先支援"
+      ],
       "popular": "熱門方案",
       "contact": "聯繫取得報價"
     },
@@ -311,9 +349,9 @@
     "copyright": "© {year} David Liu. All rights reserved."
   },
   "meta": {
-    "title": "David Liu Studio | 幫企業打造會賺錢的網站",
-    "description": "您的網站在幫您賺錢嗎？David Liu Studio 提供一站式網站開發與系統整合，從想法到上線，9 年經驗陪您每一步。免費 30 分鐘諮詢。",
-    "keywords": "網站開發, 系統整合, 接案工程師, 電商網站, 企業網站, David Liu, 台灣, 免費諮詢"
+    "title": "Ark Studio｜客製化軟體開發 — 企業系統、電商、預約、官網、APP｜9年全端一站式",
+    "description": "為企業與個人量身打造各類軟體應用：客製化管理系統、預約平台、企業官網、電商與會員系統、內部工具與 LINE 整合。9年全端經驗，從企劃到上線一站式交付，免費30分鐘諮詢。",
+    "keywords": "客製化軟體開發,客製化系統,企業系統開發,管理系統,預約系統,企業官網,電商網站,會員系統,內部系統,LINE Bot,網站開發,系統整合,APP開發,軟體接案,全端開發,台灣軟體公司,Ark Studio"
   },
   "notFound": {
     "title": "頁面未找到",

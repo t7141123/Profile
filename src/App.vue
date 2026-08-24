@@ -31,49 +31,22 @@ import { watch, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import { isLocale } from './router'
+import { useSeo } from './composables/useSeo'
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 import BackToTop from './components/common/BackToTop.vue'
 
-const { t, locale } = useI18n()
+const { locale } = useI18n()
 const route = useRoute()
 
-const updateMetaTags = (newLocale) => {
-  document.documentElement.lang = newLocale
-  document.title = t('meta.title')
-  const desc = t('meta.description')
-  const keywords = t('meta.keywords')
-
-  const metas = [
-    { selector: 'meta[name="description"]', content: desc },
-    { selector: 'meta[name="keywords"]', content: keywords },
-    { selector: 'meta[property="og:title"]', content: t('meta.title') },
-    { selector: 'meta[property="og:description"]', content: desc },
-    { selector: 'meta[name="twitter:title"]', content: t('meta.title') },
-    { selector: 'meta[name="twitter:description"]', content: desc }
-  ]
-
-  metas.forEach(meta => {
-    const element = document.querySelector(meta.selector)
-    if (element) {
-      element.setAttribute('content', meta.content)
-    }
-  })
-
-  const canonical = document.querySelector('link[rel="canonical"]')
-  if (canonical) {
-    const pathWithoutLocale = route.path.replace(/^\/[^/]+/, '')
-    canonical.href = `${import.meta.env.VITE_APP_URL || 'https://ark-studio.app'}${pathWithoutLocale || '/'}`
-  }
-}
+// dynamic SEO per route + locale (title, desc, hreflang, og, canonical, JSON-LD)
+useSeo()
 
 watch(() => route.params.locale, (newLocale) => {
   if (newLocale && isLocale(newLocale)) {
     locale.value = newLocale
   }
 })
-
-watch(locale, updateMetaTags, { immediate: true })
 
 onMounted(() => {
   const routeLocale = route.params.locale

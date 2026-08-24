@@ -1,0 +1,24 @@
+{
+  "name": "Ark Studio — 客製化軟體開發",
+  "short_name": "Ark Studio",
+  "description": "為企業與個人打造會賺錢的軟體 — 客製化系統、企業官網、電商、預約與管理平台。9年全端經驗，一站式交付。",
+  "start_url": "/zh-tw/?utm_source=pwa",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#2563EB",
+  "lang": "zh-TW",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

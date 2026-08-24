@@ -215,19 +215,39 @@
       "corporate": "企业品牌形象构建",
       "corporateSubtitle": "Corporate Brand & Identity",
       "corporateDesc": "打造具备商业影响力的企业门户。从视觉设计到用户体验，提升品牌权威并强化流量转化。",
-      "corporateFeatures": ["企业形象官网", "多语系入口平台 (Portal)", "RWD 响应式设计", "品牌视觉识别整合"],
+      "corporateFeatures": [
+        "企业形象官网",
+        "多语系入口平台 (Portal)",
+        "RWD 响应式设计",
+        "品牌视觉识别整合"
+      ],
       "operations": "企业营运管理系统",
       "operationsSubtitle": "Enterprise Operations",
       "operationsDesc": "将繁琐作业数位化、自动化。透过量身打造的后台系统，优化营运流程，提升团队效率。",
-      "operationsFeatures": ["内部管理系统 (Admin)", "进销存管理", "数据仪表板 (Dashboard)", "权限控管与流程自动化"],
+      "operationsFeatures": [
+        "内部管理系统 (Admin)",
+        "进销存管理",
+        "数据仪表板 (Dashboard)",
+        "权限控管与流程自动化"
+      ],
       "events": "活动与会员整合平台",
       "eventsSubtitle": "Event & Member Platform",
       "eventsDesc": "从在线报名到线下签到的完整解决方案。整合会员资料与活动数据，实现精准行销与管理。",
-      "eventsFeatures": ["活动报名系统", "QR Code 现场签到", "会员管理系统", "客制化活动呈现"],
+      "eventsFeatures": [
+        "活动报名系统",
+        "QR Code 现场签到",
+        "会员管理系统",
+        "客制化活动呈现"
+      ],
       "custom": "客制化全端开发",
       "customSubtitle": "Full-Stack Solutions",
       "customDesc": "不受限于既有框架，完全依据您的商业逻辑量身打造。任何 Web 能解决的问题，都能为您实现。",
-      "customFeatures": ["专为您的商业模式量身打造", "整合支付、LINE 与外部系统", "建置您的云端服务平台", "确保多人使用稳定顺畅"]
+      "customFeatures": [
+        "专为您的商业模式量身打造",
+        "整合支付、LINE 与外部系统",
+        "建置您的云端服务平台",
+        "确保多人使用稳定顺畅"
+      ]
     },
     "techBadge": "Technology",
     "techTitle": "使用的",
@@ -240,13 +260,31 @@
     "pricing": {
       "basic": "企业形象方案",
       "basicDesc": "适合建立品牌信任感与展示服务",
-      "basicFeatures": ["响应式形象官网", "多语系切换功能", "CMS 内容管理系统", "Google 商家整合", "3 个月技术支持"],
+      "basicFeatures": [
+        "响应式形象官网",
+        "多语系切换功能",
+        "CMS 内容管理系统",
+        "Google 商家整合",
+        "3 个月技术支持"
+      ],
       "pro": "系统整合方案",
       "proDesc": "适合数字化转型与优化营运流程",
-      "proFeatures": ["客制化后台开发", "第三方 API 串接", "数据仪表板 (Dashboard)", "权限与流程控管", "6 个月技术支持"],
+      "proFeatures": [
+        "客制化后台开发",
+        "第三方 API 串接",
+        "数据仪表板 (Dashboard)",
+        "权限与流程控管",
+        "6 个月技术支持"
+      ],
       "enterprise": "商业加速方案",
       "enterpriseDesc": "适合高流量平台与复杂商业模式",
-      "enterpriseFeatures": ["SaaS 平台核心开发", "高并发架构设计", "会员与金流整合", "自动化部署 (CI/CD)", "12 个月优先支持"],
+      "enterpriseFeatures": [
+        "SaaS 平台核心开发",
+        "高并发架构设计",
+        "会员与金流整合",
+        "自动化部署 (CI/CD)",
+        "12 个月优先支持"
+      ],
       "popular": "热门方案",
       "contact": "联系取得报价"
     },
@@ -311,9 +349,9 @@
     "copyright": "© {year} David Liu. All rights reserved."
   },
   "meta": {
-    "title": "David Liu Studio | 帮企业打造会赚钱的网站",
-    "description": "您的网站在帮您赚钱吗？David Liu Studio 提供一站式网站开发与系统整合，从想法到上线，9 年经验陪您每一步。免费 30 分钟咨询。",
-    "keywords": "网站开发, 系统整合, 接案工程师, 电商网站, 企业网站, David Liu, 免费咨询"
+    "title": "Ark Studio｜定制化软件开发 — 企业系统、电商、预约、官网、APP｜9年全栈一站式",
+    "description": "为企业与个人量身定制各类软件应用：定制化管理系统、预约平台、企业官网、电商与会员系统、内部工具与 LINE 集成。9年全栈经验，从策划到上线一站式交付，免费30分钟咨询。",
+    "keywords": "定制化软件开发,定制化系统,企业系统开发,管理系统,预约系统,企业官网,电商网站,会员系统,内部系统,LINE Bot,网站开发,系统集成,APP开发,软件外包,全栈开发,Ark Studio"
   },
   "notFound": {
     "title": "页面未找到",

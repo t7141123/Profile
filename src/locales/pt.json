@@ -215,19 +215,39 @@
       "corporate": "Marca Corporativa e Identidade",
       "corporateSubtitle": "Marca e Identidade",
       "corporateDesc": "Construa um portal corporativo de impacto. Do design visual à experiência do usuário, fortaleça a autoridade da sua marca e maximize a conversão.",
-      "corporateFeatures": ["Sites corporativos", "Portais multilíngues", "Design responsivo (RWD)", "Integração de identidade visual"],
+      "corporateFeatures": [
+        "Sites corporativos",
+        "Portais multilíngues",
+        "Design responsivo (RWD)",
+        "Integração de identidade visual"
+      ],
       "operations": "Sistemas de Gestão Empresarial",
       "operationsSubtitle": "Eficiência Operacional",
       "operationsDesc": "Digitalize e automatize fluxos de trabalho complexos. Otimize as operações e aumente a eficiência da sua equipe com sistemas backend sob medida.",
-      "operationsFeatures": ["Painéis administrativos internos", "Gestão de estoque", "Dashboards de dados", "Controle de acesso e automação"],
+      "operationsFeatures": [
+        "Painéis administrativos internos",
+        "Gestão de estoque",
+        "Dashboards de dados",
+        "Controle de acesso e automação"
+      ],
       "events": "Plataformas de Eventos e Membros",
       "eventsSubtitle": "Engajamento e Gestão",
       "eventsDesc": "Solução completa do cadastro online ao check-in presencial. Integre dados de membros para um marketing preciso.",
-      "eventsFeatures": ["Inscrição em eventos", "Check-in com QR Code", "Sistemas de membros", "Apresentação de eventos personalizada"],
+      "eventsFeatures": [
+        "Inscrição em eventos",
+        "Check-in com QR Code",
+        "Sistemas de membros",
+        "Apresentação de eventos personalizada"
+      ],
       "custom": "Soluções Full-Stack Personalizadas",
       "customSubtitle": "Desenvolvimento Sob Medida",
       "customDesc": "Sem limitações de frameworks, totalmente adaptado à lógica do seu negócio. Qualquer desafio que possa ser resolvido com tecnologia web, eu posso construir.",
-      "customFeatures": ["Adaptado ao seu modelo de negócio exclusivo", "Integração com pagamentos, Line e sistemas externos", "Construa sua plataforma de serviços em nuvem", "Garantia de estabilidade para alto tráfego"]
+      "customFeatures": [
+        "Adaptado ao seu modelo de negócio exclusivo",
+        "Integração com pagamentos, Line e sistemas externos",
+        "Construa sua plataforma de serviços em nuvem",
+        "Garantia de estabilidade para alto tráfego"
+      ]
     },
     "techBadge": "Tecnologia",
     "techTitle": "Tecnologias",
@@ -240,13 +260,31 @@
     "pricing": {
       "basic": "Identidade Corporativa",
       "basicDesc": "Para gerar confiança na marca e apresentar seus serviços",
-      "basicFeatures": ["Site corporativo responsivo", "Suporte multilíngue", "Integração com CMS", "Perfil da Empresa no Google", "3 meses de suporte"],
+      "basicFeatures": [
+        "Site corporativo responsivo",
+        "Suporte multilíngue",
+        "Integração com CMS",
+        "Perfil da Empresa no Google",
+        "3 meses de suporte"
+      ],
       "pro": "Integração de Sistemas",
       "proDesc": "Para transformação digital e otimização operacional",
-      "proFeatures": ["Painel administrativo personalizado", "Integração com APIs de terceiros", "Dashboard de dados", "Controle de funções e processos", "6 meses de suporte"],
+      "proFeatures": [
+        "Painel administrativo personalizado",
+        "Integração com APIs de terceiros",
+        "Dashboard de dados",
+        "Controle de funções e processos",
+        "6 meses de suporte"
+      ],
       "enterprise": "Aceleração de Negócios",
       "enterpriseDesc": "Para plataformas de alto tráfego e modelos de negócio complexos",
-      "enterpriseFeatures": ["Desenvolvimento de núcleo SaaS", "Arquitetura de alta concorrência", "Assinaturas e pagamentos", "Pipeline CI/CD", "12 meses de suporte prioritário"],
+      "enterpriseFeatures": [
+        "Desenvolvimento de núcleo SaaS",
+        "Arquitetura de alta concorrência",
+        "Assinaturas e pagamentos",
+        "Pipeline CI/CD",
+        "12 meses de suporte prioritário"
+      ],
       "popular": "Popular",
       "contact": "Solicitar orçamento"
     },
@@ -311,9 +349,9 @@
     "copyright": "© {year} David Liu. Todos os direitos reservados."
   },
   "meta": {
-    "title": "David Liu Studio | Sites que Realmente Geram Lucro",
-    "description": "Seu site está gerando lucro? O David Liu Studio oferece desenvolvimento web completo e integração de sistemas. Mais de 9 anos de experiência. Consultoria gratuita de 30 min.",
-    "keywords": "desenvolvimento web, integração de sistemas, desenvolvedor freelancer, e-commerce, site corporativo, David Liu, Taiwan, consultoria gratuita"
+    "title": "Ark Studio | Software Sob Medida — Sistemas, E-commerce, Reservas, Sites e Apps | 9+ Anos Full-Stack",
+    "description": "Software sob medida para empresas e pessoas: sistemas de gestão, plataformas de reservas, sites corporativos, e-commerce, área de membros e ferramentas internas com integração LINE. Mais de 9 anos full-stack, entrega ponta a ponta, consultoria grátis 30 min.",
+    "keywords": "desenvolvimento de software sob medida,desenvolvimento de sistemas empresariais,sistema de gestão,sistema de reservas,site corporativo,e-commerce,sistema de membros,ferramentas internas,LINE Bot,desenvolvimento web,integração de sistemas,desenvolvimento de apps,desenvolvedor freelance,full-stack,Ark Studio"
   },
   "notFound": {
     "title": "Página não encontrada",

@@ -215,19 +215,39 @@
       "corporate": "Identité & site vitrine d'entreprise",
       "corporateSubtitle": "Marque & identité",
       "corporateDesc": "Bâtissez un portail d'entreprise à fort impact. Du design visuel à l'expérience utilisateur, renforcez l'autorité de votre marque et maximisez la conversion.",
-      "corporateFeatures": ["Sites vitrine d'entreprise", "Portails multilingues", "Design responsive (RWD)", "Intégration de l'identité visuelle"],
+      "corporateFeatures": [
+        "Sites vitrine d'entreprise",
+        "Portails multilingues",
+        "Design responsive (RWD)",
+        "Intégration de l'identité visuelle"
+      ],
       "operations": "Systèmes de gestion opérationnelle",
       "operationsSubtitle": "Efficacité opérationnelle",
       "operationsDesc": "Digitalisez et automatisez vos processus complexes. Optimisez vos opérations et renforcez l'efficacité de vos équipes grâce à des systèmes back-office sur mesure.",
-      "operationsFeatures": ["Panneaux d'administration internes", "Gestion des stocks", "Tableaux de bord de données", "Contrôle d'accès & automatisation"],
+      "operationsFeatures": [
+        "Panneaux d'administration internes",
+        "Gestion des stocks",
+        "Tableaux de bord de données",
+        "Contrôle d'accès & automatisation"
+      ],
       "events": "Plateformes événementielles & membres",
       "eventsSubtitle": "Engagement & gestion",
       "eventsDesc": "Une solution complète de l'inscription en ligne à l'enregistrement sur site. Centralisez les données membres pour un marketing de précision.",
-      "eventsFeatures": ["Inscription aux événements", "Enregistrement par QR code", "Systèmes d'adhésion", "Présentation événementielle personnalisée"],
+      "eventsFeatures": [
+        "Inscription aux événements",
+        "Enregistrement par QR code",
+        "Systèmes d'adhésion",
+        "Présentation événementielle personnalisée"
+      ],
       "custom": "Solutions full-stack sur mesure",
       "customSubtitle": "Développement sur mesure",
       "customDesc": "Sans contraintes de framework, entièrement adaptées à votre logique métier. Tout ce que la technologie web permet de résoudre, je peux le construire.",
-      "customFeatures": ["Conçu pour votre modèle d'affaires unique", "Intégration paiement, Line et systèmes externes", "Créez votre plateforme de services cloud", "Garantissez la stabilité à fort trafic"]
+      "customFeatures": [
+        "Conçu pour votre modèle d'affaires unique",
+        "Intégration paiement, Line et systèmes externes",
+        "Créez votre plateforme de services cloud",
+        "Garantissez la stabilité à fort trafic"
+      ]
     },
     "techBadge": "Technologies",
     "techTitle": "Technologies",
@@ -240,13 +260,31 @@
     "pricing": {
       "basic": "Identité d'entreprise",
       "basicDesc": "Pour asseoir la confiance dans votre marque & présenter vos services",
-      "basicFeatures": ["Site vitrine responsive", "Support multilingue", "Intégration CMS", "Fiche d'établissement Google", "3 mois de support"],
+      "basicFeatures": [
+        "Site vitrine responsive",
+        "Support multilingue",
+        "Intégration CMS",
+        "Fiche d'établissement Google",
+        "3 mois de support"
+      ],
       "pro": "Intégration système",
       "proDesc": "Pour la transformation digitale & l'optimisation opérationnelle",
-      "proFeatures": ["Panneau d'administration sur mesure", "Intégration d'API tierces", "Tableau de bord de données", "Gestion des rôles & des processus", "6 mois de support"],
+      "proFeatures": [
+        "Panneau d'administration sur mesure",
+        "Intégration d'API tierces",
+        "Tableau de bord de données",
+        "Gestion des rôles & des processus",
+        "6 mois de support"
+      ],
       "enterprise": "Accélération business",
       "enterpriseDesc": "Pour les plateformes à fort trafic & les modèles complexes",
-      "enterpriseFeatures": ["Développement du cœur SaaS", "Architecture haute concurrence", "Adhésion & paiement", "Pipeline CI/CD", "12 mois de support prioritaire"],
+      "enterpriseFeatures": [
+        "Développement du cœur SaaS",
+        "Architecture haute concurrence",
+        "Adhésion & paiement",
+        "Pipeline CI/CD",
+        "12 mois de support prioritaire"
+      ],
       "popular": "Populaire",
       "contact": "Demander un devis"
     },
@@ -311,9 +349,9 @@
     "copyright": "© {year} David Liu. Tous droits réservés."
   },
   "meta": {
-    "title": "David Liu Studio | Des sites web qui vous rapportent vraiment",
-    "description": "Votre site web vous rapporte-t-il ? David Liu Studio propose un développement web et une intégration système de bout en bout. Plus de 9 ans d'expérience. Consultation gratuite de 30 min.",
-    "keywords": "développement web, intégration système, développeur freelance, e-commerce, site vitrine d'entreprise, David Liu, Taïwan, consultation gratuite"
+    "title": "Ark Studio | Logiciel Sur Mesure — Systèmes, E-commerce, Réservation, Sites & Apps | 9+ Ans Full-Stack",
+    "description": "Logiciels sur mesure pour entreprises et particuliers : systèmes de gestion, plateformes de réservation, sites vitrines, e-commerce, espaces membres et outils internes avec intégration LINE. Plus de 9 ans full-stack, livraison de bout en bout, consultation gratuite 30 min.",
+    "keywords": "développement logiciel sur mesure,développement système entreprise,système de gestion,système de réservation,site vitrine,e-commerce,système d’adhésion,outils internes,LINE Bot,développement web,intégration système,développement d’apps,développeur freelance,full-stack,Ark Studio"
   },
   "notFound": {
     "title": "Page non trouvée",

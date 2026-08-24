@@ -215,19 +215,39 @@
       "corporate": "Thương Hiệu & Nhận Diện Doanh Nghiệp",
       "corporateSubtitle": "Thương hiệu & Nhận diện",
       "corporateDesc": "Xây dựng cổng thông tin doanh nghiệp có sức ảnh hưởng. Từ thiết kế trực quan đến trải nghiệm người dùng, nâng tầm uy tín thương hiệu và tối đa hóa chuyển đổi.",
-      "corporateFeatures": ["Website doanh nghiệp", "Cổng thông tin đa ngôn ngữ", "Thiết kế tương thích (RWD)", "Tích hợp nhận diện thương hiệu"],
+      "corporateFeatures": [
+        "Website doanh nghiệp",
+        "Cổng thông tin đa ngôn ngữ",
+        "Thiết kế tương thích (RWD)",
+        "Tích hợp nhận diện thương hiệu"
+      ],
       "operations": "Hệ Thống Vận Hành Doanh Nghiệp",
       "operationsSubtitle": "Hiệu Quả Vận Hành",
       "operationsDesc": "Số hóa và tự động hóa quy trình phức tạp. Tối ưu vận hành và nâng cao hiệu suất đội ngũ với hệ thống quản trị được thiết kế riêng.",
-      "operationsFeatures": ["Bảng quản trị nội bộ", "Quản lý tồn kho & xuất nhập", "Bảng điều khiển dữ liệu (Dashboard)", "Phân quyền & Tự động hóa quy trình"],
+      "operationsFeatures": [
+        "Bảng quản trị nội bộ",
+        "Quản lý tồn kho & xuất nhập",
+        "Bảng điều khiển dữ liệu (Dashboard)",
+        "Phân quyền & Tự động hóa quy trình"
+      ],
       "events": "Nền Tảng Sự Kiện & Hội Viên",
       "eventsSubtitle": "Gắn Kết & Quản Lý",
       "eventsDesc": "Giải pháp trọn gói từ đăng ký trực tuyến đến check-in tại sự kiện. Tích hợp dữ liệu hội viên để marketing chính xác.",
-      "eventsFeatures": ["Hệ thống đăng ký sự kiện", "Check-in bằng mã QR", "Hệ thống quản lý hội viên", "Giao diện sự kiện tùy chỉnh"],
+      "eventsFeatures": [
+        "Hệ thống đăng ký sự kiện",
+        "Check-in bằng mã QR",
+        "Hệ thống quản lý hội viên",
+        "Giao diện sự kiện tùy chỉnh"
+      ],
       "custom": "Giải Pháp Full-Stack Tùy Chỉnh",
       "customSubtitle": "Phát Triển Theo Yêu Cầu",
       "customDesc": "Không giới hạn bởi framework, thiết kế hoàn toàn theo logic nghiệp vụ của bạn. Bất kỳ bài toán nào có thể giải bằng công nghệ web, tôi đều có thể thực hiện.",
-      "customFeatures": ["Thiết kế riêng cho mô hình kinh doanh của bạn", "Tích hợp thanh toán, Line và hệ thống bên ngoài", "Xây dựng nền tảng dịch vụ đám mây của riêng bạn", "Đảm bảo vận hành ổn định với lưu lượng truy cập lớn"]
+      "customFeatures": [
+        "Thiết kế riêng cho mô hình kinh doanh của bạn",
+        "Tích hợp thanh toán, Line và hệ thống bên ngoài",
+        "Xây dựng nền tảng dịch vụ đám mây của riêng bạn",
+        "Đảm bảo vận hành ổn định với lưu lượng truy cập lớn"
+      ]
     },
     "techBadge": "Công Nghệ",
     "techTitle": "Công Nghệ",
@@ -240,13 +260,31 @@
     "pricing": {
       "basic": "Nhận Diện Doanh Nghiệp",
       "basicDesc": "Dành cho xây dựng uy tín thương hiệu & giới thiệu dịch vụ",
-      "basicFeatures": ["Website doanh nghiệp tương thích mọi thiết bị", "Hỗ trợ đa ngôn ngữ", "Tích hợp CMS", "Tích hợp Google Business Profile", "Hỗ trợ 3 tháng"],
+      "basicFeatures": [
+        "Website doanh nghiệp tương thích mọi thiết bị",
+        "Hỗ trợ đa ngôn ngữ",
+        "Tích hợp CMS",
+        "Tích hợp Google Business Profile",
+        "Hỗ trợ 3 tháng"
+      ],
       "pro": "Tích Hợp Hệ Thống",
       "proDesc": "Dành cho chuyển đổi số & tối ưu vận hành",
-      "proFeatures": ["Bảng quản trị tùy chỉnh", "Tích hợp API bên thứ ba", "Bảng điều khiển dữ liệu (Dashboard)", "Kiểm soát vai trò & quy trình", "Hỗ trợ 6 tháng"],
+      "proFeatures": [
+        "Bảng quản trị tùy chỉnh",
+        "Tích hợp API bên thứ ba",
+        "Bảng điều khiển dữ liệu (Dashboard)",
+        "Kiểm soát vai trò & quy trình",
+        "Hỗ trợ 6 tháng"
+      ],
       "enterprise": "Tăng Tốc Kinh Doanh",
       "enterpriseDesc": "Dành cho nền tảng lưu lượng lớn & mô hình kinh doanh phức tạp",
-      "enterpriseFeatures": ["Phát triển hệ thống lõi SaaS", "Kiến trúc chịu tải cao (High Concurrency)", "Tích hợp hội viên & thanh toán", "Quy trình CI/CD", "Hỗ trợ ưu tiên 12 tháng"],
+      "enterpriseFeatures": [
+        "Phát triển hệ thống lõi SaaS",
+        "Kiến trúc chịu tải cao (High Concurrency)",
+        "Tích hợp hội viên & thanh toán",
+        "Quy trình CI/CD",
+        "Hỗ trợ ưu tiên 12 tháng"
+      ],
       "popular": "Phổ biến",
       "contact": "Liên hệ báo giá"
     },
@@ -311,9 +349,9 @@
     "copyright": "© {year} David Liu. Bảo lưu mọi quyền."
   },
   "meta": {
-    "title": "David Liu Studio | Website Thực Sự Mang Lại Doanh Thu Cho Bạn",
-    "description": "Website của bạn có đang mang lại doanh thu không? David Liu Studio cung cấp dịch vụ phát triển web và tích hợp hệ thống trọn gói. 9+ năm kinh nghiệm. Tư vấn miễn phí 30 phút.",
-    "keywords": "phát triển web, tích hợp hệ thống, lập trình viên tự do, thương mại điện tử, website doanh nghiệp, David Liu, Đài Loan, tư vấn miễn phí"
+    "title": "Ark Studio | Phần Mềm Theo Yêu Cầu — Hệ Thống, E-commerce, Đặt Lịch, Website & App | 9+ Năm Full-Stack",
+    "description": "Phần mềm theo yêu cầu cho doanh nghiệp và cá nhân: hệ thống quản lý, nền tảng đặt lịch, website doanh nghiệp, e-commerce, hệ thống thành viên và công cụ nội bộ tích hợp LINE. Hơn 9 năm full-stack, bàn giao trọn gói, tư vấn miễn phí 30 phút.",
+    "keywords": "phát triển phần mềm theo yêu cầu,phát triển hệ thống doanh nghiệp,hệ thống quản lý,hệ thống đặt lịch,website doanh nghiệp,e-commerce,hệ thống thành viên,công cụ nội bộ,LINE Bot,phát triển web,tích hợp hệ thống,phát triển app,lập trình viên freelance,full-stack,Ark Studio"
   },
   "notFound": {
     "title": "Không tìm thấy trang",
