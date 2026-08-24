@@ -27,15 +27,14 @@
     <meta name="author" content="David Liu" />
     <link rel="canonical" href="https://ark-studio.app/" />
 
-    <!-- Old domain → ark-studio.app redirect (preserves path) -->
+    <!-- david-liu.pages.dev → ark-studio.app redirect (preserves path, 301 via _redirects + JS fallback) -->
     <script>
       (function () {
         var h = location.hostname;
         if (location.search.includes('no-redirect')) return;
-        if (h === 'localhost' || h === '127.0.0.1' || h === '' || h === 'ark-studio.app') return;
-        if (h === 'www.ark-studio.app' || h.endsWith('.pages.dev')) {
-          location.replace('https://ark-studio.app' + location.pathname + location.search + location.hash);
-        }
+        if (h === 'localhost' || h === '127.0.0.1' || h === '' || h === 'ark-studio.app' || h.endsWith('.ark-studio.app')) return;
+        // any old host (david-liu.pages.dev, *.pages.dev, old custom domains) → ark-studio.app
+        location.replace('https://ark-studio.app' + location.pathname + location.search + location.hash);
       })();
     </script>
 
