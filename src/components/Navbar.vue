@@ -3,7 +3,7 @@
     <div class="container d-flex align-items-center justify-content-between">
       <!-- Brand -->
       <router-link class="navbar-brand" :to="localePath('/')" @click="closeMenu">
-        <i class="bi bi-code-slash me-2"></i>David Liu
+        <i class="bi bi-code-slash me-2"></i>{{ $t("footer.brand") }}
       </router-link>
 
       <!-- Desktop Menu -->

@@ -17,7 +17,7 @@
             <div class="hero-content">
               <h1 class="hero-title">
                 {{ $t("home.title") }}<br />
-                <span class="highlight" v-scramble>David Liu</span>
+                <span class="highlight" v-scramble>{{ $t("footer.brand") }}</span>
               </h1>
 
               <p class="hero-subtitle" v-reveal>
