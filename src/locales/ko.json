@@ -346,7 +346,7 @@
   "footer": {
     "brand": "Ark Studio",
     "description": "디지털 전환을 어떻게 시작해야 할지 고민되시나요? 연락 주시면 함께 방향을 찾아드리겠습니다!",
-    "copyright": "© {year} Ark Studio. All rights reserved."
+    "copyright": "© 2024-{year} Ark Studio. All rights reserved."
   },
   "meta": {
     "title": "Ark Studio | 맞춤형 소프트웨어 개발 — 비즈니스 시스템, 이커머스, 예약, 웹사이트 & 앱 | 9년+ 풀스택",

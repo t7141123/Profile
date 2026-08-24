@@ -17,7 +17,7 @@
         <div class="row align-items-center">
           <div class="col-lg-4 mb-4 mb-lg-0">
             <div class="about-image">
-              <img src="@/assets/images/profile-new.jpg" alt="David Liu" loading="lazy" decoding="async" width="400" height="500" style="width: auto; max-width: 100%; height: auto;" />
+              <img src="@/assets/images/profile-new.jpg" alt="David" loading="lazy" decoding="async" width="400" height="500" style="width: auto; max-width: 100%; height: auto;" />
               <div class="experience-badge">
                 <span class="years">9+</span>
                 <span class="text">{{ $t("about.yearsExp") }}</span>
@@ -29,7 +29,7 @@
             <div class="about-content">
               <h2 class="about-title">
                 {{ $t("about.greeting") }}
-                <span class="highlight">David Liu</span>
+                <span class="highlight">David</span>
               </h2>
               <p class="about-text">
                 {{ $t("about.intro1") }}
