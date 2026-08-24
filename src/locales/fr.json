@@ -75,7 +75,9 @@
       "freeTubeDesc": "Un client YouTube minimaliste qui élimine les distractions pour une expérience de navigation vidéo épurée et concentrée.",
       "aiLineBot": "Développement de bot Line IA",
       "aiLineBotDesc": "Bot Line IA sur mesure qui répond comme un chat intelligent, suit vos dépenses, consigne les notes de groupe, programme des rappels, traduit des langues et bien plus — directement dans Line.",
-      "tool": "Site utilitaire"
+      "tool": "Site utilitaire",
+      "babystep": "BabyStep",
+      "babystepDesc": "Application parentale cycle complet reliant le compte à rebours de grossesse et les suivis prénataux aux routines et à la croissance du nouveau-né."
     },
     "businessPreview": {
       "target": "Objectif",
@@ -197,7 +199,9 @@
       "freeTubeDesc": "Un client YouTube minimaliste qui élimine les distractions pour une expérience de navigation vidéo épurée et concentrée.",
       "aiLineBot": "Développement de bot Line IA",
       "aiLineBotDesc": "Bot Line IA sur mesure qui répond comme un chat intelligent, suit vos dépenses, consigne les notes de groupe, programme des rappels, traduit des langues et bien plus — directement dans Line.",
-      "tool": "Site utilitaire"
+      "tool": "Site utilitaire",
+      "babystep": "BabyStep",
+      "babystepDesc": "Application cycle complet intégrant compte à rebours, suivis, routines post-partum, alimentation et courbes de croissance avec gestion multi-bébé et partage familial."
     },
     "ctaTitle": "Envie de concrétiser votre projet ?",
     "ctaDescription": "Discutons de vos besoins et créons ensemble la prochaine réussite.",

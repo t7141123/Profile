@@ -75,7 +75,9 @@
       "freeTubeDesc": "余計な要素を削ぎ落とした、シンプルで集中できる視聴体験を提供するミニマルなYouTubeクライアントです。",
       "aiLineBot": "AI LINE Bot開発",
       "aiLineBotDesc": "AIチャットのように質問に答え、家計簿の記録、グループのメモ管理、リマインダー設定、多言語翻訳まで、すべてLINE内で完結するカスタムAI Botです。",
-      "tool": "ツールサイト"
+      "tool": "ツールサイト",
+      "babystep": "BabyStep",
+      "babystepDesc": "妊娠カウントダウンと健診記録から産後の新生児の生活リズムと成長記録までをシームレスにつなぐ全周期育児アプリ。"
     },
     "businessPreview": {
       "target": "目的",
@@ -197,7 +199,9 @@
       "freeTubeDesc": "余計な要素を削ぎ落とした、シンプルで集中できる視聴体験を提供するミニマルなYouTubeクライアントです。",
       "aiLineBot": "AI LINE Bot開発",
       "aiLineBotDesc": "AIチャットのように質問に答え、家計簿の記録、グループのメモ管理、リマインダー設定、多言語翻訳まで、すべてLINE内で完結するカスタムAI Botです。",
-      "tool": "ツールサイト"
+      "tool": "ツールサイト",
+      "babystep": "BabyStep",
+      "babystepDesc": "妊娠カウントダウン、健診記録、産後の生活リズム・授乳・成長曲線を一元管理。多児・家族共有に対応。"
     },
     "ctaTitle": "あなたのプロジェクトも形にしませんか？",
     "ctaDescription": "ご要望をお聞かせください。次の成功事例を共に創りましょう。",

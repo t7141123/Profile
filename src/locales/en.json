@@ -75,7 +75,9 @@
       "freeTubeDesc": "A minimalist YouTube client that strips away distractions for a clean, focused video browsing experience.",
       "aiLineBot": "AI Line Bot Development",
       "aiLineBotDesc": "Custom AI Line bot that answers questions like an AI chat, tracks expenses, records group notes, sets reminders, translates languages, and more — all inside Line.",
-      "tool": "Tool Website"
+      "tool": "Tool Website",
+      "babystep": "BabyStep",
+      "babystepDesc": "A seamless, full-cycle parenting app bridging pregnancy countdown and checkup records to newborn routines and growth tracking."
     },
     "businessPreview": {
       "target": "Goal",
@@ -197,7 +199,9 @@
       "freeTubeDesc": "A minimalist YouTube client that strips away distractions for a clean, focused video browsing experience.",
       "aiLineBot": "AI Line Bot Development",
       "aiLineBotDesc": "Custom AI Line bot that answers questions like an AI chat, tracks expenses, records group notes, sets reminders, translates languages, and more — all inside Line.",
-      "tool": "Tool Website"
+      "tool": "Tool Website",
+      "babystep": "BabyStep",
+      "babystepDesc": "Full-cycle parenting app integrating pregnancy countdown, prenatal checkups, postpartum routines, feeding and growth tracking with multi-baby and family sharing."
     },
     "ctaTitle": "Build Your Project?",
     "ctaDescription": "Let's discuss your needs and create the next success story.",

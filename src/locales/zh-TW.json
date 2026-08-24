@@ -75,7 +75,9 @@
       "freeTubeDesc": "輕量化 YouTube 客戶端，去除干擾元素，提供簡潔專注的影片瀏覽體驗。",
       "aiLineBot": "AI Line Bot 開發",
       "aiLineBotDesc": "客製化 AI Line 機器人，可像 AI 聊天一樣回答問題、自動記帳、記錄群組事項、設定提醒、即時翻譯與多國語言回覆，通通在 Line 內完成。",
-      "tool": "工具網站"
+      "tool": "工具網站",
+      "babystep": "BabyStep 育兒歷程",
+      "babystepDesc": "一套無縫銜接孕期倒數與產檢記錄至產後新生兒作息與成長追蹤的全週期育兒應用"
     },
     "businessPreview": {
       "target": "目標",
@@ -197,7 +199,9 @@
       "freeTubeDesc": "輕量化 YouTube 客戶端，去除干擾元素，提供簡潔專注的影片瀏覽體驗。",
       "aiLineBot": "AI Line Bot 開發",
       "aiLineBotDesc": "客製化 AI Line 機器人，可像 AI 聊天一樣回答問題、自動記帳、記錄群組事項、設定提醒、即時翻譯與多國語言回覆，通通在 Line 內完成。",
-      "tool": "工具網站"
+      "tool": "工具網站",
+      "babystep": "BabyStep 育兒歷程",
+      "babystepDesc": "全週期育兒應用，整合孕期倒數、產檢記錄、產後作息、餵養與成長曲線追蹤，支援多寶寶管理與家庭共享。"
     },
     "ctaTitle": "打造您的專案？",
     "ctaDescription": "一起討論需求，創造下一個成功案例。",
