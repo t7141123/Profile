@@ -2,42 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://david-liu.pages.dev/zh-tw/</loc>
-    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://david-liu.pages.dev/zh-tw/" />
-    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://david-liu.pages.dev/zh-cn/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://david-liu.pages.dev/en/" />
+    <loc>https://ark-studio.app/zh-tw/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://ark-studio.app/zh-tw/" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ark-studio.app/zh-cn/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ark-studio.app/en/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ark-studio.app/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ark-studio.app/ko/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ark-studio.app/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ark-studio.app/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ark-studio.app/de/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ark-studio.app/pt/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://ark-studio.app/vi/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://ark-studio.app/th/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ark-studio.app/zh-tw/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://david-liu.pages.dev/zh-tw/about</loc>
-    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://david-liu.pages.dev/zh-tw/about" />
-    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://david-liu.pages.dev/zh-cn/about" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://david-liu.pages.dev/en/about" />
+    <loc>https://ark-studio.app/zh-tw/about</loc>
+    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://ark-studio.app/zh-tw/about" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ark-studio.app/zh-cn/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ark-studio.app/en/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ark-studio.app/ja/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ark-studio.app/ko/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ark-studio.app/es/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ark-studio.app/fr/about" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ark-studio.app/de/about" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ark-studio.app/pt/about" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://ark-studio.app/vi/about" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://ark-studio.app/th/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ark-studio.app/zh-tw/about" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://david-liu.pages.dev/zh-tw/portfolio</loc>
-    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://david-liu.pages.dev/zh-tw/portfolio" />
-    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://david-liu.pages.dev/zh-cn/portfolio" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://david-liu.pages.dev/en/portfolio" />
+    <loc>https://ark-studio.app/zh-tw/portfolio</loc>
+    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://ark-studio.app/zh-tw/portfolio" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ark-studio.app/zh-cn/portfolio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ark-studio.app/en/portfolio" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ark-studio.app/ja/portfolio" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ark-studio.app/ko/portfolio" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ark-studio.app/es/portfolio" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ark-studio.app/fr/portfolio" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ark-studio.app/de/portfolio" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ark-studio.app/pt/portfolio" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://ark-studio.app/vi/portfolio" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://ark-studio.app/th/portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ark-studio.app/zh-tw/portfolio" />
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://david-liu.pages.dev/zh-tw/services</loc>
-    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://david-liu.pages.dev/zh-tw/services" />
-    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://david-liu.pages.dev/zh-cn/services" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://david-liu.pages.dev/en/services" />
+    <loc>https://ark-studio.app/zh-tw/services</loc>
+    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://ark-studio.app/zh-tw/services" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ark-studio.app/zh-cn/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ark-studio.app/en/services" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ark-studio.app/ja/services" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ark-studio.app/ko/services" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ark-studio.app/es/services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ark-studio.app/fr/services" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ark-studio.app/de/services" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ark-studio.app/pt/services" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://ark-studio.app/vi/services" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://ark-studio.app/th/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ark-studio.app/zh-tw/services" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://david-liu.pages.dev/zh-tw/contact</loc>
-    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://david-liu.pages.dev/zh-tw/contact" />
-    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://david-liu.pages.dev/zh-cn/contact" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://david-liu.pages.dev/en/contact" />
+    <loc>https://ark-studio.app/zh-tw/contact</loc>
+    <xhtml:link rel="alternate" hreflang="zh-tw" href="https://ark-studio.app/zh-tw/contact" />
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://ark-studio.app/zh-cn/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ark-studio.app/en/contact" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ark-studio.app/ja/contact" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ark-studio.app/ko/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ark-studio.app/es/contact" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ark-studio.app/fr/contact" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ark-studio.app/de/contact" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ark-studio.app/pt/contact" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://ark-studio.app/vi/contact" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://ark-studio.app/th/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ark-studio.app/zh-tw/contact" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

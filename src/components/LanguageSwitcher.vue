@@ -86,20 +86,81 @@ const currentLangName = computed(() => {
   }
 }
 
-/* Scrollable dropdown for 11 languages */
+/* ── Premium dropdown ── */
 :deep(.dropdown-menu) {
   max-height: 320px;
   overflow-y: auto;
-  min-width: 160px;
+  overflow-x: hidden;
+  min-width: 176px;
+  padding: 6px;
+  background: rgba(30, 41, 59, 0.97);
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+  /* hide native scrollbar, show custom */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
+  scrollbar-gutter: stable;
+}
+
+/* ── Custom scrollbar (WebKit) ── */
+:deep(.dropdown-menu::-webkit-scrollbar) {
+  width: 4px;
+}
+
+:deep(.dropdown-menu::-webkit-scrollbar-track) {
+  background: transparent;
+  margin: 10px 0;
+}
+
+:deep(.dropdown-menu::-webkit-scrollbar-thumb) {
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.55), rgba(59, 130, 246, 0.45));
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background-clip: padding-box;
+}
+
+:deep(.dropdown-menu::-webkit-scrollbar-thumb:hover) {
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.85), rgba(59, 130, 246, 0.75));
+}
+
+:deep(.dropdown-menu::-webkit-scrollbar-thumb:active) {
+  background: #2563eb;
 }
 
 :deep(.dropdown-item) {
   font-size: 0.875rem;
-  padding: 0.5rem 1rem;
+  font-weight: 500;
+  padding: 0.6rem 0.85rem;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 2px;
+}
+
+:deep(.dropdown-item:last-child) {
+  margin-bottom: 0;
+}
+
+:deep(.dropdown-item:hover),
+:deep(.dropdown-item:focus) {
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
 }
 
 :deep(.dropdown-item.active) {
-  background: var(--gradient-primary);
-  color: #fff;
+  background: rgba(37, 99, 235, 0.18);
+  color: #93c5fd;
+  font-weight: 600;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.2) inset;
+}
+
+:deep(.dropdown-item.active:hover) {
+  background: rgba(37, 99, 235, 0.28);
+  color: #bfdbfe;
 }
 </style>

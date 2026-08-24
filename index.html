@@ -25,11 +25,23 @@
       content="網站開發, 系統整合, 接案工程師, 電商網站, 企業網站, David Liu, 台灣, 免費諮詢"
     />
     <meta name="author" content="David Liu" />
-    <link rel="canonical" href="https://david-liu.pages.dev/" />
+    <link rel="canonical" href="https://ark-studio.app/" />
+
+    <!-- Old domain → ark-studio.app redirect (preserves path) -->
+    <script>
+      (function () {
+        var h = location.hostname;
+        if (location.search.includes('no-redirect')) return;
+        if (h === 'localhost' || h === '127.0.0.1' || h === '' || h === 'ark-studio.app') return;
+        if (h === 'www.ark-studio.app' || h.endsWith('.pages.dev')) {
+          location.replace('https://ark-studio.app' + location.pathname + location.search + location.hash);
+        }
+      })();
+    </script>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://david-liu.pages.dev/" />
+    <meta property="og:url" content="https://ark-studio.app/" />
     <meta
       property="og:title"
       content="David Liu Studio | 幫企業打造會賺錢的網站"
@@ -38,7 +50,7 @@
       property="og:description"
       content="您的網站在幫您賺錢嗎？7 年經驗，一站式開發，免費 30 分鐘諮詢。"
     />
-    <meta property="og:image" content="https://david-liu.pages.dev/og-image.png" />
+    <meta property="og:image" content="https://ark-studio.app/og-image.png" />
     <meta property="og:site_name" content="David Liu Studio" />
 
     <!-- Twitter -->
@@ -51,7 +63,7 @@
       name="twitter:description"
       content="您的網站在幫您賺錢嗎？7 年經驗，一站式開發，免費 30 分鐘諮詢。"
     />
-    <meta name="twitter:image" content="https://david-liu.pages.dev/og-image.png" />
+    <meta name="twitter:image" content="https://ark-studio.app/og-image.png" />
 
     <!-- Theme Color -->
     <meta name="theme-color" content="#059669" />
@@ -62,7 +74,7 @@
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "David Liu Studio",
-        "url": "https://david-liu.pages.dev/",
+        "url": "https://ark-studio.app/",
         "description": "專業的網站開發、前端開發、後端開發與系統整合服務，幫企業打造真正帶來成效的網站。",
         "founder": {
           "@type": "Person",
