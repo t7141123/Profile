@@ -35,7 +35,7 @@
     "id": 5,
     "key": "uvaco",
     "imageName": "uvaco.png",
-    "url": "https://uvaco-system.zeabur.app/",
+    "url": "https://uvaco-system.pages.dev/",
     "technologies": ["Vue.js", "Supabase", "Zeabur", "RWD"],
     "categoryKey": "education"
   },
