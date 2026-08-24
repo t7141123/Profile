@@ -88,6 +88,25 @@
       "timelineValue": "Ra mắt nhanh nhất trong 4 tuần",
       "result": "Kết quả",
       "resultValue": "Một website tự mang khách hàng đến với bạn"
+    },
+    "scrollHint": "Khám phá",
+    "stats": {
+      "years": "Năm Full-Stack",
+      "projects": "Dự Án Đã Bàn Giao",
+      "langs": "Ngôn Ngữ",
+      "tailored": "Bàn Giao Theo Yêu Cầu"
+    },
+    "whyBadge": "Vì Sao Chọn Chúng Tôi",
+    "whyTitle": "Phát Triển Phần Mềm",
+    "whyHighlight": " Theo Yêu Cầu",
+    "whyDescription": "Từ gia công phần mềm, tích hợp hệ thống đến tư vấn sản phẩm: Ark Studio mang hơn 9 năm kinh nghiệm full-stack để tạo phần mềm giải quyết vấn đề thực sự.",
+    "why": {
+      "customTitle": "Phát Triển Theo Yêu Cầu",
+      "customDesc": "Không dùng mẫu có sẵn. Kiến trúc và UX được thiết kế theo logic nghiệp vụ của bạn — website, e-commerce hay công cụ nội bộ, khớp 100%.",
+      "outsourceTitle": "Gia Công Phần Mềm",
+      "outsourceDesc": "Một đầu mối trọn gói: phân tích yêu cầu, UI/UX, front & back end, kiểm thử, triển khai và bảo trì. Bạn chỉ cần tập trung vào nghiệp vụ.",
+      "integrationTitle": "Tích Hợp & Tự Động Hóa",
+      "integrationDesc": "Kết nối thanh toán, LINE, ERP/CRM và API bên thứ ba. Tự động hóa quy trình rườm rà để dữ liệu liền mạch, ra quyết định nhanh hơn."
     }
   },
   "about": {

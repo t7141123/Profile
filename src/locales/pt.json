@@ -88,6 +88,25 @@
       "timelineValue": "Lançamento em apenas 4 semanas",
       "result": "Resultado",
       "resultValue": "Um site que traz clientes até você"
+    },
+    "scrollHint": "Explore",
+    "stats": {
+      "years": "Anos Full-Stack",
+      "projects": "Projetos Entregues",
+      "langs": "Idiomas",
+      "tailored": "Entrega Sob Medida"
+    },
+    "whyBadge": "Por Que Nós",
+    "whyTitle": "Desenvolvimento de",
+    "whyHighlight": " Software",
+    "whyDescription": "Da terceirização de software à integração de sistemas e consultoria de produto: a Ark Studio traz mais de 9 anos de experiência full-stack para criar software que resolve problemas reais.",
+    "why": {
+      "customTitle": "Desenvolvimento Sob Medida",
+      "customDesc": "Sem templates, sem concessões. Arquitetura e UX desenhadas para a sua lógica de negócio — sites, e-commerce ou ferramentas internas, 100% ajustados.",
+      "outsourceTitle": "Terceirização de Software",
+      "outsourceDesc": "Um único parceiro do início ao fim: requisitos, UI/UX, front e back end, testes, deploy e manutenção. Você cuida do negócio.",
+      "integrationTitle": "Integração e Automação",
+      "integrationDesc": "Conecte pagamentos, LINE, ERP/CRM e APIs externas. Automatize fluxos tediosos para que os dados fluam e as decisões cheguem mais rápido."
     }
   },
   "about": {

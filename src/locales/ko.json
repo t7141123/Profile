@@ -88,6 +88,25 @@
       "timelineValue": "최단 4주 만에 론칭",
       "result": "성과",
       "resultValue": "고객을 불러오는 웹사이트"
+    },
+    "scrollHint": "스크롤",
+    "stats": {
+      "years": "년 풀스택 경험",
+      "projects": "개 납품 프로젝트",
+      "langs": "개 지원 언어",
+      "tailored": "맞춤 납품"
+    },
+    "whyBadge": "선택 이유",
+    "whyTitle": "맞춤형 소프트웨어",
+    "whyHighlight": " 개발 파트너",
+    "whyDescription": "소프트웨어 위탁, 시스템 통합, 제품 컨설팅까지. Ark Studio는 9년 이상의 풀스택 경험으로 기업과 개인의 문제를 해결하는 소프트웨어를 만듭니다.",
+    "why": {
+      "customTitle": "맞춤형 소프트웨어 개발",
+      "customDesc": "템플릿 없이 비즈니스 로직에 맞춘 시스템 설계와 UX. 기업 웹사이트부터 내부 관리 시스템까지 100% 요구에 부합합니다.",
+      "outsourceTitle": "소프트웨어 위탁 개발",
+      "outsourceDesc": "요구사항 분석, UI/UX 설계, 프론트·백엔드 개발, 테스트, 배포, 유지보수까지 원스톱. 본업에만 집중하세요.",
+      "integrationTitle": "시스템 통합 · 자동화",
+      "integrationDesc": "결제, LINE, ERP/CRM, 서드파티 API를 연동해 반복 업무를 자동화하고 데이터 흐름과 의사결정을 빠르게 합니다."
     }
   },
   "about": {

@@ -88,6 +88,25 @@
       "timelineValue": "最快 4 週上線",
       "result": "結果",
       "resultValue": "一個讓客戶主動找上門的網站"
+    },
+    "scrollHint": "向下探索",
+    "stats": {
+      "years": "年全端經驗",
+      "projects": "個交付專案",
+      "langs": "種支援語言",
+      "tailored": "客製化交付"
+    },
+    "whyBadge": "為什麼選擇我們",
+    "whyTitle": "客製化軟體開發",
+    "whyHighlight": "首選夥伴",
+    "whyDescription": "從軟體委託、系統整合到產品顧問，Ark Studio 方舟工坊以 9 年全端經驗，為企業與個人打造真正解決問題的軟體。",
+    "why": {
+      "customTitle": "客製化軟體開發",
+      "customDesc": "不套模板、不將就。依您的商業邏輯量身設計系統架構與使用者體驗，從企業官網、電商到內部管理系統，100% 符合需求。",
+      "outsourceTitle": "軟體委託開發",
+      "outsourceDesc": "單一窗口負責到底：需求分析、UI/UX 設計、前後端開發、測試部署與售後維護。您只需專注本業，其餘交給我們。",
+      "integrationTitle": "系統整合與自動化",
+      "integrationDesc": "串接金流、LINE、ERP/CRM 與第三方 API，將繁瑣流程自動化，讓資料在系統間無縫流動，決策更即時。"
     }
   },
   "about": {

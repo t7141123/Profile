@@ -88,6 +88,25 @@
       "timelineValue": "最短4週間でリリース",
       "result": "成果",
       "resultValue": "お客様から選ばれるWebサイトに"
+    },
+    "scrollHint": "スクロール",
+    "stats": {
+      "years": "年のフルスタック経験",
+      "projects": "の納品プロジェクト",
+      "langs": "対応言語",
+      "tailored": "オーダーメイド納品"
+    },
+    "whyBadge": "選ばれる理由",
+    "whyTitle": "オーダーメイド",
+    "whyHighlight": "ソフトウェア開発",
+    "whyDescription": "受託開発、システム連携、プロダクト相談まで。Ark Studio は 9 年超のフルスタック経験で、課題を本当に解決するソフトウェアを提供します。",
+    "why": {
+      "customTitle": "オーダーメイド開発",
+      "customDesc": "テンプレートに頼らない。ビジネスロジックに合わせてシステム構成と UX を設計。企業サイトから社内システムまで 100% ご要望に応えます。",
+      "outsourceTitle": "受託開発",
+      "outsourceDesc": "要件定義、UI/UX 設計、フロント・バックエンド開発、テスト、リリース、保守までワンストップ。本業に集中いただけます。",
+      "integrationTitle": "システム連携・自動化",
+      "integrationDesc": "決済、LINE、ERP/CRM、外部 API を連携し、煩雑な業務を自動化。データをシームレスに流し、意思決定を高速化します。"
     }
   },
   "about": {

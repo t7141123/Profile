@@ -2483,3 +2483,76 @@ textarea,
     transition: none !important;
   }
 }
+
+/* ===================================
+   Scroll Reveal (v-inview)
+   =================================== */
+.iv-init {
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.iv-init[data-iv="left"] { transform: translateX(-40px); }
+.iv-init[data-iv="right"] { transform: translateX(40px); }
+.iv-init[data-iv="scale"] { transform: scale(0.94); }
+.iv-init[data-iv="blur"] { filter: blur(8px); transform: translateY(20px); }
+.iv-in {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .iv-init { opacity: 1 !important; transform: none !important; filter: none !important; transition: none !important; }
+}
+
+/* ===================================
+   Hero scroll hint
+   =================================== */
+.scroll-hint {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+.scroll-hint:hover { opacity: 1; color: var(--primary-color); }
+.scroll-hint .mouse {
+  width: 22px;
+  height: 34px;
+  border: 2px solid currentColor;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+.scroll-hint .mouse span {
+  width: 3px;
+  height: 7px;
+  border-radius: 2px;
+  background: currentColor;
+  animation: scrollWheel 1.8s ease-in-out infinite;
+}
+@keyframes scrollWheel {
+  0% { transform: translateY(0); opacity: 1; }
+  60% { transform: translateY(9px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 0; }
+}
+@media (max-width: 767.98px) {
+  .scroll-hint { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-hint .mouse span { animation: none; }
+}

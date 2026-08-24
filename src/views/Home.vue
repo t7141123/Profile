@@ -67,6 +67,28 @@
             </div>
           </div>
       </div>
+      <a href="#home-stats" class="scroll-hint" aria-hidden="true" tabindex="-1">
+        <span class="mouse"><span></span></span>
+        {{ $t("home.scrollHint") }}
+      </a>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats-section" id="home-stats">
+      <div class="container">
+        <div class="stats-panel border-beam" v-inview="{ variant: 'scale' }">
+          <div class="row g-0">
+            <div
+              class="col-6 col-lg-3 stat-cell"
+              v-for="(s, i) in stats"
+              :key="s.id"
+            >
+              <div class="stat-value" v-count="{ value: s.value, suffix: s.suffix }"></div>
+              <div class="stat-label">{{ s.label }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Services Preview Section -->
@@ -82,8 +104,9 @@
         <div class="row g-4">
           <div
             class="col-md-6 col-lg-3"
-            v-for="service in services"
+            v-for="(service, i) in services"
             :key="service.id"
+            v-inview="{ delay: i * 90 }"
           >
             <router-link
               to="/services"
@@ -119,17 +142,47 @@
         <div class="row g-4">
           <div
             class="col-md-6 col-lg-4"
-            v-for="project in featuredProjects"
+            v-for="(project, i) in featuredProjects"
             :key="project.id"
+            v-inview="{ delay: i * 100 }"
           >
             <PortfolioCard :project="project" />
           </div>
         </div>
 
-        <div class="text-center mt-5">
+        <div class="text-center mt-5" v-inview>
           <router-link to="/portfolio" class="btn btn-outline-custom" v-ripple>
             {{ $t("home.viewAll") }} <i class="bi bi-arrow-right ms-2"></i>
           </router-link>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Ark Studio (SEO) -->
+    <section class="section why-section">
+      <div class="container">
+        <SectionHeader
+          :badge="$t('home.whyBadge')"
+          :title="$t('home.whyTitle')"
+          :highlight="$t('home.whyHighlight')"
+          :description="$t('home.whyDescription')"
+        />
+
+        <div class="row g-4">
+          <div
+            class="col-md-6 col-lg-4"
+            v-for="(w, i) in whyCards"
+            :key="w.icon"
+            v-inview="{ delay: i * 100 }"
+          >
+            <div class="why-card glass-card h-100 border-beam spotlight-card" v-spotlight>
+              <div class="why-icon">
+                <i :class="w.icon"></i>
+              </div>
+              <h3 class="why-title">{{ w.title }}</h3>
+              <p class="why-desc">{{ w.desc }}</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -138,7 +191,7 @@
     <section class="section cta-section no-divider">
       <div class="aurora-glow" aria-hidden="true"></div>
       <div class="container">
-        <div class="cta-content text-center">
+        <div class="cta-content text-center" v-inview="{ variant: 'scale' }">
           <h2 class="cta-title">{{ $t("home.ctaTitle") }}</h2>
           <p class="cta-description">
             {{ $t("home.ctaDescription") }}<br />
@@ -202,6 +255,31 @@ const services = computed(() => [
 ]);
 
 const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
+
+const stats = computed(() => [
+  { id: 1, value: 9, suffix: "+", label: t("home.stats.years") },
+  { id: 2, value: 14, suffix: "+", label: t("home.stats.projects") },
+  { id: 3, value: 11, suffix: "", label: t("home.stats.langs") },
+  { id: 4, value: 100, suffix: "%", label: t("home.stats.tailored") },
+]);
+
+const whyCards = computed(() => [
+  {
+    icon: "bi bi-diagram-3",
+    title: t("home.why.customTitle"),
+    desc: t("home.why.customDesc"),
+  },
+  {
+    icon: "bi bi-briefcase",
+    title: t("home.why.outsourceTitle"),
+    desc: t("home.why.outsourceDesc"),
+  },
+  {
+    icon: "bi bi-arrow-repeat",
+    title: t("home.why.integrationTitle"),
+    desc: t("home.why.integrationDesc"),
+  },
+]);
 </script>
 
 <style scoped>
@@ -286,6 +364,93 @@ const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
 /* Featured Projects Section */
 .featured-projects-section {
   padding-bottom: 4rem;
+}
+
+/* Stats Panel */
+.stats-section {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: -1rem;
+}
+
+.stats-panel {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.stat-cell {
+  padding: 2rem 1rem;
+  text-align: center;
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.stat-cell:nth-child(2n) { border-right: none; }
+.stat-cell:nth-last-child(-n + 2) { border-bottom: none; }
+
+@media (min-width: 992px) {
+  .stat-cell { border-bottom: none; }
+  .stat-cell:last-child { border-right: none; }
+}
+
+.stat-value {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.35rem;
+}
+
+/* Why cards */
+.why-card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.why-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-lg);
+  background: var(--gradient-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 1.25rem;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.why-card:hover .why-icon {
+  transform: rotate(-8deg) scale(1.08);
+}
+
+.why-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.65rem;
+}
+
+.why-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin: 0;
 }
 
 /* CTA Section - More visual separation */

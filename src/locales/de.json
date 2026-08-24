@@ -88,6 +88,25 @@
       "timelineValue": "Live-Schaltung in nur 4 Wochen möglich",
       "result": "Ergebnis",
       "resultValue": "Eine Website, die Ihnen Kunden bringt"
+    },
+    "scrollHint": "Entdecken",
+    "stats": {
+      "years": "Jahre Full-Stack",
+      "projects": "Abgeschlossene Projekte",
+      "langs": "Sprachen",
+      "tailored": "Maßgeschneidert"
+    },
+    "whyBadge": "Warum Wir",
+    "whyTitle": "Individuelle",
+    "whyHighlight": " Softwareentwicklung",
+    "whyDescription": "Von Software-Outsourcing über Systemintegration bis Produktberatung: Ark Studio bringt 9+ Jahre Full-Stack-Erfahrung mit, um Software zu bauen, die Probleme wirklich löst.",
+    "why": {
+      "customTitle": "Maßgeschneiderte Entwicklung",
+      "customDesc": "Keine Templates, keine Kompromisse. Architektur und UX nach Ihrer Geschäftslogik — Corporate Sites, E-Commerce oder interne Tools, 100 % passgenau.",
+      "outsourceTitle": "Software-Outsourcing",
+      "outsourceDesc": "Ein Partner von A bis Z: Anforderungsanalyse, UI/UX, Front- & Backend, Tests, Deployment und Wartung. Sie konzentrieren sich auf Ihr Geschäft.",
+      "integrationTitle": "Integration & Automatisierung",
+      "integrationDesc": "Zahlungen, LINE, ERP/CRM und Drittanbieter-APIs verbinden. Langwierige Abläufe automatisieren — Daten fließen, Entscheidungen kommen schneller."
     }
   },
   "about": {

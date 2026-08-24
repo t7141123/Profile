@@ -105,6 +105,75 @@ export default {
     },
   },
   scramble,
+  inview: {
+    mounted(el, binding) {
+      const opts = binding.value || {};
+      el.classList.add("iv-init");
+      if (opts.variant) el.setAttribute("data-iv", opts.variant);
+      if (opts.delay) el.style.transitionDelay = `${opts.delay}ms`;
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              el.classList.add("iv-in");
+              io.unobserve(el);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+      );
+      io.observe(el);
+      el._ivIO = io;
+    },
+    unmounted(el) {
+      if (el._ivIO) el._ivIO.disconnect();
+    },
+  },
+  count: {
+    mounted(el, binding) {
+      const opts =
+        typeof binding.value === "number"
+          ? { value: binding.value }
+          : binding.value || {};
+      const target = Number(opts.value) || 0;
+      const suffix = opts.suffix ?? "";
+      const prefix = opts.prefix ?? "";
+      const dur = opts.duration ?? 1500;
+      const reduce = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+      const render = (v) => {
+        el.textContent = `${prefix}${v}${suffix}`;
+      };
+      if (reduce) {
+        render(target);
+        return;
+      }
+      render(0);
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (!e.isIntersecting) return;
+            io.unobserve(el);
+            const t0 = performance.now();
+            const tick = (t) => {
+              const p = Math.min((t - t0) / dur, 1);
+              const eased = 1 - Math.pow(1 - p, 3);
+              render(Math.round(target * eased));
+              if (p < 1) requestAnimationFrame(tick);
+            };
+            requestAnimationFrame(tick);
+          });
+        },
+        { threshold: 0.4 }
+      );
+      io.observe(el);
+      el._countIO = io;
+    },
+    unmounted(el) {
+      if (el._countIO) el._countIO.disconnect();
+    },
+  },
   reveal: {
     mounted(el, binding) {
       if (el._revealInit) return;

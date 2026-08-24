@@ -88,6 +88,25 @@
       "timelineValue": "Launch in as fast as 4 weeks",
       "result": "Result",
       "resultValue": "A site that brings customers to you"
+    },
+    "scrollHint": "Scroll to explore",
+    "stats": {
+      "years": "Years Full-Stack",
+      "projects": "Projects Delivered",
+      "langs": "Languages Supported",
+      "tailored": "Tailored Delivery"
+    },
+    "whyBadge": "Why Choose Us",
+    "whyTitle": "Custom Software",
+    "whyHighlight": " Development",
+    "whyDescription": "From software outsourcing and system integration to product consulting, Ark Studio brings 9+ years of full-stack expertise to build software that actually solves problems for businesses and individuals.",
+    "why": {
+      "customTitle": "Custom Software Development",
+      "customDesc": "No templates, no compromises. System architecture and UX designed around your business logic — from corporate sites and e-commerce to internal tools, 100% fit for purpose.",
+      "outsourceTitle": "Software Outsourcing",
+      "outsourceDesc": "One partner, end to end: requirements, UI/UX, front & back end, testing, deployment and maintenance. You focus on your business; we handle the tech.",
+      "integrationTitle": "Integration & Automation",
+      "integrationDesc": "Connect payments, LINE, ERP/CRM and third-party APIs. Automate tedious workflows so data flows seamlessly and decisions come faster."
     }
   },
   "about": {

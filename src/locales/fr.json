@@ -88,6 +88,25 @@
       "timelineValue": "Mise en ligne en 4 semaines minimum",
       "result": "Résultat",
       "resultValue": "Un site qui vous apporte des clients"
+    },
+    "scrollHint": "Défiler",
+    "stats": {
+      "years": "Ans Full-Stack",
+      "projects": "Projets Livrés",
+      "langs": "Langues",
+      "tailored": "Livraison Sur Mesure"
+    },
+    "whyBadge": "Pourquoi Nous",
+    "whyTitle": "Développement Logiciel",
+    "whyHighlight": " Sur Mesure",
+    "whyDescription": "De l’externalisation logicielle à l’intégration de systèmes et au conseil produit : Ark Studio met plus de 9 ans d’expertise full-stack au service de logiciels qui résolvent de vrais problèmes.",
+    "why": {
+      "customTitle": "Développement Sur Mesure",
+      "customDesc": "Aucun template, aucun compromis. Architecture et UX conçues selon votre logique métier — sites vitrines, e-commerce ou outils internes, 100 % adaptés.",
+      "outsourceTitle": "Externalisation Logicielle",
+      "outsourceDesc": "Un interlocuteur unique de bout en bout : cadrage, UI/UX, front & back, tests, mise en production et maintenance. Concentrez-vous sur votre métier.",
+      "integrationTitle": "Intégration & Automatisation",
+      "integrationDesc": "Connectez paiements, LINE, ERP/CRM et API tierces. Automatisez les tâches fastidieuses pour des données fluides et des décisions plus rapides."
     }
   },
   "about": {

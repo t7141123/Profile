@@ -88,6 +88,25 @@
       "timelineValue": "最快 4 周上线",
       "result": "结果",
       "resultValue": "一个让客户主动找上门的网站"
+    },
+    "scrollHint": "向下探索",
+    "stats": {
+      "years": "年全栈经验",
+      "projects": "个交付项目",
+      "langs": "种支持语言",
+      "tailored": "定制化交付"
+    },
+    "whyBadge": "为什么选择我们",
+    "whyTitle": "定制化软件开发",
+    "whyHighlight": "首选伙伴",
+    "whyDescription": "从软件委托、系统集成到产品顾问，Ark Studio 方舟工坊以 9 年全栈经验，为企业与个人打造真正解决问题的软件。",
+    "why": {
+      "customTitle": "定制化软件开发",
+      "customDesc": "不套模板、不将就。依您的商业逻辑量身设计系统架构与用户体验，从企业官网、电商到内部管理系统，100% 符合需求。",
+      "outsourceTitle": "软件委托开发",
+      "outsourceDesc": "单一窗口负责到底：需求分析、UI/UX 设计、前后端开发、测试部署与售后维护。您只需专注本业，其余交给我们。",
+      "integrationTitle": "系统集成与自动化",
+      "integrationDesc": "串接金流、LINE、ERP/CRM 与第三方 API，将繁琐流程自动化，让数据在系统间无缝流动，决策更即时。"
     }
   },
   "about": {

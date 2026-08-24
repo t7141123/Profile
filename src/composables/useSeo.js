@@ -198,6 +198,41 @@ export function useSeo() {
       const el = document.getElementById('jsonld-faq')
       if (el) el.remove()
     }
+
+    // Service JSON-LD on Home
+    if (routeName === 'Home') {
+      ensureJsonLd('jsonld-service', {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        serviceType: 'Custom Software Development',
+        name: 'Ark Studio — Custom Software Development',
+        url: `${SITE_URL}/${loc}/`,
+        provider: { '@id': `${SITE_URL}/#organization` },
+        areaServed: 'Worldwide',
+        description:
+          'Custom software development, software outsourcing, system integration, corporate websites, e-commerce, booking & management systems, LINE Bot and AI integration.',
+        availableChannel: {
+          '@type': 'ServiceChannel',
+          serviceUrl: `${SITE_URL}/${loc}/contact`,
+          availableLanguage: ['zh-TW', 'zh-CN', 'en', 'ja', 'ko']
+        },
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: 'Software Development Services',
+          itemListElement: [
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '客製化軟體開發 Custom Software Development' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '軟體委託開發 Software Outsourcing' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '系統整合與自動化 System Integration & Automation' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '企業官網與電商開發 Corporate Website & E-commerce' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '預約與管理系統 Booking & Management Systems' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'LINE Bot 與 AI 整合 LINE Bot & AI Integration' } }
+          ]
+        }
+      })
+    } else {
+      const el = document.getElementById('jsonld-service')
+      if (el) el.remove()
+    }
   }
 
   watch(() => [route.path, route.name, locale.value], update, { immediate: true })

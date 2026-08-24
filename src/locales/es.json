@@ -88,6 +88,25 @@
       "timelineValue": "Lanzamiento en tan solo 4 semanas",
       "result": "Resultado",
       "resultValue": "Un sitio que le trae clientes"
+    },
+    "scrollHint": "Desliza",
+    "stats": {
+      "years": "Años Full-Stack",
+      "projects": "Proyectos Entregados",
+      "langs": "Idiomas",
+      "tailored": "Entrega a Medida"
+    },
+    "whyBadge": "Por Qué Elegirnos",
+    "whyTitle": "Desarrollo de Software",
+    "whyHighlight": " a Medida",
+    "whyDescription": "Desde externalización de software e integración de sistemas hasta consultoría de producto: Ark Studio aporta más de 9 años full-stack para crear software que resuelve problemas reales.",
+    "why": {
+      "customTitle": "Desarrollo a Medida",
+      "customDesc": "Sin plantillas ni concesiones. Arquitectura y UX diseñadas según tu lógica de negocio: webs corporativas, e-commerce o herramientas internas, 100% ajustadas.",
+      "outsourceTitle": "Externalización de Software",
+      "outsourceDesc": "Un solo socio de principio a fin: requisitos, UI/UX, front y back end, pruebas, despliegue y mantenimiento. Tú te ocupas de tu negocio.",
+      "integrationTitle": "Integración y Automatización",
+      "integrationDesc": "Conecta pagos, LINE, ERP/CRM y APIs de terceros. Automatiza flujos tediosos para que los datos fluyan y decidas más rápido."
     }
   },
   "about": {
