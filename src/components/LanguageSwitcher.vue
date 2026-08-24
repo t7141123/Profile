@@ -7,8 +7,9 @@
       data-bs-toggle="dropdown"
       aria-expanded="false"
     >
-      <i class="bi bi-globe2 me-1"></i>
+      <span class="lang-icon"><i class="bi bi-globe2"></i></span>
       <span class="lang-text">{{ currentLangName }}</span>
+      <span class="lang-chevron"><i class="bi bi-chevron-down"></i></span>
     </button>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
       <li v-for="lang in languages" :key="lang.code">
@@ -53,27 +54,70 @@ const currentLangName = computed(() => {
 
 <style scoped>
 .btn-language {
-  background: var(--bg-accent);
-  border: 1px solid var(--border-color);
-  color: var(--text-primary);
-  padding: 0.5rem 1.25rem;
-  border-radius: var(--radius-full);
-  font-size: 0.875rem;
-  font-weight: 600;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  box-shadow: var(--shadow-sm);
+  gap: 6px;
+  height: 32px;
+  padding: 0 10px 0 12px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  color: var(--text-secondary);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
 }
 
 .btn-language:hover,
-.btn-language:focus {
-  background: var(--bg-secondary);
-  border-color: var(--primary-color);
-  color: var(--primary-color);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
+.btn-language:focus,
+.show > .btn-language {
+  background: var(--bg-accent);
+  border-color: rgba(37, 99, 235, 0.18);
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.btn-language:active {
+  transform: scale(0.97);
+}
+
+/* hide Bootstrap default caret */
+.btn-language.dropdown-toggle::after {
+  display: none;
+}
+
+.lang-icon {
+  font-size: 13px;
+  opacity: 0.65;
+  display: flex;
+  align-items: center;
+}
+
+.lang-chevron {
+  font-size: 10px;
+  opacity: 0.4;
+  display: flex;
+  align-items: center;
+  margin-left: 1px;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s;
+}
+
+.show .lang-chevron {
+  transform: rotate(180deg);
+  opacity: 0.7;
+}
+
+.btn-language:hover .lang-icon,
+.show > .btn-language .lang-icon {
+  opacity: 1;
+}
+
+.btn-language:hover .lang-chevron,
+.show > .btn-language .lang-chevron {
+  opacity: 0.7;
 }
 
 .lang-text {

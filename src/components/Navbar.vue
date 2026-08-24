@@ -201,15 +201,25 @@ onUnmounted(() => {
 }
 
 .navbar:not(.scrolled) :deep(.btn-language) {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.3);
-  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.navbar:not(.scrolled) :deep(.btn-language:hover),
+.navbar:not(.scrolled) :deep(.show > .btn-language) {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.28);
+  color: #ffffff;
 }
 
 [data-theme='dark'] .navbar:not(.scrolled) :deep(.btn-language) {
   background: var(--bg-accent);
   border-color: var(--border-color);
   color: var(--text-primary);
+  backdrop-filter: none;
 }
 
 .navbar-brand {
