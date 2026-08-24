@@ -105,6 +105,35 @@ export default {
     },
   },
   scramble,
+  magnetic: {
+    mounted(el, binding) {
+      const opts = binding.value || {};
+      const strength = opts.strength ?? 0.35;
+      const max = opts.max ?? 12;
+      el.style.transition = "transform 0.18s cubic-bezier(0.22, 1, 0.36, 1)";
+      el.style.willChange = "transform";
+      const clamp = (v) => Math.max(-max, Math.min(max, v));
+      const move = (e) => {
+        const r = el.getBoundingClientRect();
+        const dx = clamp((e.clientX - (r.left + r.width / 2)) * strength);
+        const dy = clamp((e.clientY - (r.top + r.height / 2)) * strength);
+        el.style.transform = `translate(${dx.toFixed(1)}px, ${dy.toFixed(1)}px)`;
+      };
+      const leave = () => {
+        el.style.transform = "";
+      };
+      el.addEventListener("mousemove", move);
+      el.addEventListener("mouseleave", leave);
+      el._magMove = move;
+      el._magLeave = leave;
+    },
+    unmounted(el) {
+      el.removeEventListener("mousemove", el._magMove);
+      el.removeEventListener("mouseleave", el._magLeave);
+      el.style.transform = "";
+      el.style.transition = "";
+    },
+  },
   inview: {
     mounted(el, binding) {
       const opts = binding.value || {};

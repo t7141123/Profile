@@ -195,6 +195,10 @@ a:hover {
 
 .hero-title {
   color: #F1F5F9;
+  font-size: clamp(2.6rem, 5.6vw, 4.3rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.08;
 }
 
 .hero-title .highlight {
@@ -2555,4 +2559,17 @@ textarea,
 }
 @media (prefers-reduced-motion: reduce) {
   .scroll-hint .mouse span { animation: none; }
+}
+
+/* ===================================
+   Film-grain noise texture overlay
+   =================================== */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.028;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }

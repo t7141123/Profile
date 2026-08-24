@@ -6,6 +6,9 @@
     <!-- Scroll Progress Bar -->
     <div id="scroll-progress"></div>
 
+    <!-- Cursor Glow -->
+    <CursorGlow />
+
     <!-- Navigation Bar -->
     <Navbar />
 
@@ -35,6 +38,7 @@ import { useSeo } from './composables/useSeo'
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 import BackToTop from './components/common/BackToTop.vue'
+import CursorGlow from './components/CursorGlow.vue'
 
 const { locale } = useI18n()
 const route = useRoute()

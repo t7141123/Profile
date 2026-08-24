@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section" @mousemove="onHeroMove">
       <TechBackground />
       <div class="meteor-area">
         <span class="meteor" style="--mtd: 0s; --mty: 5%; --mtx: 85%;"></span>
@@ -9,6 +9,21 @@
         <span class="meteor" style="--mtd: 4s; --mty: 35%; --mtx: 78%;"></span>
         <span class="meteor" style="--mtd: 1.5s; --mty: 55%; --mtx: 88%;"></span>
         <span class="meteor" style="--mtd: 3.2s; --mty: 75%; --mtx: 82%;"></span>
+      </div>
+
+      <div
+        v-for="chip in chips"
+        :key="chip.label"
+        class="chip-float"
+        :style="chip.pos"
+        aria-hidden="true"
+      >
+        <span
+          class="hero-chip"
+          :style="{ '--d': chip.depth, 'animation-delay': chip.delay }"
+        >
+          <i :class="chip.icon"></i>{{ chip.label }}
+        </span>
       </div>
 
       <div class="container">
@@ -26,7 +41,7 @@
               </p>
 
               <div class="hero-buttons">
-                <router-link to="/portfolio" class="btn btn-primary-custom" v-ripple>
+                <router-link to="/portfolio" class="btn btn-primary-custom" v-ripple v-magnetic>
                   <i class="bi bi-collection me-2"></i
                   >{{ $t("home.viewWorks") }}
                 </router-link>
@@ -35,6 +50,7 @@
                   target="_blank"
                   class="btn btn-line"
                   v-ripple
+                  v-magnetic
                 >
                   <i class="bi bi-line me-2"></i>{{ $t("home.addLine") }}
                 </a>
@@ -73,6 +89,21 @@
       </a>
     </section>
 
+    <!-- Marquee Band -->
+    <div class="marquee-band" aria-hidden="true">
+      <div class="marquee-track">
+        <template v-for="n in 2">
+          <span
+            v-for="(item, i) in marqueeItems"
+            :key="`${n}-${i}`"
+            class="marquee-item"
+          >
+            {{ item }}<i class="bi bi-asterisk"></i>
+          </span>
+        </template>
+      </div>
+    </div>
+
     <!-- Stats Section -->
     <section class="section stats-section" id="home-stats">
       <div class="container">
@@ -91,41 +122,41 @@
       </div>
     </section>
 
-    <!-- Services Preview Section -->
+    <!-- Services Bento Section -->
     <section class="section">
       <div class="container">
         <SectionHeader
+          index="01"
           :badge="$t('home.servicesBadge')"
           :title="$t('home.servicesTitle')"
           :highlight="$t('home.servicesTitleHighlight')"
           :description="$t('home.servicesDescription')"
         />
 
-        <div class="row g-4">
-          <div
-            class="col-md-6 col-lg-3"
+        <div class="bento">
+          <router-link
             v-for="(service, i) in services"
             :key="service.id"
+            to="/services"
+            class="bento-card text-decoration-none"
+            :class="{ large: i === 0 }"
             v-inview="{ delay: i * 90 }"
+            v-spotlight
           >
-            <router-link
-              to="/services"
-              class="glass-card service-card h-100 text-decoration-none border-beam spotlight-card"
-              v-spotlight
-            >
-              <div
-                class="service-icon"
-                :style="{ background: service.gradient }"
-              >
+            <span class="bento-num" aria-hidden="true">0{{ i + 1 }}</span>
+            <div class="bento-body">
+              <div class="bento-icon" :style="{ background: service.gradient }">
                 <i :class="service.icon"></i>
               </div>
-              <h3 class="service-title">{{ service.title }}</h3>
-              <p class="service-description">{{ service.description }}</p>
-              <span class="service-link">
-                {{ $t("home.learnMore") }} <i class="bi bi-arrow-right"></i>
+              <h3 class="bento-title">{{ service.title }}</h3>
+              <p class="bento-desc">{{ service.description }}</p>
+              <span class="bento-link">
+                {{ $t("home.learnMore") }}
+                <i class="bi bi-arrow-right"></i>
               </span>
-            </router-link>
-          </div>
+            </div>
+            <div class="bento-glow" :style="{ background: service.gradient }" aria-hidden="true"></div>
+          </router-link>
         </div>
       </div>
     </section>
@@ -137,6 +168,7 @@
           :badge="$t('home.featuredBadge')"
           :title="$t('home.featuredTitle')"
           :highlight="$t('home.featuredTitleHighlight')"
+          index="02"
         />
 
         <div class="row g-4">
@@ -162,6 +194,7 @@
     <section class="section why-section">
       <div class="container">
         <SectionHeader
+          index="03"
           :badge="$t('home.whyBadge')"
           :title="$t('home.whyTitle')"
           :highlight="$t('home.whyHighlight')"
@@ -202,6 +235,7 @@
             target="_blank"
             class="btn btn-rainbow btn-lg"
             v-ripple
+            v-magnetic
           >
             <i class="bi bi-line me-2"></i>{{ $t("home.ctaButton") }}
           </a>
@@ -223,7 +257,16 @@ import { useProjects } from "@/composables/useProjects";
 const { t } = useI18n();
 const { getFeaturedProjects } = useProjects();
 
+const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
+
 const services = computed(() => [
+  {
+    id: 4,
+    icon: "bi bi-code-square",
+    title: t("home.services.custom"),
+    description: t("home.services.customDesc"),
+    gradient: "linear-gradient(135deg, #10B981 0%, #34D399 100%)",
+  },
   {
     id: 1,
     icon: "bi bi-globe",
@@ -245,16 +288,35 @@ const services = computed(() => [
     description: t("home.services.eventsDesc"),
     gradient: "linear-gradient(135deg, #14B8A6 0%, #2DD4BF 100%)",
   },
-  {
-    id: 4,
-    icon: "bi bi-code-square",
-    title: t("home.services.custom"),
-    description: t("home.services.customDesc"),
-    gradient: "linear-gradient(135deg, #10B981 0%, #34D399 100%)",
-  },
 ]);
 
-const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
+const chips = [
+  { label: "Vue.js", icon: "bi bi-lightning-charge", depth: 26, delay: "0s", pos: { top: "18%", left: "4%" } },
+  { label: "React", icon: "bi bi-atom", depth: 40, delay: "-3s", pos: { top: "64%", left: "2%" } },
+  { label: "Node.js", icon: "bi bi-server", depth: 20, delay: "-6s", pos: { top: "12%", right: "6%" } },
+  { label: "Supabase", icon: "bi bi-database", depth: 34, delay: "-2s", pos: { top: "78%", right: "4%" } },
+  { label: "Cloudflare", icon: "bi bi-cloud-check", depth: 30, delay: "-4.5s", pos: { top: "40%", right: "1%" } },
+  { label: "AI × LINE", icon: "bi bi-robot", depth: 44, delay: "-1.5s", pos: { top: "88%", left: "30%" } },
+];
+
+const marqueeItems = computed(() => [
+  t("home.why.customTitle"),
+  t("home.why.outsourceTitle"),
+  t("home.why.integrationTitle"),
+  t("home.services.corporate"),
+  t("home.services.operations"),
+  t("home.services.events"),
+  "LINE Bot × AI",
+  "UI/UX",
+]);
+
+const onHeroMove = (e) => {
+  const el = e.currentTarget;
+  const x = (e.clientX / window.innerWidth - 0.5) * 2;
+  const y = (e.clientY / window.innerHeight - 0.5) * 2;
+  el.style.setProperty("--mx", x.toFixed(3));
+  el.style.setProperty("--my", y.toFixed(3));
+};
 
 const stats = computed(() => [
   { id: 1, value: 9, suffix: "+", label: t("home.stats.years") },
@@ -364,6 +426,231 @@ const whyCards = computed(() => [
 /* Featured Projects Section */
 .featured-projects-section {
   padding-bottom: 4rem;
+}
+
+/* ── Hero chips (mouse parallax + float) ── */
+.chip-float {
+  position: absolute;
+  z-index: 5;
+  animation: chipFloat 7s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.hero-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #e2e8f0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transform: translate3d(
+    calc(var(--mx, 0) * var(--d, 20) * 1px),
+    calc(var(--my, 0) * var(--d, 20) * 1px),
+    0
+  );
+  transition: transform 0.1s linear;
+  white-space: nowrap;
+}
+
+.hero-chip i {
+  font-size: 0.85rem;
+  color: #60a5fa;
+}
+
+@keyframes chipFloat {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -12px; }
+}
+
+@media (max-width: 991.98px) {
+  .chip-float { display: none; }
+}
+
+/* ── Marquee band ── */
+.marquee-band {
+  overflow: hidden;
+  background: var(--gradient-primary);
+  transform: rotate(-1.2deg) scale(1.03);
+  margin: -1.5rem 0 0;
+  padding: 1.05rem 0;
+  position: relative;
+  z-index: 6;
+  box-shadow: var(--shadow-lg);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-band:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.marquee-item i {
+  margin: 0 1.6rem;
+  font-size: 0.7rem;
+  opacity: 0.75;
+}
+
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+  .chip-float { animation: none; }
+}
+
+/* ── Bento services ── */
+.bento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.bento-card {
+  position: relative;
+  display: block;
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s ease, box-shadow 0.35s ease;
+  color: inherit;
+}
+
+.bento-card.large {
+  grid-column: span 2;
+}
+
+.bento-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(37, 99, 235, 0.35);
+  box-shadow: var(--shadow-xl);
+}
+
+.bento-num {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.4rem;
+  font-size: 2.6rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+  opacity: 0.05;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.bento-body {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.bento-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1.4rem;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.bento-card:hover .bento-icon {
+  transform: rotate(-10deg) scale(1.12);
+}
+
+.bento-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.7rem;
+  letter-spacing: -0.01em;
+}
+
+.bento-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.bento-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.bento-link i {
+  transition: transform 0.3s ease;
+}
+
+.bento-card:hover .bento-link i {
+  transform: translateX(5px);
+}
+
+.bento-glow {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  filter: blur(110px);
+  opacity: 0;
+  right: -120px;
+  bottom: -140px;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bento-card:hover .bento-glow {
+  opacity: 0.14;
+}
+
+@media (max-width: 991.98px) {
+  .bento { grid-template-columns: 1fr 1fr; }
+  .bento-card.large { grid-column: span 2; }
+}
+
+@media (max-width: 767.98px) {
+  .bento { grid-template-columns: 1fr; }
+  .bento-card.large { grid-column: auto; }
 }
 
 /* Stats Panel */
