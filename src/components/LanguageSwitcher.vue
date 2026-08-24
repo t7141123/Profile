@@ -7,7 +7,7 @@
       data-bs-toggle="dropdown"
       aria-expanded="false"
     >
-      <span class="lang-icon-wrap" aria-hidden="true">{{ currentFlag }}</span>
+      <span class="lang-icon-wrap" aria-hidden="true"><i class="bi bi-globe2"></i></span>
       <span class="lang-text">{{ currentLangName }}</span>
       <span class="lang-chevron"><i class="bi bi-chevron-down"></i></span>
     </button>
@@ -22,7 +22,6 @@
           href="#"
           @click.prevent="changeLocale(lang.code)"
         >
-          <span class="item-flag" aria-hidden="true">{{ lang.flag }}</span>
           <span class="item-name">{{ lang.name }}</span>
           <i v-if="currentLocale === lang.code" class="bi bi-check-lg item-check" aria-hidden="true"></i>
         </a>
@@ -38,27 +37,22 @@ import { useLocale } from '@/composables/useLocale'
 const { currentLocale, changeLocale } = useLocale()
 
 const languages = [
-  { code: 'zh-tw', name: '繁體中文', flag: '🇹🇼' },
-  { code: 'zh-cn', name: '简体中文', flag: '🇨🇳' },
-  { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'ja', name: '日本語', flag: '🇯🇵' },
-  { code: 'ko', name: '한국어', flag: '🇰🇷' },
-  { code: 'es', name: 'Español', flag: '🇪🇸' },
-  { code: 'fr', name: 'Français', flag: '🇫🇷' },
-  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-  { code: 'pt', name: 'Português', flag: '🇵🇹' },
-  { code: 'vi', name: 'Tiếng Việt', flag: '🇻🇳' },
-  { code: 'th', name: 'ไทย', flag: '🇹🇭' }
+  { code: 'zh-tw', name: '繁體中文' },
+  { code: 'zh-cn', name: '简体中文' },
+  { code: 'en', name: 'English' },
+  { code: 'ja', name: '日本語' },
+  { code: 'ko', name: '한국어' },
+  { code: 'es', name: 'Español' },
+  { code: 'fr', name: 'Français' },
+  { code: 'de', name: 'Deutsch' },
+  { code: 'pt', name: 'Português' },
+  { code: 'vi', name: 'Tiếng Việt' },
+  { code: 'th', name: 'ไทย' }
 ]
 
 const currentLangName = computed(() => {
   const lang = languages.find(l => l.code === currentLocale.value)
   return lang ? lang.name : '繁體中文'
-})
-
-const currentFlag = computed(() => {
-  const lang = languages.find(l => l.code === currentLocale.value)
-  return lang ? lang.flag : '🌐'
 })
 </script>
 
@@ -107,8 +101,9 @@ const currentFlag = computed(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1;
+  color: #fff;
   box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
   flex-shrink: 0;
 }
@@ -250,14 +245,6 @@ const currentFlag = computed(() => {
   color: #fff;
   font-weight: 600;
   box-shadow: var(--item-active-shadow);
-}
-
-.item-flag {
-  font-size: 16px;
-  line-height: 1;
-  flex-shrink: 0;
-  width: 22px;
-  text-align: center;
 }
 
 .item-name {
