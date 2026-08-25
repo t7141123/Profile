@@ -2,9 +2,9 @@
   <defs>
     <style>
       .hull-thick { fill: none; stroke: #ffffff; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
-      .hull-med   { fill: none; stroke: #ffffff; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
-      .hull-thin  { fill: none; stroke: #ffffff; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
-      .deck-post  { fill: none; stroke: #ffffff; stroke-width: 1.4; stroke-linecap: round; }
+      .hull-med   { fill: none; stroke: #ffffff; stroke-opacity: .88; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+      .hull-thin  { fill: none; stroke: #E9D5AC; stroke-opacity: .8; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+      .deck-post  { fill: none; stroke: #E9D5AC; stroke-opacity: .85; stroke-width: 1.4; stroke-linecap: round; }
     </style>
   </defs>
 

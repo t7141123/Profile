@@ -175,6 +175,7 @@ a:hover {
   overflow: hidden;
   background: linear-gradient(135deg, #191310 0%, #241C14 40%, #33251A 70%, #3A2A1C 100%);
   padding-top: 80px;
+  padding-bottom: 14vh;
   color: #F7F4EF;
 }
 

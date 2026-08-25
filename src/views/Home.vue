@@ -38,37 +38,6 @@
             </a>
           </div>
         </div>
-
-        <div class="consult-card">
-          <div class="consult-head">
-            <span class="consult-eyebrow">{{ consult.eyebrow }}</span>
-            <h3 class="consult-title">{{ consult.title }}</h3>
-            <p class="consult-sub">{{ consult.sub }}</p>
-          </div>
-          <ol class="consult-steps">
-            <li
-              v-for="(s, i) in consult.steps"
-              :key="i"
-              class="consult-step"
-            >
-              <span class="step-num" aria-hidden="true">{{ i + 1 }}</span>
-              <div class="step-body">
-                <strong>{{ s.title }}</strong>
-                <span>{{ s.desc }}</span>
-              </div>
-            </li>
-          </ol>
-          <a
-            href="https://line.me/ti/p/2w7bwfksdF"
-            target="_blank"
-            class="btn btn-line consult-cta"
-            v-ripple
-            v-magnetic
-          >
-            <i class="bi bi-line me-2"></i>{{ consult.cta }}
-            <i class="bi bi-arrow-right ms-2"></i>
-          </a>
-        </div>
       </div>
       <a href="#home-stats" class="scroll-hint" aria-hidden="true" tabindex="-1">
         <span class="mouse"><span></span></span>
@@ -253,17 +222,6 @@ const featuredProjects = computed(() => {
   return FEATURED_KEYS.map((k) => all.find((p) => p.key === k)).filter(Boolean);
 });
 
-const consult = computed(() => ({
-  eyebrow: t("home.consult.eyebrow"),
-  title: t("home.consult.title"),
-  sub: t("home.consult.sub"),
-  cta: t("home.consult.cta"),
-  steps: [1, 2, 3, 4].map((n) => ({
-    title: t(`home.consult.s${n}t`),
-    desc: t(`home.consult.s${n}d`),
-  })),
-}));
-
 const services = computed(() => [
   {
     id: 4,
@@ -323,21 +281,10 @@ const testimonials = computed(() =>
 </script>
 
 <style scoped>
-/* Hero layout — text left, consult card right */
+/* Hero layout */
 .hero-centered {
-  display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: 3.5rem;
-  align-items: center;
   position: relative;
   z-index: 5;
-}
-
-@media (max-width: 991.98px) {
-  .hero-centered {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
 }
 
 /* Ark background */
@@ -345,7 +292,7 @@ const testimonials = computed(() =>
   position: absolute;
   left: 50%;
   margin-left: calc(min(94vw, 1320px) / -2);
-  bottom: -14%;
+  bottom: -8%;
   width: min(94vw, 1320px);
   aspect-ratio: 1200 / 650;
   opacity: 0.38;
@@ -358,183 +305,6 @@ const testimonials = computed(() =>
     margin-left: calc(min(115vw, 640px) / -2);
     bottom: -6%;
     opacity: 0.2;
-  }
-}
-
-/* ── Consultation journey card (hero right) ── */
-.consult-card {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  max-width: 460px;
-  margin: 0 auto;
-  text-align: left;
-  padding: 2.1rem 2rem 1.9rem;
-  border-radius: 26px;
-  background: linear-gradient(
-    160deg,
-    rgba(255, 244, 224, 0.07) 0%,
-    rgba(255, 244, 224, 0.028) 45%,
-    rgba(255, 244, 224, 0.012) 100%
-  );
-  border: 1px solid rgba(227, 201, 168, 0.16);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  box-shadow:
-    0 24px 60px -18px rgba(0, 0, 0, 0.55),
-    inset 0 1px 0 rgba(255, 244, 224, 0.1);
-  color: #F7F4EF;
-  overflow: hidden;
-}
-
-/* gold hairline — premium plaque accent */
-.consult-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 2rem;
-  right: 2rem;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(227, 201, 168, 0.65),
-    transparent
-  );
-}
-
-.consult-head {
-  padding-bottom: 1.35rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(227, 201, 168, 0.12);
-  position: relative;
-}
-
-/* diamond accent on the divider */
-.consult-head::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 7px;
-  height: 7px;
-  transform: rotate(45deg);
-  background: #C89B6D;
-  box-shadow: 0 0 12px rgba(200, 155, 109, 0.8);
-}
-
-.consult-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #C89B6D;
-}
-
-.consult-eyebrow::before {
-  content: "";
-  width: 22px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #C89B6D);
-}
-
-.consult-title {
-  font-family: var(--font-display);
-  font-size: 1.42rem;
-  font-weight: 700;
-  color: #F7F4EF;
-  margin: 0.55rem 0 0;
-  letter-spacing: -0.01em;
-}
-
-.consult-sub {
-  font-size: 0.86rem;
-  color: #A8A196;
-  margin: 6px 0 0;
-}
-
-/* Steps — editorial ghost numerals, no boxes */
-.consult-steps {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1.7rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-.consult-step {
-  display: flex;
-  align-items: baseline;
-  gap: 16px;
-}
-
-.step-num {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 2.05rem;
-  font-weight: 600;
-  line-height: 0.9;
-  min-width: 34px;
-  background: linear-gradient(180deg, #E3C9A8 0%, #8B5E3C 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.step-body strong {
-  display: block;
-  font-size: 1rem;
-  font-weight: 650;
-  color: #F7F4EF;
-  letter-spacing: 0.01em;
-  line-height: 1.35;
-}
-
-.step-body span {
-  display: block;
-  font-size: 0.85rem;
-  color: #A8A196;
-  margin-top: 3px;
-  line-height: 1.55;
-}
-
-.consult-cta {
-  width: 100%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 16px;
-  padding: 0.95rem 1.5rem;
-  font-weight: 600;
-  box-shadow: 0 10px 26px rgba(6, 199, 85, 0.28);
-}
-
-@media (max-width: 575.98px) {
-  .consult-card {
-    padding: 1.7rem 1.5rem 1.6rem;
-    border-radius: 22px;
-  }
-
-  .consult-card::before {
-    left: 1.5rem;
-    right: 1.5rem;
-  }
-
-  .consult-title {
-    font-size: 1.15rem;
-  }
-
-  .step-num {
-    font-size: 1.75rem;
-    min-width: 28px;
-  }
-
-  .consult-steps {
-    gap: 1rem;
   }
 }
 
