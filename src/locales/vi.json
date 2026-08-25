@@ -110,6 +110,7 @@
       "integrationDesc": "Kết nối thanh toán, LINE, ERP/CRM và API bên thứ ba. Tự động hóa quy trình rườm rà để dữ liệu liền mạch, ra quyết định nhanh hơn."
     },
     "consult": {
+      "eyebrow": "Quy trình",
       "title": "Từ ý tưởng đến ra mắt trong 4 bước",
       "sub": "Quy trình minh bạch từ đầu đến cuối",
       "cta": "Bắt đầu tư vấn miễn phí",

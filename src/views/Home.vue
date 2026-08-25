@@ -41,11 +41,9 @@
 
         <div class="consult-card">
           <div class="consult-head">
-            <span class="consult-icon"><i class="bi bi-rocket-takeoff-fill"></i></span>
-            <div class="consult-head-text">
-              <h3 class="consult-title">{{ consult.title }}</h3>
-              <p class="consult-sub">{{ consult.sub }}</p>
-            </div>
+            <span class="consult-eyebrow">{{ consult.eyebrow }}</span>
+            <h3 class="consult-title">{{ consult.title }}</h3>
+            <p class="consult-sub">{{ consult.sub }}</p>
           </div>
           <ol class="consult-steps">
             <li
@@ -405,9 +403,6 @@ const testimonials = computed(() =>
 }
 
 .consult-head {
-  display: flex;
-  align-items: center;
-  gap: 16px;
   padding-bottom: 1.35rem;
   margin-bottom: 1.5rem;
   border-bottom: 1px solid rgba(227, 201, 168, 0.12);
@@ -419,7 +414,7 @@ const testimonials = computed(() =>
   content: "";
   position: absolute;
   bottom: -4px;
-  left: 68px;
+  left: 0;
   width: 7px;
   height: 7px;
   transform: rotate(45deg);
@@ -427,35 +422,37 @@ const testimonials = computed(() =>
   box-shadow: 0 0 12px rgba(200, 155, 109, 0.8);
 }
 
-.consult-icon {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 25%, #E3C9A8, #8B5E3C 78%);
-  color: #241C14;
-  display: flex;
+.consult-eyebrow {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.35rem;
-  flex-shrink: 0;
-  box-shadow:
-    0 8px 22px rgba(200, 155, 109, 0.35),
-    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  gap: 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #C89B6D;
+}
+
+.consult-eyebrow::before {
+  content: "";
+  width: 22px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #C89B6D);
 }
 
 .consult-title {
   font-family: var(--font-display);
-  font-size: 1.3rem;
+  font-size: 1.42rem;
   font-weight: 700;
   color: #F7F4EF;
-  margin: 0;
+  margin: 0.55rem 0 0;
   letter-spacing: -0.01em;
 }
 
 .consult-sub {
-  font-size: 0.84rem;
+  font-size: 0.86rem;
   color: #A8A196;
-  margin: 3px 0 0;
+  margin: 6px 0 0;
 }
 
 /* Steps — editorial ghost numerals, no boxes */

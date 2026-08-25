@@ -110,6 +110,7 @@
       "integrationDesc": "Conecta pagos, LINE, ERP/CRM y APIs de terceros. Automatiza flujos tediosos para que los datos fluyan y decidas más rápido."
     },
     "consult": {
+      "eyebrow": "El proceso",
       "title": "De la idea al lanzamiento en 4 pasos",
       "sub": "Un proceso totalmente transparente de principio a fin",
       "cta": "Iniciar consulta gratuita",
