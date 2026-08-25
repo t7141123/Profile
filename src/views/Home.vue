@@ -3,7 +3,19 @@
     <!-- Hero Section -->
     <section class="hero-section">
       <TechBackground />
-      <img :src="arkImg" class="ark-bg ark-home" alt="" aria-hidden="true" />
+      <div class="ark-scene" aria-hidden="true">
+        <div ref="arkDrift" class="ark-drift">
+          <img :src="arkImg" class="ark-home" alt="" />
+        </div>
+        <div ref="waterRise" class="water-rise">
+          <svg class="water-svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="rgba(233,213,172,0.10)" d="M0,150 C240,90 480,210 720,150 C960,90 1200,210 1440,150 L1440,320 L0,320 Z"/>
+            <path fill="rgba(233,213,172,0.16)" d="M0,210 C240,150 480,270 720,210 C960,150 1200,270 1440,210 L1440,320 L0,320 Z"/>
+            <path fill="rgba(233,213,172,0.24)" d="M0,270 C240,220 480,310 720,270 C960,230 1200,310 1440,270 L1440,320 L0,320 Z"/>
+            <path fill="none" stroke="rgba(244,226,187,0.45)" stroke-width="2" d="M0,150 C240,90 480,210 720,150 C960,90 1200,210 1440,150"/>
+          </svg>
+        </div>
+      </div>
       <div class="meteor-area">
         <span class="meteor" style="--mtd: 0s; --mtdu: 6s; --mty: 8%; --mtx: 92%;"></span>
         <span class="meteor" style="--mtd: 3.5s; --mtdu: 7s; --mty: 20%; --mtx: 97%;"></span>
@@ -205,7 +217,7 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { ref, computed, onMounted, onUnmounted } from "vue";
 import { useI18n } from "vue-i18n";
 import SectionHeader from "@/components/common/SectionHeader.vue";
 import TechBackground from "@/components/home/TechBackground.vue";
@@ -215,6 +227,41 @@ import arkImg from "@/assets/images/ark-hero.svg?url";
 
 const { t } = useI18n();
 const { getFeaturedProjects } = useProjects();
+
+const arkDrift = ref(null);
+const waterRise = ref(null);
+let rafId = 0;
+let reduceMotion = false;
+
+const updateDrift = () => {
+  rafId = 0;
+  const vh = window.innerHeight || 1;
+  const p = Math.min(Math.max(window.scrollY / (vh * 0.85), 0), 1);
+  if (arkDrift.value) {
+    arkDrift.value.style.transform = `translate(${14 - p * 44}%, ${-p * 15}%)`;
+  }
+  if (waterRise.value) {
+    waterRise.value.style.transform = `translateY(${(1 - p) * 72}%)`;
+  }
+};
+
+const onScroll = () => {
+  if (reduceMotion || rafId) return;
+  rafId = requestAnimationFrame(updateDrift);
+};
+
+onMounted(() => {
+  reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduceMotion) {
+    window.addEventListener("scroll", onScroll, { passive: true });
+    updateDrift();
+  }
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", onScroll);
+  if (rafId) cancelAnimationFrame(rafId);
+});
 
 const FEATURED_KEYS = ["actionLead", "clay", "nhm", "uvaco", "generalErp", "chordBook"];
 const featuredProjects = computed(() => {
@@ -287,24 +334,59 @@ const testimonials = computed(() =>
   z-index: 5;
 }
 
-/* Ark background */
-.ark-home {
+/* ── Ark scene (scroll-driven) ── */
+.ark-scene {
   position: absolute;
-  left: 50%;
-  margin-left: calc(min(94vw, 1320px) / -2);
-  bottom: -8%;
-  width: min(94vw, 1320px);
-  aspect-ratio: 1200 / 650;
-  opacity: 0.38;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
   z-index: 1;
 }
 
+.ark-drift {
+  position: absolute;
+  left: 50%;
+  bottom: -8%;
+  width: min(94vw, 1320px);
+  margin-left: calc(min(94vw, 1320px) / -2);
+  transform: translate(14%, 0);
+  will-change: transform;
+}
+
+.ark-home {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1200 / 650;
+  opacity: 0.38;
+  animation: ark-sail 26s ease-in-out infinite;
+}
+
+.water-rise {
+  position: absolute;
+  left: -4%;
+  right: -4%;
+  bottom: -30px;
+  transform: translateY(72%);
+  will-change: transform;
+}
+
+.water-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 991.98px) {
-  .ark-home {
+  .ark-drift {
     width: min(115vw, 640px);
     margin-left: calc(min(115vw, 640px) / -2);
     bottom: -6%;
-    opacity: 0.2;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ark-home {
+    animation: none;
   }
 }
 

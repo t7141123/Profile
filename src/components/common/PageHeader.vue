@@ -10,13 +10,6 @@
       class="header-orb header-orb-2"
     ></div>
 
-    <img
-      :src="variant === 'about' || variant === 'contact' ? arkWood : arkCream"
-      class="ark-bg ark-page"
-      alt=""
-      aria-hidden="true"
-    />
-
     <span
       v-if="ghost"
       class="ghost-word"
@@ -138,8 +131,6 @@
 
 <script setup>
 import { computed } from 'vue'
-import arkCream from '@/assets/images/ark-hero.svg?url'
-import arkWood from '@/assets/images/ark-wood.svg?url'
 
 const props = defineProps({
   badge: String,
@@ -330,36 +321,6 @@ const ghost = computed(() => {
 @keyframes float {
   0%, 100% { transform: translateY(0) rotate(0deg); }
   50% { transform: translateY(-20px) rotate(5deg); }
-}
-
-.ark-page {
-  left: 50%;
-  margin-left: calc(min(92vw, 1080px) / -2);
-  bottom: -6%;
-  width: min(92vw, 1080px);
-  aspect-ratio: 1200 / 650;
-  opacity: 0.2;
-  z-index: 0;
-}
-
-.variant-portfolio .ark-page,
-.variant-services .ark-page {
-  opacity: 0.24;
-  aspect-ratio: 1200 / 650;
-}
-
-.variant-about .ark-page,
-.variant-contact .ark-page {
-  opacity: 0.16;
-  aspect-ratio: 900 / 560;
-}
-
-@media (max-width: 991.98px) {
-  .ark-page {
-    width: 120vw;
-    margin-left: -60vw;
-    opacity: 0.14 !important;
-  }
 }
 
 /* Responsive */
@@ -563,11 +524,6 @@ const ghost = computed(() => {
     radial-gradient(800px 550px at 5% 85%, rgba(139, 94, 60, 0.14), transparent 55%),
     linear-gradient(135deg, #191411 0%, #221C15 100%);
   color: #F7F4EF;
-}
-
-.variant-portfolio .ark-page,
-.variant-services .ark-page {
-  opacity: 0.22;
 }
 
 .variant-portfolio .ghost-word,

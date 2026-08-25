@@ -3,7 +3,21 @@
     <div class="container d-flex flex-nowrap align-items-center justify-content-between navbar-inner">
       <!-- Brand -->
       <router-link class="navbar-brand" :to="localePath('/')" @click="closeMenu">
-        <i class="bi bi-code-slash me-2"></i>{{ $t("footer.brand") }}
+        <svg
+          class="brand-ark"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#C89B6D"
+          stroke-width="1.7"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M8 7.2 12 4.8l4 2.4" />
+          <path d="M9 7.5v2.7h6V7.5" />
+          <path d="M4.5 12.4c2.4.5 4.9.8 7.5.8s5.1-.3 7.5-.8" />
+          <path d="M4.5 12.4c.6 3.4 3.4 6 7.5 6s6.9-2.6 7.5-6" />
+        </svg>{{ $t("footer.brand") }}
       </router-link>
 
       <!-- Desktop Menu -->
@@ -247,6 +261,14 @@ const onKeydown = (e) => {
   background-clip: text;
   position: relative;
   z-index: 1002;
+}
+
+.brand-ark {
+  width: 1.15em;
+  height: 1.15em;
+  margin-right: 0.45rem;
+  vertical-align: -0.14em;
+  flex-shrink: 0;
 }
 
 @media (max-width: 575.98px) {
