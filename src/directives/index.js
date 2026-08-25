@@ -273,6 +273,7 @@ const nodesSignature = (nodes) =>
     .join("|");
 
 const LATIN_RUN = /^[0-9A-Za-z.%+±~×\-]+$/;
+const CJK_CHAR = /[\u4e00-\u9fff\u3000-\u303f\uff00-\uffef\u3040-\u30ff\uac00-\ud7af]/;
 
 const renderReveal = (el) => {
   const { stagger, blur, y, duration } = el._revealConfig;
@@ -316,7 +317,11 @@ const renderReveal = (el) => {
     }
     toks.forEach((tk, ti) => {
       parts.push(makeWord(tk));
-      if (ti < toks.length - 1) parts.push(document.createTextNode(" "));
+      if (ti < toks.length - 1) {
+        const prevCJK = CJK_CHAR.test(tk.slice(-1));
+        const nextCJK = CJK_CHAR.test(toks[ti + 1][0]);
+        if (!(prevCJK && nextCJK)) parts.push(document.createTextNode(" "));
+      }
     });
     return parts;
   };
