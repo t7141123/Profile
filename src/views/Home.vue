@@ -338,10 +338,10 @@ const testimonials = computed(() =>
   right: -6%;
   bottom: -8%;
   width: min(58vw, 700px);
-  opacity: 0.16;
+  opacity: 0.3;
 }
 
-/* ── Consultation journey card (hero right) ──
+/* ── Consultation journey card (hero right) ── */
 .consult-card {
   position: relative;
   z-index: 1;

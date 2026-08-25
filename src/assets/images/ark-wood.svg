@@ -1,61 +1,53 @@
 <svg width="900" height="560" viewBox="0 0 900 560" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="hullG" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#E8CFA8"/>
-      <stop offset=".45" stop-color="#C9A276"/>
-      <stop offset="1" stop-color="#A4785A"/>
+      <stop offset="0" stop-color="#C89B6D"/>
+      <stop offset=".45" stop-color="#A4785A"/>
+      <stop offset="1" stop-color="#6B4226"/>
     </linearGradient>
     <linearGradient id="hullG2" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#D9B98C"/>
-      <stop offset="1" stop-color="#B98A5E"/>
+      <stop offset="0" stop-color="#B98A5E"/>
+      <stop offset="1" stop-color="#5C3A1E"/>
     </linearGradient>
     <linearGradient id="cabinG" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F7EBD5"/>
-      <stop offset="1" stop-color="#E8CFA8"/>
+      <stop offset="0" stop-color="#EFD9B8"/>
+      <stop offset="1" stop-color="#C89B6D"/>
     </linearGradient>
     <linearGradient id="roofG" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#B98A5E"/>
-      <stop offset="1" stop-color="#8B5E3C"/>
+      <stop offset="0" stop-color="#5C3A1E"/>
+      <stop offset="1" stop-color="#3F2712"/>
     </linearGradient>
     <linearGradient id="waveG1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#E8CFA8" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#E8CFA8" stop-opacity=".55"/>
-      <stop offset="1" stop-color="#E8CFA8" stop-opacity="0"/>
+      <stop offset="0" stop-color="#A4785A" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#A4785A" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#A4785A" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="waveG2" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C9A276" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#C9A276" stop-opacity=".4"/>
-      <stop offset="1" stop-color="#C9A276" stop-opacity="0"/>
+      <stop offset="0" stop-color="#8B5E3C" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#8B5E3C" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#8B5E3C" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
-  <!-- back waves -->
   <path d="M20 470c60-18 120-18 180 0s120 18 180 0 120-18 180 0 120 18 180 0 90-14 120-6" stroke="url(#waveG2)" stroke-width="5" stroke-linecap="round"/>
 
-  <!-- hull -->
   <path d="M110 300h680c12 0 20 11 16 22-26 74-86 152-158 152H252c-72 0-132-78-158-152-4-11 4-22 16-22z" fill="url(#hullG)"/>
-  <!-- hull top rail -->
-  <path d="M104 300h692" stroke="#F7EBD5" stroke-width="10" stroke-linecap="round" opacity=".9"/>
-  <!-- planks -->
-  <path d="M136 348h628" stroke="#B98A5E" stroke-width="8" stroke-linecap="round" opacity=".5"/>
-  <path d="M158 396h580" stroke="#B98A5E" stroke-width="8" stroke-linecap="round" opacity=".38"/>
-  <path d="M196 438h500" stroke="#B98A5E" stroke-width="8" stroke-linecap="round" opacity=".28"/>
-  <!-- vertical seams -->
-  <g stroke="#B98A5E" stroke-width="5" opacity=".3" stroke-linecap="round">
+  <path d="M104 300h692" stroke="#EFD9B8" stroke-width="10" stroke-linecap="round" opacity=".9"/>
+  <path d="M136 348h628" stroke="#5C3A1E" stroke-width="8" stroke-linecap="round" opacity=".5"/>
+  <path d="M158 396h580" stroke="#5C3A1E" stroke-width="8" stroke-linecap="round" opacity=".38"/>
+  <path d="M196 438h500" stroke="#5C3A1E" stroke-width="8" stroke-linecap="round" opacity=".28"/>
+  <g stroke="#5C3A1E" stroke-width="5" opacity=".3" stroke-linecap="round">
     <path d="M250 306v128"/><path d="M370 306v142"/><path d="M450 306v148"/>
     <path d="M530 306v142"/><path d="M650 306v128"/>
   </g>
-  <!-- hull shading right -->
-  <path d="M620 300h170c12 0 20 11 16 22-14 40-40 82-74 116 30-70 22-138-112-138z" fill="#8B5E3C" opacity=".35"/>
+  <path d="M620 300h170c12 0 20 11 16 22-14 40-40 82-74 116 30-70 22-138-112-138z" fill="#3F2712" opacity=".35"/>
 
-  <!-- door on hull -->
-  <path d="M414 306h72v96c0 12-10 22-22 22h-28c-12 0-22-10-22-22z" fill="#C9A276"/>
-  <path d="M414 306h72v14h-72z" fill="#F7EBD5" opacity=".7"/>
+  <path d="M414 306h72v96c0 12-10 22-22 22h-28c-12 0-22-10-22-22z" fill="#4A2E17"/>
+  <path d="M414 306h72v14h-72z" fill="#EFD9B8" opacity=".7"/>
 
-  <!-- lower cabin -->
   <rect x="270" y="196" width="360" height="110" rx="12" fill="url(#cabinG)"/>
-  <path d="M270 208h360" stroke="#F7EBD5" stroke-width="6" opacity=".8"/>
-  <g fill="#FFE8C2">
+  <path d="M270 208h360" stroke="#EFD9B8" stroke-width="6" opacity=".8"/>
+  <g fill="#FFD9A0">
     <rect x="300" y="226" width="34" height="34" rx="7"/>
     <rect x="366" y="226" width="34" height="34" rx="7"/>
     <rect x="432" y="226" width="34" height="34" rx="7"/>
@@ -70,22 +62,18 @@
     <rect x="572" y="234" width="18" height="18" rx="4"/>
   </g>
 
-  <!-- upper cabin -->
   <rect x="330" y="120" width="200" height="80" rx="10" fill="url(#cabinG)"/>
   <path d="M318 124 430 62l112 62z" fill="url(#roofG)"/>
-  <path d="M318 124h224" stroke="#F7EBD5" stroke-width="5" opacity=".55"/>
-  <g fill="#FFE8C2">
+  <path d="M318 124h224" stroke="#EFD9B8" stroke-width="5" opacity=".55"/>
+  <g fill="#FFD9A0">
     <rect x="362" y="146" width="30" height="30" rx="6"/>
     <rect x="415" y="146" width="30" height="30" rx="6"/>
-    <rect x="468" y="146" width="30" height="30" rx="7"/>
+    <rect x="468" y="146" width="30" height="30" rx="6"/>
   </g>
-
-  <!-- window glows -->
   <g fill="#FFC97A" opacity=".28">
     <circle cx="377" cy="161" r="26"/><circle cx="430" cy="161" r="26"/><circle cx="483" cy="161" r="26"/>
   </g>
 
-  <!-- front waves -->
   <path d="M0 508c70-22 140-22 210 0s140 22 210 0 140-22 210 0 140 22 210 0 60-16 70-12v64H0z" fill="url(#waveG1)" stroke="url(#waveG1)" stroke-width="4"/>
   <path d="M60 536c60-16 120-16 180 0s120 16 180 0 120-16 180 0 120 16 180 0" stroke="url(#waveG2)" stroke-width="6" stroke-linecap="round"/>
 </svg>

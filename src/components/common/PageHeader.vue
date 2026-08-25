@@ -11,7 +11,7 @@
     ></div>
 
     <img
-      :src="arkImg"
+      :src="variant === 'about' || variant === 'contact' ? arkWood : arkCream"
       class="ark-bg ark-page"
       alt=""
       aria-hidden="true"
@@ -138,7 +138,8 @@
 
 <script setup>
 import { computed } from 'vue'
-import arkImg from '@/assets/images/ark-hero.svg'
+import arkCream from '@/assets/images/ark-hero.svg'
+import arkWood from '@/assets/images/ark-wood.svg'
 
 const props = defineProps({
   badge: String,
@@ -341,7 +342,7 @@ const ghost = computed(() => {
 
 .variant-about .ark-page,
 .variant-contact .ark-page {
-  opacity: 0.09;
+  opacity: 0.14;
 }
 
 .variant-about .ark-page {
@@ -558,6 +559,11 @@ const ghost = computed(() => {
     radial-gradient(800px 550px at 5% 85%, rgba(139, 94, 60, 0.14), transparent 55%),
     linear-gradient(135deg, #191411 0%, #221C15 100%);
   color: #F7F4EF;
+}
+
+.variant-portfolio .ark-page,
+.variant-services .ark-page {
+  opacity: 0.22;
 }
 
 .variant-portfolio .ghost-word,
