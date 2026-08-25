@@ -345,10 +345,10 @@ const testimonials = computed(() =>
   position: absolute;
   left: 50%;
   margin-left: calc(min(70vw, 820px) / -2);
-  bottom: -12%;
+  bottom: -10%;
   width: min(70vw, 820px);
   aspect-ratio: 900 / 560;
-  opacity: 0.28;
+  opacity: 0.3;
   z-index: 1;
 }
 

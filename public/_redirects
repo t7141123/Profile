@@ -5,4 +5,6 @@ https://www.ark-studio.app/* https://ark-studio.app/:splat 301
 
 # Cloudflare Pages SPA fallback
 # All routes should return index.html for Vue Router to handle
+# (assets must 404 instead — never serve HTML for missing hashed files)
+/assets/* /assets/:splat 200
 /* /index.html 200
