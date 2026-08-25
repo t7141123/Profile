@@ -5,7 +5,8 @@
     "backToTop": "回到顶部",
     "switchToDark": "切换到深色模式",
     "switchToLight": "切换到浅色模式",
-    "languageLabel": "语言"
+    "languageLabel": "语言",
+    "themeLabel": "外观"
   },
   "nav": {
     "home": "首页",
@@ -107,6 +108,19 @@
       "outsourceDesc": "单一窗口负责到底：需求分析、UI/UX 设计、前后端开发、测试部署与售后维护。您只需专注本业，其余交给我们。",
       "integrationTitle": "系统集成与自动化",
       "integrationDesc": "串接金流、LINE、ERP/CRM 与第三方 API，将繁琐流程自动化，让数据在系统间无缝流动，决策更即时。"
+    },
+    "consult": {
+      "title": "咨询到上线，四个步骤",
+      "sub": "从想法到产品，流程完全透明",
+      "cta": "立即免费咨询",
+      "s1t": "免费咨询",
+      "s1d": "加 Line 联系，30 分钟厘清需求",
+      "s2t": "需求评估",
+      "s2d": "免费评估可行性与预算范围",
+      "s3t": "方案报价",
+      "s3d": "透明报价，分期付款",
+      "s4t": "开发上线",
+      "s4d": "每周回报进度，准时交付"
     }
   },
   "about": {
@@ -352,7 +366,7 @@
     "title": "联系",
     "titleHighlight": "我",
     "pageDescription": "一则消息的距离，让您的想法开始变现",
-    "infoTitle": "与我对话",
+    "infoTitle": "专业咨询",
     "infoDescription": "很多客户一开始也不确定自己需要什么。没关系，聊聊就清楚了。我会先免费帮您厘清需求、评估可行性，再决定下一步怎么走。通常 24 小时内就会回复您。",
     "lineLabel": "Line 官方账号 (推荐)",
     "lineValue": "点击加入好友链接",

@@ -5,7 +5,8 @@
     "backToTop": "Retour en haut",
     "switchToDark": "Passer en mode sombre",
     "switchToLight": "Passer en mode clair",
-    "languageLabel": "Langue"
+    "languageLabel": "Langue",
+    "themeLabel": "Thème"
   },
   "nav": {
     "home": "Accueil",
@@ -107,6 +108,19 @@
       "outsourceDesc": "Un interlocuteur unique de bout en bout : cadrage, UI/UX, front & back, tests, mise en production et maintenance. Concentrez-vous sur votre métier.",
       "integrationTitle": "Intégration & Automatisation",
       "integrationDesc": "Connectez paiements, LINE, ERP/CRM et API tierces. Automatisez les tâches fastidieuses pour des données fluides et des décisions plus rapides."
+    },
+    "consult": {
+      "title": "De l’idée au lancement en 4 étapes",
+      "sub": "Un processus entièrement transparent, du début à la fin",
+      "cta": "Démarrer une consultation gratuite",
+      "s1t": "Consultation gratuite",
+      "s1d": "Message sur Line — 30 min pour cadrer vos objectifs",
+      "s2t": "Évaluation",
+      "s2d": "Faisabilité et budget, sans frais",
+      "s3t": "Proposition",
+      "s3d": "Tarifs transparents, jalons flexibles",
+      "s4t": "Développement & lancement",
+      "s4d": "Points d’avancement hebdomadaires, livraison à l’heure"
     }
   },
   "about": {
@@ -352,7 +366,7 @@
     "title": "Con",
     "titleHighlight": "tact",
     "pageDescription": "Il ne suffit que d'un message pour donner vie à vos idées.",
-    "infoTitle": "Échangeons",
+    "infoTitle": "Consultation Expert",
     "infoDescription": "De nombreux clients me contactent sans avoir encore une idée précise de leurs besoins. C'est tout à fait normal. Parlons-en ensemble. Je vous aiderai à clarifier vos attentes et j'évaluerai gratuitement la faisabilité avant de décider de la suite. Je réponds généralement sous 24 heures.",
     "lineLabel": "Compte officiel Line (recommandé)",
     "lineValue": "Cliquez pour ajouter en ami",

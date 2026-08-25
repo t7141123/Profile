@@ -5,7 +5,8 @@
     "backToTop": "Lên đầu trang",
     "switchToDark": "Chuyển sang chế độ tối",
     "switchToLight": "Chuyển sang chế độ sáng",
-    "languageLabel": "Ngôn ngữ"
+    "languageLabel": "Ngôn ngữ",
+    "themeLabel": "Giao diện"
   },
   "nav": {
     "home": "Trang chủ",
@@ -107,6 +108,19 @@
       "outsourceDesc": "Một đầu mối trọn gói: phân tích yêu cầu, UI/UX, front & back end, kiểm thử, triển khai và bảo trì. Bạn chỉ cần tập trung vào nghiệp vụ.",
       "integrationTitle": "Tích Hợp & Tự Động Hóa",
       "integrationDesc": "Kết nối thanh toán, LINE, ERP/CRM và API bên thứ ba. Tự động hóa quy trình rườm rà để dữ liệu liền mạch, ra quyết định nhanh hơn."
+    },
+    "consult": {
+      "title": "Từ ý tưởng đến ra mắt trong 4 bước",
+      "sub": "Quy trình minh bạch từ đầu đến cuối",
+      "cta": "Bắt đầu tư vấn miễn phí",
+      "s1t": "Tư vấn miễn phí",
+      "s1d": "Nhắn Line — 30 phút làm rõ mục tiêu",
+      "s2t": "Đánh giá",
+      "s2d": "Khả thi & ngân sách, miễn phí",
+      "s3t": "Đề xuất",
+      "s3d": "Báo giá minh bạch, cột mốc linh hoạt",
+      "s4t": "Phát triển & ra mắt",
+      "s4d": "Báo cáo tuần, bàn giao đúng hẹn"
     }
   },
   "about": {
@@ -352,7 +366,7 @@
     "title": "Liên",
     "titleHighlight": " Hệ",
     "pageDescription": "Chỉ cách một tin nhắn để biến ý tưởng của bạn thành hiện thực.",
-    "infoTitle": "Cùng Trò Chuyện Nhé",
+    "infoTitle": "Tư vấn Chuyên nghiệp",
     "infoDescription": "Nhiều khách hàng ban đầu cũng chưa rõ mình cần gì. Không sao cả, hãy cùng trao đổi. Tôi sẽ giúp bạn làm rõ nhu cầu và đánh giá tính khả thi hoàn toàn miễn phí trước khi quyết định bước tiếp theo. Tôi thường phản hồi trong vòng 24 giờ.",
     "lineLabel": "Tài khoản chính thức Line (Khuyên dùng)",
     "lineValue": "Nhấn để kết bạn",

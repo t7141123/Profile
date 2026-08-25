@@ -5,7 +5,8 @@
     "backToTop": "Voltar ao topo",
     "switchToDark": "Alternar para modo escuro",
     "switchToLight": "Alternar para modo claro",
-    "languageLabel": "Idioma"
+    "languageLabel": "Idioma",
+    "themeLabel": "Tema"
   },
   "nav": {
     "home": "Início",
@@ -107,6 +108,19 @@
       "outsourceDesc": "Um único parceiro do início ao fim: requisitos, UI/UX, front e back end, testes, deploy e manutenção. Você cuida do negócio.",
       "integrationTitle": "Integração e Automação",
       "integrationDesc": "Conecte pagamentos, LINE, ERP/CRM e APIs externas. Automatize fluxos tediosos para que os dados fluam e as decisões cheguem mais rápido."
+    },
+    "consult": {
+      "title": "Da ideia ao lançamento em 4 passos",
+      "sub": "Um processo totalmente transparente, do início ao fim",
+      "cta": "Iniciar consultoria gratuita",
+      "s1t": "Consultoria gratuita",
+      "s1d": "Mensagem no Line — 30 min para alinhar objetivos",
+      "s2t": "Avaliação",
+      "s2d": "Viabilidade e orçamento sem custo",
+      "s3t": "Proposta",
+      "s3d": "Preços transparentes, marcos flexíveis",
+      "s4t": "Desenvolvimento e lançamento",
+      "s4d": "Atualizações semanais, entrega no prazo"
     }
   },
   "about": {
@@ -352,7 +366,7 @@
     "title": "Fale",
     "titleHighlight": " comigo",
     "pageDescription": "Você está a apenas uma mensagem de transformar suas ideias em realidade.",
-    "infoTitle": "Vamos conversar",
+    "infoTitle": "Consultoria Profissional",
     "infoDescription": "Muitos clientes chegam sem ter muita clareza do que precisam. Tudo bem. Vamos conversar e eu vou ajudar você a esclarecer suas necessidades e avaliar a viabilidade gratuitamente antes de decidirmos os próximos passos. Normalmente respondo em até 24 horas.",
     "lineLabel": "Conta oficial no Line (Recomendado)",
     "lineValue": "Clique para adicionar como amigo",

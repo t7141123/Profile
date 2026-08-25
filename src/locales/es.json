@@ -5,7 +5,8 @@
     "backToTop": "Volver arriba",
     "switchToDark": "Cambiar a modo oscuro",
     "switchToLight": "Cambiar a modo claro",
-    "languageLabel": "Idioma"
+    "languageLabel": "Idioma",
+    "themeLabel": "Tema"
   },
   "nav": {
     "home": "Inicio",
@@ -107,6 +108,19 @@
       "outsourceDesc": "Un solo socio de principio a fin: requisitos, UI/UX, front y back end, pruebas, despliegue y mantenimiento. Tú te ocupas de tu negocio.",
       "integrationTitle": "Integración y Automatización",
       "integrationDesc": "Conecta pagos, LINE, ERP/CRM y APIs de terceros. Automatiza flujos tediosos para que los datos fluyan y decidas más rápido."
+    },
+    "consult": {
+      "title": "De la idea al lanzamiento en 4 pasos",
+      "sub": "Un proceso totalmente transparente de principio a fin",
+      "cta": "Iniciar consulta gratuita",
+      "s1t": "Consulta gratuita",
+      "s1d": "Escríbenos por Line — 30 min para aclarar objetivos",
+      "s2t": "Evaluación",
+      "s2d": "Viabilidad y presupuesto sin coste",
+      "s3t": "Propuesta",
+      "s3d": "Precios transparentes e hitos flexibles",
+      "s4t": "Desarrollo y lanzamiento",
+      "s4d": "Avances semanales, entrega puntual"
     }
   },
   "about": {
@@ -352,7 +366,7 @@
     "title": "Contáct",
     "titleHighlight": "eme",
     "pageDescription": "Está a solo un mensaje de hacer realidad sus ideas.",
-    "infoTitle": "Conversemos",
+    "infoTitle": "Consulta Profesional",
     "infoDescription": "Muchos clientes llegan sin tener del todo claro lo que necesitan. No hay problema. Conversemos y le ayudaré a clarificar sus requerimientos y evaluar la viabilidad sin costo antes de decidir los siguientes pasos. Normalmente respondo en menos de 24 horas.",
     "lineLabel": "Cuenta oficial de Line (Recomendado)",
     "lineValue": "Haga clic para agregar como amigo",

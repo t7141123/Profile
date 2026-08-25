@@ -5,7 +5,8 @@
     "backToTop": "回到頂部",
     "switchToDark": "切換到深色模式",
     "switchToLight": "切換到淺色模式",
-    "languageLabel": "語言"
+    "languageLabel": "語言",
+    "themeLabel": "外觀"
   },
   "nav": {
     "home": "首頁",
@@ -107,6 +108,19 @@
       "outsourceDesc": "單一窗口負責到底：需求分析、UI/UX 設計、前後端開發、測試部署與售後維護。您只需專注本業，其餘交給我們。",
       "integrationTitle": "系統整合與自動化",
       "integrationDesc": "串接金流、LINE、ERP/CRM 與第三方 API，將繁瑣流程自動化，讓資料在系統間無縫流動，決策更即時。"
+    },
+    "consult": {
+      "title": "諮詢到上線，四個步驟",
+      "sub": "從想法到產品，流程完全透明",
+      "cta": "立即免費諮詢",
+      "s1t": "免費諮詢",
+      "s1d": "加 Line 聯繫，30 分鐘釐清需求",
+      "s2t": "需求評估",
+      "s2d": "免費評估可行性與預算範圍",
+      "s3t": "方案報價",
+      "s3d": "透明報價，分期付款沒壓力",
+      "s4t": "開發上線",
+      "s4d": "每週回報進度，準時交付"
     }
   },
   "about": {
@@ -352,7 +366,7 @@
     "title": "聯繫",
     "titleHighlight": "我",
     "pageDescription": "一則訊息的距離，讓您的想法開始變現",
-    "infoTitle": "與我對話",
+    "infoTitle": "專業諮詢",
     "infoDescription": "很多客戶一開始也不確定自己需要什麼。沒關係，聊聊就清楚了。我會先免費幫您釐清需求、評估可行性，再決定下一步怎麼走。通常 24 小時內就會回覆您。",
     "lineLabel": "Line 官方帳號 (推薦)",
     "lineValue": "點擊加入好友連結",

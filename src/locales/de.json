@@ -5,7 +5,8 @@
     "backToTop": "Nach oben",
     "switchToDark": "Zum dunklen Modus wechseln",
     "switchToLight": "Zum hellen Modus wechseln",
-    "languageLabel": "Sprache"
+    "languageLabel": "Sprache",
+    "themeLabel": "Design"
   },
   "nav": {
     "home": "Startseite",
@@ -107,6 +108,19 @@
       "outsourceDesc": "Ein Partner von A bis Z: Anforderungsanalyse, UI/UX, Front- & Backend, Tests, Deployment und Wartung. Sie konzentrieren sich auf Ihr Geschäft.",
       "integrationTitle": "Integration & Automatisierung",
       "integrationDesc": "Zahlungen, LINE, ERP/CRM und Drittanbieter-APIs verbinden. Langwierige Abläufe automatisieren — Daten fließen, Entscheidungen kommen schneller."
+    },
+    "consult": {
+      "title": "In 4 Schritten von der Idee zum Launch",
+      "sub": "Ein volltransparenter Prozess von Anfang bis Ende",
+      "cta": "Kostenlose Beratung starten",
+      "s1t": "Kostenlose Beratung",
+      "s1d": "Nachricht auf Line — 30 Min. zur Zielfindung",
+      "s2t": "Analyse",
+      "s2d": "Machbarkeit & Budgetrahmen, kostenlos",
+      "s3t": "Angebot",
+      "s3d": "Transparente Preise, flexible Meilensteine",
+      "s4t": "Entwicklung & Launch",
+      "s4d": "Wöchentliche Updates, termingerechte Lieferung"
     }
   },
   "about": {
@@ -352,7 +366,7 @@
     "title": "Kontakt",
     "titleHighlight": "",
     "pageDescription": "Nur eine Nachricht trennt Ihre Idee von der Umsetzung.",
-    "infoTitle": "Lassen Sie uns sprechen",
+    "infoTitle": "Professionelle Beratung",
     "infoDescription": "Viele Kunden sind sich zu Beginn nicht sicher, was sie genau benötigen. Das ist völlig in Ordnung. Lassen Sie uns darüber sprechen. Ich helfe Ihnen, Ihre Anforderungen zu klären und prüfe Machbarkeit kostenlos, bevor wir die nächsten Schritte festlegen. In der Regel antworte ich innerhalb von 24 Stunden.",
     "lineLabel": "Offizieller Line-Account (empfohlen)",
     "lineValue": "Zum Hinzufügen klicken",

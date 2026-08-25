@@ -4,11 +4,11 @@
     <section class="hero-section" @mousemove="onHeroMove">
       <TechBackground />
       <div class="meteor-area">
-        <span class="meteor" style="--mtd: 0s; --mty: 5%; --mtx: 85%;"></span>
-        <span class="meteor" style="--mtd: 2s; --mty: 18%; --mtx: 92%;"></span>
-        <span class="meteor" style="--mtd: 4s; --mty: 35%; --mtx: 78%;"></span>
-        <span class="meteor" style="--mtd: 1.5s; --mty: 55%; --mtx: 88%;"></span>
-        <span class="meteor" style="--mtd: 3.2s; --mty: 75%; --mtx: 82%;"></span>
+        <span class="meteor" style="--mtd: 0s; --mtdu: 5s; --mty: 6%; --mtx: 92%;"></span>
+        <span class="meteor" style="--mtd: 1.6s; --mtdu: 6.5s; --mty: 14%; --mtx: 98%;"></span>
+        <span class="meteor" style="--mtd: 3.2s; --mtdu: 5.6s; --mty: 28%; --mtx: 84%;"></span>
+        <span class="meteor" style="--mtd: 4.8s; --mtdu: 7s; --mty: 2%; --mtx: 74%;"></span>
+        <span class="meteor" style="--mtd: 6.2s; --mtdu: 6s; --mty: 38%; --mtx: 94%;"></span>
       </div>
 
       <div
@@ -62,21 +62,36 @@
             <div class="hero-image text-center">
               <div class="hero-visual">
                 <OrbitingBadges />
-                <div class="code-preview border-beam">
-                <div class="code-header">
-                  <span class="dot red"></span>
-                  <span class="dot yellow"></span>
-                  <span class="dot green"></span>
-                  <span class="filename">ark_studio.config.js</span>
-                </div>
-                <pre
-                  class="code-content"
-                ><code><span class="keyword">const</span> <span class="variable">yourProject</span> = {
-  <span class="property">{{ $t('home.businessPreview.target') }}</span>: <span class="string">"{{ $t('home.businessPreview.targetValue') }}"</span>,
-  <span class="property">{{ $t('home.businessPreview.budget') }}</span>: <span class="string">"{{ $t('home.businessPreview.budgetValue') }}"</span>,
-  <span class="property">{{ $t('home.businessPreview.timeline') }}</span>: <span class="string">"{{ $t('home.businessPreview.timelineValue') }}"</span>,
-  <span class="property">{{ $t('home.businessPreview.result') }}</span>: <span class="string">"{{ $t('home.businessPreview.resultValue') }}"</span>
-};</code></pre>
+                <div class="consult-card border-beam">
+                  <div class="consult-head">
+                    <span class="consult-icon"><i class="bi bi-rocket-takeoff-fill"></i></span>
+                    <div>
+                      <h3 class="consult-title">{{ consult.title }}</h3>
+                      <p class="consult-sub">{{ consult.sub }}</p>
+                    </div>
+                  </div>
+                  <ol class="consult-steps">
+                    <li
+                      v-for="(s, i) in consult.steps"
+                      :key="i"
+                      class="consult-step"
+                    >
+                      <span class="step-num">{{ i + 1 }}</span>
+                      <div class="step-body">
+                        <strong>{{ s.title }}</strong>
+                        <span>{{ s.desc }}</span>
+                      </div>
+                    </li>
+                  </ol>
+                  <a
+                    href="https://line.me/ti/p/2w7bwfksdF"
+                    target="_blank"
+                    class="btn btn-line consult-cta"
+                    v-ripple
+                    v-magnetic
+                  >
+                    <i class="bi bi-line me-2"></i>{{ consult.cta }}
+                  </a>
                 </div>
               </div>
               </div>
@@ -259,6 +274,16 @@ const { getFeaturedProjects } = useProjects();
 
 const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
 
+const consult = computed(() => ({
+  title: t("home.consult.title"),
+  sub: t("home.consult.sub"),
+  cta: t("home.consult.cta"),
+  steps: [1, 2, 3, 4].map((n) => ({
+    title: t(`home.consult.s${n}t`),
+    desc: t(`home.consult.s${n}d`),
+  })),
+}));
+
 const services = computed(() => [
   {
     id: 4,
@@ -345,82 +370,132 @@ const whyCards = computed(() => [
 </script>
 
 <style scoped>
-/* Code Preview Styles - Modern & Clean */
-.code-preview {
-  background: var(--bg-secondary);
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  border: 1px solid rgba(37, 99, 235, 0.1);
-  box-shadow: var(--shadow-xl);
-  text-align: left;
-  max-width: 460px;
+/* ── Consultation journey card (hero right) ── */
+.consult-card {
+  position: relative;
+  z-index: 1;
+  max-width: 440px;
   margin: 0 auto;
+  text-align: left;
+  padding: 1.75rem;
+  border-radius: var(--radius-xl);
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: var(--shadow-xl);
+  color: #F1F5F9;
+}
+
+.consult-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 1.35rem;
+}
+
+.consult-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: var(--gradient-gold);
+  color: #1E293B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.35);
+}
+
+.consult-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #F7F4EF;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.consult-sub {
+  font-size: 0.83rem;
+  color: #A8A196;
+  margin: 3px 0 0;
+}
+
+.consult-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.consult-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 9px 0;
+  position: relative;
+}
+
+.consult-step:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 42px;
+  bottom: -14px;
+  width: 2px;
+  border-radius: 2px;
+  background: linear-gradient(
+    180deg,
+    rgba(148, 163, 184, 0.38),
+    rgba(148, 163, 184, 0.1)
+  );
+}
+
+.step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #FBBF24;
+  flex-shrink: 0;
   position: relative;
   z-index: 1;
 }
 
-.hero-visual {
-  position: relative;
-  display: inline-block;
+.step-body strong {
+  display: block;
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: #F7F4EF;
+  line-height: 1.35;
+}
+
+.step-body span {
+  display: block;
+  font-size: 0.82rem;
+  color: #A8A196;
+  margin-top: 2px;
+  line-height: 1.5;
+}
+
+.consult-cta {
   width: 100%;
+  display: inline-flex;
+  justify-content: center;
 }
 
-.code-header {
-  background: var(--bg-accent);
-  padding: 12px 16px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  border-bottom: 1px solid rgba(37, 99, 235, 0.05);
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
-.dot.red {
-  background: #FF5F57;
-}
-.dot.yellow {
-  background: #FEBC2E;
-}
-.dot.green {
-  background: #28C840;
-}
-
-.filename {
-  margin-left: auto;
-  font-size: 0.75rem;
-  color: var(--text-muted);
-}
-
-.code-content {
-  padding: 24px;
-  margin: 0;
-  font-family: "Fira Code", "Monaco", monospace;
-  font-size: 0.875rem;
-  line-height: 1.8;
-  overflow-x: auto;
-  background: var(--bg-secondary);
-}
-
-.code-content code {
-  color: var(--text-secondary);
-}
-
-.keyword {
-  color: #8B5CF6; /* Purple */
-}
-.variable {
-  color: #EF4444; /* Red */
-}
-.property {
-  color: #F59E0B; /* Amber */
-}
-.string {
-  color: #10B981; /* Green */
+@media (max-width: 575.98px) {
+  .consult-card {
+    padding: 1.4rem;
+  }
 }
 
 /* Featured Projects Section */
@@ -877,20 +952,15 @@ const whyCards = computed(() => [
   transform: translateX(4px);
 }
 
-@media (max-width: 991.98px) {
-  .code-preview {
-    margin-top: 2rem;
-  }
-}
-
-/* Orbiting stage sits behind the code preview as a halo */
-.hero-visual :deep(.orbiting-stage) {
-  /* Stage is now absolute-positioned (centered over hero-visual) */
+.hero-visual {
+  position: relative;
+  display: inline-block;
+  width: 100%;
 }
 
 @media (max-width: 991.98px) {
-  .code-preview {
-    margin-top: 0;
+  .consult-card {
+    margin-top: 2.5rem;
   }
 }
 </style>

@@ -39,6 +39,18 @@
             </button>
           </div>
         </div>
+
+        <!-- Mobile Theme Switcher -->
+        <div
+          class="mobile-theme-switcher"
+          :class="{ 'slide-in': isOpen }"
+          :style="{ transitionDelay: '0.6s' }"
+        >
+          <span class="mobile-lang-label">{{ $t("a11y.themeLabel") }}</span>
+          <div class="theme-options">
+            <ThemeToggle />
+          </div>
+        </div>
       </div>
     </div>
   </Transition>
@@ -47,6 +59,7 @@
 <script setup>
 import { useRoute } from "vue-router";
 import { useLocale } from "@/composables/useLocale";
+import ThemeToggle from "@/components/common/ThemeToggle.vue";
 
 defineProps({
   isOpen: Boolean,
@@ -180,6 +193,26 @@ const { localePath } = useLocale();
   background: var(--primary-color);
   color: white;
   border-color: var(--primary-color);
+}
+
+/* Mobile Theme Switcher */
+.mobile-theme-switcher {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.75rem;
+  margin-top: 0.25rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease-out;
+}
+
+.mobile-theme-switcher.slide-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.theme-options {
+  display: flex;
+  justify-content: center;
 }
 
 /* Vue Transitions */

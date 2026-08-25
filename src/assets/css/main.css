@@ -1965,30 +1965,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 .meteor {
   position: absolute;
-  width: 2px;
-  height: 2px;
-  border-radius: 9999px;
-  background: #60A5FA;
-  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.25), 0 0 30px 2px #3B82F6;
-  animation: meteor 6s linear infinite;
-  animation-delay: var(--mtd, 0s);
   top: var(--mty, 10%);
   left: var(--mtx, 90%);
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #EAF2FF;
+  box-shadow:
+    0 0 6px 1px rgba(147, 197, 253, 0.95),
+    0 0 20px 5px rgba(59, 130, 246, 0.45);
+  opacity: 0;
+  animation: meteor var(--mtdu, 6s) linear infinite;
+  animation-delay: var(--mtd, 0s);
 }
-.meteor::after {
+.meteor::before {
   content: "";
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   right: 0;
-  width: 60px;
-  height: 1px;
-  background: linear-gradient(90deg, #3B82F6, transparent);
+  width: 130px;
+  height: 1.5px;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, transparent, rgba(147, 197, 253, 0.85));
 }
 @keyframes meteor {
-  0%   { transform: translate(0, 0) rotate(215deg); opacity: 1; }
-  60%  { opacity: 1; }
-  100% { transform: translate(-60vw, 60vh) rotate(215deg); opacity: 0; }
+  0%   { transform: rotate(135deg) translateX(0);     opacity: 0; }
+  6%   { opacity: 1; }
+  72%  { opacity: 1; }
+  100% { transform: rotate(135deg) translateX(72vw);  opacity: 0; }
 }
 
 /* ── AURORA GLOW (SmoothUI / Magic UI aurora background) ── */

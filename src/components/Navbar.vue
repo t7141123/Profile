@@ -38,8 +38,7 @@
       </div>
 
       <!-- Mobile Menu Toggle Button -->
-      <div class="d-flex d-lg-none align-items-center gap-2 flex-shrink-0">
-        <ThemeToggle />
+      <div class="d-flex d-lg-none align-items-center flex-shrink-0">
         <button
           ref="menuToggle"
           class="menu-toggle"

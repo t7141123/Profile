@@ -5,7 +5,8 @@
     "backToTop": "Back to top",
     "switchToDark": "Switch to dark mode",
     "switchToLight": "Switch to light mode",
-    "languageLabel": "Language"
+    "languageLabel": "Language",
+    "themeLabel": "Theme"
   },
   "nav": {
     "home": "Home",
@@ -107,6 +108,19 @@
       "outsourceDesc": "One partner, end to end: requirements, UI/UX, front & back end, testing, deployment and maintenance. You focus on your business; we handle the tech.",
       "integrationTitle": "Integration & Automation",
       "integrationDesc": "Connect payments, LINE, ERP/CRM and third-party APIs. Automate tedious workflows so data flows seamlessly and decisions come faster."
+    },
+    "consult": {
+      "title": "Idea to Launch in 4 Steps",
+      "sub": "A fully transparent process, start to finish",
+      "cta": "Start Free Consultation",
+      "s1t": "Free Consultation",
+      "s1d": "Message on Line — 30 min to clarify your goals",
+      "s2t": "Assessment",
+      "s2d": "Feasibility & budget range, free of charge",
+      "s3t": "Proposal",
+      "s3d": "Transparent pricing with flexible milestones",
+      "s4t": "Build & Launch",
+      "s4d": "Weekly progress updates, on-time delivery"
     }
   },
   "about": {
@@ -352,7 +366,7 @@
     "title": "Contact",
     "titleHighlight": " Me",
     "pageDescription": "Just a message away from turning your ideas into reality.",
-    "infoTitle": "Let's Chat",
+    "infoTitle": "Professional Consultation",
     "infoDescription": "Many clients start unsure of exactly what they need. That's okay. Let's talk it through. I'll help clarify your needs and evaluate feasibility for free before we decide the next steps. I usually reply within 24 hours.",
     "lineLabel": "Line Official Account (Recommended)",
     "lineValue": "Click to add friend",
