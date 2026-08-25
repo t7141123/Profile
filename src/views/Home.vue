@@ -243,7 +243,7 @@ import SectionHeader from "@/components/common/SectionHeader.vue";
 import TechBackground from "@/components/home/TechBackground.vue";
 import PortfolioCard from "@/components/common/PortfolioCard.vue";
 import { useProjects } from "@/composables/useProjects";
-import arkImg from "@/assets/images/ark-hero.svg";
+import arkImg from "@/assets/images/ark-hero.svg?url";
 
 const { t } = useI18n();
 const { getFeaturedProjects } = useProjects();
@@ -323,6 +323,23 @@ const testimonials = computed(() =>
 </script>
 
 <style scoped>
+/* Hero layout — text left, consult card right */
+.hero-centered {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+
+@media (max-width: 991.98px) {
+  .hero-centered {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
 /* Ark background */
 .ark-home {
   position: absolute;
