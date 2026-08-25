@@ -2,8 +2,7 @@ import { ref, onMounted, watch, computed } from 'vue';
 
 export function useTheme() {
   const stored = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const theme = ref(stored || (prefersDark ? 'dark' : 'light'));
+  const theme = ref(stored || 'dark');
   let transitionTimer = null;
 
   const updateTheme = () => {

@@ -34,7 +34,6 @@
           </li>
         </ul>
         <LanguageSwitcher />
-        <ThemeToggle />
       </div>
 
       <!-- Mobile Menu Toggle Button -->
@@ -72,7 +71,6 @@ import { useRoute } from "vue-router";
 import { useLocale } from "@/composables/useLocale";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
 import MobileMenu from "./navbar/MobileMenu.vue";
-import ThemeToggle from "./common/ThemeToggle.vue";
 
 const isScrolled = ref(false);
 const isMenuOpen = ref(false);

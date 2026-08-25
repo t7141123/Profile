@@ -330,6 +330,7 @@ const testimonials = computed(() =>
   margin-left: calc(min(94vw, 1150px) / -2);
   bottom: -7%;
   width: min(94vw, 1150px);
+  height: auto;
   opacity: 0.34;
 }
 
