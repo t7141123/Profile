@@ -136,7 +136,7 @@
             :key="service.id"
             to="/services"
             class="bento-card text-decoration-none"
-            :class="{ large: i === 0 }"
+            :class="{ large: i === 0 || i === 3 }"
             v-inview="{ delay: i * 90 }"
             v-spotlight
           >
@@ -537,6 +537,46 @@ const whyCards = computed(() => [
 
 .bento-card.large {
   grid-column: span 2;
+}
+
+/* Large cards: horizontal editorial layout on desktop */
+@media (min-width: 992px) {
+  .bento-card.large .bento-body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "icon title"
+      "icon desc"
+      "icon link";
+    column-gap: 1.75rem;
+    align-items: start;
+  }
+
+  .bento-card.large .bento-icon {
+    grid-area: icon;
+    width: 76px;
+    height: 76px;
+    font-size: 1.9rem;
+    border-radius: 20px;
+  }
+
+  .bento-card.large .bento-title {
+    grid-area: title;
+    align-self: center;
+    font-size: 1.45rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .bento-card.large .bento-desc {
+    grid-area: desc;
+    margin-bottom: 1.25rem;
+    max-width: 48ch;
+  }
+
+  .bento-card.large .bento-link {
+    grid-area: link;
+    align-self: start;
+  }
 }
 
 .bento-card:hover {
