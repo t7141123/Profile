@@ -3,21 +3,7 @@
     <div class="container d-flex flex-nowrap align-items-center justify-content-between navbar-inner">
       <!-- Brand -->
       <router-link class="navbar-brand" :to="localePath('/')" @click="closeMenu">
-        <svg
-          class="brand-ark"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#C89B6D"
-          stroke-width="1.7"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          aria-hidden="true"
-        >
-          <path d="M8 7.2 12 4.8l4 2.4" />
-          <path d="M9 7.5v2.7h6V7.5" />
-          <path d="M4.5 12.4c2.4.5 4.9.8 7.5.8s5.1-.3 7.5-.8" />
-          <path d="M4.5 12.4c.6 3.4 3.4 6 7.5 6s6.9-2.6 7.5-6" />
-        </svg>{{ $t("footer.brand") }}
+        <img :src="arkLogo" class="brand-ark" alt="" aria-hidden="true" />{{ $t("footer.brand") }}
       </router-link>
 
       <!-- Desktop Menu -->
@@ -85,6 +71,7 @@ import { useRoute } from "vue-router";
 import { useLocale } from "@/composables/useLocale";
 import LanguageSwitcher from "./LanguageSwitcher.vue";
 import MobileMenu from "./navbar/MobileMenu.vue";
+import arkLogo from "@/assets/images/ark-logo.svg?url";
 
 const isScrolled = ref(false);
 const isMenuOpen = ref(false);
@@ -264,11 +251,10 @@ const onKeydown = (e) => {
 }
 
 .brand-ark {
-  width: 1.15em;
-  height: 1.15em;
+  height: 1.2em;
+  width: auto;
   margin-right: 0.45rem;
-  vertical-align: -0.14em;
-  flex-shrink: 0;
+  vertical-align: -0.16em;
 }
 
 @media (max-width: 575.98px) {
