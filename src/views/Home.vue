@@ -347,7 +347,7 @@ const testimonials = computed(() =>
   margin-left: calc(min(94vw, 1320px) / -2);
   bottom: -14%;
   width: min(94vw, 1320px);
-  aspect-ratio: 1200 / 700;
+  aspect-ratio: 1200 / 650;
   opacity: 0.38;
   z-index: 1;
 }

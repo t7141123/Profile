@@ -337,7 +337,7 @@ const ghost = computed(() => {
   margin-left: calc(min(92vw, 1080px) / -2);
   bottom: -6%;
   width: min(92vw, 1080px);
-  aspect-ratio: 1200 / 700;
+  aspect-ratio: 1200 / 650;
   opacity: 0.2;
   z-index: 0;
 }
@@ -345,7 +345,7 @@ const ghost = computed(() => {
 .variant-portfolio .ark-page,
 .variant-services .ark-page {
   opacity: 0.24;
-  aspect-ratio: 1200 / 700;
+  aspect-ratio: 1200 / 650;
 }
 
 .variant-about .ark-page,

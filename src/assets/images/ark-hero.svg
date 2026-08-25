@@ -1,135 +1,104 @@
-<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#F0DEB6" stroke-linecap="round" stroke-linejoin="round">
-  <!-- hull outer outline (no fill) -->
-  <path d="M100 376 C250 388 420 390 600 390 C780 390 950 382 1100 370 C1104 428 1088 492 1046 534 C990 584 860 606 600 606 C340 606 210 584 154 534 C112 492 96 428 100 376 Z" stroke-width="2.4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" width="100%" height="100%">
+  <defs>
+    <style>
+      .hull-thick { fill: none; stroke: #ffffff; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+      .hull-med   { fill: none; stroke: #ffffff; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+      .hull-thin  { fill: none; stroke: #ffffff; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+      .deck-post  { fill: none; stroke: #ffffff; stroke-width: 1.4; stroke-linecap: round; }
+    </style>
+  </defs>
 
-  <!-- keel -->
-  <path d="M150 538 C280 580 460 590 600 590 C740 590 920 580 1050 538" stroke-width="1.6" opacity=".55"/>
+  <g id="ark-graphic" transform="translate(40, 20)">
+    <!-- 1. Cabin Roof -->
+    <path class="hull-thick" d="M 390 145 L 945 200 L 965 240 L 450 185 Z" />
+    <path class="hull-med" d="M 335 205 L 390 145 L 450 185 Z" />
+    <line class="hull-thin" x1="390" y1="145" x2="390" y2="185" />
+    <line class="hull-thin" x1="330" y1="210" x2="455" y2="188" />
+    <line class="hull-thin" x1="455" y1="188" x2="975" y2="242" />
 
-  <!-- waterline hint -->
-  <path d="M108 562 C276 576 438 578 600 578 C762 578 924 570 1092 558" stroke-width="1.2" opacity=".4"/>
+    <!-- 2. Cabin Structure -->
+    <path class="hull-med" d="M 345 208 L 440 188 L 440 270 L 360 266 L 360 235 Z" />
+    <line class="hull-thin" x1="360" y1="235" x2="440" y2="215" />
+    <line class="hull-thin" x1="360" y1="250" x2="440" y2="240" />
 
-  <!-- internal planking (following sheer) -->
-  <g stroke-width="1.2" opacity=".78">
-    <path d="M100 414 C260 424 430 426 600 426 C770 426 940 418 1100 406"/>
-    <path d="M100 446 C260 456 430 458 600 458 C770 458 940 450 1100 438"/>
-    <path d="M102 480 C264 490 432 492 600 492 C768 492 936 484 1098 472"/>
-    <path d="M106 516 C268 526 434 528 600 528 C766 528 932 520 1094 508"/>
-    <path d="M114 550 C276 560 438 562 600 562 C762 562 924 554 1086 542"/>
+    <path class="hull-med" d="M 440 188 L 950 238 L 938 288 L 440 270 Z" />
+
+    <!-- Cabin Siding Planks -->
+    <line class="hull-thin" x1="440" y1="208" x2="948" y2="250" />
+    <line class="hull-thin" x1="440" y1="228" x2="945" y2="262" />
+    <line class="hull-thin" x1="440" y1="248" x2="942" y2="275" />
+
+    <!-- Windows & Door -->
+    <rect class="hull-med" x="490" y="215" width="42" height="32" rx="1" />
+    <line class="hull-thin" x1="504" y1="215" x2="504" y2="247" />
+    <line class="hull-thin" x1="518" y1="215" x2="518" y2="247" />
+
+    <rect class="hull-med" x="605" y="226" width="42" height="32" rx="1" />
+    <line class="hull-thin" x1="619" y1="226" x2="619" y2="258" />
+    <line class="hull-thin" x1="633" y1="226" x2="633" y2="258" />
+
+    <path class="hull-med" d="M 720 277 L 720 237 L 755 240 L 755 280 Z" />
+
+    <rect class="hull-med" x="825" y="247" width="40" height="30" rx="1" />
+    <line class="hull-thin" x1="838" y1="247" x2="838" y2="277" />
+    <line class="hull-thin" x1="852" y1="247" x2="852" y2="277" />
+
+    <!-- 3. Deck Railings -->
+    <path class="hull-thick" d="M 125 240 C 370 252, 760 270, 1075 260" />
+    <path class="hull-med" d="M 122 254 C 370 265, 760 282, 1078 273" />
+
+    <g class="deck-post">
+      <line x1="150" y1="241" x2="150" y2="255" />
+      <line x1="180" y1="242" x2="180" y2="256" />
+      <line x1="210" y1="243" x2="210" y2="257" />
+      <line x1="240" y1="244" x2="240" y2="258" />
+      <line x1="270" y1="246" x2="270" y2="260" />
+      <line x1="300" y1="247" x2="300" y2="261" />
+      <line x1="330" y1="249" x2="330" y2="263" />
+      <line x1="360" y1="250" x2="360" y2="264" />
+      <line x1="390" y1="252" x2="390" y2="266" />
+      <line x1="420" y1="254" x2="420" y2="268" />
+      <line x1="455" y1="256" x2="455" y2="270" />
+      <line x1="490" y1="258" x2="490" y2="272" />
+      <line x1="525" y1="260" x2="525" y2="274" />
+      <line x1="560" y1="261" x2="560" y2="276" />
+      <line x1="595" y1="263" x2="595" y2="277" />
+      <line x1="630" y1="264" x2="630" y2="278" />
+      <line x1="665" y1="265" x2="665" y2="279" />
+      <line x1="700" y1="266" x2="700" y2="280" />
+      <line x1="735" y1="267" x2="735" y2="281" />
+      <line x1="770" y1="267" x2="770" y2="281" />
+      <line x1="805" y1="267" x2="805" y2="281" />
+      <line x1="840" y1="266" x2="840" y2="280" />
+      <line x1="875" y1="265" x2="875" y2="279" />
+      <line x1="910" y1="264" x2="910" y2="277" />
+      <line x1="945" y1="263" x2="945" y2="276" />
+      <line x1="980" y1="262" x2="980" y2="275" />
+      <line x1="1015" y1="261" x2="1015" y2="274" />
+      <line x1="1050" y1="260" x2="1050" y2="273" />
+    </g>
+
+    <!-- 4. Bow & Stern Posts -->
+    <path class="hull-thick" d="M 80 185 L 140 195 L 122 265 L 80 185 Z" />
+    <line class="hull-thin" x1="92" y1="200" x2="132" y2="208" />
+    <path class="hull-thick" d="M 1030 274 C 1030 242, 1050 226, 1068 226 C 1084 226, 1088 242, 1088 270 Z" />
+
+    <!-- 5. Main Hull Contours -->
+    <path class="hull-thick" d="M 82 195 C 105 410, 150 535, 280 570 C 470 600, 830 590, 985 550 C 1065 525, 1100 440, 1088 270" />
+    <path class="hull-med" d="M 122 265 C 138 415, 175 515, 285 548 C 470 575, 820 568, 965 533 C 1040 505, 1075 430, 1080 275" />
+
+    <!-- Horizontal Hull Planks -->
+    <path class="hull-thin" d="M 124 290 C 370 310, 760 330, 1072 305" />
+    <path class="hull-thin" d="M 128 318 C 370 340, 760 360, 1065 335" />
+    <path class="hull-thin" d="M 134 346 C 370 370, 760 390, 1056 365" />
+    <path class="hull-thin" d="M 142 376 C 370 400, 760 420, 1045 395" />
+    <path class="hull-thin" d="M 152 406 C 370 430, 760 450, 1030 425" />
+    <path class="hull-thin" d="M 165 436 C 370 460, 760 480, 1010 455" />
+    <path class="hull-thin" d="M 182 466 C 370 490, 760 506, 985 485" />
+    <path class="hull-thin" d="M 205 496 C 370 518, 760 532, 955 512" />
+    <path class="hull-thin" d="M 238 524 C 380 545, 730 554, 910 535" />
+
+    <!-- Keel Contour -->
+    <path class="hull-med" d="M 150 410 C 170 505, 240 558, 350 565 C 600 575, 840 565, 990 533" />
   </g>
-
-  <!-- two wales (thicker reinforcing bands) -->
-  <path d="M100 444 C260 454 430 456 600 456 C770 456 940 448 1100 436" stroke-width="1.9" opacity=".92"/>
-  <path d="M104 510 C264 520 434 522 600 522 C766 522 936 514 1096 502" stroke-width="1.9" opacity=".92"/>
-
-  <!-- vertical timber frames (subtle) -->
-  <g stroke-width="1" opacity=".45">
-    <path d="M198 380 L196 590"/>
-    <path d="M308 382 L306 592"/>
-    <path d="M418 384 L416 594"/>
-    <path d="M528 386 L528 596"/>
-    <path d="M672 386 L672 596"/>
-    <path d="M782 384 L784 594"/>
-    <path d="M892 382 L894 592"/>
-    <path d="M1002 380 L1004 590"/>
-  </g>
-
-  <!-- bow stem post -->
-  <path d="M1090 372 L1094 330 L1106 332 L1102 374" stroke-width="1.8"/>
-  <path d="M1094 332 L1106 332" stroke-width="1.4"/>
-  <path d="M1098 332 L1100 308" stroke-width="1.4"/>
-
-  <!-- deck fence posts -->
-  <g stroke-width="1.2" opacity=".7">
-    <path d="M148 354 V378"/>
-    <path d="M262 356 V380"/>
-    <path d="M376 358 V382"/>
-    <path d="M824 358 V382"/>
-    <path d="M938 356 V380"/>
-    <path d="M1050 354 V378"/>
-  </g>
-
-  <!-- deck cap rail (top, double-line) -->
-  <path d="M88 372 C250 384 430 386 600 386 C770 386 950 378 1112 366" stroke-width="2"/>
-  <path d="M88 384 C250 396 430 398 600 398 C770 398 950 390 1112 378" stroke-width="1.4" opacity=".6"/>
-
-  <!-- ============= HOUSE ============= -->
-  <!-- walls -->
-  <path d="M432 252 H768 V384 H432 Z" stroke-width="2"/>
-  <!-- wall planks -->
-  <g stroke-width="1" opacity=".7">
-    <path d="M432 276 H768"/>
-    <path d="M432 300 H768"/>
-    <path d="M432 324 H768"/>
-    <path d="M432 348 H768"/>
-    <path d="M432 372 H768"/>
-  </g>
-  <!-- wall corner posts -->
-  <path d="M444 252 V384" stroke-width="1.2" opacity=".75"/>
-  <path d="M756 252 V384" stroke-width="1.2" opacity=".75"/>
-
-  <!-- gabled roof -->
-  <path d="M404 258 L600 150 L796 258" stroke-width="2.2"/>
-  <!-- shingle rows clipped to roof -->
-  <g stroke-width="1" opacity=".7">
-    <path d="M438 240 H762"/>
-    <path d="M470 222 H730"/>
-    <path d="M504 204 H696"/>
-    <path d="M537 186 H663"/>
-    <path d="M570 168 H630"/>
-  </g>
-  <!-- shingle verticals (offset) -->
-  <g stroke-width="0.9" opacity=".5">
-    <path d="M484 150 V168"/>
-    <path d="M552 150 V168"/>
-    <path d="M620 150 V168"/>
-    <path d="M688 150 V168"/>
-    <path d="M448 168 V186"/>
-    <path d="M516 168 V186"/>
-    <path d="M584 168 V186"/>
-    <path d="M652 168 V186"/>
-    <path d="M720 168 V186"/>
-    <path d="M484 186 V204"/>
-    <path d="M552 186 V204"/>
-    <path d="M620 186 V204"/>
-    <path d="M688 186 V204"/>
-  </g>
-  <!-- ridge cap -->
-  <path d="M592 152 L608 152" stroke-width="2.4"/>
-  <!-- fascia below roof -->
-  <path d="M396 258 H804" stroke-width="1.8"/>
-
-  <!-- 3 house windows (mullioned) -->
-  <g stroke-width="1.8">
-    <rect x="480" y="292" width="52" height="60" rx="8"/>
-    <rect x="574" y="292" width="52" height="60" rx="8"/>
-    <rect x="668" y="292" width="52" height="60" rx="8"/>
-  </g>
-  <g stroke-width="1.2" opacity=".85">
-    <path d="M506 292 V352"/><path d="M480 322 H532"/>
-    <path d="M600 292 V352"/><path d="M574 322 H626"/>
-    <path d="M694 292 V352"/><path d="M668 322 H720"/>
-  </g>
-
-  <!-- 4 hull portholes (round) -->
-  <g stroke-width="1.6">
-    <circle cx="268" cy="410" r="20"/>
-    <circle cx="392" cy="412" r="20"/>
-    <circle cx="808" cy="412" r="20"/>
-    <circle cx="932" cy="410" r="20"/>
-  </g>
-  <g stroke-width="0.9" opacity=".5">
-    <path d="M248 410 H288"/><path d="M372 412 H412"/><path d="M788 412 H828"/><path d="M912 410 H952"/>
-    <path d="M268 390 V430"/><path d="M392 392 V432"/><path d="M808 392 V432"/><path d="M932 390 V430"/>
-  </g>
-
-  <!-- arched door -->
-  <path d="M564 606 V452 Q600 416 636 452 V606" stroke-width="1.8"/>
-  <path d="M600 440 V606" stroke-width="1" opacity=".6"/>
-
-  <!-- ============= WAVES ============= -->
-  <g opacity=".55">
-    <path d="M0 596 C100 578 200 580 300 596 C400 612 500 614 600 598 C700 582 800 580 900 596 C1000 612 1100 612 1200 596" stroke-width="1.6"/>
-  </g>
-  <path d="M0 626 C100 608 200 610 300 626 C410 642 510 644 610 628 C710 612 810 610 910 626 C1010 642 1110 642 1200 626" stroke-width="1.9" opacity=".7"/>
-  <path d="M0 660 C120 644 240 646 360 660 C480 674 600 676 720 662 C840 648 960 646 1080 660 C1140 666 1180 666 1200 662" stroke-width="1.4" opacity=".5"/>
 </svg>
