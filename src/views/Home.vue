@@ -335,10 +335,11 @@ const testimonials = computed(() =>
 <style scoped>
 /* Ark background */
 .ark-home {
-  right: -6%;
-  bottom: -8%;
-  width: min(58vw, 700px);
-  opacity: 0.3;
+  left: 50%;
+  margin-left: calc(min(94vw, 1150px) / -2);
+  bottom: -7%;
+  width: min(94vw, 1150px);
+  opacity: 0.34;
 }
 
 /* ── Consultation journey card (hero right) ── */

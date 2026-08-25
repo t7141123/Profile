@@ -333,28 +333,29 @@ const ghost = computed(() => {
 }
 
 .ark-page {
-  right: -5%;
-  bottom: -4%;
-  width: min(46vw, 540px);
-  opacity: 0.12;
+  left: 50%;
+  margin-left: calc(min(92vw, 1080px) / -2);
+  bottom: -6%;
+  width: min(92vw, 1080px);
+  opacity: 0.2;
   z-index: 0;
+}
+
+.variant-portfolio .ark-page,
+.variant-services .ark-page {
+  opacity: 0.24;
 }
 
 .variant-about .ark-page,
 .variant-contact .ark-page {
-  opacity: 0.14;
-}
-
-.variant-about .ark-page {
-  right: auto;
-  left: -4%;
-  bottom: -8%;
+  opacity: 0.16;
 }
 
 @media (max-width: 991.98px) {
   .ark-page {
-    width: 70vw;
-    opacity: 0.08 !important;
+    width: 120vw;
+    margin-left: -60vw;
+    opacity: 0.14 !important;
   }
 }
 
