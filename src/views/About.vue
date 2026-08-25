@@ -3,11 +3,12 @@
     <!-- Page Header Section -->
     <!-- Page Header Section -->
     <PageHeader
+      variant="about"
       :badge="$t('about.badge')"
       :title="$t('about.title')"
       :highlight="$t('about.titleHighlight')"
       :description="$t('about.pageDescription')"
-      header-class="page-header-about"
+      :image="profileImg"
       @scroll-click="scrollToContent"
     />
 
@@ -15,17 +16,7 @@
     <section class="section" ref="contentSection">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="about-image">
-              <img src="@/assets/images/profile-new.jpg" alt="David" loading="lazy" decoding="async" width="400" height="500" style="width: auto; max-width: 100%; height: auto;" />
-              <div class="experience-badge">
-                <span class="years">9+</span>
-                <span class="text">{{ $t("about.yearsExp") }}</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-8">
+          <div class="col-12">
             <div class="about-content">
               <h2 class="about-title">
                 {{ $t("about.greeting") }}
@@ -196,6 +187,7 @@ import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import SectionHeader from "@/components/common/SectionHeader.vue";
 import PageHeader from "@/components/common/PageHeader.vue";
+import profileImg from "@/assets/images/profile-new.jpg";
 
 const { t } = useI18n();
 

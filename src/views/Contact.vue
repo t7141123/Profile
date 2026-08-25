@@ -2,11 +2,11 @@
   <div class="contact-page">
     <!-- Page Header Section -->
     <PageHeader
+      variant="contact"
       :badge="$t('contact.badge')"
       :title="$t('contact.title')"
       :highlight="$t('contact.titleHighlight')"
       :description="$t('contact.pageDescription')"
-      header-class="page-header-contact"
       @scroll-click="scrollToContent"
     >
       <!-- CTA Buttons Slot -->

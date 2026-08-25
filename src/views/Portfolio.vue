@@ -3,13 +3,27 @@
     <!-- Page Header Section -->
     <!-- Page Header Section -->
     <PageHeader
+      variant="portfolio"
       :badge="$t('portfolio.badge')"
       :title="$t('portfolio.title')"
       :highlight="$t('portfolio.titleHighlight')"
       :description="$t('portfolio.pageDescription')"
-      header-class="page-header-portfolio"
       @scroll-click="scrollToContent"
-    />
+    >
+      <template #aside>
+        <div class="hero-meta">
+          <div
+            v-for="(m, i) in metaChips"
+            :key="m.label"
+            class="meta-chip"
+            v-inview="{ delay: i * 90 }"
+          >
+            <strong>{{ m.value }}</strong>
+            <span>{{ m.label }}</span>
+          </div>
+        </div>
+      </template>
+    </PageHeader>
 
     <!-- Portfolio Section -->
     <section class="section" ref="contentSection">
@@ -100,6 +114,13 @@ const scrollToContent = () => {
 
 const projects = computed(() => getAllProjects());
 
+const metaChips = computed(() => [
+  { value: `${projects.value.length}+`, label: t("home.stats.projects") },
+  { value: "11", label: t("home.stats.langs") },
+  { value: "100%", label: t("home.stats.tailored") },
+]);
+
+
 const selectedCategory = ref("all");
 
 const filters = computed(() => [
@@ -124,6 +145,70 @@ const filteredProjects = computed(() => {
   return projects.value.filter(p => p.categoryKey === selectedCategory.value);
 });
 </script>
+
+<style scoped>
+/* Portfolio hero meta chips */
+.hero-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  max-width: 340px;
+  margin-left: auto;
+}
+
+.meta-chip {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  padding: 1rem 1.35rem;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.25s ease, background 0.25s ease;
+}
+
+.meta-chip:hover {
+  transform: translateX(6px);
+  border-color: rgba(245, 158, 11, 0.4);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.meta-chip strong {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1;
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  min-width: 3.2rem;
+}
+
+.meta-chip span {
+  color: #C9C3B8;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 991.98px) {
+  .hero-meta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: none;
+    margin-left: 0;
+  }
+  .meta-chip {
+    flex: 1 1 140px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    padding: 0.9rem 1.1rem;
+  }
+}
 
 <style scoped>
 /* Portfolio-specific page description styling */
