@@ -28,16 +28,16 @@
   --danger-color: #EF4444;
   --warning-color: #F59E0B;
 
-  /* Clean & Professional Backgrounds */
-  --bg-primary: #F8FAFC;      /* Cool light gray with blue tint */
-  --bg-secondary: #FFFFFF;    /* Pure white */
-  --bg-accent: #F1F5F9;       /* Light slate for sections */
-  --bg-warm: #FFFBEB;         /* Soft warm amber for highlights (CTA, etc.) */
-  
-  /* Text Colors - Professional and readable */
-  --text-primary: #1E293B;    /* Slate 800 - professional dark */
-  --text-secondary: #64748B;  /* Slate 600 */
-  --text-muted: #8494AB;      /* Slate 400 adjusted for better contrast */
+  /* Clean & Professional Backgrounds — warm ivory */
+  --bg-primary: #FAF8F4;      /* Warm ivory */
+  --bg-secondary: #FFFFFF;    /* Pure white cards */
+  --bg-accent: #F5F1E9;       /* Warm sand for sections */
+  --bg-warm: #FFF8EB;         /* Soft warm amber for highlights (CTA, etc.) */
+
+  /* Text Colors - warm neutrals */
+  --text-primary: #2B2722;    /* Warm charcoal */
+  --text-secondary: #6E675D;  /* Warm gray */
+  --text-muted: #9C9285;      /* Warm muted */
   --text-light: #F8FAFC;      /* For dark backgrounds */
 
   /* Professional Blue Gradients - No Purple */
@@ -47,17 +47,20 @@
   --gradient-warm: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
   --gradient-hero: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(59, 130, 246, 0.08) 100%);
   
-  /* Borders - unified light-mode border color */
-  --border-color: rgba(15, 23, 42, 0.08);
-  
-  /* Clean Shadows with blue tint */
-  --shadow-sm: 0 1px 2px 0 rgba(37, 99, 235, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(37, 99, 235, 0.1), 0 2px 4px -2px rgba(37, 99, 235, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(37, 99, 235, 0.1), 0 4px 6px -4px rgba(37, 99, 235, 0.1);
-  --shadow-xl: 0 20px 25px -5px rgba(37, 99, 235, 0.15), 0 8px 10px -6px rgba(37, 99, 235, 0.1);
+  /* Borders — warm */
+  --border-color: rgba(80, 66, 45, 0.10);
+
+  /* Clean Shadows with warm tint */
+  --shadow-sm: 0 1px 2px 0 rgba(96, 74, 40, 0.06);
+  --shadow-md: 0 4px 12px -2px rgba(96, 74, 40, 0.09), 0 2px 4px -2px rgba(96, 74, 40, 0.06);
+  --shadow-lg: 0 12px 24px -6px rgba(96, 74, 40, 0.10), 0 4px 8px -4px rgba(96, 74, 40, 0.06);
+  --shadow-xl: 0 24px 40px -8px rgba(96, 74, 40, 0.14), 0 8px 16px -6px rgba(96, 74, 40, 0.08);
   --shadow-glow: 0 0 40px rgba(37, 99, 235, 0.2);
-  --shadow-soft: 0 8px 30px rgba(37, 99, 235, 0.08);
-  --shadow-warm: 0 10px 40px rgba(245, 158, 11, 0.15);
+  --shadow-soft: 0 8px 30px rgba(96, 74, 40, 0.10);
+  --shadow-warm: 0 10px 40px rgba(245, 158, 11, 0.18);
+
+  /* Gold brand gradient */
+  --gradient-gold: linear-gradient(135deg, #FBBF24 0%, #F59E0B 55%, #EA8A0C 100%);
 
   /* Border Radius - Modern curves */
   --radius-sm: 8px;
@@ -78,6 +81,7 @@
 
   /* Fonts */
   --font-sans: 'Plus Jakarta Sans', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Fraunces', 'Noto Serif TC', 'Noto Sans TC', serif;
 
   /* Brand Colors */
   --line-color: #06C755;
@@ -86,32 +90,32 @@
 
 /* Dark Mode Variables */
 [data-theme='dark'] {
-  --bg-primary: #0F172A;      /* Deep Slate 900 */
-  --bg-secondary: #1E293B;    /* Slate 800 */
-  --bg-accent: #334155;       /* Slate 700 */
-  
-  --text-primary: #F8FAFC;    /* Slate 50 */
-  --text-secondary: #CBD5E1;  /* Slate 300 */
-  --text-muted: #64748B;      /* Slate 500 */
+  --bg-primary: #131318;      /* Warm charcoal night */
+  --bg-secondary: #1D1C22;    /* Warm dark card */
+  --bg-accent: #2A2830;       /* Warm dark accent */
+
+  --text-primary: #F7F4EF;    /* Warm white */
+  --text-secondary: #C9C3B8;  /* Warm gray */
+  --text-muted: #7A7468;      /* Warm muted */
 
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.7);
-  --shadow-glow: 0 0 30px rgba(37, 99, 235, 0.15);
-  
-  --gradient-hero: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
-  
+  --shadow-glow: 0 0 30px rgba(245, 158, 11, 0.12);
+
+  --gradient-hero: linear-gradient(135deg, #1D1C22 0%, #131318 100%);
+
   --glass-bg: rgba(255, 255, 255, 0.7);
   --glass-blur: 8px;
-  --glass-border: rgba(37, 99, 235, 0.1);
-  
-  --border-color: rgba(255, 255, 255, 0.08);
-  --glass-bg: rgba(30, 41, 59, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  
+  --glass-border: rgba(245, 158, 11, 0.1);
+
+  --border-color: rgba(255, 244, 224, 0.08);
+  --glass-bg: rgba(29, 28, 34, 0.7);
+  --glass-border: rgba(255, 244, 224, 0.1);
+
   /* Accent adjustment */
-  --bg-warm: #451a03;
+  --bg-warm: #2A1F0D;
 }
 
 /* ===================================
@@ -130,6 +134,11 @@ html {
 body {
   font-family: var(--font-sans);
   background-color: var(--bg-primary);
+  background-image:
+    radial-gradient(1100px 700px at 88% -8%, rgba(245, 158, 11, 0.055), transparent 60%),
+    radial-gradient(900px 650px at -8% 32%, rgba(37, 99, 235, 0.045), transparent 55%),
+    radial-gradient(800px 600px at 50% 115%, rgba(245, 158, 11, 0.04), transparent 60%);
+  background-attachment: fixed;
   color: var(--text-primary);
   line-height: 1.7;
   overflow-x: hidden;
@@ -195,14 +204,15 @@ a:hover {
 
 .hero-title {
   color: #F1F5F9;
-  font-size: clamp(2.6rem, 5.6vw, 4.3rem);
-  font-weight: 800;
-  letter-spacing: -0.025em;
-  line-height: 1.08;
+  font-family: var(--font-display);
+  font-size: clamp(2.7rem, 5.8vw, 4.4rem);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.1;
 }
 
 .hero-title .highlight {
-  background: linear-gradient(135deg, #38BDF8 0%, #818CF8 100%);
+  background: var(--gradient-gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -659,8 +669,11 @@ a:hover {
 }
 
 .section-title {
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 800;
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 5.5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
   margin-bottom: 1rem;
   color: var(--text-primary);
 }
@@ -2273,7 +2286,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-title > .highlight > .reveal-word {
-  background: linear-gradient(135deg, #38BDF8 0%, #818CF8 100%);
+  background: var(--gradient-gold);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;

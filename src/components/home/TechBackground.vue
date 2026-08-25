@@ -13,6 +13,7 @@
     <div class="glow-orb-1"></div>
     <div class="glow-orb-2"></div>
     <div class="glow-orb-3"></div>
+    <div class="glow-orb-warm"></div>
 
     <!-- Data Flow -->
     <div class="data-flow data-flow-1"></div>
@@ -145,6 +146,19 @@
   border-radius: 50%;
   filter: blur(40px);
   animation: techPulse 20s ease-in-out infinite;
+}
+
+/* Warm amber orb — adds warmth to the hero */
+.glow-orb-warm {
+  position: absolute;
+  bottom: -18%;
+  right: 8%;
+  width: 42vw;
+  height: 42vw;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.16) 0%, rgba(251, 191, 36, 0.07) 45%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(55px);
+  animation: techPulse 22s ease-in-out infinite reverse;
 }
 
 /* Floating code particles */

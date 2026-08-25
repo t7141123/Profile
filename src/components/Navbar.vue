@@ -165,10 +165,10 @@ onUnmounted(() => {
 
 .navbar.scrolled {
   padding: 0.75rem 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(37, 99, 235, 0.1);
+  background: rgba(250, 248, 244, 0.88);
+  backdrop-filter: blur(14px) saturate(1.1);
+  -webkit-backdrop-filter: blur(14px) saturate(1.1);
+  border-bottom: 1px solid rgba(96, 74, 40, 0.08);
   box-shadow: var(--shadow-soft);
 }
 
@@ -223,9 +223,11 @@ onUnmounted(() => {
 }
 
 .navbar-brand {
-  font-weight: 800;
-  font-size: 1.5rem;
-  background: var(--gradient-primary);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.55rem;
+  letter-spacing: -0.01em;
+  background: var(--gradient-gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

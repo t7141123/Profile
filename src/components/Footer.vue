@@ -62,13 +62,14 @@ const currentYear = new Date().getFullYear();
 }
 
 .footer-brand {
-  font-size: 1.5rem;
-  font-weight: 800;
-  background: var(--gradient-primary);
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  background: var(--gradient-gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  letter-spacing: -0.5px;
 }
 
 .footer-description {

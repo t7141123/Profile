@@ -50,15 +50,16 @@ defineProps({
   top: -3.2rem;
   left: 50%;
   transform: translateX(-50%);
+  font-family: var(--font-display);
   font-size: clamp(5rem, 12vw, 9rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1;
-  letter-spacing: -0.04em;
-  background: var(--gradient-primary);
+  letter-spacing: -0.02em;
+  background: var(--gradient-gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  opacity: 0.06;
+  opacity: 0.08;
   pointer-events: none;
   user-select: none;
   white-space: nowrap;
@@ -75,10 +76,10 @@ defineProps({
 }
 
 .title-bar {
-  width: 64px;
+  width: 72px;
   height: 4px;
   border-radius: 999px;
-  background: var(--gradient-primary);
+  background: linear-gradient(90deg, #2563EB 0%, #8B5CF6 45%, #F59E0B 100%);
   margin: 0 auto 1.5rem;
   position: relative;
 }

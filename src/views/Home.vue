@@ -67,7 +67,7 @@
                   <span class="dot red"></span>
                   <span class="dot yellow"></span>
                   <span class="dot green"></span>
-                  <span class="filename">david_profile.js</span>
+                  <span class="filename">ark_studio.config.js</span>
                 </div>
                 <pre
                   class="code-content"
@@ -477,13 +477,13 @@ const whyCards = computed(() => [
 /* ── Marquee band ── */
 .marquee-band {
   overflow: hidden;
-  background: var(--gradient-primary);
+  background: linear-gradient(135deg, #F59E0B 0%, #EA8A0C 55%, #D97706 100%);
   transform: rotate(-1.2deg) scale(1.03);
   margin: -1.5rem 0 0;
   padding: 1.05rem 0;
   position: relative;
   z-index: 6;
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 14px 34px rgba(217, 119, 6, 0.28);
 }
 
 .marquee-track {
@@ -593,11 +593,12 @@ const whyCards = computed(() => [
 }
 
 .bento-title {
-  font-size: 1.3rem;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 0.7rem;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
 }
 
 .bento-desc {
@@ -683,8 +684,9 @@ const whyCards = computed(() => [
 }
 
 .stat-value {
-  font-size: clamp(2rem, 4vw, 2.75rem);
-  font-weight: 800;
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 4vw, 2.9rem);
+  font-weight: 700;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -698,6 +700,30 @@ const whyCards = computed(() => [
   font-size: 0.9rem;
   font-weight: 500;
   margin-top: 0.35rem;
+}
+
+/* Why Ark Studio — warm band */
+.why-section {
+  position: relative;
+}
+
+.why-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(245, 158, 11, 0.055) 18%,
+    rgba(245, 158, 11, 0.055) 82%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.why-section .container {
+  position: relative;
+  z-index: 1;
 }
 
 /* Why cards */
@@ -787,8 +813,10 @@ const whyCards = computed(() => [
 }
 
 .cta-title {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  font-weight: 800;
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 4vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
   margin-bottom: 1rem;
   color: var(--text-primary);
 }
