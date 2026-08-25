@@ -344,11 +344,21 @@ const testimonials = computed(() =>
 .ark-home {
   position: absolute;
   left: 50%;
-  margin-left: calc(min(94vw, 1150px) / -2);
-  bottom: -7%;
-  width: min(94vw, 1150px);
+  margin-left: calc(min(70vw, 820px) / -2);
+  bottom: -12%;
+  width: min(70vw, 820px);
   aspect-ratio: 900 / 560;
-  opacity: 0.34;
+  opacity: 0.28;
+  z-index: 1;
+}
+
+@media (max-width: 991.98px) {
+  .ark-home {
+    width: 130vw;
+    margin-left: -65vw;
+    bottom: -8%;
+    opacity: 0.18;
+  }
 }
 
 /* ── Consultation journey card (hero right) ── */
