@@ -66,9 +66,15 @@ const currentYear = new Date().getFullYear();
   font-size: 1.55rem;
   font-weight: 700;
   letter-spacing: -0.01em;
-  background: var(--gradient-gold);
+  background: var(--gradient-gold-deep);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme='dark'] .footer-brand {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
   background-clip: text;
 }
 

@@ -41,6 +41,7 @@
       <div class="d-flex d-lg-none align-items-center gap-3">
         <ThemeToggle />
         <button
+          ref="menuToggle"
           class="menu-toggle"
           :class="{ 'is-active': isMenuOpen }"
           @click="toggleMenu"
@@ -76,6 +77,7 @@ import ThemeToggle from "./common/ThemeToggle.vue";
 
 const isScrolled = ref(false);
 const isMenuOpen = ref(false);
+const menuToggle = ref(null);
 const route = useRoute();
 const { changeLocale, localePath, currentLocale } = useLocale();
 
@@ -140,12 +142,21 @@ watch(
 
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
+  window.addEventListener("keydown", onKeydown);
 });
 
 onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
+  window.removeEventListener("keydown", onKeydown);
   document.body.style.overflow = ""; // Ensure scroll is restored
 });
+
+const onKeydown = (e) => {
+  if (e.key === "Escape" && isMenuOpen.value) {
+    closeMenu();
+    menuToggle.value?.focus();
+  }
+};
 </script>
 
 <style scoped>
@@ -227,12 +238,19 @@ onUnmounted(() => {
   font-weight: 700;
   font-size: 1.55rem;
   letter-spacing: -0.01em;
-  background: var(--gradient-gold);
+  background: var(--gradient-gold-deep);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   position: relative;
   z-index: 1002;
+}
+
+.navbar:not(.scrolled) .navbar-brand,
+[data-theme='dark'] .navbar-brand {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 @media (max-width: 359.98px) {
