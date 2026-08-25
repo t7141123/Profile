@@ -39,10 +39,10 @@
           </div>
         </div>
 
-        <div class="consult-card border-beam">
+        <div class="consult-card">
           <div class="consult-head">
             <span class="consult-icon"><i class="bi bi-rocket-takeoff-fill"></i></span>
-            <div>
+            <div class="consult-head-text">
               <h3 class="consult-title">{{ consult.title }}</h3>
               <p class="consult-sub">{{ consult.sub }}</p>
             </div>
@@ -53,7 +53,7 @@
               :key="i"
               class="consult-step"
             >
-              <span class="step-num">{{ i + 1 }}</span>
+              <span class="step-num" aria-hidden="true">{{ i + 1 }}</span>
               <div class="step-body">
                 <strong>{{ s.title }}</strong>
                 <span>{{ s.desc }}</span>
@@ -68,6 +68,7 @@
             v-magnetic
           >
             <i class="bi bi-line me-2"></i>{{ consult.cta }}
+            <i class="bi bi-arrow-right ms-2"></i>
           </a>
         </div>
       </div>
@@ -365,43 +366,86 @@ const testimonials = computed(() =>
 .consult-card {
   position: relative;
   z-index: 1;
-  max-width: 440px;
+  width: 100%;
+  max-width: 460px;
   margin: 0 auto;
   text-align: left;
-  padding: 1.75rem;
-  border-radius: var(--radius-xl);
-  background: rgba(255, 255, 255, 0.055);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  box-shadow: var(--shadow-xl);
+  padding: 2.1rem 2rem 1.9rem;
+  border-radius: 26px;
+  background: linear-gradient(
+    160deg,
+    rgba(255, 244, 224, 0.07) 0%,
+    rgba(255, 244, 224, 0.028) 45%,
+    rgba(255, 244, 224, 0.012) 100%
+  );
+  border: 1px solid rgba(227, 201, 168, 0.16);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow:
+    0 24px 60px -18px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 244, 224, 0.1);
   color: #F7F4EF;
+  overflow: hidden;
+}
+
+/* gold hairline — premium plaque accent */
+.consult-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  right: 2rem;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(227, 201, 168, 0.65),
+    transparent
+  );
 }
 
 .consult-head {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 1.35rem;
+  gap: 16px;
+  padding-bottom: 1.35rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(227, 201, 168, 0.12);
+  position: relative;
+}
+
+/* diamond accent on the divider */
+.consult-head::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 68px;
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  background: #C89B6D;
+  box-shadow: 0 0 12px rgba(200, 155, 109, 0.8);
 }
 
 .consult-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 14px;
-  background: var(--gradient-gold);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 25%, #E3C9A8, #8B5E3C 78%);
   color: #241C14;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   flex-shrink: 0;
-  box-shadow: 0 6px 18px rgba(200, 155, 109, 0.35);
+  box-shadow:
+    0 8px 22px rgba(200, 155, 109, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
 }
 
 .consult-title {
   font-family: var(--font-display);
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #F7F4EF;
   margin: 0;
@@ -409,83 +453,90 @@ const testimonials = computed(() =>
 }
 
 .consult-sub {
-  font-size: 0.83rem;
+  font-size: 0.84rem;
   color: #A8A196;
   margin: 3px 0 0;
 }
 
+/* Steps — editorial ghost numerals, no boxes */
 .consult-steps {
   list-style: none;
   padding: 0;
-  margin: 0 0 1.5rem;
+  margin: 0 0 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .consult-step {
   display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  padding: 9px 0;
-  position: relative;
-}
-
-.consult-step:not(:last-child)::before {
-  content: "";
-  position: absolute;
-  left: 15px;
-  top: 42px;
-  bottom: -14px;
-  width: 2px;
-  border-radius: 2px;
-  background: linear-gradient(
-    180deg,
-    rgba(148, 163, 184, 0.38),
-    rgba(148, 163, 184, 0.1)
-  );
+  align-items: baseline;
+  gap: 16px;
 }
 
 .step-num {
-  width: 32px;
-  height: 32px;
-  border-radius: 11px;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 0.95rem;
-  color: #E3C9A8;
-  flex-shrink: 0;
-  position: relative;
-  z-index: 1;
+  font-style: italic;
+  font-size: 2.05rem;
+  font-weight: 600;
+  line-height: 0.9;
+  min-width: 34px;
+  background: linear-gradient(180deg, #E3C9A8 0%, #8B5E3C 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .step-body strong {
   display: block;
-  font-size: 0.97rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 650;
   color: #F7F4EF;
+  letter-spacing: 0.01em;
   line-height: 1.35;
 }
 
 .step-body span {
   display: block;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: #A8A196;
-  margin-top: 2px;
-  line-height: 1.5;
+  margin-top: 3px;
+  line-height: 1.55;
 }
 
 .consult-cta {
   width: 100%;
   display: inline-flex;
   justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  padding: 0.95rem 1.5rem;
+  font-weight: 600;
+  box-shadow: 0 10px 26px rgba(6, 199, 85, 0.28);
 }
 
 @media (max-width: 575.98px) {
   .consult-card {
-    padding: 1.4rem;
+    padding: 1.7rem 1.5rem 1.6rem;
+    border-radius: 22px;
+  }
+
+  .consult-card::before {
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .consult-title {
+    font-size: 1.15rem;
+  }
+
+  .step-num {
+    font-size: 1.75rem;
+    min-width: 28px;
+  }
+
+  .consult-steps {
+    gap: 1rem;
   }
 }
 
