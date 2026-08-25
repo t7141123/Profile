@@ -1,91 +1,188 @@
-<svg width="900" height="560" viewBox="0 0 900 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="hullG" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#E8CFA8"/>
-      <stop offset=".45" stop-color="#C9A276"/>
-      <stop offset="1" stop-color="#A4785A"/>
+      <stop offset="0" stop-color="#B0835A"/>
+      <stop offset=".35" stop-color="#8F6238"/>
+      <stop offset=".75" stop-color="#6E4A26"/>
+      <stop offset="1" stop-color="#4A3014"/>
     </linearGradient>
-    <linearGradient id="hullG2" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#D9B98C"/>
+    <linearGradient id="railG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E8CFA8"/>
       <stop offset="1" stop-color="#B98A5E"/>
     </linearGradient>
-    <linearGradient id="cabinG" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F7EBD5"/>
-      <stop offset="1" stop-color="#E8CFA8"/>
+    <linearGradient id="wallG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9CFA4"/>
+      <stop offset="1" stop-color="#C09465"/>
     </linearGradient>
     <linearGradient id="roofG" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#B98A5E"/>
-      <stop offset="1" stop-color="#8B5E3C"/>
+      <stop offset="0" stop-color="#8A5F38"/>
+      <stop offset="1" stop-color="#553820"/>
     </linearGradient>
-    <linearGradient id="waveG1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#E8CFA8" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#E8CFA8" stop-opacity=".55"/>
-      <stop offset="1" stop-color="#E8CFA8" stop-opacity="0"/>
+    <linearGradient id="doorG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7A5230"/>
+      <stop offset="1" stop-color="#54371C"/>
     </linearGradient>
-    <linearGradient id="waveG2" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C9A276" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#C9A276" stop-opacity=".4"/>
-      <stop offset="1" stop-color="#C9A276" stop-opacity="0"/>
+    <linearGradient id="hullShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241505" stop-opacity="0"/>
+      <stop offset=".55" stop-color="#241505" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#241505" stop-opacity=".52"/>
     </linearGradient>
+    <linearGradient id="waveA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D9B98C" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#D9B98C" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="waveB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B0835A" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#B0835A" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="haloG" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFD9A0" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#FFD9A0" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="hullClip">
+      <path d="M104 380 C100 436 116 496 158 536 C214 584 340 602 600 602 C860 602 986 584 1042 536 C1084 496 1100 436 1096 380 Z"/>
+    </clipPath>
   </defs>
 
+  <!-- warm halo behind ark -->
+  <ellipse cx="600" cy="330" rx="520" ry="300" fill="url(#haloG)" opacity=".55"/>
+
   <!-- back waves -->
-  <path d="M20 470c60-18 120-18 180 0s120 18 180 0 120-18 180 0 120 18 180 0 90-14 120-6" stroke="url(#waveG2)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M60 520 C140 500 220 500 300 520 S460 540 540 520 S700 500 780 520 S940 540 1020 520 S1140 504 1160 512" stroke="#C9A276" stroke-opacity=".35" stroke-width="5" stroke-linecap="round"/>
 
-  <!-- hull -->
-  <path d="M110 300h680c12 0 20 11 16 22-26 74-86 152-158 152H252c-72 0-132-78-158-152-4-11 4-22 16-22z" fill="url(#hullG)"/>
-  <!-- hull top rail -->
-  <path d="M104 300h692" stroke="#F7EBD5" stroke-width="10" stroke-linecap="round" opacity=".9"/>
-  <!-- planks -->
-  <path d="M136 348h628" stroke="#B98A5E" stroke-width="8" stroke-linecap="round" opacity=".5"/>
-  <path d="M158 396h580" stroke="#B98A5E" stroke-width="8" stroke-linecap="round" opacity=".38"/>
-  <path d="M196 438h500" stroke="#B98A5E" stroke-width="8" stroke-linecap="round" opacity=".28"/>
-  <!-- vertical seams -->
-  <g stroke="#B98A5E" stroke-width="5" opacity=".3" stroke-linecap="round">
-    <path d="M250 306v128"/><path d="M370 306v142"/><path d="M450 306v148"/>
-    <path d="M530 306v142"/><path d="M650 306v128"/>
-  </g>
-  <!-- hull shading right -->
-  <path d="M620 300h170c12 0 20 11 16 22-14 40-40 82-74 116 30-70 22-138-112-138z" fill="#8B5E3C" opacity=".35"/>
-
-  <!-- door on hull -->
-  <path d="M414 306h72v96c0 12-10 22-22 22h-28c-12 0-22-10-22-22z" fill="#C9A276"/>
-  <path d="M414 306h72v14h-72z" fill="#F7EBD5" opacity=".7"/>
-
-  <!-- lower cabin -->
-  <rect x="270" y="196" width="360" height="110" rx="12" fill="url(#cabinG)"/>
-  <path d="M270 208h360" stroke="#F7EBD5" stroke-width="6" opacity=".8"/>
-  <g fill="#FFE8C2">
-    <rect x="300" y="226" width="34" height="34" rx="7"/>
-    <rect x="366" y="226" width="34" height="34" rx="7"/>
-    <rect x="432" y="226" width="34" height="34" rx="7"/>
-    <rect x="498" y="226" width="34" height="34" rx="7"/>
-    <rect x="564" y="226" width="34" height="34" rx="7"/>
-  </g>
-  <g fill="#8B5E3C" opacity=".55">
-    <rect x="308" y="234" width="18" height="18" rx="4"/>
-    <rect x="374" y="234" width="18" height="18" rx="4"/>
-    <rect x="440" y="234" width="18" height="18" rx="4"/>
-    <rect x="506" y="234" width="18" height="18" rx="4"/>
-    <rect x="572" y="234" width="18" height="18" rx="4"/>
+  <!-- deck fence posts -->
+  <g fill="#6E4A26">
+    <rect x="148" y="346" width="7" height="22" rx="2"/>
+    <rect x="262" y="346" width="7" height="22" rx="2"/>
+    <rect x="376" y="346" width="7" height="22" rx="2"/>
+    <rect x="826" y="346" width="7" height="22" rx="2"/>
+    <rect x="940" y="346" width="7" height="22" rx="2"/>
+    <rect x="1052" y="346" width="7" height="22" rx="2"/>
   </g>
 
-  <!-- upper cabin -->
-  <rect x="330" y="120" width="200" height="80" rx="10" fill="url(#cabinG)"/>
-  <path d="M318 124 430 62l112 62z" fill="url(#roofG)"/>
-  <path d="M318 124h224" stroke="#F7EBD5" stroke-width="5" opacity=".55"/>
-  <g fill="#FFE8C2">
-    <rect x="362" y="146" width="30" height="30" rx="6"/>
-    <rect x="415" y="146" width="30" height="30" rx="6"/>
-    <rect x="468" y="146" width="30" height="30" rx="7"/>
+  <!-- HULL -->
+  <g clip-path="url(#hullClip)">
+    <rect x="90" y="360" width="1020" height="250" fill="url(#hullG)"/>
+    <!-- planks -->
+    <g stroke="#3F2A12" stroke-opacity=".38" stroke-width="3">
+      <path d="M90 420 H1110"/>
+      <path d="M90 458 H1110"/>
+      <path d="M90 496 H1110"/>
+      <path d="M90 534 H1110"/>
+      <path d="M90 570 H1110"/>
+    </g>
+    <!-- plank highlights -->
+    <g stroke="#E8CFA8" stroke-opacity=".12" stroke-width="2">
+      <path d="M90 424 H1110"/>
+      <path d="M90 462 H1110"/>
+      <path d="M90 500 H1110"/>
+      <path d="M90 538 H1110"/>
+    </g>
+    <!-- vertical seams -->
+    <g stroke="#3F2A12" stroke-opacity=".28" stroke-width="3">
+      <path d="M220 380 V610"/>
+      <path d="M340 380 V610"/>
+      <path d="M460 380 V610"/>
+      <path d="M740 380 V610"/>
+      <path d="M860 380 V610"/>
+      <path d="M980 380 V610"/>
+    </g>
+    <!-- wood grain -->
+    <g stroke="#E8CFA8" stroke-opacity=".08" stroke-width="2" fill="none">
+      <path d="M130 440 q40 -6 80 0 t80 0"/>
+      <path d="M820 480 q40 -6 80 0 t80 0"/>
+      <path d="M300 520 q40 -6 80 0 t80 0"/>
+      <path d="M660 555 q40 -6 80 0 t80 0"/>
+    </g>
+    <!-- bottom shading -->
+    <rect x="90" y="360" width="1020" height="250" fill="url(#hullShade)"/>
+    <!-- hull windows -->
+    <g fill="#FFC97A" opacity=".3">
+      <circle cx="260" cy="428" r="34"/>
+      <circle cx="380" cy="428" r="34"/>
+      <circle cx="820" cy="428" r="34"/>
+      <circle cx="940" cy="428" r="34"/>
+    </g>
+    <g fill="#FFE8C2">
+      <rect x="240" y="408" width="40" height="40" rx="7"/>
+      <rect x="360" y="408" width="40" height="40" rx="7"/>
+      <rect x="800" y="408" width="40" height="40" rx="7"/>
+      <rect x="920" y="408" width="40" height="40" rx="7"/>
+    </g>
+    <g fill="none" stroke="#4A3014" stroke-opacity=".55" stroke-width="4">
+      <rect x="240" y="408" width="40" height="40" rx="7"/>
+      <rect x="360" y="408" width="40" height="40" rx="7"/>
+      <rect x="800" y="408" width="40" height="40" rx="7"/>
+      <rect x="920" y="408" width="40" height="40" rx="7"/>
+    </g>
+    <!-- arched door -->
+    <path d="M566 610 V448 q34 -32 68 0 V610 Z" fill="url(#doorG)"/>
+    <path d="M566 448 q34 -32 68 0" stroke="#E8CFA8" stroke-opacity=".6" stroke-width="5" fill="none"/>
+    <g stroke="#3F2A12" stroke-opacity=".4" stroke-width="3">
+      <path d="M583 436 V610"/>
+      <path d="M600 430 V610"/>
+      <path d="M617 436 V610"/>
+    </g>
   </g>
 
-  <!-- window glows -->
-  <g fill="#FFC97A" opacity=".28">
-    <circle cx="377" cy="161" r="26"/><circle cx="430" cy="161" r="26"/><circle cx="483" cy="161" r="26"/>
+  <!-- deck rail -->
+  <rect x="88" y="362" width="1024" height="22" rx="11" fill="url(#railG)"/>
+  <rect x="88" y="362" width="1024" height="8" rx="4" fill="#F7EBD5" opacity=".5"/>
+
+  <!-- HOUSE -->
+  <g>
+    <ellipse cx="600" cy="300" rx="250" ry="130" fill="#FFC97A" opacity=".12"/>
+    <!-- walls -->
+    <rect x="432" y="252" width="336" height="112" fill="url(#wallG)"/>
+    <g stroke="#8F6238" stroke-opacity=".35" stroke-width="2.5">
+      <path d="M432 274 H768"/>
+      <path d="M432 296 H768"/>
+      <path d="M432 318 H768"/>
+      <path d="M432 340 H768"/>
+    </g>
+    <rect x="432" y="252" width="26" height="112" fill="#8F6238" opacity=".25"/>
+    <rect x="742" y="252" width="26" height="112" fill="#54371C" opacity=".3"/>
+    <!-- house windows -->
+    <g fill="#FFC97A" opacity=".28">
+      <circle cx="496" cy="304" r="38"/>
+      <circle cx="572" cy="304" r="38"/>
+      <circle cx="648" cy="304" r="38"/>
+      <circle cx="716" cy="304" r="38"/>
+    </g>
+    <g fill="#FFE8C2">
+      <rect x="472" y="278" width="44" height="52" rx="8"/>
+      <rect x="548" y="278" width="44" height="52" rx="8"/>
+      <rect x="624" y="278" width="44" height="52" rx="8"/>
+      <rect x="694" y="278" width="44" height="52" rx="8"/>
+    </g>
+    <g fill="none" stroke="#6E4A26" stroke-opacity=".6" stroke-width="4">
+      <rect x="472" y="278" width="44" height="52" rx="8"/>
+      <rect x="548" y="278" width="44" height="52" rx="8"/>
+      <rect x="624" y="278" width="44" height="52" rx="8"/>
+      <rect x="694" y="278" width="44" height="52" rx="8"/>
+    </g>
+    <!-- gabled roof -->
+    <path d="M404 258 L600 152 L796 258 Z" fill="url(#roofG)"/>
+    <!-- shingle courses -->
+    <g stroke="#3F2A12" stroke-opacity=".35" stroke-width="2.5">
+      <path d="M437 240 H763"/>
+      <path d="M470 222 H730"/>
+      <path d="M504 204 H696"/>
+      <path d="M537 186 H663"/>
+      <path d="M570 168 H630"/>
+    </g>
+    <!-- roof edge highlight -->
+    <path d="M404 258 L600 152 L796 258" stroke="#E8CFA8" stroke-opacity=".5" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- fascia -->
+    <rect x="396" y="252" width="408" height="10" rx="5" fill="#C9A276"/>
   </g>
+
+  <!-- water reflection -->
+  <ellipse cx="600" cy="602" rx="440" ry="26" fill="#241505" opacity=".28"/>
 
   <!-- front waves -->
-  <path d="M0 508c70-22 140-22 210 0s140 22 210 0 140-22 210 0 140 22 210 0 60-16 70-12v64H0z" fill="url(#waveG1)" stroke="url(#waveG1)" stroke-width="4"/>
-  <path d="M60 536c60-16 120-16 180 0s120 16 180 0 120-16 180 0 120 16 180 0" stroke="url(#waveG2)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M0 560 C80 538 160 538 240 560 S400 582 480 560 S640 538 720 560 S880 582 960 560 S1120 538 1200 560 V700 H0 Z" fill="url(#waveA)"/>
+  <path d="M0 612 C100 592 200 592 300 612 S500 632 600 612 S800 592 900 612 S1100 632 1200 612 V700 H0 Z" fill="url(#waveB)"/>
+  <path d="M40 588 C120 568 200 568 280 588 S440 606 520 588 S680 570 760 588 S920 606 1000 588 S1120 572 1170 584" stroke="#E8CFA8" stroke-opacity=".4" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M120 648 C200 630 280 630 360 648 S520 666 600 648 S760 630 840 648 S1000 666 1080 648" stroke="#C9A276" stroke-opacity=".35" stroke-width="5" fill="none" stroke-linecap="round"/>
 </svg>

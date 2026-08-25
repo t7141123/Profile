@@ -2633,13 +2633,13 @@ h1, h2, h3 {
   pointer-events: none;
   user-select: none;
   z-index: 1;
-  animation: ark-sail 16s ease-in-out infinite;
+  animation: ark-sail 26s ease-in-out infinite;
   will-change: transform;
 }
 
 @keyframes ark-sail {
-  0%, 100% { transform: translateY(0) rotate(-1.3deg) translateX(0); }
-  50%      { transform: translateY(-16px) rotate(1.3deg) translateX(18px); }
+  0%, 100% { transform: translateY(0) rotate(-2.4deg) translateX(0); }
+  50%      { transform: translateY(-34px) rotate(2.4deg) translateX(36px); }
 }
 
 @media (prefers-reduced-motion: reduce) {

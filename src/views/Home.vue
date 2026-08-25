@@ -344,20 +344,20 @@ const testimonials = computed(() =>
 .ark-home {
   position: absolute;
   left: 50%;
-  margin-left: calc(min(70vw, 820px) / -2);
-  bottom: -10%;
-  width: min(70vw, 820px);
-  aspect-ratio: 900 / 560;
-  opacity: 0.3;
+  margin-left: calc(min(94vw, 1320px) / -2);
+  bottom: -14%;
+  width: min(94vw, 1320px);
+  aspect-ratio: 1200 / 700;
+  opacity: 0.38;
   z-index: 1;
 }
 
 @media (max-width: 991.98px) {
   .ark-home {
-    width: 130vw;
-    margin-left: -65vw;
-    bottom: -8%;
-    opacity: 0.18;
+    width: min(115vw, 640px);
+    margin-left: calc(min(115vw, 640px) / -2);
+    bottom: -6%;
+    opacity: 0.2;
   }
 }
 

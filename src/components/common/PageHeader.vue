@@ -138,8 +138,8 @@
 
 <script setup>
 import { computed } from 'vue'
-import arkCream from '@/assets/images/ark-hero.svg'
-import arkWood from '@/assets/images/ark-wood.svg'
+import arkCream from '@/assets/images/ark-hero.svg?url'
+import arkWood from '@/assets/images/ark-wood.svg?url'
 
 const props = defineProps({
   badge: String,
@@ -337,6 +337,7 @@ const ghost = computed(() => {
   margin-left: calc(min(92vw, 1080px) / -2);
   bottom: -6%;
   width: min(92vw, 1080px);
+  aspect-ratio: 1200 / 700;
   opacity: 0.2;
   z-index: 0;
 }
@@ -344,11 +345,13 @@ const ghost = computed(() => {
 .variant-portfolio .ark-page,
 .variant-services .ark-page {
   opacity: 0.24;
+  aspect-ratio: 1200 / 700;
 }
 
 .variant-about .ark-page,
 .variant-contact .ark-page {
   opacity: 0.16;
+  aspect-ratio: 900 / 560;
 }
 
 @media (max-width: 991.98px) {
