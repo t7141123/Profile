@@ -121,6 +121,20 @@
       "s3d": "Tarifs transparents, jalons flexibles",
       "s4t": "Développement & lancement",
       "s4d": "Points d’avancement hebdomadaires, livraison à l’heure"
+    },
+    "testimonialsBadge": "Témoignages",
+    "testimonialsTitle": "Ce que disent",
+    "testimonialsTitleHighlight": " les clients",
+    "testimonials": {
+      "t1Text": "Notre ancien tunnel de paiement faisait fuir les clients à chaque étape. David l’a réduit à trois étapes et les commandes ont bondi d’environ 30 % le premier mois. Ma grande crainte, c’est le développeur qui disparaît après la mise en ligne — il a même répondu quand le site est tombé en pleine nuit.",
+      "t1Author": "Mme Chen",
+      "t1Role": "E-commerce mode · Dirigeante",
+      "t2Text": "Planifier les bénévoles était mon cauchemar mensuel. Désormais le planning se génère tout seul et chacun reçoit une notification LINE. Nous n’y connaissons rien en technique et il a réexpliqué trois fois sans jamais montrer d’impatience.",
+      "t2Author": "M. Lin",
+      "t2Role": "Administration d’église · Directeur",
+      "t3Text": "Notre système avait dix ans et plus personne n’osait y toucher. Il a passé des semaines à comprendre notre processus d’atelier avant d’écrire la moindre ligne. Trois mois après, les inventaires sont passés de deux jours à une demi-journée. Son devis était honnête, sans surprise.",
+      "t3Author": "M. Huang",
+      "t3Role": "Industrie · Directeur d’usine"
     }
   },
   "about": {

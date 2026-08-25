@@ -121,6 +121,20 @@
       "s3d": "Transparent pricing with flexible milestones",
       "s4t": "Build & Launch",
       "s4d": "Weekly progress updates, on-time delivery"
+    },
+    "testimonialsBadge": "Testimonials",
+    "testimonialsTitle": "What Clients",
+    "testimonialsTitleHighlight": " Say",
+    "testimonials": {
+      "t1Text": "Our old checkout was losing people at every step. David cut it down to three steps and orders went up around 30% in the first month. My biggest fear is a developer who vanishes after launch — he even replied when the site went down at midnight.",
+      "t1Author": "Ms. Chen",
+      "t1Role": "Fashion E-commerce · Owner",
+      "t2Text": "Scheduling volunteers used to be my monthly nightmare. Now the roster builds itself and everyone gets a LINE notification. We know nothing about tech, and he explained things three times without ever sounding annoyed.",
+      "t2Author": "Mr. Lin",
+      "t2Role": "Church Admin · Director",
+      "t3Text": "Our system was ten years old and nobody dared touch it. He spent weeks learning our floor process line by line before writing any code. Three months in, stocktaking went from two days to half a day. His quote was honest — no surprise fees.",
+      "t3Author": "Mr. Huang",
+      "t3Role": "Manufacturing · Plant Manager"
     }
   },
   "about": {

@@ -121,6 +121,20 @@
       "s3d": "Precios transparentes e hitos flexibles",
       "s4t": "Desarrollo y lanzamiento",
       "s4d": "Avances semanales, entrega puntual"
+    },
+    "testimonialsBadge": "Testimonios",
+    "testimonialsTitle": "Lo que dicen",
+    "testimonialsTitleHighlight": " los clientes",
+    "testimonials": {
+      "t1Text": "Nuestro checkout perdía gente en cada paso. David lo redujo a tres pasos y los pedidos subieron cerca de un 30% el primer mes. Lo que más temía era un desarrollador que desaparece tras el lanzamiento — hasta respondió cuando la web se cayó de madrugada.",
+      "t1Author": "Sra. Chen",
+      "t1Role": "E-commerce de moda · Propietaria",
+      "t2Text": "Organizar los turnos de voluntarios era mi pesadilla mensual. Ahora la lista se genera sola y todos reciben aviso por LINE. No sabemos nada de tecnología y nos explicó todo tres veces sin mostrar impaciencia.",
+      "t2Author": "Sr. Lin",
+      "t2Role": "Administración de iglesia · Director",
+      "t3Text": "Teníamos un sistema de diez años que nadie se atrevía a tocar. Pasó semanas entendiendo nuestro proceso de planta línea por línea antes de escribir código. A los tres meses, el inventario pasó de dos días a medio día. Su presupuesto fue honesto, sin sorpresas.",
+      "t3Author": "Sr. Huang",
+      "t3Role": "Manufactura · Jefe de planta"
     }
   },
   "about": {

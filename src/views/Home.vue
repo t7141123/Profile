@@ -187,30 +187,33 @@
       </div>
     </section>
 
-    <!-- Why Ark Studio (SEO) -->
+    <!-- Testimonials -->
     <section class="section why-section">
       <div class="container">
         <SectionHeader
           index="03"
-          :badge="$t('home.whyBadge')"
-          :title="$t('home.whyTitle')"
-          :highlight="$t('home.whyHighlight')"
-          :description="$t('home.whyDescription')"
+          :badge="$t('home.testimonialsBadge')"
+          :title="$t('home.testimonialsTitle')"
+          :highlight="$t('home.testimonialsTitleHighlight')"
         />
 
         <div class="row g-4">
           <div
             class="col-md-6 col-lg-4"
-            v-for="(w, i) in whyCards"
-            :key="w.icon"
+            v-for="(item, i) in testimonials"
+            :key="i"
             v-inview="{ delay: i * 100 }"
           >
-            <div class="why-card glass-card h-100 border-beam spotlight-card" v-spotlight>
-              <div class="why-icon">
-                <i :class="w.icon"></i>
+            <div class="testimonial-card glass-card h-100 border-beam spotlight-card" v-spotlight>
+              <i class="bi bi-quote t-quote" aria-hidden="true"></i>
+              <p class="t-text">{{ item.text }}</p>
+              <div class="t-author">
+                <span class="t-avatar" aria-hidden="true">{{ item.author.charAt(0) }}</span>
+                <div class="t-meta">
+                  <strong>{{ item.author }}</strong>
+                  <span>{{ item.role }}</span>
+                </div>
               </div>
-              <h3 class="why-title">{{ w.title }}</h3>
-              <p class="why-desc">{{ w.desc }}</p>
             </div>
           </div>
         </div>
@@ -253,7 +256,11 @@ import { useProjects } from "@/composables/useProjects";
 const { t } = useI18n();
 const { getFeaturedProjects } = useProjects();
 
-const featuredProjects = computed(() => getFeaturedProjects().slice(0, 3));
+const FEATURED_KEYS = ["actionLead", "clay", "nhm", "uvaco", "generalErp", "chordBook"];
+const featuredProjects = computed(() => {
+  const all = getFeaturedProjects();
+  return FEATURED_KEYS.map((k) => all.find((p) => p.key === k)).filter(Boolean);
+});
 
 const consult = computed(() => ({
   title: t("home.consult.title"),
@@ -314,23 +321,13 @@ const stats = computed(() => [
   { id: 4, value: 100, suffix: "%", label: t("home.stats.tailored") },
 ]);
 
-const whyCards = computed(() => [
-  {
-    icon: "bi bi-diagram-3",
-    title: t("home.why.customTitle"),
-    desc: t("home.why.customDesc"),
-  },
-  {
-    icon: "bi bi-briefcase",
-    title: t("home.why.outsourceTitle"),
-    desc: t("home.why.outsourceDesc"),
-  },
-  {
-    icon: "bi bi-arrow-repeat",
-    title: t("home.why.integrationTitle"),
-    desc: t("home.why.integrationDesc"),
-  },
-]);
+const testimonials = computed(() =>
+  [1, 2, 3].map((n) => ({
+    text: t(`home.testimonials.t${n}Text`),
+    author: t(`home.testimonials.t${n}Author`),
+    role: t(`home.testimonials.t${n}Role`),
+  }))
+);
 </script>
 
 <style scoped>
@@ -759,44 +756,67 @@ const whyCards = computed(() => [
   z-index: 1;
 }
 
-/* Why cards */
-.why-card {
-  padding: 2rem;
+/* Testimonial cards */
+.testimonial-card {
+  padding: 1.9rem;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
-.why-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: var(--radius-lg);
+.t-quote {
+  font-size: 2.4rem;
+  line-height: 1;
+  color: var(--primary-light);
+  opacity: 0.35;
+  margin-bottom: 0.4rem;
+}
+
+.t-text {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.85;
+  margin: 0 0 1.4rem;
+  flex: 1;
+}
+
+.t-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.1rem;
+}
+
+.t-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
   background: var(--gradient-primary);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  box-shadow: var(--shadow-md);
-  margin-bottom: 1.25rem;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.why-card:hover .why-icon {
-  transform: rotate(-8deg) scale(1.08);
-}
-
-.why-title {
-  font-size: 1.2rem;
   font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 0.65rem;
+  font-size: 1rem;
+  flex-shrink: 0;
 }
 
-.why-desc {
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-  line-height: 1.75;
-  margin: 0;
+.t-meta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+
+.t-meta strong {
+  color: var(--text-primary);
+  font-size: 0.93rem;
+  font-weight: 700;
+}
+
+.t-meta span {
+  color: var(--text-muted);
+  font-size: 0.8rem;
 }
 
 /* CTA Section - More visual separation */

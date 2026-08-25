@@ -121,6 +121,20 @@
       "s3d": "Transparente Preise, flexible Meilensteine",
       "s4t": "Entwicklung & Launch",
       "s4d": "Wöchentliche Updates, termingerechte Lieferung"
+    },
+    "testimonialsBadge": "Stimmen",
+    "testimonialsTitle": "Was Kunden",
+    "testimonialsTitleHighlight": " sagen",
+    "testimonials": {
+      "t1Text": "Unser alter Checkout hat bei jedem Schritt Leute verloren. David hat ihn auf drei Schritte reduziert, und die Bestellungen stiegen im ersten Monat um rund 30 %. Meine größte Sorge war ein Entwickler, der nach dem Launch verschwindet — er hat sogar mitten in der Nacht geantwortet, als die Website ausgefallen ist.",
+      "t1Author": "Frau Chen",
+      "t1Role": "Fashion-E-Commerce · Inhaberin",
+      "t2Text": "Der Dienstplan für Ehrenamtliche war mein monatlicher Albtraum. Jetzt erstellt sich die Liste von selbst und alle bekommen eine LINE-Benachrichtigung. Wir haben null Ahnung von Technik — er hat dreimal alles geduldig erklärt, ohne genervt zu wirken.",
+      "t2Author": "Herr Lin",
+      "t2Role": "Kirchenverwaltung · Leiter",
+      "t3Text": "Unser System war zehn Jahre alt, und niemand wagte es, es anzufassen. Er verbrachte Wochen damit, unsere Abläufe in der Produktion Zeile für Zeile zu verstehen, bevor er Code schrieb. Drei Monate später dauerte die Inventur einen halben Tag statt zwei. Sein Angebot war ehrlich — keine versteckten Kosten.",
+      "t3Author": "Herr Huang",
+      "t3Role": "Fertigung · Werksleiter"
     }
   },
   "about": {
