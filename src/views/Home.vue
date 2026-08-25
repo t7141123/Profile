@@ -3,6 +3,7 @@
     <!-- Hero Section -->
     <section class="hero-section">
       <TechBackground />
+      <img :src="arkImg" class="ark-bg ark-home" alt="" aria-hidden="true" />
       <div class="meteor-area">
         <span class="meteor" style="--mtd: 0s; --mtdu: 6s; --mty: 8%; --mtx: 92%;"></span>
         <span class="meteor" style="--mtd: 3.5s; --mtdu: 7s; --mty: 20%; --mtx: 97%;"></span>
@@ -252,6 +253,7 @@ import SectionHeader from "@/components/common/SectionHeader.vue";
 import TechBackground from "@/components/home/TechBackground.vue";
 import PortfolioCard from "@/components/common/PortfolioCard.vue";
 import { useProjects } from "@/composables/useProjects";
+import arkImg from "@/assets/images/ark-hero.svg";
 
 const { t } = useI18n();
 const { getFeaturedProjects } = useProjects();
@@ -278,28 +280,28 @@ const services = computed(() => [
     icon: "bi bi-code-square",
     title: t("home.services.custom"),
     description: t("home.services.customDesc"),
-    gradient: "linear-gradient(135deg, #1E40AF 0%, #2563EB 100%)",
+    gradient: "linear-gradient(135deg, #6B4226 0%, #8B5E3C 100%)",
   },
   {
     id: 1,
     icon: "bi bi-globe",
     title: t("home.services.corporate"),
     description: t("home.services.corporateDesc"),
-    gradient: "linear-gradient(135deg, #2563EB 0%, #3B82F6 100%)",
+    gradient: "linear-gradient(135deg, #8B5E3C 0%, #A4785A 100%)",
   },
   {
     id: 2,
     icon: "bi bi-speedometer2",
     title: t("home.services.operations"),
     description: t("home.services.operationsDesc"),
-    gradient: "linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%)",
+    gradient: "linear-gradient(135deg, #A4785A 0%, #C89B6D 100%)",
   },
   {
     id: 3,
     icon: "bi bi-calendar-event",
     title: t("home.services.events"),
     description: t("home.services.eventsDesc"),
-    gradient: "linear-gradient(135deg, #60A5FA 0%, #93C5FD 100%)",
+    gradient: "linear-gradient(135deg, #C89B6D 0%, #E3C9A8 100%)",
   },
 ]);
 
@@ -331,7 +333,15 @@ const testimonials = computed(() =>
 </script>
 
 <style scoped>
-/* ── Consultation journey card (hero right) ── */
+/* Ark background */
+.ark-home {
+  right: -6%;
+  bottom: -8%;
+  width: min(58vw, 700px);
+  opacity: 0.16;
+}
+
+/* ── Consultation journey card (hero right) ──
 .consult-card {
   position: relative;
   z-index: 1;
@@ -345,7 +355,7 @@ const testimonials = computed(() =>
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow: var(--shadow-xl);
-  color: #F1F5F9;
+  color: #F7F4EF;
 }
 
 .consult-head {
@@ -360,13 +370,13 @@ const testimonials = computed(() =>
   height: 48px;
   border-radius: 14px;
   background: var(--gradient-gold);
-  color: #1E293B;
+  color: #241C14;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
   flex-shrink: 0;
-  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.35);
+  box-shadow: 0 6px 18px rgba(200, 155, 109, 0.35);
 }
 
 .consult-title {
@@ -425,7 +435,7 @@ const testimonials = computed(() =>
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 0.95rem;
-  color: #93C5FD;
+  color: #E3C9A8;
   flex-shrink: 0;
   position: relative;
   z-index: 1;
@@ -473,7 +483,7 @@ const testimonials = computed(() =>
   padding: 1.05rem 0;
   position: relative;
   z-index: 6;
-  box-shadow: 0 14px 34px rgba(30, 64, 175, 0.30);
+  box-shadow: 0 14px 34px rgba(107, 66, 38, 0.30);
 }
 
 .marquee-track {
@@ -578,7 +588,7 @@ const testimonials = computed(() =>
 
 .bento-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(37, 99, 235, 0.35);
+  border-color: rgba(139, 94, 60, 0.35);
   box-shadow: var(--shadow-xl);
 }
 
@@ -744,8 +754,8 @@ const testimonials = computed(() =>
   background: linear-gradient(
     180deg,
     transparent 0%,
-    rgba(37, 99, 235, 0.045) 18%,
-    rgba(37, 99, 235, 0.045) 82%,
+    rgba(139, 94, 60, 0.045) 18%,
+    rgba(139, 94, 60, 0.045) 82%,
     transparent 100%
   );
   pointer-events: none;
@@ -827,7 +837,7 @@ const testimonials = computed(() =>
   border-radius: var(--radius-xl);
   margin: 6rem auto 4rem;
   max-width: 1200px;
-  border: 1px solid rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(139, 94, 60, 0.1);
   box-shadow: var(--shadow-xl);
   padding: 5rem 2rem;
 }
@@ -842,7 +852,7 @@ const testimonials = computed(() =>
   background:
     radial-gradient(
       circle at 10% 50%,
-      rgba(37, 99, 235, 0.12) 0%,
+      rgba(139, 94, 60, 0.12) 0%,
       transparent 50%
     ),
     radial-gradient(

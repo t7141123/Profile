@@ -291,7 +291,7 @@ const mainServices = computed(() => [
     title: t("services.mainServices.corporate"),
     subtitle: t("services.mainServices.corporateSubtitle"),
     description: t("services.mainServices.corporateDesc"),
-    gradient: "linear-gradient(135deg, #2563EB 0%, #3B82F6 100%)",
+    gradient: "linear-gradient(135deg, #8B5E3C 0%, #A4785A 100%)",
     features: tm("services.mainServices.corporateFeatures"),
   },
   {
@@ -300,7 +300,7 @@ const mainServices = computed(() => [
     title: t("services.mainServices.operations"),
     subtitle: t("services.mainServices.operationsSubtitle"),
     description: t("services.mainServices.operationsDesc"),
-    gradient: "linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%)",
+    gradient: "linear-gradient(135deg, #A4785A 0%, #C89B6D 100%)",
     features: tm("services.mainServices.operationsFeatures"),
   },
   {
@@ -309,7 +309,7 @@ const mainServices = computed(() => [
     title: t("services.mainServices.events"),
     subtitle: t("services.mainServices.eventsSubtitle"),
     description: t("services.mainServices.eventsDesc"),
-    gradient: "linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%)",
+    gradient: "linear-gradient(135deg, #A4785A 0%, #C89B6D 100%)",
     features: tm("services.mainServices.eventsFeatures"),
   },
   {
@@ -318,7 +318,7 @@ const mainServices = computed(() => [
     title: t("services.mainServices.custom"),
     subtitle: t("services.mainServices.customSubtitle"),
     description: t("services.mainServices.customDesc"),
-    gradient: "linear-gradient(135deg, #1E40AF 0%, #2563EB 100%)",
+    gradient: "linear-gradient(135deg, #6B4226 0%, #8B5E3C 100%)",
     features: tm("services.mainServices.customFeatures"),
   },
 ]);
@@ -438,7 +438,7 @@ const faqs = computed(() => [
 
 .pillar-row:hover {
   transform: translateX(6px);
-  border-color: rgba(96, 165, 250, 0.45);
+  border-color: rgba(200, 155, 109, 0.45);
   background: rgba(255, 255, 255, 0.08);
 }
 
@@ -446,7 +446,7 @@ const faqs = computed(() => [
   font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 700;
-  color: #93C5FD;
+  color: #E3C9A8;
   min-width: 1.9rem;
 }
 
@@ -465,7 +465,7 @@ const faqs = computed(() => [
 
 .pillar-row:hover .pillar-arrow {
   transform: translate(3px, -3px);
-  color: #93C5FD;
+  color: #E3C9A8;
 }
 
 @media (max-width: 991.98px) {
@@ -544,7 +544,7 @@ const faqs = computed(() => [
   font-size: 1.75rem;
   color: white;
   flex-shrink: 0;
-  box-shadow: 0 8px 16px -4px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 8px 16px -4px rgba(139, 94, 60, 0.2);
 }
 
 .service-detail-title {
@@ -675,8 +675,8 @@ const faqs = computed(() => [
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(37, 99, 235, 0.1);
-  border: 1px solid rgba(37, 99, 235, 0.2);
+  background: rgba(139, 94, 60, 0.1);
+  border: 1px solid rgba(139, 94, 60, 0.2);
   border-radius: var(--radius-lg);
   font-size: 2rem;
   color: var(--primary-color);
@@ -694,7 +694,7 @@ const faqs = computed(() => [
   border-color: transparent;
   color: white;
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 5px 15px rgba(139, 94, 60, 0.3);
 }
 
 .tech-name {
@@ -708,7 +708,7 @@ const faqs = computed(() => [
   padding: 2.5rem 2rem;
   text-align: center;
   position: relative;
-  border: 1px solid rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(139, 94, 60, 0.1);
   background: var(--bg-secondary);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-soft);
@@ -725,7 +725,7 @@ const faqs = computed(() => [
   border-color: var(--primary-color);
   background: linear-gradient(
     180deg,
-    rgba(37, 99, 235, 0.05) 0%,
+    rgba(139, 94, 60, 0.05) 0%,
     var(--bg-secondary) 100%
   );
   box-shadow: var(--shadow-glow);
@@ -743,7 +743,7 @@ const faqs = computed(() => [
   font-weight: 700;
   color: white;
   z-index: 10;
-  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 4px 10px rgba(139, 94, 60, 0.3);
   white-space: nowrap;
 }
 
@@ -781,7 +781,7 @@ const faqs = computed(() => [
 /* Accordion */
 .accordion-item {
   background: var(--bg-secondary);
-  border: 1px solid rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(139, 94, 60, 0.1);
   border-radius: var(--radius-lg) !important;
   margin-bottom: 1rem;
   overflow: hidden;
@@ -802,7 +802,7 @@ const faqs = computed(() => [
 }
 
 .accordion-button:not(.collapsed) {
-  background: rgba(37, 99, 235, 0.05);
+  background: rgba(139, 94, 60, 0.05);
   color: var(--primary-color);
 }
 
@@ -830,7 +830,7 @@ const faqs = computed(() => [
   border-radius: var(--radius-xl);
   margin: 6rem auto 4rem;
   max-width: 1200px;
-  border: 1px solid rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(139, 94, 60, 0.1);
   box-shadow: var(--shadow-xl);
 }
 

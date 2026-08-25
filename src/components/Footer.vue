@@ -90,7 +90,7 @@ const currentYear = new Date().getFullYear();
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(59, 130, 246, 0.1);
+  background: rgba(164, 120, 90, 0.1);
   border-radius: var(--radius-lg);
   color: var(--primary-color);
   font-size: 1.1rem;

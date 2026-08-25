@@ -172,7 +172,7 @@ const filteredProjects = computed(() => {
 
 .meta-chip:hover {
   transform: translateX(6px);
-  border-color: rgba(96, 165, 250, 0.45);
+  border-color: rgba(200, 155, 109, 0.45);
   background: rgba(255, 255, 255, 0.08);
 }
 
@@ -218,7 +218,7 @@ const filteredProjects = computed(() => {
 /* CTA */
 .cta-section {
   background: var(--gradient-hero);
-  border-top: 1px solid rgba(37, 99, 235, 0.1);
+  border-top: 1px solid rgba(139, 94, 60, 0.1);
 }
 
 .cta-title {
@@ -279,20 +279,20 @@ const filteredProjects = computed(() => {
 .filter-btn:hover {
   border-color: var(--primary-color);
   color: var(--primary-color);
-  background: rgba(37, 99, 235, 0.08);
+  background: rgba(139, 94, 60, 0.08);
   transform: translateY(-1px);
 }
 
 [data-theme='dark'] .filter-btn:hover {
   color: var(--primary-light);
-  background: rgba(59, 130, 246, 0.12);
+  background: rgba(164, 120, 90, 0.12);
 }
 
 .filter-btn.active {
   background: var(--gradient-primary);
   border-color: transparent;
   color: #fff;
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 4px 14px rgba(139, 94, 60, 0.35);
   transform: translateY(-1px);
 }
 
@@ -308,7 +308,7 @@ const filteredProjects = computed(() => {
 
 .nda-card {
   background: var(--bg-secondary);
-  border: 1px solid rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(139, 94, 60, 0.1);
   border-radius: var(--radius-xl);
   padding: 3rem;
   box-shadow: var(--shadow-soft);

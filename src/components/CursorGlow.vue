@@ -50,8 +50,8 @@ onUnmounted(() => {
   border-radius: 50%;
   background: radial-gradient(
     closest-side,
-    rgba(37, 99, 235, 0.09),
-    rgba(59, 130, 246, 0.045) 45%,
+    rgba(139, 94, 60, 0.09),
+    rgba(164, 120, 90, 0.045) 45%,
     transparent 70%
   );
   pointer-events: none;
@@ -63,8 +63,8 @@ onUnmounted(() => {
 :global([data-theme='light']) .cursor-glow {
   background: radial-gradient(
     closest-side,
-    rgba(37, 99, 235, 0.07),
-    rgba(59, 130, 246, 0.035) 45%,
+    rgba(139, 94, 60, 0.07),
+    rgba(164, 120, 90, 0.035) 45%,
     transparent 70%
   );
   mix-blend-mode: multiply;

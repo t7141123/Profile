@@ -183,7 +183,7 @@ const onKeydown = (e) => {
 }
 
 [data-theme='dark'] .navbar.scrolled {
-  background: rgba(15, 23, 42, 0.9);
+  background: rgba(26, 20, 15, 0.9);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }

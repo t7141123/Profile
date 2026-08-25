@@ -80,7 +80,7 @@ const currentLangName = computed(() => {
 .btn-language:focus,
 .show > .btn-language {
   background: var(--bg-secondary);
-  border-color: rgba(37, 99, 235, 0.22);
+  border-color: rgba(139, 94, 60, 0.22);
   box-shadow: var(--shadow-md);
   transform: translateY(-1px);
 }
@@ -104,7 +104,7 @@ const currentLangName = computed(() => {
   font-size: 14px;
   line-height: 1;
   color: #fff;
-  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 2px 8px rgba(139, 94, 60, 0.3);
   flex-shrink: 0;
 }
 
@@ -143,8 +143,8 @@ const currentLangName = computed(() => {
   --item-hover-color: var(--text-primary);
   --item-active-bg: var(--gradient-primary);
   --item-active-shadow: var(--shadow-md);
-  --_thumb: rgba(15, 23, 42, 0.14);
-  --_thumb-hover: rgba(37, 99, 235, 0.45);
+  --_thumb: rgba(26, 20, 15, 0.14);
+  --_thumb-hover: rgba(139, 94, 60, 0.45);
 
   min-width: 210px;
   max-height: 340px;
@@ -171,9 +171,9 @@ const currentLangName = computed(() => {
   --item-hover-bg: rgba(255, 255, 255, 0.07);
   --item-hover-color: #fff;
   --item-active-bg: var(--gradient-primary);
-  --item-active-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+  --item-active-shadow: 0 4px 12px rgba(139, 94, 60, 0.35);
   --_thumb: rgba(255, 255, 255, 0.16);
-  --_thumb-hover: rgba(59, 130, 246, 0.55);
+  --_thumb-hover: rgba(164, 120, 90, 0.55);
 }
 
 :deep(.dropdown-menu::-webkit-scrollbar) {

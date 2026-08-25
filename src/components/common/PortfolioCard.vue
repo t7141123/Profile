@@ -55,7 +55,7 @@ defineProps({
   background: var(--bg-secondary);
   border-radius: var(--radius-xl);
   overflow: hidden;
-  border: 1px solid rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(139, 94, 60, 0.1);
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-base);
   height: 100%;
@@ -94,7 +94,7 @@ defineProps({
 .portfolio-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(15, 23, 42, 0.6);
+  background: rgba(26, 20, 15, 0.6);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   display: flex;
@@ -166,12 +166,12 @@ defineProps({
   gap: 0.5rem;
   margin-top: auto;
   padding-top: 1rem;
-  border-top: 1px solid rgba(37, 99, 235, 0.08);
+  border-top: 1px solid rgba(139, 94, 60, 0.08);
 }
 
 .tech-tag {
   padding: 0.25rem 0.75rem;
-  background: rgba(37, 99, 235, 0.08);
+  background: rgba(139, 94, 60, 0.08);
   border-radius: var(--radius-full);
   font-size: 0.75rem;
   color: var(--text-secondary);
@@ -180,7 +180,7 @@ defineProps({
 }
 
 .tech-tag:hover {
-  background: rgba(37, 99, 235, 0.15);
+  background: rgba(139, 94, 60, 0.15);
   color: var(--primary-color);
   transform: translateY(-2px);
 }

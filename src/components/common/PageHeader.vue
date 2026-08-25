@@ -10,6 +10,13 @@
       class="header-orb header-orb-2"
     ></div>
 
+    <img
+      :src="arkImg"
+      class="ark-bg ark-page"
+      alt=""
+      aria-hidden="true"
+    />
+
     <span
       v-if="ghost"
       class="ghost-word"
@@ -131,6 +138,7 @@
 
 <script setup>
 import { computed } from 'vue'
+import arkImg from '@/assets/images/ark-hero.svg'
 
 const props = defineProps({
   badge: String,
@@ -178,8 +186,8 @@ const ghost = computed(() => {
   position: relative;
   overflow: hidden;
   padding: 140px 0 120px;
-  background: linear-gradient(135deg, #1E293B 0%, #334155 50%, #475569 100%);
-  color: #F1F5F9;
+  background: linear-gradient(135deg, #241C14 0%, #334155 50%, #475569 100%);
+  color: #F7F4EF;
 }
 
 /* Subtle Grid Pattern */
@@ -206,7 +214,7 @@ const ghost = computed(() => {
   right: -5%;
   width: 50vw;
   height: 50vw;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.25) 0%, rgba(59, 130, 246, 0.1) 50%, transparent 70%);
+  background: radial-gradient(circle, rgba(139, 94, 60, 0.25) 0%, rgba(164, 120, 90, 0.1) 50%, transparent 70%);
 }
 
 .header-orb-2 {
@@ -214,7 +222,7 @@ const ghost = computed(() => {
   left: -10%;
   width: 40vw;
   height: 40vw;
-  background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, rgba(251, 191, 36, 0.08) 50%, transparent 70%);
+  background: radial-gradient(circle, rgba(200, 155, 109, 0.15) 0%, rgba(222, 184, 135, 0.08) 50%, transparent 70%);
   animation-delay: -15s;
 }
 
@@ -254,7 +262,7 @@ const ghost = computed(() => {
   height: 44px;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  color: #F1F5F9;
+  color: #F7F4EF;
   animation: bounce 2s ease-in-out infinite;
   cursor: pointer;
   transition: all var(--transition-base);
@@ -263,7 +271,7 @@ const ghost = computed(() => {
 
 .scroll-indicator:hover {
   border-color: var(--primary-color);
-  background: rgba(37, 99, 235, 0.2);
+  background: rgba(139, 94, 60, 0.2);
   color: white;
   transform: translateX(-50%) translateY(5px);
 }
@@ -272,22 +280,22 @@ const ghost = computed(() => {
 .section-badge-light {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #F1F5F9;
+  color: #F7F4EF;
 }
 
 .page-title-light {
-  color: #F1F5F9;
+  color: #F7F4EF;
 }
 
 .page-title-light .highlight {
-  background: linear-gradient(135deg, #2563EB 0%, #60A5FA 100%);
+  background: linear-gradient(135deg, #8B5E3C 0%, #C89B6D 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .page-description-light {
-  color: #CBD5E1;
+  color: #D6CFC4;
 }
 
 /* Animations */
@@ -321,6 +329,32 @@ const ghost = computed(() => {
 @keyframes float {
   0%, 100% { transform: translateY(0) rotate(0deg); }
   50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+.ark-page {
+  right: -5%;
+  bottom: -4%;
+  width: min(46vw, 540px);
+  opacity: 0.12;
+  z-index: 0;
+}
+
+.variant-about .ark-page,
+.variant-contact .ark-page {
+  opacity: 0.09;
+}
+
+.variant-about .ark-page {
+  right: auto;
+  left: -4%;
+  bottom: -8%;
+}
+
+@media (max-width: 991.98px) {
+  .ark-page {
+    width: 70vw;
+    opacity: 0.08 !important;
+  }
 }
 
 /* Responsive */
@@ -389,7 +423,7 @@ const ghost = computed(() => {
   width: 72px;
   height: 4px;
   border-radius: 999px;
-  background: linear-gradient(90deg, #1E40AF 0%, #2563EB 55%, #60A5FA 100%);
+  background: linear-gradient(90deg, #6B4226 0%, #8B5E3C 55%, #C89B6D 100%);
   margin: 0 0 1.5rem;
 }
 
@@ -426,8 +460,8 @@ const ghost = computed(() => {
    =================================== */
 .variant-about {
   background:
-    radial-gradient(900px 600px at 90% 10%, rgba(245, 158, 11, 0.10), transparent 60%),
-    radial-gradient(700px 500px at 0% 90%, rgba(37, 99, 235, 0.06), transparent 55%),
+    radial-gradient(900px 600px at 90% 10%, rgba(200, 155, 109, 0.10), transparent 60%),
+    radial-gradient(700px 500px at 0% 90%, rgba(139, 94, 60, 0.06), transparent 55%),
     var(--bg-primary);
   color: var(--text-primary);
   min-height: auto;
@@ -441,14 +475,14 @@ const ghost = computed(() => {
 }
 
 .variant-about .section-badge {
-  background: rgba(37, 99, 235, 0.10);
-  border: 1px solid rgba(37, 99, 235, 0.26);
-  color: #1E40AF;
+  background: rgba(139, 94, 60, 0.10);
+  border: 1px solid rgba(139, 94, 60, 0.26);
+  color: #6B4226;
 }
 
 [data-theme='dark'] .variant-about .section-badge {
-  background: rgba(96, 165, 250, 0.14);
-  color: #93C5FD;
+  background: rgba(200, 155, 109, 0.14);
+  color: #E3C9A8;
 }
 
 .variant-about .page-title {
@@ -488,7 +522,7 @@ const ghost = computed(() => {
   inset: 0;
   transform: translate(16px, 16px);
   border-radius: var(--radius-xl);
-  border: 2px solid rgba(96, 165, 250, 0.55);
+  border: 2px solid rgba(200, 155, 109, 0.55);
   z-index: 0;
 }
 
@@ -512,7 +546,7 @@ const ghost = computed(() => {
   z-index: 2;
 }
 
-.portrait-chip i { color: #2563EB; }
+.portrait-chip i { color: #8B5E3C; }
 
 /* ===================================
    PORTFOLIO / SERVICES — dark editorial
@@ -520,9 +554,9 @@ const ghost = computed(() => {
 .variant-portfolio,
 .variant-services {
   background:
-    radial-gradient(1000px 650px at 85% 15%, rgba(245, 158, 11, 0.10), transparent 60%),
-    radial-gradient(800px 550px at 5% 85%, rgba(37, 99, 235, 0.14), transparent 55%),
-    linear-gradient(135deg, #14151A 0%, #1D1C22 100%);
+    radial-gradient(1000px 650px at 85% 15%, rgba(200, 155, 109, 0.10), transparent 60%),
+    radial-gradient(800px 550px at 5% 85%, rgba(139, 94, 60, 0.14), transparent 55%),
+    linear-gradient(135deg, #191411 0%, #221C15 100%);
   color: #F7F4EF;
 }
 
@@ -567,26 +601,26 @@ const ghost = computed(() => {
    =================================== */
 .variant-contact {
   background:
-    radial-gradient(900px 600px at 12% 15%, rgba(245, 158, 11, 0.12), transparent 60%),
-    radial-gradient(800px 550px at 88% 85%, rgba(37, 99, 235, 0.07), transparent 55%),
-    linear-gradient(180deg, var(--bg-primary) 0%, #EDF2FB 50%, var(--bg-primary) 100%);
+    radial-gradient(900px 600px at 12% 15%, rgba(200, 155, 109, 0.12), transparent 60%),
+    radial-gradient(800px 550px at 88% 85%, rgba(139, 94, 60, 0.07), transparent 55%),
+    linear-gradient(180deg, var(--bg-primary) 0%, #F4EDE3 50%, var(--bg-primary) 100%);
   color: var(--text-primary);
 }
 
 [data-theme='dark'] .variant-contact {
   background:
-    radial-gradient(900px 600px at 12% 15%, rgba(245, 158, 11, 0.10), transparent 60%),
-    radial-gradient(800px 550px at 88% 85%, rgba(37, 99, 235, 0.10), transparent 55%),
-    linear-gradient(180deg, var(--bg-primary) 0%, #171B26 50%, var(--bg-primary) 100%);
+    radial-gradient(900px 600px at 12% 15%, rgba(200, 155, 109, 0.10), transparent 60%),
+    radial-gradient(800px 550px at 88% 85%, rgba(139, 94, 60, 0.10), transparent 55%),
+    linear-gradient(180deg, var(--bg-primary) 0%, #211A13 50%, var(--bg-primary) 100%);
 }
 
 .variant-contact .ghost-word {
   color: transparent;
-  -webkit-text-stroke: 1.5px rgba(30, 64, 175, 0.16);
+  -webkit-text-stroke: 1.5px rgba(107, 66, 38, 0.16);
 }
 
 [data-theme='dark'] .variant-contact .ghost-word {
-  -webkit-text-stroke: 1.5px rgba(96, 165, 250, 0.12);
+  -webkit-text-stroke: 1.5px rgba(200, 155, 109, 0.12);
 }
 
 .variant-contact .page-title { color: var(--text-primary); }
@@ -608,13 +642,13 @@ const ghost = computed(() => {
 }
 
 .variant-contact .section-badge {
-  background: rgba(37, 99, 235, 0.10);
-  border: 1px solid rgba(37, 99, 235, 0.26);
-  color: #1E40AF;
+  background: rgba(139, 94, 60, 0.10);
+  border: 1px solid rgba(139, 94, 60, 0.26);
+  color: #6B4226;
 }
 
 [data-theme='dark'] .variant-contact .section-badge {
-  color: #93C5FD;
+  color: #E3C9A8;
 }
 
 .variant-contact .scroll-indicator {

@@ -203,7 +203,7 @@ const skillCategories = computed(() => [
   {
     name: t("about.skillCategories.frontend"),
     icon: "bi bi-palette",
-    gradient: "linear-gradient(135deg, #2563EB 0%, #3B82F6 100%)",
+    gradient: "linear-gradient(135deg, #8B5E3C 0%, #A4785A 100%)",
     skills: [
       "Vue.js",
       "React",
@@ -217,31 +217,31 @@ const skillCategories = computed(() => [
   {
     name: t("about.skillCategories.backend"),
     icon: "bi bi-server",
-    gradient: "linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%)",
+    gradient: "linear-gradient(135deg, #A4785A 0%, #C89B6D 100%)",
     skills: ["Node.js", "PHP", "Python", "Express.js", "REST API"],
   },
   {
     name: t("about.skillCategories.database"),
     icon: "bi bi-database",
-    gradient: "linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%)",
+    gradient: "linear-gradient(135deg, #A4785A 0%, #C89B6D 100%)",
     skills: ["MySQL", "PostgreSQL", "Firebase", "Supabase"],
   },
   {
     name: t("about.skillCategories.tools"),
     icon: "bi bi-tools",
-    gradient: "linear-gradient(135deg, #1E40AF 0%, #2563EB 100%)",
+    gradient: "linear-gradient(135deg, #6B4226 0%, #8B5E3C 100%)",
     skills: ["Git", "Docker", "VS Code", "Postman"],
   },
   {
     name: t("about.skillCategories.cloud"),
     icon: "bi bi-cloud",
-    gradient: "linear-gradient(135deg, #2563EB 0%, #60A5FA 100%)",
+    gradient: "linear-gradient(135deg, #8B5E3C 0%, #C89B6D 100%)",
     skills: ["Zeabur", "Vercel", "Netlify"],
   },
   {
     name: t("about.skillCategories.other"),
     icon: "bi bi-lightning",
-    gradient: "linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%)",
+    gradient: "linear-gradient(135deg, #C89B6D 0%, #A4785A 100%)",
     skills: [
       t("about.skillCategories.seo"),
       t("about.skillCategories.uiux"),
@@ -457,7 +457,7 @@ const testimonials = computed(() => [
   border-radius: 16px;
   font-size: 1.75rem;
   color: white;
-  box-shadow: 0 8px 16px -4px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 8px 16px -4px rgba(139, 94, 60, 0.2);
 }
 
 .skill-category-title {
@@ -518,7 +518,7 @@ const testimonials = computed(() => [
 .process-card::after {
   font-family: "bootstrap-icons";
   position: absolute;
-  color: #3B82F6;
+  color: #A4785A;
   font-size: 1.5rem;
   opacity: 0.5;
   transition: var(--transition-base);

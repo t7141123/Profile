@@ -210,7 +210,7 @@ const scrollToContent = () => {
 .contact-icon-wrapper {
   width: 64px;
   height: 64px;
-  background: rgba(37, 99, 235, 0.1);
+  background: rgba(139, 94, 60, 0.1);
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;

@@ -34,8 +34,8 @@ const { isDark, toggleTheme } = useTheme();
 .toggle-track {
   width: 56px;
   height: 28px;
-  background: rgba(37, 99, 235, 0.1);
-  border: 1px solid rgba(37, 99, 235, 0.2);
+  background: rgba(139, 94, 60, 0.1);
+  border: 1px solid rgba(139, 94, 60, 0.2);
   border-radius: 50px;
   position: relative;
   transition: all 0.3s ease;
@@ -60,12 +60,12 @@ const { isDark, toggleTheme } = useTheme();
   color: white;
   font-size: 0.75rem;
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  box-shadow: 0 2px 5px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 2px 5px rgba(139, 94, 60, 0.3);
 }
 
 .toggle-thumb.is-dark {
   left: 30px;
-  background: linear-gradient(135deg, #1E293B 0%, #334155 100%);
+  background: linear-gradient(135deg, #241C14 0%, #334155 100%);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 

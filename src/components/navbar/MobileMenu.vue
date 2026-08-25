@@ -84,7 +84,7 @@ const { localePath } = useLocale();
   height: 100vh;
   height: 100dvh; /* handles mobile browser address bar */
   min-height: -webkit-fill-available;
-  background: rgba(15, 23, 42, 0.98);
+  background: rgba(26, 20, 15, 0.98);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   z-index: 1001;
