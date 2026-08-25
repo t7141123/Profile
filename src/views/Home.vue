@@ -10,76 +10,66 @@
         <span class="meteor" style="--mtd: 7s; --mtdu: 6.4s; --mty: 32%; --mtx: 86%;"></span>
       </div>
 
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="hero-content">
-              <h1 class="hero-title">
-                {{ $t("home.title") }}<br />
-                <span class="highlight" v-scramble>{{ $t("footer.brand") }}</span>
-              </h1>
+      <div class="container hero-centered">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            {{ $t("home.title") }}<br />
+            <span class="highlight" v-scramble>{{ $t("footer.brand") }}</span>
+          </h1>
 
-              <p class="hero-subtitle" v-reveal>
-                {{ $t("home.subtitle") }}<br />
-                {{ $t("home.subtitle2") }}
-              </p>
+          <p class="hero-subtitle" v-reveal>
+            {{ $t("home.subtitle") }}<br />
+            {{ $t("home.subtitle2") }}
+          </p>
 
-              <div class="hero-buttons">
-                <router-link to="/portfolio" class="btn btn-primary-custom" v-ripple v-magnetic>
-                  <i class="bi bi-collection me-2"></i
-                  >{{ $t("home.viewWorks") }}
-                </router-link>
-                <a
-                  href="https://line.me/ti/p/2w7bwfksdF"
-                  target="_blank"
-                  class="btn btn-line"
-                  v-ripple
-                  v-magnetic
-                >
-                  <i class="bi bi-line me-2"></i>{{ $t("home.addLine") }}
-                </a>
-              </div>
+          <div class="hero-buttons">
+            <router-link to="/portfolio" class="btn btn-primary-custom" v-ripple v-magnetic>
+              <i class="bi bi-collection me-2"></i
+              >{{ $t("home.viewWorks") }}
+            </router-link>
+            <a
+              href="https://line.me/ti/p/2w7bwfksdF"
+              target="_blank"
+              class="btn btn-line"
+              v-ripple
+              v-magnetic
+            >
+              <i class="bi bi-line me-2"></i>{{ $t("home.addLine") }}
+            </a>
+          </div>
+        </div>
+
+        <div class="consult-card border-beam">
+          <div class="consult-head">
+            <span class="consult-icon"><i class="bi bi-rocket-takeoff-fill"></i></span>
+            <div>
+              <h3 class="consult-title">{{ consult.title }}</h3>
+              <p class="consult-sub">{{ consult.sub }}</p>
             </div>
           </div>
-
-          <div class="col-lg-6">
-            <div class="hero-image text-center">
-              <div class="hero-visual">
-                <div class="consult-card border-beam">
-                  <div class="consult-head">
-                    <span class="consult-icon"><i class="bi bi-rocket-takeoff-fill"></i></span>
-                    <div>
-                      <h3 class="consult-title">{{ consult.title }}</h3>
-                      <p class="consult-sub">{{ consult.sub }}</p>
-                    </div>
-                  </div>
-                  <ol class="consult-steps">
-                    <li
-                      v-for="(s, i) in consult.steps"
-                      :key="i"
-                      class="consult-step"
-                    >
-                      <span class="step-num">{{ i + 1 }}</span>
-                      <div class="step-body">
-                        <strong>{{ s.title }}</strong>
-                        <span>{{ s.desc }}</span>
-                      </div>
-                    </li>
-                  </ol>
-                  <a
-                    href="https://line.me/ti/p/2w7bwfksdF"
-                    target="_blank"
-                    class="btn btn-line consult-cta"
-                    v-ripple
-                    v-magnetic
-                  >
-                    <i class="bi bi-line me-2"></i>{{ consult.cta }}
-                  </a>
-                </div>
+          <ol class="consult-steps">
+            <li
+              v-for="(s, i) in consult.steps"
+              :key="i"
+              class="consult-step"
+            >
+              <span class="step-num">{{ i + 1 }}</span>
+              <div class="step-body">
+                <strong>{{ s.title }}</strong>
+                <span>{{ s.desc }}</span>
               </div>
-              </div>
-            </div>
-          </div>
+            </li>
+          </ol>
+          <a
+            href="https://line.me/ti/p/2w7bwfksdF"
+            target="_blank"
+            class="btn btn-line consult-cta"
+            v-ripple
+            v-magnetic
+          >
+            <i class="bi bi-line me-2"></i>{{ consult.cta }}
+          </a>
+        </div>
       </div>
       <a href="#home-stats" class="scroll-hint" aria-hidden="true" tabindex="-1">
         <span class="mouse"><span></span></span>
@@ -335,6 +325,7 @@ const testimonials = computed(() =>
 <style scoped>
 /* Ark background */
 .ark-home {
+  position: absolute;
   left: 50%;
   margin-left: calc(min(94vw, 1150px) / -2);
   bottom: -7%;
