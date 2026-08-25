@@ -272,49 +272,51 @@ const nodesSignature = (nodes) =>
     )
     .join("|");
 
-const CJK_START = /[\u4e00-\u9fff\u3040-\u30ff\uac00-\ud7af]/;
-const SHORT_TOKEN = /^[0-9A-Za-z.%+±~×\-]{1,6}$/;
-
-const mergeOrphanTokens = (tokens) => {
-  const out = [];
-  for (let i = 0; i < tokens.length; i++) {
-    const cur = tokens[i];
-    const next = tokens[i + 1];
-    if (
-      SHORT_TOKEN.test(cur) &&
-      next !== undefined &&
-      CJK_START.test(next)
-    ) {
-      out.push(cur + next);
-      i++;
-    } else {
-      out.push(cur);
-    }
-  }
-  return out;
-};
+const LATIN_RUN = /^[0-9A-Za-z.%+±~×\-]+$/;
 
 const renderReveal = (el) => {
   const { stagger, blur, y, duration } = el._revealConfig;
   let wordCount = 0;
 
+  const makeWord = (txt) => {
+    const w = document.createElement("span");
+    w.className = "reveal-word";
+    w.textContent = txt;
+    w.style.transitionDelay = `${wordCount * stagger}ms`;
+    w.style.setProperty("--reveal-blur", `${blur}px`);
+    w.style.setProperty("--reveal-y", `${y}px`);
+    w.style.transitionDuration = `${duration}ms`;
+    wordCount++;
+    return w;
+  };
+
   const wrapTokens = (text) => {
     const parts = [];
-    const tokens = mergeOrphanTokens(text.split(/(\s+)/).filter((t) => t !== ""));
-    tokens.forEach((tok) => {
-      if (/^\s+$/.test(tok)) {
-        parts.push(document.createTextNode(" "));
-      } else if (tok.length) {
-        const w = document.createElement("span");
-        w.className = "reveal-word";
-        w.textContent = tok;
-        w.style.transitionDelay = `${wordCount * stagger}ms`;
-        w.style.setProperty("--reveal-blur", `${blur}px`);
-        w.style.setProperty("--reveal-y", `${y}px`);
-        w.style.transitionDuration = `${duration}ms`;
-        parts.push(w);
-        wordCount++;
+    const units = [];
+    text.split(/\s+/).filter(Boolean).forEach((word) => {
+      (word.match(/[0-9A-Za-z.%+±~×\-]+|[\s\S]/gu) || []).forEach((u) =>
+        units.push(u)
+      );
+    });
+    const toks = [];
+    for (let i = 0; i < units.length; i++) {
+      const u = units[i];
+      const next = units[i + 1];
+      if (
+        LATIN_RUN.test(u) &&
+        u.length <= 3 &&
+        next &&
+        !LATIN_RUN.test(next)
+      ) {
+        toks.push(u + next);
+        i++;
+      } else {
+        toks.push(u);
       }
+    }
+    toks.forEach((tk, ti) => {
+      parts.push(makeWord(tk));
+      if (ti < toks.length - 1) parts.push(document.createTextNode(" "));
     });
     return parts;
   };
