@@ -199,7 +199,7 @@ const filteredProjects = computed(() => {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: none;
-    margin-left: 0;
+    margin: 2rem auto 0;
   }
   .meta-chip {
     flex: 1 1 140px;

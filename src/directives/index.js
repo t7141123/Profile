@@ -272,15 +272,38 @@ const nodesSignature = (nodes) =>
     )
     .join("|");
 
+const CJK_START = /[\u4e00-\u9fff\u3040-\u30ff\uac00-\ud7af]/;
+const SHORT_TOKEN = /^[0-9A-Za-z.%+±~×\-]{1,6}$/;
+
+const mergeOrphanTokens = (tokens) => {
+  const out = [];
+  for (let i = 0; i < tokens.length; i++) {
+    const cur = tokens[i];
+    const next = tokens[i + 1];
+    if (
+      SHORT_TOKEN.test(cur) &&
+      next !== undefined &&
+      CJK_START.test(next)
+    ) {
+      out.push(cur + next);
+      i++;
+    } else {
+      out.push(cur);
+    }
+  }
+  return out;
+};
+
 const renderReveal = (el) => {
   const { stagger, blur, y, duration } = el._revealConfig;
   let wordCount = 0;
 
   const wrapTokens = (text) => {
     const parts = [];
-    text.split(/(\s+)/).forEach((tok) => {
+    const tokens = mergeOrphanTokens(text.split(/(\s+)/).filter((t) => t !== ""));
+    tokens.forEach((tok) => {
       if (/^\s+$/.test(tok)) {
-        parts.push(document.createTextNode(tok));
+        parts.push(document.createTextNode(" "));
       } else if (tok.length) {
         const w = document.createElement("span");
         w.className = "reveal-word";

@@ -1018,7 +1018,7 @@ h1, h2, h3, h4, h5, h6 {
    =================================== */
 @media (max-width: 991.98px) {
   .hero-section {
-    padding-top: 100px;
+    padding-top: 110px;
     text-align: center;
   }
 
@@ -1037,6 +1037,26 @@ h1, h2, h3, h4, h5, h6 {
 
   .about-image {
     margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section {
+    padding-top: 104px;
+  }
+
+  .hero-title {
+    font-size: clamp(1.9rem, 8.4vw, 2.5rem);
+    line-height: 1.18;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
   }
 }
 

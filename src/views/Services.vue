@@ -469,7 +469,7 @@ const faqs = computed(() => [
 }
 
 @media (max-width: 991.98px) {
-  .hero-pillars { max-width: none; }
+  .hero-pillars { max-width: 460px; margin: 2rem auto 0; }
 }
 
 <style scoped>

@@ -331,6 +331,49 @@ const ghost = computed(() => {
   }
 }
 
+/* ── Mobile refinements for all variants ── */
+@media (max-width: 575.98px) {
+  .variant-about {
+    padding: 110px 0 70px;
+  }
+
+  .variant-portfolio,
+  .variant-services,
+  .variant-contact {
+    padding: 110px 0 80px;
+  }
+
+  .hero-copy .page-title,
+  .variant-portfolio .page-title,
+  .variant-services .page-title,
+  .variant-contact .page-title {
+    font-size: clamp(1.85rem, 7.6vw, 2.4rem);
+    line-height: 1.22;
+  }
+
+  .hero-copy .page-description,
+  .variant-portfolio .page-description,
+  .variant-services .page-description,
+  .variant-contact .page-description {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .ghost-word {
+    font-size: clamp(3.2rem, 22vw, 5rem);
+    top: 24%;
+  }
+
+  .about-portrait {
+    max-width: 300px;
+    margin-bottom: 1.75rem;
+  }
+
+  .portrait-frame {
+    transform: translate(10px, 10px);
+  }
+}
+
 /* ===================================
    Shared hero-copy primitives
    =================================== */

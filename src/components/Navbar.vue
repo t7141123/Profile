@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar" :class="{ scrolled: isScrolled }">
-    <div class="container d-flex align-items-center justify-content-between">
+    <div class="container d-flex flex-nowrap align-items-center justify-content-between navbar-inner">
       <!-- Brand -->
       <router-link class="navbar-brand" :to="localePath('/')" @click="closeMenu">
         <i class="bi bi-code-slash me-2"></i>{{ $t("footer.brand") }}
@@ -38,7 +38,7 @@
       </div>
 
       <!-- Mobile Menu Toggle Button -->
-      <div class="d-flex d-lg-none align-items-center gap-3">
+      <div class="d-flex d-lg-none align-items-center gap-2 flex-shrink-0">
         <ThemeToggle />
         <button
           ref="menuToggle"
@@ -233,17 +233,41 @@ const onKeydown = (e) => {
   backdrop-filter: none;
 }
 
+.navbar-inner {
+  flex-wrap: nowrap;
+  min-height: 56px;
+}
+
 .navbar-brand {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 1.55rem;
   letter-spacing: -0.01em;
+  white-space: nowrap;
   background: var(--gradient-gold-deep);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   position: relative;
   z-index: 1002;
+}
+
+@media (max-width: 575.98px) {
+  .navbar-brand {
+    font-size: 1.15rem;
+  }
+  .navbar-brand .bi {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 359.98px) {
+  .navbar-brand {
+    font-size: 1.02rem;
+  }
+  .navbar-brand .bi {
+    margin-right: 0.35rem !important;
+  }
 }
 
 .navbar:not(.scrolled) .navbar-brand,
@@ -254,9 +278,6 @@ const onKeydown = (e) => {
 }
 
 @media (max-width: 359.98px) {
-  .navbar-brand {
-    font-size: 1.2rem;
-  }
   .navbar-brand .bi {
     margin-right: 0.35rem !important;
   }
