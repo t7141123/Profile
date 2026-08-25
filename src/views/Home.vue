@@ -254,6 +254,7 @@ const featuredProjects = computed(() => {
 });
 
 const consult = computed(() => ({
+  eyebrow: t("home.consult.eyebrow"),
   title: t("home.consult.title"),
   sub: t("home.consult.sub"),
   cta: t("home.consult.cta"),
