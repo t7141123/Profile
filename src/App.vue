@@ -81,7 +81,7 @@ onMounted(() => {
   left: 0;
   z-index: 10000;
   padding: 0.5rem 1rem;
-  background: #059669;
+  background: var(--primary-color);
   color: #fff;
   text-decoration: none;
   font-weight: 600;

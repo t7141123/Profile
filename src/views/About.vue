@@ -223,19 +223,19 @@ const skillCategories = computed(() => [
   {
     name: t("about.skillCategories.database"),
     icon: "bi bi-database",
-    gradient: "linear-gradient(135deg, #14B8A6 0%, #2DD4BF 100%)",
+    gradient: "linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%)",
     skills: ["MySQL", "PostgreSQL", "Firebase", "Supabase"],
   },
   {
     name: t("about.skillCategories.tools"),
     icon: "bi bi-tools",
-    gradient: "linear-gradient(135deg, #10B981 0%, #34D399 100%)",
+    gradient: "linear-gradient(135deg, #1E40AF 0%, #2563EB 100%)",
     skills: ["Git", "Docker", "VS Code", "Postman"],
   },
   {
     name: t("about.skillCategories.cloud"),
     icon: "bi bi-cloud",
-    gradient: "linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%)",
+    gradient: "linear-gradient(135deg, #2563EB 0%, #60A5FA 100%)",
     skills: ["Zeabur", "Vercel", "Netlify"],
   },
   {

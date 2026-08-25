@@ -1,29 +1,12 @@
 <template>
   <div class="home">
     <!-- Hero Section -->
-    <section class="hero-section" @mousemove="onHeroMove">
+    <section class="hero-section">
       <TechBackground />
       <div class="meteor-area">
-        <span class="meteor" style="--mtd: 0s; --mtdu: 5s; --mty: 6%; --mtx: 92%;"></span>
-        <span class="meteor" style="--mtd: 1.6s; --mtdu: 6.5s; --mty: 14%; --mtx: 98%;"></span>
-        <span class="meteor" style="--mtd: 3.2s; --mtdu: 5.6s; --mty: 28%; --mtx: 84%;"></span>
-        <span class="meteor" style="--mtd: 4.8s; --mtdu: 7s; --mty: 2%; --mtx: 74%;"></span>
-        <span class="meteor" style="--mtd: 6.2s; --mtdu: 6s; --mty: 38%; --mtx: 94%;"></span>
-      </div>
-
-      <div
-        v-for="chip in chips"
-        :key="chip.label"
-        class="chip-float"
-        :style="chip.pos"
-        aria-hidden="true"
-      >
-        <span
-          class="hero-chip"
-          :style="{ '--d': chip.depth, 'animation-delay': chip.delay }"
-        >
-          <i :class="chip.icon"></i>{{ chip.label }}
-        </span>
+        <span class="meteor" style="--mtd: 0s; --mtdu: 6s; --mty: 8%; --mtx: 92%;"></span>
+        <span class="meteor" style="--mtd: 3.5s; --mtdu: 7s; --mty: 20%; --mtx: 97%;"></span>
+        <span class="meteor" style="--mtd: 7s; --mtdu: 6.4s; --mty: 32%; --mtx: 86%;"></span>
       </div>
 
       <div class="container">
@@ -61,7 +44,6 @@
           <div class="col-lg-6">
             <div class="hero-image text-center">
               <div class="hero-visual">
-                <OrbitingBadges />
                 <div class="consult-card border-beam">
                   <div class="consult-head">
                     <span class="consult-icon"><i class="bi bi-rocket-takeoff-fill"></i></span>
@@ -265,7 +247,6 @@ import { computed } from "vue";
 import { useI18n } from "vue-i18n";
 import SectionHeader from "@/components/common/SectionHeader.vue";
 import TechBackground from "@/components/home/TechBackground.vue";
-import OrbitingBadges from "@/components/home/OrbitingBadges.vue";
 import PortfolioCard from "@/components/common/PortfolioCard.vue";
 import { useProjects } from "@/composables/useProjects";
 
@@ -290,7 +271,7 @@ const services = computed(() => [
     icon: "bi bi-code-square",
     title: t("home.services.custom"),
     description: t("home.services.customDesc"),
-    gradient: "linear-gradient(135deg, #10B981 0%, #34D399 100%)",
+    gradient: "linear-gradient(135deg, #1E40AF 0%, #2563EB 100%)",
   },
   {
     id: 1,
@@ -311,18 +292,9 @@ const services = computed(() => [
     icon: "bi bi-calendar-event",
     title: t("home.services.events"),
     description: t("home.services.eventsDesc"),
-    gradient: "linear-gradient(135deg, #14B8A6 0%, #2DD4BF 100%)",
+    gradient: "linear-gradient(135deg, #60A5FA 0%, #93C5FD 100%)",
   },
 ]);
-
-const chips = [
-  { label: "Vue.js", icon: "bi bi-lightning-charge", depth: 26, delay: "0s", pos: { top: "18%", left: "4%" } },
-  { label: "React", icon: "bi bi-atom", depth: 40, delay: "-3s", pos: { top: "64%", left: "2%" } },
-  { label: "Node.js", icon: "bi bi-server", depth: 20, delay: "-6s", pos: { top: "12%", right: "6%" } },
-  { label: "Supabase", icon: "bi bi-database", depth: 34, delay: "-2s", pos: { top: "78%", right: "4%" } },
-  { label: "Cloudflare", icon: "bi bi-cloud-check", depth: 30, delay: "-4.5s", pos: { top: "40%", right: "1%" } },
-  { label: "AI × LINE", icon: "bi bi-robot", depth: 44, delay: "-1.5s", pos: { top: "88%", left: "30%" } },
-];
 
 const marqueeItems = computed(() => [
   t("home.why.customTitle"),
@@ -334,14 +306,6 @@ const marqueeItems = computed(() => [
   "LINE Bot × AI",
   "UI/UX",
 ]);
-
-const onHeroMove = (e) => {
-  const el = e.currentTarget;
-  const x = (e.clientX / window.innerWidth - 0.5) * 2;
-  const y = (e.clientY / window.innerHeight - 0.5) * 2;
-  el.style.setProperty("--mx", x.toFixed(3));
-  el.style.setProperty("--my", y.toFixed(3));
-};
 
 const stats = computed(() => [
   { id: 1, value: 9, suffix: "+", label: t("home.stats.years") },
@@ -464,7 +428,7 @@ const whyCards = computed(() => [
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 0.95rem;
-  color: #FBBF24;
+  color: #93C5FD;
   flex-shrink: 0;
   position: relative;
   z-index: 1;
@@ -503,68 +467,22 @@ const whyCards = computed(() => [
   padding-bottom: 4rem;
 }
 
-/* ── Hero chips (mouse parallax + float) ── */
-.chip-float {
-  position: absolute;
-  z-index: 5;
-  animation: chipFloat 7s ease-in-out infinite;
-  pointer-events: none;
-}
-
-.hero-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding: 0.5rem 0.95rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  color: #e2e8f0;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-  transform: translate3d(
-    calc(var(--mx, 0) * var(--d, 20) * 1px),
-    calc(var(--my, 0) * var(--d, 20) * 1px),
-    0
-  );
-  transition: transform 0.1s linear;
-  white-space: nowrap;
-}
-
-.hero-chip i {
-  font-size: 0.85rem;
-  color: #60a5fa;
-}
-
-@keyframes chipFloat {
-  0%, 100% { translate: 0 0; }
-  50% { translate: 0 -12px; }
-}
-
-@media (max-width: 991.98px) {
-  .chip-float { display: none; }
-}
-
 /* ── Marquee band ── */
 .marquee-band {
   overflow: hidden;
-  background: linear-gradient(135deg, #F59E0B 0%, #EA8A0C 55%, #D97706 100%);
+  background: var(--gradient-primary);
   transform: rotate(-1.2deg) scale(1.03);
   margin: -1.5rem 0 0;
   padding: 1.05rem 0;
   position: relative;
   z-index: 6;
-  box-shadow: 0 14px 34px rgba(217, 119, 6, 0.28);
+  box-shadow: 0 14px 34px rgba(30, 64, 175, 0.30);
 }
 
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee 30s linear infinite;
+  animation: marquee 40s linear infinite;
 }
 
 .marquee-band:hover .marquee-track {
@@ -789,8 +707,8 @@ const whyCards = computed(() => [
   background: linear-gradient(
     180deg,
     transparent 0%,
-    rgba(245, 158, 11, 0.055) 18%,
-    rgba(245, 158, 11, 0.055) 82%,
+    rgba(37, 99, 235, 0.045) 18%,
+    rgba(37, 99, 235, 0.045) 82%,
     transparent 100%
   );
   pointer-events: none;

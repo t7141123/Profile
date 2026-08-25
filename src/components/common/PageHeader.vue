@@ -280,7 +280,7 @@ const ghost = computed(() => {
 }
 
 .page-title-light .highlight {
-  background: linear-gradient(135deg, #60A5FA 0%, #A78BFA 100%);
+  background: linear-gradient(135deg, #2563EB 0%, #60A5FA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -389,7 +389,7 @@ const ghost = computed(() => {
   width: 72px;
   height: 4px;
   border-radius: 999px;
-  background: linear-gradient(90deg, #2563EB 0%, #8B5CF6 45%, #F59E0B 100%);
+  background: linear-gradient(90deg, #1E40AF 0%, #2563EB 55%, #60A5FA 100%);
   margin: 0 0 1.5rem;
 }
 
@@ -441,14 +441,14 @@ const ghost = computed(() => {
 }
 
 .variant-about .section-badge {
-  background: rgba(245, 158, 11, 0.12);
-  border: 1px solid rgba(245, 158, 11, 0.28);
-  color: #B45309;
+  background: rgba(37, 99, 235, 0.10);
+  border: 1px solid rgba(37, 99, 235, 0.26);
+  color: #1E40AF;
 }
 
 [data-theme='dark'] .variant-about .section-badge {
-  background: rgba(245, 158, 11, 0.14);
-  color: #FBBF24;
+  background: rgba(96, 165, 250, 0.14);
+  color: #93C5FD;
 }
 
 .variant-about .page-title {
@@ -488,7 +488,7 @@ const ghost = computed(() => {
   inset: 0;
   transform: translate(16px, 16px);
   border-radius: var(--radius-xl);
-  border: 2px solid rgba(245, 158, 11, 0.55);
+  border: 2px solid rgba(96, 165, 250, 0.55);
   z-index: 0;
 }
 
@@ -512,7 +512,7 @@ const ghost = computed(() => {
   z-index: 2;
 }
 
-.portrait-chip i { color: #F59E0B; }
+.portrait-chip i { color: #2563EB; }
 
 /* ===================================
    PORTFOLIO / SERVICES — dark editorial
@@ -569,7 +569,7 @@ const ghost = computed(() => {
   background:
     radial-gradient(900px 600px at 12% 15%, rgba(245, 158, 11, 0.12), transparent 60%),
     radial-gradient(800px 550px at 88% 85%, rgba(37, 99, 235, 0.07), transparent 55%),
-    linear-gradient(180deg, var(--bg-primary) 0%, #FFF6E3 50%, var(--bg-primary) 100%);
+    linear-gradient(180deg, var(--bg-primary) 0%, #EDF2FB 50%, var(--bg-primary) 100%);
   color: var(--text-primary);
 }
 
@@ -577,16 +577,16 @@ const ghost = computed(() => {
   background:
     radial-gradient(900px 600px at 12% 15%, rgba(245, 158, 11, 0.10), transparent 60%),
     radial-gradient(800px 550px at 88% 85%, rgba(37, 99, 235, 0.10), transparent 55%),
-    linear-gradient(180deg, var(--bg-primary) 0%, #241E12 50%, var(--bg-primary) 100%);
+    linear-gradient(180deg, var(--bg-primary) 0%, #171B26 50%, var(--bg-primary) 100%);
 }
 
 .variant-contact .ghost-word {
   color: transparent;
-  -webkit-text-stroke: 1.5px rgba(180, 83, 9, 0.14);
+  -webkit-text-stroke: 1.5px rgba(30, 64, 175, 0.16);
 }
 
 [data-theme='dark'] .variant-contact .ghost-word {
-  -webkit-text-stroke: 1.5px rgba(251, 191, 36, 0.10);
+  -webkit-text-stroke: 1.5px rgba(96, 165, 250, 0.12);
 }
 
 .variant-contact .page-title { color: var(--text-primary); }
@@ -608,13 +608,13 @@ const ghost = computed(() => {
 }
 
 .variant-contact .section-badge {
-  background: rgba(245, 158, 11, 0.12);
-  border: 1px solid rgba(245, 158, 11, 0.28);
-  color: #B45309;
+  background: rgba(37, 99, 235, 0.10);
+  border: 1px solid rgba(37, 99, 235, 0.26);
+  color: #1E40AF;
 }
 
 [data-theme='dark'] .variant-contact .section-badge {
-  color: #FBBF24;
+  color: #93C5FD;
 }
 
 .variant-contact .scroll-indicator {

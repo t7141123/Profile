@@ -172,7 +172,7 @@ const filteredProjects = computed(() => {
 
 .meta-chip:hover {
   transform: translateX(6px);
-  border-color: rgba(245, 158, 11, 0.4);
+  border-color: rgba(96, 165, 250, 0.45);
   background: rgba(255, 255, 255, 0.08);
 }
 

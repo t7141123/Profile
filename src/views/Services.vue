@@ -309,7 +309,7 @@ const mainServices = computed(() => [
     title: t("services.mainServices.events"),
     subtitle: t("services.mainServices.eventsSubtitle"),
     description: t("services.mainServices.eventsDesc"),
-    gradient: "linear-gradient(135deg, #14B8A6 0%, #2DD4BF 100%)",
+    gradient: "linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%)",
     features: tm("services.mainServices.eventsFeatures"),
   },
   {
@@ -318,7 +318,7 @@ const mainServices = computed(() => [
     title: t("services.mainServices.custom"),
     subtitle: t("services.mainServices.customSubtitle"),
     description: t("services.mainServices.customDesc"),
-    gradient: "linear-gradient(135deg, #10B981 0%, #34D399 100%)",
+    gradient: "linear-gradient(135deg, #1E40AF 0%, #2563EB 100%)",
     features: tm("services.mainServices.customFeatures"),
   },
 ]);
@@ -438,7 +438,7 @@ const faqs = computed(() => [
 
 .pillar-row:hover {
   transform: translateX(6px);
-  border-color: rgba(245, 158, 11, 0.4);
+  border-color: rgba(96, 165, 250, 0.45);
   background: rgba(255, 255, 255, 0.08);
 }
 
@@ -446,7 +446,7 @@ const faqs = computed(() => [
   font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 700;
-  color: #F59E0B;
+  color: #93C5FD;
   min-width: 1.9rem;
 }
 
@@ -465,7 +465,7 @@ const faqs = computed(() => [
 
 .pillar-row:hover .pillar-arrow {
   transform: translate(3px, -3px);
-  color: #F59E0B;
+  color: #93C5FD;
 }
 
 @media (max-width: 991.98px) {

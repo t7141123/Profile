@@ -79,7 +79,7 @@ defineProps({
   width: 72px;
   height: 4px;
   border-radius: 999px;
-  background: linear-gradient(90deg, #2563EB 0%, #8B5CF6 45%, #F59E0B 100%);
+  background: linear-gradient(90deg, #1E40AF 0%, #2563EB 55%, #60A5FA 100%);
   margin: 0 auto 1.5rem;
   position: relative;
 }
