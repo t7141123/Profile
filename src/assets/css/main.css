@@ -365,14 +365,14 @@ a:hover {
   border-radius: var(--radius-full);
   font-weight: 700;
   transition: all var(--transition-base);
-  box-shadow: 0 4px 14px 0 rgba(6, 199, 85, 0.25);
+  box-shadow: 0 4px 14px 0 rgba(139, 94, 60, 0.25);
   text-decoration: none;
 }
 
 .btn-line:hover {
   background: var(--line-hover) !important;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px 0 rgba(6, 199, 85, 0.35);
+  box-shadow: 0 6px 20px 0 rgba(107, 66, 38, 0.35);
   color: white !important;
 }
 

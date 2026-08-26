@@ -42,7 +42,7 @@
             <a
               href="https://line.me/ti/p/2w7bwfksdF"
               target="_blank"
-              class="btn btn-line"
+              class="btn btn-primary-custom"
               v-ripple
               v-magnetic
             >
@@ -388,6 +388,10 @@ const testimonials = computed(() =>
     margin-left: calc(min(115vw, 640px) / -2);
     bottom: -6%;
   }
+
+  .water-svg {
+    height: clamp(130px, 24vh, 220px);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -404,9 +408,9 @@ const testimonials = computed(() =>
 /* ── Marquee band ── */
 .marquee-band {
   overflow: hidden;
-  background: rgba(56, 90, 118, 0.42);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  /* no backdrop-filter here: iOS Safari oversamples it behind rotated
+     elements and smears a large blurred rect over the hero */
+  background: rgba(56, 90, 118, 0.55);
   border-top: 1px solid rgba(200, 155, 109, 0.35);
   border-bottom: 1px solid rgba(200, 155, 109, 0.35);
   /* rotate only — no scale(): scaling rasterized text causes jagged edges;
