@@ -1,10 +1,7 @@
 <template>
   <section class="page-header" :class="[headerClass, `variant-${variant}`]">
     <div v-if="variant === 'center'" class="header-bg-pattern"></div>
-    <div
-      v-if="variant === 'center' || variant === 'portfolio' || variant === 'services'"
-      class="header-orb header-orb-1"
-    ></div>
+    <div class="header-orb header-orb-1"></div>
     <div
       v-if="variant === 'center' || variant === 'about' || variant === 'contact'"
       class="header-orb header-orb-2"
@@ -196,17 +193,21 @@ const ghost = computed(() => {
 .header-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(80px);
   pointer-events: none;
-  animation: float 30s ease-in-out infinite;
+  z-index: 1;
 }
 
 .header-orb-1 {
-  top: -10%;
-  right: -5%;
-  width: 50vw;
-  height: 50vw;
-  background: radial-gradient(circle, rgba(139, 94, 60, 0.25) 0%, rgba(164, 120, 90, 0.1) 50%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: 90vw;
+  max-width: 1200px;
+  max-height: 1200px;
+  filter: blur(70px);
+  background: radial-gradient(circle, rgba(200, 155, 109, 0.32) 0%, rgba(139, 94, 60, 0.14) 40%, rgba(139, 94, 60, 0) 72%);
+  animation: float 30s ease-in-out infinite;
 }
 
 .header-orb-2 {
@@ -214,8 +215,27 @@ const ghost = computed(() => {
   left: -10%;
   width: 40vw;
   height: 40vw;
+  filter: blur(80px);
   background: radial-gradient(circle, rgba(200, 155, 109, 0.15) 0%, rgba(222, 184, 135, 0.08) 50%, transparent 70%);
+  animation: float 30s ease-in-out infinite;
   animation-delay: -15s;
+}
+
+/* Per-variant halo position: keep the big halo wrapping the title + description */
+.variant-portfolio .header-orb-1,
+.variant-services .header-orb-1 {
+  left: 28%;
+  transform: translate(-50%, -50%);
+}
+
+.variant-about .header-orb-1 {
+  left: 72%;
+  background: radial-gradient(circle, rgba(200, 155, 109, 0.30) 0%, rgba(139, 94, 60, 0.12) 40%, rgba(139, 94, 60, 0) 72%);
+  transform: translate(-50%, -50%);
+}
+
+.variant-contact .header-orb-1 {
+  background: radial-gradient(circle, rgba(200, 155, 109, 0.28) 0%, rgba(139, 94, 60, 0.10) 40%, rgba(139, 94, 60, 0) 72%);
 }
 
 .page-header-about::before,
