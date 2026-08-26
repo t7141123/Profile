@@ -9,10 +9,10 @@
         </div>
         <div ref="waterRise" class="water-rise">
           <svg class="water-svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-            <path fill="rgba(233,213,172,0.10)" d="M0,150 C240,90 480,210 720,150 C960,90 1200,210 1440,150 L1440,320 L0,320 Z"/>
-            <path fill="rgba(233,213,172,0.16)" d="M0,210 C240,150 480,270 720,210 C960,150 1200,270 1440,210 L1440,320 L0,320 Z"/>
-            <path fill="rgba(233,213,172,0.24)" d="M0,270 C240,220 480,310 720,270 C960,230 1200,310 1440,270 L1440,320 L0,320 Z"/>
-            <path fill="none" stroke="rgba(244,226,187,0.45)" stroke-width="2" d="M0,150 C240,90 480,210 720,150 C960,90 1200,210 1440,150"/>
+            <path fill="rgba(233,213,172,0.18)" d="M0,150 C240,90 480,210 720,150 C960,90 1200,210 1440,150 L1440,320 L0,320 Z"/>
+            <path fill="rgba(233,213,172,0.28)" d="M0,210 C240,150 480,270 720,210 C960,150 1200,270 1440,210 L1440,320 L0,320 Z"/>
+            <path fill="rgba(233,213,172,0.40)" d="M0,270 C240,220 480,310 720,270 C960,230 1200,310 1440,270 L1440,320 L0,320 Z"/>
+            <path fill="none" stroke="rgba(244,226,187,0.70)" stroke-width="2.5" d="M0,150 C240,90 480,210 720,150 C960,90 1200,210 1440,150"/>
           </svg>
         </div>
       </div>
@@ -241,7 +241,7 @@ const updateDrift = () => {
     arkDrift.value.style.transform = `translate(${14 - p * 44}%, ${-p * 15}%)`;
   }
   if (waterRise.value) {
-    waterRise.value.style.transform = `translateY(${50 - p * 70}%)`;
+    waterRise.value.style.transform = `translateY(${35 - p * 55}%)`;
   }
 };
 
@@ -366,7 +366,7 @@ const testimonials = computed(() =>
   left: -4%;
   right: -4%;
   bottom: -30px;
-  transform: translateY(50%);
+  transform: translateY(35%);
   will-change: transform;
 }
 
