@@ -51,10 +51,6 @@
           </div>
         </div>
       </div>
-      <a href="#home-stats" class="scroll-hint" aria-hidden="true" tabindex="-1">
-        <span class="mouse"><span></span></span>
-        {{ $t("home.scrollHint") }}
-      </a>
     </section>
 
     <!-- Marquee Band -->
