@@ -241,7 +241,7 @@ const updateDrift = () => {
     arkDrift.value.style.transform = `translate(${14 - p * 44}%, ${-p * 15}%)`;
   }
   if (waterRise.value) {
-    waterRise.value.style.transform = `translateY(${35 - p * 55}%)`;
+    waterRise.value.style.transform = `translateY(${25 - p * 45}%)`;
   }
 };
 
@@ -366,7 +366,7 @@ const testimonials = computed(() =>
   left: -4%;
   right: -4%;
   bottom: -30px;
-  transform: translateY(35%);
+  transform: translateY(25%);
   will-change: transform;
 }
 
@@ -374,6 +374,12 @@ const testimonials = computed(() =>
   display: block;
   width: 100%;
   height: auto;
+  animation: water-sway 9s ease-in-out infinite alternate;
+}
+
+@keyframes water-sway {
+  from { transform: translateX(-1.1%) translateY(0.5%); }
+  to   { transform: translateX(1.1%) translateY(-0.7%); }
 }
 
 @media (max-width: 991.98px) {
@@ -398,13 +404,19 @@ const testimonials = computed(() =>
 /* ── Marquee band ── */
 .marquee-band {
   overflow: hidden;
-  background: var(--gradient-primary);
-  transform: rotate(-1.2deg) scale(1.03);
-  margin: -1.5rem 0 0;
+  background: rgba(56, 90, 118, 0.42);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(200, 155, 109, 0.35);
+  border-bottom: 1px solid rgba(200, 155, 109, 0.35);
+  /* rotate only — no scale(): scaling rasterized text causes jagged edges;
+     negative margins widen the band instead so rotated corners stay covered */
+  transform: rotate(-1.2deg);
+  margin: -1.5rem -2vw 0;
   padding: 1.05rem 0;
   position: relative;
   z-index: 6;
-  box-shadow: 0 14px 34px rgba(107, 66, 38, 0.30);
+  box-shadow: 0 14px 34px rgba(20, 32, 44, 0.35);
 }
 
 .marquee-track {
@@ -441,6 +453,7 @@ const testimonials = computed(() =>
 @media (prefers-reduced-motion: reduce) {
   .marquee-track { animation: none; }
   .chip-float { animation: none; }
+  .water-svg { animation: none; }
 }
 
 /* ── Bento services ── */
