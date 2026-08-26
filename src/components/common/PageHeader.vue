@@ -200,13 +200,14 @@ const ghost = computed(() => {
 .header-orb-1 {
   top: 50%;
   left: 50%;
+  width: 82vw;
+  height: 58vh;
+  min-height: 480px;
+  max-width: 1150px;
+  max-height: 720px;
   transform: translate(-50%, -50%);
-  width: 90vw;
-  height: 90vw;
-  max-width: 1200px;
-  max-height: 1200px;
-  filter: blur(70px);
-  background: radial-gradient(circle, rgba(200, 155, 109, 0.32) 0%, rgba(139, 94, 60, 0.14) 40%, rgba(139, 94, 60, 0) 72%);
+  filter: blur(55px);
+  background: radial-gradient(ellipse at center, rgba(214, 168, 121, 0.55) 0%, rgba(164, 120, 90, 0.28) 45%, rgba(139, 94, 60, 0) 78%);
   animation: float 30s ease-in-out infinite;
 }
 
@@ -221,21 +222,21 @@ const ghost = computed(() => {
   animation-delay: -15s;
 }
 
-/* Per-variant halo position: keep the big halo wrapping the title + description */
+/* Per-variant halo position: keep the big halo wrapping badge + title + description */
 .variant-portfolio .header-orb-1,
 .variant-services .header-orb-1 {
-  left: 28%;
+  left: 30%;
   transform: translate(-50%, -50%);
 }
 
 .variant-about .header-orb-1 {
-  left: 72%;
-  background: radial-gradient(circle, rgba(200, 155, 109, 0.30) 0%, rgba(139, 94, 60, 0.12) 40%, rgba(139, 94, 60, 0) 72%);
+  left: 70%;
+  background: radial-gradient(ellipse at center, rgba(214, 168, 121, 0.50) 0%, rgba(164, 120, 90, 0.24) 45%, rgba(139, 94, 60, 0) 78%);
   transform: translate(-50%, -50%);
 }
 
 .variant-contact .header-orb-1 {
-  background: radial-gradient(circle, rgba(200, 155, 109, 0.28) 0%, rgba(139, 94, 60, 0.10) 40%, rgba(139, 94, 60, 0) 72%);
+  background: radial-gradient(ellipse at center, rgba(214, 168, 121, 0.48) 0%, rgba(164, 120, 90, 0.22) 45%, rgba(139, 94, 60, 0) 78%);
 }
 
 .page-header-about::before,
