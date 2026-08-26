@@ -1,33 +1,23 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 40">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#2A211A"/>
-      <stop offset="55%" stop-color="#221B15"/>
-      <stop offset="100%" stop-color="#191411"/>
-    </linearGradient>
     <style>
-      .fk-main { fill: none; stroke: #C89B6D; stroke-width: 2.1; stroke-linecap: round; stroke-linejoin: round; }
-      .fk-detail { fill: none; stroke: #C89B6D; stroke-opacity: .82; stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; }
+      .lg-main { fill: none; stroke: #C89B6D; stroke-width: 2.1; stroke-linecap: round; stroke-linejoin: round; }
+      .lg-detail { fill: none; stroke: #C89B6D; stroke-opacity: .78; stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; }
     </style>
   </defs>
-
-  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
-
-  <g transform="translate(66, 137) scale(5.94)">
-    <!-- Bow post -->
-    <path class="fk-main" d="M 3.5 9.5 L 8.5 10.3 L 7 17.8 Z" />
-    <!-- Hull -->
-    <path class="fk-main" d="M 4 10.5 C 5.5 24, 9.5 30.5, 17.5 32.8 C 30 35.8, 47 35, 55 32 C 60 30, 62.2 25.5, 61.8 19.5" />
-    <!-- Deck rail -->
-    <path class="fk-detail" d="M 6.5 17.5 C 22 18.8, 44 19.8, 58.5 18.4" />
-    <!-- Roof -->
-    <path class="fk-main" d="M 21 6.5 L 49 9.5 L 50.5 12 L 23 9 Z" />
-    <path class="fk-detail" d="M 18.5 9.8 L 21 6.5 L 23.8 9 Z" />
-    <!-- Cabin -->
-    <path class="fk-detail" d="M 19 10.2 L 23.8 9.2 L 23.8 14 L 19.8 13.8 Z" />
-    <path class="fk-main" d="M 23.8 9.2 L 50 11.8 L 49.4 14.8 L 23.8 14 Z" />
-    <!-- Hull planks -->
-    <path class="fk-detail" d="M 7.5 21.5 C 23 23, 44 24, 60 22.2" />
-    <path class="fk-detail" d="M 10 27 C 24 28.5, 44 29.5, 57.5 27.5" />
-  </g>
+  <!-- Bow post -->
+  <path class="lg-main" d="M 3.5 9.5 L 8.5 10.3 L 7 17.8 Z" />
+  <!-- Hull -->
+  <path class="lg-main" d="M 4 10.5 C 5.5 24, 9.5 30.5, 17.5 32.8 C 30 35.8, 47 35, 55 32 C 60 30, 62.2 25.5, 61.8 19.5" />
+  <!-- Deck rail -->
+  <path class="lg-detail" d="M 6.5 17.5 C 22 18.8, 44 19.8, 58.5 18.4" />
+  <!-- Roof -->
+  <path class="lg-main" d="M 21 6.5 L 49 9.5 L 50.5 12 L 23 9 Z" />
+  <path class="lg-detail" d="M 18.5 9.8 L 21 6.5 L 23.8 9 Z" />
+  <!-- Cabin -->
+  <path class="lg-detail" d="M 19 10.2 L 23.8 9.2 L 23.8 14 L 19.8 13.8 Z" />
+  <path class="lg-main" d="M 23.8 9.2 L 50 11.8 L 49.4 14.8 L 23.8 14 Z" />
+  <!-- Hull planks -->
+  <path class="lg-detail" d="M 7.5 21.5 C 23 23, 44 24, 60 22.2" />
+  <path class="lg-detail" d="M 10 27 C 24 28.5, 44 29.5, 57.5 27.5" />
 </svg>
