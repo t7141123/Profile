@@ -2641,8 +2641,8 @@ h1, h2, h3 {
 }
 
 @keyframes ark-sail {
-  0%, 100% { transform: translateY(0) rotate(-2.4deg) translateX(0); }
-  50%      { transform: translateY(-34px) rotate(2.4deg) translateX(36px); }
+  0%, 100% { transform: translateY(0) rotate(-3.6deg) translateX(0); }
+  50%      { transform: translateY(-54px) rotate(3.6deg) translateX(58px); }
 }
 
 @media (prefers-reduced-motion: reduce) {
