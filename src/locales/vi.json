@@ -122,20 +122,6 @@
       "s3d": "Báo giá minh bạch, cột mốc linh hoạt",
       "s4t": "Phát triển & ra mắt",
       "s4d": "Báo cáo tuần, bàn giao đúng hẹn"
-    },
-    "testimonialsBadge": "Phản hồi",
-    "testimonialsTitle": "Khách hàng",
-    "testimonialsTitleHighlight": " nói gì",
-    "testimonials": {
-      "t1Text": "Trang thanh toán cũ bỏ giỏ hàng rất nhiều. David tinh gọn còn ba bước, tháng đầu đơn tăng gần 30%. Điều tôi sợ nhất là làm xong thì biến mất — nhưng đến khi web sập giữa đêm anh vẫn trả lời tin nhắn.",
-      "t1Author": "Chị Trần",
-      "t1Role": "E-commerce thời trang · Chủ shop",
-      "t2Text": "Xếp lịch phụng vụ từng là cơn ác mộng hằng tháng. Giờ hệ thống tự xếp và ai cũng nhận thông báo qua LINE. Chúng tôi mù công nghệ, anh giải thích ba lần cũng không hề khó chịu.",
-      "t2Author": "Anh Lâm",
-      "t2Role": "Hành chính nhà thờ · Trưởng bộ phận",
-      "t3Text": "Hệ thống dùng mười năm không ai dám đụng. Anh dành hàng tuần tìm hiểu từng quy trình xưởng rồi mới viết code. Ba tháng sau, kiểm kê từ hai ngày xuống nửa ngày. Báo giá cũng thật thà, không có phụ phí bất ngờ.",
-      "t3Author": "Anh Hoàng",
-      "t3Role": "Sản xuất · Quản đốc"
     }
   },
   "about": {
@@ -190,10 +176,7 @@
       "t2Role": "Chủ nền tảng thương mại điện tử",
       "t3Text": "Hệ thống quản lý của công ty dùng hơn mười năm rồi, ai cũng nói 'còn chạy thì đừng đụng vào'. David chịu khó hỏi nhu cầu từng phòng ban rồi mới bắt đầu. Ba tháng sau khi ra mắt, kiểm kê từ hai ngày còn nửa ngày, báo cáo cũng không phải gõ lại tay. Điều quý nhất: anh không bắt chúng tôi chiều theo hệ thống, mà là hệ thống chiều theo chúng tôi.",
       "t3Author": "Chị Quách",
-      "t3Role": "Quản lý hành chính, sản xuất",
-      "t1Case": "Dự án · Hệ thống xếp lịch nhà thờ",
-      "t2Case": "Dự án · Website thương mại điện tử",
-      "t3Case": "Dự án · Hệ thống ERP"
+      "t3Role": "Quản lý hành chính, sản xuất"
     },
     "process": {
       "communication": "Phân Tích Yêu Cầu Nghiệp Vụ",

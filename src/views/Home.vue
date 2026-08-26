@@ -159,20 +159,27 @@
       <div class="container">
         <SectionHeader
           index="03"
-          :badge="$t('home.testimonialsBadge')"
-          :title="$t('home.testimonialsTitle')"
-          :highlight="$t('home.testimonialsTitleHighlight')"
+          :badge="$t('about.testimonialsBadge')"
+          :title="$t('about.testimonialsTitle')"
+          :highlight="$t('about.testimonialsTitleHighlight')"
         />
 
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
           <div
             class="col-md-6 col-lg-4"
             v-for="(item, i) in testimonials"
             :key="i"
             v-inview="{ delay: i * 100 }"
           >
-            <div class="testimonial-card glass-card h-100 border-beam spotlight-card" v-spotlight>
-              <i class="bi bi-quote t-quote" aria-hidden="true"></i>
+            <div class="testimonial-card glass-card h-100 border-beam spotlight-card crd-hard" v-spotlight>
+              <div class="t-top">
+                <div class="t-quote" aria-hidden="true">
+                  <i class="bi bi-quote"></i>
+                </div>
+                <span class="t-icon-chip" aria-hidden="true">
+                  <i :class="item.icon"></i>
+                </span>
+              </div>
               <p class="t-text">{{ item.text }}</p>
               <div class="t-author">
                 <span class="t-avatar" aria-hidden="true">{{ item.author.charAt(0) }}</span>
@@ -329,11 +336,18 @@ const stats = computed(() => [
   { id: 4, value: 100, suffix: "%", label: t("home.stats.tailored") },
 ]);
 
+const TESTIMONIAL_ICONS = [
+  "bi bi-calendar2-check",
+  "bi bi-bag-check",
+  "bi bi-clipboard-data",
+];
+
 const testimonials = computed(() =>
   [1, 2, 3].map((n) => ({
-    text: t(`home.testimonials.t${n}Text`),
-    author: t(`home.testimonials.t${n}Author`),
-    role: t(`home.testimonials.t${n}Role`),
+    icon: TESTIMONIAL_ICONS[n - 1],
+    text: t(`about.testimonials.t${n}Text`),
+    author: t(`about.testimonials.t${n}Author`),
+    role: t(`about.testimonials.t${n}Role`),
   }))
 );
 </script>
@@ -717,18 +731,43 @@ const testimonials = computed(() =>
 
 /* Testimonial cards */
 .testimonial-card {
-  padding: 1.9rem;
+  padding: 2.5rem 2rem;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.t-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.t-icon-chip {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(200, 155, 109, 0.12);
+  border: 1px solid rgba(200, 155, 109, 0.4);
+  color: var(--primary-light);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
 .t-quote {
   font-size: 2.4rem;
   line-height: 1;
-  color: var(--primary-light);
+  color: var(--primary-color);
   opacity: 0.35;
-  margin-bottom: 0.4rem;
+  margin-bottom: 1rem;
 }
 
 .t-text {

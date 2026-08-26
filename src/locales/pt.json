@@ -122,20 +122,6 @@
       "s3d": "Preços transparentes, marcos flexíveis",
       "s4t": "Desenvolvimento e lançamento",
       "s4d": "Atualizações semanais, entrega no prazo"
-    },
-    "testimonialsBadge": "Depoimentos",
-    "testimonialsTitle": "O que os clientes",
-    "testimonialsTitleHighlight": " dizem",
-    "testimonials": {
-      "t1Text": "Nosso checkout antigo perdia gente em cada etapa. David reduziu para três passos e os pedidos subiram cerca de 30% no primeiro mês. Meu maior medo era um desenvolvedor que some depois do lançamento — ele respondeu até quando o site caiu de madrugada.",
-      "t1Author": "Sra. Chen",
-      "t1Role": "E-commerce de moda · Proprietária",
-      "t2Text": "Escalar voluntários era meu pesadelo mensal. Agora a escala se monta sozinha e todos recebem aviso no LINE. Não entendemos nada de tecnologia e ele explicou três vezes sem demonstrar impaciência.",
-      "t2Author": "Sr. Lin",
-      "t2Role": "Administração de igreja · Diretor",
-      "t3Text": "Tínhamos um sistema de dez anos que ninguém ousava tocar. Ele passou semanas entendendo nosso processo de chão de fábrica antes de escrever código. Em três meses, o inventário passou de dois dias para meio dia. O orçamento foi honesto, sem surpresas.",
-      "t3Author": "Sr. Huang",
-      "t3Role": "Manufatura · Gerente de fábrica"
     }
   },
   "about": {
@@ -190,10 +176,7 @@
       "t2Role": "Responsável por plataforma de e-commerce",
       "t3Text": "Nosso sistema de estoque rodou por mais de dez anos e todos diziam 'está funcionando, não mexe'. David entrevistou cada departamento antes de começar. Três meses depois do lançamento, o inventário passou de dois dias para meio dia, e os relatórios não são mais digitados de novo à mão. O mais raro: ele não nos pediu para nos adequar ao sistema — foi o sistema que se adequou a nós.",
       "t3Author": "Sra. Kuo",
-      "t3Role": "Gerente administrativa, indústria",
-      "t1Case": "Case · Sistema de escalas para igreja",
-      "t2Case": "Case · Loja virtual",
-      "t3Case": "Case · Sistema ERP"
+      "t3Role": "Gerente administrativa, indústria"
     },
     "process": {
       "communication": "Análise de Requisitos de Negócio",

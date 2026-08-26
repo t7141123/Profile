@@ -180,14 +180,6 @@
                   <span class="testimonial-role">{{ testimonial.role }}</span>
                 </div>
               </div>
-              <a
-                :href="testimonial.caseUrl"
-                target="_blank"
-                rel="noopener"
-                class="testimonial-case"
-              >
-                <i class="bi bi-box-arrow-up-right"></i>{{ testimonial.caseLabel }}
-              </a>
             </div>
           </div>
         </div>
@@ -299,8 +291,6 @@ const testimonials = computed(() => [
     text: t("about.testimonials.t1Text"),
     author: t("about.testimonials.t1Author"),
     role: t("about.testimonials.t1Role"),
-    caseLabel: t("about.testimonials.t1Case"),
-    caseUrl: "https://church-serve.pages.dev/",
   },
   {
     id: 2,
@@ -308,8 +298,6 @@ const testimonials = computed(() => [
     text: t("about.testimonials.t2Text"),
     author: t("about.testimonials.t2Author"),
     role: t("about.testimonials.t2Role"),
-    caseLabel: t("about.testimonials.t2Case"),
-    caseUrl: "https://www.clay.com.tw/",
   },
   {
     id: 3,
@@ -317,8 +305,6 @@ const testimonials = computed(() => [
     text: t("about.testimonials.t3Text"),
     author: t("about.testimonials.t3Author"),
     role: t("about.testimonials.t3Role"),
-    caseLabel: t("about.testimonials.t3Case"),
-    caseUrl: "https://general-erp.pages.dev/",
   },
 ]);
 </script>
@@ -611,28 +597,5 @@ const testimonials = computed(() => [
 .testimonial-role {
   font-size: 0.8rem;
   color: var(--text-muted);
-}
-
-.testimonial-case {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  margin-top: 1.1rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--primary-light);
-  text-decoration: none;
-  opacity: 0.85;
-  transition: var(--transition-base);
-}
-
-.testimonial-case i {
-  font-size: 0.7rem;
-}
-
-.testimonial-case:hover {
-  opacity: 1;
-  color: var(--primary-color);
-  transform: translateX(2px);
 }
 </style>

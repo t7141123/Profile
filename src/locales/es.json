@@ -122,20 +122,6 @@
       "s3d": "Precios transparentes e hitos flexibles",
       "s4t": "Desarrollo y lanzamiento",
       "s4d": "Avances semanales, entrega puntual"
-    },
-    "testimonialsBadge": "Testimonios",
-    "testimonialsTitle": "Lo que dicen",
-    "testimonialsTitleHighlight": " los clientes",
-    "testimonials": {
-      "t1Text": "Nuestro checkout perdía gente en cada paso. David lo redujo a tres pasos y los pedidos subieron cerca de un 30% el primer mes. Lo que más temía era un desarrollador que desaparece tras el lanzamiento — hasta respondió cuando la web se cayó de madrugada.",
-      "t1Author": "Sra. Chen",
-      "t1Role": "E-commerce de moda · Propietaria",
-      "t2Text": "Organizar los turnos de voluntarios era mi pesadilla mensual. Ahora la lista se genera sola y todos reciben aviso por LINE. No sabemos nada de tecnología y nos explicó todo tres veces sin mostrar impaciencia.",
-      "t2Author": "Sr. Lin",
-      "t2Role": "Administración de iglesia · Director",
-      "t3Text": "Teníamos un sistema de diez años que nadie se atrevía a tocar. Pasó semanas entendiendo nuestro proceso de planta línea por línea antes de escribir código. A los tres meses, el inventario pasó de dos días a medio día. Su presupuesto fue honesto, sin sorpresas.",
-      "t3Author": "Sr. Huang",
-      "t3Role": "Manufactura · Jefe de planta"
     }
   },
   "about": {
@@ -190,10 +176,7 @@
       "t2Role": "Responsable de plataforma e-commerce",
       "t3Text": "Nuestro sistema de inventario llevaba más de diez años y todos decían 'si funciona, no lo toques'. David entrevistó a cada departamento antes de planificar. Tres meses después del lanzamiento, el recuento pasó de dos días a medio día y los informes ya no se reescriben a mano. Lo mejor: nunca nos pidió adaptarnos al sistema, fue el sistema el que se adaptó a nosotros.",
       "t3Author": "Sra. Kuo",
-      "t3Role": "Gerente administrativa, manufactura",
-      "t1Case": "Caso real · Sistema de turnos para iglesia",
-      "t2Case": "Caso real · Tienda online",
-      "t3Case": "Caso real · Sistema ERP"
+      "t3Role": "Gerente administrativa, manufactura"
     },
     "process": {
       "communication": "Análisis de requerimientos de negocio",
