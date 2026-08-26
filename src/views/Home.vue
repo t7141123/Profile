@@ -230,18 +230,25 @@ const { getFeaturedProjects } = useProjects();
 
 const arkDrift = ref(null);
 const waterRise = ref(null);
+let waterH = 0;
 let rafId = 0;
 let reduceMotion = false;
+
+const measureWater = () => {
+  waterH = waterRise.value ? waterRise.value.offsetHeight : 0;
+};
 
 const updateDrift = () => {
   rafId = 0;
   const vh = window.innerHeight || 1;
   const p = Math.min(Math.max(window.scrollY / (vh * 0.85), 0), 1);
-  if (arkDrift.value) {
-    arkDrift.value.style.transform = `translate(${14 - p * 44}%, ${-p * 15}%)`;
-  }
   if (waterRise.value) {
-    waterRise.value.style.transform = `translateY(${25 - p * 45}%)`;
+    const waterY = ((25 - p * 45) / 100) * waterH;
+    waterRise.value.style.transform = `translateY(${waterY}px)`;
+  }
+  if (arkDrift.value) {
+    const arkY = (p * 45 * 1.15 * waterH) / -100;
+    arkDrift.value.style.transform = `translate(${14 - p * 44}%, ${arkY}px)`;
   }
 };
 
@@ -250,16 +257,24 @@ const onScroll = () => {
   rafId = requestAnimationFrame(updateDrift);
 };
 
+const onResize = () => {
+  measureWater();
+  if (!reduceMotion) onScroll();
+};
+
 onMounted(() => {
   reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  measureWater();
   if (!reduceMotion) {
     window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onResize);
     updateDrift();
   }
 });
 
 onUnmounted(() => {
   window.removeEventListener("scroll", onScroll);
+  window.removeEventListener("resize", onResize);
   if (rafId) cancelAnimationFrame(rafId);
 });
 
