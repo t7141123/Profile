@@ -182,15 +182,18 @@
     "testimonialsTitle": "Avaliações de",
     "testimonialsTitleHighlight": " Clientes",
     "testimonials": {
-      "t1Text": "A comunicação do David é muito clara, todo o processo de desenvolvimento foi transparente e não precisei me preocupar com o andamento em nenhum momento.",
-      "t1Author": "Sr. Lin",
-      "t1Role": "Plataforma e-commerce · Diretor Geral",
-      "t2Text": "A recepção após o lançamento foi excelente. O David tem uma capacidade técnica sólida e resolve os problemas com muita rapidez.",
-      "t2Author": "Sra. Chang",
-      "t2Role": "Site de marca · Fundadora",
-      "t3Text": "Dos requisitos ao lançamento, a experiência foi profissional e fluida. Recomendaria sem dúvidas a quem precisa de um site.",
-      "t3Author": "Sr. Chen",
-      "t3Role": "Integração de sistemas · Gerente de Projeto"
+      "t1Text": "A escala mensal de serviço era eu que fazia no Excel até de madrugada, e depois ligava para cada um confirmar. O sistema do David agora monta os turnos automaticamente e avisa por LINE; trocar um turno é um toque no celular. Ele ouviu nossas necessidades várias vezes sem reclamar: é um engenheiro que pensa do lado de quem usa.",
+      "t1Author": "Sr. Wu",
+      "t1Role": "Coordenador administrativo de igreja",
+      "t2Text": "O que mais assusta numa reformulação é o venda parar. David percorreu todo o nosso fluxo antes de escrever código e, na semana da troca, não perdemos um único pedido. Hoje eu mesmo mudo preços e confiro o estoque, sem ficar esperando programador. Manda mensagem no LINE e quase sempre responde no mesmo dia. Isso ainda me deixa tranquilo.",
+      "t2Author": "Sr. Weng",
+      "t2Role": "Responsável por plataforma de e-commerce",
+      "t3Text": "Nosso sistema de estoque rodou por mais de dez anos e todos diziam 'está funcionando, não mexe'. David entrevistou cada departamento antes de começar. Três meses depois do lançamento, o inventário passou de dois dias para meio dia, e os relatórios não são mais digitados de novo à mão. O mais raro: ele não nos pediu para nos adequar ao sistema — foi o sistema que se adequou a nós.",
+      "t3Author": "Sra. Kuo",
+      "t3Role": "Gerente administrativa, indústria",
+      "t1Case": "Case · Sistema de escalas para igreja",
+      "t2Case": "Case · Loja virtual",
+      "t3Case": "Case · Sistema ERP"
     },
     "process": {
       "communication": "Análise de Requisitos de Negócio",

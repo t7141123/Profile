@@ -182,15 +182,18 @@
     "testimonialsTitle": "Kunden",
     "testimonialsTitleHighlight": "stimmen",
     "testimonials": {
-      "t1Text": "Davids Kommunikation ist sehr klar, der gesamte Entwicklungsprozess war transparent – ich musste mir um den Fortschritt keinerlei Sorgen machen.",
-      "t1Author": "Herr Lin",
-      "t1Role": "E-Commerce-Plattform · Geschäftsführer",
-      "t2Text": "Die Resonanz nach dem Launch war hervorragend. David verfügt über fundierte technische Fähigkeiten und löst Probleme sehr schnell.",
-      "t2Author": "Frau Chang",
-      "t2Role": "Marken-Website · Gründerin",
-      "t3Text": "Von der Anforderungserhebung bis zum Launch – professionell und reibungslos. Ich kann ihn jedem wärmstens empfehlen, der eine Website benötigt.",
-      "t3Author": "Herr Chen",
-      "t3Role": "Systemintegration · Projektleiter"
+      "t1Text": "Den monatlichen Dienstplan habe ich früher bis Mitternacht in Excel gepflegt und dann jeden einzeln angerufen. Davids System erstellt die Pläne jetzt automatisch und schickt LINE-Erinnerungen — eine Schicht tauschen geht mit einem Tipp auf dem Handy. Er hat sich unsere Abläufe immer wieder anhören, ohne es leid zu werden: Ein Ingenieur, der aus der Sicht der Nutzer denkt.",
+      "t1Author": "Herr Wu",
+      "t1Role": "Kirchlicher Verwaltungskoordinator",
+      "t2Text": "Das Schlimmste an einem Relaunch ist die Angst, dass der Verkauf stillsteht. David ist vor der ersten Zeile Code unseren kompletten Ablauf durchgegangen — in der Umstellungswoche ist keine einzige Bestellung verloren gegangen. Preise ändern und Lager prüfen mache ich heute selbst, ohne auf einen Entwickler zu warten. Fragt man ihn per LINE, kommt meist noch am selben Tag eine Antwort.",
+      "t2Author": "Herr Weng",
+      "t2Role": "E-Commerce-Plattformbetreiber",
+      "t3Text": "Unser Warenwirtschaftssystem lief über zehn Jahre, alle sagten: „Es läuft, fass es nicht an.“ David hat jede Abteilung befragt, bevor er geplant hat. Drei Monate nach dem Start dauert die Inventur einen halben Tag statt zwei, und Berichte werden nicht mehr von Hand übertragen. Das Beste: Er hat nicht von uns verlangt, uns dem System anzupassen — das System hat sich uns angepasst.",
+      "t3Author": "Frau Kuo",
+      "t3Role": "Verwaltungsleiterin, Fertigung",
+      "t1Case": "Projekt · Kirchliches Schichtsystem",
+      "t2Case": "Projekt · Online-Shop",
+      "t3Case": "Projekt · ERP-System"
     },
     "process": {
       "communication": "Analyse der Geschäftsanforderungen",

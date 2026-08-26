@@ -182,15 +182,18 @@
     "testimonialsTitle": "Opiniones de",
     "testimonialsTitleHighlight": " clientes",
     "testimonials": {
-      "t1Text": "La comunicación de David es muy clara, todo el proceso de desarrollo fue transparente y no tuve que preocuparme por el avance en absoluto.",
-      "t1Author": "Sr. Lin",
-      "t1Role": "Plataforma e-commerce · Director General",
-      "t2Text": "La respuesta tras el lanzamiento ha sido excelente. David tiene una sólida capacidad técnica y resuelve las incidencias con gran rapidez.",
-      "t2Author": "Sra. Chang",
-      "t2Role": "Sitio web de marca · Fundadora",
-      "t3Text": "Desde los requisitos hasta el lanzamiento, la experiencia fue profesional y fluida. Lo recomendaría sin duda a quien necesite un sitio web.",
-      "t3Author": "Sr. Chen",
-      "t3Role": "Integración de sistemas · Jefe de proyecto"
+      "t1Text": "El horario mensual de servicio lo hacía yo en Excel hasta la medianoche, y luego llamaba a cada uno para confirmar. El sistema de David ahora asigna los turnos automáticamente y avisa por LINE; cambiar un turno es un toque en el móvil. Escuchó nuestras necesidades una y otra vez sin quejarse: es un ingeniero que piensa desde el lado del usuario.",
+      "t1Author": "Sr. Wu",
+      "t1Role": "Coordinador administrativo de iglesia",
+      "t2Text": "Lo que más miedo da de una remodelación es que se pare la venta. David recorrió todo nuestro flujo antes de escribir código y la semana del cambio no perdimos ni un pedido. Ahora cambio precios y reviso el stock yo mismo, sin esperar a un desarrollador. Escribes por LINE y casi siempre responde el mismo día. Sigo estando tranquilo con eso.",
+      "t2Author": "Sr. Weng",
+      "t2Role": "Responsable de plataforma e-commerce",
+      "t3Text": "Nuestro sistema de inventario llevaba más de diez años y todos decían 'si funciona, no lo toques'. David entrevistó a cada departamento antes de planificar. Tres meses después del lanzamiento, el recuento pasó de dos días a medio día y los informes ya no se reescriben a mano. Lo mejor: nunca nos pidió adaptarnos al sistema, fue el sistema el que se adaptó a nosotros.",
+      "t3Author": "Sra. Kuo",
+      "t3Role": "Gerente administrativa, manufactura",
+      "t1Case": "Caso real · Sistema de turnos para iglesia",
+      "t2Case": "Caso real · Tienda online",
+      "t3Case": "Caso real · Sistema ERP"
     },
     "process": {
       "communication": "Análisis de requerimientos de negocio",

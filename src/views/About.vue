@@ -164,16 +164,30 @@
             :key="testimonial.id"
           >
             <div class="glass-card testimonial-card h-100 border-beam spotlight-card crd-hard" v-spotlight>
-              <div class="testimonial-quote">
-                <i class="bi bi-quote"></i>
+              <div class="testimonial-top">
+                <div class="testimonial-quote">
+                  <i class="bi bi-quote"></i>
+                </div>
+                <span class="testimonial-icon-chip">
+                  <i :class="testimonial.icon"></i>
+                </span>
               </div>
               <p class="testimonial-text">{{ testimonial.text }}</p>
               <div class="testimonial-footer">
+                <div class="testimonial-avatar">{{ testimonial.author.charAt(0) }}</div>
                 <div class="testimonial-info">
                   <h4 class="testimonial-author">{{ testimonial.author }}</h4>
                   <span class="testimonial-role">{{ testimonial.role }}</span>
                 </div>
               </div>
+              <a
+                :href="testimonial.caseUrl"
+                target="_blank"
+                rel="noopener"
+                class="testimonial-case"
+              >
+                <i class="bi bi-box-arrow-up-right"></i>{{ testimonial.caseLabel }}
+              </a>
             </div>
           </div>
         </div>
@@ -281,21 +295,30 @@ const workProcess = computed(() => [
 const testimonials = computed(() => [
   {
     id: 1,
+    icon: "bi bi-calendar2-check",
     text: t("about.testimonials.t1Text"),
     author: t("about.testimonials.t1Author"),
     role: t("about.testimonials.t1Role"),
+    caseLabel: t("about.testimonials.t1Case"),
+    caseUrl: "https://church-serve.pages.dev/",
   },
   {
     id: 2,
+    icon: "bi bi-bag-check",
     text: t("about.testimonials.t2Text"),
     author: t("about.testimonials.t2Author"),
     role: t("about.testimonials.t2Role"),
+    caseLabel: t("about.testimonials.t2Case"),
+    caseUrl: "https://www.clay.com.tw/",
   },
   {
     id: 3,
+    icon: "bi bi-clipboard-data",
     text: t("about.testimonials.t3Text"),
     author: t("about.testimonials.t3Author"),
     role: t("about.testimonials.t3Role"),
+    caseLabel: t("about.testimonials.t3Case"),
+    caseUrl: "https://general-erp.pages.dev/",
   },
 ]);
 </script>
@@ -506,10 +529,33 @@ const testimonials = computed(() => [
   padding: 2.5rem 2rem;
   position: relative;
   transition: var(--transition-base);
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonial-card:hover {
   transform: translateY(-5px);
+}
+
+.testimonial-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-icon-chip {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(200, 155, 109, 0.12);
+  border: 1px solid rgba(200, 155, 109, 0.4);
+  color: var(--primary-light);
+  font-size: 1.2rem;
+  flex-shrink: 0;
 }
 
 .testimonial-quote {
@@ -529,7 +575,31 @@ const testimonials = computed(() => [
 }
 
 .testimonial-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
   margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.testimonial-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(139, 94, 60, 0.3);
+}
+
+.testimonial-info {
+  min-width: 0;
 }
 
 .testimonial-author {
@@ -541,5 +611,28 @@ const testimonials = computed(() => [
 .testimonial-role {
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+
+.testimonial-case {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 1.1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-light);
+  text-decoration: none;
+  opacity: 0.85;
+  transition: var(--transition-base);
+}
+
+.testimonial-case i {
+  font-size: 0.7rem;
+}
+
+.testimonial-case:hover {
+  opacity: 1;
+  color: var(--primary-color);
+  transform: translateX(2px);
 }
 </style>

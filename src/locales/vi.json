@@ -182,15 +182,18 @@
     "testimonialsTitle": "Phản Hồi",
     "testimonialsTitleHighlight": " Khách Hàng",
     "testimonials": {
-      "t1Text": "David giao tiếp rất rõ ràng, toàn bộ quá trình phát triển đều minh bạch, tôi hoàn toàn không phải lo lắng về tiến độ.",
-      "t1Author": "Anh Lâm",
-      "t1Role": "Nền tảng thương mại điện tử · Giám đốc",
-      "t2Text": "Phản hồi sau khi ra mắt rất tích cực. Kỹ năng chuyên môn của David rất vững, xử lý vấn đề cũng vô cùng nhanh chóng.",
-      "t2Author": "Chị Trương",
-      "t2Role": "Website thương hiệu · Nhà sáng lập",
-      "t3Text": "Từ khâu làm rõ yêu cầu đến khi ra mắt, trải nghiệm vô cùng chuyên nghiệp và trôi chảy. Tôi sẵn sàng giới thiệu cho bất kỳ ai cần làm website.",
-      "t3Author": "Anh Trần",
-      "t3Role": "Tích hợp hệ thống · Quản lý dự án"
+      "t1Text": "Bảng phục vụ hàng tháng trước đây tôi phải làm bằng Excel đến nửa đêm, rồi gọi điện xác nhận từng người. Hệ thống của David giờ tự xếp lịch và gửi thông báo qua Line, đổi ca chỉ cần chạm một cái trên điện thoại. Anh ấy sẵn sàng nghe chúng tôi trình bày nhu cầu nhiều lần cũng không ngại — là kỹ sư biết đặt mình vào vị trí người dùng.",
+      "t1Author": "Anh Ngô",
+      "t1Role": "Cán bộ hành chính nhà thờ",
+      "t2Text": "Điều đáng sợ nhất khi làm lại website là doanh nghiệp bị gián đoạn. David đi qua toàn bộ quy trình của chúng tôi trước khi viết dòng code nào — tuần chuyển đổi không sót một đơn hàng nào. Giờ tôi tự sửa giá, tự xem tồn kho, không phải chờ lập trình viên. Nhắn Line hỏi thì thường trong ngày có câu trả lời, điều đó vẫn khiến tôi yên tâm.",
+      "t2Author": "Anh Ông",
+      "t2Role": "Chủ nền tảng thương mại điện tử",
+      "t3Text": "Hệ thống quản lý của công ty dùng hơn mười năm rồi, ai cũng nói 'còn chạy thì đừng đụng vào'. David chịu khó hỏi nhu cầu từng phòng ban rồi mới bắt đầu. Ba tháng sau khi ra mắt, kiểm kê từ hai ngày còn nửa ngày, báo cáo cũng không phải gõ lại tay. Điều quý nhất: anh không bắt chúng tôi chiều theo hệ thống, mà là hệ thống chiều theo chúng tôi.",
+      "t3Author": "Chị Quách",
+      "t3Role": "Quản lý hành chính, sản xuất",
+      "t1Case": "Dự án · Hệ thống xếp lịch nhà thờ",
+      "t2Case": "Dự án · Website thương mại điện tử",
+      "t3Case": "Dự án · Hệ thống ERP"
     },
     "process": {
       "communication": "Phân Tích Yêu Cầu Nghiệp Vụ",

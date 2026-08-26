@@ -182,15 +182,18 @@
     "testimonialsTitle": "Retours",
     "testimonialsTitleHighlight": " clients",
     "testimonials": {
-      "t1Text": "La communication de David est très claire, tout le processus de développement est transparent et je n'ai jamais eu à m'inquiéter de l'avancement.",
-      "t1Author": "M. Lin",
-      "t1Role": "Plateforme e-commerce · Directeur général",
-      "t2Text": "Les retours depuis la mise en ligne sont excellents. David possède de solides compétences techniques et traite les problèmes avec une grande réactivité.",
-      "t2Author": "Mme Chang",
-      "t2Role": "Site de marque · Fondatrice",
-      "t3Text": "Du cadrage des besoins à la mise en ligne, l'expérience a été professionnelle et fluide. Je recommande vivement à toute personne ayant besoin d'un site web.",
-      "t3Author": "M. Chen",
-      "t3Role": "Intégration système · Chef de projet"
+      "t1Text": "Le planning mensuel, c'était moi qui le faisais sur Excel jusqu'à minuit, puis j'appelais tout le monde pour confirmer. Le système de David génère maintenant les rotations automatiquement et envoie des notifications LINE ; échanger un tour se fait en un clic sur le téléphone. Il a écouté nos besoins encore et encore sans se lasser : un ingénieur qui pense du côté des utilisateurs.",
+      "t1Author": "M. Wu",
+      "t1Role": "Coordinateur administratif d'église",
+      "t2Text": "Ce qui fait le plus peur lors d'une refonte, c'est d'interrompre les ventes. David a passé en revue tout notre fonctionnement avant d'écrire la moindre ligne : la semaine de bascule, pas une seule commande perdue. Aujourd'hui, je modifie les prix et vérifie les stocks moi-même, sans attendre un développeur. Un message sur LINE et la réponse arrive généralement le jour même.",
+      "t2Author": "M. Weng",
+      "t2Role": "Responsable de plateforme e-commerce",
+      "t3Text": "Notre système de gestion tournait depuis plus de dix ans et tout le monde disait « ça marche, n'y touchez pas ». David a interrogé chaque service avant de commencer. Trois mois après la mise en ligne, l'inventaire est passé de deux jours à une demi-journée, et les rapports ne sont plus retapés à la main. Le plus rare : il ne nous a pas demandé de nous plier au système, c'est le système qui s'est plié à nous.",
+      "t3Author": "Mme Kuo",
+      "t3Role": "Responsable administrative, industrie",
+      "t1Case": "Référence · Système de planning d'église",
+      "t2Case": "Référence · Boutique en ligne",
+      "t3Case": "Référence · Système ERP"
     },
     "process": {
       "communication": "Analyse des besoins métier",

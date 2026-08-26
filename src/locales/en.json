@@ -182,15 +182,18 @@
     "testimonialsTitle": "Client",
     "testimonialsTitleHighlight": " Feedback",
     "testimonials": {
-      "t1Text": "David's communication is very clear, the entire development process is transparent, and I didn't have to worry about progress at all.",
-      "t1Author": "Mr. Lin",
-      "t1Role": "E-commerce Platform · GM",
-      "t2Text": "The response after launch has been great. David's technical skills are solid and he handles issues very quickly.",
-      "t2Author": "Ms. Chang",
-      "t2Role": "Brand Website · Founder",
-      "t3Text": "From requirements to launch, the experience was professional and smooth. Would highly recommend to anyone needing a website.",
-      "t3Author": "Mr. Chen",
-      "t3Role": "System Integration · Project Manager"
+      "t1Text": "The monthly serving rota used to be me in Excel until midnight, then calling everyone one by one to confirm. David's system now assigns shifts automatically and sends LINE reminders — swapping a shift takes one tap on your phone. He listened to our needs over and over without getting tired of it. An engineer who thinks from the user's side.",
+      "t1Author": "Mr. Wu",
+      "t1Role": "Church Admin Coordinator",
+      "t2Text": "The scariest part of a replatform is the online business going down. David walked through our entire workflow before writing a single line of code — we didn't lose one order during the switchover week. I now update prices and check stock myself, no more waiting on a developer. Message him on LINE and you usually hear back the same day. That still puts my mind at ease.",
+      "t2Author": "Mr. Weng",
+      "t2Role": "E-commerce Platform Owner",
+      "t3Text": "Our inventory system ran for over a decade and everyone said 'if it works, don't touch it.' David was willing to interview every department before starting. Three months after launch, stocktaking went from two days to half a day, and reports no longer get retyped by hand. The rarest part: he never asked us to bend to the system — the system bent to us.",
+      "t3Author": "Ms. Kuo",
+      "t3Role": "Operations Manager, Manufacturing",
+      "t1Case": "Case Study · Church Scheduling System",
+      "t2Case": "Case Study · E-commerce Storefront",
+      "t3Case": "Case Study · ERP System"
     },
     "process": {
       "communication": "Business Requirement Analysis",
