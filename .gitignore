@@ -34,3 +34,8 @@ coverage/
 
 # Build
 *.tgz
+
+# Opencode / Browser screenshots & temp design artifacts
+.openchamber/
+og-cropped.png
+og-design.html

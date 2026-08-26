@@ -182,25 +182,7 @@ const { localePath } = useLocale();
   border-color: var(--primary-color);
 }
 
-/* Mobile Theme Switcher */
-.mobile-theme-switcher {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 1.75rem;
-  margin-top: 0.25rem;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.4s ease-out;
-}
 
-.mobile-theme-switcher.slide-in {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.theme-options {
-  display: flex;
-  justify-content: center;
-}
 
 /* Vue Transitions */
 .fade-enter-active,

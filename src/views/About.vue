@@ -301,75 +301,6 @@ const testimonials = computed(() => [
 </script>
 
 <style scoped>
-/* About page specific styles start here */
-.about-image {
-  position: relative;
-  z-index: 1;
-}
-
-.about-image::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  right: -20px;
-  bottom: -20px;
-  left: 20px;
-  background: var(--primary-gradient);
-  border-radius: 40px;
-  opacity: 0.1;
-  z-index: -1;
-}
-
-.about-image img {
-  border-radius: 40px;
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  box-shadow: var(--shadow-xl);
-  border: 4px solid var(--bg-secondary);
-}
-
-.experience-badge {
-  position: absolute;
-  bottom: -15px;
-  right: -15px;
-  background: var(--bg-secondary);
-  padding: 1.5rem 2rem;
-  border-radius: 20px;
-  text-align: center;
-  box-shadow: var(--shadow-xl);
-  border: 1px solid var(--border-color);
-  z-index: 2;
-}
-
-[data-theme='dark'] .experience-badge {
-  background: var(--bg-accent);
-}
-
-.experience-badge .years {
-  display: block;
-  font-size: 2.5rem;
-  font-weight: 800;
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  line-height: 1;
-}
-
-.experience-badge .text {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-top: 0.25rem;
-}
-
 .about-content {
   padding-left: 2rem;
 }
@@ -564,23 +495,9 @@ const testimonials = computed(() => [
     grid-template-columns: 1fr;
   }
 
-  .about-image img {
-    width: 100%;
-  }
-
   .about-content {
     padding-left: 0;
     margin-top: 2rem;
-  }
-
-  .experience-badge {
-    right: 10px;
-    bottom: -10px;
-    padding: 15px 20px;
-  }
-
-  .experience-badge .years {
-    font-size: 2rem;
   }
 }
 
