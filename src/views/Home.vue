@@ -241,7 +241,7 @@ const updateDrift = () => {
     arkDrift.value.style.transform = `translate(${14 - p * 44}%, ${-p * 15}%)`;
   }
   if (waterRise.value) {
-    waterRise.value.style.transform = `translateY(${(1 - p) * 72 - p * 20}%)`;
+    waterRise.value.style.transform = `translateY(${50 - p * 70}%)`;
   }
 };
 
@@ -366,7 +366,7 @@ const testimonials = computed(() =>
   left: -4%;
   right: -4%;
   bottom: -30px;
-  transform: translateY(72%);
+  transform: translateY(50%);
   will-change: transform;
 }
 
