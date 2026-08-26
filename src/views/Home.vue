@@ -17,9 +17,9 @@
         </div>
       </div>
       <div class="meteor-area">
-        <span class="meteor" style="--mtd: 0s; --mtdu: 6s; --mty: 8%; --mtx: 92%;"></span>
-        <span class="meteor" style="--mtd: 3.5s; --mtdu: 7s; --mty: 20%; --mtx: 97%;"></span>
-        <span class="meteor" style="--mtd: 7s; --mtdu: 6.4s; --mty: 32%; --mtx: 86%;"></span>
+        <span class="meteor" style="--mtd: 0s; --mtdu: 11s; --mty: 8%; --mtx: 92%;"></span>
+        <span class="meteor" style="--mtd: 6s; --mtdu: 12.5s; --mty: 20%; --mtx: 97%;"></span>
+        <span class="meteor" style="--mtd: 12s; --mtdu: 11.5s; --mty: 32%; --mtx: 86%;"></span>
       </div>
 
       <div class="container hero-centered">
