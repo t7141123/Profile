@@ -173,7 +173,7 @@
               </ul>
               <a
                 href="https://line.me/ti/p/2w7bwfksdF"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 class="btn btn-line w-100"
                 v-ripple
               >
@@ -259,7 +259,7 @@
           <p class="cta-description">{{ $t("services.ctaDescription") }}</p>
           <a
             href="https://line.me/ti/p/2w7bwfksdF"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             class="btn btn-rainbow btn-lg"
             v-ripple
           >

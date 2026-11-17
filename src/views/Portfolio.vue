@@ -81,7 +81,7 @@
                 </p>
                 <a
                   href="https://line.me/ti/p/2w7bwfksdF"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   class="btn btn-line btn-lg"
                   v-ripple
                 >

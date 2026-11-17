@@ -6,7 +6,7 @@
         <a
           v-if="project.url"
           :href="project.url"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
           class="btn btn-primary-custom"
           v-ripple
         >
