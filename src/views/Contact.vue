@@ -12,14 +12,14 @@
       <!-- CTA Buttons Slot -->
       <div class="header-cta d-flex flex-column flex-sm-row justify-content-center gap-3 mt-4">
         <a
-          href="https://line.me/ti/p/2w7bwfksdF"
-          target="_blank"
+          :href="contact.line"
+          target="_blank" rel="noopener noreferrer"
           class="btn btn-line"
           v-ripple
         >
           <i class="bi bi-line me-2"></i>{{ $t("home.addLine") }}
         </a>
-        <a :href="'mailto:' + $t('contact.emailValue')" class="btn btn-rainbow" v-ripple>
+        <a :href="'mailto:' + contact.email" class="btn btn-rainbow" v-ripple>
           <i class="bi bi-envelope-fill me-2"></i>{{ $t("contact.emailLink") }}
         </a>
       </div>
@@ -55,8 +55,8 @@
                         {{ $t("contact.lineLabel") }}
                       </div>
                       <a
-                        href="https://line.me/ti/p/2w7bwfksdF"
-                        target="_blank"
+                        :href="contact.line"
+                        target="_blank" rel="noopener noreferrer"
                         class="contact-value fs-6 fw-bold text-decoration-none"
                         style="color: var(--line-color)"
                       >
@@ -80,8 +80,8 @@
                         {{ $t("contact.telegramLabel") }}
                       </div>
                       <a
-                        href="https://t.me/davidliu71411"
-                        target="_blank"
+                        :href="contact.telegram"
+                        target="_blank" rel="noopener noreferrer"
                         class="contact-value fs-6 fw-bold text-decoration-none hover-highlight"
                       >
                         {{ $t("contact.telegramValue") }}
@@ -104,11 +104,9 @@
                         {{ $t("contact.emailLabel") }}
                       </div>
                       <a
-                        href="mailto:david.liu@action-lead.com"
+                        :href="'mailto:' + contact.email"
                         class="contact-value fs-6 fw-bold text-decoration-none hover-highlight"
-                      >
-                        david.liu@action-lead.com
-                      </a>
+                      >{{ contact.email }}</a>
                     </div>
                   </div>
                 </div>
@@ -162,6 +160,7 @@
 </template>
 
 <script setup>
+import { contact } from "@/config/contact";
 import { ref } from "vue";
 import PageHeader from "@/components/common/PageHeader.vue";
 

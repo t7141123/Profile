@@ -39,3 +39,6 @@ coverage/
 .openchamber/
 og-cropped.png
 og-design.html
+
+test-results/
+.agent/

@@ -12,26 +12,26 @@
       <!-- Social Links -->
       <div class="social-links mb-3 d-flex justify-content-center gap-3">
         <a
-          href="https://line.me/ti/p/2w7bwfksdF"
-          target="_blank"
+          :href="contact.line"
+          target="_blank" rel="noopener noreferrer"
           class="social-link line-hover"
           aria-label="Line"
         >
           <i class="bi bi-line"></i>
         </a>
-        <a href="https://t.me/davidliu71411" target="_blank" class="social-link" aria-label="Telegram">
+        <a :href="contact.telegram" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Telegram">
           <i class="bi bi-telegram"></i>
         </a>
         <a
-          href="https://github.com/t7141123"
-          target="_blank"
+          :href="contact.github"
+          target="_blank" rel="noopener noreferrer"
           class="social-link"
           aria-label="GitHub"
         >
           <i class="bi bi-github"></i>
         </a>
         <a
-          href="mailto:david.liu@action-lead.com"
+          :href="'mailto:' + contact.email"
           class="social-link"
           aria-label="Email"
         >
@@ -50,6 +50,7 @@
 </template>
 
 <script setup>
+import { contact } from "@/config/contact";
 const currentYear = new Date().getFullYear();
 </script>
 
