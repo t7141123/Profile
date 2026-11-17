@@ -210,7 +210,6 @@ const filteredProjects = computed(() => {
   }
 }
 
-<style scoped>
 /* Portfolio-specific page description styling */
 /* Portfolio Tech Tags - Handled by PortfolioCard */
 
