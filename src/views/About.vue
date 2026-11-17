@@ -64,7 +64,7 @@
 
               <a
                 href="https://line.me/ti/p/2w7bwfksdF"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 class="btn btn-line mt-4"
                 v-ripple
               >
@@ -193,7 +193,7 @@ import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import SectionHeader from "@/components/common/SectionHeader.vue";
 import PageHeader from "@/components/common/PageHeader.vue";
-import profileImg from "@/assets/images/profile-new.jpg";
+import profileImg from "@/assets/images/profile-new.webp";
 
 const { t } = useI18n();
 
