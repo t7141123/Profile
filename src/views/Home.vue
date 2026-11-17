@@ -41,7 +41,7 @@
             </router-link>
             <a
               href="https://line.me/ti/p/2w7bwfksdF"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               class="btn btn-primary-custom"
               v-ripple
               v-magnetic
@@ -75,7 +75,7 @@
           <div class="row g-0">
             <div
               class="col-6 col-lg-3 stat-cell"
-              v-for="(s, i) in stats"
+              v-for="s in stats"
               :key="s.id"
             >
               <div class="stat-value" v-count="{ value: s.value, suffix: s.suffix }"></div>
@@ -206,7 +206,7 @@
           </p>
           <a
             href="https://line.me/ti/p/2w7bwfksdF"
-            target="_blank"
+            target="_blank" rel="noopener noreferrer"
             class="btn btn-rainbow btn-lg"
             v-ripple
             v-magnetic

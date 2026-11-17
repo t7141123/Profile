@@ -7,7 +7,6 @@ const scramble = {
     const start = () => {
       clearInterval(timer);
       let i = 0;
-      const max = binding.value?.iterations ?? 10;
       timer = setInterval(() => {
         el.textContent = original
           .split("")
@@ -272,7 +271,7 @@ const nodesSignature = (nodes) =>
     )
     .join("|");
 
-const LATIN_RUN = /^[0-9A-Za-z.%+±~×\-]+$/;
+const LATIN_RUN = /^[0-9A-Za-z.%+±~×-]+$/;
 const CJK_CHAR = /[\u4e00-\u9fff\u3000-\u303f\uff00-\uffef\u3040-\u30ff\uac00-\ud7af]/;
 
 const renderReveal = (el) => {
@@ -295,7 +294,7 @@ const renderReveal = (el) => {
     const parts = [];
     const units = [];
     text.split(/\s+/).filter(Boolean).forEach((word) => {
-      (word.match(/[0-9A-Za-z.%+±~×\-]+|[\s\S]/gu) || []).forEach((u) =>
+      (word.match(/[0-9A-Za-z.%+±~×-]+|[\s\S]/gu) || []).forEach((u) =>
         units.push(u)
       );
     });

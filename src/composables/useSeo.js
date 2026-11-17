@@ -193,7 +193,7 @@ export function useSeo() {
             mainEntity: faqs
           })
         }
-      } catch {}
+      } catch { /* ignore malformed JSON-LD */ }
     } else {
       const el = document.getElementById('jsonld-faq')
       if (el) el.remove()
