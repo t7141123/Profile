@@ -14,7 +14,7 @@ const ROUTE_META = {
   Portfolio: { titleKey: 'meta.titlePortfolio', descKey: 'meta.descPortfolio', pageType: 'CollectionPage' },
   Services: { titleKey: 'meta.titleServices', descKey: 'meta.descServices', pageType: 'WebPage' },
   Contact: { titleKey: 'meta.titleContact', descKey: 'meta.descContact', pageType: 'ContactPage' },
-  NotFound: { title: 'Page Not Found | Ark Studio', desc: 'Page not found' }
+  NotFound: { titleKey: 'notFound.title', descKey: 'notFound.message' }
 }
 
 function setMeta(selector, content) {
@@ -81,22 +81,15 @@ export function useSeo() {
     const cfg = ROUTE_META[routeName] || ROUTE_META.Home
     let title, description, keywords
 
-    if (cfg.title) {
-      title = cfg.title
-    } else {
-      title = t(cfg.titleKey || 'meta.title')
-    }
+    title = t(cfg.titleKey || 'meta.title')
+    if (routeName === 'NotFound') title = `${title} | ${SITE_NAME}`
 
-    if (cfg.desc) {
-      description = cfg.desc
-    } else {
-      // try locale key, fallback to meta.description
-      try {
-        const d = t(cfg.descKey)
-        description = d && d !== cfg.descKey ? d : t('meta.description')
-      } catch {
-        description = t('meta.description')
-      }
+    // try locale key, fallback to meta.description
+    try {
+      const d = t(cfg.descKey)
+      description = d && d !== cfg.descKey ? d : t('meta.description')
+    } catch {
+      description = t('meta.description')
     }
 
     try {
