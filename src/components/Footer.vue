@@ -42,7 +42,9 @@
       <!-- Copyright Info -->
       <div class="footer-bottom">
         <p class="mb-0 copyright-text">
-          {{ $t("footer.copyright", { year: currentYear }) }}
+          © 2024-{{ currentYear }}
+          <a href="https://ark-studio.app/" target="_blank" rel="noopener noreferrer" class="copyright-link">Ark Studio 方舟工坊</a>.
+          All rights reserved.
         </p>
       </div>
     </div>
@@ -119,4 +121,6 @@ const currentYear = new Date().getFullYear();
     padding: 2rem 1.25rem 1.25rem;
   }
 }
+.copyright-link { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.copyright-link:hover { opacity: 0.8; }
 </style>
