@@ -61,8 +61,8 @@
       "education": "Système de formation organisationnelle",
       "chordBook": "Chord Book",
       "chordBookDesc": "Outil interactif de recherche d'accords de guitare avec diagrammes de doigtés en temps réel et lecture audio, pour aider les guitaristes à maîtriser rapidement les accords.",
-      "tripRecords": "Trip Records",
-      "tripRecordsDesc": "Outil de suivi des dépenses et de partage des frais en voyage. Notez vos dépenses en déplacement, calculez la part de chacun et simplifiez les comptes entre voyageurs.",
+      "tripRecords": "TripKeeper",
+      "tripRecordsDesc": "Compagnon de voyage pour planifier l’itinéraire, suivre les dépenses et répartir automatiquement les frais, avec planification par IA et édition partagée.",
       "churchServe": "ChurchServe",
       "churchServeDesc": "Outil de planification des services pour les groupes d'église. Créez facilement des plannings de rotation, attribuez les rôles et exportez les tableaux de service pour votre assemblée.",
       "stockFilter": "Stock Filter",
@@ -78,7 +78,9 @@
       "aiLineBotDesc": "Bot Line IA sur mesure qui répond comme un chat intelligent, suit vos dépenses, consigne les notes de groupe, programme des rappels, traduit des langues et bien plus — directement dans Line.",
       "tool": "Site utilitaire",
       "babystep": "BabyStep",
-      "babystepDesc": "Application parentale cycle complet reliant le compte à rebours de grossesse et les suivis prénataux aux routines et à la croissance du nouveau-né."
+      "babystepDesc": "Application parentale cycle complet reliant le compte à rebours de grossesse et les suivis prénataux aux routines et à la croissance du nouveau-né.",
+      "dailyManna": "DailyManna",
+      "dailyMannaDesc": "Application de dévotion quotidienne en cinq minutes : Écriture, méditation et prière, avec parcours, journal et bibliothèque pour garder la trace de chaque moment avec Dieu."
     },
     "businessPreview": {
       "target": "Objectif",
@@ -218,8 +220,8 @@
       "npo": "Association",
       "chordBook": "Chord Book",
       "chordBookDesc": "Outil interactif de recherche d'accords de guitare avec diagrammes de doigtés en temps réel et lecture audio, pour aider les guitaristes à maîtriser rapidement les accords.",
-      "tripRecords": "Trip Records",
-      "tripRecordsDesc": "Outil de suivi des dépenses et de partage des frais en voyage. Notez vos dépenses en déplacement, calculez la part de chacun et simplifiez les comptes entre voyageurs.",
+      "tripRecords": "TripKeeper",
+      "tripRecordsDesc": "Compagnon de voyage pour planifier l’itinéraire, suivre les dépenses et répartir automatiquement les frais, avec planification par IA et édition partagée.",
       "churchServe": "ChurchServe",
       "churchServeDesc": "Outil de planification des services pour les groupes d'église. Créez facilement des plannings de rotation, attribuez les rôles et exportez les tableaux de service pour votre assemblée.",
       "stockFilter": "Stock Filter",
@@ -235,7 +237,9 @@
       "aiLineBotDesc": "Bot Line IA sur mesure qui répond comme un chat intelligent, suit vos dépenses, consigne les notes de groupe, programme des rappels, traduit des langues et bien plus — directement dans Line.",
       "tool": "Site utilitaire",
       "babystep": "BabyStep",
-      "babystepDesc": "Application cycle complet intégrant compte à rebours, suivis, routines post-partum, alimentation et courbes de croissance avec gestion multi-bébé et partage familial."
+      "babystepDesc": "Application cycle complet intégrant compte à rebours, suivis, routines post-partum, alimentation et courbes de croissance avec gestion multi-bébé et partage familial.",
+      "dailyManna": "DailyManna",
+      "dailyMannaDesc": "Application de dévotion quotidienne en cinq minutes : Écriture, méditation et prière, avec parcours, journal et bibliothèque pour garder la trace de chaque moment avec Dieu."
     },
     "ctaTitle": "Envie de concrétiser votre projet ?",
     "ctaDescription": "Discutons de vos besoins et créons ensemble la prochaine réussite.",

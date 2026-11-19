@@ -61,8 +61,8 @@
       "education": "Hệ Thống Đào Tạo Tổ Chức",
       "chordBook": "Chord Book",
       "chordBookDesc": "Công cụ tra cứu hợp âm guitar tương tác với sơ đồ bấm hợp âm trực quan và phát âm thanh theo thời gian thực, giúp người học guitar nhanh chóng nắm vững các thế bấm.",
-      "tripRecords": "Trip Records",
-      "tripRecordsDesc": "Công cụ theo dõi chi phí du lịch và chia sẻ chi phí. Ghi lại chi tiêu mọi lúc, tự động tính phần chia cho từng người, giúp quyết toán chuyến đi trở nên nhẹ nhàng.",
+      "tripRecords": "TripKeeper",
+      "tripRecordsDesc": "Trợ lý du lịch giúp lên lịch trình, ghi chi tiêu và tự động chia tiền, hỗ trợ lập kế hoạch bằng AI và chỉnh sửa chung cho cả nhóm.",
       "churchServe": "ChurchServe",
       "churchServeDesc": "Công cụ lập lịch phục vụ nhóm nhỏ cho nhà thờ. Dễ dàng tạo lịch luân phiên, phân công vai trò và xuất bảng phân công cho hội thánh.",
       "stockFilter": "Stock Filter",
@@ -78,7 +78,9 @@
       "aiLineBotDesc": "AI Line bot tùy chỉnh có thể trả lời như trợ lý AI, ghi chép chi tiêu, lưu ghi chú nhóm, đặt lời nhắc, dịch ngôn ngữ và nhiều hơn nữa — tất cả ngay trong Line.",
       "tool": "Website Công Cụ",
       "babystep": "BabyStep",
-      "babystepDesc": "Ứng dụng nuôi con toàn chu kỳ kết nối liền mạch đếm ngược thai kỳ và hồ sơ khám thai đến sinh hoạt và theo dõi tăng trưởng của trẻ sơ sinh."
+      "babystepDesc": "Ứng dụng nuôi con toàn chu kỳ kết nối liền mạch đếm ngược thai kỳ và hồ sơ khám thai đến sinh hoạt và theo dõi tăng trưởng của trẻ sơ sinh.",
+      "dailyManna": "DailyManna",
+      "dailyMannaDesc": "Ứng dụng suy niệm 5 phút mỗi ngày với Lời Chúa, suy ngẫm và cầu nguyện, kèm dấu chân, nhật ký và thư phòng để ghi lại từng khoảnh khắc đồng hành cùng Chúa."
     },
     "businessPreview": {
       "target": "Mục tiêu",
@@ -218,8 +220,8 @@
       "npo": "Tổ Chức Phi Lợi Nhuận",
       "chordBook": "Chord Book",
       "chordBookDesc": "Công cụ tra cứu hợp âm guitar tương tác với sơ đồ bấm hợp âm trực quan và phát âm thanh theo thời gian thực, giúp người học guitar nhanh chóng nắm vững các thế bấm.",
-      "tripRecords": "Trip Records",
-      "tripRecordsDesc": "Công cụ theo dõi chi phí du lịch và chia sẻ chi phí. Ghi lại chi tiêu mọi lúc, tự động tính phần chia cho từng người, giúp quyết toán chuyến đi trở nên nhẹ nhàng.",
+      "tripRecords": "TripKeeper",
+      "tripRecordsDesc": "Trợ lý du lịch giúp lên lịch trình, ghi chi tiêu và tự động chia tiền, hỗ trợ lập kế hoạch bằng AI và chỉnh sửa chung cho cả nhóm.",
       "churchServe": "ChurchServe",
       "churchServeDesc": "Công cụ lập lịch phục vụ nhóm nhỏ cho nhà thờ. Dễ dàng tạo lịch luân phiên, phân công vai trò và xuất bảng phân công cho hội thánh.",
       "stockFilter": "Stock Filter",
@@ -235,7 +237,9 @@
       "aiLineBotDesc": "AI Line bot tùy chỉnh có thể trả lời như trợ lý AI, ghi chép chi tiêu, lưu ghi chú nhóm, đặt lời nhắc, dịch ngôn ngữ và nhiều hơn nữa — tất cả ngay trong Line.",
       "tool": "Website Công Cụ",
       "babystep": "BabyStep",
-      "babystepDesc": "Ứng dụng toàn chu kỳ tích hợp đếm ngược, khám thai, sinh hoạt sau sinh, cho bú và biểu đồ tăng trưởng, hỗ trợ quản lý đa bé và chia sẻ gia đình."
+      "babystepDesc": "Ứng dụng toàn chu kỳ tích hợp đếm ngược, khám thai, sinh hoạt sau sinh, cho bú và biểu đồ tăng trưởng, hỗ trợ quản lý đa bé và chia sẻ gia đình.",
+      "dailyManna": "DailyManna",
+      "dailyMannaDesc": "Ứng dụng suy niệm 5 phút mỗi ngày với Lời Chúa, suy ngẫm và cầu nguyện, kèm dấu chân, nhật ký và thư phòng để ghi lại từng khoảnh khắc đồng hành cùng Chúa."
     },
     "ctaTitle": "Bạn muốn xây dựng dự án của mình?",
     "ctaDescription": "Hãy cùng trao đổi nhu cầu và tạo nên câu chuyện thành công tiếp theo.",

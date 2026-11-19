@@ -61,8 +61,8 @@
       "education": "Internes Bildungssystem",
       "chordBook": "Chord Book",
       "chordBookDesc": "Interaktives Tool zum Nachschlagen von Gitarrenakkorden mit Griffdiagrammen in Echtzeit und Audiowiedergabe – hilft Lernenden, Akkordgriffe schnell zu beherrschen.",
-      "tripRecords": "Trip Records",
-      "tripRecordsDesc": "Tool zur Reisekostenverwaltung und Kostenaufteilung. Erfassen Sie Ausgaben unterwegs, berechnen Sie den Anteil jeder Person und gestalten Sie die Abrechnung nach der Reise mühelos.",
+      "tripRecords": "TripKeeper",
+      "tripRecordsDesc": "Reisebegleiter für Routenplanung, Ausgabenerfassung und automatische Kostenaufteilung, mit KI-Reiseplanung und gemeinsamer Bearbeitung für Reisegruppen.",
       "churchServe": "ChurchServe",
       "churchServeDesc": "Tool zur Dienstplanung für Kleingruppen in Kirchengemeinden. Erstellen Sie mühelos Rotationspläne, weisen Sie Rollen zu und exportieren Sie Dienstpläne für Ihre Gemeinde.",
       "stockFilter": "Stock Filter",
@@ -78,7 +78,9 @@
       "aiLineBotDesc": "Individueller KI-Line-Bot, der wie ein KI-Chat Fragen beantwortet, Ausgaben erfasst, Gruppennotizen verwaltet, Erinnerungen setzt, Sprachen übersetzt und vieles mehr – direkt in Line.",
       "tool": "Tool-Website",
       "babystep": "BabyStep",
-      "babystepDesc": "All-in-One-Eltern-App, die Schwangerschafts-Countdown und Vorsorge nahtlos mit Neugeborenen-Routinen und Wachstums-Tracking verbindet."
+      "babystepDesc": "All-in-One-Eltern-App, die Schwangerschafts-Countdown und Vorsorge nahtlos mit Neugeborenen-Routinen und Wachstums-Tracking verbindet.",
+      "dailyManna": "DailyManna",
+      "dailyMannaDesc": "Andachts-App für fünf Minuten am Tag mit Bibeltext, Besinnung und Gebet sowie Verlauf, Tagebuch und Bibliothek, um jeden Moment mit Gott festzuhalten."
     },
     "businessPreview": {
       "target": "Ziel",
@@ -218,8 +220,8 @@
       "npo": "NPO",
       "chordBook": "Chord Book",
       "chordBookDesc": "Interaktives Tool zum Nachschlagen von Gitarrenakkorden mit Griffdiagrammen in Echtzeit und Audiowiedergabe – hilft Lernenden, Akkordgriffe schnell zu beherrschen.",
-      "tripRecords": "Trip Records",
-      "tripRecordsDesc": "Tool zur Reisekostenverwaltung und Kostenaufteilung. Erfassen Sie Ausgaben unterwegs, berechnen Sie den Anteil jeder Person und gestalten Sie die Abrechnung nach der Reise mühelos.",
+      "tripRecords": "TripKeeper",
+      "tripRecordsDesc": "Reisebegleiter für Routenplanung, Ausgabenerfassung und automatische Kostenaufteilung, mit KI-Reiseplanung und gemeinsamer Bearbeitung für Reisegruppen.",
       "churchServe": "ChurchServe",
       "churchServeDesc": "Tool zur Dienstplanung für Kleingruppen in Kirchengemeinden. Erstellen Sie mühelos Rotationspläne, weisen Sie Rollen zu und exportieren Sie Dienstpläne für Ihre Gemeinde.",
       "stockFilter": "Stock Filter",
@@ -235,7 +237,9 @@
       "aiLineBotDesc": "Individueller KI-Line-Bot, der wie ein KI-Chat Fragen beantwortet, Ausgaben erfasst, Gruppennotizen verwaltet, Erinnerungen setzt, Sprachen übersetzt und vieles mehr – direkt in Line.",
       "tool": "Tool-Website",
       "babystep": "BabyStep",
-      "babystepDesc": "Vollzyklus-Eltern-App mit Countdown, Vorsorgeterminen, postpartalen Routinen, Füttern und Wachstumskurven sowie Multi-Baby- und Familien-Sharing."
+      "babystepDesc": "Vollzyklus-Eltern-App mit Countdown, Vorsorgeterminen, postpartalen Routinen, Füttern und Wachstumskurven sowie Multi-Baby- und Familien-Sharing.",
+      "dailyManna": "DailyManna",
+      "dailyMannaDesc": "Andachts-App für fünf Minuten am Tag mit Bibeltext, Besinnung und Gebet sowie Verlauf, Tagebuch und Bibliothek, um jeden Moment mit Gott festzuhalten."
     },
     "ctaTitle": "Ihr Projekt umsetzen?",
     "ctaDescription": "Lassen Sie uns über Ihre Anforderungen sprechen und die nächste Erfolgsgeschichte schreiben.",

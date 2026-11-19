@@ -61,8 +61,8 @@
       "education": "Organizational Education System",
       "chordBook": "Chord Book",
       "chordBookDesc": "Interactive guitar chord lookup tool with real-time fingering diagrams and audio playback, helping guitar learners master chord shapes quickly.",
-      "tripRecords": "Trip Records",
-      "tripRecordsDesc": "Travel expense tracking and cost-splitting tool. Record expenses on the go, calculate each person's share, and make trip settlements hassle-free.",
+      "tripRecords": "TripKeeper",
+      "tripRecordsDesc": "All-in-one trip companion for planning itineraries, tracking expenses and splitting costs automatically, with AI trip planning and shared editing for travel groups.",
       "churchServe": "ChurchServe",
       "churchServeDesc": "Small group service scheduling tool for churches. Easily create rotation schedules, assign roles, and export duty rosters for your congregation.",
       "stockFilter": "Stock Filter",
@@ -78,7 +78,9 @@
       "aiLineBotDesc": "Custom AI Line bot that answers questions like an AI chat, tracks expenses, records group notes, sets reminders, translates languages, and more — all inside Line.",
       "tool": "Tool Website",
       "babystep": "BabyStep",
-      "babystepDesc": "A seamless, full-cycle parenting app bridging pregnancy countdown and checkup records to newborn routines and growth tracking."
+      "babystepDesc": "A seamless, full-cycle parenting app bridging pregnancy countdown and checkup records to newborn routines and growth tracking.",
+      "dailyManna": "DailyManna",
+      "dailyMannaDesc": "A five-minute daily devotional app combining Scripture, meditation and prayer, with a journey calendar, journal and library to record every moment walking with God."
     },
     "businessPreview": {
       "target": "Goal",
@@ -218,8 +220,8 @@
       "npo": "NPO",
       "chordBook": "Chord Book",
       "chordBookDesc": "Interactive guitar chord lookup tool with real-time fingering diagrams and audio playback, helping guitar learners master chord shapes quickly.",
-      "tripRecords": "Trip Records",
-      "tripRecordsDesc": "Travel expense tracking and cost-splitting tool. Record expenses on the go, calculate each person's share, and make trip settlements hassle-free.",
+      "tripRecords": "TripKeeper",
+      "tripRecordsDesc": "All-in-one trip companion for planning itineraries, tracking expenses and splitting costs automatically, with AI trip planning and shared editing for travel groups.",
       "churchServe": "ChurchServe",
       "churchServeDesc": "Small group service scheduling tool for churches. Easily create rotation schedules, assign roles, and export duty rosters for your congregation.",
       "stockFilter": "Stock Filter",
@@ -235,7 +237,9 @@
       "aiLineBotDesc": "Custom AI Line bot that answers questions like an AI chat, tracks expenses, records group notes, sets reminders, translates languages, and more — all inside Line.",
       "tool": "Tool Website",
       "babystep": "BabyStep",
-      "babystepDesc": "Full-cycle parenting app integrating pregnancy countdown, prenatal checkups, postpartum routines, feeding and growth tracking with multi-baby and family sharing."
+      "babystepDesc": "Full-cycle parenting app integrating pregnancy countdown, prenatal checkups, postpartum routines, feeding and growth tracking with multi-baby and family sharing.",
+      "dailyManna": "DailyManna",
+      "dailyMannaDesc": "A five-minute daily devotional app combining Scripture, meditation and prayer, with a journey calendar, journal and library to record every moment walking with God."
     },
     "ctaTitle": "Build Your Project?",
     "ctaDescription": "Let's discuss your needs and create the next success story.",

@@ -43,15 +43,15 @@
     "id": 6,
     "key": "chordBook",
     "imageName": "chord-book.webp",
-    "url": "https://chord-book.pages.dev/",
-    "technologies": ["Vue.js", "Vite", "Cloudflare Pages"],
+    "url": "https://chordbook.ark-studio.app/",
+    "technologies": ["React Native", "Expo", "Cloudflare"],
     "categoryKey": "tool"
   },
   {
     "id": 7,
     "key": "tripRecords",
     "imageName": "trip-records.webp",
-    "url": "https://trip-records.pages.dev/",
+    "url": "https://trip.ark-studio.app/",
     "technologies": ["Vue.js", "Vite", "Cloudflare Pages"],
     "categoryKey": "tool"
   },
@@ -106,9 +106,17 @@
   {
     "id": 14,
     "key": "babystep",
-    "imageName": "babystep.svg",
-    "url": "https://babystep.ark-studio.app",
+    "imageName": "babystep.webp",
+    "url": "https://babystep.ark-studio.app/",
     "technologies": ["Next.js", "Supabase", "Cloudflare"],
+    "categoryKey": "tool"
+  },
+  {
+    "id": 15,
+    "key": "dailyManna",
+    "imageName": "daily-manna.webp",
+    "url": "https://daily-manna.ark-studio.app/",
+    "technologies": ["React Native", "Expo", "Cloudflare"],
     "categoryKey": "tool"
   }
 ]

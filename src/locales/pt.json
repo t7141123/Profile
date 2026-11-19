@@ -61,8 +61,8 @@
       "education": "Sistema Educacional Organizacional",
       "chordBook": "Chord Book",
       "chordBookDesc": "Ferramenta interativa de consulta de acordes de violão com diagramas de digitação em tempo real e reprodução de áudio, ajudando estudantes a dominar rapidamente as posições.",
-      "tripRecords": "Trip Records",
-      "tripRecordsDesc": "Ferramenta de controle de despesas e divisão de custos para viagens. Registre gastos em tempo real, calcule a parte de cada pessoa e simplifique o acerto da viagem.",
+      "tripRecords": "TripKeeper",
+      "tripRecordsDesc": "Companheiro de viagem para planejar roteiros, registrar despesas e dividir custos automaticamente, com planejamento por IA e edição compartilhada.",
       "churchServe": "ChurchServe",
       "churchServeDesc": "Ferramenta de escala de serviço para pequenos grupos de igrejas. Crie facilmente escalas rotativas, atribua funções e exporte planilhas de plantão para sua congregação.",
       "stockFilter": "Stock Filter",
@@ -78,7 +78,9 @@
       "aiLineBotDesc": "Bot personalizado de IA para Line que responde perguntas como um chat inteligente, registra despesas, anota recados em grupo, configura lembretes, traduz idiomas e muito mais — tudo dentro do Line.",
       "tool": "Site de ferramentas",
       "babystep": "BabyStep",
-      "babystepDesc": "App parental de ciclo completo que conecta a contagem regressiva da gestação e os exames pré-natais às rotinas e ao crescimento do recém-nascido."
+      "babystepDesc": "App parental de ciclo completo que conecta a contagem regressiva da gestação e os exames pré-natais às rotinas e ao crescimento do recém-nascido.",
+      "dailyManna": "DailyManna",
+      "dailyMannaDesc": "App devocional de cinco minutos por dia com Escritura, meditação e oração, além de trajetória, diário e biblioteca para registrar cada momento com Deus."
     },
     "businessPreview": {
       "target": "Objetivo",
@@ -218,8 +220,8 @@
       "npo": "ONG",
       "chordBook": "Chord Book",
       "chordBookDesc": "Ferramenta interativa de consulta de acordes de violão com diagramas de digitação em tempo real e reprodução de áudio, ajudando estudantes a dominar rapidamente as posições.",
-      "tripRecords": "Trip Records",
-      "tripRecordsDesc": "Ferramenta de controle de despesas e divisão de custos para viagens. Registre gastos em tempo real, calcule a parte de cada pessoa e simplifique o acerto da viagem.",
+      "tripRecords": "TripKeeper",
+      "tripRecordsDesc": "Companheiro de viagem para planejar roteiros, registrar despesas e dividir custos automaticamente, com planejamento por IA e edição compartilhada.",
       "churchServe": "ChurchServe",
       "churchServeDesc": "Ferramenta de escala de serviço para pequenos grupos de igrejas. Crie facilmente escalas rotativas, atribua funções e exporte planilhas de plantão para sua congregação.",
       "stockFilter": "Stock Filter",
@@ -235,7 +237,9 @@
       "aiLineBotDesc": "Bot personalizado de IA para Line que responde perguntas como um chat inteligente, registra despesas, anota recados em grupo, configura lembretes, traduz idiomas e muito mais — tudo dentro do Line.",
       "tool": "Site de ferramentas",
       "babystep": "BabyStep",
-      "babystepDesc": "App de ciclo completo integrando contagem, exames, rotinas pós-parto, alimentação e curvas de crescimento com suporte multi-bebê e compartilhamento familiar."
+      "babystepDesc": "App de ciclo completo integrando contagem, exames, rotinas pós-parto, alimentação e curvas de crescimento com suporte multi-bebê e compartilhamento familiar.",
+      "dailyManna": "DailyManna",
+      "dailyMannaDesc": "App devocional de cinco minutos por dia com Escritura, meditação e oração, além de trajetória, diário e biblioteca para registrar cada momento com Deus."
     },
     "ctaTitle": "Vamos tirar seu projeto do papel?",
     "ctaDescription": "Vamos conversar sobre suas necessidades e criar o próximo case de sucesso.",

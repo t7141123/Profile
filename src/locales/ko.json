@@ -61,8 +61,8 @@
       "education": "조직 교육 시스템",
       "chordBook": "Chord Book",
       "chordBookDesc": "실시간 운지법 다이어그램과 오디오 재생 기능을 제공하는 인터랙티브 기타 코드 검색 도구로, 기타 학습자가 코드 폼을 빠르게 익힐 수 있도록 도와드립니다.",
-      "tripRecords": "Trip Records",
-      "tripRecordsDesc": "여행 경비 기록 및 정산 도구. 이동 중에도 경비를 기록하고 인원별 분담액을 자동 계산하여 여행 정산을 간편하게 처리할 수 있습니다.",
+      "tripRecords": "TripKeeper",
+      "tripRecordsDesc": "여행 일정 계획, 경비 기록, 자동 정산을 한 번에 해결하는 여행 앱. AI 일정 추천과 여럿이 함께 편집하는 기능을 지원합니다.",
       "churchServe": "ChurchServe",
       "churchServeDesc": "교회를 위한 소그룹 봉사 스케줄링 도구. 순환 근무 일정을 손쉽게 만들고 역할을 배정하며 봉사 명단을 내보낼 수 있습니다.",
       "stockFilter": "Stock Filter",
@@ -78,7 +78,9 @@
       "aiLineBotDesc": "AI 챗처럼 질문에 답변하고, 가계부를 기록하며, 그룹 노트를 작성하고, 리마인더를 설정하고, 언어를 번역하는 등 다양한 기능을 Line 안에서 제공하는 맞춤형 AI Line 봇입니다.",
       "tool": "툴 웹사이트",
       "babystep": "BabyStep",
-      "babystepDesc": "임신 카운트다운과 검진 기록부터 신생아 생활 리듬과 성장 추적까지 매끄럽게 연결하는 풀 사이클 육아 앱."
+      "babystepDesc": "임신 카운트다운과 검진 기록부터 신생아 생활 리듬과 성장 추적까지 매끄럽게 연결하는 풀 사이클 육아 앱.",
+      "dailyManna": "DailyManna",
+      "dailyMannaDesc": "말씀·묵상·기도를 하루 5분으로. 발자취, 일기, 서재 기능으로 하나님과 동행하는 매일을 기록하는 묵상 앱."
     },
     "businessPreview": {
       "target": "목표",
@@ -218,8 +220,8 @@
       "npo": "비영리 단체",
       "chordBook": "Chord Book",
       "chordBookDesc": "실시간 운지법 다이어그램과 오디오 재생 기능을 제공하는 인터랙티브 기타 코드 검색 도구로, 기타 학습자가 코드 폼을 빠르게 익힐 수 있도록 도와드립니다.",
-      "tripRecords": "Trip Records",
-      "tripRecordsDesc": "여행 경비 기록 및 정산 도구. 이동 중에도 경비를 기록하고 인원별 분담액을 자동 계산하여 여행 정산을 간편하게 처리할 수 있습니다.",
+      "tripRecords": "TripKeeper",
+      "tripRecordsDesc": "여행 일정 계획, 경비 기록, 자동 정산을 한 번에 해결하는 여행 앱. AI 일정 추천과 여럿이 함께 편집하는 기능을 지원합니다.",
       "churchServe": "ChurchServe",
       "churchServeDesc": "교회를 위한 소그룹 봉사 스케줄링 도구. 순환 근무 일정을 손쉽게 만들고 역할을 배정하며 봉사 명단을 내보낼 수 있습니다.",
       "stockFilter": "Stock Filter",
@@ -235,7 +237,9 @@
       "aiLineBotDesc": "AI 챗처럼 질문에 답변하고, 가계부를 기록하며, 그룹 노트를 작성하고, 리마인더를 설정하고, 언어를 번역하는 등 다양한 기능을 Line 안에서 제공하는 맞춤형 AI Line 봇입니다.",
       "tool": "툴 웹사이트",
       "babystep": "BabyStep",
-      "babystepDesc": "임신 카운트다운, 검진 기록, 산후 생활 리듬, 수유와 성장 곡선을 통합 관리하며 다중 아기 및 가족 공유를 지원합니다."
+      "babystepDesc": "임신 카운트다운, 검진 기록, 산후 생활 리듬, 수유와 성장 곡선을 통합 관리하며 다중 아기 및 가족 공유를 지원합니다.",
+      "dailyManna": "DailyManna",
+      "dailyMannaDesc": "말씀·묵상·기도를 하루 5분으로. 발자취, 일기, 서재 기능으로 하나님과 동행하는 매일을 기록하는 묵상 앱."
     },
     "ctaTitle": "프로젝트를 시작해 볼까요?",
     "ctaDescription": "필요하신 내용을 공유해 주시면 다음 성공 사례를 함께 만들어가겠습니다.",

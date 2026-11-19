@@ -61,8 +61,8 @@
       "education": "Sistema educativo organizacional",
       "chordBook": "Chord Book",
       "chordBookDesc": "Herramienta interactiva de consulta de acordes de guitarra con diagramas de digitación en tiempo real y reproducción de audio, que ayuda a estudiantes a dominar rápidamente las posiciones.",
-      "tripRecords": "Trip Records",
-      "tripRecordsDesc": "Herramienta de control de gastos y división de costos para viajes. Registre gastos sobre la marcha, calcule la parte de cada persona y simplifique la liquidación del viaje.",
+      "tripRecords": "TripKeeper",
+      "tripRecordsDesc": "Compañero de viaje para planificar itinerarios, registrar gastos y dividir costos automáticamente, con planificación por IA y edición compartida.",
       "churchServe": "ChurchServe",
       "churchServeDesc": "Herramienta de programación de servicios para grupos pequeños de iglesias. Cree fácilmente calendarios rotativos, asigne roles y exporte planillas de turnos para su congregación.",
       "stockFilter": "Stock Filter",
@@ -78,7 +78,9 @@
       "aiLineBotDesc": "Bot personalizado de IA para Line que responde preguntas como un chat inteligente, registra gastos, toma notas grupales, configura recordatorios, traduce idiomas y mucho más — todo dentro de Line.",
       "tool": "Sitio web de herramientas",
       "babystep": "BabyStep",
-      "babystepDesc": "App de crianza de ciclo completo que conecta la cuenta regresiva del embarazo y los controles prenatales con las rutinas y el crecimiento del recién nacido."
+      "babystepDesc": "App de crianza de ciclo completo que conecta la cuenta regresiva del embarazo y los controles prenatales con las rutinas y el crecimiento del recién nacido.",
+      "dailyManna": "DailyManna",
+      "dailyMannaDesc": "App devocional de cinco minutos diarios con Escritura, meditación y oración, además de recorrido, diario y biblioteca para registrar cada momento con Dios."
     },
     "businessPreview": {
       "target": "Objetivo",
@@ -218,8 +220,8 @@
       "npo": "ONG",
       "chordBook": "Chord Book",
       "chordBookDesc": "Herramienta interactiva de consulta de acordes de guitarra con diagramas de digitación en tiempo real y reproducción de audio, que ayuda a estudiantes a dominar rápidamente las posiciones.",
-      "tripRecords": "Trip Records",
-      "tripRecordsDesc": "Herramienta de control de gastos y división de costos para viajes. Registre gastos sobre la marcha, calcule la parte de cada persona y simplifique la liquidación del viaje.",
+      "tripRecords": "TripKeeper",
+      "tripRecordsDesc": "Compañero de viaje para planificar itinerarios, registrar gastos y dividir costos automáticamente, con planificación por IA y edición compartida.",
       "churchServe": "ChurchServe",
       "churchServeDesc": "Herramienta de programación de servicios para grupos pequeños de iglesias. Cree fácilmente calendarios rotativos, asigne roles y exporte planillas de turnos para su congregación.",
       "stockFilter": "Stock Filter",
@@ -235,7 +237,9 @@
       "aiLineBotDesc": "Bot personalizado de IA para Line que responde preguntas como un chat inteligente, registra gastos, toma notas grupales, configura recordatorios, traduce idiomas y mucho más — todo dentro de Line.",
       "tool": "Sitio web de herramientas",
       "babystep": "BabyStep",
-      "babystepDesc": "App de ciclo completo que integra cuenta regresiva, controles, rutinas posparto, alimentación y curvas de crecimiento con soporte multi-bebé y familiar."
+      "babystepDesc": "App de ciclo completo que integra cuenta regresiva, controles, rutinas posparto, alimentación y curvas de crecimiento con soporte multi-bebé y familiar.",
+      "dailyManna": "DailyManna",
+      "dailyMannaDesc": "App devocional de cinco minutos diarios con Escritura, meditación y oración, además de recorrido, diario y biblioteca para registrar cada momento con Dios."
     },
     "ctaTitle": "¿Quiere desarrollar su proyecto?",
     "ctaDescription": "Conversemos sobre sus necesidades y creemos juntos la próxima historia de éxito.",

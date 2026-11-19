@@ -61,8 +61,8 @@
       "education": "組織教育システム",
       "chordBook": "Chord Book",
       "chordBookDesc": "リアルタイムの運指図と音声再生を備えたインタラクティブなギターコード検索ツール。ギター学習者がコードフォームを素早く習得できます。",
-      "tripRecords": "Trip Records",
-      "tripRecordsDesc": "旅行の家計簿・割り勘ツール。旅先で支出を記録し、精算金額を自動計算。面倒な旅行の精算をスムーズにします。",
+      "tripRecords": "TripKeeper",
+      "tripRecordsDesc": "旅程の計画、費用記録、自動割り勘をまとめて行える旅行アプリ。AI による旅程作成とグループでの共同編集にも対応。",
       "churchServe": "ChurchServe",
       "churchServeDesc": "教会の奉仕スケジュール作成ツール。ローテーションを簡単に作成し、役割を割り当て、担当表を出力できます。",
       "stockFilter": "Stock Filter",
@@ -78,7 +78,9 @@
       "aiLineBotDesc": "AIチャットのように質問に答え、家計簿の記録、グループのメモ管理、リマインダー設定、多言語翻訳まで、すべてLINE内で完結するカスタムAI Botです。",
       "tool": "ツールサイト",
       "babystep": "BabyStep",
-      "babystepDesc": "妊娠カウントダウンと健診記録から産後の新生児の生活リズムと成長記録までをシームレスにつなぐ全周期育児アプリ。"
+      "babystepDesc": "妊娠カウントダウンと健診記録から産後の新生児の生活リズムと成長記録までをシームレスにつなぐ全周期育児アプリ。",
+      "dailyManna": "DailyManna",
+      "dailyMannaDesc": "聖書の言葉・黙想・祈りを毎日 5 分で。足跡、日記、書斎機能で、神とともに歩む日々を記録できる霊的デボーション App。"
     },
     "businessPreview": {
       "target": "目的",
@@ -218,8 +220,8 @@
       "npo": "NPO",
       "chordBook": "Chord Book",
       "chordBookDesc": "リアルタイムの運指図と音声再生を備えたインタラクティブなギターコード検索ツール。ギター学習者がコードフォームを素早く習得できます。",
-      "tripRecords": "Trip Records",
-      "tripRecordsDesc": "旅行の家計簿・割り勘ツール。旅先で支出を記録し、精算金額を自動計算。面倒な旅行の精算をスムーズにします。",
+      "tripRecords": "TripKeeper",
+      "tripRecordsDesc": "旅程の計画、費用記録、自動割り勘をまとめて行える旅行アプリ。AI による旅程作成とグループでの共同編集にも対応。",
       "churchServe": "ChurchServe",
       "churchServeDesc": "教会の奉仕スケジュール作成ツール。ローテーションを簡単に作成し、役割を割り当て、担当表を出力できます。",
       "stockFilter": "Stock Filter",
@@ -235,7 +237,9 @@
       "aiLineBotDesc": "AIチャットのように質問に答え、家計簿の記録、グループのメモ管理、リマインダー設定、多言語翻訳まで、すべてLINE内で完結するカスタムAI Botです。",
       "tool": "ツールサイト",
       "babystep": "BabyStep",
-      "babystepDesc": "妊娠カウントダウン、健診記録、産後の生活リズム・授乳・成長曲線を一元管理。多児・家族共有に対応。"
+      "babystepDesc": "妊娠カウントダウン、健診記録、産後の生活リズム・授乳・成長曲線を一元管理。多児・家族共有に対応。",
+      "dailyManna": "DailyManna",
+      "dailyMannaDesc": "聖書の言葉・黙想・祈りを毎日 5 分で。足跡、日記、書斎機能で、神とともに歩む日々を記録できる霊的デボーション App。"
     },
     "ctaTitle": "あなたのプロジェクトも形にしませんか？",
     "ctaDescription": "ご要望をお聞かせください。次の成功事例を共に創りましょう。",
