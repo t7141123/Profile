@@ -356,7 +356,13 @@
         }
       ],
       "q5": "Was passiert, wenn ich während des Prozesses nicht zufrieden bin?",
-      "a5": "Vor der eigentlichen Entwicklung erhalten Sie Designentwürfe zur Freigabe der Richtung. Auch während der Entwicklung gibt es phasenweise Demos und Abnahmen. Details besprechen wir gerne gemeinsam."
+      "a5": "Vor der eigentlichen Entwicklung erhalten Sie Designentwürfe zur Freigabe der Richtung. Auch während der Entwicklung gibt es phasenweise Demos und Abnahmen. Details besprechen wir gerne gemeinsam.",
+      "q6": "Was ist Ark Studio (方舟工坊)?",
+      "a6": "Ark Studio (方舟工坊) ist ein von David geführtes Studio für Softwaredesign und -entwicklung mit Schwerpunkt auf App-Entwicklung, Individualsoftware, Unternehmenswebsites, E-Commerce und Buchungssystemen. Mit über 9 Jahren Full-Stack-Erfahrung liefert es alles aus einer Hand, von der Planung bis zum Launch.",
+      "q7": "Entwickeln Sie auch mobile Apps?",
+      "a7": "Ja. Wir gestalten und entwickeln mobile Apps und Web-Apps, vom UI-Design über Backend und APIs bis zum Launch. Schildern Sie uns Ihre Idee, wir prüfen kostenlos Machbarkeit und grobes Budget.",
+      "q8": "Wie wähle ich einen Softwareentwicklungs-Dienstleister aus?",
+      "a8": "Achten Sie auf drei Dinge: echte Referenzen zu ähnlichen Projekten, transparente Preise und Zeitpläne sowie Wartung nach dem Launch. Ark Studio zeigt ein Portfolio, liefert vor Projektstart einen Zeitplan und beinhaltet eine kostenlose Wartungsphase."
     },
     "ctaTitle": "Noch Fragen? Fragen Sie einfach",
     "ctaDescription": "Jedes Projekt ist einzigartig. Erzählen Sie mir von Ihrem Vorhaben und ich erstelle einen passenden, maßgeschneiderten Plan für Sie.",
@@ -387,9 +393,17 @@
     "copyright": "© 2024-{year} Ark Studio. Alle Rechte vorbehalten."
   },
   "meta": {
-    "title": "Ark Studio | Maßgeschneiderte Software — Systeme, E-Commerce, Buchung, Websites & Apps | 9+ Jahre Full-Stack",
+    "title": "Ark Studio – Maßgeschneiderte Software — Systeme, E-Commerce, Buchung, Websites & Apps – 9+ Jahre Full-Stack",
     "description": "Maßgeschneiderte Software für Unternehmen und Privatpersonen: Verwaltungssysteme, Buchungsplattformen, Unternehmenswebsites, E-Commerce, Mitglieder- und interne Tools mit LINE-Integration. Über 9 Jahre Full-Stack, End-to-End, kostenlose 30-Min-Beratung.",
-    "keywords": "maßgeschneiderte Softwareentwicklung,Business-Systementwicklung,Verwaltungssystem,Buchungssystem,Unternehmenswebsite,E-Commerce,Mitgliedssystem,interne Tools,LINE Bot,Webentwicklung,Systemintegration,App-Entwicklung,Freelance-Entwickler,Full-Stack,Ark Studio"
+    "keywords": "maßgeschneiderte Softwareentwicklung,Business-Systementwicklung,Verwaltungssystem,Buchungssystem,Unternehmenswebsite,E-Commerce,Mitgliedssystem,interne Tools,LINE Bot,Webentwicklung,Systemintegration,App-Entwicklung,Freelance-Entwickler,Full-Stack,Ark Studio",
+    "titleServices": "Leistungen – Ark Studio – Maßgeschneiderte Software — Systeme, E-Commerce, Buchung, Websites & Apps – 9+ Jahre Full-Stack",
+    "titlePortfolio": "Portfolio – Ark Studio – Maßgeschneiderte Software — Systeme, E-Commerce, Buchung, Websites & Apps – 9+ Jahre Full-Stack",
+    "titleAbout": "Über mich – Ark Studio – Maßgeschneiderte Software — Systeme, E-Commerce, Buchung, Websites & Apps – 9+ Jahre Full-Stack",
+    "titleContact": "Kontakt – Ark Studio – Maßgeschneiderte Software — Systeme, E-Commerce, Buchung, Websites & Apps – 9+ Jahre Full-Stack",
+    "descServices": "Umfassende Softwareentwicklung – von der Idee bis zum Launch",
+    "descPortfolio": "Ich schätze jeden Kunden – jedes Projekt steht für meinen Anspruch an Qualität.",
+    "descAbout": "Technische Expertise und unternehmerisches Denken vereint – für nachhaltige digitale Wettbewerbsvorteile Ihres Unternehmens.",
+    "descContact": "Nur eine Nachricht trennt Ihre Idee von der Umsetzung."
   },
   "notFound": {
     "title": "Seite nicht gefunden",

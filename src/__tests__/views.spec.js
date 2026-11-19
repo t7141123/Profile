@@ -45,7 +45,7 @@ describe('split page views', () => {
     expect(w.findAll('.pillar-row').length).toBe(4)
     expect(w.findAll('.service-detail-card').length).toBe(4)
     expect(w.findAll('.pricing-card').length).toBe(3)
-    expect(w.findAll('.accordion-item').length).toBe(5)
+    expect(w.findAll('.accordion-item').length).toBe(8)
     expect(w.find('.cta-section').exists()).toBe(true)
   })
 })

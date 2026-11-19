@@ -356,7 +356,13 @@
         }
       ],
       "q5": "Que se passe-t-il si je ne suis pas satisfait en cours de projet ?",
-      "a5": "Avant le développement, je vous soumets des maquettes pour valider l'orientation. Des démonstrations et des phases de recette jalonnent ensuite le développement. Nous pouvons affiner ensemble les détails à chaque étape."
+      "a5": "Avant le développement, je vous soumets des maquettes pour valider l'orientation. Des démonstrations et des phases de recette jalonnent ensuite le développement. Nous pouvons affiner ensemble les détails à chaque étape.",
+      "q6": "Qu’est-ce qu’Ark Studio (方舟工坊) ?",
+      "a6": "Ark Studio (方舟工坊) est un studio de conception et de développement logiciel dirigé par David, spécialisé dans le développement d’applications, les logiciels sur mesure, les sites d’entreprise, l’e-commerce et les systèmes de réservation. Fort de plus de 9 ans d’expérience full-stack, il livre de bout en bout, de la planification au lancement.",
+      "q7": "Développez-vous des applications mobiles ?",
+      "a7": "Oui. Nous concevons et développons des applications mobiles et web, du design d’interface au backend et aux API, jusqu’à la mise en ligne. Présentez-nous votre idée et nous évaluerons gratuitement sa faisabilité et un budget approximatif.",
+      "q8": "Comment choisir un prestataire de développement logiciel ?",
+      "a8": "Vérifiez trois points : des références réelles proches de votre projet, des tarifs et délais transparents, et la maintenance après la mise en ligne. Ark Studio présente son portfolio, fournit un planning avant le début du projet et inclut une période de maintenance gratuite."
     },
     "ctaTitle": "Des questions ? N'hésitez pas à me les poser",
     "ctaDescription": "Chaque projet est unique. Parlez-moi du vôtre et je vous proposerai un plan parfaitement adapté.",
@@ -387,9 +393,17 @@
     "copyright": "© 2024-{year} Ark Studio. Tous droits réservés."
   },
   "meta": {
-    "title": "Ark Studio | Logiciel Sur Mesure — Systèmes, E-commerce, Réservation, Sites & Apps | 9+ Ans Full-Stack",
+    "title": "Ark Studio – Logiciel Sur Mesure — Systèmes, E-commerce, Réservation, Sites & Apps – 9+ Ans Full-Stack",
     "description": "Logiciels sur mesure pour entreprises et particuliers : systèmes de gestion, plateformes de réservation, sites vitrines, e-commerce, espaces membres et outils internes avec intégration LINE. Plus de 9 ans full-stack, livraison de bout en bout, consultation gratuite 30 min.",
-    "keywords": "développement logiciel sur mesure,développement système entreprise,système de gestion,système de réservation,site vitrine,e-commerce,système d’adhésion,outils internes,LINE Bot,développement web,intégration système,développement d’apps,développeur freelance,full-stack,Ark Studio"
+    "keywords": "développement logiciel sur mesure,développement système entreprise,système de gestion,système de réservation,site vitrine,e-commerce,système d’adhésion,outils internes,LINE Bot,développement web,intégration système,développement d’apps,développeur freelance,full-stack,Ark Studio",
+    "titleServices": "Services – Ark Studio – Logiciel Sur Mesure — Systèmes, E-commerce, Réservation, Sites & Apps – 9+ Ans Full-Stack",
+    "titlePortfolio": "Portfolio – Ark Studio – Logiciel Sur Mesure — Systèmes, E-commerce, Réservation, Sites & Apps – 9+ Ans Full-Stack",
+    "titleAbout": "À propos – Ark Studio – Logiciel Sur Mesure — Systèmes, E-commerce, Réservation, Sites & Apps – 9+ Ans Full-Stack",
+    "titleContact": "Contact – Ark Studio – Logiciel Sur Mesure — Systèmes, E-commerce, Réservation, Sites & Apps – 9+ Ans Full-Stack",
+    "descServices": "Des services complets de développement logiciel, de la conception à la mise en ligne",
+    "descPortfolio": "J'accorde de l'importance à chaque client ; chaque projet reflète mon exigence de qualité.",
+    "descAbout": "Allier expertise technique et sens des affaires pour bâtir un avantage digital durable pour votre entreprise.",
+    "descContact": "Il ne suffit que d'un message pour donner vie à vos idées."
   },
   "notFound": {
     "title": "Page non trouvée",

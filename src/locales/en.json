@@ -16,9 +16,9 @@
     "contact": "Contact"
   },
   "home": {
-    "title": "Your Digital Transformation Partner",
+    "title": "App Design & Software Development Studio",
     "subtitle": "Turn Your Website into a Powerful Business Engine",
-    "subtitle2": "9+ years of full-stack experience creating scalable, high-conversion digital products.",
+    "subtitle2": "9+ years of full-stack experience in app development, custom software and system integration, building scalable, high-conversion digital products.",
     "learnMore": "Learn More",
     "viewWorks": "Portfolio",
     "addLine": "Contact Me",
@@ -356,7 +356,13 @@
         }
       ],
       "q5": "What if I'm not satisfied during the process?",
-      "a5": "Before formal development, I will provide design drafts for you to confirm the direction. There will also be phased demos and acceptance reviews during the development process. We can discuss the details further."
+      "a5": "Before formal development, I will provide design drafts for you to confirm the direction. There will also be phased demos and acceptance reviews during the development process. We can discuss the details further.",
+      "q6": "What is Ark Studio (方舟工坊)?",
+      "a6": "Ark Studio (方舟工坊) is a software design and development studio run by David, specializing in app development, custom software, corporate websites, e-commerce and booking systems. With 9+ years of full-stack experience, it delivers end to end, from planning to launch.",
+      "q7": "Do you develop mobile apps?",
+      "a7": "Yes. We design and build mobile apps and web apps, from UI design and backend APIs through launch. Tell us your idea and we will evaluate feasibility and a rough budget for free.",
+      "q8": "How do I choose a software development vendor?",
+      "a8": "Look at three things: real case studies similar to your project, transparent pricing and timeline, and maintenance after launch. Ark Studio shares a portfolio, provides a schedule before the project starts, and includes a free maintenance period."
     },
     "ctaTitle": "Still have questions? Just ask",
     "ctaDescription": "Every project is unique. Tell me about yours and I'll tailor the perfect plan.",
@@ -387,9 +393,17 @@
     "copyright": "© 2024-{year} Ark Studio. All rights reserved."
   },
   "meta": {
-    "title": "Ark Studio | Custom Software Development — Business Systems, E-commerce, Booking, Websites & Apps | 9+ Years Full-Stack",
-    "description": "Tailored software for businesses and individuals: custom management systems, booking platforms, corporate websites, e-commerce, membership and internal tools with LINE integration. 9+ years full-stack, end-to-end delivery, free 30-min consultation.",
-    "keywords": "custom software development,business system development,management system,booking system,corporate website,e-commerce,membership system,internal tools,LINE Bot,web development,system integration,app development,freelance developer,full-stack,Taiwan,Ark Studio"
+    "title": "Ark Studio (方舟工坊) – App Design & Custom Software Development Studio",
+    "description": "Ark Studio (方舟工坊) is a Taiwan-based software design and development studio: app development, custom software, corporate websites, e-commerce, booking systems and LINE integration. 9+ years full-stack, end-to-end delivery, free 30-minute consultation.",
+    "keywords": "Ark Studio,方舟工坊,app design,app development,software design,software development,custom software development,software development vendor,software studio,software outsourcing,business system development,web development,e-commerce development,booking system,LINE Bot,Taiwan software company",
+    "titleServices": "Software Development Services – App Design, Custom Systems, Websites – Ark Studio",
+    "titlePortfolio": "Portfolio – App & Software Development Case Studies – Ark Studio",
+    "titleAbout": "About Ark Studio (方舟工坊) – 9+ Years Full-Stack Software Studio",
+    "titleContact": "Contact Ark Studio – Free 30-Minute Software Development Consultation",
+    "descServices": "Ark Studio offers app design and development, custom software, corporate websites, e-commerce and booking systems, member and admin back offices, and LINE integration. One team from requirements and quote to launch and maintenance.",
+    "descPortfolio": "Ark Studio portfolio of app and software projects: corporate websites, e-commerce, organization event systems and nonprofit platforms. See real projects that are live today.",
+    "descAbout": "Ark Studio (方舟工坊) is run by David, with 9+ years of full-stack experience delivering corporate websites, e-commerce and internal management platforms as a dependable software design and development studio.",
+    "descContact": "Planning an app or custom software? Contact Ark Studio via LINE, Telegram or email for a free feasibility and budget review. Replies usually within 24 hours."
   },
   "notFound": {
     "title": "Page Not Found",

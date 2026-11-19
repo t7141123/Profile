@@ -356,7 +356,13 @@
         }
       ],
       "q5": "Nếu chưa hài lòng trong quá trình thực hiện thì sao?",
-      "a5": "Trước khi phát triển chính thức, tôi sẽ cung cấp bản thiết kế để bạn xác nhận phương hướng. Trong quá trình phát triển cũng sẽ có các buổi demo theo giai đoạn và nghiệm thu. Chúng ta có thể trao đổi chi tiết hơn về quy trình này."
+      "a5": "Trước khi phát triển chính thức, tôi sẽ cung cấp bản thiết kế để bạn xác nhận phương hướng. Trong quá trình phát triển cũng sẽ có các buổi demo theo giai đoạn và nghiệm thu. Chúng ta có thể trao đổi chi tiết hơn về quy trình này.",
+      "q6": "Ark Studio (方舟工坊) là gì?",
+      "a6": "Ark Studio (方舟工坊) là studio thiết kế và phát triển phần mềm do David điều hành, chuyên về phát triển ứng dụng, phần mềm theo yêu cầu, website doanh nghiệp, thương mại điện tử và hệ thống đặt lịch. Với hơn 9 năm kinh nghiệm full-stack, studio triển khai trọn gói từ lập kế hoạch đến ra mắt.",
+      "q7": "Bạn có phát triển ứng dụng di động không?",
+      "a7": "Có. Chúng tôi thiết kế và phát triển ứng dụng di động và ứng dụng web, từ thiết kế giao diện, backend và API đến khi ra mắt. Hãy cho chúng tôi biết ý tưởng, chúng tôi sẽ đánh giá miễn phí tính khả thi và ngân sách sơ bộ.",
+      "q8": "Làm sao chọn nhà cung cấp phát triển phần mềm?",
+      "a8": "Hãy xem ba điều: có dự án thực tế tương tự hay không, báo giá và tiến độ có minh bạch không, và có bảo trì sau khi ra mắt không. Ark Studio chia sẻ portfolio, cung cấp lịch trình trước khi bắt đầu và bao gồm thời gian bảo trì miễn phí."
     },
     "ctaTitle": "Vẫn còn thắc mắc? Cứ hỏi ngay",
     "ctaDescription": "Mỗi dự án đều là duy nhất. Hãy cho tôi biết về dự án của bạn, tôi sẽ thiết kế kế hoạch phù hợp nhất.",
@@ -387,9 +393,17 @@
     "copyright": "© 2024-{year} Ark Studio. Bảo lưu mọi quyền."
   },
   "meta": {
-    "title": "Ark Studio | Phần Mềm Theo Yêu Cầu — Hệ Thống, E-commerce, Đặt Lịch, Website & App | 9+ Năm Full-Stack",
+    "title": "Ark Studio – Phần Mềm Theo Yêu Cầu — Hệ Thống, E-commerce, Đặt Lịch, Website & App – 9+ Năm Full-Stack",
     "description": "Phần mềm theo yêu cầu cho doanh nghiệp và cá nhân: hệ thống quản lý, nền tảng đặt lịch, website doanh nghiệp, e-commerce, hệ thống thành viên và công cụ nội bộ tích hợp LINE. Hơn 9 năm full-stack, bàn giao trọn gói, tư vấn miễn phí 30 phút.",
-    "keywords": "phát triển phần mềm theo yêu cầu,phát triển hệ thống doanh nghiệp,hệ thống quản lý,hệ thống đặt lịch,website doanh nghiệp,e-commerce,hệ thống thành viên,công cụ nội bộ,LINE Bot,phát triển web,tích hợp hệ thống,phát triển app,lập trình viên freelance,full-stack,Ark Studio"
+    "keywords": "phát triển phần mềm theo yêu cầu,phát triển hệ thống doanh nghiệp,hệ thống quản lý,hệ thống đặt lịch,website doanh nghiệp,e-commerce,hệ thống thành viên,công cụ nội bộ,LINE Bot,phát triển web,tích hợp hệ thống,phát triển app,lập trình viên freelance,full-stack,Ark Studio",
+    "titleServices": "Dịch vụ – Ark Studio – Phần Mềm Theo Yêu Cầu — Hệ Thống, E-commerce, Đặt Lịch, Website & App – 9+ Năm Full-Stack",
+    "titlePortfolio": "Dự án – Ark Studio – Phần Mềm Theo Yêu Cầu — Hệ Thống, E-commerce, Đặt Lịch, Website & App – 9+ Năm Full-Stack",
+    "titleAbout": "Giới thiệu – Ark Studio – Phần Mềm Theo Yêu Cầu — Hệ Thống, E-commerce, Đặt Lịch, Website & App – 9+ Năm Full-Stack",
+    "titleContact": "Liên hệ – Ark Studio – Phần Mềm Theo Yêu Cầu — Hệ Thống, E-commerce, Đặt Lịch, Website & App – 9+ Năm Full-Stack",
+    "descServices": "Cung cấp dịch vụ phát triển phần mềm toàn diện, từ ý tưởng đến ra mắt",
+    "descPortfolio": "Tôi trân trọng từng khách hàng; mỗi dự án là minh chứng cho sự kiên định về chất lượng của tôi.",
+    "descAbout": "Kết hợp chuyên môn kỹ thuật và tư duy kinh doanh để xây dựng lợi thế số bền vững cho doanh nghiệp của bạn.",
+    "descContact": "Chỉ cách một tin nhắn để biến ý tưởng của bạn thành hiện thực."
   },
   "notFound": {
     "title": "Không tìm thấy trang",

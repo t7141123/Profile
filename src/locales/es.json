@@ -356,7 +356,13 @@
         }
       ],
       "q5": "¿Qué pasa si no estoy satisfecho durante el proceso?",
-      "a5": "Antes del desarrollo formal, le presentaré bocetos de diseño para confirmar la dirección. Durante el desarrollo habrá demostraciones por fases y revisiones de aceptación. Podemos conversar los detalles con mayor profundidad."
+      "a5": "Antes del desarrollo formal, le presentaré bocetos de diseño para confirmar la dirección. Durante el desarrollo habrá demostraciones por fases y revisiones de aceptación. Podemos conversar los detalles con mayor profundidad.",
+      "q6": "¿Qué es Ark Studio (方舟工坊)?",
+      "a6": "Ark Studio (方舟工坊) es un estudio de diseño y desarrollo de software dirigido por David, especializado en desarrollo de apps, software a medida, sitios corporativos, e-commerce y sistemas de reservas. Con más de 9 años de experiencia full-stack, entrega de principio a fin, desde la planificación hasta el lanzamiento.",
+      "q7": "¿Desarrollan apps móviles?",
+      "a7": "Sí. Diseñamos y desarrollamos apps móviles y aplicaciones web, desde el diseño de interfaz y el backend con APIs hasta el lanzamiento. Cuéntenos su idea y evaluaremos gratis la viabilidad y un presupuesto aproximado.",
+      "q8": "¿Cómo elegir un proveedor de desarrollo de software?",
+      "a8": "Fíjese en tres cosas: casos reales similares a su proyecto, precios y plazos transparentes, y mantenimiento tras el lanzamiento. Ark Studio comparte su portafolio, entrega un calendario antes de empezar e incluye un periodo de mantenimiento gratuito."
     },
     "ctaTitle": "¿Aún tiene dudas? Solo pregunte",
     "ctaDescription": "Cada proyecto es único. Cuénteme sobre el suyo y diseñaré el plan perfecto para usted.",
@@ -387,9 +393,17 @@
     "copyright": "© 2024-{year} Ark Studio. Todos los derechos reservados."
   },
   "meta": {
-    "title": "Ark Studio | Desarrollo a Medida — Sistemas, E-commerce, Reservas, Web y Apps | 9+ Años Full-Stack",
+    "title": "Ark Studio – Desarrollo a Medida — Sistemas, E-commerce, Reservas, Web y Apps – 9+ Años Full-Stack",
     "description": "Software a medida para empresas y particulares: sistemas de gestión, plataformas de reservas, webs corporativas, e-commerce, membresías y herramientas internas con integración LINE. Más de 9 años full-stack, entrega integral, consulta gratuita 30 min.",
-    "keywords": "desarrollo de software a medida,desarrollo de sistemas empresariales,sistema de gestión,sistema de reservas,web corporativa,e-commerce,sistema de membresías,herramientas internas,LINE Bot,desarrollo web,integración de sistemas,desarrollo de apps,desarrollador freelance,full-stack,Ark Studio"
+    "keywords": "desarrollo de software a medida,desarrollo de sistemas empresariales,sistema de gestión,sistema de reservas,web corporativa,e-commerce,sistema de membresías,herramientas internas,LINE Bot,desarrollo web,integración de sistemas,desarrollo de apps,desarrollador freelance,full-stack,Ark Studio",
+    "titleServices": "Servicios – Ark Studio – Desarrollo a Medida — Sistemas, E-commerce, Reservas, Web y Apps – 9+ Años Full-Stack",
+    "titlePortfolio": "Portafolio – Ark Studio – Desarrollo a Medida — Sistemas, E-commerce, Reservas, Web y Apps – 9+ Años Full-Stack",
+    "titleAbout": "Sobre mí – Ark Studio – Desarrollo a Medida — Sistemas, E-commerce, Reservas, Web y Apps – 9+ Años Full-Stack",
+    "titleContact": "Contacto – Ark Studio – Desarrollo a Medida — Sistemas, E-commerce, Reservas, Web y Apps – 9+ Años Full-Stack",
+    "descServices": "Servicios integrales de desarrollo de software, desde el concepto hasta el lanzamiento",
+    "descPortfolio": "Valoro a cada cliente; cada proyecto refleja mi compromiso con la calidad.",
+    "descAbout": "Combino experiencia técnica y visión de negocio para construir ventajas digitales sostenibles para su empresa.",
+    "descContact": "Está a solo un mensaje de hacer realidad sus ideas."
   },
   "notFound": {
     "title": "Página no encontrada",

@@ -356,7 +356,13 @@
         }
       ],
       "q5": "E se eu não ficar satisfeito durante o processo?",
-      "a5": "Antes do desenvolvimento formal, apresento protótipos de design para confirmar a direção. Durante o desenvolvimento haverá demonstrações por etapas e revisões para aprovação. Podemos conversar sobre os detalhes com mais profundidade."
+      "a5": "Antes do desenvolvimento formal, apresento protótipos de design para confirmar a direção. Durante o desenvolvimento haverá demonstrações por etapas e revisões para aprovação. Podemos conversar sobre os detalhes com mais profundidade.",
+      "q6": "O que é o Ark Studio (方舟工坊)?",
+      "a6": "O Ark Studio (方舟工坊) é um estúdio de design e desenvolvimento de software dirigido por David, especializado em desenvolvimento de apps, software sob medida, sites corporativos, e-commerce e sistemas de reservas. Com mais de 9 anos de experiência full-stack, entrega de ponta a ponta, do planejamento ao lançamento.",
+      "q7": "Vocês desenvolvem apps móveis?",
+      "a7": "Sim. Projetamos e desenvolvemos apps móveis e aplicações web, do design de interface ao backend e às APIs, até o lançamento. Conte-nos sua ideia e avaliaremos gratuitamente a viabilidade e um orçamento aproximado.",
+      "q8": "Como escolher um fornecedor de desenvolvimento de software?",
+      "a8": "Observe três pontos: casos reais semelhantes ao seu projeto, preços e prazos transparentes e manutenção após o lançamento. O Ark Studio apresenta seu portfólio, entrega um cronograma antes do início do projeto e inclui um período de manutenção gratuita."
     },
     "ctaTitle": "Ainda tem dúvidas? É só perguntar",
     "ctaDescription": "Cada projeto é único. Me conte sobre o seu e eu vou criar o plano perfeito para você.",
@@ -387,9 +393,17 @@
     "copyright": "© 2024-{year} Ark Studio. Todos os direitos reservados."
   },
   "meta": {
-    "title": "Ark Studio | Software Sob Medida — Sistemas, E-commerce, Reservas, Sites e Apps | 9+ Anos Full-Stack",
+    "title": "Ark Studio – Software Sob Medida — Sistemas, E-commerce, Reservas, Sites e Apps – 9+ Anos Full-Stack",
     "description": "Software sob medida para empresas e pessoas: sistemas de gestão, plataformas de reservas, sites corporativos, e-commerce, área de membros e ferramentas internas com integração LINE. Mais de 9 anos full-stack, entrega ponta a ponta, consultoria grátis 30 min.",
-    "keywords": "desenvolvimento de software sob medida,desenvolvimento de sistemas empresariais,sistema de gestão,sistema de reservas,site corporativo,e-commerce,sistema de membros,ferramentas internas,LINE Bot,desenvolvimento web,integração de sistemas,desenvolvimento de apps,desenvolvedor freelance,full-stack,Ark Studio"
+    "keywords": "desenvolvimento de software sob medida,desenvolvimento de sistemas empresariais,sistema de gestão,sistema de reservas,site corporativo,e-commerce,sistema de membros,ferramentas internas,LINE Bot,desenvolvimento web,integração de sistemas,desenvolvimento de apps,desenvolvedor freelance,full-stack,Ark Studio",
+    "titleServices": "Serviços – Ark Studio – Software Sob Medida — Sistemas, E-commerce, Reservas, Sites e Apps – 9+ Anos Full-Stack",
+    "titlePortfolio": "Portfólio – Ark Studio – Software Sob Medida — Sistemas, E-commerce, Reservas, Sites e Apps – 9+ Anos Full-Stack",
+    "titleAbout": "Sobre mim – Ark Studio – Software Sob Medida — Sistemas, E-commerce, Reservas, Sites e Apps – 9+ Anos Full-Stack",
+    "titleContact": "Contato – Ark Studio – Software Sob Medida — Sistemas, E-commerce, Reservas, Sites e Apps – 9+ Anos Full-Stack",
+    "descServices": "Serviços completos de desenvolvimento de software, da concepção ao lançamento",
+    "descPortfolio": "Valorizo cada cliente; cada projeto reflete meu compromisso com a qualidade.",
+    "descAbout": "Combinando expertise técnica e visão de negócios para construir vantagens digitais sustentáveis para sua empresa.",
+    "descContact": "Você está a apenas uma mensagem de transformar suas ideias em realidade."
   },
   "notFound": {
     "title": "Página não encontrada",

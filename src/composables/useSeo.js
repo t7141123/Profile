@@ -5,15 +5,15 @@ import { locales } from '@/router'
 
 const SITE_URL = 'https://ark-studio.app'
 const SITE_NAME = 'Ark Studio'
-const OG_IMAGE = `${SITE_URL}/og-image.png`
-const OG_IMAGE_ALT = 'Ark Studio — 客製化軟體開發'
+const OG_IMAGE = `${SITE_URL}/og-image.jpg`
+const OG_IMAGE_ALT = '方舟工坊 Ark Studio — APP 設計與軟體開發工作室'
 
 const ROUTE_META = {
-  Home: { navKey: null, titleKey: 'meta.title', descKey: 'meta.description' },
-  About: { navKey: 'nav.about', titleSuffix: true, descKey: 'about.pageDescription' },
-  Portfolio: { navKey: 'nav.portfolio', titleSuffix: true, descKey: 'portfolio.pageDescription' },
-  Services: { navKey: 'nav.services', titleSuffix: true, descKey: 'services.pageDescription' },
-  Contact: { navKey: 'nav.contact', titleSuffix: true, descKey: 'contact.pageDescription' },
+  Home: { titleKey: 'meta.title', descKey: 'meta.description', pageType: 'WebPage' },
+  About: { titleKey: 'meta.titleAbout', descKey: 'meta.descAbout', pageType: 'AboutPage' },
+  Portfolio: { titleKey: 'meta.titlePortfolio', descKey: 'meta.descPortfolio', pageType: 'CollectionPage' },
+  Services: { titleKey: 'meta.titleServices', descKey: 'meta.descServices', pageType: 'WebPage' },
+  Contact: { titleKey: 'meta.titleContact', descKey: 'meta.descContact', pageType: 'ContactPage' },
   NotFound: { title: 'Page Not Found | Ark Studio', desc: 'Page not found' }
 }
 
@@ -83,8 +83,6 @@ export function useSeo() {
 
     if (cfg.title) {
       title = cfg.title
-    } else if (cfg.titleSuffix && cfg.navKey) {
-      title = `${t(cfg.navKey)} | ${t('meta.title')}`
     } else {
       title = t(cfg.titleKey || 'meta.title')
     }
@@ -162,6 +160,24 @@ export function useSeo() {
       removeHreflangs()
     }
 
+    // JSON-LD page entity (links each page to the organization + website for entity clarity)
+    if (routeName !== 'NotFound') {
+      ensureJsonLd('jsonld-webpage', {
+        '@context': 'https://schema.org',
+        '@type': cfg.pageType || 'WebPage',
+        '@id': `${canonicalUrl}#webpage`,
+        url: canonicalUrl,
+        name: title,
+        description,
+        inLanguage: loc,
+        isPartOf: { '@id': `${SITE_URL}/#website` },
+        about: { '@id': `${SITE_URL}/#organization` },
+        publisher: { '@id': `${SITE_URL}/#organization` }
+      })
+    } else {
+      document.getElementById('jsonld-webpage')?.remove()
+    }
+
     // JSON-LD Breadcrumb
     const segments = path.split('/').filter(Boolean) // ['zh-tw','about']
     const breadcrumbItems = [
@@ -188,7 +204,7 @@ export function useSeo() {
     if (routeName === 'Services') {
       try {
         const faqs = []
-        for (let i = 1; i <= 5; i++) {
+        for (let i = 1; i <= 8; i++) {
           const q = t(`services.faqs.q${i}`)
           const a = t(`services.faqs.a${i}`)
           if (q && a && q !== `services.faqs.q${i}`) {
