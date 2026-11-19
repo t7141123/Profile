@@ -1,0 +1,41 @@
+# 方舟工坊 Ark Studio
+
+> 方舟工坊（Ark Studio）是台灣的軟體設計與開發工作室，由 David 經營，提供 APP 設計與開發、客製化軟體開發、企業官網、電商網站、預約系統、會員與內部管理後台、LINE Bot 整合。具備 9 年全端開發經驗，從需求訪談、報價、開發到上線維護一站式交付，提供免費 30 分鐘諮詢。
+>
+> Ark Studio (方舟工坊) is a Taiwan-based software design and development studio run by David. Services: app design and development, custom software development, corporate websites, e-commerce, booking systems, member and admin back offices, and LINE Bot integration. 9+ years of full-stack experience, end-to-end delivery, free 30-minute consultation. The site is available in 11 languages.
+
+## 主要頁面 Main pages
+
+- [首頁 Home（繁體中文）](https://ark-studio.app/zh-tw/): 工作室簡介與核心服務
+- [服務項目 Services](https://ark-studio.app/zh-tw/services): 服務範圍、技術棧、合作方案與常見問題（FAQ）
+- [作品集 Portfolio](https://ark-studio.app/zh-tw/portfolio): 已上線的企業官網、電商、組織活動系統與非營利組織平台
+- [關於我 About](https://ark-studio.app/zh-tw/about): 經驗、技能、工作流程與客戶回饋
+- [聯繫我 Contact](https://ark-studio.app/zh-tw/contact): LINE、Telegram、Email 聯絡方式，通常 24 小時內回覆
+
+## 服務 Services
+
+- APP 設計與開發（手機 APP、網頁應用 Web App）
+- 客製化軟體開發、軟體委託開發（外包）
+- 企業官網與品牌網站、電商與會員系統
+- 預約系統、企業營運管理後台、內部工具
+- LINE Bot 與 AI 整合、系統整合與自動化
+
+## 常見問題 FAQ
+
+- 專案需要多久？一般企業形象網站約 4–6 週；較複雜的電商平台或客製化系統約 2–4 個月，專案開始前會提供時程。
+- 如何付款？通常分期：簽約 30%、開發中期 40%、驗收後 30%，可依專案彈性調整。
+- 有維護服務嗎？所有專案包含免費維護期（修復程式錯誤），期滿後可續約。
+- 如何諮詢？可透過 LINE、Telegram 或 Email 聯絡，免費評估可行性與預算範圍。
+
+## 其他語言 Other languages
+
+- English: https://ark-studio.app/en/
+- 简体中文: https://ark-studio.app/zh-cn/
+- 日本語: https://ark-studio.app/ja/
+- 한국어: https://ark-studio.app/ko/
+- Español / Français / Deutsch / Português / Tiếng Việt / ไทย: https://ark-studio.app/es/ , /fr/ , /de/ , /pt/ , /vi/ , /th/
+
+## Optional
+
+- [Sitemap](https://ark-studio.app/sitemap.xml)
+- [GitHub](https://github.com/t7141123)
