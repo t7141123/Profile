@@ -27,5 +27,7 @@ for (const [name, directive] of Object.entries(directives)) {
   app.directive(name, directive)
 }
 
-app.mount('#app')
+// Mount only after the first route (and its lazy chunk + locale) is ready, so the
+// prerendered HTML is replaced in one step instead of flashing empty (CLS)
+router.isReady().then(() => app.mount('#app'))
 

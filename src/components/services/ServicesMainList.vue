@@ -16,7 +16,7 @@
               <i :class="service.icon"></i>
             </div>
             <div>
-              <h3 class="service-detail-title">{{ service.title }}</h3>
+              <h3 class="service-detail-title" aria-level="2">{{ service.title }}</h3>
               <span class="service-detail-subtitle">{{
                 service.subtitle
               }}</span>

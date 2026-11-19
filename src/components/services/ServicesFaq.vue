@@ -192,6 +192,10 @@ const faqs = computed(() => [
   color: var(--primary-color);
 }
 
+[data-theme='dark'] .accordion-button:not(.collapsed) {
+  color: var(--text-primary);
+}
+
 .accordion-button::after {
   filter: none;
   color: var(--text-secondary);
