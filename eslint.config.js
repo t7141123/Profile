@@ -11,6 +11,10 @@ export default [
   pluginJs.configs.recommended,
   ...pluginVue.configs["flat/essential"],
   {
+    files: ["scripts/**/*.mjs"],
+    languageOptions: { globals: globals.node },
+  },
+  {
     rules: {
       "no-trailing-spaces": "error",
       "vue/multi-word-component-names": "off",

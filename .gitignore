@@ -42,3 +42,6 @@ og-design.html
 
 test-results/
 .agent/
+
+# Wrangler local state
+.wrangler/

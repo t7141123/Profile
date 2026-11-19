@@ -1,10 +1,13 @@
-# Domain → ark-studio.app (301, preserves path)
+# Domain -> ark-studio.app (301, preserves path)
 https://david-liu.pages.dev/* https://ark-studio.app/:splat 301
 https://*.david-liu.pages.dev/* https://ark-studio.app/:splat 301
 https://www.ark-studio.app/* https://ark-studio.app/:splat 301
 
-# Cloudflare Pages SPA fallback
-# All routes should return index.html for Vue Router to handle
-# (assets must 404 instead — never serve HTML for missing hashed files)
-/assets/* /assets/:splat 200
-/* /index.html 200
+# Locale-less paths -> default locale (the SPA still routes returning visitors by saved language)
+/about /zh-tw/about 302
+/portfolio /zh-tw/portfolio 302
+/services /zh-tw/services 302
+/contact /zh-tw/contact 302
+
+# No SPA catch-all on purpose: every real URL is prerendered to a static file,
+# and unknown URLs get the real 404.html (HTTP 404) instead of a soft-404 200.

@@ -109,6 +109,13 @@ export function useSeo() {
 
     document.title = title
 
+    // 404 pages must never be indexed; every other route stays indexable
+    setMeta(
+      'meta[name="robots"]',
+      routeName === 'NotFound'
+        ? 'noindex, follow'
+        : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
+    )
     setMeta('meta[name="description"]', description)
     if (keywords) setMeta('meta[name="keywords"]', keywords)
     setMeta('meta[property="og:title"]', title)
@@ -148,6 +155,12 @@ export function useSeo() {
       setLink('alternate', href, l)
     })
     setLink('alternate', `${SITE_URL}/zh-tw${basePath === '/' ? '/' : basePath}`, 'x-default')
+
+    // 404 page: no canonical and no hreflang, so the bogus URL is never advertised
+    if (routeName === 'NotFound') {
+      canonical.remove()
+      removeHreflangs()
+    }
 
     // JSON-LD Breadcrumb
     const segments = path.split('/').filter(Boolean) // ['zh-tw','about']
