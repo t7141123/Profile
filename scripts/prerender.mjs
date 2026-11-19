@@ -120,7 +120,8 @@ async function renderPage(browser, base, path) {
     if (bar) bar.removeAttribute('style')
   })
 
-  const html = await page.content()
+  // Asset URLs resolved by Vite carry the capture server origin; make them root-relative
+  const html = (await page.content()).split(`${base}/`).join('/')
   const info = await page.evaluate(() => ({
     title: document.title,
     h1: document.querySelectorAll('main h1').length,
@@ -185,6 +186,7 @@ async function main() {
           } else if (!/noindex/.test(info.robots)) {
             errors.push(`404 page must be noindex (got "${info.robots}")`)
           }
+          if (/https?:\/\/(127\.0\.0\.1|localhost)/.test(html)) errors.push(`${job.path}: snapshot contains a local server URL`)
           results.push({ job, html, info })
           console.log(`ok  ${job.path}  [${info.title.slice(0, 50)}]`)
         } catch (e) {

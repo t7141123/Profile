@@ -112,7 +112,6 @@ const currentYear = new Date().getFullYear();
 .copyright-text {
   color: var(--text-muted);
   font-size: 0.9rem;
-  opacity: 0.8;
 }
 
 @media (max-width: 767.98px) {

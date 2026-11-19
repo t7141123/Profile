@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app-root">
     <!-- Skip Link for Accessibility -->
     <a href="#main-content" class="skip-link">{{ $t("a11y.skipToContent") }}</a>
 

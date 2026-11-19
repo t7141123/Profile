@@ -77,8 +77,8 @@
   --section-padding-lg: 100px 0;
 
   /* Fonts */
-  --font-sans: 'Plus Jakarta Sans', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-display: 'Fraunces', 'Noto Serif TC', 'Noto Sans TC', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Microsoft JhengHei', 'Noto Sans TC', 'Noto Sans CJK TC', 'Hiragino Sans', 'Malgun Gothic', sans-serif;
+  --font-display: 'Fraunces', 'PingFang TC', 'Microsoft JhengHei', 'Noto Sans TC', 'Noto Sans CJK TC', 'Hiragino Sans', 'Malgun Gothic', serif;
 
   /* Brand Colors */
   --line-color: #8B5E3C;
