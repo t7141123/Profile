@@ -9,11 +9,14 @@
     "prerender": "node scripts/prerender.mjs",
     "build:seo": "vite build && node scripts/purge-css.mjs && node scripts/prerender.mjs",
     "preview": "vite preview",
-    "test": "vitest",
-    "lint": "eslint . --fix",
+    "test": "vitest run",
+    "lint": "eslint .",
     "deploy": "npm run build:seo && CLOUDFLARE_ACCOUNT_ID=${CLOUDFLARE_ACCOUNT_ID:-2a33489fabfdde7dbde620858343ae91} wrangler pages deploy dist --project-name=david-liu && echo '✅ Deploy complete'",
     "deploy:check": "npm run build:seo && CLOUDFLARE_ACCOUNT_ID=${CLOUDFLARE_ACCOUNT_ID:-2a33489fabfdde7dbde620858343ae91} wrangler pages deploy dist --project-name=david-liu --dry-run",
-    "preview:cloudflare": "wrangler pages dev dist"
+    "preview:cloudflare": "wrangler pages dev dist",
+    "lint:fix": "eslint . --fix",
+    "smoke:web": "node scripts/smoke-web.mjs dist '#app'",
+    "verify": "node scripts/check-no-workflows.mjs && npm run lint && npm test && npm run build && npm run smoke:web"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
