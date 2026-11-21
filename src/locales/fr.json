@@ -200,7 +200,8 @@
     "filters": {
       "label": "Filtrer par",
       "all": "Tous",
-      "other": "Autre"
+      "other": "Autre",
+      "app": "App"
     },
     "noLink": "Projet sur mesure",
     "projects": {

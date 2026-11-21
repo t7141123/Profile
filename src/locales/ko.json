@@ -200,7 +200,8 @@
     "filters": {
       "label": "필터",
       "all": "전체",
-      "other": "기타"
+      "other": "기타",
+      "app": "App"
     },
     "noLink": "맞춤형 프로젝트",
     "projects": {

@@ -125,6 +125,7 @@ const selectedCategory = ref("all");
 
 const filters = computed(() => [
   { key: "all", label: t("portfolio.filters.all"), icon: "bi-grid-3x3-gap" },
+  { key: "app", label: t("portfolio.filters.app"), icon: "bi-phone" },
   { key: "corporate", label: t("portfolio.projects.corporate"), icon: "bi-building" },
   { key: "tool", label: t("portfolio.projects.tool"), icon: "bi-tools" },
   { key: "other", label: t("portfolio.filters.other"), icon: "bi-collection" },
@@ -132,6 +133,9 @@ const filters = computed(() => [
 
 const filteredProjects = computed(() => {
   if (selectedCategory.value === "all") return projects.value;
+  if (selectedCategory.value === "app") {
+    return projects.value.filter(p => p.isApp);
+  }
   if (selectedCategory.value === "corporate") {
     return projects.value.filter(
       p => p.categoryKey === "corporate" || p.categoryKey === "internal"

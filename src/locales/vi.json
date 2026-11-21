@@ -200,7 +200,8 @@
     "filters": {
       "label": "Lọc theo",
       "all": "Tất cả",
-      "other": "Khác"
+      "other": "Khác",
+      "app": "App"
     },
     "noLink": "Dự Án Tùy Chỉnh",
     "projects": {

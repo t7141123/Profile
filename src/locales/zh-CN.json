@@ -200,7 +200,8 @@
     "filters": {
       "label": "分类筛选",
       "all": "全部",
-      "other": "其他"
+      "other": "其他",
+      "app": "App"
     },
     "noLink": "定制化项目",
     "projects": {

@@ -36,7 +36,7 @@ import { useProjects } from "@/composables/useProjects";
 
 const { getFeaturedProjects } = useProjects();
 
-const FEATURED_KEYS = ["actionLead", "clay", "nhm", "uvaco", "generalErp", "chordBook"];
+const FEATURED_KEYS = ["babystep", "dailyManna", "tripRecords", "chordBook", "actionLead", "uvaco"];
 const featuredProjects = computed(() => {
   const all = getFeaturedProjects();
   return FEATURED_KEYS.map((k) => all.find((p) => p.key === k)).filter(Boolean);
