@@ -1,6 +1,6 @@
 <!-- vault-bridge:start (managed block, see the vault's system/AGENT_CORE.md) -->
 ## Shared project memory (Obsidian vault)
-- Before working: read `~/Documents/SecondBrain/system/AGENT_CORE.md` and `~/Documents/SecondBrain/projects/Profile/STATUS.md`. Vault not on this machine? Clone `t7141123/ObsidianSecondBrain` to `~/Documents/SecondBrain` first.
+- Before working: read `~/Documents/SecondBrain/system/AGENT_CORE.md` and `~/Documents/SecondBrain/projects/ArkStudio/STATUS.md`. Vault not on this machine? Clone `t7141123/ObsidianSecondBrain` to `~/Documents/SecondBrain` first.
 - After working: update that `STATUS.md`, append a line to `system/HANDOFF_LOG.md`, then commit and push the vault (AGENT_CORE section 2).
 - The rules in this repo still apply to the code here.
 <!-- vault-bridge:end -->
