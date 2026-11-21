@@ -207,6 +207,7 @@ a:hover {
   font-weight: 700;
   letter-spacing: -0.015em;
   line-height: 1.1;
+  text-wrap: balance; /* even line lengths for the longer question headline */
 }
 
 .hero-title .highlight {

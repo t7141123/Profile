@@ -3,6 +3,7 @@
     <HomeHero />
     <HomeMarquee />
     <HomeStats />
+    <HomeFit />
     <HomeServices />
     <HomeFeaturedProjects />
     <HomeTestimonials />
@@ -19,6 +20,7 @@
 import HomeHero from "@/components/home/HomeHero.vue";
 import HomeMarquee from "@/components/home/HomeMarquee.vue";
 import HomeStats from "@/components/home/HomeStats.vue";
+import HomeFit from "@/components/home/HomeFit.vue";
 import HomeServices from "@/components/home/HomeServices.vue";
 import HomeFeaturedProjects from "@/components/home/HomeFeaturedProjects.vue";
 import HomeTestimonials from "@/components/home/HomeTestimonials.vue";

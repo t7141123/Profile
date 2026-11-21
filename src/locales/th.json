@@ -124,6 +124,30 @@
       "s3d": "ราคาโปร่งใส แบ่งงวดได้",
       "s4t": "พัฒนาและเปิดตัว",
       "s4d": "รายงานความคืบหน้ารายสัปดาห์ ส่งตรงเวลา"
+    },
+    "fit": {
+      "badge": "Think first, build later",
+      "title": "Not every idea ",
+      "highlight": "needs to be an app",
+      "desc": "Many ideas deserve an app, and some are better served in a faster, cheaper way. I will tell you honestly.",
+      "yesTitle": "Ideas that suit an app",
+      "yes": [
+        "A tool or service people open every day",
+        "Needs phone features such as notifications, camera, location or offline use",
+        "You want to grow members and a community over time",
+        "You want to be found on the App Store or Google Play"
+      ],
+      "noTitle": "Ideas that may not need an app",
+      "no": [
+        "You just want to introduce a company or service: a website is enough",
+        "A few people use it occasionally: a LINE bot or a form is faster",
+        "Not sure anyone wants it yet: start with a lean validation version",
+        "A very simple process: a spreadsheet or an existing tool can do it"
+      ],
+      "ctaTitle": "Which kind is your idea?",
+      "ctaDesc": "No need to have it figured out, and no tech knowledge needed. Talk for 30 minutes for free and I will tell you if it fits and the most worthwhile way to build it.",
+      "ctaLine": "Book a free chat on LINE",
+      "ctaForm": "Fill in the project brief"
     }
   },
   "about": {

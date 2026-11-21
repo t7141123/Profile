@@ -23,7 +23,7 @@
     <div class="container hero-centered">
       <div class="hero-content">
         <h1 class="hero-title">
-          {{ $t("home.title") }}<br />
+          <template v-for="(seg, i) in titleSegments" :key="i"><span class="title-seg">{{ seg }}</span><br v-if="/[？?]$/.test(seg)" /></template><br />
           <span class="highlight" v-scramble>{{ $t("footer.brand") }}</span>
         </h1>
 
@@ -53,10 +53,15 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
+import { computed, ref, onMounted, onUnmounted } from "vue";
+import { useI18n } from "vue-i18n";
 import TechBackground from "@/components/home/TechBackground.vue";
 import arkImg from "@/assets/images/ark-hero.svg?url";
 import { contact } from "@/config/contact";
+
+const { t } = useI18n();
+// Split the headline at punctuation so lines wrap between phrases, never leaving a lone trailing character
+const titleSegments = computed(() => t("home.title").split(/(?<=[？?，,。.])/).map((l) => l.trim()).filter(Boolean));
 
 const arkDrift = ref(null);
 const waterRise = ref(null);
@@ -184,5 +189,9 @@ onUnmounted(() => {
 
 @media (prefers-reduced-motion: reduce) {
   .water-svg { animation: none; }
+}
+
+.title-seg {
+  display: inline-block;
 }
 </style>

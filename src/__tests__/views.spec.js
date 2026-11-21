@@ -33,7 +33,7 @@ const mountView = (view) => {
 describe('split page views', () => {
   it('Home renders all sections', () => {
     const w = mountView(Home)
-    expect(w.findAll('section').length).toBe(6)
+    expect(w.findAll('section').length).toBe(7)
     expect(w.find('.marquee-band').exists()).toBe(true)
     expect(w.findAll('.bento-card').length).toBe(4)
     expect(w.findAll('.testimonial-card').length).toBe(3)
