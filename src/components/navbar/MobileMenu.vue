@@ -26,17 +26,18 @@
           :class="{ 'slide-in': isOpen }"
           :style="{ transitionDelay: '0.5s' }"
         >
-          <span class="mobile-lang-label">{{ $t("a11y.languageLabel") }}</span>
-          <div class="lang-options">
-            <button
-              v-for="lang in languages"
-              :key="lang.code"
-              class="lang-btn"
-              :class="{ active: currentLocale === lang.code }"
-              @click="$emit('change-language', lang.code)"
+          <label class="mobile-lang-label" for="mobile-lang-select">{{ $t("a11y.languageLabel") }}</label>
+          <div class="lang-select-wrap">
+            <select
+              id="mobile-lang-select"
+              class="lang-select"
+              :value="currentLocale"
+              @change="$emit('change-language', $event.target.value)"
             >
-              {{ lang.name }}
-            </button>
+              <option v-for="lang in languages" :key="lang.code" :value="lang.code">
+                {{ lang.name }}
+              </option>
+            </select>
           </div>
         </div>
       </div>
@@ -76,9 +77,8 @@ const { localePath } = useLocale();
   -webkit-backdrop-filter: blur(20px);
   z-index: 1001;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 1.5rem;
+  padding: calc(env(safe-area-inset-top, 0px) + 6rem) 1.5rem
+    calc(env(safe-area-inset-bottom, 0px) + 2rem);
   overflow-y: auto; /* safety on short screens */
 }
 
@@ -88,8 +88,8 @@ const { localePath } = useLocale();
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  padding: 1rem 0;
+  gap: 2.5rem;
+  margin: auto; /* centers when there is room, never clips the top when tall */
 }
 
 .mobile-nav-list {
@@ -150,39 +150,54 @@ const { localePath } = useLocale();
   display: block;
   color: var(--text-muted);
   font-size: 0.875rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-.lang-options {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+.lang-select-wrap {
+  position: relative;
   max-width: 320px;
   margin: 0 auto;
 }
 
-.lang-btn {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: var(--text-secondary);
-  padding: 0.5rem 0.9rem;
-  border-radius: 50px;
-  font-size: 0.8rem;
-  min-height: 36px;
-  min-width: 52px;
-  transition: all 0.3s ease;
+.lang-select-wrap::after {
+  content: "";
+  position: absolute;
+  right: 1.1rem;
+  top: 50%;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-right: 2px solid var(--text-secondary);
+  border-bottom: 2px solid var(--text-secondary);
+  transform: translateY(-70%) rotate(45deg);
+  pointer-events: none;
 }
 
-.lang-btn.active {
-  background: var(--primary-color);
-  color: white;
-  border-color: var(--primary-color);
+.lang-select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  min-height: 48px;
+  padding: 0.6rem 2.6rem 0.6rem 1.1rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1rem; /* 16px keeps iOS Safari from zooming on focus */
+  text-align: center;
+  text-align-last: center;
 }
 
+.lang-select:focus-visible {
+  outline: 2px solid var(--primary-light);
+  outline-offset: 2px;
+}
 
+.lang-select option {
+  color: #1a140f;
+  background: #fff;
+}
 
 /* Vue Transitions */
 .fade-enter-active,
@@ -210,6 +225,9 @@ const { localePath } = useLocale();
   .mobile-lang-switcher {
     padding-top: 1rem;
     margin-top: 0.5rem;
+  }
+  .mobile-menu-overlay {
+    padding-top: calc(env(safe-area-inset-top, 0px) + 4.5rem);
   }
 }
 
