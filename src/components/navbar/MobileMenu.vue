@@ -27,14 +27,14 @@
           :style="{ transitionDelay: '0.5s' }"
         >
           <span id="mobile-lang-label" class="mobile-lang-label">{{ $t("a11y.languageLabel") }}</span>
-          <div ref="langRoot" class="lang-dropdown" :class="{ open: langOpen }">
+          <div ref="langRoot" class="lang-dropdown" :class="{ open: langOpen, 'open-up': openUp }">
             <button
               type="button"
               class="lang-trigger"
               aria-haspopup="listbox"
               aria-labelledby="mobile-lang-label"
               :aria-expanded="langOpen.toString()"
-              @click="langOpen = !langOpen"
+              @click="toggleLang"
               @keydown.esc.stop="langOpen = false"
             >
               <span>{{ currentName }}</span>
@@ -43,6 +43,7 @@
             <ul
               v-show="langOpen"
               class="lang-list"
+              :style="{ maxHeight: listMaxHeight + 'px' }"
               role="listbox"
               aria-labelledby="mobile-lang-label"
               @keydown.esc.stop="langOpen = false"
@@ -87,7 +88,24 @@ const props = defineProps({
 const emit = defineEmits(['close', 'change-language']);
 
 const langOpen = ref(false);
+const openUp = ref(false);
+const listMaxHeight = ref(260);
 const langRoot = ref(null);
+
+// Open the list on whichever side of the button has room (the button sits near the screen bottom)
+const toggleLang = () => {
+  if (langOpen.value) {
+    langOpen.value = false;
+    return;
+  }
+  const rect = langRoot.value.getBoundingClientRect();
+  const viewH = window.visualViewport?.height ?? window.innerHeight;
+  const below = viewH - rect.bottom - 24;
+  const above = rect.top - 88; // keep clear of the top bar
+  openUp.value = below < 220 && above > below;
+  listMaxHeight.value = Math.max(140, Math.min(260, openUp.value ? above : below));
+  langOpen.value = true;
+};
 
 const currentName = computed(
   () => languageOptions.find((l) => l.code === props.currentLocale)?.name ?? props.currentLocale
@@ -254,6 +272,11 @@ const { localePath } = useLocale();
 }
 
 .lang-list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: 5;
   list-style: none;
   margin: 0.5rem 0 0;
   padding: 0.35rem;
@@ -264,6 +287,12 @@ const { localePath } = useLocale();
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 12px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.lang-dropdown.open-up .lang-list {
+  top: auto;
+  bottom: 100%;
+  margin: 0 0 0.5rem;
 }
 
 .lang-item {
