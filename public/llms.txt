@@ -1,8 +1,8 @@
 # 方舟工坊 Ark Studio
 
-> 方舟工坊（Ark Studio）是台灣的 App 開發工作室，由 David 經營，主要協助個人與新創把 App 點子做到上架：企劃、畫面設計、開發、App Store 與 Google Play 上架協助、維護。也承接企業官網、預約與會員系統、LINE Bot 整合。9 年全端開發經驗，已自製上線 8 個 App，提供免費 30 分鐘諮詢，費用依功能範圍報價（不公開固定價格）。
+> 方舟工坊（Ark Studio）是台灣的 App 開發工作室，由 David 經營，主要協助個人與新創把 App 點子做到上架：企劃、畫面設計、開發、App Store 與 Google Play 上架協助、維護。也承接企業官網、預約與會員系統、LINE Bot 整合。9 年全端開發經驗，已自製上線多個 App，提供免費 30 分鐘諮詢，費用依功能範圍報價（不公開固定價格）。
 >
-> Ark Studio (方舟工坊) is a Taiwan-based app development studio run by David. It helps individuals and startups take an app idea to store release: planning, UI design, development, App Store and Google Play release support, and maintenance. It also builds corporate websites, booking and member systems and LINE Bots. 9+ years of full-stack experience, 8 self-built apps, free 30-minute consultation, quoted by scope (no fixed public prices). The site is available in 11 languages.
+> Ark Studio (方舟工坊) is a Taiwan-based app development studio run by David. It helps individuals and startups take an app idea to store release: planning, UI design, development, App Store and Google Play release support, and maintenance. It also builds corporate websites, booking and member systems and LINE Bots. 9+ years of full-stack experience, several self-built apps, free 30-minute consultation, quoted by scope (no fixed public prices). The site is available in 11 languages.
 
 ## 主要頁面 Main pages
 
