@@ -20,51 +20,28 @@
           </li>
         </ul>
 
-        <!-- Mobile Language Switcher -->
+        <!-- Mobile Language Switcher: one-tap segmented control (only three languages) -->
         <div
           class="mobile-lang-switcher"
           :class="{ 'slide-in': isOpen }"
           :style="{ transitionDelay: '0.5s' }"
         >
-          <span id="mobile-lang-label" class="mobile-lang-label">{{ $t("a11y.languageLabel") }}</span>
-          <div ref="langRoot" class="lang-dropdown" :class="{ open: langOpen, 'open-up': openUp }">
+          <span id="mobile-lang-label" class="mobile-lang-label">
+            <i class="bi bi-globe2" aria-hidden="true"></i>{{ $t("a11y.languageLabel") }}
+          </span>
+          <div class="lang-segment" role="group" aria-labelledby="mobile-lang-label">
             <button
+              v-for="lang in languageOptions"
+              :key="lang.code"
               type="button"
-              class="lang-trigger"
-              aria-haspopup="listbox"
-              aria-labelledby="mobile-lang-label"
-              :aria-expanded="langOpen.toString()"
-              @click="toggleLang"
-              @keydown.esc.stop="langOpen = false"
+              class="lang-seg-btn"
+              :class="{ active: currentLocale === lang.code }"
+              :aria-pressed="currentLocale === lang.code"
+              :lang="lang.code"
+              @click="pick(lang.code)"
             >
-              <span>{{ currentName }}</span>
-              <span class="lang-caret" aria-hidden="true"></span>
+              {{ lang.name }}
             </button>
-            <ul
-              v-show="langOpen"
-              class="lang-list"
-              :style="{ maxHeight: listMaxHeight + 'px' }"
-              role="listbox"
-              aria-labelledby="mobile-lang-label"
-              @keydown.esc.stop="langOpen = false"
-            >
-              <li
-                v-for="lang in languageOptions"
-                :key="lang.code"
-                role="option"
-                :aria-selected="currentLocale === lang.code"
-              >
-                <button
-                  type="button"
-                  class="lang-item"
-                  :class="{ active: currentLocale === lang.code }"
-                  @click="pick(lang.code)"
-                >
-                  {{ lang.name }}
-                  <i v-if="currentLocale === lang.code" class="bi bi-check-lg" aria-hidden="true"></i>
-                </button>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -73,7 +50,6 @@
 </template>
 
 <script setup>
-import { computed, onMounted, onUnmounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import { useLocale } from "@/composables/useLocale";
 import { languageOptions } from "@/config/languages";
@@ -87,42 +63,10 @@ const props = defineProps({
 
 const emit = defineEmits(['close', 'change-language']);
 
-const langOpen = ref(false);
-const openUp = ref(false);
-const listMaxHeight = ref(260);
-const langRoot = ref(null);
-
-// Open the list on whichever side of the button has room (the button sits near the screen bottom)
-const toggleLang = () => {
-  if (langOpen.value) {
-    langOpen.value = false;
-    return;
-  }
-  const rect = langRoot.value.getBoundingClientRect();
-  const viewH = window.visualViewport?.height ?? window.innerHeight;
-  const below = viewH - rect.bottom - 24;
-  const above = rect.top - 88; // keep clear of the top bar
-  openUp.value = below < 220 && above > below;
-  listMaxHeight.value = Math.max(140, Math.min(260, openUp.value ? above : below));
-  langOpen.value = true;
-};
-
-const currentName = computed(
-  () => languageOptions.find((l) => l.code === props.currentLocale)?.name ?? props.currentLocale
-);
-
 const pick = (code) => {
-  langOpen.value = false;
-  emit('change-language', code);
+  if (code !== props.currentLocale) emit('change-language', code);
+  else emit('close');
 };
-
-// Close the language list when tapping elsewhere or when the menu closes
-const onOutside = (e) => {
-  if (langOpen.value && langRoot.value && !langRoot.value.contains(e.target)) langOpen.value = false;
-};
-onMounted(() => document.addEventListener('pointerdown', onOutside));
-onUnmounted(() => document.removeEventListener('pointerdown', onOutside));
-watch(() => props.isOpen, (open) => { if (!open) langOpen.value = false; });
 
 const route = useRoute();
 const { localePath } = useLocale();
@@ -200,8 +144,6 @@ const { localePath } = useLocale();
 
 /* Mobile Language Switcher */
 .mobile-lang-switcher {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 2rem;
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.4s ease-out;
@@ -213,111 +155,52 @@ const { localePath } = useLocale();
 }
 
 .mobile-lang-label {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   color: var(--text-muted);
-  font-size: 0.875rem;
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.85rem;
 }
 
-.lang-dropdown {
-  position: relative;
-  max-width: 320px;
+.lang-segment {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  max-width: 340px;
   margin: 0 auto;
+  padding: 4px;
+  background: rgba(255, 244, 224, 0.06);
+  border: 1px solid rgba(233, 213, 172, 0.2);
+  border-radius: 999px;
 }
 
-.lang-trigger {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  min-height: 48px;
-  padding: 0.6rem 2.6rem;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: border-color 0.2s ease, background 0.2s ease;
-}
-
-.lang-trigger:focus-visible,
-.lang-item:focus-visible {
-  outline: 2px solid var(--primary-light);
-  outline-offset: 2px;
-}
-
-.lang-dropdown.open .lang-trigger {
-  border-color: var(--primary-light);
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.lang-caret {
-  position: absolute;
-  right: 1.1rem;
-  top: 50%;
-  width: 0.55rem;
-  height: 0.55rem;
-  border-right: 2px solid var(--text-secondary);
-  border-bottom: 2px solid var(--text-secondary);
-  transform: translateY(-70%) rotate(45deg);
-  transition: transform 0.25s ease;
-}
-
-.lang-dropdown.open .lang-caret {
-  transform: translateY(-30%) rotate(225deg);
-}
-
-.lang-list {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
-  z-index: 5;
-  list-style: none;
-  margin: 0.5rem 0 0;
-  padding: 0.35rem;
-  max-height: 260px;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  background: #231a14;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 12px;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
-}
-
-.lang-dropdown.open-up .lang-list {
-  top: auto;
-  bottom: 100%;
-  margin: 0 0 0.5rem;
-}
-
-.lang-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+.lang-seg-btn {
   min-height: 44px;
-  padding: 0.5rem 0.9rem;
+  padding: 0.4rem 0.5rem;
   background: transparent;
   border: 0;
-  border-radius: 8px;
+  border-radius: 999px;
   color: var(--text-secondary);
-  font-size: 1rem;
-  text-align: left;
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
-.lang-item:active {
-  background: rgba(255, 255, 255, 0.08);
+.lang-seg-btn:active {
+  background: rgba(255, 244, 224, 0.08);
 }
 
-.lang-item.active {
+.lang-seg-btn.active {
   background: var(--primary-color);
   color: #fff;
-  font-weight: 600;
+}
+
+.lang-seg-btn:focus-visible {
+  outline: 2px solid var(--primary-light);
+  outline-offset: 2px;
 }
 
 /* Vue Transitions */
