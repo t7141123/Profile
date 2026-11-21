@@ -33,22 +33,11 @@
 <script setup>
 import { computed } from 'vue'
 import { useLocale } from '@/composables/useLocale'
+import { languageOptions } from '@/config/languages'
 
 const { currentLocale, changeLocale } = useLocale()
 
-const languages = [
-  { code: 'zh-tw', name: '繁體中文' },
-  { code: 'zh-cn', name: '简体中文' },
-  { code: 'en', name: 'English' },
-  { code: 'ja', name: '日本語' },
-  { code: 'ko', name: '한국어' },
-  { code: 'es', name: 'Español' },
-  { code: 'fr', name: 'Français' },
-  { code: 'de', name: 'Deutsch' },
-  { code: 'pt', name: 'Português' },
-  { code: 'vi', name: 'Tiếng Việt' },
-  { code: 'th', name: 'ไทย' }
-]
+const languages = languageOptions
 
 const currentLangName = computed(() => {
   const lang = languages.find(l => l.code === currentLocale.value)

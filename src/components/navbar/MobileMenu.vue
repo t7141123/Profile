@@ -26,18 +26,44 @@
           :class="{ 'slide-in': isOpen }"
           :style="{ transitionDelay: '0.5s' }"
         >
-          <label class="mobile-lang-label" for="mobile-lang-select">{{ $t("a11y.languageLabel") }}</label>
-          <div class="lang-select-wrap">
-            <select
-              id="mobile-lang-select"
-              class="lang-select"
-              :value="currentLocale"
-              @change="$emit('change-language', $event.target.value)"
+          <span id="mobile-lang-label" class="mobile-lang-label">{{ $t("a11y.languageLabel") }}</span>
+          <div ref="langRoot" class="lang-dropdown" :class="{ open: langOpen }">
+            <button
+              type="button"
+              class="lang-trigger"
+              aria-haspopup="listbox"
+              aria-labelledby="mobile-lang-label"
+              :aria-expanded="langOpen.toString()"
+              @click="langOpen = !langOpen"
+              @keydown.esc.stop="langOpen = false"
             >
-              <option v-for="lang in languages" :key="lang.code" :value="lang.code">
-                {{ lang.name }}
-              </option>
-            </select>
+              <span>{{ currentName }}</span>
+              <span class="lang-caret" aria-hidden="true"></span>
+            </button>
+            <ul
+              v-show="langOpen"
+              class="lang-list"
+              role="listbox"
+              aria-labelledby="mobile-lang-label"
+              @keydown.esc.stop="langOpen = false"
+            >
+              <li
+                v-for="lang in languageOptions"
+                :key="lang.code"
+                role="option"
+                :aria-selected="currentLocale === lang.code"
+              >
+                <button
+                  type="button"
+                  class="lang-item"
+                  :class="{ active: currentLocale === lang.code }"
+                  @click="pick(lang.code)"
+                >
+                  {{ lang.name }}
+                  <i v-if="currentLocale === lang.code" class="bi bi-check-lg" aria-hidden="true"></i>
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -46,17 +72,39 @@
 </template>
 
 <script setup>
+import { computed, onMounted, onUnmounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import { useLocale } from "@/composables/useLocale";
+import { languageOptions } from "@/config/languages";
 
-defineProps({
+const props = defineProps({
   isOpen: Boolean,
   menuItems: Array,
   languages: Array,
   currentLocale: String
 });
 
-defineEmits(['close', 'change-language']);
+const emit = defineEmits(['close', 'change-language']);
+
+const langOpen = ref(false);
+const langRoot = ref(null);
+
+const currentName = computed(
+  () => languageOptions.find((l) => l.code === props.currentLocale)?.name ?? props.currentLocale
+);
+
+const pick = (code) => {
+  langOpen.value = false;
+  emit('change-language', code);
+};
+
+// Close the language list when tapping elsewhere or when the menu closes
+const onOutside = (e) => {
+  if (langOpen.value && langRoot.value && !langRoot.value.contains(e.target)) langOpen.value = false;
+};
+onMounted(() => document.addEventListener('pointerdown', onOutside));
+onUnmounted(() => document.removeEventListener('pointerdown', onOutside));
+watch(() => props.isOpen, (open) => { if (!open) langOpen.value = false; });
 
 const route = useRoute();
 const { localePath } = useLocale();
@@ -155,14 +203,41 @@ const { localePath } = useLocale();
   letter-spacing: 2px;
 }
 
-.lang-select-wrap {
+.lang-dropdown {
   position: relative;
   max-width: 320px;
   margin: 0 auto;
 }
 
-.lang-select-wrap::after {
-  content: "";
+.lang-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  min-height: 48px;
+  padding: 0.6rem 2.6rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.lang-trigger:focus-visible,
+.lang-item:focus-visible {
+  outline: 2px solid var(--primary-light);
+  outline-offset: 2px;
+}
+
+.lang-dropdown.open .lang-trigger {
+  border-color: var(--primary-light);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.lang-caret {
   position: absolute;
   right: 1.1rem;
   top: 50%;
@@ -171,32 +246,49 @@ const { localePath } = useLocale();
   border-right: 2px solid var(--text-secondary);
   border-bottom: 2px solid var(--text-secondary);
   transform: translateY(-70%) rotate(45deg);
-  pointer-events: none;
+  transition: transform 0.25s ease;
 }
 
-.lang-select {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 100%;
-  min-height: 48px;
-  padding: 0.6rem 2.6rem 0.6rem 1.1rem;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+.lang-dropdown.open .lang-caret {
+  transform: translateY(-30%) rotate(225deg);
+}
+
+.lang-list {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0.35rem;
+  max-height: 260px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: #231a14;
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.lang-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.5rem 0.9rem;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  text-align: left;
+}
+
+.lang-item:active {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.lang-item.active {
+  background: var(--primary-color);
   color: #fff;
-  font-size: 1rem; /* 16px keeps iOS Safari from zooming on focus */
-  text-align: center;
-  text-align-last: center;
-}
-
-.lang-select:focus-visible {
-  outline: 2px solid var(--primary-light);
-  outline-offset: 2px;
-}
-
-.lang-select option {
-  color: #1a140f;
-  background: #fff;
+  font-weight: 600;
 }
 
 /* Vue Transitions */
