@@ -16,9 +16,9 @@
     "contact": "聯繫我"
   },
   "home": {
-    "title": "APP 設計與軟體開發工作室",
-    "subtitle": "讓您的網站，成為企業最強大的業務引擎",
-    "subtitle2": "9 年全端經驗，提供 APP 開發、客製化軟體開發與系統整合，專注打造高擴充性、高轉換率的數位產品。",
+    "title": "把你的 App 點子，做到上架",
+    "subtitle": "從企劃、設計、開發到 App Store 與 Google Play 上架，一個窗口全包。",
+    "subtitle2": "我自己做過 8 個 App 並上線，懂你會遇到的坑。先用免費 30 分鐘聊聊，評估可行性與做法。",
     "learnMore": "了解更多",
     "viewWorks": "作品集",
     "addLine": "與我聯繫",
@@ -30,9 +30,9 @@
     "featuredTitle": "成功",
     "featuredTitleHighlight": "案例",
     "viewAll": "查看全部作品",
-    "ctaTitle": "啟動您的專案，從專業諮詢開始",
+    "ctaTitle": "有個 App 點子？先聊 30 分鐘",
     "ctaDescription": "很多成功的專案，都是從一則訊息開始的。",
-    "ctaDescription2": "告訴我您的想法，我會免費幫您評估可行性和大致預算。",
+    "ctaDescription2": "告訴我你的想法，我會免費幫你評估可不行、怎麼做、大約多久。",
     "ctaButton": "預約專案評估",
     "services": {
       "corporate": "企業品牌形象構建",
@@ -100,9 +100,9 @@
       "tailored": "客製化交付"
     },
     "whyBadge": "為什麼選擇我們",
-    "whyTitle": "客製化軟體開發",
-    "whyHighlight": "首選夥伴",
-    "whyDescription": "從軟體委託、系統整合到產品顧問，Ark Studio 方舟工坊以 9 年全端經驗，為企業與個人打造真正解決問題的軟體。",
+    "whyTitle": "App 開發",
+    "whyHighlight": "一站式夥伴",
+    "whyDescription": "從軟體委託、系統整合到產品顧問，Ark Studio 方舟工坊以 9 年全端經驗，協助個人與新創把 App 點子做出來、上架、持續改善。",
     "why": {
       "customTitle": "客製化軟體開發",
       "customDesc": "不套模板、不將就。依您的商業邏輯量身設計系統架構與使用者體驗，從企業官網、電商到內部管理系統，100% 符合需求。",
@@ -397,9 +397,9 @@
     "copyright": "© 2024-{year} Ark Studio 方舟工坊. All rights reserved."
   },
   "meta": {
-    "title": "方舟工坊 Ark Studio｜APP 設計・軟體開發・客製化軟體工作室",
-    "description": "方舟工坊（Ark Studio）是台灣的軟體設計與開發工作室，提供 APP 開發、客製化軟體開發、企業官網、電商與預約系統、LINE 整合。9 年全端經驗，從企劃到上線一站式交付，免費 30 分鐘諮詢。",
-    "keywords": "方舟工坊,Ark Studio,APP設計,APP開發,軟體設計,軟體開發,客製化軟體開發,軟體開發供應商,軟體工作室,軟體外包,系統開發,企業系統,管理系統,預約系統,企業官網,電商網站,會員系統,LINE Bot,網站開發,全端開發,台灣軟體公司",
+    "title": "App 開發・App 外包｜從點子到上架｜方舟工坊 Ark Studio",
+    "description": "想做 App 卻不知道從哪開始？方舟工坊協助個人與新創從企劃、設計、開發到 App Store、Google Play 上架，已自製上線 8 個 App。免費 30 分鐘評估可行性。",
+    "keywords": "方舟工坊,Ark Studio,APP開發,APP外包,想做APP找誰,APP上架代辦,新創APP開發,MVP開發,APP設計,軟體設計,軟體開發,客製化軟體開發,軟體開發供應商,軟體工作室,軟體外包,系統開發,企業系統,管理系統,預約系統,企業官網,電商網站,會員系統,LINE Bot,網站開發,全端開發,台灣軟體公司",
     "titleServices": "軟體開發服務｜APP 設計、客製化系統、官網電商｜方舟工坊",
     "titlePortfolio": "作品集｜APP 與軟體開發案例｜方舟工坊 Ark Studio",
     "titleAbout": "關於方舟工坊｜9 年全端軟體設計與開發工作室",
