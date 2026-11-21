@@ -22,10 +22,10 @@
     "learnMore": "了解更多",
     "viewWorks": "作品集",
     "addLine": "与我联系",
-    "servicesBadge": "核心技术服务",
-    "servicesTitle": "企业级数位",
-    "servicesTitleHighlight": "解决方案",
-    "servicesDescription": "提供从架构规划、系统开发到长期维运的一站式技术服务",
+    "servicesBadge": "服务内容",
+    "servicesTitle": "从想法到",
+    "servicesTitleHighlight": "上线",
+    "servicesDescription": "企划、设计、开发、上线与维护，一个窗口处理",
     "featuredBadge": "数位转型成功案例",
     "featuredTitle": "成功",
     "featuredTitleHighlight": "案例",
@@ -35,14 +35,14 @@
     "ctaDescription2": "告诉我你的想法，我会免费帮你评估可不可行、怎么做、大约多久。",
     "ctaButton": "预约项目评估",
     "services": {
-      "corporate": "企业品牌形象构建",
-      "corporateDesc": "企业形象官网、入口平台。提升品牌权威，强化流量转化。",
-      "operations": "企业营运管理系统",
-      "operationsDesc": "将繁琐作业数位化。透过量身打造的后台系统，优化营运流程。",
-      "events": "活动与会员整合平台",
-      "eventsDesc": "从在线报名到线下签到，整合会员资料，实现精准行销。",
-      "custom": "客制化全端开发",
-      "customDesc": "不受限于既有框架，完全依据商业逻辑量身打造的全方位解决方案。"
+      "corporate": "App 开发",
+      "corporateDesc": "从画面设计到上架 App Store 与 Google Play，iOS、Android、网页版都能做。",
+      "operations": "网站与电商",
+      "operationsDesc": "企业官网、预约、线上购买，让客人从搜索找到你。",
+      "events": "后台管理系统",
+      "eventsDesc": "把 Excel 与人工作业整理成自己的系统，会员、订单、报表一次管。",
+      "custom": "LINE 机器人与整合",
+      "customDesc": "串接 LINE、支付与外部系统，让重复的事自动完成。"
     },
     "projects": {
       "actionLead": "艾乐资讯股份有限公司",
@@ -100,9 +100,9 @@
       "tailored": "定制化交付"
     },
     "whyBadge": "为什么选择我们",
-    "whyTitle": "定制化软件开发",
-    "whyHighlight": "首选伙伴",
-    "whyDescription": "从软件委托、系统集成到产品顾问，Ark Studio 方舟工坊以 9 年全栈经验，为企业与个人打造真正解决问题的软件。",
+    "whyTitle": "软件开发",
+    "whyHighlight": "一站式伙伴",
+    "whyDescription": "从软件委托、系统集成到产品顾问，Ark Studio 方舟工坊以 9 年全栈经验，协助个人、新创与企业把想法做成真正能用的软件。",
     "why": {
       "customTitle": "定制化软件开发",
       "customDesc": "不套模板、不将就。依您的商业逻辑量身设计系统架构与用户体验，从企业官网、电商到内部管理系统，100% 符合需求。",
@@ -113,17 +113,17 @@
     },
     "consult": {
       "eyebrow": "服务流程",
-      "title": "咨询到上线，四个步骤",
-      "sub": "从想法到产品，流程完全透明",
+      "title": "从想法到上线，四个步骤",
+      "sub": "流程透明，每一步你都知道在做什么",
       "cta": "立即免费咨询",
       "s1t": "免费咨询",
-      "s1d": "加 Line 联系，30 分钟厘清需求",
+      "s1d": "加 Line 联系，30 分钟聊你的想法",
       "s2t": "需求评估",
-      "s2d": "免费评估可行性与预算范围",
+      "s2d": "免费评估可行性、功能范围与做法",
       "s3t": "方案报价",
-      "s3d": "透明报价，分期付款",
+      "s3d": "依功能范围报价，可分期付款",
       "s4t": "开发上线",
-      "s4d": "每周回报进度，准时交付"
+      "s4d": "定期回报进度，协助上线并持续维护"
     },
     "fit": {
       "badge": "先想清楚再动工",
@@ -214,7 +214,7 @@
     "badge": "Portfolio",
     "title": "作品",
     "titleHighlight": "集",
-    "pageDescription": "重视每一个客户，每个项目代表我对品质的坚持。",
+    "pageDescription": "我自己设计、开发并上线的 App，加上客户委托的网站与系统。每个作品都是实际在运作的成果。",
     "viewSite": "查看网站",
     "filters": {
       "label": "分类筛选",
@@ -272,94 +272,94 @@
     "badge": "Services",
     "title": "服务",
     "titleHighlight": "项目",
-    "pageDescription": "提供全方位的软件开发服务，从构思到上线一站式完成",
+    "pageDescription": "App、网站、后台系统到 LINE 机器人，从构想到上线一站式完成",
     "mainServices": {
-      "corporate": "企业品牌形象构建",
-      "corporateSubtitle": "Corporate Brand & Identity",
-      "corporateDesc": "打造具备商业影响力的企业门户。从视觉设计到用户体验，提升品牌权威并强化流量转化。",
+      "corporate": "App 开发",
+      "corporateSubtitle": "iOS・Android・Web App",
+      "corporateDesc": "把想法做成真的能用的 App。从画面设计、功能开发到测试，我自己处理，不用你分头找设计师和工程师。",
       "corporateFeatures": [
-        "企业形象官网",
-        "多语系入口平台 (Portal)",
-        "RWD 响应式设计",
-        "品牌视觉识别整合"
+        "手机画面与操作流程设计",
+        "iOS 与 Android 开发",
+        "网页版同步（Web App）",
+        "App Store、Google Play 上架协助"
       ],
-      "operations": "企业营运管理系统",
-      "operationsSubtitle": "Enterprise Operations",
-      "operationsDesc": "将繁琐作业数位化、自动化。透过量身打造的后台系统，优化营运流程，提升团队效率。",
+      "operations": "网站与电商",
+      "operationsSubtitle": "Websites & E-commerce",
+      "operationsDesc": "让客人找得到你、信任你、直接下单或预约。从企业官网到线上购买与预约系统。",
       "operationsFeatures": [
-        "内部管理系统 (Admin)",
-        "进销存管理",
-        "数据仪表板 (Dashboard)",
-        "权限控管与流程自动化"
+        "企业官网与品牌网站",
+        "预约与线上购买",
+        "多语系与搜索优化（SEO）",
+        "RWD 手机友善设计"
       ],
-      "events": "活动与会员整合平台",
-      "eventsSubtitle": "Event & Member Platform",
-      "eventsDesc": "从在线报名到线下签到的完整解决方案。整合会员资料与活动数据，实现精准行销与管理。",
+      "events": "后台管理系统",
+      "eventsSubtitle": "Back-office Systems",
+      "eventsDesc": "把表单、Excel 与人工作业，整理成一套自己的系统，会员、订单、报表一次管。",
       "eventsFeatures": [
-        "活动报名系统",
-        "QR Code 现场签到",
-        "会员管理系统",
-        "客制化活动呈现"
+        "会员与订单管理",
+        "权限控制与流程自动化",
+        "数据仪表板与报表",
+        "活动报名与现场签到"
       ],
-      "custom": "客制化全端开发",
-      "customSubtitle": "Full-Stack Solutions",
-      "customDesc": "不受限于既有框架，完全依据您的商业逻辑量身打造。任何 Web 能解决的问题，都能为您实现。",
+      "custom": "LINE 机器人与整合",
+      "customSubtitle": "LINE Bot & Integrations",
+      "customDesc": "客人已经在用 LINE？把查询、提醒、记录交给机器人，并串接支付与外部系统。",
       "customFeatures": [
-        "专为您的商业模式量身打造",
-        "整合支付、LINE 与外部系统",
-        "建置您的云端服务平台",
-        "确保多人使用稳定顺畅"
+        "LINE 机器人与 AI 助理",
+        "支付与第三方 API 串接",
+        "自动提醒与通知",
+        "重复作业自动化"
       ]
     },
     "techBadge": "Technology",
     "techTitle": "使用的",
     "techTitleHighlight": "技术",
     "techDescription": "采用业界主流且稳定的技术栈，确保项目品质",
-    "pricingBadge": "Pricing",
+    "pricingBadge": "Plans",
     "pricingTitle": "合作",
-    "pricingTitleHighlight": "方案",
-    "pricingDescription": "弹性的合作方式，满足不同规模的项目需求",
+    "pricingTitleHighlight": "方式",
+    "pricingDescription": "依你的项目所处阶段选择，实际金额依功能范围报价，咨询免费",
     "pricing": {
-      "basic": "企业形象方案",
-      "basicDesc": "适合建立品牌信任感与展示服务",
+      "basic": "验证点子（MVP）",
+      "basicDesc": "只有想法、想先小范围测试的人",
       "basicFeatures": [
-        "响应式形象官网",
-        "多语系切换功能",
-        "CMS 内容管理系统",
-        "Google 商家整合",
-        "3 个月技术支持"
+        "需求访谈与功能取舍",
+        "画面设计与可操作原型",
+        "只做最核心功能的第一版",
+        "测试版交付与意见收集",
+        "评估是否值得做大，给你下一步建议"
       ],
-      "pro": "系统整合方案",
-      "proDesc": "适合数字化转型与优化营运流程",
+      "pro": "完整开发",
+      "proDesc": "确定要做、准备正式上线的人",
       "proFeatures": [
-        "客制化后台开发",
-        "第三方 API 串接",
-        "数据仪表板 (Dashboard)",
-        "权限与流程控管",
-        "6 个月技术支持"
+        "依需求开发 App、网站或系统",
+        "会员登录与云端数据同步",
+        "管理后台与数据查看",
+        "LINE、支付、推送等整合",
+        "上线与商店上架协助"
       ],
-      "enterprise": "商业加速方案",
-      "enterpriseDesc": "适合高流量平台与复杂商业模式",
+      "enterprise": "上线与长期维护",
+      "enterpriseDesc": "已有系统或 App，需要接手维护或持续改版的人",
       "enterpriseFeatures": [
-        "SaaS 平台核心开发",
-        "高并发架构设计",
-        "会员与金流整合",
-        "自动化部署 (CI/CD)",
-        "12 个月优先支持"
+        "商店审核文件与回复协助",
+        "系统与平台改版兼容、版本更新",
+        "错误修复",
+        "功能迭代（依需求评估）",
+        "定期回报与使用状况检视"
       ],
-      "popular": "热门方案",
-      "contact": "联系取得报价"
+      "popular": "最多人选",
+      "contact": "免费咨询，依需求报价"
     },
     "faqBadge": "FAQ",
     "faqTitle": "常见",
     "faqTitleHighlight": "问题",
     "faqs": {
-      "q1": "项目开发需要多长时间？",
-      "a1": "开发时间取决于项目的复杂程度，一般企业形象网站约需 4-6 周，较复杂的电商平台或客制化系统可能需要 2-4 个月，会在项目开始之前提供项目时程。",
+      "q1": "做一个软件项目需要多长时间？",
+      "a1": "依功能多寡而定。先做核心功能的 MVP 验证版会比完整版快很多。免费咨询时我会帮你拆分功能，并在开始前提供预估时程。",
       "q2": "付款方式如何进行？",
       "a2": "通常采用分期付款方式：签约时支付 30% 订金，开发中期支付 40%，项目完成验收后支付尾款 30%。具体付款方式可依项目需求弹性调整。",
       "q3": "网站完成后提供维护服务吗？",
-      "a3": "是的，所有项目都包含免费维护期，期间内提供针对程序错误（Bugs）的免费修复。维护期结束后，您可以选择续约维护服务，确保网站持续稳定运作并获得技术支持。",
+      "a3": "是的，所有项目都包含免费维护期，期间内免费修复程序错误（Bug）。之后可选择续约，持续更新版本、因应系统与平台改版，确保稳定运作。",
       "q4": "你跟其他接案工程师有什么不同？",
       "a4": "三个差异：第一，我具备从前端到后端的完整技术栈，所以您不需要找多个人各做一块；第二，我重视沟通，项目过程中您随时可以联系我，不会出现找不到人的状况；第三，我提供完整的售后维护期，上线后遇到问题也不用担心。",
       "a4_cards": [
@@ -382,13 +382,13 @@
       "q5": "如果做到一半不满意怎么办？",
       "a5": "在正式开发前，会提供设计稿供您确认方向。开发过程中也会有阶段性的 Demo 和验收，相关细节我们可再详谈。",
       "q6": "方舟工坊（Ark Studio）是什么？",
-      "a6": "方舟工坊（Ark Studio）是由 David 经营的软件设计与开发工作室，专注 APP 开发、定制化软件开发、企业官网、电商与预约系统。具备 9 年全栈经验，从策划到上线一站式交付。",
-      "q7": "可以开发 APP 吗？",
-      "a7": "可以。提供手机 APP 与网页应用（Web App）的设计与开发，从界面设计、后端与 API 到上线都能处理。欢迎告诉我您的想法，我会免费评估可行性与大致预算。",
-      "q8": "如何挑选软件开发供应商？",
-      "a8": "建议看三件事：有没有类似的实际案例、报价与时间表是否透明、上线后有没有维护保修。方舟工坊提供作品集供您参考，项目开始前先提供时间表，并包含免费维护期。",
-      "q9": "How is software development priced?",
-      "a9": "There is no fixed price. Cost depends mainly on the number of features, whether it is an app, a website or a back-office system, whether you need sign-in and an admin back office, and whether LINE or payment integrations are involved. In the free consultation I break the features down, suggest what to build first, and quote by scope. Starting with an MVP usually keeps the initial investment low."
+      "a6": "方舟工坊（Ark Studio）是由 David 经营的软件开发工作室，协助个人、新创与企业把想法做成 App、网站、后台管理系统与 LINE 机器人。9 年全栈经验，自己做过并上线多个软件产品。",
+      "q7": "我只有一个想法，没有设计稿也没做过软件，可以吗？",
+      "a7": "可以，大多数客户一开始都是这样。我会先陪你厘清要解决什么问题、最少需要哪些功能，再设计画面与开发，不需要你先懂技术。",
+      "q8": "App 上架很麻烦吗？你会帮忙吗？",
+      "a8": "会帮忙。上架要处理开发者账号、隐私权政策、截图与审核回复。我协助准备文件与处理审核意见；开发者账号建议用你自己的名义申请，App 的所有权才会在你手上。",
+      "q9": "软件开发费用怎么算？",
+      "a9": "没有固定价格。费用主要取决于功能数量、要做 App、网站还是后台系统、是否需要会员登录与管理后台，以及是否串接 LINE 或支付。免费咨询时，我会帮你拆分功能、建议先做哪些，再依范围报价；先做 MVP 验证版通常能把初期投入压低。"
     },
     "ctaTitle": "看完还有疑问？直接问最快",
     "ctaDescription": "每个项目都是独特的。告诉我您的情况，我帮您量身规划最合适的方案。",
@@ -413,44 +413,44 @@
     "promiseValue": "深度倾听，24h 内专业回复",
     "emailLink": "给我寄信",
     "brief": {
-      "title": "Project brief",
-      "desc": "Takes about a minute. A rough idea is enough, and I will read it before replying.",
-      "idea": "What do you want to solve with software?",
-      "ideaHint": "e.g. a tool for club members to sign up for events and check in",
-      "stage": "Current stage",
+      "title": "项目评估表单",
+      "desc": "花 1 分钟填写，我会先看过再回复你。不用写得很完整，大概的想法就够了。",
+      "idea": "你想用软件解决什么？",
+      "ideaHint": "例如：让社团成员报名活动并签到的工具",
+      "stage": "目前进度",
       "stageOptions": [
-        "Just an idea",
-        "Rough sketches or notes",
-        "Designs ready",
-        "Existing system or app that needs maintenance"
+        "只有想法",
+        "有简单的草图或文档",
+        "已有设计稿",
+        "已有系统或 App，需要维护或改版"
       ],
-      "platform": "What kind of solution",
+      "platform": "想做成哪一种",
       "platformOptions": [
-        "Not sure yet, advise me",
-        "Mobile app (iOS and Android)",
-        "Website or web app",
-        "Back-office system",
-        "LINE bot or automation"
+        "还不确定，想听建议",
+        "手机 App（iOS 与 Android）",
+        "网站或网页应用",
+        "后台管理系统",
+        "LINE 机器人或自动化"
       ],
-      "budget": "Budget range",
+      "budget": "预算范围",
       "budgetOptions": [
-        "No idea, advise me",
-        "Under 100k TWD",
-        "100k to 300k TWD",
-        "Over 300k TWD"
+        "还没想法，想先听建议",
+        "10 万以内",
+        "10 到 30 万",
+        "30 万以上"
       ],
-      "timing": "Desired launch",
+      "timing": "希望何时上线",
       "timingOptions": [
-        "No fixed deadline",
-        "Within 3 months",
-        "Within 6 months",
-        "As soon as possible"
+        "没有特别期限",
+        "3 个月内",
+        "半年内",
+        "越快越好"
       ],
-      "name": "Your name",
-      "sendEmail": "Send by email",
-      "note": "This opens your mail app with everything pre-filled. Check it and send.",
-      "mailSubject": "Software project brief",
-      "mailGreeting": "Hi, this is {name}. I would like you to assess a software project:"
+      "name": "怎么称呼你",
+      "sendEmail": "用 Email 发送",
+      "note": "点击后会打开你的邮件程序，内容已帮你填好，确认后发送即可。",
+      "mailSubject": "软件项目评估",
+      "mailGreeting": "你好，我是 {name}，想请你评估一个软件项目："
     }
   },
   "footer": {
@@ -461,15 +461,15 @@
   "meta": {
     "title": "软件开发・App 开发・系统外包｜从想法到上线｜方舟工坊 Ark Studio",
     "description": "想用软件解决问题却不知道从哪开始？方舟工坊协助个人、新创与企业做 App、网站、后台管理系统与 LINE 机器人，从策划到上线一站式完成。免费 30 分钟评估。",
-    "keywords": "方舟工坊,Ark Studio,APP设计,APP开发,软件设计,软件开发,定制化软件开发,软件开发供应商,软件工作室,软件外包,系统开发,企业系统,管理系统,预约系统,企业官网,电商网站,会员系统,LINE Bot,网站开发,全栈开发",
-    "titleServices": "软件开发服务｜APP 设计、定制化系统、官网电商｜方舟工坊",
-    "titlePortfolio": "作品集｜APP 与软件开发案例｜方舟工坊 Ark Studio",
-    "titleAbout": "关于方舟工坊｜9 年全栈软件设计与开发工作室",
-    "titleContact": "联系方舟工坊｜免费 30 分钟软件开发咨询",
-    "descServices": "方舟工坊提供 APP 设计与开发、定制化软件开发、企业官网、电商与预约系统、会员与内部管理后台、LINE 集成。从需求访谈、报价到上线维护，一站式交付。",
-    "descPortfolio": "方舟工坊的 APP 与软件开发作品集：企业官网、电商网站、组织活动系统与非营利组织平台，看看实际上线的项目成果。",
-    "descAbout": "方舟工坊（Ark Studio）由 David 经营，9 年全栈开发经验，独立完成企业官网、电商、内部管理平台等项目，是值得信赖的软件设计与开发工作室。",
-    "descContact": "想开发 APP 或定制化软件？欢迎通过 LINE、Telegram 或 Email 联系方舟工坊，免费评估可行性与预算，通常 24 小时内回复。"
+    "keywords": "方舟工坊,Ark Studio,软件开发,定制化软件开发,APP开发,APP外包,系统外包,网站开发,后台管理系统,LINE Bot,预约系统,会员系统,MVP开发,软件工作室,台湾软件公司,全栈开发",
+    "titleServices": "软件开发服务｜App、网站、后台系统、LINE 机器人｜方舟工坊",
+    "titlePortfolio": "作品集｜自制 App 与客户项目｜方舟工坊 Ark Studio",
+    "titleAbout": "关于方舟工坊｜9 年全栈经验的软件开发工作室",
+    "titleContact": "联系方舟工坊｜软件项目免费 30 分钟评估",
+    "descServices": "方舟工坊的软件开发流程：免费咨询、MVP 验证版、正式开发、上线与长期维护。App、网站、后台管理系统、LINE 机器人，按功能范围报价。",
+    "descPortfolio": "方舟工坊自己设计开发并上线的 App（育儿、旅游分账、灵修、吉他和弦），以及客户的官网与系统案例。",
+    "descAbout": "方舟工坊（Ark Studio）由 David 经营，9 年全栈经验，协助个人、新创与企业把想法做成 App、网站与系统。从画面设计、开发到维护，一个窗口处理。",
+    "descContact": "想做软件或 App？填写项目评估表单，或用 LINE、Telegram、Email 联系方舟工坊，免费评估可行性，通常 24 小时内回复。"
   },
   "notFound": {
     "title": "页面未找到",

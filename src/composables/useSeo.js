@@ -237,7 +237,7 @@ export function useSeo() {
         availableChannel: {
           '@type': 'ServiceChannel',
           serviceUrl: `${SITE_URL}/${loc}/contact`,
-          availableLanguage: ['zh-TW', 'zh-CN', 'en', 'ja', 'ko']
+          availableLanguage: ['zh-TW', 'zh-CN', 'en']
         },
         hasOfferCatalog: {
           '@type': 'OfferCatalog',

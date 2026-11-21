@@ -22,7 +22,7 @@ const { t } = useI18n();
 const stats = computed(() => [
   { id: 1, value: 9, suffix: "+", label: t("home.stats.years") },
   { id: 2, value: 14, suffix: "+", label: t("home.stats.projects") },
-  { id: 3, value: 11, suffix: "", label: t("home.stats.langs") },
+  { id: 3, value: 3, suffix: "", label: t("home.stats.langs") },
   { id: 4, value: 100, suffix: "%", label: t("home.stats.tailored") },
 ]);
 </script>

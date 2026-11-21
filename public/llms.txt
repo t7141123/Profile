@@ -2,7 +2,7 @@
 
 > 方舟工坊（Ark Studio）是台灣的軟體開發工作室，由 David 經營，協助個人、新創與企業把想法做成軟體：App、網站與電商、後台管理系統、LINE 機器人與系統整合，從企劃、開發到上線與維護一站式完成。9 年全端開發經驗，已自製上線多個軟體產品，提供免費 30 分鐘諮詢，費用依功能範圍報價（不公開固定價格）。
 >
-> Ark Studio (方舟工坊) is a Taiwan-based software development studio run by David. It helps individuals, startups and companies turn ideas into software: apps, websites and e-commerce, back-office management systems, LINE bots and integrations, from planning and development to launch and maintenance. 9+ years of full-stack experience, several self-built software products, free 30-minute consultation, quoted by scope (no fixed public prices). The site is available in 11 languages.
+> Ark Studio (方舟工坊) is a Taiwan-based software development studio run by David. It helps individuals, startups and companies turn ideas into software: apps, websites and e-commerce, back-office management systems, LINE bots and integrations, from planning and development to launch and maintenance. 9+ years of full-stack experience, several self-built software products, free 30-minute consultation, quoted by scope (no fixed public prices). The site is available in Traditional Chinese, Simplified Chinese and English.
 
 ## 主要頁面 Main pages
 
@@ -42,9 +42,6 @@
 
 - English: https://ark-studio.app/en/
 - 简体中文: https://ark-studio.app/zh-cn/
-- 日本語: https://ark-studio.app/ja/
-- 한국어: https://ark-studio.app/ko/
-- Español / Français / Deutsch / Português / Tiếng Việt / ไทย: https://ark-studio.app/es/ , /fr/ , /de/ , /pt/ , /vi/ , /th/
 
 ## Optional
 

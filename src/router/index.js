@@ -3,7 +3,7 @@ import i18n, { loadLocaleMessages } from "../i18n";
 import Home from "../views/Home.vue";
 
 // Supported locales (keep in sync with src/i18n.js)
-const locales = ['zh-tw', 'zh-cn', 'en', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'vi', 'th'];
+const locales = ['zh-tw', 'zh-cn', 'en'];
 const defaultLocale = 'zh-tw';
 
 function detectBrowserLocale() {
@@ -19,14 +19,15 @@ function detectBrowserLocale() {
       if (lang.includes('cn') || lang.includes('sg') || lang.includes('hans')) return 'zh-cn'
       return 'zh-tw'
     }
-    if (base === 'pt') return 'pt'
     return null
   }
   for (const lang of raw) {
     const hit = tryMatch(lang)
     if (hit) return hit
   }
-  return defaultLocale
+  // Any other language gets English; Chinese and unknown fall back to the default
+  const primary = (raw[0] || '').split('-')[0]
+  return primary && primary !== 'zh' ? 'en' : defaultLocale
 }
 
 // Preferred locale: saved choice wins, otherwise auto-detect browser

@@ -15,7 +15,7 @@ import { chromium } from 'playwright-core'
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const DIST = join(ROOT, 'dist')
 const SITE = 'https://ark-studio.app'
-const LOCALES = ['zh-tw', 'zh-cn', 'en', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'vi', 'th']
+const LOCALES = ['zh-tw', 'zh-cn', 'en']
 const DEFAULT_LOCALE = 'zh-tw'
 // '' = locale home page
 const PAGES = [

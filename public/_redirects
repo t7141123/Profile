@@ -9,5 +9,23 @@ https://www.ark-studio.app/* https://ark-studio.app/:splat 301
 /services /zh-tw/services 302
 /contact /zh-tw/contact 302
 
+# Retired languages -> English (301, keeps the path)
+/ja/* /en/:splat 301
+/ja /en/ 301
+/ko/* /en/:splat 301
+/ko /en/ 301
+/es/* /en/:splat 301
+/es /en/ 301
+/fr/* /en/:splat 301
+/fr /en/ 301
+/de/* /en/:splat 301
+/de /en/ 301
+/pt/* /en/:splat 301
+/pt /en/ 301
+/vi/* /en/:splat 301
+/vi /en/ 301
+/th/* /en/:splat 301
+/th /en/ 301
+
 # No SPA catch-all on purpose: every real URL is prerendered to a static file,
 # and unknown URLs get the real 404.html (HTTP 404) instead of a soft-404 200.

@@ -116,7 +116,7 @@ const projects = computed(() => getAllProjects());
 
 const metaChips = computed(() => [
   { value: `${projects.value.length}+`, label: t("home.stats.projects") },
-  { value: "11", label: t("home.stats.langs") },
+  { value: "3", label: t("home.stats.langs") },
   { value: "100%", label: t("home.stats.tailored") },
 ]);
 

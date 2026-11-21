@@ -2,7 +2,7 @@ import { createI18n } from 'vue-i18n'
 import zhTW from './locales/zh-TW.json'
 import en from './locales/en.json'
 
-const locales = ['zh-tw', 'zh-cn', 'en', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'vi', 'th']
+const locales = ['zh-tw', 'zh-cn', 'en']
 const defaultLocale = 'zh-tw'
 
 function detectBrowserLocale() {
@@ -21,8 +21,6 @@ function detectBrowserLocale() {
       if (lang.includes('cn') || lang.includes('sg') || lang.includes('hans')) return 'zh-cn'
       return 'zh-tw'
     }
-    // pt variants
-    if (base === 'pt') return 'pt'
     return null
   }
 
@@ -30,7 +28,9 @@ function detectBrowserLocale() {
     const hit = tryMatch(lang)
     if (hit) return hit
   }
-  return defaultLocale
+  // Any other language gets English; Chinese and unknown fall back to the default
+  const primary = (raw[0] || '').split('-')[0]
+  return primary && primary !== 'zh' ? 'en' : defaultLocale
 }
 
 const savedLocale = localStorage.getItem('locale')
@@ -51,15 +51,7 @@ const i18n = createI18n({
 const fileMap = {
   'zh-cn': 'zh-CN',
   'zh-tw': 'zh-TW',
-  'en': 'en',
-  'ja': 'ja',
-  'ko': 'ko',
-  'es': 'es',
-  'fr': 'fr',
-  'de': 'de',
-  'pt': 'pt',
-  'vi': 'vi',
-  'th': 'th'
+  'en': 'en'
 }
 
 async function loadLocaleMessages(locale) {
