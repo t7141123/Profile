@@ -1,5 +1,5 @@
 <template>
-  <form class="brief glass-card text-start" @submit.prevent="sendEmail">
+  <form class="brief text-start" @submit.prevent="sendEmail">
     <h2 class="brief-title">{{ $t("contact.brief.title") }}</h2>
     <p class="brief-desc">{{ $t("contact.brief.desc") }}</p>
 
@@ -18,29 +18,29 @@
 
       <div class="col-md-6">
         <label class="form-label" for="brief-stage">{{ $t("contact.brief.stage") }}</label>
-        <select id="brief-stage" v-model="form.stage" class="form-select">
-          <option v-for="o in tm('contact.brief.stageOptions')" :key="rt(o)" :value="rt(o)">{{ rt(o) }}</option>
+        <select id="brief-stage" v-model.number="form.stage" class="form-select">
+          <option v-for="(o, i) in options('stage')" :key="i" :value="i">{{ o }}</option>
         </select>
       </div>
 
       <div class="col-md-6">
         <label class="form-label" for="brief-platform">{{ $t("contact.brief.platform") }}</label>
-        <select id="brief-platform" v-model="form.platform" class="form-select">
-          <option v-for="o in tm('contact.brief.platformOptions')" :key="rt(o)" :value="rt(o)">{{ rt(o) }}</option>
+        <select id="brief-platform" v-model.number="form.platform" class="form-select">
+          <option v-for="(o, i) in options('platform')" :key="i" :value="i">{{ o }}</option>
         </select>
       </div>
 
       <div class="col-md-6">
         <label class="form-label" for="brief-budget">{{ $t("contact.brief.budget") }}</label>
-        <select id="brief-budget" v-model="form.budget" class="form-select">
-          <option v-for="o in tm('contact.brief.budgetOptions')" :key="rt(o)" :value="rt(o)">{{ rt(o) }}</option>
+        <select id="brief-budget" v-model.number="form.budget" class="form-select">
+          <option v-for="(o, i) in options('budget')" :key="i" :value="i">{{ o }}</option>
         </select>
       </div>
 
       <div class="col-md-6">
         <label class="form-label" for="brief-timing">{{ $t("contact.brief.timing") }}</label>
-        <select id="brief-timing" v-model="form.timing" class="form-select">
-          <option v-for="o in tm('contact.brief.timingOptions')" :key="rt(o)" :value="rt(o)">{{ rt(o) }}</option>
+        <select id="brief-timing" v-model.number="form.timing" class="form-select">
+          <option v-for="(o, i) in options('timing')" :key="i" :value="i">{{ o }}</option>
         </select>
       </div>
 
@@ -51,46 +51,34 @@
     </div>
 
     <div class="brief-actions">
-      <button type="button" class="btn btn-line" :disabled="!form.idea" @click="sendLine">
-        <i class="bi bi-line me-2"></i>{{ $t("contact.brief.sendLine") }}
-      </button>
       <button type="submit" class="btn btn-rainbow" :disabled="!form.idea">
         <i class="bi bi-envelope-fill me-2"></i>{{ $t("contact.brief.sendEmail") }}
       </button>
     </div>
-    <p class="brief-note" role="status" aria-live="polite">
-      {{ copied ? $t("contact.brief.copied") : $t("contact.brief.note") }}
-    </p>
+    <p class="brief-note">{{ $t("contact.brief.note") }}</p>
   </form>
 </template>
 
 <script setup>
-import { computed, reactive, ref } from "vue";
+import { computed, reactive } from "vue";
 import { useI18n } from "vue-i18n";
 import { contact } from "@/config/contact";
 
 const { t, tm, rt } = useI18n();
-const copied = ref(false);
 
-const first = (key) => rt(tm(key)[0]);
-const form = reactive({
-  idea: "",
-  stage: first("contact.brief.stageOptions"),
-  platform: first("contact.brief.platformOptions"),
-  budget: first("contact.brief.budgetOptions"),
-  timing: first("contact.brief.timingOptions"),
-  name: "",
-});
+// Selects hold the option index, so defaults never depend on when locale messages finish loading
+const options = (name) => tm(`contact.brief.${name}Options`).map((o) => rt(o));
+const form = reactive({ idea: "", stage: 0, platform: 0, budget: 0, timing: 0, name: "" });
 
 const message = computed(() =>
   [
     t("contact.brief.mailGreeting", { name: form.name || "-" }),
     "",
     `${t("contact.brief.idea")}: ${form.idea}`,
-    `${t("contact.brief.stage")}: ${form.stage}`,
-    `${t("contact.brief.platform")}: ${form.platform}`,
-    `${t("contact.brief.budget")}: ${form.budget}`,
-    `${t("contact.brief.timing")}: ${form.timing}`,
+    `${t("contact.brief.stage")}: ${options("stage")[form.stage]}`,
+    `${t("contact.brief.platform")}: ${options("platform")[form.platform]}`,
+    `${t("contact.brief.budget")}: ${options("budget")[form.budget]}`,
+    `${t("contact.brief.timing")}: ${options("timing")[form.timing]}`,
   ].join("\n"),
 );
 
@@ -100,17 +88,6 @@ const sendEmail = () => {
   const body = encodeURIComponent(message.value);
   window.location.href = `mailto:${contact.email}?subject=${subject}&body=${body}`;
 };
-
-const sendLine = async () => {
-  if (!form.idea) return;
-  try {
-    await navigator.clipboard.writeText(message.value);
-    copied.value = true;
-  } catch {
-    copied.value = false;
-  }
-  window.open(contact.line, "_blank", "noopener,noreferrer");
-};
 </script>
 
 <style scoped>
@@ -118,6 +95,10 @@ const sendLine = async () => {
   max-width: 760px;
   margin: 3rem auto 0;
   padding: 2rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
 }
 .brief-title {
   font-size: 1.5rem;
@@ -129,11 +110,40 @@ const sendLine = async () => {
   line-height: 1.8;
   margin-bottom: 1.5rem;
 }
+.form-label {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.form-control,
+.form-select {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  min-height: 48px;
+}
+.form-control::placeholder {
+  color: var(--text-muted);
+}
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(139, 94, 60, 0.25);
+}
+:global([data-theme="dark"]) .brief .form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23d9c7b2' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+.form-select option {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
 .brief-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
   margin-top: 1.5rem;
+}
+.brief-actions .btn {
+  min-width: 220px;
 }
 .brief-note {
   color: var(--text-secondary);

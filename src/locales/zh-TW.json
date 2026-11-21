@@ -452,10 +452,8 @@
         "愈快愈好"
       ],
       "name": "怎麼稱呼你",
-      "sendLine": "複製內容並開啟 LINE",
       "sendEmail": "用 Email 寄出",
-      "note": "LINE 會先複製內容，開啟後貼上傳送即可；Email 會開啟你的郵件程式。",
-      "copied": "已複製，到 LINE 貼上傳送即可。",
+      "note": "按下後會開啟你的郵件程式，內容已幫你填好，確認後寄出即可。",
       "mailSubject": "App 專案評估",
       "mailGreeting": "你好，我是 {name}，想請你評估一個 App 專案："
     }

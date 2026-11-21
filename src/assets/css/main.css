@@ -353,7 +353,7 @@ a:hover {
 }
 
 [data-theme='dark'] .glass-card {
-  --glass-bg: rgba(30, 41, 59, 0.7);
+  --glass-bg: rgba(34, 28, 21, 0.7); /* warm walnut, matches --bg-secondary */
   --glass-border: rgba(255, 255, 255, 0.1);
   box-shadow: var(--shadow-md);
 }

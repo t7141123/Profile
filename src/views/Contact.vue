@@ -10,16 +10,16 @@
       @scroll-click="scrollToContent"
     >
       <!-- CTA Buttons Slot -->
-      <div class="header-cta d-flex flex-column flex-sm-row justify-content-center gap-3 mt-4">
+      <div class="header-cta d-flex flex-row justify-content-center gap-2 gap-sm-3 mt-4">
         <a
           :href="contact.line"
           target="_blank" rel="noopener noreferrer"
-          class="btn btn-line"
+          class="btn btn-line flex-fill flex-sm-grow-0"
           v-ripple
         >
           <i class="bi bi-line me-2"></i>{{ $t("home.addLine") }}
         </a>
-        <a :href="'mailto:' + contact.email" class="btn btn-rainbow" v-ripple>
+        <a :href="'mailto:' + contact.email" class="btn btn-rainbow flex-fill flex-sm-grow-0" v-ripple>
           <i class="bi bi-envelope-fill me-2"></i>{{ $t("contact.emailLink") }}
         </a>
       </div>

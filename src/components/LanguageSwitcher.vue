@@ -153,7 +153,7 @@ const currentLangName = computed(() => {
 }
 
 :global([data-theme='dark']) .language-switcher :deep(.dropdown-menu) {
-  --dropdown-bg: rgba(30, 41, 59, 0.98);
+  --dropdown-bg: rgba(34, 28, 21, 0.98);
   --dropdown-border: rgba(255, 255, 255, 0.08);
   --dropdown-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.04) inset;
   --item-color: rgba(255, 255, 255, 0.72);

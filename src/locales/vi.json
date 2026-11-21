@@ -452,10 +452,8 @@
         "As soon as possible"
       ],
       "name": "Your name",
-      "sendLine": "Copy and open LINE",
       "sendEmail": "Send by email",
-      "note": "LINE: the text is copied, paste it in the chat. Email opens your mail app.",
-      "copied": "Copied. Paste it in LINE to send.",
+      "note": "This opens your mail app with everything pre-filled. Check it and send.",
       "mailSubject": "App project brief",
       "mailGreeting": "Hi, this is {name}. I would like you to assess an app project:"
     }
