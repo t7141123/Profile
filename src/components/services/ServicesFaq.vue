@@ -113,6 +113,11 @@ const faqs = computed(() => [
     question: t("services.faqs.q8"),
     answer: t("services.faqs.a8"),
   },
+  {
+    id: 9,
+    question: t("services.faqs.q9"),
+    answer: t("services.faqs.a9"),
+  },
 ]);
 </script>
 

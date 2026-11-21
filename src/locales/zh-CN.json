@@ -367,7 +367,9 @@
       "q7": "可以开发 APP 吗？",
       "a7": "可以。提供手机 APP 与网页应用（Web App）的设计与开发，从界面设计、后端与 API 到上线都能处理。欢迎告诉我您的想法，我会免费评估可行性与大致预算。",
       "q8": "如何挑选软件开发供应商？",
-      "a8": "建议看三件事：有没有类似的实际案例、报价与时间表是否透明、上线后有没有维护保修。方舟工坊提供作品集供您参考，项目开始前先提供时间表，并包含免费维护期。"
+      "a8": "建议看三件事：有没有类似的实际案例、报价与时间表是否透明、上线后有没有维护保修。方舟工坊提供作品集供您参考，项目开始前先提供时间表，并包含免费维护期。",
+      "q9": "How is app development priced?",
+      "a9": "There is no fixed price. Cost depends mainly on the number of features, whether you need iOS, Android or a web version, whether you need sign-in and an admin back office, and whether LINE or payment integrations are involved. In the free consultation I break the features down, suggest what to build first, and quote by scope. Starting with an MVP usually keeps the initial investment low."
     },
     "ctaTitle": "看完还有疑问？直接问最快",
     "ctaDescription": "每个项目都是独特的。告诉我您的情况，我帮您量身规划最合适的方案。",

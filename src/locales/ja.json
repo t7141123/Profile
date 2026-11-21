@@ -367,7 +367,9 @@
       "q7": "アプリ開発はできますか？",
       "a7": "はい。モバイルアプリとWebアプリの設計・開発に対応し、画面設計からバックエンド、API、公開まで一貫して行います。アイデアをお聞かせいただければ、実現性と大まかな予算を無料で評価します。",
       "q8": "ソフトウェア開発会社はどう選べばよいですか？",
-      "a8": "似た実績があるか、見積もりとスケジュールが明確か、公開後の保守があるか、の3点を確認してください。Ark Studio は実績を公開し、開始前にスケジュールを提示し、無料の保守期間も含みます。"
+      "a8": "似た実績があるか、見積もりとスケジュールが明確か、公開後の保守があるか、の3点を確認してください。Ark Studio は実績を公開し、開始前にスケジュールを提示し、無料の保守期間も含みます。",
+      "q9": "How is app development priced?",
+      "a9": "There is no fixed price. Cost depends mainly on the number of features, whether you need iOS, Android or a web version, whether you need sign-in and an admin back office, and whether LINE or payment integrations are involved. In the free consultation I break the features down, suggest what to build first, and quote by scope. Starting with an MVP usually keeps the initial investment low."
     },
     "ctaTitle": "まだご不明な点がありますか？お気軽にどうぞ",
     "ctaDescription": "すべてのプロジェクトは唯一無二です。あなたのプロジェクトについてお聞かせください。最適なプランをご提案します。",

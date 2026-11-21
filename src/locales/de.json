@@ -367,7 +367,9 @@
       "q7": "Entwickeln Sie auch mobile Apps?",
       "a7": "Ja. Wir gestalten und entwickeln mobile Apps und Web-Apps, vom UI-Design über Backend und APIs bis zum Launch. Schildern Sie uns Ihre Idee, wir prüfen kostenlos Machbarkeit und grobes Budget.",
       "q8": "Wie wähle ich einen Softwareentwicklungs-Dienstleister aus?",
-      "a8": "Achten Sie auf drei Dinge: echte Referenzen zu ähnlichen Projekten, transparente Preise und Zeitpläne sowie Wartung nach dem Launch. Ark Studio zeigt ein Portfolio, liefert vor Projektstart einen Zeitplan und beinhaltet eine kostenlose Wartungsphase."
+      "a8": "Achten Sie auf drei Dinge: echte Referenzen zu ähnlichen Projekten, transparente Preise und Zeitpläne sowie Wartung nach dem Launch. Ark Studio zeigt ein Portfolio, liefert vor Projektstart einen Zeitplan und beinhaltet eine kostenlose Wartungsphase.",
+      "q9": "How is app development priced?",
+      "a9": "There is no fixed price. Cost depends mainly on the number of features, whether you need iOS, Android or a web version, whether you need sign-in and an admin back office, and whether LINE or payment integrations are involved. In the free consultation I break the features down, suggest what to build first, and quote by scope. Starting with an MVP usually keeps the initial investment low."
     },
     "ctaTitle": "Noch Fragen? Fragen Sie einfach",
     "ctaDescription": "Jedes Projekt ist einzigartig. Erzählen Sie mir von Ihrem Vorhaben und ich erstelle einen passenden, maßgeschneiderten Plan für Sie.",

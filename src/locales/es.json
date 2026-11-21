@@ -367,7 +367,9 @@
       "q7": "¿Desarrollan apps móviles?",
       "a7": "Sí. Diseñamos y desarrollamos apps móviles y aplicaciones web, desde el diseño de interfaz y el backend con APIs hasta el lanzamiento. Cuéntenos su idea y evaluaremos gratis la viabilidad y un presupuesto aproximado.",
       "q8": "¿Cómo elegir un proveedor de desarrollo de software?",
-      "a8": "Fíjese en tres cosas: casos reales similares a su proyecto, precios y plazos transparentes, y mantenimiento tras el lanzamiento. Ark Studio comparte su portafolio, entrega un calendario antes de empezar e incluye un periodo de mantenimiento gratuito."
+      "a8": "Fíjese en tres cosas: casos reales similares a su proyecto, precios y plazos transparentes, y mantenimiento tras el lanzamiento. Ark Studio comparte su portafolio, entrega un calendario antes de empezar e incluye un periodo de mantenimiento gratuito.",
+      "q9": "How is app development priced?",
+      "a9": "There is no fixed price. Cost depends mainly on the number of features, whether you need iOS, Android or a web version, whether you need sign-in and an admin back office, and whether LINE or payment integrations are involved. In the free consultation I break the features down, suggest what to build first, and quote by scope. Starting with an MVP usually keeps the initial investment low."
     },
     "ctaTitle": "¿Aún tiene dudas? Solo pregunte",
     "ctaDescription": "Cada proyecto es único. Cuénteme sobre el suyo y diseñaré el plan perfecto para usted.",

@@ -367,7 +367,9 @@
       "q7": "Bạn có phát triển ứng dụng di động không?",
       "a7": "Có. Chúng tôi thiết kế và phát triển ứng dụng di động và ứng dụng web, từ thiết kế giao diện, backend và API đến khi ra mắt. Hãy cho chúng tôi biết ý tưởng, chúng tôi sẽ đánh giá miễn phí tính khả thi và ngân sách sơ bộ.",
       "q8": "Làm sao chọn nhà cung cấp phát triển phần mềm?",
-      "a8": "Hãy xem ba điều: có dự án thực tế tương tự hay không, báo giá và tiến độ có minh bạch không, và có bảo trì sau khi ra mắt không. Ark Studio chia sẻ portfolio, cung cấp lịch trình trước khi bắt đầu và bao gồm thời gian bảo trì miễn phí."
+      "a8": "Hãy xem ba điều: có dự án thực tế tương tự hay không, báo giá và tiến độ có minh bạch không, và có bảo trì sau khi ra mắt không. Ark Studio chia sẻ portfolio, cung cấp lịch trình trước khi bắt đầu và bao gồm thời gian bảo trì miễn phí.",
+      "q9": "How is app development priced?",
+      "a9": "There is no fixed price. Cost depends mainly on the number of features, whether you need iOS, Android or a web version, whether you need sign-in and an admin back office, and whether LINE or payment integrations are involved. In the free consultation I break the features down, suggest what to build first, and quote by scope. Starting with an MVP usually keeps the initial investment low."
     },
     "ctaTitle": "Vẫn còn thắc mắc? Cứ hỏi ngay",
     "ctaDescription": "Mỗi dự án đều là duy nhất. Hãy cho tôi biết về dự án của bạn, tôi sẽ thiết kế kế hoạch phù hợp nhất.",

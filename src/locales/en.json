@@ -367,7 +367,9 @@
       "q7": "Do you develop mobile apps?",
       "a7": "Yes. We design and build mobile apps and web apps, from UI design and backend APIs through launch. Tell us your idea and we will evaluate feasibility and a rough budget for free.",
       "q8": "How do I choose a software development vendor?",
-      "a8": "Look at three things: real case studies similar to your project, transparent pricing and timeline, and maintenance after launch. Ark Studio shares a portfolio, provides a schedule before the project starts, and includes a free maintenance period."
+      "a8": "Look at three things: real case studies similar to your project, transparent pricing and timeline, and maintenance after launch. Ark Studio shares a portfolio, provides a schedule before the project starts, and includes a free maintenance period.",
+      "q9": "How is app development priced?",
+      "a9": "There is no fixed price. Cost depends mainly on the number of features, whether you need iOS, Android or a web version, whether you need sign-in and an admin back office, and whether LINE or payment integrations are involved. In the free consultation I break the features down, suggest what to build first, and quote by scope. Starting with an MVP usually keeps the initial investment low."
     },
     "ctaTitle": "Still have questions? Just ask",
     "ctaDescription": "Every project is unique. Tell me about yours and I'll tailor the perfect plan.",

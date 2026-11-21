@@ -2,11 +2,12 @@ import { watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { locales } from '@/router'
+import projectsData from '@/assets/data/projects.json'
 
 const SITE_URL = 'https://ark-studio.app'
 const SITE_NAME = 'Ark Studio'
 const OG_IMAGE = `${SITE_URL}/og-image.jpg`
-const OG_IMAGE_ALT = '方舟工坊 Ark Studio — APP 設計與軟體開發工作室'
+const OG_IMAGE_ALT = '方舟工坊 Ark Studio — App 開發工作室，從點子到上架'
 
 const ROUTE_META = {
   Home: { titleKey: 'meta.title', descKey: 'meta.description', pageType: 'WebPage' },
@@ -197,7 +198,7 @@ export function useSeo() {
     if (routeName === 'Services') {
       try {
         const faqs = []
-        for (let i = 1; i <= 8; i++) {
+        for (let i = 1; i <= 9; i++) {
           const q = t(`services.faqs.q${i}`)
           const a = t(`services.faqs.a${i}`)
           if (q && a && q !== `services.faqs.q${i}`) {
@@ -226,13 +227,13 @@ export function useSeo() {
       ensureJsonLd('jsonld-service', {
         '@context': 'https://schema.org',
         '@type': 'Service',
-        serviceType: 'Custom Software Development',
-        name: 'Ark Studio — Custom Software Development',
+        serviceType: 'Mobile App Development',
+        name: 'Ark Studio — App Development from Idea to Store Release',
         url: `${SITE_URL}/${loc}/`,
         provider: { '@id': `${SITE_URL}/#organization` },
         areaServed: 'Worldwide',
         description:
-          'Custom software development, software outsourcing, system integration, corporate websites, e-commerce, booking & management systems, LINE Bot and AI integration.',
+          'App design and development for individuals and startups: MVP validation, iOS and Android apps, App Store and Google Play release support, maintenance. Also corporate websites, booking and member systems, LINE Bot integration.',
         availableChannel: {
           '@type': 'ServiceChannel',
           serviceUrl: `${SITE_URL}/${loc}/contact`,
@@ -240,20 +241,60 @@ export function useSeo() {
         },
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
-          name: 'Software Development Services',
+          name: 'App Development Services',
           itemListElement: [
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '客製化軟體開發 Custom Software Development' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '軟體委託開發 Software Outsourcing' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '系統整合與自動化 System Integration & Automation' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '企業官網與電商開發 Corporate Website & E-commerce' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '預約與管理系統 Booking & Management Systems' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'LINE Bot 與 AI 整合 LINE Bot & AI Integration' } }
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'App 開發 App Development (iOS / Android / Web App)' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'MVP 驗證版 MVP Validation' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'App Store 與 Google Play 上架協助 Store Release Support' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'App 維護與改版 App Maintenance' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '後端、會員、LINE 與金流整合 Backend & Integrations' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '企業官網與客製系統 Corporate Websites & Custom Systems' } }
           ]
         }
       })
     } else {
       const el = document.getElementById('jsonld-service')
       if (el) el.remove()
+    }
+
+    // HowTo JSON-LD on Services: the four-step process (answer-engine friendly)
+    if (routeName === 'Services') {
+      ensureJsonLd('jsonld-howto', {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: t('home.consult.title'),
+        description: t('home.consult.sub'),
+        step: [1, 2, 3, 4].map(n => ({
+          '@type': 'HowToStep',
+          position: n,
+          name: t(`home.consult.s${n}t`),
+          text: t(`home.consult.s${n}d`)
+        }))
+      })
+    } else {
+      document.getElementById('jsonld-howto')?.remove()
+    }
+
+    // Portfolio JSON-LD: the studio's own apps as an ItemList of SoftwareApplication
+    if (routeName === 'Portfolio') {
+      const apps = projectsData.filter(p => p.isApp && p.url)
+      ensureJsonLd('jsonld-apps', {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        itemListElement: apps.map((p, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          item: {
+            '@type': 'SoftwareApplication',
+            name: t(`portfolio.projects.${p.key}`),
+            description: t(`portfolio.projects.${p.key}Desc`),
+            url: p.url,
+            author: { '@id': `${SITE_URL}/#organization` }
+          }
+        }))
+      })
+    } else {
+      document.getElementById('jsonld-apps')?.remove()
     }
   }
 
