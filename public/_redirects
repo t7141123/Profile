@@ -9,6 +9,9 @@ https://www.ark-studio.app/* https://ark-studio.app/:splat 301
 /services /zh-tw/services 302
 /contact /zh-tw/contact 302
 
+# Copy-code helper for verification emails (static, noindex)
+/copy /copy/index.html 200
+
 # Retired languages -> English (301, keeps the path)
 /ja/* /en/:splat 301
 /ja /en/ 301
