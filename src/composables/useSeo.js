@@ -7,7 +7,7 @@ import projectsData from '@/assets/data/projects.json'
 const SITE_URL = 'https://ark-studio.app'
 const SITE_NAME = 'Ark Studio'
 const OG_IMAGE = `${SITE_URL}/og-image.jpg`
-const OG_IMAGE_ALT = '方舟工坊 Ark Studio — App 開發工作室，從點子到上架'
+const OG_IMAGE_ALT = '方舟工坊 Ark Studio — 軟體開發工作室，從想法到上線'
 
 const ROUTE_META = {
   Home: { titleKey: 'meta.title', descKey: 'meta.description', pageType: 'WebPage' },
@@ -227,13 +227,13 @@ export function useSeo() {
       ensureJsonLd('jsonld-service', {
         '@context': 'https://schema.org',
         '@type': 'Service',
-        serviceType: 'Mobile App Development',
-        name: 'Ark Studio — App Development from Idea to Store Release',
+        serviceType: 'Custom Software Development',
+        name: 'Ark Studio — Custom Software: Apps, Websites, Back-office Systems and LINE Bots',
         url: `${SITE_URL}/${loc}/`,
         provider: { '@id': `${SITE_URL}/#organization` },
         areaServed: 'Worldwide',
         description:
-          'App design and development for individuals and startups: MVP validation, iOS and Android apps, App Store and Google Play release support, maintenance. Also corporate websites, booking and member systems, LINE Bot integration.',
+          'Custom software for individuals, startups and companies: apps (iOS, Android, web), websites and e-commerce, back-office management systems, LINE bots and integrations. From planning and MVP to launch and maintenance.',
         availableChannel: {
           '@type': 'ServiceChannel',
           serviceUrl: `${SITE_URL}/${loc}/contact`,
@@ -241,14 +241,14 @@ export function useSeo() {
         },
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
-          name: 'App Development Services',
+          name: 'Software Development Services',
           itemListElement: [
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'App 開發 App Development (iOS / Android / Web App)' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '網站與電商 Websites & E-commerce' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '後台管理系統 Back-office Management Systems' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'LINE 機器人與自動化 LINE Bot & Automation' } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'MVP 驗證版 MVP Validation' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'App Store 與 Google Play 上架協助 Store Release Support' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'App 維護與改版 App Maintenance' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '後端、會員、LINE 與金流整合 Backend & Integrations' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '企業官網與客製系統 Corporate Websites & Custom Systems' } }
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '上線、上架協助與維護 Launch, Store Release & Maintenance' } }
           ]
         }
       })

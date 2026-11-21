@@ -16,33 +16,33 @@
     "contact": "聯繫我"
   },
   "home": {
-    "title": "App 點子值不值得做？聊 30 分鐘，免費告訴你。",
-    "subtitle": "App 開發，從企劃、設計、開發到 App Store 與 Google Play 上架，一個窗口全包。",
-    "subtitle2": "我自己做過多個 App 並上線，懂你會遇到的坑。先用免費 30 分鐘聊聊，評估可行性與做法。",
+    "title": "有件事想用軟體解決？聊 30 分鐘，免費告訴你怎麼做。",
+    "subtitle": "App、網站、系統到 LINE 機器人，從企劃、開發到上線，一個窗口全包。",
+    "subtitle2": "我自己做過並上線多個軟體產品，懂你會遇到的坑。先用免費 30 分鐘聊聊，評估可行性與做法。",
     "learnMore": "了解更多",
     "viewWorks": "作品集",
     "addLine": "與我聯繫",
     "servicesBadge": "服務內容",
-    "servicesTitle": "App 從點子到",
-    "servicesTitleHighlight": "上架",
-    "servicesDescription": "企劃、設計、開發、上架、維護，一個窗口處理",
+    "servicesTitle": "從想法到",
+    "servicesTitleHighlight": "上線",
+    "servicesDescription": "企劃、設計、開發、上線與維護，一個窗口處理",
     "featuredBadge": "數位轉型成功案例",
     "featuredTitle": "成功",
     "featuredTitleHighlight": "案例",
     "viewAll": "查看全部作品",
-    "ctaTitle": "App 點子值不值得做？先聊 30 分鐘",
+    "ctaTitle": "有件事想用軟體解決？先聊 30 分鐘",
     "ctaDescription": "很多成功的專案，都是從一則訊息開始的。",
-    "ctaDescription2": "告訴我你的想法，我會免費幫你評估可不行、怎麼做、大約多久。",
+    "ctaDescription2": "告訴我你的想法，我會免費幫你評估可不可行、怎麼做、大約多久。",
     "ctaButton": "預約專案評估",
     "services": {
       "corporate": "App 開發",
-      "corporateDesc": "從畫面設計、功能開發到測試，一個人處理完，iOS、Android、網頁版都能做。",
-      "operations": "MVP 驗證版",
-      "operationsDesc": "先做最核心功能給真實使用者試用，確認有人要用再投入更多。",
-      "events": "上架與維護",
-      "eventsDesc": "帳號、審核文件、截圖到審核回覆，我協助你準備，上線後也持續維護。",
-      "custom": "後端與整合",
-      "customDesc": "會員登入、雲端資料、管理後台，以及 LINE、金流串接，一併規劃。"
+      "corporateDesc": "從畫面設計到上架 App Store 與 Google Play，iOS、Android、網頁版都能做。",
+      "operations": "網站與電商",
+      "operationsDesc": "企業官網、預約、線上購買，讓客人從搜尋找到你。",
+      "events": "後台管理系統",
+      "eventsDesc": "把 Excel 與人工作業整理成自己的系統，會員、訂單、報表一次管。",
+      "custom": "LINE 機器人與整合",
+      "customDesc": "串接 LINE、金流與外部系統，讓重複的事自動完成。"
     },
     "projects": {
       "actionLead": "艾樂資訊股份有限公司",
@@ -100,9 +100,9 @@
       "tailored": "客製化交付"
     },
     "whyBadge": "為什麼選擇我們",
-    "whyTitle": "App 開發",
+    "whyTitle": "軟體開發",
     "whyHighlight": "一站式夥伴",
-    "whyDescription": "從軟體委託、系統整合到產品顧問，Ark Studio 方舟工坊以 9 年全端經驗，協助個人與新創把 App 點子做出來、上架、持續改善。",
+    "whyDescription": "從軟體委託、系統整合到產品顧問，Ark Studio 方舟工坊以 9 年全端經驗，協助個人、新創與企業把想法做成真正能用的軟體。",
     "why": {
       "customTitle": "客製化軟體開發",
       "customDesc": "不套模板、不將就。依您的商業邏輯量身設計系統架構與使用者體驗，從企業官網、電商到內部管理系統，100% 符合需求。",
@@ -113,42 +113,37 @@
     },
     "consult": {
       "eyebrow": "服務流程",
-      "title": "從點子到上架，四個步驟",
+      "title": "從想法到上線，四個步驟",
       "sub": "流程透明，每一步你都知道在做什麼",
       "cta": "立即免費諮詢",
       "s1t": "免費諮詢",
-      "s1d": "加 Line 聯繫，30 分鐘聊你的 App 點子",
+      "s1d": "加 Line 聯繫，30 分鐘聊你的想法",
       "s2t": "需求評估",
       "s2d": "免費評估可行性、功能範圍與做法",
       "s3t": "方案報價",
       "s3d": "依功能範圍報價，可分期付款",
       "s4t": "開發上線",
-      "s4d": "定期回報進度，協助上架並持續維護"
+      "s4d": "定期回報進度，協助上線並持續維護"
     },
     "fit": {
       "badge": "先想清楚再動工",
-      "title": "不是每個點子",
-      "highlight": "都需要做成 App",
-      "desc": "很多想法值得做成 App，也有一些用別的方式更快、更省錢。我會老實告訴你，不會為了接案硬說要做。",
-      "yesTitle": "適合做成 App 的點子",
-      "yes": [
-        "需要每天打開、反覆使用的工具或服務",
-        "要用到手機功能，例如通知、相機、定位、離線使用",
-        "想經營會員與社群，長期留住使用者",
-        "想上架 App Store 或 Google Play，被更多人找到"
-      ],
-      "noTitle": "其實不一定要做 App 的點子",
-      "no": [
-        "只是想介紹公司或服務：一個網站就夠了",
-        "只有少數人、偶爾才用：LINE 機器人或表單更快",
-        "還不確定有沒有人要用：先做精簡的驗證版，不用一次做滿",
-        "流程很單純：試算表或現成工具就能解決"
-      ],
-      "ctaTitle": "你的點子是哪一種？",
-      "ctaDesc": "不用先想清楚，也不用懂技術。免費聊 30 分鐘，我會直接告訴你適不適合、怎麼做最划算。",
+      "title": "你的需求",
+      "highlight": "適合哪一種軟體？",
+      "desc": "不用先想清楚。我會依你的情況，老實告訴你怎麼做最省。",
+      "c1t": "App",
+      "c1d": "要每天使用、需要手機功能，或想上架 App Store、Google Play。",
+      "c2t": "網站",
+      "c2d": "介紹公司、接受預約或線上購買，讓客人從搜尋找到你。",
+      "c3t": "後台管理系統",
+      "c3d": "把表單、Excel 與人工作業，整理成一套自己的系統。",
+      "c4t": "LINE 機器人",
+      "c4d": "客人已經在用 LINE，或重複的事想交給程式自動完成。",
+      "ctaTitle": "不確定要選哪一種？",
+      "ctaDesc": "不用先想清楚，也不用懂技術。免費聊 30 分鐘，我會直接告訴你適合做什麼、怎麼做最划算，不適合就直說。",
       "ctaLine": "用 LINE 預約免費諮詢",
       "ctaForm": "填寫專案評估表單"
-    }
+    },
+    "heroCta": "免費諮詢 30 分鐘"
   },
   "about": {
     "badge": "About Me",
@@ -277,43 +272,43 @@
     "badge": "Services",
     "title": "服務",
     "titleHighlight": "項目",
-    "pageDescription": "從點子、設計、開發到 App Store 與 Google Play 上架，一個窗口全部處理",
+    "pageDescription": "App、網站、後台系統到 LINE 機器人，從構想到上線一站式完成",
     "mainServices": {
       "corporate": "App 開發",
       "corporateSubtitle": "iOS・Android・Web App",
-      "corporateDesc": "把你的點子做成真的能用的 App。從畫面設計、功能開發到測試，我都自己處理，不用你分頭找設計師和工程師。",
+      "corporateDesc": "把想法做成真的能用的 App。從畫面設計、功能開發到測試，我自己處理，不用你分頭找設計師和工程師。",
       "corporateFeatures": [
         "手機畫面與操作流程設計",
         "iOS 與 Android 開發",
         "網頁版同步（Web App）",
-        "實機測試與修正"
+        "App Store、Google Play 上架協助"
       ],
-      "operations": "MVP 驗證版",
-      "operationsSubtitle": "Idea to MVP",
-      "operationsDesc": "先做最核心的功能，快速給真實使用者試用，確認有人要用，再決定要不要投入更多。",
+      "operations": "網站與電商",
+      "operationsSubtitle": "Websites & E-commerce",
+      "operationsDesc": "讓客人找得到你、信任你、直接下單或預約。從企業官網到線上購買與預約系統。",
       "operationsFeatures": [
-        "需求訪談與功能取捨",
-        "可操作的原型",
-        "精簡的第一版 App",
-        "測試版交付與意見收集"
+        "企業官網與品牌網站",
+        "預約與線上購買",
+        "多語系與搜尋優化（SEO）",
+        "RWD 手機友善設計"
       ],
-      "events": "上架與維護",
-      "eventsSubtitle": "Store Release & Care",
-      "eventsDesc": "上架要處理開發者帳號、隱私權政策、截圖與審核回覆，很容易卡關。我協助你準備這些文件，上線後也持續維護。",
+      "events": "後台管理系統",
+      "eventsSubtitle": "Back-office Systems",
+      "eventsDesc": "把表單、Excel 與人工作業，整理成一套自己的系統，會員、訂單、報表一次管。",
       "eventsFeatures": [
-        "App Store／Google Play 上架協助",
-        "審核文件與隱私權政策",
-        "版本更新與系統改版相容",
-        "錯誤修復與功能迭代"
+        "會員與訂單管理",
+        "權限控管與流程自動化",
+        "數據儀表板與報表",
+        "活動報名與現場簽到"
       ],
-      "custom": "後端與整合",
-      "customSubtitle": "Backend & Integrations",
-      "customDesc": "需要會員登入、雲端資料、管理後台、LINE 或金流串接？一併規劃，不用再找另一組人。",
+      "custom": "LINE 機器人與整合",
+      "customSubtitle": "LINE Bot & Integrations",
+      "customDesc": "客人已經在用 LINE？把查詢、提醒、記錄交給機器人，並串接金流與外部系統。",
       "customFeatures": [
-        "會員登入與雲端資料同步",
-        "管理後台與數據查看",
-        "串接 LINE、金流、推播",
-        "多人使用的穩定架構"
+        "LINE 機器人與 AI 助理",
+        "金流與第三方 API 串接",
+        "自動提醒與通知",
+        "重複作業自動化"
       ]
     },
     "techBadge": "Technology",
@@ -323,10 +318,10 @@
     "pricingBadge": "Plans",
     "pricingTitle": "合作",
     "pricingTitleHighlight": "方式",
-    "pricingDescription": "依你的 App 所在階段選擇，實際金額依功能範圍報價，諮詢免費",
+    "pricingDescription": "依你的專案所在階段選擇，實際金額依功能範圍報價，諮詢免費",
     "pricing": {
       "basic": "驗證點子（MVP）",
-      "basicDesc": "只有點子、想先小範圍測試的人",
+      "basicDesc": "只有想法、想先小範圍測試的人",
       "basicFeatures": [
         "需求訪談與功能取捨",
         "畫面設計與可操作原型",
@@ -337,17 +332,17 @@
       "pro": "完整 App",
       "proDesc": "確定要做、準備正式上線的人",
       "proFeatures": [
-        "iOS 與 Android 開發",
+        "依需求開發 App、網站或系統",
         "會員登入與雲端資料同步",
         "管理後台與數據查看",
         "LINE、金流、推播等整合",
-        "App Store／Google Play 上架協助"
+        "上線與商店上架協助"
       ],
-      "enterprise": "上架與長期維護",
-      "enterpriseDesc": "已有 App，需要接手維護或持續改版的人",
+      "enterprise": "上線與長期維護",
+      "enterpriseDesc": "已有系統或 App，需要接手維護或持續改版的人",
       "enterpriseFeatures": [
         "商店審核文件與回覆協助",
-        "系統改版相容與版本更新",
+        "系統與平台改版相容、版本更新",
         "錯誤修復",
         "功能迭代（依需求評估）",
         "定期回報與使用狀況檢視"
@@ -359,12 +354,12 @@
     "faqTitle": "常見",
     "faqTitleHighlight": "問題",
     "faqs": {
-      "q1": "做一個 App 需要多長時間？",
-      "a1": "依功能多寡而定。先做核心功能的 MVP 會比完整 App 快很多。免費諮詢時我會幫你拆分功能，並在開始前提供預估時程。",
+      "q1": "做一個軟體專案需要多長時間？",
+      "a1": "依功能多寡而定。先做核心功能的 MVP 驗證版會比完整版快很多。免費諮詢時我會幫你拆分功能，並在開始前提供預估時程。",
       "q2": "付款方式如何進行？",
       "a2": "通常採用分期付款方式：簽約時支付 30% 訂金，開發中期支付 40%，專案完成驗收後支付尾款 30%。具體付款方式可依專案需求彈性調整。",
       "q3": "網站完成後提供維護服務嗎？",
-      "a3": "是的，所有專案都包含免費維護期，期間內免費修復程式錯誤（Bug）。之後可選擇續約，持續更新版本、因應 iOS 與 Android 改版，確保 App 穩定運作。",
+      "a3": "是的，所有專案都包含免費維護期，期間內免費修復程式錯誤（Bug）。之後可選擇續約，持續更新版本、因應系統與平台改版，確保穩定運作。",
       "q4": "你跟其他接案工程師有什麼不同？",
       "a4": "三個差異：\n\n第一，我具備從前端到後端的完整技術棧，所以您不需要找多個人各做一塊。\n\n第二，我重視溝通，專案過程中您隨時可以聯繫我，不會出現找不到人的狀況。\n\n第三，我提供完整的售後維護期，上線後遇到問題也不用擔心。",
       "a4_cards": [
@@ -387,13 +382,13 @@
       "q5": "如果做到一半不滿意怎麼辦？",
       "a5": "在正式開發前，會提供設計稿供您確認方向。開發過程中也會有階段性的 Demo 和驗收，相關細節我們可再詳談。",
       "q6": "方舟工坊（Ark Studio）是什麼？",
-      "a6": "方舟工坊（Ark Studio）是由 David 經營的 App 開發工作室，協助個人與新創把 App 點子做到上架。9 年全端經驗，自己做過並上線多個 App，也承接企業官網與客製系統。",
-      "q7": "我只有一個點子，沒有設計稿也沒做過 App，可以嗎？",
+      "a6": "方舟工坊（Ark Studio）是由 David 經營的軟體開發工作室，協助個人、新創與企業把想法做成 App、網站、後台管理系統與 LINE 機器人。9 年全端經驗，自己做過並上線多個軟體產品。",
+      "q7": "我只有一個想法，沒有設計稿也沒做過軟體，可以嗎？",
       "a7": "可以，大多數客戶一開始都是這樣。我會先陪你釐清要解決什麼問題、最少需要哪些功能，再設計畫面與開發，不需要你先懂技術。",
       "q8": "App 上架很麻煩嗎？你會幫忙嗎？",
       "a8": "會幫忙。上架要處理開發者帳號、隱私權政策、截圖與審核回覆。我協助準備文件與處理審核意見；開發者帳號建議用你自己的名義申請，App 的所有權才會在你手上。",
-      "q9": "App 開發費用怎麼算？",
-      "a9": "沒有固定價格。費用主要取決於功能數量、要做 iOS、Android 還是網頁版、是否需要會員登入與管理後台，以及是否串接 LINE 或金流。免費諮詢時，我會幫你拆分功能、建議先做哪些，再依範圍報價；先做 MVP 驗證版通常能把初期投入壓低。"
+      "q9": "軟體開發費用怎麼算？",
+      "a9": "沒有固定價格。費用主要取決於功能數量、要做 App、網站還是後台系統、是否需要會員登入與管理後台，以及是否串接 LINE 或金流。免費諮詢時，我會幫你拆分功能、建議先做哪些，再依範圍報價；先做 MVP 驗證版通常能把初期投入壓低。"
     },
     "ctaTitle": "看完還有疑問？直接問最快",
     "ctaDescription": "每個專案都是獨特的。告訴我您的情況，我幫您量身規劃最合適的方案。",
@@ -420,22 +415,22 @@
     "brief": {
       "title": "專案評估表單",
       "desc": "花 1 分鐘填寫，我會先看過再回覆你。不用寫得很完整，大概的想法就夠了。",
-      "idea": "你想做什麼 App？",
-      "ideaHint": "例如：讓社團成員報名活動並簽到的 App",
+      "idea": "你想用軟體解決什麼？",
+      "ideaHint": "例如：讓社團成員報名活動並簽到的工具",
       "stage": "目前進度",
       "stageOptions": [
-        "只有點子",
+        "只有想法",
         "有簡單的草圖或文件",
         "已有設計稿",
-        "已有 App，需要維護或改版"
+        "已有系統或 App，需要維護或改版"
       ],
-      "platform": "想上架的平台",
+      "platform": "想做成哪一種",
       "platformOptions": [
-        "還不確定",
-        "iOS 與 Android",
-        "只做 iOS",
-        "只做 Android",
-        "網頁版"
+        "還不確定，想聽建議",
+        "手機 App（iOS 與 Android）",
+        "網站或網頁應用",
+        "後台管理系統",
+        "LINE 機器人或自動化"
       ],
       "budget": "預算範圍",
       "budgetOptions": [
@@ -454,8 +449,8 @@
       "name": "怎麼稱呼你",
       "sendEmail": "用 Email 寄出",
       "note": "按下後會開啟你的郵件程式，內容已幫你填好，確認後寄出即可。",
-      "mailSubject": "App 專案評估",
-      "mailGreeting": "你好，我是 {name}，想請你評估一個 App 專案："
+      "mailSubject": "軟體專案評估",
+      "mailGreeting": "你好，我是 {name}，想請你評估一個軟體專案："
     }
   },
   "footer": {
@@ -464,17 +459,17 @@
     "copyright": "© 2024-{year} Ark Studio 方舟工坊. All rights reserved."
   },
   "meta": {
-    "title": "App 開發・App 外包｜從點子到上架｜方舟工坊 Ark Studio",
-    "description": "想做 App 卻不知道從哪開始？方舟工坊協助個人與新創從企劃、設計、開發到 App Store、Google Play 上架，已自製上線多個 App。免費 30 分鐘評估可行性。",
-    "keywords": "方舟工坊,Ark Studio,APP開發,APP外包,想做APP找誰,APP上架代辦,新創APP開發,MVP開發,APP設計,軟體設計,軟體開發,客製化軟體開發,軟體開發供應商,軟體工作室,軟體外包,系統開發,企業系統,管理系統,預約系統,企業官網,電商網站,會員系統,LINE Bot,網站開發,全端開發,台灣軟體公司",
-    "titleServices": "App 開發服務｜從 MVP、開發到上架維護｜方舟工坊",
+    "title": "軟體開發・App 開發・系統外包｜從想法到上線｜方舟工坊 Ark Studio",
+    "description": "想用軟體解決問題卻不知道從哪開始？方舟工坊協助個人、新創與企業做 App、網站、後台管理系統與 LINE 機器人，從企劃到上線一站式完成。免費 30 分鐘評估。",
+    "keywords": "方舟工坊,Ark Studio,軟體開發,客製化軟體開發,APP開發,APP外包,系統外包,網站開發,後台管理系統,LINE Bot,預約系統,會員系統,MVP開發,軟體工作室,台灣軟體公司,全端開發",
+    "titleServices": "軟體開發服務｜App、網站、後台系統、LINE 機器人｜方舟工坊",
     "titlePortfolio": "作品集｜自製 App 與客戶專案｜方舟工坊 Ark Studio",
-    "titleAbout": "關於方舟工坊｜9 年全端經驗的 App 開發工作室",
-    "titleContact": "聯絡方舟工坊｜App 專案免費 30 分鐘評估",
-    "descServices": "方舟工坊的 App 開發流程：免費諮詢、MVP 驗證版、正式開發、App Store 與 Google Play 上架協助、長期維護。依功能範圍報價。",
+    "titleAbout": "關於方舟工坊｜9 年全端經驗的軟體開發工作室",
+    "titleContact": "聯絡方舟工坊｜軟體專案免費 30 分鐘評估",
+    "descServices": "方舟工坊的軟體開發流程：免費諮詢、MVP 驗證版、正式開發、上線與長期維護。App、網站、後台管理系統、LINE 機器人，依功能範圍報價。",
     "descPortfolio": "方舟工坊自己設計開發並上線的 App（育兒、旅遊分帳、靈修、吉他和弦），以及客戶的官網與系統案例。",
-    "descAbout": "方舟工坊（Ark Studio）由 David 經營，9 年全端經驗，專注協助個人與新創把 App 點子做到上架。從畫面設計、開發到維護，一個窗口處理。",
-    "descContact": "想做 App？填寫專案評估表單，或用 LINE、Telegram、Email 聯絡方舟工坊，免費評估可行性，通常 24 小時內回覆。"
+    "descAbout": "方舟工坊（Ark Studio）由 David 經營，9 年全端經驗，協助個人、新創與企業把想法做成 App、網站與系統。從畫面設計、開發到維護，一個窗口處理。",
+    "descContact": "想做軟體或 App？填寫專案評估表單，或用 LINE、Telegram、Email 聯絡方舟工坊，免費評估可行性，通常 24 小時內回覆。"
   },
   "notFound": {
     "title": "頁面未找到",

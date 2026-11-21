@@ -16,9 +16,9 @@
     "contact": "Liên hệ"
   },
   "home": {
-    "title": "Đối Tác Chuyển Đổi Số Của Bạn",
-    "subtitle": "Biến Website Thành Cỗ Máy Kinh Doanh Mạnh Mẽ",
-    "subtitle2": "9+ năm kinh nghiệm full-stack, kiến tạo sản phẩm số có khả năng mở rộng cao và tỷ lệ chuyển đổi vượt trội.",
+    "title": "Có việc muốn giải quyết bằng phần mềm? Trò chuyện 30 phút, miễn phí.",
+    "subtitle": "App, website, hệ thống quản lý đến bot LINE: từ lên kế hoạch, phát triển đến ra mắt, chỉ một đầu mối.",
+    "subtitle2": "Tôi đã tự làm và phát hành nhiều sản phẩm phần mềm nên hiểu những chỗ dễ vấp. Hãy bắt đầu bằng buổi trò chuyện miễn phí 30 phút để đánh giá tính khả thi và hướng làm.",
     "learnMore": "Tìm hiểu thêm",
     "viewWorks": "Danh mục",
     "addLine": "Liên hệ",
@@ -30,9 +30,9 @@
     "featuredTitle": "Dự Án",
     "featuredTitleHighlight": " Tiêu Biểu",
     "viewAll": "Xem tất cả dự án",
-    "ctaTitle": "Bắt Đầu Dự Án Với Buổi Tư Vấn Chuyên Nghiệp",
+    "ctaTitle": "Có việc muốn giải quyết bằng phần mềm? Trò chuyện 30 phút trước",
     "ctaDescription": "Nhiều dự án thành công đều bắt đầu từ một tin nhắn.",
-    "ctaDescription2": "Hãy chia sẻ ý tưởng của bạn, tôi sẽ tư vấn tính khả thi và ngân sách hoàn toàn miễn phí.",
+    "ctaDescription2": "Hãy kể ý tưởng của bạn. Tôi sẽ đánh giá miễn phí xem có làm được không, làm thế nào và mất khoảng bao lâu.",
     "ctaButton": "Đặt lịch tư vấn",
     "services": {
       "corporate": "Thương Hiệu & Nhận Diện Doanh Nghiệp",
@@ -126,29 +126,24 @@
       "s4d": "Báo cáo tuần, bàn giao đúng hẹn"
     },
     "fit": {
-      "badge": "Think first, build later",
-      "title": "Not every idea ",
-      "highlight": "needs to be an app",
-      "desc": "Many ideas deserve an app, and some are better served in a faster, cheaper way. I will tell you honestly.",
-      "yesTitle": "Ideas that suit an app",
-      "yes": [
-        "A tool or service people open every day",
-        "Needs phone features such as notifications, camera, location or offline use",
-        "You want to grow members and a community over time",
-        "You want to be found on the App Store or Google Play"
-      ],
-      "noTitle": "Ideas that may not need an app",
-      "no": [
-        "You just want to introduce a company or service: a website is enough",
-        "A few people use it occasionally: a LINE bot or a form is faster",
-        "Not sure anyone wants it yet: start with a lean validation version",
-        "A very simple process: a spreadsheet or an existing tool can do it"
-      ],
-      "ctaTitle": "Which kind is your idea?",
-      "ctaDesc": "No need to have it figured out, and no tech knowledge needed. Talk for 30 minutes for free and I will tell you if it fits and the most worthwhile way to build it.",
-      "ctaLine": "Book a free chat on LINE",
-      "ctaForm": "Fill in the project brief"
-    }
+      "badge": "Nghĩ kỹ rồi mới làm",
+      "title": "Loại phần mềm nào ",
+      "highlight": "phù hợp nhu cầu của bạn?",
+      "desc": "Chưa cần biết trước. Tôi sẽ nói thẳng điều gì giúp bạn tiết kiệm nhất theo tình huống của bạn.",
+      "c1t": "App",
+      "c1d": "Dùng hằng ngày, cần tính năng điện thoại, hoặc muốn lên App Store và Google Play.",
+      "c2t": "Website",
+      "c2d": "Giới thiệu doanh nghiệp, nhận đặt chỗ hoặc bán hàng online và được tìm thấy qua tìm kiếm.",
+      "c3t": "Hệ thống quản lý",
+      "c3d": "Biến biểu mẫu, bảng tính và công việc thủ công thành hệ thống riêng của bạn.",
+      "c4t": "Bot LINE & tự động hóa",
+      "c4d": "Khách hàng đã dùng LINE, hoặc muốn việc lặp lại tự chạy.",
+      "ctaTitle": "Chưa biết chọn loại nào?",
+      "ctaDesc": "Không cần nghĩ rõ trước, cũng không cần hiểu kỹ thuật. Trò chuyện miễn phí 30 phút, tôi sẽ nói thẳng điều gì phù hợp và cách làm tiết kiệm nhất, hoặc nói rõ nếu phần mềm không phải lời giải.",
+      "ctaLine": "Đặt lịch tư vấn miễn phí qua LINE",
+      "ctaForm": "Điền biểu mẫu dự án"
+    },
+    "heroCta": "Tư vấn miễn phí 30 phút"
   },
   "about": {
     "badge": "Về Tôi",
@@ -392,8 +387,8 @@
       "a7": "Có. Chúng tôi thiết kế và phát triển ứng dụng di động và ứng dụng web, từ thiết kế giao diện, backend và API đến khi ra mắt. Hãy cho chúng tôi biết ý tưởng, chúng tôi sẽ đánh giá miễn phí tính khả thi và ngân sách sơ bộ.",
       "q8": "Làm sao chọn nhà cung cấp phát triển phần mềm?",
       "a8": "Hãy xem ba điều: có dự án thực tế tương tự hay không, báo giá và tiến độ có minh bạch không, và có bảo trì sau khi ra mắt không. Ark Studio chia sẻ portfolio, cung cấp lịch trình trước khi bắt đầu và bao gồm thời gian bảo trì miễn phí.",
-      "q9": "How is app development priced?",
-      "a9": "There is no fixed price. Cost depends mainly on the number of features, whether you need iOS, Android or a web version, whether you need sign-in and an admin back office, and whether LINE or payment integrations are involved. In the free consultation I break the features down, suggest what to build first, and quote by scope. Starting with an MVP usually keeps the initial investment low."
+      "q9": "How is software development priced?",
+      "a9": "There is no fixed price. Cost depends mainly on the number of features, whether it is an app, a website or a back-office system, whether you need sign-in and an admin back office, and whether LINE or payment integrations are involved. In the free consultation I break the features down, suggest what to build first, and quote by scope. Starting with an MVP usually keeps the initial investment low."
     },
     "ctaTitle": "Vẫn còn thắc mắc? Cứ hỏi ngay",
     "ctaDescription": "Mỗi dự án đều là duy nhất. Hãy cho tôi biết về dự án của bạn, tôi sẽ thiết kế kế hoạch phù hợp nhất.",
@@ -420,29 +415,29 @@
     "brief": {
       "title": "Project brief",
       "desc": "Takes about a minute. A rough idea is enough, and I will read it before replying.",
-      "idea": "What app do you want to build?",
-      "ideaHint": "e.g. an app for club members to sign up for events and check in",
+      "idea": "What do you want to solve with software?",
+      "ideaHint": "e.g. a tool for club members to sign up for events and check in",
       "stage": "Current stage",
       "stageOptions": [
         "Just an idea",
         "Rough sketches or notes",
         "Designs ready",
-        "Existing app that needs maintenance"
+        "Existing system or app that needs maintenance"
       ],
-      "platform": "Target platform",
+      "platform": "What kind of solution",
       "platformOptions": [
-        "Not sure yet",
-        "iOS and Android",
-        "iOS only",
-        "Android only",
-        "Web app"
+        "Not sure yet, advise me",
+        "Mobile app (iOS and Android)",
+        "Website or web app",
+        "Back-office system",
+        "LINE bot or automation"
       ],
       "budget": "Budget range",
       "budgetOptions": [
         "No idea, advise me",
-        "Under 10 (x10k TWD)",
-        "10 to 30 (x10k TWD)",
-        "Over 30 (x10k TWD)"
+        "Under 100k TWD",
+        "100k to 300k TWD",
+        "Over 300k TWD"
       ],
       "timing": "Desired launch",
       "timingOptions": [
@@ -454,8 +449,8 @@
       "name": "Your name",
       "sendEmail": "Send by email",
       "note": "This opens your mail app with everything pre-filled. Check it and send.",
-      "mailSubject": "App project brief",
-      "mailGreeting": "Hi, this is {name}. I would like you to assess an app project:"
+      "mailSubject": "Software project brief",
+      "mailGreeting": "Hi, this is {name}. I would like you to assess a software project:"
     }
   },
   "footer": {
@@ -464,8 +459,8 @@
     "copyright": "© 2024-{year} Ark Studio. Bảo lưu mọi quyền."
   },
   "meta": {
-    "title": "Ark Studio – Phần Mềm Theo Yêu Cầu — Hệ Thống, E-commerce, Đặt Lịch, Website & App – 9+ Năm Full-Stack",
-    "description": "Phần mềm theo yêu cầu cho doanh nghiệp và cá nhân: hệ thống quản lý, nền tảng đặt lịch, website doanh nghiệp, e-commerce, hệ thống thành viên và công cụ nội bộ tích hợp LINE. Hơn 9 năm full-stack, bàn giao trọn gói, tư vấn miễn phí 30 phút.",
+    "title": "Phát triển phần mềm & app | Từ ý tưởng đến ra mắt | Ark Studio",
+    "description": "Muốn giải quyết vấn đề bằng phần mềm nhưng không biết bắt đầu từ đâu? Ark Studio xây dựng app, website, hệ thống quản lý và bot LINE cho cá nhân, startup và doanh nghiệp. 30 phút miễn phí để đánh giá tính khả thi.",
     "keywords": "phát triển phần mềm theo yêu cầu,phát triển hệ thống doanh nghiệp,hệ thống quản lý,hệ thống đặt lịch,website doanh nghiệp,e-commerce,hệ thống thành viên,công cụ nội bộ,LINE Bot,phát triển web,tích hợp hệ thống,phát triển app,lập trình viên freelance,full-stack,Ark Studio",
     "titleServices": "Dịch vụ – Ark Studio – Phần Mềm Theo Yêu Cầu — Hệ Thống, E-commerce, Đặt Lịch, Website & App – 9+ Năm Full-Stack",
     "titlePortfolio": "Dự án – Ark Studio – Phần Mềm Theo Yêu Cầu — Hệ Thống, E-commerce, Đặt Lịch, Website & App – 9+ Năm Full-Stack",

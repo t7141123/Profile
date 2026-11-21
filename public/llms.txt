@@ -1,24 +1,25 @@
 # 方舟工坊 Ark Studio
 
-> 方舟工坊（Ark Studio）是台灣的 App 開發工作室，由 David 經營，主要協助個人與新創把 App 點子做到上架：企劃、畫面設計、開發、App Store 與 Google Play 上架協助、維護。也承接企業官網、預約與會員系統、LINE Bot 整合。9 年全端開發經驗，已自製上線多個 App，提供免費 30 分鐘諮詢，費用依功能範圍報價（不公開固定價格）。
+> 方舟工坊（Ark Studio）是台灣的軟體開發工作室，由 David 經營，協助個人、新創與企業把想法做成軟體：App、網站與電商、後台管理系統、LINE 機器人與系統整合，從企劃、開發到上線與維護一站式完成。9 年全端開發經驗，已自製上線多個軟體產品，提供免費 30 分鐘諮詢，費用依功能範圍報價（不公開固定價格）。
 >
-> Ark Studio (方舟工坊) is a Taiwan-based app development studio run by David. It helps individuals and startups take an app idea to store release: planning, UI design, development, App Store and Google Play release support, and maintenance. It also builds corporate websites, booking and member systems and LINE Bots. 9+ years of full-stack experience, several self-built apps, free 30-minute consultation, quoted by scope (no fixed public prices). The site is available in 11 languages.
+> Ark Studio (方舟工坊) is a Taiwan-based software development studio run by David. It helps individuals, startups and companies turn ideas into software: apps, websites and e-commerce, back-office management systems, LINE bots and integrations, from planning and development to launch and maintenance. 9+ years of full-stack experience, several self-built software products, free 30-minute consultation, quoted by scope (no fixed public prices). The site is available in 11 languages.
 
 ## 主要頁面 Main pages
 
 - [首頁 Home（繁體中文）](https://ark-studio.app/zh-tw/): 工作室簡介與服務
-- [服務項目 Services](https://ark-studio.app/zh-tw/services): App 開發流程、合作方式、技術棧與常見問題（FAQ）
+- [服務項目 Services](https://ark-studio.app/zh-tw/services): 軟體開發流程、合作方式、技術棧與常見問題（FAQ）
 - [作品集 Portfolio](https://ark-studio.app/zh-tw/portfolio): 自製 App 與客戶的官網、系統案例
 - [關於我 About](https://ark-studio.app/zh-tw/about): 經驗、技能與工作流程
 - [聯繫我 Contact](https://ark-studio.app/zh-tw/contact): 專案評估表單，或用 LINE、Telegram、Email 聯絡，通常 24 小時內回覆
 
 ## 服務 Services
 
-- App 開發（iOS、Android、網頁版 Web App）
+- App 開發（iOS、Android、網頁版 Web App），含 App Store 與 Google Play 上架協助
+- 網站與電商：企業官網、預約系統、線上購買、多語系與 SEO
+- 後台管理系統：會員、訂單、報表、權限與流程自動化
+- LINE 機器人與整合：串接 LINE、金流、第三方 API 與自動化
 - MVP 驗證版：先做最核心功能，給真實使用者試用
-- App Store 與 Google Play 上架協助、上線後維護與改版
-- 後端與整合：會員登入、雲端資料、管理後台、LINE、金流
-- 企業官網、預約系統、客製化內部工具
+- 上線後維護與改版
 
 ## 自製 App Apps built by the studio
 
@@ -29,9 +30,9 @@
 
 ## 常見問題 FAQ
 
-- 做一個 App 需要多久？依功能多寡而定；先做 MVP 比完整 App 快很多，開始前會提供預估時程。
-- 費用怎麼算？沒有固定價格，取決於功能數量、平台（iOS、Android、網頁版）、是否需要會員與後台、是否串接 LINE 或金流；免費諮詢後依範圍報價。
-- 只有點子可以嗎？可以，大多數客戶一開始都只有點子，我會先陪你釐清問題與最少需要的功能。
+- 做一個軟體專案需要多久？依功能多寡而定；先做 MVP 比完整 App 快很多，開始前會提供預估時程。
+- 費用怎麼算？沒有固定價格，取決於功能數量、做 App、網站或後台系統、是否需要會員與後台、是否串接 LINE 或金流；免費諮詢後依範圍報價。
+- 只有想法可以嗎？可以，大多數客戶一開始都只有點子，我會先陪你釐清問題與最少需要的功能。
 - 上架會協助嗎？會協助準備開發者帳號、隱私權政策、截圖與審核回覆；建議用客戶自己的名義申請開發者帳號。
 - 有維護服務嗎？所有專案包含免費維護期（修復程式錯誤），期滿後可續約。
 - 如何付款？通常分期：簽約 30%、開發中期 40%、驗收後 30%，可依專案彈性調整。

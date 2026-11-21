@@ -16,9 +16,9 @@
     "contact": "Contact"
   },
   "home": {
-    "title": "Votre partenaire de transformation digitale",
-    "subtitle": "Transformez votre site web en un puissant moteur de croissance",
-    "subtitle2": "Plus de 9 ans d'expérience full-stack pour créer des produits digitaux scalables et à forte conversion.",
+    "title": "Un besoin à résoudre avec un logiciel ? Parlons 30 minutes, gratuitement.",
+    "subtitle": "Apps, sites web, systèmes de gestion et bots LINE : conception, développement et mise en ligne avec un seul interlocuteur.",
+    "subtitle2": "J'ai créé et publié moi-même plusieurs produits logiciels, je connais donc les pièges. Commençons par un échange gratuit de 30 minutes pour évaluer la faisabilité et la méthode.",
     "learnMore": "En savoir plus",
     "viewWorks": "Portfolio",
     "addLine": "Me contacter",
@@ -30,9 +30,9 @@
     "featuredTitle": "Projets",
     "featuredTitleHighlight": " phares",
     "viewAll": "Voir toutes les réalisations",
-    "ctaTitle": "Lancez votre projet avec une consultation professionnelle",
+    "ctaTitle": "Un besoin à résoudre avec un logiciel ? Parlons 30 minutes",
     "ctaDescription": "De nombreux projets réussis commencent par un simple message.",
-    "ctaDescription2": "Partagez vos idées, j'évalue gratuitement la faisabilité et le budget.",
+    "ctaDescription2": "Racontez-moi votre idée. J'évalue gratuitement si c'est faisable, comment la construire et en combien de temps environ.",
     "ctaButton": "Planifier une évaluation",
     "services": {
       "corporate": "Identité & site vitrine d'entreprise",
@@ -126,29 +126,24 @@
       "s4d": "Points d’avancement hebdomadaires, livraison à l’heure"
     },
     "fit": {
-      "badge": "Think first, build later",
-      "title": "Not every idea ",
-      "highlight": "needs to be an app",
-      "desc": "Many ideas deserve an app, and some are better served in a faster, cheaper way. I will tell you honestly.",
-      "yesTitle": "Ideas that suit an app",
-      "yes": [
-        "A tool or service people open every day",
-        "Needs phone features such as notifications, camera, location or offline use",
-        "You want to grow members and a community over time",
-        "You want to be found on the App Store or Google Play"
-      ],
-      "noTitle": "Ideas that may not need an app",
-      "no": [
-        "You just want to introduce a company or service: a website is enough",
-        "A few people use it occasionally: a LINE bot or a form is faster",
-        "Not sure anyone wants it yet: start with a lean validation version",
-        "A very simple process: a spreadsheet or an existing tool can do it"
-      ],
-      "ctaTitle": "Which kind is your idea?",
-      "ctaDesc": "No need to have it figured out, and no tech knowledge needed. Talk for 30 minutes for free and I will tell you if it fits and the most worthwhile way to build it.",
-      "ctaLine": "Book a free chat on LINE",
-      "ctaForm": "Fill in the project brief"
-    }
+      "badge": "Réfléchir avant de construire",
+      "title": "Quel type de logiciel ",
+      "highlight": "répond à votre besoin ?",
+      "desc": "Inutile de le savoir déjà. Je vous dirai honnêtement ce qui vous fait gagner le plus, selon votre situation.",
+      "c1t": "App",
+      "c1d": "Utilisée chaque jour, besoin des fonctions du téléphone, ou présence sur l'App Store et Google Play.",
+      "c2t": "Site web",
+      "c2d": "Présenter votre activité, recevoir réservations ou ventes en ligne et être trouvé via les moteurs de recherche.",
+      "c3t": "Système de gestion",
+      "c3d": "Transformer formulaires, tableurs et tâches manuelles en un système bien à vous.",
+      "c4t": "Bot LINE et automatisation",
+      "c4d": "Vos clients utilisent déjà LINE, ou vous voulez automatiser des tâches répétitives.",
+      "ctaTitle": "Vous hésitez entre les quatre ?",
+      "ctaDesc": "Inutile d'avoir tout clarifié ni de s'y connaître en technique. En 30 minutes gratuites, je vous dis ce qui convient et la façon la plus rentable de le faire, ou je vous dis franchement si un logiciel n'est pas la solution.",
+      "ctaLine": "Réserver un échange gratuit sur LINE",
+      "ctaForm": "Remplir le formulaire de projet"
+    },
+    "heroCta": "Consultation gratuite de 30 min"
   },
   "about": {
     "badge": "À propos",
@@ -392,8 +387,8 @@
       "a7": "Oui. Nous concevons et développons des applications mobiles et web, du design d’interface au backend et aux API, jusqu’à la mise en ligne. Présentez-nous votre idée et nous évaluerons gratuitement sa faisabilité et un budget approximatif.",
       "q8": "Comment choisir un prestataire de développement logiciel ?",
       "a8": "Vérifiez trois points : des références réelles proches de votre projet, des tarifs et délais transparents, et la maintenance après la mise en ligne. Ark Studio présente son portfolio, fournit un planning avant le début du projet et inclut une période de maintenance gratuite.",
-      "q9": "How is app development priced?",
-      "a9": "There is no fixed price. Cost depends mainly on the number of features, whether you need iOS, Android or a web version, whether you need sign-in and an admin back office, and whether LINE or payment integrations are involved. In the free consultation I break the features down, suggest what to build first, and quote by scope. Starting with an MVP usually keeps the initial investment low."
+      "q9": "How is software development priced?",
+      "a9": "There is no fixed price. Cost depends mainly on the number of features, whether it is an app, a website or a back-office system, whether you need sign-in and an admin back office, and whether LINE or payment integrations are involved. In the free consultation I break the features down, suggest what to build first, and quote by scope. Starting with an MVP usually keeps the initial investment low."
     },
     "ctaTitle": "Des questions ? N'hésitez pas à me les poser",
     "ctaDescription": "Chaque projet est unique. Parlez-moi du vôtre et je vous proposerai un plan parfaitement adapté.",
@@ -420,29 +415,29 @@
     "brief": {
       "title": "Project brief",
       "desc": "Takes about a minute. A rough idea is enough, and I will read it before replying.",
-      "idea": "What app do you want to build?",
-      "ideaHint": "e.g. an app for club members to sign up for events and check in",
+      "idea": "What do you want to solve with software?",
+      "ideaHint": "e.g. a tool for club members to sign up for events and check in",
       "stage": "Current stage",
       "stageOptions": [
         "Just an idea",
         "Rough sketches or notes",
         "Designs ready",
-        "Existing app that needs maintenance"
+        "Existing system or app that needs maintenance"
       ],
-      "platform": "Target platform",
+      "platform": "What kind of solution",
       "platformOptions": [
-        "Not sure yet",
-        "iOS and Android",
-        "iOS only",
-        "Android only",
-        "Web app"
+        "Not sure yet, advise me",
+        "Mobile app (iOS and Android)",
+        "Website or web app",
+        "Back-office system",
+        "LINE bot or automation"
       ],
       "budget": "Budget range",
       "budgetOptions": [
         "No idea, advise me",
-        "Under 10 (x10k TWD)",
-        "10 to 30 (x10k TWD)",
-        "Over 30 (x10k TWD)"
+        "Under 100k TWD",
+        "100k to 300k TWD",
+        "Over 300k TWD"
       ],
       "timing": "Desired launch",
       "timingOptions": [
@@ -454,8 +449,8 @@
       "name": "Your name",
       "sendEmail": "Send by email",
       "note": "This opens your mail app with everything pre-filled. Check it and send.",
-      "mailSubject": "App project brief",
-      "mailGreeting": "Hi, this is {name}. I would like you to assess an app project:"
+      "mailSubject": "Software project brief",
+      "mailGreeting": "Hi, this is {name}. I would like you to assess a software project:"
     }
   },
   "footer": {
@@ -464,8 +459,8 @@
     "copyright": "© 2024-{year} Ark Studio. Tous droits réservés."
   },
   "meta": {
-    "title": "Ark Studio – Logiciel Sur Mesure — Systèmes, E-commerce, Réservation, Sites & Apps – 9+ Ans Full-Stack",
-    "description": "Logiciels sur mesure pour entreprises et particuliers : systèmes de gestion, plateformes de réservation, sites vitrines, e-commerce, espaces membres et outils internes avec intégration LINE. Plus de 9 ans full-stack, livraison de bout en bout, consultation gratuite 30 min.",
+    "title": "Développement logiciel et apps | De l'idée à la mise en ligne | Ark Studio",
+    "description": "Vous voulez résoudre un problème avec un logiciel sans savoir par où commencer ? Ark Studio crée apps, sites web, systèmes de gestion et bots LINE pour particuliers, startups et entreprises. 30 minutes gratuites pour évaluer la faisabilité.",
     "keywords": "développement logiciel sur mesure,développement système entreprise,système de gestion,système de réservation,site vitrine,e-commerce,système d’adhésion,outils internes,LINE Bot,développement web,intégration système,développement d’apps,développeur freelance,full-stack,Ark Studio",
     "titleServices": "Services – Ark Studio – Logiciel Sur Mesure — Systèmes, E-commerce, Réservation, Sites & Apps – 9+ Ans Full-Stack",
     "titlePortfolio": "Portfolio – Ark Studio – Logiciel Sur Mesure — Systèmes, E-commerce, Réservation, Sites & Apps – 9+ Ans Full-Stack",

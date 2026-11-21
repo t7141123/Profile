@@ -9,27 +9,12 @@
         :description="$t('home.fit.desc')"
       />
 
-      <div class="row g-4">
-        <div class="col-md-6" v-inview="{ delay: 0 }">
+      <div class="row g-3 g-lg-4">
+        <div class="col-6 col-lg-3" v-for="(c, i) in cards" :key="c.icon" v-inview="{ delay: i * 80 }">
           <div class="fit-card h-100">
-            <h3 class="fit-card-title">
-              <i class="bi bi-check-circle-fill fit-icon fit-yes" aria-hidden="true"></i>
-              {{ $t("home.fit.yesTitle") }}
-            </h3>
-            <ul class="fit-list">
-              <li v-for="item in yes" :key="item">{{ item }}</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6" v-inview="{ delay: 90 }">
-          <div class="fit-card h-100">
-            <h3 class="fit-card-title">
-              <i class="bi bi-arrow-repeat fit-icon fit-no" aria-hidden="true"></i>
-              {{ $t("home.fit.noTitle") }}
-            </h3>
-            <ul class="fit-list">
-              <li v-for="item in no" :key="item">{{ item }}</li>
-            </ul>
+            <i :class="['bi', c.icon, 'fit-icon']" aria-hidden="true"></i>
+            <h3 class="fit-card-title">{{ $t(`home.fit.c${i + 1}t`) }}</h3>
+            <p class="fit-card-desc">{{ $t(`home.fit.c${i + 1}d`) }}</p>
           </div>
         </div>
       </div>
@@ -57,74 +42,52 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
-import { useI18n } from "vue-i18n";
 import SectionHeader from "@/components/common/SectionHeader.vue";
 import { contact } from "@/config/contact";
 import { useLocale } from "@/composables/useLocale";
 
-const { tm, rt } = useI18n();
 const { localePath } = useLocale();
 
-const yes = computed(() => tm("home.fit.yes").map((m) => rt(m)));
-const no = computed(() => tm("home.fit.no").map((m) => rt(m)));
+const cards = [
+  { icon: "bi-phone" },
+  { icon: "bi-globe2" },
+  { icon: "bi-speedometer2" },
+  { icon: "bi-robot" },
+];
 </script>
 
 <style scoped>
+/* keep the highlighted phrase on one line so a CJK title never splits mid-phrase */
+.fit-section :deep(.section-title .highlight) {
+  display: inline-block;
+}
+
 .fit-card {
-  padding: 2rem;
+  padding: 1.5rem;
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-soft);
 }
 
-.fit-card-title {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 1.25rem;
-}
-
 .fit-icon {
-  font-size: 1.3rem;
-}
-
-.fit-yes {
+  display: inline-block;
+  font-size: 1.6rem;
   color: var(--primary-color);
+  margin-bottom: 0.75rem;
 }
 
-.fit-no {
-  color: var(--text-muted);
+.fit-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
-.fit-list {
-  list-style: none;
+.fit-card-desc {
   margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
-}
-
-.fit-list li {
   color: var(--text-secondary);
+  font-size: 0.92rem;
   line-height: 1.7;
-  padding-left: 1.1rem;
-  position: relative;
-}
-
-.fit-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.8em;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--primary-color);
 }
 
 .fit-cta {
@@ -154,7 +117,14 @@ const no = computed(() => tm("home.fit.no").map((m) => rt(m)));
 
 @media (max-width: 575.98px) {
   .fit-card {
-    padding: 1.5rem;
+    padding: 1.1rem;
+  }
+  .fit-card-title {
+    font-size: 1rem;
+  }
+  .fit-card-desc {
+    font-size: 0.85rem;
+    line-height: 1.6;
   }
   .fit-cta-actions .btn {
     width: 100%;

@@ -16,9 +16,9 @@
     "contact": "お問い合わせ"
   },
   "home": {
-    "title": "あなたのデジタル変革パートナー",
-    "subtitle": "あなたのWebサイトを、強力なビジネスエンジンへ",
-    "subtitle2": "9年以上のフルスタック開発経験。スケーラブルで成果につながるデジタルプロダクトを創ります。",
+    "title": "ソフトウェアで解決したいことはありませんか？30分の無料相談でお答えします。",
+    "subtitle": "アプリ、Webサイト、管理システム、LINEボットまで。企画から開発・公開までワンストップで。",
+    "subtitle2": "自分でも複数のソフトウェアを開発・公開してきたので、つまずきやすい点を知っています。まずは無料の30分相談で、実現可能性と進め方を確認しましょう。",
     "learnMore": "詳しく見る",
     "viewWorks": "作品集",
     "addLine": "お問い合わせ",
@@ -30,9 +30,9 @@
     "featuredTitle": "成功",
     "featuredTitleHighlight": "事例",
     "viewAll": "すべての実績を見る",
-    "ctaTitle": "プロの無料相談から、プロジェクトを始めましょう",
+    "ctaTitle": "ソフトウェアで解決したいことは？まずは30分お話しましょう",
     "ctaDescription": "多くの成功プロジェクトは、たった一通のメッセージから始まります。",
-    "ctaDescription2": "あなたのアイデアをお聞かせください。実現可能性とご予算を無料で診断いたします。",
+    "ctaDescription2": "アイデアを教えてください。実現できるか、どう作るか、期間の目安を無料で評価します。",
     "ctaButton": "無料診断を予約する",
     "services": {
       "corporate": "企業ブランディング＆アイデンティティ",
@@ -126,29 +126,24 @@
       "s4d": "週次で進捗報告、納期厳守"
     },
     "fit": {
-      "badge": "Think first, build later",
-      "title": "Not every idea ",
-      "highlight": "needs to be an app",
-      "desc": "Many ideas deserve an app, and some are better served in a faster, cheaper way. I will tell you honestly.",
-      "yesTitle": "Ideas that suit an app",
-      "yes": [
-        "A tool or service people open every day",
-        "Needs phone features such as notifications, camera, location or offline use",
-        "You want to grow members and a community over time",
-        "You want to be found on the App Store or Google Play"
-      ],
-      "noTitle": "Ideas that may not need an app",
-      "no": [
-        "You just want to introduce a company or service: a website is enough",
-        "A few people use it occasionally: a LINE bot or a form is faster",
-        "Not sure anyone wants it yet: start with a lean validation version",
-        "A very simple process: a spreadsheet or an existing tool can do it"
-      ],
-      "ctaTitle": "Which kind is your idea?",
-      "ctaDesc": "No need to have it figured out, and no tech knowledge needed. Talk for 30 minutes for free and I will tell you if it fits and the most worthwhile way to build it.",
-      "ctaLine": "Book a free chat on LINE",
-      "ctaForm": "Fill in the project brief"
-    }
+      "badge": "作る前に、まず整理",
+      "title": "あなたの課題には",
+      "highlight": "どんなソフトが合う？",
+      "desc": "先に決めておく必要はありません。状況に合わせて、いちばん無駄のない方法を正直にお伝えします。",
+      "c1t": "アプリ",
+      "c1d": "毎日使う、スマホの機能が必要、App StoreやGoogle Playで公開したい。",
+      "c2t": "Webサイト",
+      "c2d": "会社の紹介、予約や販売をオンラインで行い、検索で見つけてもらいたい。",
+      "c3t": "管理システム",
+      "c3d": "フォームやExcel、手作業を、自分たち専用のシステムにまとめたい。",
+      "c4t": "LINEボット・自動化",
+      "c4d": "お客様がすでにLINEを使っている、繰り返しの作業を自動化したい。",
+      "ctaTitle": "どれが合うか分からない？",
+      "ctaDesc": "整理できていなくても、技術に詳しくなくても大丈夫です。30分の無料相談で、向いているものと最も賢い進め方をお伝えします。ソフトで解決すべきでない場合もはっきり言います。",
+      "ctaLine": "LINEで無料相談を予約",
+      "ctaForm": "プロジェクト相談フォームへ"
+    },
+    "heroCta": "30分の無料相談"
   },
   "about": {
     "badge": "私について",
@@ -392,8 +387,8 @@
       "a7": "はい。モバイルアプリとWebアプリの設計・開発に対応し、画面設計からバックエンド、API、公開まで一貫して行います。アイデアをお聞かせいただければ、実現性と大まかな予算を無料で評価します。",
       "q8": "ソフトウェア開発会社はどう選べばよいですか？",
       "a8": "似た実績があるか、見積もりとスケジュールが明確か、公開後の保守があるか、の3点を確認してください。Ark Studio は実績を公開し、開始前にスケジュールを提示し、無料の保守期間も含みます。",
-      "q9": "How is app development priced?",
-      "a9": "There is no fixed price. Cost depends mainly on the number of features, whether you need iOS, Android or a web version, whether you need sign-in and an admin back office, and whether LINE or payment integrations are involved. In the free consultation I break the features down, suggest what to build first, and quote by scope. Starting with an MVP usually keeps the initial investment low."
+      "q9": "How is software development priced?",
+      "a9": "There is no fixed price. Cost depends mainly on the number of features, whether it is an app, a website or a back-office system, whether you need sign-in and an admin back office, and whether LINE or payment integrations are involved. In the free consultation I break the features down, suggest what to build first, and quote by scope. Starting with an MVP usually keeps the initial investment low."
     },
     "ctaTitle": "まだご不明な点がありますか？お気軽にどうぞ",
     "ctaDescription": "すべてのプロジェクトは唯一無二です。あなたのプロジェクトについてお聞かせください。最適なプランをご提案します。",
@@ -420,29 +415,29 @@
     "brief": {
       "title": "Project brief",
       "desc": "Takes about a minute. A rough idea is enough, and I will read it before replying.",
-      "idea": "What app do you want to build?",
-      "ideaHint": "e.g. an app for club members to sign up for events and check in",
+      "idea": "What do you want to solve with software?",
+      "ideaHint": "e.g. a tool for club members to sign up for events and check in",
       "stage": "Current stage",
       "stageOptions": [
         "Just an idea",
         "Rough sketches or notes",
         "Designs ready",
-        "Existing app that needs maintenance"
+        "Existing system or app that needs maintenance"
       ],
-      "platform": "Target platform",
+      "platform": "What kind of solution",
       "platformOptions": [
-        "Not sure yet",
-        "iOS and Android",
-        "iOS only",
-        "Android only",
-        "Web app"
+        "Not sure yet, advise me",
+        "Mobile app (iOS and Android)",
+        "Website or web app",
+        "Back-office system",
+        "LINE bot or automation"
       ],
       "budget": "Budget range",
       "budgetOptions": [
         "No idea, advise me",
-        "Under 10 (x10k TWD)",
-        "10 to 30 (x10k TWD)",
-        "Over 30 (x10k TWD)"
+        "Under 100k TWD",
+        "100k to 300k TWD",
+        "Over 300k TWD"
       ],
       "timing": "Desired launch",
       "timingOptions": [
@@ -454,8 +449,8 @@
       "name": "Your name",
       "sendEmail": "Send by email",
       "note": "This opens your mail app with everything pre-filled. Check it and send.",
-      "mailSubject": "App project brief",
-      "mailGreeting": "Hi, this is {name}. I would like you to assess an app project:"
+      "mailSubject": "Software project brief",
+      "mailGreeting": "Hi, this is {name}. I would like you to assess a software project:"
     }
   },
   "footer": {
@@ -464,8 +459,8 @@
     "copyright": "© 2024-{year} Ark Studio. 無断転載を禁じます。"
   },
   "meta": {
-    "title": "Ark Studio｜オーダーメイド開発 — 業務システム・EC・予約・Web・アプリ｜9年フルスタック",
-    "description": "企業・個人向けに多様なソフトウェアをオーダーメイド：業務管理システム、予約プラットフォーム、コーポレートサイト、EC・会員システム、社内ツールと LINE 連携。9年以上のフルスタック経験で企画から公開までワンストップ、無料30分相談。",
+    "title": "ソフトウェア開発・アプリ開発｜アイデアから公開まで｜Ark Studio 方舟工坊",
+    "description": "ソフトウェアで課題を解決したいけれど、何から始めればいいか分からない方へ。Ark Studioは個人・スタートアップ・企業向けにアプリ、Webサイト、管理システム、LINEボットを開発。30分の無料相談で実現可能性を評価します。",
     "keywords": "オーダーメイド開発,業務システム開発,管理システム,予約システム,コーポレートサイト,ECサイト,会員システム,社内ツール,LINE Bot,Web制作,システム連携,アプリ開発,フリーランス,フルスタック,Ark Studio",
     "titleServices": "サービス – Ark Studio｜オーダーメイド開発 — 業務システム・EC・予約・Web・アプリ｜9年フルスタック",
     "titlePortfolio": "ポートフォリオ – Ark Studio｜オーダーメイド開発 — 業務システム・EC・予約・Web・アプリ｜9年フルスタック",

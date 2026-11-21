@@ -23,19 +23,16 @@
     <div class="container hero-centered">
       <div class="hero-content">
         <h1 class="hero-title">
-          <template v-for="(seg, i) in titleSegments" :key="i"><span class="title-seg">{{ seg }}</span><br v-if="/[？?]$/.test(seg)" /></template><br />
+          <template v-for="(seg, i) in titleSegments" :key="i"><span class="title-seg">{{ seg }}</span>{{ " " }}<br v-if="/[？?]$/.test(seg)" /></template><br />
           <span class="highlight" v-scramble>{{ $t("footer.brand") }}</span>
         </h1>
 
         <p class="hero-subtitle" v-reveal>
-          {{ $t("home.subtitle") }}<br />
-          {{ $t("home.subtitle2") }}
+          {{ $t("home.subtitle") }}<br class="hero-subtitle2" />
+          <span class="hero-subtitle2">{{ $t("home.subtitle2") }}</span>
         </p>
 
         <div class="hero-buttons">
-          <router-link to="/portfolio" class="btn btn-primary-custom" v-ripple v-magnetic>
-            <i class="bi bi-collection me-2"></i>{{ $t("home.viewWorks") }}
-          </router-link>
           <a
             :href="contact.line"
             target="_blank"
@@ -44,8 +41,11 @@
             v-ripple
             v-magnetic
           >
-            <i class="bi bi-line me-2"></i>{{ $t("home.addLine") }}
+            <i class="bi bi-line me-2"></i>{{ $t("home.heroCta") }}
           </a>
+          <router-link to="/portfolio" class="btn btn-hero-ghost" v-ripple>
+            {{ $t("home.viewWorks") }}<i class="bi bi-arrow-right ms-2"></i>
+          </router-link>
         </div>
       </div>
     </div>
@@ -193,5 +193,43 @@ onUnmounted(() => {
 
 .title-seg {
   display: inline-block;
+}
+
+.btn-hero-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.75rem;
+  background: transparent;
+  border: 1.5px solid rgba(247, 244, 239, 0.45);
+  border-radius: var(--radius-full, 999px);
+  color: #f7f4ef;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-hero-ghost:hover,
+.btn-hero-ghost:focus-visible {
+  background: rgba(247, 244, 239, 0.12);
+  border-color: rgba(247, 244, 239, 0.8);
+  color: #fff;
+}
+
+/* Phones: keep only the headline, one short line and a single clear action */
+@media (max-width: 575.98px) {
+  .hero-subtitle2 {
+    display: none;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .hero-buttons .btn {
+    width: 100%;
+    flex: none;
+    font-size: 1rem;
+  }
 }
 </style>
