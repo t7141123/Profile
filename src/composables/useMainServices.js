@@ -11,7 +11,7 @@ export function useMainServices() {
   const mainServices = computed(() => [
     {
       id: 1,
-      icon: "bi bi-globe",
+      icon: "bi bi-phone",
       title: t("services.mainServices.corporate"),
       subtitle: t("services.mainServices.corporateSubtitle"),
       description: t("services.mainServices.corporateDesc"),
@@ -20,7 +20,7 @@ export function useMainServices() {
     },
     {
       id: 2,
-      icon: "bi bi-speedometer2",
+      icon: "bi bi-lightning-charge",
       title: t("services.mainServices.operations"),
       subtitle: t("services.mainServices.operationsSubtitle"),
       description: t("services.mainServices.operationsDesc"),
@@ -29,7 +29,7 @@ export function useMainServices() {
     },
     {
       id: 3,
-      icon: "bi bi-calendar-event",
+      icon: "bi bi-cloud-arrow-up",
       title: t("services.mainServices.events"),
       subtitle: t("services.mainServices.eventsSubtitle"),
       description: t("services.mainServices.eventsDesc"),
@@ -38,7 +38,7 @@ export function useMainServices() {
     },
     {
       id: 4,
-      icon: "bi bi-code-square",
+      icon: "bi bi-diagram-3",
       title: t("services.mainServices.custom"),
       subtitle: t("services.mainServices.customSubtitle"),
       description: t("services.mainServices.customDesc"),
