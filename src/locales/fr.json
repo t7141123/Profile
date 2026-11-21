@@ -390,7 +390,49 @@
     "workingHoursValue": "Lun-Ven 9h00 - 18h00",
     "promiseLabel": "Engagement de communication",
     "promiseValue": "Écoute attentive, réponse professionnelle sous 24 h",
-    "emailLink": "M'écrire par e-mail"
+    "emailLink": "M'écrire par e-mail",
+    "brief": {
+      "title": "Project brief",
+      "desc": "Takes about a minute. A rough idea is enough, and I will read it before replying.",
+      "idea": "What app do you want to build?",
+      "ideaHint": "e.g. an app for club members to sign up for events and check in",
+      "stage": "Current stage",
+      "stageOptions": [
+        "Just an idea",
+        "Rough sketches or notes",
+        "Designs ready",
+        "Existing app that needs maintenance"
+      ],
+      "platform": "Target platform",
+      "platformOptions": [
+        "Not sure yet",
+        "iOS and Android",
+        "iOS only",
+        "Android only",
+        "Web app"
+      ],
+      "budget": "Budget range",
+      "budgetOptions": [
+        "No idea, advise me",
+        "Under 10 (x10k TWD)",
+        "10 to 30 (x10k TWD)",
+        "Over 30 (x10k TWD)"
+      ],
+      "timing": "Desired launch",
+      "timingOptions": [
+        "No fixed deadline",
+        "Within 3 months",
+        "Within 6 months",
+        "As soon as possible"
+      ],
+      "name": "Your name",
+      "sendLine": "Copy and open LINE",
+      "sendEmail": "Send by email",
+      "note": "LINE: the text is copied, paste it in the chat. Email opens your mail app.",
+      "copied": "Copied. Paste it in LINE to send.",
+      "mailSubject": "App project brief",
+      "mailGreeting": "Hi, this is {name}. I would like you to assess an app project:"
+    }
   },
   "footer": {
     "brand": "Ark Studio",

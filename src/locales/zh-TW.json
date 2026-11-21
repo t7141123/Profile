@@ -390,7 +390,49 @@
     "workingHoursValue": "週一至週五 9:00 - 18:00",
     "promiseLabel": "溝通承諾",
     "promiseValue": "深度傾聽，24h 內專業回覆",
-    "emailLink": "寄信給我"
+    "emailLink": "寄信給我",
+    "brief": {
+      "title": "專案評估表單",
+      "desc": "花 1 分鐘填寫，我會先看過再回覆你。不用寫得很完整，大概的想法就夠了。",
+      "idea": "你想做什麼 App？",
+      "ideaHint": "例如：讓社團成員報名活動並簽到的 App",
+      "stage": "目前進度",
+      "stageOptions": [
+        "只有點子",
+        "有簡單的草圖或文件",
+        "已有設計稿",
+        "已有 App，需要維護或改版"
+      ],
+      "platform": "想上架的平台",
+      "platformOptions": [
+        "還不確定",
+        "iOS 與 Android",
+        "只做 iOS",
+        "只做 Android",
+        "網頁版"
+      ],
+      "budget": "預算範圍",
+      "budgetOptions": [
+        "還沒想法，想先聽建議",
+        "10 萬以內",
+        "10 到 30 萬",
+        "30 萬以上"
+      ],
+      "timing": "希望何時上線",
+      "timingOptions": [
+        "沒有特別期限",
+        "3 個月內",
+        "半年內",
+        "愈快愈好"
+      ],
+      "name": "怎麼稱呼你",
+      "sendLine": "複製內容並開啟 LINE",
+      "sendEmail": "用 Email 寄出",
+      "note": "LINE 會先複製內容，開啟後貼上傳送即可；Email 會開啟你的郵件程式。",
+      "copied": "已複製，到 LINE 貼上傳送即可。",
+      "mailSubject": "App 專案評估",
+      "mailGreeting": "你好，我是 {name}，想請你評估一個 App 專案："
+    }
   },
   "footer": {
     "brand": "Ark Studio 方舟工坊",

@@ -151,6 +151,7 @@
                   </div>
                 </div>
               </div>
+              <ContactBrief />
             </div>
           </div>
         </div>
@@ -163,6 +164,7 @@
 import { contact } from "@/config/contact";
 import { ref } from "vue";
 import PageHeader from "@/components/common/PageHeader.vue";
+import ContactBrief from "@/components/ContactBrief.vue";
 
 const contentSection = ref(null);
 
